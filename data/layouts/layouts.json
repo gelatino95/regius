@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/GatewayIsland/border.bin",
       "blockdata_filepath": "data/layouts/GatewayIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTHEAST_SEA",
+      "name": "SoutheastSea_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/SoutheastSea/border.bin",
+      "blockdata_filepath": "data/layouts/SoutheastSea/map.bin"
     }
   ]
 }

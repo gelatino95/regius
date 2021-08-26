@@ -1062,3 +1062,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/GatewayIsland/scripts.inc"
+
+	.include "data/maps/SoutheastSea/scripts.inc"
