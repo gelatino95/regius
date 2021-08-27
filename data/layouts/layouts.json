@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/SoutheastSea/border.bin",
       "blockdata_filepath": "data/layouts/SoutheastSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_GATEWAY_ISLAND_PLAYERS_HOUSE",
+      "name": "GatewayIsland_PlayersHouse_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GatewayIsland_PlayersHouse/border.bin",
+      "blockdata_filepath": "data/layouts/GatewayIsland_PlayersHouse/map.bin"
     }
   ]
 }

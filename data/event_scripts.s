@@ -1064,3 +1064,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GatewayIsland/scripts.inc"
 
 	.include "data/maps/SoutheastSea/scripts.inc"
+
+	.include "data/maps/GatewayIsland_PlayersHouse/scripts.inc"

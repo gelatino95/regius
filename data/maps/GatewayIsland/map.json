@@ -17,7 +17,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 34,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_GATEWAY_ISLAND_PLAYERS_HOUSE",
+      "dest_warp_id": 1
+    }
   ],
   "coord_events": [
 
