@@ -2,7 +2,7 @@
   "id": "MAP_GATEWAY_ISLAND_PLAYERS_HOUSE",
   "name": "GatewayIsland_PlayersHouse",
   "layout": "LAYOUT_GATEWAY_ISLAND_PLAYERS_HOUSE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_FORTREE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -33,14 +33,14 @@
       "x": 2,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_GATEWAY_ISLAND_PLAYERS_HOUSE",
+      "dest_map": "MAP_GATEWAY_ISLAND",
       "dest_warp_id": 0
     },
     {
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_GATEWAY_ISLAND_PLAYERS_HOUSE",
+      "dest_map": "MAP_GATEWAY_ISLAND",
       "dest_warp_id": 0
     }
   ],

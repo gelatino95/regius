@@ -42,8 +42,6 @@ MAKER_CODE  := 01
 REVISION    := 0
 MODERN      ?= 0
 
-SCRIPT := tools/poryscript/poryscript$(EXE)
-
 ifeq (modern,$(MAKECMDGOALS))
   MODERN := 1
 endif
@@ -133,6 +131,9 @@ RAMSCRGEN := tools/ramscrgen/ramscrgen$(EXE)
 FIX := tools/gbafix/gbafix$(EXE)
 MAPJSON := tools/mapjson/mapjson$(EXE)
 JSONPROC := tools/jsonproc/jsonproc$(EXE)
+
+# Added by Ben
+SCRIPT := tools/poryscript/poryscript$(EXE)
 
 PERL := perl
 
