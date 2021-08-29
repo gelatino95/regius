@@ -388,6 +388,9 @@ gCryTable::
 	cry Cry_Jirachi 
 	cry Cry_Deoxys 
 	cry Cry_Chimecho 
+//new pokemon
+	cry Cry_Plakomask 
+
 
 	.align 2
 gCryTable2::
@@ -779,3 +782,5 @@ gCryTable2::
 	cry2 Cry_Jirachi 
 	cry2 Cry_Deoxys 
 	cry2 Cry_Chimecho 
+//new pokemon
+	cry2 Cry_Plakomask 

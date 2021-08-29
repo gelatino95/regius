@@ -1937,6 +1937,14 @@ Cry_Deoxys::
 	.align 2
 Cry_Chimecho::
 	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
+	
+//new pokemon
+
+	.align 2
+Cry_Plakomask::
+	.incbin "sound/direct_sound_samples/cries/plakomask.bin"
+
+//end new pokemon
 
 	.align 2
 DirectSoundWaveData_register_noise::

@@ -4805,6 +4805,28 @@ static const union AnimCmd sAnim_UNOWN_QMARK_1[] =
     ANIMCMD_END,
 };
 
+//new pokemon start
+
+static const union AnimCmd sAnim_PLAKOMASK_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_END,
+};
+
+//new pokemon end
+
 static const union AnimCmd *const sAnims_NONE[] ={
     sAnim_GeneralFrame0,
     sAnim_NONE_1,
@@ -6945,6 +6967,15 @@ static const union AnimCmd *const sAnims_UNOWN_QMARK[] ={
     sAnim_UNOWN_QMARK_1,
 };
 
+//new pokemon start
+
+static const union AnimCmd *const sAnims_PLAKOMASK[] ={
+    sAnim_GeneralFrame0,
+    sAnim_PLAKOMASK_1,
+};
+
+//new pokemon end
+
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
 #define ANIM_CMD_FULL(name, anims) [SPECIES_##name] = anims
 
@@ -7390,6 +7421,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(UNOWN_Z),
     ANIM_CMD(UNOWN_EMARK),
     ANIM_CMD(UNOWN_QMARK),
+	ANIM_CMD(PLAKOMASK),
 };
 
 #undef ANIM_CMD

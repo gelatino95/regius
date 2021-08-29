@@ -135,4 +135,6 @@ const u16 gSpeciesIdToCryId[] =
     [SPECIES_JIRACHI - 277] = 385,
     [SPECIES_DEOXYS - 277] = 386,
     [SPECIES_CHIMECHO - 277] = 387,
+//new pokemon
+    [SPECIES_PLAKOMASK - 277] = 388,
 };

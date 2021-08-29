@@ -9384,5 +9384,23 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM48_SKILL_SWAP)
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
+									
+//new pokemon
+
+    [SPECIES_PLAKOMASK]   = TMHM_LEARNSET(TMHM(TM03_WATER_PULSE)
+                                        | TMHM(TM06_TOXIC)
+                                        | TMHM(TM10_HIDDEN_POWER)
+                                        | TMHM(TM13_ICE_BEAM)
+                                        | TMHM(TM17_PROTECT)
+                                        | TMHM(TM18_RAIN_DANCE)
+                                        | TMHM(TM21_FRUSTRATION)
+                                        | TMHM(TM26_EARTHQUAKE)
+                                        | TMHM(TM27_RETURN)
+                                        | TMHM(TM42_FACADE)
+                                        | TMHM(TM43_SECRET_POWER)
+                                        | TMHM(TM44_REST)
+                                        | TMHM(TM45_ATTRACT)
+                                        | TMHM(HM07_WATERFALL)
+                                        | TMHM(HM08_DIVE)),									
 
 };

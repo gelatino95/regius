@@ -2854,6 +2854,15 @@ extern const u32 gMonStillFrontPic_UnownQuestionMark[];
 extern const u32 gMonBackPic_UnownQuestionMark[];
 extern const u8 gMonIcon_UnownQuestionMark[];
 
+//new pokemon
+extern const u32 gMonFrontPic_Plakomask[];
+extern const u32 gMonPalette_Plakomask[];
+extern const u32 gMonBackPic_Plakomask[];
+extern const u32 gMonShinyPalette_Plakomask[];
+extern const u32 gMonStillFrontPic_Plakomask[];
+extern const u8 gMonIcon_Plakomask[];
+extern const u8 gMonFootprint_Plakomask[];
+
 extern const u32 gMonFrontPic_CircledQuestionMark[];
 extern const u32 gMonBackPic_CircledQuestionMark[];
 extern const u32 gMonPalette_CircledQuestionMark[];

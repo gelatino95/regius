@@ -12438,5 +12438,39 @@ const struct BaseStats gBaseStats[] =
         .safariZoneFleeRate = 0,
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
+    },
+	
+//new pokemon
+
+    [SPECIES_PLAKOMASK] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 45,
+        .type1 = TYPE_WATER,
+        .type2 = TYPE_WATER,
+        .catchRate = 220,
+        .expYield = 88,
+        .evYield_HP        = 0,
+        .evYield_Attack    = 0,
+        .evYield_Defense   = 0,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 0,
+        .evYield_SpDefense = 0,
+        .item1 = ITEM_NONE,
+        .item2 = ITEM_NONE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 70,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroup1 = EGG_GROUP_WATER_1,
+        .eggGroup2 = EGG_GROUP_WATER_2,
+        .abilities = {ABILITY_DAMP, ABILITY_NONE},
+        .safariZoneFleeRate = 0,
+        .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = FALSE,
     }
 };

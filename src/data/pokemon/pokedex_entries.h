@@ -4643,4 +4643,18 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 2,
     },
+	
+//new pokemon
+
+    [NATIONAL_DEX_PLAKOMASK] =
+    {
+        .categoryName = _("LUNGFISH"),
+        .height = 7,
+        .weight = 145,
+        .description = gPlakomaskPokedexText,
+        .pokemonScale = 581,
+        .pokemonOffset = -3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

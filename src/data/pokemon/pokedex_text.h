@@ -2319,3 +2319,11 @@ const u8 gDeoxysPokedexText[] = _(
     "extraterrestrial virus exposed to a laser\n"
     "beam. Its body is configured for superior\n"
     "agility and speed.");
+	
+//new pokemon
+
+const u8 gPlakomaskPokedexText[] = _(
+    "An adaptable fish that can breathe water or\n"
+	"air. It thrives in conditions that other\n"
+	"water POKéMON would find unlivable.\n"
+	"No one knows what is under its mask.");

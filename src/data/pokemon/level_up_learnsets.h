@@ -5615,3 +5615,19 @@ static const u16 sChimechoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_PSYCHIC),
     LEVEL_UP_END
 };
+
+//new pokemon
+
+static const u16 sPlakomaskLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+    LEVEL_UP_MOVE( 6, MOVE_BUBBLE),
+    LEVEL_UP_MOVE(11, MOVE_MUD_SPORT),
+    LEVEL_UP_MOVE(17, MOVE_BITE),
+    LEVEL_UP_MOVE(20, MOVE_SLAM),
+    LEVEL_UP_MOVE(26, MOVE_CURSE),
+    LEVEL_UP_MOVE(33, MOVE_BUBBLE_BEAM),
+    LEVEL_UP_MOVE(39, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_BOUNCE),
+    LEVEL_UP_END
+};

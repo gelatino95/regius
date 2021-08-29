@@ -2200,4 +2200,10 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x35,
         .y_offset = 13,
     },
+//new pokemon
+	[SPECIES_PLAKOMASK] =
+    {
+        .size = 0x46,
+        .y_offset = 11,
+    },
 };

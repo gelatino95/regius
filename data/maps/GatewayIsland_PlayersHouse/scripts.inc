@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_MUDKIP, 5, ITEM_NONE
+	givemon SPECIES_PLAKOMASK, 15, ITEM_NONE
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare
@@ -36,8 +36,8 @@ GatewayIsland_PlayersHouse_ItemBall_Text_0:
 	.string "how much you've grown.$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_1:
-	.string "{PLAYER} received MUDKIP!$"
+	.string "{PLAYER} received PLAKOMASK!$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_2:
 	.string "Would you like to give a\n"
-	.string "nickname to your MUDKIP?$"
+	.string "nickname to your PLAKOMASK?$"
