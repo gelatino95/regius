@@ -1,1 +1,19 @@
 mapscripts GatewayIsland_PlayersHouse_MapScripts {}
+
+script GatewayIsland_PlayersHouse_ItemBall {
+	lock
+	msgbox(format("Dear {PLAYER},\pToday is the day you earn\nyour first POKéMON.\pI'm sorry I couldn't be here\nfor your big day.\pPlease explore the islands with your\nnew partner, and come find me.\pI'm looking forward to seeing\nhow much you've grown."))
+    givemon(SPECIES_MUDKIP, 15, ITEM_NONE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("{PLAYER} received MUDKIP!")
+	waitfanfare
+    msgbox(format("Would you like to give a\nnickname to your MUDKIP?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+    	call(Common_EventScript_NameReceivedPartyMon)
+    }
+	setflag(FLAG_SYS_POKEMON_GET)
+	call(LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex)
+	removeobject(1)
+	release
+	end
+}
