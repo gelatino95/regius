@@ -888,7 +888,7 @@
 #define HOENN_DEX_MUDKIP        7
 #define HOENN_DEX_MARSHTOMP     8
 #define HOENN_DEX_SWAMPERT      9
-#define HOENN_DEX_POOCHYENA     10
+#define HOENN_DEX_PLAKOMASK     10 //change back to POOCHYENA
 #define HOENN_DEX_MIGHTYENA     11
 #define HOENN_DEX_ZIGZAGOON     12
 #define HOENN_DEX_LINOONE       13
@@ -1269,9 +1269,9 @@
 #define HOENN_DEX_HO_OH         385
 #define HOENN_DEX_CELEBI        386
 //new pokemon
-#define HOENN_DEX_PLAKOMASK     387
+#define HOENN_DEX_POOCHYENA     387 //change back to PLAKOMASK
 
-#define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_PLAKOMASK + 1)
+#define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_POOCHYENA + 1) //change back to PLAKOMASK
 #define HOENN_DEX_OLD_UNOWN_C   (HOENN_DEX_OLD_UNOWN_B + 1)
 #define HOENN_DEX_OLD_UNOWN_D   (HOENN_DEX_OLD_UNOWN_B + 2)
 #define HOENN_DEX_OLD_UNOWN_E   (HOENN_DEX_OLD_UNOWN_B + 3)

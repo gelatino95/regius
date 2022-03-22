@@ -2323,7 +2323,7 @@ const u8 gDeoxysPokedexText[] = _(
 //new pokemon
 
 const u8 gPlakomaskPokedexText[] = _(
-    "An adaptable fish that can breathe water or\n"
-	"air. It thrives in conditions that other\n"
-	"water POKéMON would find unlivable.\n"
-	"No one knows what is under its mask.");
+    "An adaptable fish that can breathe\n"
+	"water or air. It thrives in conditions\n"
+	"that other water POKéMON would find\n"
+	"unlivable.");
