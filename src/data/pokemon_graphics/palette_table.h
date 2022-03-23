@@ -443,4 +443,5 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
 //new pokemon
 	
     SPECIES_PAL(PLAKOMASK, gMonPalette_Plakomask),
+	SPECIES_PAL(DUNKETRA, gMonPalette_Dunketra),
 };

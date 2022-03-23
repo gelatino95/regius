@@ -416,4 +416,5 @@ const u8 *const gMonFootprintTable[] =
 //new pokemon
 	
     [SPECIES_PLAKOMASK] = gMonFootprint_Plakomask,
+	[SPECIES_DUNKETRA] = gMonFootprint_Dunketra,
 };

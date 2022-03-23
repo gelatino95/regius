@@ -2862,6 +2862,13 @@ extern const u32 gMonShinyPalette_Plakomask[];
 extern const u32 gMonStillFrontPic_Plakomask[];
 extern const u8 gMonIcon_Plakomask[];
 extern const u8 gMonFootprint_Plakomask[];
+extern const u32 gMonFrontPic_Dunketra[];
+extern const u32 gMonPalette_Dunketra[];
+extern const u32 gMonBackPic_Dunketra[];
+extern const u32 gMonShinyPalette_Dunketra[];
+extern const u32 gMonStillFrontPic_Dunketra[];
+extern const u8 gMonIcon_Dunketra[];
+extern const u8 gMonFootprint_Dunketra[];
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];
 extern const u32 gMonBackPic_CircledQuestionMark[];

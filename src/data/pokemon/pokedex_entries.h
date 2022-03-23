@@ -4657,4 +4657,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_DUNKETRA] =
+    {
+        .categoryName = _("TETRAPOD"),
+        .height = 15,
+        .weight = 833,
+        .description = gDunketraPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

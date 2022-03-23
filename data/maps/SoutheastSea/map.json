@@ -2,7 +2,7 @@
   "id": "MAP_SOUTHEAST_SEA",
   "name": "SoutheastSea",
   "layout": "LAYOUT_SOUTHEAST_SEA",
-  "music": "MUS_ROUTE119",
+  "music": "MUS_ROUTE120",
   "region_map_section": "MAPSEC_ROUTE_124",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

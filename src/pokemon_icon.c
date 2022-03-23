@@ -468,6 +468,7 @@ const u8 *const gMonIconTable[] =
     [SPECIES_UNOWN_QMARK] = gMonIcon_UnownQuestionMark,
 //new pokemon
     [SPECIES_PLAKOMASK] = gMonIcon_Plakomask,
+	[SPECIES_DUNKETRA] = gMonIcon_Dunketra,
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -914,6 +915,7 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_UNOWN_QMARK] = 0,
 //new pokemon
     [SPECIES_PLAKOMASK] = 2,
+	[SPECIES_DUNKETRA] = 2,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

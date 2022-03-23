@@ -445,4 +445,5 @@ const struct CompressedSpriteSheet gMonStillFrontPicTable[] =
     SPECIES_SPRITE(UNOWN_QMARK,   gMonStillFrontPic_UnownQuestionMark),
 //new pokemon
 	SPECIES_SPRITE(PLAKOMASK,     gMonStillFrontPic_Plakomask),
+	SPECIES_SPRITE(DUNKETRA,      gMonStillFrontPic_Dunketra),
 };

@@ -1943,6 +1943,10 @@ Cry_Chimecho::
 	.align 2
 Cry_Plakomask::
 	.incbin "sound/direct_sound_samples/cries/plakomask.bin"
+	
+	.align 2
+Cry_Dunketra::
+	.incbin "sound/direct_sound_samples/cries/dunketra.bin"
 
 //end new pokemon
 

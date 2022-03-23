@@ -414,4 +414,5 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_CHIMECHO] = sChimechoLevelUpLearnset,
 //new pokemon
     [SPECIES_PLAKOMASK] = sPlakomaskLevelUpLearnset,
+	[SPECIES_DUNKETRA] = sDunketraLevelUpLearnset,
 };

@@ -413,4 +413,5 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_CHIMECHO] = _("CHIMECHO"),
 //new pokemon
     [SPECIES_PLAKOMASK] = _("PLAKOMASK"),
+	[SPECIES_DUNKETRA] = _("DUNKETRA"),
 };

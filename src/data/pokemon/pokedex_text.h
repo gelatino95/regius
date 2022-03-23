@@ -2327,3 +2327,9 @@ const u8 gPlakomaskPokedexText[] = _(
 	"water or air. It thrives in conditions\n"
 	"that other water POKéMON would find\n"
 	"unlivable.");
+	
+const u8 gDunketraPokedexText[] = _(
+    "A fully terrestrial POKéMON which makes\n"
+	"its own tools. It crafts weapons and\n"
+	"armor to use in honorable combat with\n"
+	"other members of its species.");

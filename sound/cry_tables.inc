@@ -390,6 +390,7 @@ gCryTable::
 	cry Cry_Chimecho 
 //new pokemon
 	cry Cry_Plakomask 
+	cry Cry_Dunketra 
 
 
 	.align 2
@@ -784,3 +785,4 @@ gCryTable2::
 	cry2 Cry_Chimecho 
 //new pokemon
 	cry2 Cry_Plakomask 
+	cry2 Cry_Dunketra 

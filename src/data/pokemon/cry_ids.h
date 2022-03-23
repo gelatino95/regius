@@ -137,4 +137,5 @@ const u16 gSpeciesIdToCryId[] =
     [SPECIES_CHIMECHO - 277] = 387,
 //new pokemon
     [SPECIES_PLAKOMASK - 277] = 388,
+	[SPECIES_DUNKETRA - 277] = 389,
 };

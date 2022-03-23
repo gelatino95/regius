@@ -2831,3 +2831,10 @@ const u32 gMonBackPic_Plakomask[] = INCBIN_U32("graphics/pokemon/plakomask/back.
 const u32 gMonShinyPalette_Plakomask[] = INCBIN_U32("graphics/pokemon/plakomask/shiny.gbapal.lz");
 const u8 gMonIcon_Plakomask[] = INCBIN_U8("graphics/pokemon/plakomask/icon.4bpp");
 const u8 gMonFootprint_Plakomask[] = INCBIN_U8("graphics/pokemon/plakomask/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dunketra[] = INCBIN_U32("graphics/pokemon/dunketra/front.4bpp.lz");
+const u32 gMonPalette_Dunketra[] = INCBIN_U32("graphics/pokemon/dunketra/normal.gbapal.lz");
+const u32 gMonBackPic_Dunketra[] = INCBIN_U32("graphics/pokemon/dunketra/back.4bpp.lz");
+const u32 gMonShinyPalette_Dunketra[] = INCBIN_U32("graphics/pokemon/dunketra/shiny.gbapal.lz");
+const u8 gMonIcon_Dunketra[] = INCBIN_U8("graphics/pokemon/dunketra/icon.4bpp");
+const u8 gMonFootprint_Dunketra[] = INCBIN_U8("graphics/pokemon/dunketra/footprint.1bpp");
