@@ -2211,5 +2211,15 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 6,
     },
+	[SPECIES_DUNKEEP] =
+    {
+        .size = 0x87,
+        .y_offset = 6,
+    },
+	[SPECIES_DUNKASMA] =
+    {
+        .size = 0x68,
+        .y_offset = 7,
+    },
 };
 

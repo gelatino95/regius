@@ -2204,11 +2204,21 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_PLAKOMASK] =
     {
         .size = 0x46,
-        .y_offset = 0,
+        .y_offset = 6,
     },
 	[SPECIES_DUNKETRA] =
     {
         .size = 0x88,
         .y_offset = 0,
     },
+	[SPECIES_DUNKEEP] =
+    {
+        .size = 0x88,
+        .y_offset = 0,
+    },
+	[SPECIES_DUNKASMA] =
+    {
+        .size = 0x78,
+        .y_offset = 3,
+	},
 };

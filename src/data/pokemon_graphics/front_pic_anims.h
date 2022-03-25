@@ -4835,6 +4835,24 @@ static const union AnimCmd sAnim_DUNKETRA_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_DUNKEEP_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 44),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_DUNKASMA_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -6989,6 +7007,16 @@ static const union AnimCmd *const sAnims_DUNKETRA[] ={
     sAnim_DUNKETRA_1,
 };
 
+static const union AnimCmd *const sAnims_DUNKEEP[] ={
+    sAnim_GeneralFrame0,
+    sAnim_DUNKEEP_1,
+};
+
+static const union AnimCmd *const sAnims_DUNKASMA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_DUNKASMA_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7436,8 +7464,11 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(UNOWN_Z),
     ANIM_CMD(UNOWN_EMARK),
     ANIM_CMD(UNOWN_QMARK),
+	//new pokemon
 	ANIM_CMD(PLAKOMASK),
 	ANIM_CMD(DUNKETRA),
+	ANIM_CMD(DUNKEEP),
+	ANIM_CMD(DUNKASMA),
 };
 
 #undef ANIM_CMD

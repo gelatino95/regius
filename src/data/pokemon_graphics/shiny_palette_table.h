@@ -443,4 +443,6 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
 //new pokemon
     SPECIES_SHINY_PAL(PLAKOMASK, gMonShinyPalette_Plakomask),
 	SPECIES_SHINY_PAL(DUNKETRA, gMonShinyPalette_Dunketra),
+	SPECIES_SHINY_PAL(DUNKEEP, gMonShinyPalette_Dunkeep),
+	SPECIES_SHINY_PAL(DUNKASMA, gMonShinyPalette_Dunkasma),
 };

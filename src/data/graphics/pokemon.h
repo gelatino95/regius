@@ -2838,3 +2838,17 @@ const u32 gMonBackPic_Dunketra[] = INCBIN_U32("graphics/pokemon/dunketra/back.4b
 const u32 gMonShinyPalette_Dunketra[] = INCBIN_U32("graphics/pokemon/dunketra/shiny.gbapal.lz");
 const u8 gMonIcon_Dunketra[] = INCBIN_U8("graphics/pokemon/dunketra/icon.4bpp");
 const u8 gMonFootprint_Dunketra[] = INCBIN_U8("graphics/pokemon/dunketra/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dunkeep[] = INCBIN_U32("graphics/pokemon/dunkeep/front.4bpp.lz");
+const u32 gMonPalette_Dunkeep[] = INCBIN_U32("graphics/pokemon/dunkeep/normal.gbapal.lz");
+const u32 gMonBackPic_Dunkeep[] = INCBIN_U32("graphics/pokemon/dunkeep/back.4bpp.lz");
+const u32 gMonShinyPalette_Dunkeep[] = INCBIN_U32("graphics/pokemon/dunkeep/shiny.gbapal.lz");
+const u8 gMonIcon_Dunkeep[] = INCBIN_U8("graphics/pokemon/dunkeep/icon.4bpp");
+const u8 gMonFootprint_Dunkeep[] = INCBIN_U8("graphics/pokemon/dunkeep/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dunkasma[] = INCBIN_U32("graphics/pokemon/dunkasma/front.4bpp.lz");
+const u32 gMonPalette_Dunkasma[] = INCBIN_U32("graphics/pokemon/dunkasma/normal.gbapal.lz");
+const u32 gMonBackPic_Dunkasma[] = INCBIN_U32("graphics/pokemon/dunkasma/back.4bpp.lz");
+const u32 gMonShinyPalette_Dunkasma[] = INCBIN_U32("graphics/pokemon/dunkasma/shiny.gbapal.lz");
+const u8 gMonIcon_Dunkasma[] = INCBIN_U8("graphics/pokemon/dunkasma/icon.4bpp");
+const u8 gMonFootprint_Dunkasma[] = INCBIN_U8("graphics/pokemon/dunkasma/footprint.1bpp");

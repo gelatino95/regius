@@ -414,4 +414,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
 //new pokemon
     [SPECIES_PLAKOMASK] = _("PLAKOMASK"),
 	[SPECIES_DUNKETRA] = _("DUNKETRA"),
+	[SPECIES_DUNKEEP] = _("DUNKEEP"),
+	[SPECIES_DUNKASMA] = _("DUNKASMA"),
 };

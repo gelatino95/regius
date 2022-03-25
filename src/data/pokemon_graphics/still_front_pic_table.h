@@ -446,4 +446,6 @@ const struct CompressedSpriteSheet gMonStillFrontPicTable[] =
 //new pokemon
 	SPECIES_SPRITE(PLAKOMASK,     gMonStillFrontPic_Plakomask),
 	SPECIES_SPRITE(DUNKETRA,      gMonStillFrontPic_Dunketra),
+	SPECIES_SPRITE(DUNKEEP,       gMonStillFrontPic_Dunkeep),
+	SPECIES_SPRITE(DUNKASMA,      gMonStillFrontPic_Dunkasma),
 };

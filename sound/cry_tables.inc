@@ -391,6 +391,8 @@ gCryTable::
 //new pokemon
 	cry Cry_Plakomask 
 	cry Cry_Dunketra 
+	cry Cry_Dunkeep 
+	cry Cry_Dunkasma 
 
 
 	.align 2
@@ -786,3 +788,5 @@ gCryTable2::
 //new pokemon
 	cry2 Cry_Plakomask 
 	cry2 Cry_Dunketra 
+	cry2 Cry_Dunkeep 
+	cry2 Cry_Dunkasma

@@ -417,4 +417,6 @@ const u8 *const gMonFootprintTable[] =
 	
     [SPECIES_PLAKOMASK] = gMonFootprint_Plakomask,
 	[SPECIES_DUNKETRA] = gMonFootprint_Dunketra,
+	[SPECIES_DUNKEEP] = gMonFootprint_Dunkeep,
+	[SPECIES_DUNKASMA] = gMonFootprint_Dunkasma,
 };

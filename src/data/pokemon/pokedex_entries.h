@@ -4669,4 +4669,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_DUNKEEP] =
+    {
+        .categoryName = _("DEEP SEA"),
+        .height = 17,
+        .weight = 870,
+        .description = gDunkeepPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 317,
+        .trainerOffset = 3,
+    },
+	
+	[NATIONAL_DEX_DUNKASMA] =
+    {
+        .categoryName = _("GLOWING"),
+        .height = 17,
+        .weight = 251,
+        .description = gDunkasmaPokedexText,
+        .pokemonScale = 307,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

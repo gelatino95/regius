@@ -469,6 +469,8 @@ const u8 *const gMonIconTable[] =
 //new pokemon
     [SPECIES_PLAKOMASK] = gMonIcon_Plakomask,
 	[SPECIES_DUNKETRA] = gMonIcon_Dunketra,
+	[SPECIES_DUNKEEP] = gMonIcon_Dunkeep,
+	[SPECIES_DUNKASMA] = gMonIcon_Dunkasma,
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -916,6 +918,8 @@ const u8 gMonIconPaletteIndices[] =
 //new pokemon
     [SPECIES_PLAKOMASK] = 2,
 	[SPECIES_DUNKETRA] = 2,
+	[SPECIES_DUNKEEP] = 2,
+	[SPECIES_DUNKASMA] = 2,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

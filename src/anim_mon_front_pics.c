@@ -425,6 +425,7 @@ const u32 gMonFrontPic_UnownQuestionMark[] = INCBIN_U32("graphics/pokemon/unown/
 
 //new pokemon
 
-
 const u32 gMonFrontPic_Plakomask[] = INCBIN_U32("graphics/pokemon/plakomask/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Dunketra[] = INCBIN_U32("graphics/pokemon/dunketra/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Dunkeep[] = INCBIN_U32("graphics/pokemon/dunkeep/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Dunkasma[] = INCBIN_U32("graphics/pokemon/dunkasma/anim_front.4bpp.lz");

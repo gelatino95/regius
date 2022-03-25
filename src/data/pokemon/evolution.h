@@ -186,5 +186,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_METANG]     = {{EVO_LEVEL, 45, SPECIES_METAGROSS}},
 	
 	//new pokemon
-	[SPECIES_PLAKOMASK]    = {{EVO_LEVEL_ATK_LT_DEF, 16, SPECIES_DUNKETRA}},
+	[SPECIES_PLAKOMASK]  = {{EVO_LEVEL_ATK_LT_DEF, 30, SPECIES_DUNKETRA},
+                            {EVO_LEVEL_ATK_GT_DEF, 30, SPECIES_DUNKEEP},
+                            {EVO_LEVEL_ATK_EQ_DEF, 30, SPECIES_DUNKASMA}},
 };

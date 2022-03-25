@@ -509,6 +509,8 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 //new pokemon
     SPECIES_TO_HOENN(PLAKOMASK),
 	SPECIES_TO_HOENN(DUNKETRA),
+	SPECIES_TO_HOENN(DUNKEEP),
+	SPECIES_TO_HOENN(DUNKASMA),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -927,6 +929,8 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 //new pokemon
     SPECIES_TO_NATIONAL(PLAKOMASK),
 	SPECIES_TO_NATIONAL(DUNKETRA),
+	SPECIES_TO_NATIONAL(DUNKEEP),
+	SPECIES_TO_NATIONAL(DUNKASMA),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -943,6 +947,8 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 //new pokemon
     HOENN_TO_NATIONAL(PLAKOMASK),
 	HOENN_TO_NATIONAL(DUNKETRA),
+	HOENN_TO_NATIONAL(DUNKEEP),
+	HOENN_TO_NATIONAL(DUNKASMA),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1787,8 +1793,11 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_JIRACHI - 1]     = ANIM_SWING_CONVEX,
     [SPECIES_DEOXYS - 1]      = ANIM_H_PIVOT,
     [SPECIES_CHIMECHO - 1]    = ANIM_H_SLIDE_WOBBLE,
-	[SPECIES_PLAKOMASK - 1]    = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
+	//new pokemon
+	[SPECIES_PLAKOMASK - 1]   = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
 	[SPECIES_DUNKETRA - 1]    = ANIM_V_JUMPS_BIG,
+	[SPECIES_DUNKEEP - 1]     = ANIM_V_SHAKE,
+	[SPECIES_DUNKASMA - 1]     = ANIM_GLOW_BLACK,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

@@ -2333,3 +2333,15 @@ const u8 gDunketraPokedexText[] = _(
 	"its own tools. It crafts weapons and\n"
 	"armor to use in honorable combat with\n"
 	"other members of its species.");
+	
+	const u8 gDunkeepPokedexText[] = _(
+    "It lurks in the deep ocean, tirelessly\n"
+	"swimming and searching for food.\n"
+	"Its armored mask protects it from\n"
+	"attacks, so it always faces its foe.");
+	
+const u8 gDunkasmaPokedexText[] = _(
+    "This mysterious POKéMON dwells near\n"
+	"shipwrecks. Its glowing spots are\n"
+	"visible from the surface at night.\n"
+	"Sailors consider it an ominous sight.");

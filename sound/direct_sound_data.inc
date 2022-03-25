@@ -1947,6 +1947,14 @@ Cry_Plakomask::
 	.align 2
 Cry_Dunketra::
 	.incbin "sound/direct_sound_samples/cries/dunketra.bin"
+	
+	.align 2
+Cry_Dunkeep::
+	.incbin "sound/direct_sound_samples/cries/dunkeep.bin"
+	
+	.align 2
+Cry_Dunkasma::
+	.incbin "sound/direct_sound_samples/cries/dunkasma.bin"
 
 //end new pokemon
 

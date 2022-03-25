@@ -440,6 +440,9 @@ const struct CompressedSpriteSheet gMonFrontPicTable[] =
     SPECIES_SPRITE(UNOWN_Z, gMonFrontPic_UnownZ),
     SPECIES_SPRITE(UNOWN_EMARK, gMonFrontPic_UnownExclamationMark),
     SPECIES_SPRITE(UNOWN_QMARK, gMonFrontPic_UnownQuestionMark),
+	//new pokemon
     SPECIES_SPRITE(PLAKOMASK, gMonFrontPic_Plakomask),
     SPECIES_SPRITE(DUNKETRA, gMonFrontPic_Dunketra),
+	SPECIES_SPRITE(DUNKEEP, gMonFrontPic_Dunkeep),
+    SPECIES_SPRITE(DUNKASMA, gMonFrontPic_Dunkasma),
 };

@@ -418,8 +418,10 @@
 //new pokemon
 #define SPECIES_PLAKOMASK 412
 #define SPECIES_DUNKETRA 413
+#define SPECIES_DUNKEEP 414
+#define SPECIES_DUNKASMA 415
 //end new pokemon
-#define SPECIES_EGG 414
+#define SPECIES_EGG 416
 
 #define NUM_SPECIES SPECIES_EGG
 
@@ -848,9 +850,11 @@
 #define NATIONAL_DEX_DEOXYS         386
 //new pokemon
 #define NATIONAL_DEX_PLAKOMASK      387
-#define NATIONAL_DEX_DUNKETRA      388
+#define NATIONAL_DEX_DUNKETRA       388
+#define NATIONAL_DEX_DUNKEEP        389
+#define NATIONAL_DEX_DUNKASMA       390
 
-#define NATIONAL_DEX_COUNT          NATIONAL_DEX_DUNKETRA
+#define NATIONAL_DEX_COUNT          NATIONAL_DEX_DUNKASMA
 
 #define NATIONAL_DEX_OLD_UNOWN_B    (NATIONAL_DEX_COUNT + 1)
 #define NATIONAL_DEX_OLD_UNOWN_C    (NATIONAL_DEX_OLD_UNOWN_B + 1)
@@ -890,8 +894,8 @@
 #define HOENN_DEX_MUDKIP        7
 #define HOENN_DEX_MARSHTOMP     8
 #define HOENN_DEX_SWAMPERT      9
-#define HOENN_DEX_DUNKETRA      10 //change back to POOCHYENA
-#define HOENN_DEX_MIGHTYENA     11
+#define HOENN_DEX_DUNKEEP      10 //change back to POOCHYENA
+#define HOENN_DEX_DUNKASMA     11 //change back to MIGHTYENA
 #define HOENN_DEX_ZIGZAGOON     12
 #define HOENN_DEX_LINOONE       13
 #define HOENN_DEX_WURMPLE       14
@@ -1272,7 +1276,9 @@
 #define HOENN_DEX_CELEBI        386
 //new pokemon
 #define HOENN_DEX_PLAKOMASK     387
-#define HOENN_DEX_POOCHYENA     388 //change back to final new pokemon
+#define HOENN_DEX_DUNKETRA      388
+#define HOENN_DEX_MIGHTYENA     389
+#define HOENN_DEX_POOCHYENA     390 //change back to final new pokemon
 
 #define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_POOCHYENA + 1) //change back to final new pokemon
 #define HOENN_DEX_OLD_UNOWN_C   (HOENN_DEX_OLD_UNOWN_B + 1)

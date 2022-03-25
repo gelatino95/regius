@@ -443,4 +443,6 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
 //new pokemon
     SPECIES_SPRITE(PLAKOMASK, gMonBackPic_Plakomask),
 	SPECIES_SPRITE(DUNKETRA, gMonBackPic_Dunketra),
+	SPECIES_SPRITE(DUNKEEP, gMonBackPic_Dunkeep),
+	SPECIES_SPRITE(DUNKASMA, gMonBackPic_Dunkasma),
 };
