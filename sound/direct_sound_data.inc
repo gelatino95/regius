@@ -1955,6 +1955,30 @@ Cry_Dunkeep::
 	.align 2
 Cry_Dunkasma::
 	.incbin "sound/direct_sound_samples/cries/dunkasma.bin"
+	
+	.align 2
+Cry_Hatchick::
+	.incbin "sound/direct_sound_samples/cries/hatchick.bin"
+	
+	.align 2
+Cry_Chicklet::
+	.incbin "sound/direct_sound_samples/cries/chicklet.bin"
+	
+	.align 2
+Cry_Cockatrix::
+	.incbin "sound/direct_sound_samples/cries/cockatrix.bin"
+	
+	.align 2
+Cry_Litturch::
+	.incbin "sound/direct_sound_samples/cries/litturch.bin"
+	
+	.align 2
+Cry_Pelurchin::
+	.incbin "sound/direct_sound_samples/cries/pelurchin.bin"
+	
+	.align 2
+Cry_Benthine::
+	.incbin "sound/direct_sound_samples/cries/benthine.bin"
 
 //end new pokemon
 

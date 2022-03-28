@@ -2862,6 +2862,7 @@ extern const u32 gMonShinyPalette_Plakomask[];
 extern const u32 gMonStillFrontPic_Plakomask[];
 extern const u8 gMonIcon_Plakomask[];
 extern const u8 gMonFootprint_Plakomask[];
+
 extern const u32 gMonFrontPic_Dunketra[];
 extern const u32 gMonPalette_Dunketra[];
 extern const u32 gMonBackPic_Dunketra[];
@@ -2869,6 +2870,7 @@ extern const u32 gMonShinyPalette_Dunketra[];
 extern const u32 gMonStillFrontPic_Dunketra[];
 extern const u8 gMonIcon_Dunketra[];
 extern const u8 gMonFootprint_Dunketra[];
+
 extern const u32 gMonFrontPic_Dunkeep[];
 extern const u32 gMonPalette_Dunkeep[];
 extern const u32 gMonBackPic_Dunkeep[];
@@ -2876,6 +2878,7 @@ extern const u32 gMonShinyPalette_Dunkeep[];
 extern const u32 gMonStillFrontPic_Dunkeep[];
 extern const u8 gMonIcon_Dunkeep[];
 extern const u8 gMonFootprint_Dunkeep[];
+
 extern const u32 gMonFrontPic_Dunkasma[];
 extern const u32 gMonPalette_Dunkasma[];
 extern const u32 gMonBackPic_Dunkasma[];
@@ -2883,6 +2886,56 @@ extern const u32 gMonShinyPalette_Dunkasma[];
 extern const u32 gMonStillFrontPic_Dunkasma[];
 extern const u8 gMonIcon_Dunkasma[];
 extern const u8 gMonFootprint_Dunkasma[];
+
+extern const u32 gMonFrontPic_Hatchick[];
+extern const u32 gMonPalette_Hatchick[];
+extern const u32 gMonBackPic_Hatchick[];
+extern const u32 gMonShinyPalette_Hatchick[];
+extern const u32 gMonStillFrontPic_Hatchick[];
+extern const u8 gMonIcon_Hatchick[];
+extern const u8 gMonFootprint_Hatchick[];
+
+extern const u32 gMonFrontPic_Chicklet[];
+extern const u32 gMonPalette_Chicklet[];
+extern const u32 gMonBackPic_Chicklet[];
+extern const u32 gMonShinyPalette_Chicklet[];
+extern const u32 gMonStillFrontPic_Chicklet[];
+extern const u8 gMonIcon_Chicklet[];
+extern const u8 gMonFootprint_Chicklet[];
+
+extern const u32 gMonFrontPic_Cockatrix[];
+extern const u32 gMonPalette_Cockatrix[];
+extern const u32 gMonBackPic_Cockatrix[];
+extern const u32 gMonShinyPalette_Cockatrix[];
+extern const u32 gMonStillFrontPic_Cockatrix[];
+extern const u8 gMonIcon_Cockatrix[];
+extern const u8 gMonFootprint_Cockatrix[];
+
+extern const u32 gMonFrontPic_Litturch[];
+extern const u32 gMonPalette_Litturch[];
+extern const u32 gMonBackPic_Litturch[];
+extern const u32 gMonShinyPalette_Litturch[];
+extern const u32 gMonStillFrontPic_Litturch[];
+extern const u8 gMonIcon_Litturch[];
+extern const u8 gMonFootprint_Litturch[];
+
+extern const u32 gMonFrontPic_Pelurchin[];
+extern const u32 gMonPalette_Pelurchin[];
+extern const u32 gMonBackPic_Pelurchin[];
+extern const u32 gMonShinyPalette_Pelurchin[];
+extern const u32 gMonStillFrontPic_Pelurchin[];
+extern const u8 gMonIcon_Pelurchin[];
+extern const u8 gMonFootprint_Pelurchin[];
+
+extern const u32 gMonFrontPic_Benthine[];
+extern const u32 gMonPalette_Benthine[];
+extern const u32 gMonBackPic_Benthine[];
+extern const u32 gMonShinyPalette_Benthine[];
+extern const u32 gMonStillFrontPic_Benthine[];
+extern const u8 gMonIcon_Benthine[];
+extern const u8 gMonFootprint_Benthine[];
+
+//end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];
 extern const u32 gMonBackPic_CircledQuestionMark[];

@@ -2334,7 +2334,7 @@ const u8 gDunketraPokedexText[] = _(
 	"armor to use in honorable combat with\n"
 	"other members of its species.");
 	
-	const u8 gDunkeepPokedexText[] = _(
+const u8 gDunkeepPokedexText[] = _(
     "It lurks in the deep ocean, tirelessly\n"
 	"swimming and searching for food.\n"
 	"Its armored mask protects it from\n"
@@ -2345,3 +2345,39 @@ const u8 gDunkasmaPokedexText[] = _(
 	"shipwrecks. Its glowing spots are\n"
 	"visible from the surface at night.\n"
 	"Sailors consider it an ominous sight.");
+	
+const u8 gHatchickPokedexText[] = _(
+    "It has a particularly durable eggshell,\n"
+	"which it keeps for protection after it\n"
+	"hatches. This shy POKéMON can close up\n"
+	"its shell completely if threatened.");
+	
+const u8 gChickletPokedexText[] = _(
+    "Only a small part of its eggshell remains\n"
+	"after evolving, which protects CHICKLET\n"
+	"from damage as it headbutts its rivals.\n"
+	"It enjoys chasing after small prey.");
+	
+const u8 gCockatrixPokedexText[] = _(
+    "The combination of avian and reptilian\n"
+	"features in COCKATRIX inspired legends\n"
+	"about its magical abilities. Adventurers\n"
+	"are warned to avoid its fearsome gaze.");
+	
+	const u8 gLitturchPokedexText[] = _(
+    "A weak POKéMON that lives in shallow\n"
+	"waters. It browses the ocean floor\n"
+	"for bits of food. When frightened, it\n"
+	"burrows into sand to hide.");
+	
+const u8 gPelurchinPokedexText[] = _(
+    "It drifts aimlessly in the open ocean,\n"
+	"letting the current carry it great\n"
+	"distances. It is protected by a durable\n"
+	"shell, and it can bite in self-defense.");
+	
+const u8 gBenthinePokedexText[] = _(
+    "Wild BENTHINE are firmly chained to the\n"
+	"floor of deep ocean trenches. They are\n"
+	"opportunists that will viciously attack\n"
+	"anything that comes within reach.");

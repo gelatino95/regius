@@ -417,4 +417,10 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_DUNKETRA] = sDunketraLevelUpLearnset,
 	[SPECIES_DUNKEEP] = sDunkeepLevelUpLearnset,
 	[SPECIES_DUNKASMA] = sDunkasmaLevelUpLearnset,
+	[SPECIES_HATCHICK] = sHatchickLevelUpLearnset,
+	[SPECIES_CHICKLET] = sChickletLevelUpLearnset,
+	[SPECIES_COCKATRIX] = sCockatrixLevelUpLearnset,
+	[SPECIES_LITTURCH] = sLitturchLevelUpLearnset,
+	[SPECIES_PELURCHIN] = sPelurchinLevelUpLearnset,
+	[SPECIES_BENTHINE] = sBenthineLevelUpLearnset,
 };

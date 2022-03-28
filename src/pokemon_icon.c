@@ -471,6 +471,13 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_DUNKETRA] = gMonIcon_Dunketra,
 	[SPECIES_DUNKEEP] = gMonIcon_Dunkeep,
 	[SPECIES_DUNKASMA] = gMonIcon_Dunkasma,
+	[SPECIES_HATCHICK] = gMonIcon_Hatchick,
+	[SPECIES_CHICKLET] = gMonIcon_Chicklet,
+	[SPECIES_COCKATRIX] = gMonIcon_Cockatrix,
+	[SPECIES_LITTURCH] = gMonIcon_Litturch,
+	[SPECIES_PELURCHIN] = gMonIcon_Pelurchin,
+	[SPECIES_BENTHINE] = gMonIcon_Benthine,
+	
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -920,6 +927,12 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_DUNKETRA] = 2,
 	[SPECIES_DUNKEEP] = 2,
 	[SPECIES_DUNKASMA] = 2,
+	[SPECIES_HATCHICK] = 0,
+	[SPECIES_CHICKLET] = 0,
+	[SPECIES_COCKATRIX] = 1,
+	[SPECIES_LITTURCH] = 2,
+	[SPECIES_PELURCHIN] = 2,
+	[SPECIES_BENTHINE] = 2,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

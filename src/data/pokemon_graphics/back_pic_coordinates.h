@@ -2221,5 +2221,35 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x68,
         .y_offset = 7,
     },
+	[SPECIES_HATCHICK] =
+    {
+        .size = 0x65,
+        .y_offset = 10,
+    },
+    [SPECIES_CHICKLET] =
+    {
+        .size = 0x66,
+        .y_offset = 5,
+    },
+    [SPECIES_COCKATRIX] =
+    {
+        .size = 0x87,
+        .y_offset = 9,
+    },
+	[SPECIES_LITTURCH] =
+    {
+        .size = 0x65,
+        .y_offset = 20,
+    },
+    [SPECIES_PELURCHIN] =
+    {
+        .size = 0x66,
+        .y_offset = 10,
+    },
+    [SPECIES_BENTHINE] =
+    {
+        .size = 0x87,
+        .y_offset = 10,
+    },
 };
 

@@ -419,4 +419,10 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_DUNKETRA] = gMonFootprint_Dunketra,
 	[SPECIES_DUNKEEP] = gMonFootprint_Dunkeep,
 	[SPECIES_DUNKASMA] = gMonFootprint_Dunkasma,
+	[SPECIES_HATCHICK] = gMonFootprint_Hatchick,
+	[SPECIES_CHICKLET] = gMonFootprint_Chicklet,
+	[SPECIES_COCKATRIX] = gMonFootprint_Cockatrix,
+	[SPECIES_LITTURCH] = gMonFootprint_Litturch,
+	[SPECIES_PELURCHIN] = gMonFootprint_Pelurchin,
+	[SPECIES_BENTHINE] = gMonFootprint_Benthine,
 };

@@ -4845,11 +4845,78 @@ static const union AnimCmd sAnim_DUNKEEP_1[] =
 
 static const union AnimCmd sAnim_DUNKASMA_1[] =
 {
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_HATCHICK_1[] =
+{
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CHICKLET_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_COCKATRIX_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_LITTURCH_1[] =
+{
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 33),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_END,
+};
+	
+static const union AnimCmd sAnim_PELURCHIN_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_BENTHINE_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 
@@ -7017,6 +7084,36 @@ static const union AnimCmd *const sAnims_DUNKASMA[] ={
     sAnim_DUNKASMA_1,
 };
 
+static const union AnimCmd *const sAnims_HATCHICK[] ={
+    sAnim_GeneralFrame0,
+    sAnim_HATCHICK_1,
+};
+
+static const union AnimCmd *const sAnims_CHICKLET[] ={
+    sAnim_GeneralFrame0,
+    sAnim_CHICKLET_1,
+};
+
+static const union AnimCmd *const sAnims_COCKATRIX[] ={
+    sAnim_GeneralFrame0,
+    sAnim_COCKATRIX_1,
+};
+
+static const union AnimCmd *const sAnims_LITTURCH[] ={
+    sAnim_GeneralFrame0,
+    sAnim_LITTURCH_1,
+};
+
+static const union AnimCmd *const sAnims_PELURCHIN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_PELURCHIN_1,
+};
+
+static const union AnimCmd *const sAnims_BENTHINE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_BENTHINE_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7469,6 +7566,12 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(DUNKETRA),
 	ANIM_CMD(DUNKEEP),
 	ANIM_CMD(DUNKASMA),
+	ANIM_CMD(HATCHICK),
+	ANIM_CMD(CHICKLET),
+	ANIM_CMD(COCKATRIX),
+	ANIM_CMD(LITTURCH),
+	ANIM_CMD(PELURCHIN),
+	ANIM_CMD(BENTHINE),
 };
 
 #undef ANIM_CMD

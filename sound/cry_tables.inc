@@ -393,6 +393,12 @@ gCryTable::
 	cry Cry_Dunketra 
 	cry Cry_Dunkeep 
 	cry Cry_Dunkasma 
+	cry Cry_Hatchick 
+	cry Cry_Chicklet 
+	cry Cry_Cockatrix 
+	cry Cry_Litturch 
+	cry Cry_Pelurchin 
+	cry Cry_Benthine 
 
 
 	.align 2
@@ -789,4 +795,10 @@ gCryTable2::
 	cry2 Cry_Plakomask 
 	cry2 Cry_Dunketra 
 	cry2 Cry_Dunkeep 
-	cry2 Cry_Dunkasma
+	cry2 Cry_Dunkasma 
+	cry2 Cry_Hatchick 
+	cry2 Cry_Chicklet 
+	cry2 Cry_Cockatrix 
+	cry2 Cry_Litturch 
+	cry2 Cry_Pelurchin 
+	cry2 Cry_Benthine 

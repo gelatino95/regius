@@ -1315,6 +1315,21 @@ const u16 gEggMoves[] = {
               MOVE_SCARY_FACE,
 			  MOVE_FOCUS_ENERGY,
 			  MOVE_SWORDS_DANCE),
+			  
+	egg_moves(HATCHICK,
+              MOVE_RAGE,
+              MOVE_AGILITY,
+              MOVE_ENDEAVOR,
+              MOVE_THRASH,
+			  MOVE_FAKE_OUT,
+			  MOVE_TWISTER,
+			  MOVE_SCREECH),
+			  
+	egg_moves(LITTURCH,
+              MOVE_CONFUSE_RAY,
+              MOVE_AMNESIA,
+              MOVE_SPIKE_CANNON,
+              MOVE_RECOVER),
 
     EGG_MOVES_TERMINATOR
 };

@@ -4693,4 +4693,76 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_HATCHICK] =
+    {
+        .categoryName = _("CHICK"),
+        .height = 4,
+        .weight = 45,
+        .description = gHatchickPokedexText,
+        .pokemonScale = 457,
+        .pokemonOffset = -3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_CHICKLET] =
+    {
+        .categoryName = _("CHICKEN"),
+        .height = 7,
+        .weight = 136,
+        .description = gChickletPokedexText,
+        .pokemonScale = 330,
+        .pokemonOffset = 2,
+        .trainerScale = 293,
+        .trainerOffset = 2,
+    },
+	
+	[NATIONAL_DEX_COCKATRIX] =
+    {
+        .categoryName = _("DRAGON"),
+        .height = 15,
+        .weight = 682,
+        .description = gCockatrixPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_LITTURCH] =
+    {
+        .categoryName = _("BEACH"),
+        .height = 2,
+        .weight = 15,
+        .description = gLitturchPokedexText,
+        .pokemonScale = 833,
+        .pokemonOffset = 25,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_PELURCHIN] =
+    {
+        .categoryName = _("DRIFTING"),
+        .height = 10,
+        .weight = 295,
+        .description = gPelurchinPokedexText,
+        .pokemonScale = 320,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_BENTHINE] =
+    {
+        .categoryName = _("CHAINED"),
+        .height = 13,
+        .weight = 684,
+        .description = gBenthinePokedexText,
+        .pokemonScale = 280,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };
