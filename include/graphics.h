@@ -2935,6 +2935,38 @@ extern const u32 gMonStillFrontPic_Benthine[];
 extern const u8 gMonIcon_Benthine[];
 extern const u8 gMonFootprint_Benthine[];
 
+extern const u32 gMonFrontPic_Kelpent[];
+extern const u32 gMonPalette_Kelpent[];
+extern const u32 gMonBackPic_Kelpent[];
+extern const u32 gMonShinyPalette_Kelpent[];
+extern const u32 gMonStillFrontPic_Kelpent[];
+extern const u8 gMonIcon_Kelpent[];
+extern const u8 gMonFootprint_Kelpent[];
+
+extern const u32 gMonFrontPic_Algorest[];
+extern const u32 gMonPalette_Algorest[];
+extern const u32 gMonBackPic_Algorest[];
+extern const u32 gMonShinyPalette_Algorest[];
+extern const u32 gMonStillFrontPic_Algorest[];
+extern const u8 gMonIcon_Algorest[];
+extern const u8 gMonFootprint_Algorest[];
+
+extern const u32 gMonFrontPic_Radulin[];
+extern const u32 gMonPalette_Radulin[];
+extern const u32 gMonBackPic_Radulin[];
+extern const u32 gMonShinyPalette_Radulin[];
+extern const u32 gMonStillFrontPic_Radulin[];
+extern const u8 gMonIcon_Radulin[];
+extern const u8 gMonFootprint_Radulin[];
+
+extern const u32 gMonFrontPic_Toxula[];
+extern const u32 gMonPalette_Toxula[];
+extern const u32 gMonBackPic_Toxula[];
+extern const u32 gMonShinyPalette_Toxula[];
+extern const u32 gMonStillFrontPic_Toxula[];
+extern const u8 gMonIcon_Toxula[];
+extern const u8 gMonFootprint_Toxula[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];

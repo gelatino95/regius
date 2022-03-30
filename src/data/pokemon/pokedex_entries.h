@@ -4765,4 +4765,52 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_KELPENT] =
+    {
+        .categoryName = _("SEAWEED"),
+        .height = 10,
+        .weight = 29,
+        .description = gKelpentPokedexText,
+        .pokemonScale = 422,
+        .pokemonOffset = -8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_ALGOREST] =
+    {
+        .categoryName = _("SEAWEED"),
+        .height = 38,
+        .weight = 885,
+        .description = gAlgorestPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 411,
+        .trainerOffset = 5,
+    },
+	
+	[NATIONAL_DEX_RADULIN] =
+    {
+        .categoryName = _("CONE"),
+        .height = 4,
+        .weight = 68,
+        .description = gRadulinPokedexText,
+        .pokemonScale = 550,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_TOXULA] =
+    {
+        .categoryName = _("CONE"),
+        .height = 16,
+        .weight = 971,
+        .description = gToxulaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 296,
+        .trainerOffset = 2,
+    },
 };

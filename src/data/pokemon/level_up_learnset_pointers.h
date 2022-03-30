@@ -423,4 +423,8 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_LITTURCH] = sLitturchLevelUpLearnset,
 	[SPECIES_PELURCHIN] = sPelurchinLevelUpLearnset,
 	[SPECIES_BENTHINE] = sBenthineLevelUpLearnset,
+	[SPECIES_KELPENT] = sKelpentLevelUpLearnset,
+	[SPECIES_ALGOREST] = sAlgorestLevelUpLearnset,
+	[SPECIES_RADULIN] = sRadulinLevelUpLearnset,
+	[SPECIES_TOXULA] = sToxulaLevelUpLearnset,
 };

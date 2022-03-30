@@ -4920,6 +4920,46 @@ static const union AnimCmd sAnim_BENTHINE_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_KELPENT_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_ALGOREST_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RADULIN_1[] =
+{
+    ANIMCMD_FRAME(0, 13),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_TOXULA_1[] =
+{
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7114,6 +7154,26 @@ static const union AnimCmd *const sAnims_BENTHINE[] ={
     sAnim_BENTHINE_1,
 };
 
+static const union AnimCmd *const sAnims_KELPENT[] ={
+    sAnim_GeneralFrame0,
+    sAnim_KELPENT_1,
+};
+
+static const union AnimCmd *const sAnims_ALGOREST[] ={
+    sAnim_GeneralFrame0,
+    sAnim_ALGOREST_1,
+};
+
+static const union AnimCmd *const sAnims_RADULIN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_KELPENT_1,
+};
+
+static const union AnimCmd *const sAnims_TOXULA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_ALGOREST_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7572,6 +7632,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(LITTURCH),
 	ANIM_CMD(PELURCHIN),
 	ANIM_CMD(BENTHINE),
+	ANIM_CMD(KELPENT),
+	ANIM_CMD(ALGOREST),
+	ANIM_CMD(RADULIN),
+	ANIM_CMD(TOXULA),
 };
 
 #undef ANIM_CMD

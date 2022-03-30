@@ -517,6 +517,10 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(LITTURCH),
 	SPECIES_TO_HOENN(PELURCHIN),
 	SPECIES_TO_HOENN(BENTHINE),
+	SPECIES_TO_HOENN(KELPENT),
+	SPECIES_TO_HOENN(ALGOREST),
+	SPECIES_TO_HOENN(RADULIN),
+	SPECIES_TO_HOENN(TOXULA),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -943,6 +947,10 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(LITTURCH),
 	SPECIES_TO_NATIONAL(PELURCHIN),
 	SPECIES_TO_NATIONAL(BENTHINE),
+	SPECIES_TO_NATIONAL(KELPENT),
+	SPECIES_TO_NATIONAL(ALGOREST),
+	SPECIES_TO_NATIONAL(RADULIN),
+	SPECIES_TO_NATIONAL(TOXULA),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -967,6 +975,10 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(LITTURCH),
 	HOENN_TO_NATIONAL(PELURCHIN),
 	HOENN_TO_NATIONAL(BENTHINE),
+	HOENN_TO_NATIONAL(KELPENT),
+	HOENN_TO_NATIONAL(ALGOREST),
+	HOENN_TO_NATIONAL(RADULIN),
+	HOENN_TO_NATIONAL(TOXULA),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1822,6 +1834,10 @@ static const u8 sMonFrontAnimIdsTable[] =
 	[SPECIES_LITTURCH - 1]    = ANIM_H_SLIDE,
 	[SPECIES_PELURCHIN - 1]   = ANIM_H_SLIDE_WOBBLE,
 	[SPECIES_BENTHINE - 1]    = ANIM_ZIGZAG_FAST,
+	[SPECIES_KELPENT - 1]     = ANIM_H_STRETCH,
+	[SPECIES_ALGOREST - 1]    = ANIM_H_STRETCH,
+	[SPECIES_RADULIN - 1]     = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+	[SPECIES_TOXULA - 1]     = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

@@ -477,6 +477,10 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_LITTURCH] = gMonIcon_Litturch,
 	[SPECIES_PELURCHIN] = gMonIcon_Pelurchin,
 	[SPECIES_BENTHINE] = gMonIcon_Benthine,
+	[SPECIES_KELPENT] = gMonIcon_Kelpent,
+	[SPECIES_ALGOREST] = gMonIcon_Algorest,
+	[SPECIES_RADULIN] = gMonIcon_Radulin,
+	[SPECIES_TOXULA] = gMonIcon_Toxula,
 	
 };
 
@@ -933,6 +937,10 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_LITTURCH] = 2,
 	[SPECIES_PELURCHIN] = 2,
 	[SPECIES_BENTHINE] = 2,
+	[SPECIES_KELPENT] = 1,
+	[SPECIES_ALGOREST] = 1,
+	[SPECIES_RADULIN] = 1,
+	[SPECIES_TOXULA] = 1,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

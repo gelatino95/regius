@@ -435,3 +435,7 @@ const u32 gMonFrontPic_Cockatrix[] = INCBIN_U32("graphics/pokemon/cockatrix/anim
 const u32 gMonFrontPic_Litturch[] = INCBIN_U32("graphics/pokemon/litturch/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Pelurchin[] = INCBIN_U32("graphics/pokemon/pelurchin/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Benthine[] = INCBIN_U32("graphics/pokemon/benthine/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Kelpent[] = INCBIN_U32("graphics/pokemon/kelpent/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Algorest[] = INCBIN_U32("graphics/pokemon/algorest/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Radulin[] = INCBIN_U32("graphics/pokemon/radulin/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Toxula[] = INCBIN_U32("graphics/pokemon/toxula/anim_front.4bpp.lz");

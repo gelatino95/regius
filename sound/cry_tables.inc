@@ -399,6 +399,10 @@ gCryTable::
 	cry Cry_Litturch 
 	cry Cry_Pelurchin 
 	cry Cry_Benthine 
+	cry Cry_Kelpent 
+	cry Cry_Algorest 
+	cry Cry_Radulin 
+	cry Cry_Toxula 
 
 
 	.align 2
@@ -802,3 +806,7 @@ gCryTable2::
 	cry2 Cry_Litturch 
 	cry2 Cry_Pelurchin 
 	cry2 Cry_Benthine 
+	cry2 Cry_Kelpent 
+	cry2 Cry_Algorest 
+	cry2 Cry_Radulin 
+	cry2 Cry_Toxula 

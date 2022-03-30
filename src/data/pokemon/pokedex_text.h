@@ -2364,7 +2364,7 @@ const u8 gCockatrixPokedexText[] = _(
 	"about its magical abilities. Adventurers\n"
 	"are warned to avoid its fearsome gaze.");
 	
-	const u8 gLitturchPokedexText[] = _(
+const u8 gLitturchPokedexText[] = _(
     "A weak POKéMON that lives in shallow\n"
 	"waters. It browses the ocean floor\n"
 	"for bits of food. When frightened, it\n"
@@ -2381,3 +2381,27 @@ const u8 gBenthinePokedexText[] = _(
 	"floor of deep ocean trenches. They are\n"
 	"opportunists that will viciously attack\n"
 	"anything that comes within reach.");
+	
+const u8 gKelpentPokedexText[] = _(
+    "KELPENT swim at the ocean surface during\n"
+	"the day to photosynthesize. Large numbers\n"
+	"of them gather and compete for sunlight.\n"
+	"At night, they hunt on the ocean floor.");
+	
+const u8 gAlgorestPokedexText[] = _(
+    "ALGOREST can grow to great lengths, and\n"
+	"sleep with their bodies held vertically.\n"
+	"Where they gather, many marine POKéMON\n"
+	"find shelter in their dense foliage.");
+	
+const u8 gRadulinPokedexText[] = _(
+    "It stores a potent poison in its shell.\n"
+	"Though slow, it can fire poison darts\n"
+	"at lightning-fast speeds. Divers should\n"
+	"keep a safe distance from this POKéMON.");
+	
+const u8 gToxulaPokedexText[] = _(
+    "TOXULA is the terror of the ocean. It has\n"
+	"an arsenal of poison needles it can fire\n"
+	"in all directions. When TOXULA wanders\n"
+	"onto land, it causes a panic.");

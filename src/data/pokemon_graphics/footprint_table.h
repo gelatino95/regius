@@ -425,4 +425,8 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_LITTURCH] = gMonFootprint_Litturch,
 	[SPECIES_PELURCHIN] = gMonFootprint_Pelurchin,
 	[SPECIES_BENTHINE] = gMonFootprint_Benthine,
+	[SPECIES_KELPENT] = gMonFootprint_Kelpent,
+	[SPECIES_ALGOREST] = gMonFootprint_Algorest,
+	[SPECIES_RADULIN] = gMonFootprint_Radulin,
+	[SPECIES_TOXULA] = gMonFootprint_Toxula,
 };

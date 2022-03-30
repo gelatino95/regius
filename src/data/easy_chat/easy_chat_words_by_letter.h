@@ -53,6 +53,7 @@ const u16 gEasyChatWordsByLetter_A[] = {
     DOUBLE_SPECIES_NAME
     EC_POKEMON(ALAKAZAM),
     EC_POKEMON_NATIONAL(ALAKAZAM),
+    EC_POKEMON_NATIONAL(ALGOREST),
     EC_WORD_ALL,
     EC_WORD_ALL_RIGHT,
     EC_WORD_ALLOW,
@@ -843,6 +844,7 @@ const u16 gEasyChatWordsByLetter_K[] = {
     EC_MOVE(KARATE_CHOP),
     EC_POKEMON(KECLEON),
     EC_WORD_KEEN_EYE,
+    EC_POKEMON_NATIONAL(KELPENT),
     EC_WORD_KID,
     EC_WORD_KIDDING,
     EC_WORD_KIND,
@@ -1299,6 +1301,7 @@ const u16 gEasyChatWordsByLetter_Q[] = {
 
 const u16 gEasyChatWordsByLetter_R[] = {
     EC_WORD_RADIO,
+    EC_POKEMON_NATIONAL(RADULIN),
     EC_MOVE(RAGE),
     DOUBLE_SPECIES_NAME
     EC_POKEMON(RAICHU),
@@ -1736,6 +1739,7 @@ const u16 gEasyChatWordsByLetter_T[] = {
     EC_WORD_TOURNAMENT,
     EC_WORD_TOWER,
     EC_MOVE2(TOXIC),
+    EC_POKEMON_NATIONAL(TOXULA),
     EC_WORD_TOYS,
     EC_WORD_TRACE,
     EC_WORD_TRADE,

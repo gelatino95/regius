@@ -1330,6 +1330,18 @@ const u16 gEggMoves[] = {
               MOVE_AMNESIA,
               MOVE_SPIKE_CANNON,
               MOVE_RECOVER),
+			  
+	egg_moves(KELPENT,
+              MOVE_TWISTER,
+              MOVE_GLARE),
+			  
+	egg_moves(RADULIN,
+              MOVE_SCREECH,
+              MOVE_SCARY_FACE,
+              MOVE_FOCUS_ENERGY,
+              MOVE_SLASH,
+              MOVE_ENDURE,
+              MOVE_AMNESIA),
 
     EGG_MOVES_TERMINATOR
 };

@@ -2251,4 +2251,24 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x76,
         .y_offset = 0,
     },
+	[SPECIES_KELPENT] =
+    {
+        .size = 0x37,
+        .y_offset = 8,
+    },
+	[SPECIES_ALGOREST] =
+    {
+        .size = 0x76,
+        .y_offset = 5,
+    },
+	[SPECIES_RADULIN] =
+    {
+        .size = 0x74,
+        .y_offset = 10,
+    },
+	[SPECIES_TOXULA] =
+    {
+        .size = 0x86,
+        .y_offset = 2,
+    },
 };

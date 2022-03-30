@@ -2894,3 +2894,31 @@ const u32 gMonBackPic_Benthine[] = INCBIN_U32("graphics/pokemon/benthine/back.4b
 const u32 gMonShinyPalette_Benthine[] = INCBIN_U32("graphics/pokemon/benthine/shiny.gbapal.lz");
 const u8 gMonIcon_Benthine[] = INCBIN_U8("graphics/pokemon/benthine/icon.4bpp");
 const u8 gMonFootprint_Benthine[] = INCBIN_U8("graphics/pokemon/benthine/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kelpent[] = INCBIN_U32("graphics/pokemon/kelpent/front.4bpp.lz");
+const u32 gMonPalette_Kelpent[] = INCBIN_U32("graphics/pokemon/kelpent/normal.gbapal.lz");
+const u32 gMonBackPic_Kelpent[] = INCBIN_U32("graphics/pokemon/kelpent/back.4bpp.lz");
+const u32 gMonShinyPalette_Kelpent[] = INCBIN_U32("graphics/pokemon/kelpent/shiny.gbapal.lz");
+const u8 gMonIcon_Kelpent[] = INCBIN_U8("graphics/pokemon/kelpent/icon.4bpp");
+const u8 gMonFootprint_Kelpent[] = INCBIN_U8("graphics/pokemon/kelpent/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Algorest[] = INCBIN_U32("graphics/pokemon/algorest/front.4bpp.lz");
+const u32 gMonPalette_Algorest[] = INCBIN_U32("graphics/pokemon/algorest/normal.gbapal.lz");
+const u32 gMonBackPic_Algorest[] = INCBIN_U32("graphics/pokemon/algorest/back.4bpp.lz");
+const u32 gMonShinyPalette_Algorest[] = INCBIN_U32("graphics/pokemon/algorest/shiny.gbapal.lz");
+const u8 gMonIcon_Algorest[] = INCBIN_U8("graphics/pokemon/algorest/icon.4bpp");
+const u8 gMonFootprint_Algorest[] = INCBIN_U8("graphics/pokemon/algorest/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Radulin[] = INCBIN_U32("graphics/pokemon/radulin/front.4bpp.lz");
+const u32 gMonPalette_Radulin[] = INCBIN_U32("graphics/pokemon/radulin/normal.gbapal.lz");
+const u32 gMonBackPic_Radulin[] = INCBIN_U32("graphics/pokemon/radulin/back.4bpp.lz");
+const u32 gMonShinyPalette_Radulin[] = INCBIN_U32("graphics/pokemon/radulin/shiny.gbapal.lz");
+const u8 gMonIcon_Radulin[] = INCBIN_U8("graphics/pokemon/radulin/icon.4bpp");
+const u8 gMonFootprint_Radulin[] = INCBIN_U8("graphics/pokemon/radulin/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Toxula[] = INCBIN_U32("graphics/pokemon/toxula/front.4bpp.lz");
+const u32 gMonPalette_Toxula[] = INCBIN_U32("graphics/pokemon/toxula/normal.gbapal.lz");
+const u32 gMonBackPic_Toxula[] = INCBIN_U32("graphics/pokemon/toxula/back.4bpp.lz");
+const u32 gMonShinyPalette_Toxula[] = INCBIN_U32("graphics/pokemon/toxula/shiny.gbapal.lz");
+const u8 gMonIcon_Toxula[] = INCBIN_U8("graphics/pokemon/toxula/icon.4bpp");
+const u8 gMonFootprint_Toxula[] = INCBIN_U8("graphics/pokemon/toxula/footprint.1bpp");

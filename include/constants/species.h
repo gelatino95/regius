@@ -426,8 +426,12 @@
 #define SPECIES_LITTURCH 419
 #define SPECIES_PELURCHIN 420
 #define SPECIES_BENTHINE 421
+#define SPECIES_KELPENT 422
+#define SPECIES_ALGOREST 423
+#define SPECIES_RADULIN 424
+#define SPECIES_TOXULA 425
 //end new pokemon
-#define SPECIES_EGG 422
+#define SPECIES_EGG 426
 
 #define NUM_SPECIES SPECIES_EGG
 
@@ -865,8 +869,12 @@
 #define NATIONAL_DEX_LITTURCH       394
 #define NATIONAL_DEX_PELURCHIN      395
 #define NATIONAL_DEX_BENTHINE       396
+#define NATIONAL_DEX_KELPENT        397
+#define NATIONAL_DEX_ALGOREST       398
+#define NATIONAL_DEX_RADULIN        399
+#define NATIONAL_DEX_TOXULA         400
 
-#define NATIONAL_DEX_COUNT          NATIONAL_DEX_BENTHINE
+#define NATIONAL_DEX_COUNT          NATIONAL_DEX_TOXULA
 
 #define NATIONAL_DEX_OLD_UNOWN_B    (NATIONAL_DEX_COUNT + 1)
 #define NATIONAL_DEX_OLD_UNOWN_C    (NATIONAL_DEX_OLD_UNOWN_B + 1)
@@ -906,8 +914,8 @@
 #define HOENN_DEX_MUDKIP        7
 #define HOENN_DEX_MARSHTOMP     8
 #define HOENN_DEX_SWAMPERT      9
-#define HOENN_DEX_LITTURCH      10 //change back to POOCHYENA
-#define HOENN_DEX_PELURCHIN     11 //change back to MIGHTYENA
+#define HOENN_DEX_RADULIN       10 //change back to POOCHYENA
+#define HOENN_DEX_TOXULA        11 //change back to MIGHTYENA
 #define HOENN_DEX_BENTHINE      12 //change back to ZIGZAGOON
 #define HOENN_DEX_LINOONE       13
 #define HOENN_DEX_WURMPLE       14
@@ -1294,9 +1302,13 @@
 #define HOENN_DEX_HATCHICK      391
 #define HOENN_DEX_CHICKLET      392
 #define HOENN_DEX_COCKATRIX     393
-#define HOENN_DEX_MIGHTYENA     394
-#define HOENN_DEX_POOCHYENA     395
-#define HOENN_DEX_ZIGZAGOON     396 //change back to final new pokemon
+#define HOENN_DEX_LITTURCH      394
+#define HOENN_DEX_PELURCHIN     395
+#define HOENN_DEX_KELPENT       396
+#define HOENN_DEX_ALGOREST      397
+#define HOENN_DEX_MIGHTYENA     398
+#define HOENN_DEX_POOCHYENA     399
+#define HOENN_DEX_ZIGZAGOON     400 //change back to final new pokemon
 
 #define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_POOCHYENA + 1) //change back to final new pokemon
 #define HOENN_DEX_OLD_UNOWN_C   (HOENN_DEX_OLD_UNOWN_B + 1)

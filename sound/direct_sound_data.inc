@@ -1979,6 +1979,22 @@ Cry_Pelurchin::
 	.align 2
 Cry_Benthine::
 	.incbin "sound/direct_sound_samples/cries/benthine.bin"
+	
+	.align 2
+Cry_Kelpent::
+	.incbin "sound/direct_sound_samples/cries/kelpent.bin"
+	
+	.align 2
+Cry_Algorest::
+	.incbin "sound/direct_sound_samples/cries/algorest.bin"
+	
+	.align 2
+Cry_Radulin::
+	.incbin "sound/direct_sound_samples/cries/radulin.bin"
+	
+	.align 2
+Cry_Toxula::
+	.incbin "sound/direct_sound_samples/cries/toxula.bin"
 
 //end new pokemon
 
