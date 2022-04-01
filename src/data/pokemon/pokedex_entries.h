@@ -4813,4 +4813,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 296,
         .trainerOffset = 2,
     },
+	
+	[NATIONAL_DEX_GLYPHMITE] =
+    {
+        .categoryName = _("ARTIFACT"),
+        .height = 3,
+        .weight = 99,
+        .description = gGlyphmitePokedexText,
+        .pokemonScale = 593,
+        .pokemonOffset = 22,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_PYRAMITE] =
+    {
+        .categoryName = _("PYRAMID"),
+        .height = 5,
+        .weight = 304,
+        .description = gPyramitePokedexText,
+        .pokemonScale = 405,
+        .pokemonOffset = 16,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

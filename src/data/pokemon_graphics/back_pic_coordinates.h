@@ -2271,5 +2271,15 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 11,
     },
+	[SPECIES_GLYPHMITE] =
+    {
+        .size = 0x66,
+        .y_offset = 10,
+    },
+    [SPECIES_PYRAMITE] =
+    {
+        .size = 0x87,
+        .y_offset = 10,
+    },
 };
 

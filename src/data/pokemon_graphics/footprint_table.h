@@ -429,4 +429,6 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_ALGOREST] = gMonFootprint_Algorest,
 	[SPECIES_RADULIN] = gMonFootprint_Radulin,
 	[SPECIES_TOXULA] = gMonFootprint_Toxula,
+	[SPECIES_GLYPHMITE] = gMonFootprint_Glyphmite,
+	[SPECIES_PYRAMITE] = gMonFootprint_Pyramite,
 };

@@ -403,6 +403,8 @@ gCryTable::
 	cry Cry_Algorest 
 	cry Cry_Radulin 
 	cry Cry_Toxula 
+	cry Cry_Glyphmite 
+	cry Cry_Pyramite 
 
 
 	.align 2
@@ -810,3 +812,5 @@ gCryTable2::
 	cry2 Cry_Algorest 
 	cry2 Cry_Radulin 
 	cry2 Cry_Toxula 
+	cry2 Cry_Glyphmite 
+	cry2 Cry_Pyramite 

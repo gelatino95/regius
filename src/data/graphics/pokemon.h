@@ -2922,3 +2922,17 @@ const u32 gMonBackPic_Toxula[] = INCBIN_U32("graphics/pokemon/toxula/back.4bpp.l
 const u32 gMonShinyPalette_Toxula[] = INCBIN_U32("graphics/pokemon/toxula/shiny.gbapal.lz");
 const u8 gMonIcon_Toxula[] = INCBIN_U8("graphics/pokemon/toxula/icon.4bpp");
 const u8 gMonFootprint_Toxula[] = INCBIN_U8("graphics/pokemon/toxula/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Glyphmite[] = INCBIN_U32("graphics/pokemon/glyphmite/front.4bpp.lz");
+const u32 gMonPalette_Glyphmite[] = INCBIN_U32("graphics/pokemon/glyphmite/normal.gbapal.lz");
+const u32 gMonBackPic_Glyphmite[] = INCBIN_U32("graphics/pokemon/glyphmite/back.4bpp.lz");
+const u32 gMonShinyPalette_Glyphmite[] = INCBIN_U32("graphics/pokemon/glyphmite/shiny.gbapal.lz");
+const u8 gMonIcon_Glyphmite[] = INCBIN_U8("graphics/pokemon/glyphmite/icon.4bpp");
+const u8 gMonFootprint_Glyphmite[] = INCBIN_U8("graphics/pokemon/glyphmite/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Pyramite[] = INCBIN_U32("graphics/pokemon/pyramite/front.4bpp.lz");
+const u32 gMonPalette_Pyramite[] = INCBIN_U32("graphics/pokemon/pyramite/normal.gbapal.lz");
+const u32 gMonBackPic_Pyramite[] = INCBIN_U32("graphics/pokemon/pyramite/back.4bpp.lz");
+const u32 gMonShinyPalette_Pyramite[] = INCBIN_U32("graphics/pokemon/pyramite/shiny.gbapal.lz");
+const u8 gMonIcon_Pyramite[] = INCBIN_U8("graphics/pokemon/pyramite/icon.4bpp");
+const u8 gMonFootprint_Pyramite[] = INCBIN_U8("graphics/pokemon/pyramite/footprint.1bpp");

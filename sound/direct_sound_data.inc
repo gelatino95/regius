@@ -1995,6 +1995,14 @@ Cry_Radulin::
 	.align 2
 Cry_Toxula::
 	.incbin "sound/direct_sound_samples/cries/toxula.bin"
+	
+	.align 2
+Cry_Glyphmite::
+	.incbin "sound/direct_sound_samples/cries/glyphmite.bin"
+	
+	.align 2
+Cry_Pyramite::
+	.incbin "sound/direct_sound_samples/cries/pyramite.bin"
 
 //end new pokemon
 

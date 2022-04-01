@@ -2405,3 +2405,15 @@ const u8 gToxulaPokedexText[] = _(
 	"an arsenal of poison needles it can fire\n"
 	"in all directions. When TOXULA wanders\n"
 	"onto land, it causes a panic.");
+	
+const u8 gGlyphmitePokedexText[] = _(
+    "Considered a nuisance at archeological\n"
+	"sites, GLYPHMITE will use stone tablets\n"
+	"for protection. No one knows why it is\n"
+	"so drawn to ancient treasures.");
+	
+const u8 gPyramitePokedexText[] = _(
+    "PYRAMITE travel in swarms, claiming\n"
+	"ancient ruins as their nests. They shed\n"
+	"their hard pyramid-shaped shells as\n"
+	"they grow larger.");

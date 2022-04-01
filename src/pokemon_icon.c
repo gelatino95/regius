@@ -481,6 +481,8 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_ALGOREST] = gMonIcon_Algorest,
 	[SPECIES_RADULIN] = gMonIcon_Radulin,
 	[SPECIES_TOXULA] = gMonIcon_Toxula,
+	[SPECIES_GLYPHMITE] = gMonIcon_Glyphmite,
+	[SPECIES_PYRAMITE] = gMonIcon_Pyramite,
 	
 };
 
@@ -941,6 +943,8 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_ALGOREST] = 1,
 	[SPECIES_RADULIN] = 1,
 	[SPECIES_TOXULA] = 1,
+	[SPECIES_GLYPHMITE] = 2,
+	[SPECIES_PYRAMITE] = 2,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

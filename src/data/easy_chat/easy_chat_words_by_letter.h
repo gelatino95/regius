@@ -604,6 +604,7 @@ const u16 gEasyChatWordsByLetter_G[] = {
     DOUBLE_SPECIES_NAME
     EC_POKEMON(GLOOM),
     EC_POKEMON_NATIONAL(GLOOM),
+    EC_POKEMON_NATIONAL(GLYPHMITE),
     EC_WORD_GO,
     EC_WORD_GO_AHEAD,
     EC_WORD_GO_EASY,
@@ -1288,6 +1289,7 @@ const u16 gEasyChatWordsByLetter_P[] = {
     EC_WORD_PURE_POWER,
     EC_MOVE(PURSUIT),
     EC_WORD_PUSHOVER,
+    EC_POKEMON_NATIONAL(PYRAMITE),
 };
 
 const u16 gEasyChatWordsByLetter_Q[] = {

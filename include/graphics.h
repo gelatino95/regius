@@ -2967,6 +2967,22 @@ extern const u32 gMonStillFrontPic_Toxula[];
 extern const u8 gMonIcon_Toxula[];
 extern const u8 gMonFootprint_Toxula[];
 
+extern const u32 gMonFrontPic_Glyphmite[];
+extern const u32 gMonPalette_Glyphmite[];
+extern const u32 gMonBackPic_Glyphmite[];
+extern const u32 gMonShinyPalette_Glyphmite[];
+extern const u32 gMonStillFrontPic_Glyphmite[];
+extern const u8 gMonIcon_Glyphmite[];
+extern const u8 gMonFootprint_Glyphmite[];
+
+extern const u32 gMonFrontPic_Pyramite[];
+extern const u32 gMonPalette_Pyramite[];
+extern const u32 gMonBackPic_Pyramite[];
+extern const u32 gMonShinyPalette_Pyramite[];
+extern const u32 gMonStillFrontPic_Pyramite[];
+extern const u8 gMonIcon_Pyramite[];
+extern const u8 gMonFootprint_Pyramite[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];
