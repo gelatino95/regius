@@ -431,4 +431,6 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_TOXULA] = gMonFootprint_Toxula,
 	[SPECIES_GLYPHMITE] = gMonFootprint_Glyphmite,
 	[SPECIES_PYRAMITE] = gMonFootprint_Pyramite,
+	[SPECIES_LEVILITH] = gMonFootprint_Levilith,
+	[SPECIES_CORPOLITH] = gMonFootprint_Corpolith,
 };

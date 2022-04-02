@@ -2281,4 +2281,14 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x74,
         .y_offset = 10,
     },
+	[SPECIES_LEVILITH] =
+    {
+        .size = 0x65,
+        .y_offset = 10,
+    },
+	[SPECIES_CORPOLITH] =
+    {
+        .size = 0x88,
+        .y_offset = 0,
+    },
 };

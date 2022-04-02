@@ -2983,6 +2983,22 @@ extern const u32 gMonStillFrontPic_Pyramite[];
 extern const u8 gMonIcon_Pyramite[];
 extern const u8 gMonFootprint_Pyramite[];
 
+extern const u32 gMonFrontPic_Levilith[];
+extern const u32 gMonPalette_Levilith[];
+extern const u32 gMonBackPic_Levilith[];
+extern const u32 gMonShinyPalette_Levilith[];
+extern const u32 gMonStillFrontPic_Levilith[];
+extern const u8 gMonIcon_Levilith[];
+extern const u8 gMonFootprint_Levilith[];
+
+extern const u32 gMonFrontPic_Corpolith[];
+extern const u32 gMonPalette_Corpolith[];
+extern const u32 gMonBackPic_Corpolith[];
+extern const u32 gMonShinyPalette_Corpolith[];
+extern const u32 gMonStillFrontPic_Corpolith[];
+extern const u8 gMonIcon_Corpolith[];
+extern const u8 gMonFootprint_Corpolith[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];

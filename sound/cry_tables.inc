@@ -405,6 +405,8 @@ gCryTable::
 	cry Cry_Toxula 
 	cry Cry_Glyphmite 
 	cry Cry_Pyramite 
+	cry Cry_Levilith 
+	cry Cry_Corpolith 
 
 
 	.align 2
@@ -814,3 +816,5 @@ gCryTable2::
 	cry2 Cry_Toxula 
 	cry2 Cry_Glyphmite 
 	cry2 Cry_Pyramite 
+	cry2 Cry_Levilith 
+	cry2 Cry_Corpolith 

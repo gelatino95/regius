@@ -2936,3 +2936,17 @@ const u32 gMonBackPic_Pyramite[] = INCBIN_U32("graphics/pokemon/pyramite/back.4b
 const u32 gMonShinyPalette_Pyramite[] = INCBIN_U32("graphics/pokemon/pyramite/shiny.gbapal.lz");
 const u8 gMonIcon_Pyramite[] = INCBIN_U8("graphics/pokemon/pyramite/icon.4bpp");
 const u8 gMonFootprint_Pyramite[] = INCBIN_U8("graphics/pokemon/pyramite/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Levilith[] = INCBIN_U32("graphics/pokemon/levilith/front.4bpp.lz");
+const u32 gMonPalette_Levilith[] = INCBIN_U32("graphics/pokemon/levilith/normal.gbapal.lz");
+const u32 gMonBackPic_Levilith[] = INCBIN_U32("graphics/pokemon/levilith/back.4bpp.lz");
+const u32 gMonShinyPalette_Levilith[] = INCBIN_U32("graphics/pokemon/levilith/shiny.gbapal.lz");
+const u8 gMonIcon_Levilith[] = INCBIN_U8("graphics/pokemon/levilith/icon.4bpp");
+const u8 gMonFootprint_Levilith[] = INCBIN_U8("graphics/pokemon/levilith/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Corpolith[] = INCBIN_U32("graphics/pokemon/corpolith/front.4bpp.lz");
+const u32 gMonPalette_Corpolith[] = INCBIN_U32("graphics/pokemon/corpolith/normal.gbapal.lz");
+const u32 gMonBackPic_Corpolith[] = INCBIN_U32("graphics/pokemon/corpolith/back.4bpp.lz");
+const u32 gMonShinyPalette_Corpolith[] = INCBIN_U32("graphics/pokemon/corpolith/shiny.gbapal.lz");
+const u8 gMonIcon_Corpolith[] = INCBIN_U8("graphics/pokemon/corpolith/icon.4bpp");
+const u8 gMonFootprint_Corpolith[] = INCBIN_U8("graphics/pokemon/corpolith/footprint.1bpp");

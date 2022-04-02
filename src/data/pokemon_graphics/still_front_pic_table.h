@@ -460,4 +460,6 @@ const struct CompressedSpriteSheet gMonStillFrontPicTable[] =
 	SPECIES_SPRITE(TOXULA,        gMonStillFrontPic_Toxula),
 	SPECIES_SPRITE(GLYPHMITE,     gMonStillFrontPic_Glyphmite),
 	SPECIES_SPRITE(PYRAMITE,      gMonStillFrontPic_Pyramite),
+	SPECIES_SPRITE(LEVILITH,      gMonStillFrontPic_Levilith),
+	SPECIES_SPRITE(CORPOLITH,     gMonStillFrontPic_Corpolith),
 };

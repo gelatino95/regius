@@ -4984,6 +4984,27 @@ static const union AnimCmd sAnim_PYRAMITE_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_LEVILITH_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 43),
+    ANIMCMD_FRAME(1, 60),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CORPOLITH_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 44),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7208,6 +7229,16 @@ static const union AnimCmd *const sAnims_PYRAMITE[] ={
     sAnim_PYRAMITE_1,
 };
 
+static const union AnimCmd *const sAnims_LEVILITH[] ={
+    sAnim_GeneralFrame0,
+    sAnim_LEVILITH_1,
+};
+
+static const union AnimCmd *const sAnims_CORPOLITH[] ={
+    sAnim_GeneralFrame0,
+    sAnim_CORPOLITH_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7672,6 +7703,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(TOXULA),
 	ANIM_CMD(GLYPHMITE),
 	ANIM_CMD(PYRAMITE),
+	ANIM_CMD(LEVILITH),
+	ANIM_CMD(CORPOLITH),
 };
 
 #undef ANIM_CMD

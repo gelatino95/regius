@@ -2003,6 +2003,14 @@ Cry_Glyphmite::
 	.align 2
 Cry_Pyramite::
 	.incbin "sound/direct_sound_samples/cries/pyramite.bin"
+	
+	.align 2
+Cry_Levilith::
+	.incbin "sound/direct_sound_samples/cries/levilith.bin"
+	
+	.align 2
+Cry_Corpolith::
+	.incbin "sound/direct_sound_samples/cries/corpolith.bin"
 
 //end new pokemon
 

@@ -4837,4 +4837,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_LEVILITH] =
+    {
+        .categoryName = _("BOULDER"),
+        .height = 12,
+        .weight = 1044,
+        .description = gLevilithPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_CORPOLITH] =
+    {
+        .categoryName = _("MOUNTAIN"),
+        .height = 36,
+        .weight = 6603,
+        .description = gCorpolithPokedexText,
+        .pokemonScale = 257,
+        .pokemonOffset = 0,
+        .trainerScale = 423,
+        .trainerOffset = 8,
+    },
 };

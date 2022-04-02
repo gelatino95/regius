@@ -2417,3 +2417,15 @@ const u8 gPyramitePokedexText[] = _(
 	"ancient ruins as their nests. They shed\n"
 	"their hard pyramid-shaped shells as\n"
 	"they grow larger.");
+	
+const u8 gLevilithPokedexText[] = _(
+    "A collection of stones held together by a\n"
+	"mysterious force. It playfully rolls\n"
+	"to toughen its body. If it falls apart,\n"
+	"its spirit will possess a new pile of rocks.");
+	
+const u8 gCorpolithPokedexText[] = _(
+    "It continuously grows larger by adding\n"
+	"rocks to its body. Older specimens can\n"
+	"stride across mountains, but they are\n"
+	"fragile and prone to collapse.");
