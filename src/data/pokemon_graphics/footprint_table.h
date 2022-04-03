@@ -433,4 +433,6 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_PYRAMITE] = gMonFootprint_Pyramite,
 	[SPECIES_LEVILITH] = gMonFootprint_Levilith,
 	[SPECIES_CORPOLITH] = gMonFootprint_Corpolith,
+	[SPECIES_COCONIT] = gMonFootprint_Coconit,
+	[SPECIES_PALMODON] = gMonFootprint_Palmodon,
 };

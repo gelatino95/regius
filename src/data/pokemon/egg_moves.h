@@ -1345,6 +1345,16 @@ const u16 gEggMoves[] = {
 			  
 	egg_moves(GLYPHMITE,
               MOVE_FURY_CUTTER),
+			  
+	egg_moves(COCONIT,
+              MOVE_POISON_POWDER,
+              MOVE_SLEEP_POWDER,
+              MOVE_FOCUS_ENERGY,
+              MOVE_AROMATHERAPY,
+              MOVE_GROWTH,
+              MOVE_FAINT_ATTACK,
+              MOVE_SWEET_SCENT,
+              MOVE_STOMP),
 
     EGG_MOVES_TERMINATOR
 };

@@ -2291,5 +2291,15 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 10,
     },
+	[SPECIES_COCONIT] =
+    {
+        .size = 0x66,
+        .y_offset = 17,
+    },
+    [SPECIES_PALMODON] =
+    {
+        .size = 0x87,
+        .y_offset = 10,
+    },
 };
 

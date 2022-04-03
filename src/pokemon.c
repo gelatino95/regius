@@ -525,6 +525,8 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(PYRAMITE),
 	SPECIES_TO_HOENN(LEVILITH),
 	SPECIES_TO_HOENN(CORPOLITH),
+	SPECIES_TO_HOENN(COCONIT),
+	SPECIES_TO_HOENN(PALMODON),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -959,6 +961,8 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(PYRAMITE),
 	SPECIES_TO_NATIONAL(LEVILITH),
 	SPECIES_TO_NATIONAL(CORPOLITH),
+	SPECIES_TO_NATIONAL(COCONIT),
+	SPECIES_TO_NATIONAL(PALMODON),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -991,6 +995,8 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(PYRAMITE),
 	HOENN_TO_NATIONAL(LEVILITH),
 	HOENN_TO_NATIONAL(CORPOLITH),
+	HOENN_TO_NATIONAL(COCONIT),
+	HOENN_TO_NATIONAL(PALMODON),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1854,6 +1860,8 @@ static const u8 sMonFrontAnimIdsTable[] =
 	[SPECIES_PYRAMITE - 1]    = ANIM_V_SLIDE,
 	[SPECIES_LEVILITH - 1]    = ANIM_SPIN,
 	[SPECIES_CORPOLITH - 1]   = ANIM_V_SHAKE_TWICE,
+    [SPECIES_COCONIT - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_PALMODON - 1]    = ANIM_H_SLIDE,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

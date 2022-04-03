@@ -4861,4 +4861,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 423,
         .trainerOffset = 8,
     },
+	
+	[NATIONAL_DEX_COCONIT] =
+    {
+        .categoryName = _("COCONUT"),
+        .height = 5,
+        .weight = 28,
+        .description = gCoconitPokedexText,
+        .pokemonScale = 405,
+        .pokemonOffset = 19,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_PALMODON] =
+    {
+        .categoryName = _("PALM"),
+        .height = 19,
+        .weight = 1190,
+        .description = gPalmodonPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 4,
+        .trainerScale = 309,
+        .trainerOffset = 5,
+    },
 };

@@ -2011,6 +2011,14 @@ Cry_Levilith::
 	.align 2
 Cry_Corpolith::
 	.incbin "sound/direct_sound_samples/cries/corpolith.bin"
+	
+	.align 2
+Cry_Coconit::
+	.incbin "sound/direct_sound_samples/cries/coconit.bin"
+	
+	.align 2
+Cry_Palmodon::
+	.incbin "sound/direct_sound_samples/cries/palmodon.bin"
 
 //end new pokemon
 

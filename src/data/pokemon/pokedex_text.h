@@ -2429,3 +2429,15 @@ const u8 gCorpolithPokedexText[] = _(
 	"rocks to its body. Older specimens can\n"
 	"stride across mountains, but they are\n"
 	"fragile and prone to collapse.");
+	
+const u8 gCoconitPokedexText[] = _(
+    "When it pulls its arms and legs together,\n"
+	"it can mimic a coconut. However, it cannot\n"
+	"hide its antennae. It will steal food and\n"
+	"other items and hide them in its shell.");
+	
+const u8 gPalmodonPokedexText[] = _(
+    "When it stands still, PALMODON can be\n"
+	"mistaken for a tree. It grows COCONIT\n"
+	"eggs in its branches, spreading offspring\n"
+	"as it wanders across beaches.");

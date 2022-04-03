@@ -2950,3 +2950,17 @@ const u32 gMonBackPic_Corpolith[] = INCBIN_U32("graphics/pokemon/corpolith/back.
 const u32 gMonShinyPalette_Corpolith[] = INCBIN_U32("graphics/pokemon/corpolith/shiny.gbapal.lz");
 const u8 gMonIcon_Corpolith[] = INCBIN_U8("graphics/pokemon/corpolith/icon.4bpp");
 const u8 gMonFootprint_Corpolith[] = INCBIN_U8("graphics/pokemon/corpolith/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Coconit[] = INCBIN_U32("graphics/pokemon/coconit/front.4bpp.lz");
+const u32 gMonPalette_Coconit[] = INCBIN_U32("graphics/pokemon/coconit/normal.gbapal.lz");
+const u32 gMonBackPic_Coconit[] = INCBIN_U32("graphics/pokemon/coconit/back.4bpp.lz");
+const u32 gMonShinyPalette_Coconit[] = INCBIN_U32("graphics/pokemon/coconit/shiny.gbapal.lz");
+const u8 gMonIcon_Coconit[] = INCBIN_U8("graphics/pokemon/coconit/icon.4bpp");
+const u8 gMonFootprint_Coconit[] = INCBIN_U8("graphics/pokemon/coconit/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Palmodon[] = INCBIN_U32("graphics/pokemon/palmodon/front.4bpp.lz");
+const u32 gMonPalette_Palmodon[] = INCBIN_U32("graphics/pokemon/palmodon/normal.gbapal.lz");
+const u32 gMonBackPic_Palmodon[] = INCBIN_U32("graphics/pokemon/palmodon/back.4bpp.lz");
+const u32 gMonShinyPalette_Palmodon[] = INCBIN_U32("graphics/pokemon/palmodon/shiny.gbapal.lz");
+const u8 gMonIcon_Palmodon[] = INCBIN_U8("graphics/pokemon/palmodon/icon.4bpp");
+const u8 gMonFootprint_Palmodon[] = INCBIN_U8("graphics/pokemon/palmodon/footprint.1bpp");
