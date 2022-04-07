@@ -2301,4 +2301,14 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x88,
         .y_offset = 4,
     },
+	[SPECIES_CALFUMP] =
+    {
+        .size = 0x74,
+        .y_offset = 5,
+    },
+	[SPECIES_SIRENITEE] =
+    {
+        .size = 0x88,
+        .y_offset = 0,
+    },
 };

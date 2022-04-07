@@ -2441,3 +2441,15 @@ const u8 gPalmodonPokedexText[] = _(
 	"mistaken for a tree. It grows COCONIT\n"
 	"eggs in its branches, spreading offspring\n"
 	"as it wanders across beaches.");
+	
+const u8 gCalfumpPokedexText[] = _(
+    "A lazy and peaceful swimmer that grazes\n"
+	"for sea grass. It gets some energy from\n"
+	"the grass that grows on its body, which\n"
+	"prefers shallow, sunny waters.");
+	
+const u8 gSireniteePokedexText[] = _(
+    "It calls out to injured POKéMON with a\n"
+	"song that carries for miles. Its milk has\n"
+	"great healing properties. It will often\n"
+	"adopt and care for orphaned POKéMON.");

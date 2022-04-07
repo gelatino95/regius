@@ -4885,4 +4885,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 309,
         .trainerOffset = 5,
     },
+	
+	[NATIONAL_DEX_CALFUMP] =
+    {
+        .categoryName = _("SEA COW"),
+        .height = 12,
+        .weight = 545,
+        .description = gCalfumpPokedexText,
+        .pokemonScale = 269,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_SIRENITEE] =
+    {
+        .categoryName = _("SIREN"),
+        .height = 20,
+        .weight = 1660,
+        .description = gSireniteePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 344,
+        .trainerOffset = 0,
+    },
 };

@@ -433,4 +433,6 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_CORPOLITH] = sCorpolithLevelUpLearnset,
 	[SPECIES_COCONIT] = sCoconitLevelUpLearnset,
 	[SPECIES_PALMODON] = sPalmodonLevelUpLearnset,
+	[SPECIES_CALFUMP] = sCalfumpLevelUpLearnset,
+	[SPECIES_SIRENITEE] = sSireniteeLevelUpLearnset,
 };

@@ -445,3 +445,5 @@ const u32 gMonFrontPic_Levilith[] = INCBIN_U32("graphics/pokemon/levilith/anim_f
 const u32 gMonFrontPic_Corpolith[] = INCBIN_U32("graphics/pokemon/corpolith/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Coconit[] = INCBIN_U32("graphics/pokemon/coconit/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Palmodon[] = INCBIN_U32("graphics/pokemon/palmodon/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Calfump[] = INCBIN_U32("graphics/pokemon/calfump/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Sirenitee[] = INCBIN_U32("graphics/pokemon/sirenitee/anim_front.4bpp.lz");

@@ -2019,6 +2019,14 @@ Cry_Coconit::
 	.align 2
 Cry_Palmodon::
 	.incbin "sound/direct_sound_samples/cries/palmodon.bin"
+	
+	.align 2
+Cry_Calfump::
+	.incbin "sound/direct_sound_samples/cries/calfump.bin"
+	
+	.align 2
+Cry_Sirenitee::
+	.incbin "sound/direct_sound_samples/cries/sirenitee.bin"
 
 //end new pokemon
 

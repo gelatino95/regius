@@ -5026,6 +5026,26 @@ static const union AnimCmd sAnim_PALMODON_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_CALFUMP_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_SIRENITEE_1[] =
+{
+    ANIMCMD_FRAME(0, 26),
+    ANIMCMD_FRAME(1, 48),
+    ANIMCMD_FRAME(0, 33),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7270,6 +7290,16 @@ static const union AnimCmd *const sAnims_PALMODON[] ={
     sAnim_PALMODON_1,
 };
 
+static const union AnimCmd *const sAnims_CALFUMP[] ={
+    sAnim_GeneralFrame0,
+    sAnim_CALFUMP_1,
+};
+
+static const union AnimCmd *const sAnims_SIRENITEE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SIRENITEE_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7738,6 +7768,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(CORPOLITH),
 	ANIM_CMD(COCONIT),
 	ANIM_CMD(PALMODON),
+	ANIM_CMD(CALFUMP),
+	ANIM_CMD(SIRENITEE),
 };
 
 #undef ANIM_CMD

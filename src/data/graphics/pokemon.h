@@ -2964,3 +2964,17 @@ const u32 gMonBackPic_Palmodon[] = INCBIN_U32("graphics/pokemon/palmodon/back.4b
 const u32 gMonShinyPalette_Palmodon[] = INCBIN_U32("graphics/pokemon/palmodon/shiny.gbapal.lz");
 const u8 gMonIcon_Palmodon[] = INCBIN_U8("graphics/pokemon/palmodon/icon.4bpp");
 const u8 gMonFootprint_Palmodon[] = INCBIN_U8("graphics/pokemon/palmodon/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Calfump[] = INCBIN_U32("graphics/pokemon/calfump/front.4bpp.lz");
+const u32 gMonPalette_Calfump[] = INCBIN_U32("graphics/pokemon/calfump/normal.gbapal.lz");
+const u32 gMonBackPic_Calfump[] = INCBIN_U32("graphics/pokemon/calfump/back.4bpp.lz");
+const u32 gMonShinyPalette_Calfump[] = INCBIN_U32("graphics/pokemon/calfump/shiny.gbapal.lz");
+const u8 gMonIcon_Calfump[] = INCBIN_U8("graphics/pokemon/calfump/icon.4bpp");
+const u8 gMonFootprint_Calfump[] = INCBIN_U8("graphics/pokemon/calfump/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Sirenitee[] = INCBIN_U32("graphics/pokemon/sirenitee/front.4bpp.lz");
+const u32 gMonPalette_Sirenitee[] = INCBIN_U32("graphics/pokemon/sirenitee/normal.gbapal.lz");
+const u32 gMonBackPic_Sirenitee[] = INCBIN_U32("graphics/pokemon/sirenitee/back.4bpp.lz");
+const u32 gMonShinyPalette_Sirenitee[] = INCBIN_U32("graphics/pokemon/sirenitee/shiny.gbapal.lz");
+const u8 gMonIcon_Sirenitee[] = INCBIN_U8("graphics/pokemon/sirenitee/icon.4bpp");
+const u8 gMonFootprint_Sirenitee[] = INCBIN_U8("graphics/pokemon/sirenitee/footprint.1bpp");

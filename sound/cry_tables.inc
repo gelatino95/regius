@@ -409,6 +409,8 @@ gCryTable::
 	cry Cry_Corpolith 
 	cry Cry_Coconit 
 	cry Cry_Palmodon 
+	cry Cry_Calfump 
+	cry Cry_Sirenitee 
 
 
 	.align 2
@@ -822,3 +824,5 @@ gCryTable2::
 	cry2 Cry_Corpolith 
 	cry2 Cry_Coconit 
 	cry2 Cry_Palmodon 
+	cry2 Cry_Calfump 
+	cry2 Cry_Sirenitee 

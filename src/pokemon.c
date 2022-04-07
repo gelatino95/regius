@@ -527,6 +527,8 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(CORPOLITH),
 	SPECIES_TO_HOENN(COCONIT),
 	SPECIES_TO_HOENN(PALMODON),
+	SPECIES_TO_HOENN(CALFUMP),
+	SPECIES_TO_HOENN(SIRENITEE),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -963,6 +965,8 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(CORPOLITH),
 	SPECIES_TO_NATIONAL(COCONIT),
 	SPECIES_TO_NATIONAL(PALMODON),
+	SPECIES_TO_NATIONAL(CALFUMP),
+	SPECIES_TO_NATIONAL(SIRENITEE),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -997,6 +1001,8 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(CORPOLITH),
 	HOENN_TO_NATIONAL(COCONIT),
 	HOENN_TO_NATIONAL(PALMODON),
+	HOENN_TO_NATIONAL(CALFUMP),
+	HOENN_TO_NATIONAL(SIRENITEE),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1862,6 +1868,8 @@ static const u8 sMonFrontAnimIdsTable[] =
 	[SPECIES_CORPOLITH - 1]   = ANIM_V_SHAKE_TWICE,
     [SPECIES_COCONIT - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_PALMODON - 1]    = ANIM_H_SLIDE,
+    [SPECIES_CALFUMP - 1]     = ANIM_V_SLIDE_WOBBLE_SMALL,
+    [SPECIES_SIRENITEE - 1]   = ANIM_V_SLIDE_WOBBLE,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -1924,6 +1932,7 @@ static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
 	//new pokemon
 	[SPECIES_CHICKLET - 1]   = 25,
     [SPECIES_LEVILITH - 1]   = 15,
+    [SPECIES_SIRENITEE - 1]  = 10,
 };
 
 const u8 gPPUpGetMask[] = {0x03, 0x0c, 0x30, 0xc0}; // Masks for getting PP Up count, also PP Max values

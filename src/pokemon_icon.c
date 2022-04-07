@@ -487,6 +487,8 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_CORPOLITH] = gMonIcon_Corpolith,
 	[SPECIES_COCONIT] = gMonIcon_Coconit,
 	[SPECIES_PALMODON] = gMonIcon_Palmodon,
+	[SPECIES_CALFUMP] = gMonIcon_Calfump,
+	[SPECIES_SIRENITEE] = gMonIcon_Sirenitee,
 	
 };
 
@@ -953,6 +955,8 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_CORPOLITH] = 2,
 	[SPECIES_COCONIT] = 1,
 	[SPECIES_PALMODON] = 1,
+	[SPECIES_CALFUMP] = 0,
+	[SPECIES_SIRENITEE] = 0,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =
