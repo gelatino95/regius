@@ -2027,6 +2027,18 @@ Cry_Calfump::
 	.align 2
 Cry_Sirenitee::
 	.incbin "sound/direct_sound_samples/cries/sirenitee.bin"
+	
+	.align 2
+Cry_Quetini::
+	.incbin "sound/direct_sound_samples/cries/quetini.bin"
+	
+	.align 2
+Cry_Quetzin::
+	.incbin "sound/direct_sound_samples/cries/quetzin.bin"
+	
+	.align 2
+Cry_Cassowily::
+	.incbin "sound/direct_sound_samples/cries/cassowily.bin"
 
 //end new pokemon
 

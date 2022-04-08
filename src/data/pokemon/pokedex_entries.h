@@ -4909,4 +4909,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 344,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_QUETINI] =
+    {
+        .categoryName = _("FLASHY"),
+        .height = 5,
+        .weight = 11,
+        .description = gQuetiniPokedexText,
+        .pokemonScale = 451,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_QUETZIN] =
+    {
+        .categoryName = _("NOISE"),
+        .height = 12,
+        .weight = 325,
+        .description = gQuetzinPokedexText,
+        .pokemonScale = 278,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_CASSOWILY] =
+    {
+        .categoryName = _("BIRD"),
+        .height = 13,
+        .weight = 490,
+        .description = gCassowilyPokedexText,
+        .pokemonScale = 300,
+        .pokemonOffset = 3,
+        .trainerScale = 257,
+        .trainerOffset = -1,
+    },
 };

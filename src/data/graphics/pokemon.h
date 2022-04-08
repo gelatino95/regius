@@ -2978,3 +2978,24 @@ const u32 gMonBackPic_Sirenitee[] = INCBIN_U32("graphics/pokemon/sirenitee/back.
 const u32 gMonShinyPalette_Sirenitee[] = INCBIN_U32("graphics/pokemon/sirenitee/shiny.gbapal.lz");
 const u8 gMonIcon_Sirenitee[] = INCBIN_U8("graphics/pokemon/sirenitee/icon.4bpp");
 const u8 gMonFootprint_Sirenitee[] = INCBIN_U8("graphics/pokemon/sirenitee/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Quetini[] = INCBIN_U32("graphics/pokemon/quetini/front.4bpp.lz");
+const u32 gMonPalette_Quetini[] = INCBIN_U32("graphics/pokemon/quetini/normal.gbapal.lz");
+const u32 gMonBackPic_Quetini[] = INCBIN_U32("graphics/pokemon/quetini/back.4bpp.lz");
+const u32 gMonShinyPalette_Quetini[] = INCBIN_U32("graphics/pokemon/quetini/shiny.gbapal.lz");
+const u8 gMonIcon_Quetini[] = INCBIN_U8("graphics/pokemon/quetini/icon.4bpp");
+const u8 gMonFootprint_Quetini[] = INCBIN_U8("graphics/pokemon/quetini/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Quetzin[] = INCBIN_U32("graphics/pokemon/quetzin/front.4bpp.lz");
+const u32 gMonPalette_Quetzin[] = INCBIN_U32("graphics/pokemon/quetzin/normal.gbapal.lz");
+const u32 gMonBackPic_Quetzin[] = INCBIN_U32("graphics/pokemon/quetzin/back.4bpp.lz");
+const u32 gMonShinyPalette_Quetzin[] = INCBIN_U32("graphics/pokemon/quetzin/shiny.gbapal.lz");
+const u8 gMonIcon_Quetzin[] = INCBIN_U8("graphics/pokemon/quetzin/icon.4bpp");
+const u8 gMonFootprint_Quetzin[] = INCBIN_U8("graphics/pokemon/quetzin/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Cassowily[] = INCBIN_U32("graphics/pokemon/cassowily/front.4bpp.lz");
+const u32 gMonPalette_Cassowily[] = INCBIN_U32("graphics/pokemon/cassowily/normal.gbapal.lz");
+const u32 gMonBackPic_Cassowily[] = INCBIN_U32("graphics/pokemon/cassowily/back.4bpp.lz");
+const u32 gMonShinyPalette_Cassowily[] = INCBIN_U32("graphics/pokemon/cassowily/shiny.gbapal.lz");
+const u8 gMonIcon_Cassowily[] = INCBIN_U8("graphics/pokemon/cassowily/icon.4bpp");
+const u8 gMonFootprint_Cassowily[] = INCBIN_U8("graphics/pokemon/cassowily/footprint.1bpp");

@@ -5046,6 +5046,50 @@ static const union AnimCmd sAnim_SIRENITEE_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_QUETINI_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_QUETZIN_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CASSOWILY_1[] =
+{
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7300,6 +7344,21 @@ static const union AnimCmd *const sAnims_SIRENITEE[] ={
     sAnim_SIRENITEE_1,
 };
 
+static const union AnimCmd *const sAnims_QUETINI[] ={
+    sAnim_GeneralFrame0,
+    sAnim_QUETINI_1,
+};
+
+static const union AnimCmd *const sAnims_QUETZIN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_QUETZIN_1,
+};
+
+static const union AnimCmd *const sAnims_CASSOWILY[] ={
+    sAnim_GeneralFrame0,
+    sAnim_CASSOWILY_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7770,6 +7829,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(PALMODON),
 	ANIM_CMD(CALFUMP),
 	ANIM_CMD(SIRENITEE),
+	ANIM_CMD(QUETINI),
+	ANIM_CMD(QUETZIN),
+	ANIM_CMD(CASSOWILY),
 };
 
 #undef ANIM_CMD

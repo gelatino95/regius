@@ -411,6 +411,9 @@ gCryTable::
 	cry Cry_Palmodon 
 	cry Cry_Calfump 
 	cry Cry_Sirenitee 
+	cry Cry_Quetini 
+	cry Cry_Quetzin 
+	cry Cry_Cassowily 
 
 
 	.align 2
@@ -826,3 +829,6 @@ gCryTable2::
 	cry2 Cry_Palmodon 
 	cry2 Cry_Calfump 
 	cry2 Cry_Sirenitee 
+	cry2 Cry_Quetini 
+	cry2 Cry_Quetzin 
+	cry2 Cry_Cassowily 

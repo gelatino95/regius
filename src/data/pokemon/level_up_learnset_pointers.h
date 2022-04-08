@@ -435,4 +435,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_PALMODON] = sPalmodonLevelUpLearnset,
 	[SPECIES_CALFUMP] = sCalfumpLevelUpLearnset,
 	[SPECIES_SIRENITEE] = sSireniteeLevelUpLearnset,
+	[SPECIES_QUETINI] = sQuetiniLevelUpLearnset,
+	[SPECIES_QUETZIN] = sQuetzinLevelUpLearnset,
+	[SPECIES_CASSOWILY] = sCassowilyLevelUpLearnset,
 };

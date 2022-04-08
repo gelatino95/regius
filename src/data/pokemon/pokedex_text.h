@@ -2453,3 +2453,21 @@ const u8 gSireniteePokedexText[] = _(
 	"song that carries for miles. Its milk has\n"
 	"great healing properties. It will often\n"
 	"adopt and care for orphaned POKéMON.");
+	
+const u8 gQuetiniPokedexText[] = _(
+    "A colorful jungle bird with a talent\n"
+	"for mimicry. Scientists have discovered\n"
+	"over 200 unique sounds it uses to\n"
+	"communicate with others of its kind.");
+	
+const u8 gQuetzinPokedexText[] = _(
+    "The ear-splitting call of QUETZIN is\n"
+	"amplified by the hollow horn on its head.\n"
+	"It's a clumsy flyer, but it has special\n"
+	"wing claws for holding on to branches.");
+	
+const u8 gCassowilyPokedexText[] = _(
+    "A docile POKéMON that prefers to mind\n"
+	"its own business. If bothered, however,\n"
+	"it will lash out with great force.\n"
+	"It will play dirty to get what it wants.");

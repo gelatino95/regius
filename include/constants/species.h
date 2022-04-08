@@ -438,8 +438,11 @@
 #define SPECIES_PALMODON 431
 #define SPECIES_CALFUMP 432
 #define SPECIES_SIRENITEE 433
+#define SPECIES_QUETINI 434
+#define SPECIES_QUETZIN 435
+#define SPECIES_CASSOWILY 436
 //end new pokemon
-#define SPECIES_EGG 434
+#define SPECIES_EGG 437
 
 #define NUM_SPECIES SPECIES_EGG
 
@@ -889,8 +892,11 @@
 #define NATIONAL_DEX_PALMODON       406
 #define NATIONAL_DEX_CALFUMP        407
 #define NATIONAL_DEX_SIRENITEE      408
+#define NATIONAL_DEX_QUETINI        409
+#define NATIONAL_DEX_QUETZIN        410
+#define NATIONAL_DEX_CASSOWILY      411
 
-#define NATIONAL_DEX_COUNT          NATIONAL_DEX_SIRENITEE
+#define NATIONAL_DEX_COUNT          NATIONAL_DEX_CASSOWILY
 
 #define NATIONAL_DEX_OLD_UNOWN_B    (NATIONAL_DEX_COUNT + 1)
 #define NATIONAL_DEX_OLD_UNOWN_C    (NATIONAL_DEX_OLD_UNOWN_B + 1)
@@ -930,9 +936,9 @@
 #define HOENN_DEX_MUDKIP        7
 #define HOENN_DEX_MARSHTOMP     8
 #define HOENN_DEX_SWAMPERT      9
-#define HOENN_DEX_CALFUMP       10 //change back to POOCHYENA
-#define HOENN_DEX_SIRENITEE     11 //change back to MIGHTYENA
-#define HOENN_DEX_BENTHINE      12 //change back to ZIGZAGOON
+#define HOENN_DEX_QUETINI       10 //change back to POOCHYENA
+#define HOENN_DEX_QUETZIN       11 //change back to MIGHTYENA
+#define HOENN_DEX_CASSOWILY     12 //change back to ZIGZAGOON
 #define HOENN_DEX_LINOONE       13
 #define HOENN_DEX_WURMPLE       14
 #define HOENN_DEX_SILCOON       15
@@ -1320,19 +1326,22 @@
 #define HOENN_DEX_COCKATRIX     393
 #define HOENN_DEX_LITTURCH      394
 #define HOENN_DEX_PELURCHIN     395
-#define HOENN_DEX_KELPENT       396
-#define HOENN_DEX_ALGOREST      397
-#define HOENN_DEX_RADULIN       398
-#define HOENN_DEX_TOXULA        399
-#define HOENN_DEX_GLYPHMITE     400
-#define HOENN_DEX_PYRAMITE      401
-#define HOENN_DEX_LEVILITH      402
-#define HOENN_DEX_CORPOLITH     403
-#define HOENN_DEX_COCONIT       404
-#define HOENN_DEX_PALMODON      405
-#define HOENN_DEX_POOCHYENA     406
-#define HOENN_DEX_MIGHTYENA     407
-#define HOENN_DEX_ZIGZAGOON     408 //change back to final new pokemon
+#define HOENN_DEX_BENTHINE      396
+#define HOENN_DEX_KELPENT       397
+#define HOENN_DEX_ALGOREST      398
+#define HOENN_DEX_RADULIN       399
+#define HOENN_DEX_TOXULA        400
+#define HOENN_DEX_GLYPHMITE     401
+#define HOENN_DEX_PYRAMITE      402
+#define HOENN_DEX_LEVILITH      403
+#define HOENN_DEX_CORPOLITH     404
+#define HOENN_DEX_COCONIT       405
+#define HOENN_DEX_PALMODON      406
+#define HOENN_DEX_CALFUMP       407
+#define HOENN_DEX_SIRENITEE     408
+#define HOENN_DEX_POOCHYENA     409
+#define HOENN_DEX_MIGHTYENA     410
+#define HOENN_DEX_ZIGZAGOON     411 //change back to final new pokemon
 
 #define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_ZIGZAGOON + 1) //change back to final new pokemon
 #define HOENN_DEX_OLD_UNOWN_C   (HOENN_DEX_OLD_UNOWN_B + 1)

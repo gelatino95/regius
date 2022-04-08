@@ -489,6 +489,9 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_PALMODON] = gMonIcon_Palmodon,
 	[SPECIES_CALFUMP] = gMonIcon_Calfump,
 	[SPECIES_SIRENITEE] = gMonIcon_Sirenitee,
+	[SPECIES_QUETINI] = gMonIcon_Quetini,
+	[SPECIES_QUETZIN] = gMonIcon_Quetzin,
+	[SPECIES_CASSOWILY] = gMonIcon_Cassowily,
 	
 };
 
@@ -957,6 +960,9 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_PALMODON] = 1,
 	[SPECIES_CALFUMP] = 0,
 	[SPECIES_SIRENITEE] = 0,
+	[SPECIES_QUETINI] = 0,
+	[SPECIES_QUETZIN] = 0,
+	[SPECIES_CASSOWILY] = 2,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

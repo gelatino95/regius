@@ -529,6 +529,9 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(PALMODON),
 	SPECIES_TO_HOENN(CALFUMP),
 	SPECIES_TO_HOENN(SIRENITEE),
+	SPECIES_TO_HOENN(QUETINI),
+	SPECIES_TO_HOENN(QUETZIN),
+	SPECIES_TO_HOENN(CASSOWILY),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -967,6 +970,9 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(PALMODON),
 	SPECIES_TO_NATIONAL(CALFUMP),
 	SPECIES_TO_NATIONAL(SIRENITEE),
+	SPECIES_TO_NATIONAL(QUETINI),
+	SPECIES_TO_NATIONAL(QUETZIN),
+	SPECIES_TO_NATIONAL(CASSOWILY),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -1003,6 +1009,9 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(PALMODON),
 	HOENN_TO_NATIONAL(CALFUMP),
 	HOENN_TO_NATIONAL(SIRENITEE),
+	HOENN_TO_NATIONAL(QUETINI),
+	HOENN_TO_NATIONAL(QUETZIN),
+	HOENN_TO_NATIONAL(CASSOWILY),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1870,6 +1879,9 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_PALMODON - 1]    = ANIM_H_SLIDE,
     [SPECIES_CALFUMP - 1]     = ANIM_V_SLIDE_WOBBLE_SMALL,
     [SPECIES_SIRENITEE - 1]   = ANIM_V_SLIDE_WOBBLE,
+    [SPECIES_QUETINI - 1]     = ANIM_V_JUMPS_BIG,
+    [SPECIES_QUETZIN - 1]     = ANIM_V_JUMPS_H_JUMPS,
+    [SPECIES_CASSOWILY - 1]   = ANIM_CIRCLE_INTO_BG,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

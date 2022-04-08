@@ -1363,6 +1363,26 @@ const u16 gEggMoves[] = {
               MOVE_WATER_SPORT,
               MOVE_REFRESH,
               MOVE_ENCORE),
+			  
+	egg_moves(QUETINI,
+              MOVE_DRILL_PECK,
+              MOVE_WING_ATTACK,
+              MOVE_METAL_SOUND,
+              MOVE_FURY_ATTACK,
+              MOVE_AGILITY,
+              MOVE_SWIFT,
+              MOVE_FOCUS_ENERGY),
+			  
+	egg_moves(CASSOWILY,
+              MOVE_STOMP,
+              MOVE_FEATHER_DANCE,
+              MOVE_SAND_ATTACK,
+              MOVE_RAGE,
+              MOVE_AGILITY,
+              MOVE_ENDEAVOR,
+              MOVE_THRASH,
+              MOVE_FAKE_OUT,
+              MOVE_FAINT_ATTACK),
 
     EGG_MOVES_TERMINATOR
 };

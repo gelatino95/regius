@@ -3031,6 +3031,30 @@ extern const u32 gMonStillFrontPic_Sirenitee[];
 extern const u8 gMonIcon_Sirenitee[];
 extern const u8 gMonFootprint_Sirenitee[];
 
+extern const u32 gMonFrontPic_Quetini[];
+extern const u32 gMonPalette_Quetini[];
+extern const u32 gMonBackPic_Quetini[];
+extern const u32 gMonShinyPalette_Quetini[];
+extern const u32 gMonStillFrontPic_Quetini[];
+extern const u8 gMonIcon_Quetini[];
+extern const u8 gMonFootprint_Quetini[];
+
+extern const u32 gMonFrontPic_Quetzin[];
+extern const u32 gMonPalette_Quetzin[];
+extern const u32 gMonBackPic_Quetzin[];
+extern const u32 gMonShinyPalette_Quetzin[];
+extern const u32 gMonStillFrontPic_Quetzin[];
+extern const u8 gMonIcon_Quetzin[];
+extern const u8 gMonFootprint_Quetzin[];
+
+extern const u32 gMonFrontPic_Cassowily[];
+extern const u32 gMonPalette_Cassowily[];
+extern const u32 gMonBackPic_Cassowily[];
+extern const u32 gMonShinyPalette_Cassowily[];
+extern const u32 gMonStillFrontPic_Cassowily[];
+extern const u8 gMonIcon_Cassowily[];
+extern const u8 gMonFootprint_Cassowily[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];

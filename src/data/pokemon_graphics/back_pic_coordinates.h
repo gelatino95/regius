@@ -2311,5 +2311,20 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 9,
     },
+	[SPECIES_QUETINI] =
+    {
+        .size = 0x66,
+        .y_offset = 10,
+    },
+    [SPECIES_QUETZIN] =
+    {
+        .size = 0x87,
+        .y_offset = 5,
+    },
+	[SPECIES_CASSOWILY] =
+    {
+        .size = 0x87,
+        .y_offset = 3,
+    },
 };
 
