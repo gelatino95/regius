@@ -2039,6 +2039,14 @@ Cry_Quetzin::
 	.align 2
 Cry_Cassowily::
 	.incbin "sound/direct_sound_samples/cries/cassowily.bin"
+	
+	.align 2
+Cry_Catric::
+	.incbin "sound/direct_sound_samples/cries/catric.bin"
+	
+	.align 2
+Cry_Ampedo::
+	.incbin "sound/direct_sound_samples/cries/ampedo.bin"
 
 //end new pokemon
 

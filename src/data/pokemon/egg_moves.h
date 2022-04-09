@@ -1383,6 +1383,14 @@ const u16 gEggMoves[] = {
               MOVE_THRASH,
               MOVE_FAKE_OUT,
               MOVE_FAINT_ATTACK),
+			  
+	egg_moves(CATRIC,
+              MOVE_CONFUSE_RAY,
+              MOVE_SUPERSONIC,
+              MOVE_AMNESIA,
+              MOVE_SNORE,
+              MOVE_MUD_SLAP,
+              MOVE_WATER_SPORT),
 
     EGG_MOVES_TERMINATOR
 };

@@ -2326,4 +2326,14 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x57,
         .y_offset = 0,
     },
+	[SPECIES_CATRIC] =
+    {
+        .size = 0x64,
+        .y_offset = 8,
+    },
+	[SPECIES_AMPEDO] =
+    {
+        .size = 0x86,
+        .y_offset = 4,
+    },
 };

@@ -492,6 +492,8 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_QUETINI] = gMonIcon_Quetini,
 	[SPECIES_QUETZIN] = gMonIcon_Quetzin,
 	[SPECIES_CASSOWILY] = gMonIcon_Cassowily,
+	[SPECIES_CATRIC] = gMonIcon_Catric,
+	[SPECIES_AMPEDO] = gMonIcon_Ampedo,
 	
 };
 
@@ -963,6 +965,8 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_QUETINI] = 0,
 	[SPECIES_QUETZIN] = 0,
 	[SPECIES_CASSOWILY] = 2,
+	[SPECIES_CATRIC] = 0,
+	[SPECIES_AMPEDO] = 0,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

@@ -438,4 +438,6 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_QUETINI] = sQuetiniLevelUpLearnset,
 	[SPECIES_QUETZIN] = sQuetzinLevelUpLearnset,
 	[SPECIES_CASSOWILY] = sCassowilyLevelUpLearnset,
+	[SPECIES_CATRIC] = sCatricLevelUpLearnset,
+	[SPECIES_AMPEDO] = sAmpedoLevelUpLearnset,
 };

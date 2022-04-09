@@ -2999,3 +2999,17 @@ const u32 gMonBackPic_Cassowily[] = INCBIN_U32("graphics/pokemon/cassowily/back.
 const u32 gMonShinyPalette_Cassowily[] = INCBIN_U32("graphics/pokemon/cassowily/shiny.gbapal.lz");
 const u8 gMonIcon_Cassowily[] = INCBIN_U8("graphics/pokemon/cassowily/icon.4bpp");
 const u8 gMonFootprint_Cassowily[] = INCBIN_U8("graphics/pokemon/cassowily/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Catric[] = INCBIN_U32("graphics/pokemon/catric/front.4bpp.lz");
+const u32 gMonPalette_Catric[] = INCBIN_U32("graphics/pokemon/catric/normal.gbapal.lz");
+const u32 gMonBackPic_Catric[] = INCBIN_U32("graphics/pokemon/catric/back.4bpp.lz");
+const u32 gMonShinyPalette_Catric[] = INCBIN_U32("graphics/pokemon/catric/shiny.gbapal.lz");
+const u8 gMonIcon_Catric[] = INCBIN_U8("graphics/pokemon/catric/icon.4bpp");
+const u8 gMonFootprint_Catric[] = INCBIN_U8("graphics/pokemon/catric/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Ampedo[] = INCBIN_U32("graphics/pokemon/ampedo/front.4bpp.lz");
+const u32 gMonPalette_Ampedo[] = INCBIN_U32("graphics/pokemon/ampedo/normal.gbapal.lz");
+const u32 gMonBackPic_Ampedo[] = INCBIN_U32("graphics/pokemon/ampedo/back.4bpp.lz");
+const u32 gMonShinyPalette_Ampedo[] = INCBIN_U32("graphics/pokemon/ampedo/shiny.gbapal.lz");
+const u8 gMonIcon_Ampedo[] = INCBIN_U8("graphics/pokemon/ampedo/icon.4bpp");
+const u8 gMonFootprint_Ampedo[] = INCBIN_U8("graphics/pokemon/ampedo/footprint.1bpp");

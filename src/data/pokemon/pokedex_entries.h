@@ -4945,4 +4945,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 257,
         .trainerOffset = -1,
     },
+	
+	[NATIONAL_DEX_CATRIC] =
+    {
+        .categoryName = _("CATFISH"),
+        .height = 5,
+        .weight = 70,
+        .description = gCatricPokedexText,
+        .pokemonScale = 430,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_AMPEDO] =
+    {
+        .categoryName = _("RAY"),
+        .height = 12,
+        .weight = 210,
+        .description = gAmpedoPokedexText,
+        .pokemonScale = 269,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

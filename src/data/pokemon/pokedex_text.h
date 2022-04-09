@@ -2471,3 +2471,15 @@ const u8 gCassowilyPokedexText[] = _(
 	"its own business. If bothered, however,\n"
 	"it will lash out with great force.\n"
 	"It will play dirty to get what it wants.");
+	
+const u8 gCatricPokedexText[] = _(
+    "This blind POKéMON can navigate through\n"
+	"murky water using its electrical sense.\n"
+	"It lights up the spots on its body to\n"
+	"lure in prey, then stuns them with a shock.");
+	
+const u8 gAmpedoPokedexText[] = _(
+    "During thunderstorms, AMPEDO will leap\n"
+	"out of the water in hopes of being struck\n"
+	"by lightning. It can then let loose its\n"
+	"stored electricity in one powerful bolt.");

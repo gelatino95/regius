@@ -414,6 +414,8 @@ gCryTable::
 	cry Cry_Quetini 
 	cry Cry_Quetzin 
 	cry Cry_Cassowily 
+	cry Cry_Catric 
+	cry Cry_Ampedo 
 
 
 	.align 2
@@ -832,3 +834,5 @@ gCryTable2::
 	cry2 Cry_Quetini 
 	cry2 Cry_Quetzin 
 	cry2 Cry_Cassowily 
+	cry2 Cry_Catric 
+	cry2 Cry_Ampedo 
