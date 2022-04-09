@@ -1391,6 +1391,11 @@ const u16 gEggMoves[] = {
               MOVE_SNORE,
               MOVE_MUD_SLAP,
               MOVE_WATER_SPORT),
+			  
+	egg_moves(ZAMIAD,
+              MOVE_SLAM,
+              MOVE_ACID,
+              MOVE_MOONLIGHT),
 
     EGG_MOVES_TERMINATOR
 };

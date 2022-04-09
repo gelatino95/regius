@@ -3071,6 +3071,22 @@ extern const u32 gMonStillFrontPic_Ampedo[];
 extern const u8 gMonIcon_Ampedo[];
 extern const u8 gMonFootprint_Ampedo[];
 
+extern const u32 gMonFrontPic_Zamiad[];
+extern const u32 gMonPalette_Zamiad[];
+extern const u32 gMonBackPic_Zamiad[];
+extern const u32 gMonShinyPalette_Zamiad[];
+extern const u32 gMonStillFrontPic_Zamiad[];
+extern const u8 gMonIcon_Zamiad[];
+extern const u8 gMonFootprint_Zamiad[];
+
+extern const u32 gMonFrontPic_Frondula[];
+extern const u32 gMonPalette_Frondula[];
+extern const u32 gMonBackPic_Frondula[];
+extern const u32 gMonShinyPalette_Frondula[];
+extern const u32 gMonStillFrontPic_Frondula[];
+extern const u8 gMonIcon_Frondula[];
+extern const u8 gMonFootprint_Frondula[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];

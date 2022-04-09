@@ -566,6 +566,7 @@ const u16 gEasyChatWordsByLetter_F[] = {
     EC_WORD_FRIDAY,
     EC_WORD_FRIEND,
     EC_WORD_FROM,
+    EC_POKEMON_NATIONAL(FRONDULA),
     EC_WORD_FRONT,
     EC_WORD_FRONTIER,
     EC_MOVE2(FRUSTRATION),
@@ -1983,6 +1984,7 @@ const u16 gEasyChatWordsByLetter_Y[] = {
 };
 
 const u16 gEasyChatWordsByLetter_Z[] = {
+    EC_POKEMON_NATIONAL(ZAMIAD),
     EC_POKEMON(ZANGOOSE),
     EC_MOVE2(ZAP_CANNON),
     EC_POKEMON_NATIONAL(ZAPDOS),

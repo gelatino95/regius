@@ -468,4 +468,6 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
 	SPECIES_SPRITE(CASSOWILY, gMonBackPic_Cassowily),
 	SPECIES_SPRITE(CATRIC, gMonBackPic_Catric),
 	SPECIES_SPRITE(AMPEDO, gMonBackPic_Ampedo),
+	SPECIES_SPRITE(ZAMIAD, gMonBackPic_Zamiad),
+	SPECIES_SPRITE(FRONDULA, gMonBackPic_Frondula),
 };

@@ -2483,3 +2483,15 @@ const u8 gAmpedoPokedexText[] = _(
 	"out of the water in hopes of being struck\n"
 	"by lightning. It can then let loose its\n"
 	"stored electricity in one powerful bolt.");
+	
+const u8 gZamiadPokedexText[] = _(
+    "Though it has poor mobility, ZAMIAD is\n"
+	"protected by its rock-hard shell and\n"
+	"poisonous innards. It searches for the\n"
+	"perfect spot to root itself.");
+	
+const u8 gFrondulaPokedexText[] = _(
+    "This POKéMON photosynthesizes during\n"
+	"the day and hunts by moonlight. It\n"
+	"swings the razor-sharp leaf on its head\n"
+	"to brutally slice its foes.");

@@ -4969,4 +4969,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_ZAMIAD] =
+    {
+        .categoryName = _("SEED"),
+        .height = 6,
+        .weight = 136,
+        .description = gZamiadPokedexText,
+        .pokemonScale = 485,
+        .pokemonOffset = 18,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_FRONDULA] =
+    {
+        .categoryName = _("FROND"),
+        .height = 14,
+        .weight = 998,
+        .description = gFrondulaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

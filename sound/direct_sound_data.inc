@@ -2047,6 +2047,14 @@ Cry_Catric::
 	.align 2
 Cry_Ampedo::
 	.incbin "sound/direct_sound_samples/cries/ampedo.bin"
+	
+	.align 2
+Cry_Zamiad::
+	.incbin "sound/direct_sound_samples/cries/zamiad.bin"
+	
+	.align 2
+Cry_Frondula::
+	.incbin "sound/direct_sound_samples/cries/frondula.bin"
 
 //end new pokemon
 

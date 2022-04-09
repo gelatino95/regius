@@ -2336,4 +2336,14 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x86,
         .y_offset = 4,
     },
+	[SPECIES_ZAMIAD] =
+    {
+        .size = 0x66,
+        .y_offset = 9,
+    },
+	[SPECIES_FRONDULA] =
+    {
+        .size = 0x78,
+        .y_offset = 0,
+    },
 };

@@ -416,6 +416,8 @@ gCryTable::
 	cry Cry_Cassowily 
 	cry Cry_Catric 
 	cry Cry_Ampedo 
+	cry Cry_Zamiad 
+	cry Cry_Frondula 
 
 
 	.align 2
@@ -836,3 +838,5 @@ gCryTable2::
 	cry2 Cry_Cassowily 
 	cry2 Cry_Catric 
 	cry2 Cry_Ampedo 
+	cry2 Cry_Zamiad 
+	cry2 Cry_Frondula 

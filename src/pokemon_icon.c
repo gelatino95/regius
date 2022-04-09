@@ -494,6 +494,8 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_CASSOWILY] = gMonIcon_Cassowily,
 	[SPECIES_CATRIC] = gMonIcon_Catric,
 	[SPECIES_AMPEDO] = gMonIcon_Ampedo,
+	[SPECIES_ZAMIAD] = gMonIcon_Zamiad,
+	[SPECIES_FRONDULA] = gMonIcon_Frondula,
 	
 };
 
@@ -967,6 +969,8 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_CASSOWILY] = 2,
 	[SPECIES_CATRIC] = 0,
 	[SPECIES_AMPEDO] = 0,
+	[SPECIES_ZAMIAD] = 1,
+	[SPECIES_FRONDULA] = 1,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

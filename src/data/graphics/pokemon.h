@@ -3013,3 +3013,17 @@ const u32 gMonBackPic_Ampedo[] = INCBIN_U32("graphics/pokemon/ampedo/back.4bpp.l
 const u32 gMonShinyPalette_Ampedo[] = INCBIN_U32("graphics/pokemon/ampedo/shiny.gbapal.lz");
 const u8 gMonIcon_Ampedo[] = INCBIN_U8("graphics/pokemon/ampedo/icon.4bpp");
 const u8 gMonFootprint_Ampedo[] = INCBIN_U8("graphics/pokemon/ampedo/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Zamiad[] = INCBIN_U32("graphics/pokemon/zamiad/front.4bpp.lz");
+const u32 gMonPalette_Zamiad[] = INCBIN_U32("graphics/pokemon/zamiad/normal.gbapal.lz");
+const u32 gMonBackPic_Zamiad[] = INCBIN_U32("graphics/pokemon/zamiad/back.4bpp.lz");
+const u32 gMonShinyPalette_Zamiad[] = INCBIN_U32("graphics/pokemon/zamiad/shiny.gbapal.lz");
+const u8 gMonIcon_Zamiad[] = INCBIN_U8("graphics/pokemon/zamiad/icon.4bpp");
+const u8 gMonFootprint_Zamiad[] = INCBIN_U8("graphics/pokemon/zamiad/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/front.4bpp.lz");
+const u32 gMonPalette_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/normal.gbapal.lz");
+const u32 gMonBackPic_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/back.4bpp.lz");
+const u32 gMonShinyPalette_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/shiny.gbapal.lz");
+const u8 gMonIcon_Frondula[] = INCBIN_U8("graphics/pokemon/frondula/icon.4bpp");
+const u8 gMonFootprint_Frondula[] = INCBIN_U8("graphics/pokemon/frondula/footprint.1bpp");

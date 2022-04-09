@@ -5109,6 +5109,30 @@ static const union AnimCmd sAnim_AMPEDO_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_ZAMIAD_1[] =
+{
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_FRONDULA_1[] =
+{
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7388,6 +7412,16 @@ static const union AnimCmd *const sAnims_AMPEDO[] ={
     sAnim_AMPEDO_1,
 };
 
+static const union AnimCmd *const sAnims_ZAMIAD[] ={
+    sAnim_GeneralFrame0,
+    sAnim_ZAMIAD_1,
+};
+
+static const union AnimCmd *const sAnims_FRONDULA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_FRONDULA_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7863,6 +7897,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(CASSOWILY),
 	ANIM_CMD(CATRIC),
 	ANIM_CMD(AMPEDO),
+	ANIM_CMD(ZAMIAD),
+	ANIM_CMD(FRONDULA),
 };
 
 #undef ANIM_CMD
