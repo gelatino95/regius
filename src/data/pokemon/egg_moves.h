@@ -1396,6 +1396,16 @@ const u16 gEggMoves[] = {
               MOVE_SLAM,
               MOVE_ACID,
               MOVE_MOONLIGHT),
+			  
+	egg_moves(SLOTHER,
+              MOVE_SLASH,
+              MOVE_FURY_SWIPES,
+              MOVE_SLACK_OFF,
+              MOVE_COUNTER,
+              MOVE_ENCORE,
+              MOVE_ENDURE,
+              MOVE_SCREECH,
+              MOVE_FALSE_SWIPE),
 
     EGG_MOVES_TERMINATOR
 };

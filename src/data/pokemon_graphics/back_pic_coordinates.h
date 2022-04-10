@@ -2346,5 +2346,15 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 4,
     },
+	[SPECIES_SLOTHER] =
+    {
+        .size = 0x66,
+        .y_offset = 8,
+    },
+    [SPECIES_GLADITHER] =
+    {
+        .size = 0x87,
+        .y_offset = 8,
+    },
 };
 

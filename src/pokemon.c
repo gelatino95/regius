@@ -536,6 +536,8 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(AMPEDO),
 	SPECIES_TO_HOENN(ZAMIAD),
 	SPECIES_TO_HOENN(FRONDULA),
+	SPECIES_TO_HOENN(SLOTHER),
+	SPECIES_TO_HOENN(GLADITHER),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -981,6 +983,8 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(AMPEDO),
 	SPECIES_TO_NATIONAL(ZAMIAD),
 	SPECIES_TO_NATIONAL(FRONDULA),
+	SPECIES_TO_NATIONAL(SLOTHER),
+	SPECIES_TO_NATIONAL(GLADITHER),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -1024,6 +1028,8 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(AMPEDO),
 	HOENN_TO_NATIONAL(ZAMIAD),
 	HOENN_TO_NATIONAL(FRONDULA),
+	HOENN_TO_NATIONAL(SLOTHER),
+	HOENN_TO_NATIONAL(GLADITHER),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1896,8 +1902,10 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_CASSOWILY - 1]   = ANIM_CIRCLE_INTO_BG,
     [SPECIES_CATRIC - 1]      = ANIM_FLASH_YELLOW,
     [SPECIES_AMPEDO - 1]      = ANIM_FLASH_YELLOW,
-    [SPECIES_ZAMIAD - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
-    [SPECIES_FRONDULA - 1]      = ANIM_LUNGE_GROW,
+    [SPECIES_ZAMIAD - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_FRONDULA - 1]    = ANIM_LUNGE_GROW,
+	[SPECIES_SLOTHER - 1]     = ANIM_BOUNCE_ROTATE_TO_SIDES,
+    [SPECIES_GLADITHER - 1]   = ANIM_V_SHAKE_TWICE,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -1961,6 +1969,7 @@ static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
 	[SPECIES_CHICKLET - 1]   = 25,
     [SPECIES_LEVILITH - 1]   = 15,
     [SPECIES_SIRENITEE - 1]  = 10,
+    [SPECIES_GLADITHER - 1]  = 5,
 };
 
 const u8 gPPUpGetMask[] = {0x03, 0x0c, 0x30, 0xc0}; // Masks for getting PP Up count, also PP Max values

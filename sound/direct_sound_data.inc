@@ -2055,6 +2055,14 @@ Cry_Zamiad::
 	.align 2
 Cry_Frondula::
 	.incbin "sound/direct_sound_samples/cries/frondula.bin"
+	
+	.align 2
+Cry_Slother::
+	.incbin "sound/direct_sound_samples/cries/slother.bin"
+	
+	.align 2
+Cry_Gladither::
+	.incbin "sound/direct_sound_samples/cries/gladither.bin"
 
 //end new pokemon
 

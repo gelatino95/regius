@@ -4993,4 +4993,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_SLOTHER] =
+    {
+        .categoryName = _("SLOTH"),
+        .height = 12,
+        .weight = 484,
+        .description = gSlotherPokedexText,
+        .pokemonScale = 301,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_GLADITHER] =
+    {
+        .categoryName = _("GARGANTUAN"),
+        .height = 30,
+        .weight = 3225,
+        .description = gGladitherPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 2,
+        .trainerScale = 380,
+        .trainerOffset = 8,
+    },
 };

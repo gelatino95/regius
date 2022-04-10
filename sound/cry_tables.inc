@@ -418,6 +418,8 @@ gCryTable::
 	cry Cry_Ampedo 
 	cry Cry_Zamiad 
 	cry Cry_Frondula 
+	cry Cry_Slother 
+	cry Cry_Gladither 
 
 
 	.align 2
@@ -840,3 +842,5 @@ gCryTable2::
 	cry2 Cry_Ampedo 
 	cry2 Cry_Zamiad 
 	cry2 Cry_Frondula 
+	cry2 Cry_Slother 
+	cry2 Cry_Gladither 

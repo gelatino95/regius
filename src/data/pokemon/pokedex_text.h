@@ -2495,3 +2495,15 @@ const u8 gFrondulaPokedexText[] = _(
 	"the day and hunts by moonlight. It\n"
 	"swings the razor-sharp leaf on its head\n"
 	"to brutally slice its foes.");
+	
+const u8 gSlotherPokedexText[] = _(
+    "It spends most of its time lazing in\n"
+	"high tree branches to conserve energy.\n"
+	"When it is ready to fight, it attacks\n"
+	"with quick, frenzied movements.");
+	
+const u8 gGladitherPokedexText[] = _(
+    "This peaceful herbivore would rather\n"
+	"relax than battle. Its rock-hard armor\n"
+	"and overwhelming muscle are enough to\n"
+	"deter any potential enemy.");

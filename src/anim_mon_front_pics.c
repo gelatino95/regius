@@ -454,3 +454,5 @@ const u32 gMonFrontPic_Catric[] = INCBIN_U32("graphics/pokemon/catric/anim_front
 const u32 gMonFrontPic_Ampedo[] = INCBIN_U32("graphics/pokemon/ampedo/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Zamiad[] = INCBIN_U32("graphics/pokemon/zamiad/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Slother[] = INCBIN_U32("graphics/pokemon/slother/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/anim_front.4bpp.lz");

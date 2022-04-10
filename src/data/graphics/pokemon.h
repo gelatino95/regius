@@ -3027,3 +3027,17 @@ const u32 gMonBackPic_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/back.4b
 const u32 gMonShinyPalette_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/shiny.gbapal.lz");
 const u8 gMonIcon_Frondula[] = INCBIN_U8("graphics/pokemon/frondula/icon.4bpp");
 const u8 gMonFootprint_Frondula[] = INCBIN_U8("graphics/pokemon/frondula/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Slother[] = INCBIN_U32("graphics/pokemon/slother/front.4bpp.lz");
+const u32 gMonPalette_Slother[] = INCBIN_U32("graphics/pokemon/slother/normal.gbapal.lz");
+const u32 gMonBackPic_Slother[] = INCBIN_U32("graphics/pokemon/slother/back.4bpp.lz");
+const u32 gMonShinyPalette_Slother[] = INCBIN_U32("graphics/pokemon/slother/shiny.gbapal.lz");
+const u8 gMonIcon_Slother[] = INCBIN_U8("graphics/pokemon/slother/icon.4bpp");
+const u8 gMonFootprint_Slother[] = INCBIN_U8("graphics/pokemon/slother/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/front.4bpp.lz");
+const u32 gMonPalette_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/normal.gbapal.lz");
+const u32 gMonBackPic_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/back.4bpp.lz");
+const u32 gMonShinyPalette_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/shiny.gbapal.lz");
+const u8 gMonIcon_Gladither[] = INCBIN_U8("graphics/pokemon/gladither/icon.4bpp");
+const u8 gMonFootprint_Gladither[] = INCBIN_U8("graphics/pokemon/gladither/footprint.1bpp");

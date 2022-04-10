@@ -442,4 +442,6 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_AMPEDO] = sAmpedoLevelUpLearnset,
 	[SPECIES_ZAMIAD] = sZamiadLevelUpLearnset,
 	[SPECIES_FRONDULA] = sFrondulaLevelUpLearnset,
+	[SPECIES_SLOTHER] = sSlotherLevelUpLearnset,
+	[SPECIES_GLADITHER] = sGladitherLevelUpLearnset,
 };
