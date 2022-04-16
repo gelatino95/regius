@@ -2063,6 +2063,18 @@ Cry_Slother::
 	.align 2
 Cry_Gladither::
 	.incbin "sound/direct_sound_samples/cries/gladither.bin"
+	
+	.align 2
+Cry_Frione::
+	.incbin "sound/direct_sound_samples/cries/frione.bin"
+	
+	.align 2
+Cry_Frigala::
+	.incbin "sound/direct_sound_samples/cries/frigala.bin"
+	
+	.align 2
+Cry_Frigesty::
+	.incbin "sound/direct_sound_samples/cries/frigesty.bin"
 
 //end new pokemon
 

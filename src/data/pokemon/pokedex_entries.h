@@ -5017,4 +5017,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 380,
         .trainerOffset = 8,
     },
+	
+	[NATIONAL_DEX_FRIONE] =
+    {
+        .categoryName = _("FRAGILE"),
+        .height = 6,
+        .weight = 30,
+        .description = gFrionePokedexText,
+        .pokemonScale = 440,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_FRIGALA] =
+    {
+        .categoryName = _("DANCING"),
+        .height = 9,
+        .weight = 171,
+        .description = gFrigalaPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_FRIGESTY] =
+    {
+        .categoryName = _("REGAL"),
+        .height = 13,
+        .weight = 356,
+        .description = gFrigestyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

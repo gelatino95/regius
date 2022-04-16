@@ -2507,3 +2507,21 @@ const u8 gGladitherPokedexText[] = _(
 	"relax than battle. Its rock-hard armor\n"
 	"and overwhelming muscle are enough to\n"
 	"deter any potential enemy.");
+	
+const u8 gFrionePokedexText[] = _(
+    "A weak POKéMON with a fragile body, it\n"
+	"drifts gently through calm frigid waters.\n"
+	"If a piece breaks off its body, it can\n"
+	"only grow back in freezing water.");
+	
+const u8 gFrigalaPokedexText[] = _(
+    "An active POKéMON that sways gracefully\n"
+	"through water. It seeks out others of its\n"
+	"kind to dance with. Its dance patterns are\n"
+	"captivating and soothing.");
+	
+const u8 gFrigestyPokedexText[] = _(
+    "The most graceful dancer of all. FRIGALA\n"
+	"FRIGALA will congregate and dance\n"
+	"around it, forming grand underwater\n"
+	"balls that can go on for days.");

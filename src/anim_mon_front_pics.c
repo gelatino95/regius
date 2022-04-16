@@ -456,3 +456,6 @@ const u32 gMonFrontPic_Zamiad[] = INCBIN_U32("graphics/pokemon/zamiad/anim_front
 const u32 gMonFrontPic_Frondula[] = INCBIN_U32("graphics/pokemon/frondula/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Slother[] = INCBIN_U32("graphics/pokemon/slother/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Frione[] = INCBIN_U32("graphics/pokemon/frione/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Frigala[] = INCBIN_U32("graphics/pokemon/frigala/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/anim_front.4bpp.lz");

@@ -420,6 +420,9 @@ gCryTable::
 	cry Cry_Frondula 
 	cry Cry_Slother 
 	cry Cry_Gladither 
+	cry Cry_Frione 
+	cry Cry_Frigala 
+	cry Cry_Frigesty 
 
 
 	.align 2
@@ -844,3 +847,6 @@ gCryTable2::
 	cry2 Cry_Frondula 
 	cry2 Cry_Slother 
 	cry2 Cry_Gladither 
+	cry2 Cry_Frione 
+	cry2 Cry_Frigala 
+	cry2 Cry_Frigesty 

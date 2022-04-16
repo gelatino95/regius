@@ -447,8 +447,11 @@
 #define SPECIES_FRONDULA 440
 #define SPECIES_SLOTHER 441
 #define SPECIES_GLADITHER 442
+#define SPECIES_FRIONE 443
+#define SPECIES_FRIGALA 444
+#define SPECIES_FRIGESTY 445
 //end new pokemon
-#define SPECIES_EGG 443
+#define SPECIES_EGG 446
 
 #define NUM_SPECIES SPECIES_EGG
 
@@ -907,8 +910,11 @@
 #define NATIONAL_DEX_FRONDULA       415
 #define NATIONAL_DEX_SLOTHER        416
 #define NATIONAL_DEX_GLADITHER      417
+#define NATIONAL_DEX_FRIONE         418
+#define NATIONAL_DEX_FRIGALA        419
+#define NATIONAL_DEX_FRIGESTY       420
 
-#define NATIONAL_DEX_COUNT          NATIONAL_DEX_GLADITHER
+#define NATIONAL_DEX_COUNT          NATIONAL_DEX_FRIGESTY
 
 #define NATIONAL_DEX_OLD_UNOWN_B    (NATIONAL_DEX_COUNT + 1)
 #define NATIONAL_DEX_OLD_UNOWN_C    (NATIONAL_DEX_OLD_UNOWN_B + 1)
@@ -948,9 +954,9 @@
 #define HOENN_DEX_MUDKIP        7
 #define HOENN_DEX_MARSHTOMP     8
 #define HOENN_DEX_SWAMPERT      9
-#define HOENN_DEX_SLOTHER       10 //change back to POOCHYENA
-#define HOENN_DEX_GLADITHER     11 //change back to MIGHTYENA
-#define HOENN_DEX_CASSOWILY     12 //change back to ZIGZAGOON
+#define HOENN_DEX_FRIONE        10 //change back to POOCHYENA
+#define HOENN_DEX_FRIGALA       11 //change back to MIGHTYENA
+#define HOENN_DEX_FRIGESTY      12 //change back to ZIGZAGOON
 #define HOENN_DEX_LINOONE       13
 #define HOENN_DEX_WURMPLE       14
 #define HOENN_DEX_SILCOON       15
@@ -1353,13 +1359,16 @@
 #define HOENN_DEX_SIRENITEE     408
 #define HOENN_DEX_QUETINI       409
 #define HOENN_DEX_QUETZIN       410
-#define HOENN_DEX_CATRIC        411
-#define HOENN_DEX_AMPEDO        412
-#define HOENN_DEX_ZAMIAD        413
-#define HOENN_DEX_FRONDULA      414
-#define HOENN_DEX_POOCHYENA     415
-#define HOENN_DEX_MIGHTYENA     416
-#define HOENN_DEX_ZIGZAGOON     417 //change back to final new pokemon
+#define HOENN_DEX_CASSOWILY     411
+#define HOENN_DEX_CATRIC        412
+#define HOENN_DEX_AMPEDO        413
+#define HOENN_DEX_ZAMIAD        414
+#define HOENN_DEX_FRONDULA      415
+#define HOENN_DEX_SLOTHER       416
+#define HOENN_DEX_GLADITHER     417
+#define HOENN_DEX_POOCHYENA     418
+#define HOENN_DEX_MIGHTYENA     419
+#define HOENN_DEX_ZIGZAGOON     420 //change back to final new pokemon
 
 #define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_ZIGZAGOON + 1) //change back to final new pokemon
 #define HOENN_DEX_OLD_UNOWN_C   (HOENN_DEX_OLD_UNOWN_B + 1)

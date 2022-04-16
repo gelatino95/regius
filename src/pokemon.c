@@ -538,6 +538,9 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(FRONDULA),
 	SPECIES_TO_HOENN(SLOTHER),
 	SPECIES_TO_HOENN(GLADITHER),
+	SPECIES_TO_HOENN(FRIONE),
+	SPECIES_TO_HOENN(FRIGALA),
+	SPECIES_TO_HOENN(FRIGESTY),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -985,6 +988,9 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(FRONDULA),
 	SPECIES_TO_NATIONAL(SLOTHER),
 	SPECIES_TO_NATIONAL(GLADITHER),
+	SPECIES_TO_NATIONAL(FRIONE),
+	SPECIES_TO_NATIONAL(FRIGALA),
+	SPECIES_TO_NATIONAL(FRIGESTY),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -1030,6 +1036,9 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(FRONDULA),
 	HOENN_TO_NATIONAL(SLOTHER),
 	HOENN_TO_NATIONAL(GLADITHER),
+	HOENN_TO_NATIONAL(FRIONE),
+	HOENN_TO_NATIONAL(FRIGALA),
+	HOENN_TO_NATIONAL(FRIGESTY),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1906,6 +1915,9 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_FRONDULA - 1]    = ANIM_LUNGE_GROW,
 	[SPECIES_SLOTHER - 1]     = ANIM_BOUNCE_ROTATE_TO_SIDES,
     [SPECIES_GLADITHER - 1]   = ANIM_V_SHAKE_TWICE,
+    [SPECIES_FRIONE - 1]      = ANIM_V_SLIDE_WOBBLE,
+    [SPECIES_FRIGALA - 1]     = ANIM_V_SLIDE_WOBBLE,
+    [SPECIES_FRIGESTY - 1]    = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

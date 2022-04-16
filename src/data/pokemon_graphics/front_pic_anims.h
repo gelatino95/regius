@@ -5157,6 +5157,40 @@ static const union AnimCmd sAnim_GLADITHER_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_FRIONE_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_FRIGALA_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_FRIGESTY_1[] =
+{
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_FRAME(1, 22),
+    ANIMCMD_FRAME(0, 22),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7456,6 +7490,21 @@ static const union AnimCmd *const sAnims_GLADITHER[] ={
     sAnim_GLADITHER_1,
 };
 
+static const union AnimCmd *const sAnims_FRIONE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_FRIONE_1,
+};
+
+static const union AnimCmd *const sAnims_FRIGALA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_FRIGALA_1,
+};
+
+static const union AnimCmd *const sAnims_FRIGESTY[] ={
+    sAnim_GeneralFrame0,
+    sAnim_FRIGESTY_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7935,6 +7984,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(FRONDULA),
 	ANIM_CMD(SLOTHER),
 	ANIM_CMD(GLADITHER),
+	ANIM_CMD(FRIONE),
+	ANIM_CMD(FRIGALA),
+	ANIM_CMD(FRIGESTY),
 };
 
 #undef ANIM_CMD

@@ -1406,6 +1406,12 @@ const u16 gEggMoves[] = {
               MOVE_ENDURE,
               MOVE_SCREECH,
               MOVE_FALSE_SWIPE),
+			  
+	egg_moves(FRIONE,
+              MOVE_CONFUSION,
+              MOVE_HARDEN,
+              MOVE_CRUNCH,
+              MOVE_AMNESIA),
 
     EGG_MOVES_TERMINATOR
 };

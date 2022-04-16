@@ -3041,3 +3041,24 @@ const u32 gMonBackPic_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/back.
 const u32 gMonShinyPalette_Gladither[] = INCBIN_U32("graphics/pokemon/gladither/shiny.gbapal.lz");
 const u8 gMonIcon_Gladither[] = INCBIN_U8("graphics/pokemon/gladither/icon.4bpp");
 const u8 gMonFootprint_Gladither[] = INCBIN_U8("graphics/pokemon/gladither/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Frione[] = INCBIN_U32("graphics/pokemon/frione/front.4bpp.lz");
+const u32 gMonPalette_Frione[] = INCBIN_U32("graphics/pokemon/frione/normal.gbapal.lz");
+const u32 gMonBackPic_Frione[] = INCBIN_U32("graphics/pokemon/frione/back.4bpp.lz");
+const u32 gMonShinyPalette_Frione[] = INCBIN_U32("graphics/pokemon/frione/shiny.gbapal.lz");
+const u8 gMonIcon_Frione[] = INCBIN_U8("graphics/pokemon/frione/icon.4bpp");
+const u8 gMonFootprint_Frione[] = INCBIN_U8("graphics/pokemon/frione/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Frigala[] = INCBIN_U32("graphics/pokemon/frigala/front.4bpp.lz");
+const u32 gMonPalette_Frigala[] = INCBIN_U32("graphics/pokemon/frigala/normal.gbapal.lz");
+const u32 gMonBackPic_Frigala[] = INCBIN_U32("graphics/pokemon/frigala/back.4bpp.lz");
+const u32 gMonShinyPalette_Frigala[] = INCBIN_U32("graphics/pokemon/frigala/shiny.gbapal.lz");
+const u8 gMonIcon_Frigala[] = INCBIN_U8("graphics/pokemon/frigala/icon.4bpp");
+const u8 gMonFootprint_Frigala[] = INCBIN_U8("graphics/pokemon/frigala/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/front.4bpp.lz");
+const u32 gMonPalette_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/normal.gbapal.lz");
+const u32 gMonBackPic_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/back.4bpp.lz");
+const u32 gMonShinyPalette_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/shiny.gbapal.lz");
+const u8 gMonIcon_Frigesty[] = INCBIN_U8("graphics/pokemon/frigesty/icon.4bpp");
+const u8 gMonFootprint_Frigesty[] = INCBIN_U8("graphics/pokemon/frigesty/footprint.1bpp");

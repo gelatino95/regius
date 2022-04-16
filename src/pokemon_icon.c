@@ -498,6 +498,9 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_FRONDULA] = gMonIcon_Frondula,
 	[SPECIES_SLOTHER] = gMonIcon_Slother,
 	[SPECIES_GLADITHER] = gMonIcon_Gladither,
+	[SPECIES_FRIONE] = gMonIcon_Frione,
+	[SPECIES_FRIGALA] = gMonIcon_Frigala,
+	[SPECIES_FRIGESTY] = gMonIcon_Frigesty,
 	
 };
 
@@ -975,6 +978,9 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_FRONDULA] = 1,
 	[SPECIES_SLOTHER] = 2,
 	[SPECIES_GLADITHER] = 2,
+	[SPECIES_FRIONE] = 2,
+	[SPECIES_FRIGALA] = 2,
+	[SPECIES_FRIGESTY] = 2,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =
