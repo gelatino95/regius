@@ -5053,4 +5053,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_HELIMAW] =
+    {
+        .categoryName = _("TOOTH"),
+        .height = 14,
+        .weight = 448,
+        .description = gHelimawPokedexText,
+        .pokemonScale = 316,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_COPRISAW] =
+    {
+        .categoryName = _("SAW"),
+        .height = 31,
+        .weight = 2157,
+        .description = gCoprisawPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 2,
+        .trainerScale = 380,
+        .trainerOffset = 6,
+    },
 };

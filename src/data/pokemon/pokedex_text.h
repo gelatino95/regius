@@ -2525,3 +2525,15 @@ const u8 gFrigestyPokedexText[] = _(
 	"FRIGALA will congregate and dance\n"
 	"around it, forming grand underwater\n"
 	"balls that can go on for days.");
+	
+const u8 gHelimawPokedexText[] = _(
+    "Its streamlined body lets it swim with\n"
+	"ease and never slow down. It has a unique\n"
+	"arrangement of teeth that can slash prey\n"
+	"and trap them in its powerful jaws.");
+	
+const u8 gCoprisawPokedexText[] = _(
+    "It lost its teeth upon evolution, and\n"
+	"replaced them with a set of articulated\n"
+	"sawblades that eviscerate prey. These\n"
+	"blades are a high-value collector's item.");

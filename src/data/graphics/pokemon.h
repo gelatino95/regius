@@ -3062,3 +3062,17 @@ const u32 gMonBackPic_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/back.4b
 const u32 gMonShinyPalette_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/shiny.gbapal.lz");
 const u8 gMonIcon_Frigesty[] = INCBIN_U8("graphics/pokemon/frigesty/icon.4bpp");
 const u8 gMonFootprint_Frigesty[] = INCBIN_U8("graphics/pokemon/frigesty/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Helimaw[] = INCBIN_U32("graphics/pokemon/helimaw/front.4bpp.lz");
+const u32 gMonPalette_Helimaw[] = INCBIN_U32("graphics/pokemon/helimaw/normal.gbapal.lz");
+const u32 gMonBackPic_Helimaw[] = INCBIN_U32("graphics/pokemon/helimaw/back.4bpp.lz");
+const u32 gMonShinyPalette_Helimaw[] = INCBIN_U32("graphics/pokemon/helimaw/shiny.gbapal.lz");
+const u8 gMonIcon_Helimaw[] = INCBIN_U8("graphics/pokemon/helimaw/icon.4bpp");
+const u8 gMonFootprint_Helimaw[] = INCBIN_U8("graphics/pokemon/helimaw/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/front.4bpp.lz");
+const u32 gMonPalette_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/normal.gbapal.lz");
+const u32 gMonBackPic_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/back.4bpp.lz");
+const u32 gMonShinyPalette_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/shiny.gbapal.lz");
+const u8 gMonIcon_Coprisaw[] = INCBIN_U8("graphics/pokemon/coprisaw/icon.4bpp");
+const u8 gMonFootprint_Coprisaw[] = INCBIN_U8("graphics/pokemon/coprisaw/footprint.1bpp");

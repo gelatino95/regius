@@ -5191,6 +5191,24 @@ static const union AnimCmd sAnim_FRIGESTY_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_HELIMAW_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 39),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_COPRISAW_1[] =
+{
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7505,6 +7523,16 @@ static const union AnimCmd *const sAnims_FRIGESTY[] ={
     sAnim_FRIGESTY_1,
 };
 
+static const union AnimCmd *const sAnims_HELIMAW[] ={
+    sAnim_GeneralFrame0,
+    sAnim_HELIMAW_1,
+};
+
+static const union AnimCmd *const sAnims_COPRISAW[] ={
+    sAnim_GeneralFrame0,
+    sAnim_COPRISAW_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -7987,6 +8015,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(FRIONE),
 	ANIM_CMD(FRIGALA),
 	ANIM_CMD(FRIGESTY),
+	ANIM_CMD(HELIMAW),
+	ANIM_CMD(COPRISAW),
 };
 
 #undef ANIM_CMD

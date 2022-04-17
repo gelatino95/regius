@@ -1412,6 +1412,16 @@ const u16 gEggMoves[] = {
               MOVE_HARDEN,
               MOVE_CRUNCH,
               MOVE_AMNESIA),
+			  
+	egg_moves(HELIMAW,
+              MOVE_WATER_SPORT,
+              MOVE_FLAIL,
+              MOVE_AGILITY,
+              MOVE_TAKE_DOWN,
+              MOVE_REVENGE,
+              MOVE_SCARY_FACE,
+              MOVE_SWAGGER,
+              MOVE_FOCUS_ENERGY),
 
     EGG_MOVES_TERMINATOR
 };

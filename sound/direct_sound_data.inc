@@ -2075,6 +2075,14 @@ Cry_Frigala::
 	.align 2
 Cry_Frigesty::
 	.incbin "sound/direct_sound_samples/cries/frigesty.bin"
+	
+	.align 2
+Cry_Helimaw::
+	.incbin "sound/direct_sound_samples/cries/helimaw.bin"
+	
+	.align 2
+Cry_Coprisaw::
+	.incbin "sound/direct_sound_samples/cries/coprisaw.bin"
 
 //end new pokemon
 

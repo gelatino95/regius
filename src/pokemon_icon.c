@@ -501,6 +501,8 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_FRIONE] = gMonIcon_Frione,
 	[SPECIES_FRIGALA] = gMonIcon_Frigala,
 	[SPECIES_FRIGESTY] = gMonIcon_Frigesty,
+	[SPECIES_HELIMAW] = gMonIcon_Helimaw,
+	[SPECIES_COPRISAW] = gMonIcon_Coprisaw,
 	
 };
 
@@ -981,6 +983,8 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_FRIONE] = 2,
 	[SPECIES_FRIGALA] = 2,
 	[SPECIES_FRIGESTY] = 2,
+	[SPECIES_HELIMAW] = 0,
+	[SPECIES_COPRISAW] = 0,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

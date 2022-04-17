@@ -450,8 +450,10 @@
 #define SPECIES_FRIONE 443
 #define SPECIES_FRIGALA 444
 #define SPECIES_FRIGESTY 445
+#define SPECIES_HELIMAW 446
+#define SPECIES_COPRISAW 447
 //end new pokemon
-#define SPECIES_EGG 446
+#define SPECIES_EGG 448
 
 #define NUM_SPECIES SPECIES_EGG
 
@@ -913,8 +915,10 @@
 #define NATIONAL_DEX_FRIONE         418
 #define NATIONAL_DEX_FRIGALA        419
 #define NATIONAL_DEX_FRIGESTY       420
+#define NATIONAL_DEX_HELIMAW        421
+#define NATIONAL_DEX_COPRISAW       422
 
-#define NATIONAL_DEX_COUNT          NATIONAL_DEX_FRIGESTY
+#define NATIONAL_DEX_COUNT          NATIONAL_DEX_COPRISAW
 
 #define NATIONAL_DEX_OLD_UNOWN_B    (NATIONAL_DEX_COUNT + 1)
 #define NATIONAL_DEX_OLD_UNOWN_C    (NATIONAL_DEX_OLD_UNOWN_B + 1)
@@ -954,8 +958,8 @@
 #define HOENN_DEX_MUDKIP        7
 #define HOENN_DEX_MARSHTOMP     8
 #define HOENN_DEX_SWAMPERT      9
-#define HOENN_DEX_FRIONE        10 //change back to POOCHYENA
-#define HOENN_DEX_FRIGALA       11 //change back to MIGHTYENA
+#define HOENN_DEX_HELIMAW       10 //change back to POOCHYENA
+#define HOENN_DEX_COPRISAW      11 //change back to MIGHTYENA
 #define HOENN_DEX_FRIGESTY      12 //change back to ZIGZAGOON
 #define HOENN_DEX_LINOONE       13
 #define HOENN_DEX_WURMPLE       14
@@ -1366,9 +1370,11 @@
 #define HOENN_DEX_FRONDULA      415
 #define HOENN_DEX_SLOTHER       416
 #define HOENN_DEX_GLADITHER     417
-#define HOENN_DEX_POOCHYENA     418
-#define HOENN_DEX_MIGHTYENA     419
-#define HOENN_DEX_ZIGZAGOON     420 //change back to final new pokemon
+#define HOENN_DEX_FRIONE        418
+#define HOENN_DEX_FRIGALA       419
+#define HOENN_DEX_POOCHYENA     420
+#define HOENN_DEX_MIGHTYENA     421
+#define HOENN_DEX_ZIGZAGOON     422 //change back to final new pokemon
 
 #define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_ZIGZAGOON + 1) //change back to final new pokemon
 #define HOENN_DEX_OLD_UNOWN_C   (HOENN_DEX_OLD_UNOWN_B + 1)
