@@ -5077,4 +5077,28 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 380,
         .trainerOffset = 6,
     },
+	
+	[NATIONAL_DEX_BIBLIT] =
+    {
+        .categoryName = _("BURNING"),
+        .height = 4,
+        .weight = 11,
+        .description = gBiblitPokedexText,
+        .pokemonScale = 562,
+        .pokemonOffset = -7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_BIBFERNO] =
+    {
+        .categoryName = _("BURNING"),
+        .height = 13,
+        .weight = 32,
+        .description = gBibfernoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

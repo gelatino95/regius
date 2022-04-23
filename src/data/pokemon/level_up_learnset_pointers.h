@@ -449,4 +449,6 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_FRIGESTY] = sFrigestyLevelUpLearnset,
 	[SPECIES_HELIMAW] = sHelimawLevelUpLearnset,
 	[SPECIES_COPRISAW] = sCoprisawLevelUpLearnset,
+	[SPECIES_BIBLIT] = sBiblitLevelUpLearnset,
+	[SPECIES_BIBFERNO] = sBibfernoLevelUpLearnset,
 };

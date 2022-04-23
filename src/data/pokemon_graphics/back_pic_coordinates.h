@@ -2381,5 +2381,15 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 13,
     },
+	[SPECIES_BIBLIT] =
+    {
+        .size = 0x66,
+        .y_offset = 14,
+    },
+    [SPECIES_BIBFERNO] =
+    {
+        .size = 0x87,
+        .y_offset = 2,
+    },
 };
 

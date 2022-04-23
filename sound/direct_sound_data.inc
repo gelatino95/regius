@@ -2083,6 +2083,14 @@ Cry_Helimaw::
 	.align 2
 Cry_Coprisaw::
 	.incbin "sound/direct_sound_samples/cries/coprisaw.bin"
+	
+	.align 2
+Cry_Biblit::
+	.incbin "sound/direct_sound_samples/cries/biblit.bin"
+	
+	.align 2
+Cry_Bibferno::
+	.incbin "sound/direct_sound_samples/cries/bibferno.bin"
 
 //end new pokemon
 

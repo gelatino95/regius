@@ -3076,3 +3076,17 @@ const u32 gMonBackPic_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/back.4b
 const u32 gMonShinyPalette_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/shiny.gbapal.lz");
 const u8 gMonIcon_Coprisaw[] = INCBIN_U8("graphics/pokemon/coprisaw/icon.4bpp");
 const u8 gMonFootprint_Coprisaw[] = INCBIN_U8("graphics/pokemon/coprisaw/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Biblit[] = INCBIN_U32("graphics/pokemon/biblit/front.4bpp.lz");
+const u32 gMonPalette_Biblit[] = INCBIN_U32("graphics/pokemon/biblit/normal.gbapal.lz");
+const u32 gMonBackPic_Biblit[] = INCBIN_U32("graphics/pokemon/biblit/back.4bpp.lz");
+const u32 gMonShinyPalette_Biblit[] = INCBIN_U32("graphics/pokemon/biblit/shiny.gbapal.lz");
+const u8 gMonIcon_Biblit[] = INCBIN_U8("graphics/pokemon/biblit/icon.4bpp");
+const u8 gMonFootprint_Biblit[] = INCBIN_U8("graphics/pokemon/biblit/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/front.4bpp.lz");
+const u32 gMonPalette_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/normal.gbapal.lz");
+const u32 gMonBackPic_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/back.4bpp.lz");
+const u32 gMonShinyPalette_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/shiny.gbapal.lz");
+const u8 gMonIcon_Bibferno[] = INCBIN_U8("graphics/pokemon/bibferno/icon.4bpp");
+const u8 gMonFootprint_Bibferno[] = INCBIN_U8("graphics/pokemon/bibferno/footprint.1bpp");

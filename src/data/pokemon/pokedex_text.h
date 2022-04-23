@@ -2537,3 +2537,15 @@ const u8 gCoprisawPokedexText[] = _(
 	"replaced them with a set of articulated\n"
 	"sawblades that eviscerate prey. These\n"
 	"blades are a high-value collector's item.");
+	
+const u8 gBiblitPokedexText[] = _(
+    "This POKéMON is said to contain the lost\n"
+	"words of burned books. It hides itself\n"
+	"from society, but it will hold a grudge\n"
+	"against those who destroy knowledge.");
+	
+const u8 gBibfernoPokedexText[] = _(
+    "The paper thin body of BIBFERNO is\n"
+	"constantly ablaze and never burns away.\n"
+	"It can be found patrolling the abandoned\n"
+	"sites of disasters long past.");

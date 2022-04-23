@@ -451,4 +451,6 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_FRIGESTY] = gMonFootprint_Frigesty,
 	[SPECIES_HELIMAW] = gMonFootprint_Helimaw,
 	[SPECIES_COPRISAW] = gMonFootprint_Coprisaw,
+	[SPECIES_BIBLIT] = gMonFootprint_Biblit,
+	[SPECIES_BIBFERNO] = gMonFootprint_Bibferno,
 };

@@ -425,6 +425,8 @@ gCryTable::
 	cry Cry_Frigesty 
 	cry Cry_Helimaw 
 	cry Cry_Coprisaw 
+	cry Cry_Biblit 
+	cry Cry_Bibferno 
 
 
 	.align 2
@@ -854,3 +856,5 @@ gCryTable2::
 	cry2 Cry_Frigesty 
 	cry2 Cry_Helimaw 
 	cry2 Cry_Coprisaw 
+	cry2 Cry_Biblit 
+	cry2 Cry_Bibferno 

@@ -461,3 +461,5 @@ const u32 gMonFrontPic_Frigala[] = INCBIN_U32("graphics/pokemon/frigala/anim_fro
 const u32 gMonFrontPic_Frigesty[] = INCBIN_U32("graphics/pokemon/frigesty/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Helimaw[] = INCBIN_U32("graphics/pokemon/helimaw/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Biblit[] = INCBIN_U32("graphics/pokemon/biblit/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/anim_front.4bpp.lz");
