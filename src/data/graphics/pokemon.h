@@ -3090,3 +3090,10 @@ const u32 gMonBackPic_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/back.4b
 const u32 gMonShinyPalette_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/shiny.gbapal.lz");
 const u8 gMonIcon_Bibferno[] = INCBIN_U8("graphics/pokemon/bibferno/icon.4bpp");
 const u8 gMonFootprint_Bibferno[] = INCBIN_U8("graphics/pokemon/bibferno/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Elastrike[] = INCBIN_U32("graphics/pokemon/elastrike/front.4bpp.lz");
+const u32 gMonPalette_Elastrike[] = INCBIN_U32("graphics/pokemon/elastrike/normal.gbapal.lz");
+const u32 gMonBackPic_Elastrike[] = INCBIN_U32("graphics/pokemon/elastrike/back.4bpp.lz");
+const u32 gMonShinyPalette_Elastrike[] = INCBIN_U32("graphics/pokemon/elastrike/shiny.gbapal.lz");
+const u8 gMonIcon_Elastrike[] = INCBIN_U8("graphics/pokemon/elastrike/icon.4bpp");
+const u8 gMonFootprint_Elastrike[] = INCBIN_U8("graphics/pokemon/elastrike/footprint.1bpp");

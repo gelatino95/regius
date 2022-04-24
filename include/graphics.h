@@ -3159,6 +3159,14 @@ extern const u32 gMonStillFrontPic_Bibferno[];
 extern const u8 gMonIcon_Bibferno[];
 extern const u8 gMonFootprint_Bibferno[];
 
+extern const u32 gMonFrontPic_Elastrike[];
+extern const u32 gMonPalette_Elastrike[];
+extern const u32 gMonBackPic_Elastrike[];
+extern const u32 gMonShinyPalette_Elastrike[];
+extern const u32 gMonStillFrontPic_Elastrike[];
+extern const u8 gMonIcon_Elastrike[];
+extern const u8 gMonFootprint_Elastrike[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];

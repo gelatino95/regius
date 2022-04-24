@@ -505,6 +505,7 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_COPRISAW] = gMonIcon_Coprisaw,
 	[SPECIES_BIBLIT] = gMonIcon_Biblit,
 	[SPECIES_BIBFERNO] = gMonIcon_Bibferno,
+	[SPECIES_ELASTRIKE] = gMonIcon_Elastrike,
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -988,6 +989,7 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_COPRISAW] = 0,
 	[SPECIES_BIBLIT] = 2,
 	[SPECIES_BIBFERNO] = 0,
+	[SPECIES_ELASTRIKE] = 0,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

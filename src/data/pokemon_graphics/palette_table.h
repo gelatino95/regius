@@ -480,4 +480,5 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
 	SPECIES_PAL(COPRISAW, gMonPalette_Coprisaw),
 	SPECIES_PAL(BIBLIT, gMonPalette_Biblit),
 	SPECIES_PAL(BIBFERNO, gMonPalette_Bibferno),
+	SPECIES_PAL(ELASTRIKE, gMonPalette_Elastrike),
 };

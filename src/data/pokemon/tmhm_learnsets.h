@@ -10289,6 +10289,29 @@ const u32 gTMHMLearnsets[][2] =
 										| TMHM(TM49_SNATCH)
 										| TMHM(TM50_OVERHEAT)
 										| TMHM(HM05_FLASH)),
+										
+	[SPECIES_ELASTRIKE]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_PUNCH)
+                                        | TMHM(TM06_TOXIC)
+                                        | TMHM(TM08_BULK_UP)
+                                        | TMHM(TM10_HIDDEN_POWER)
+										| TMHM(TM15_HYPER_BEAM)
+										| TMHM(TM16_LIGHT_SCREEN)
+                                        | TMHM(TM17_PROTECT)
+                                        | TMHM(TM21_FRUSTRATION)
+                                        | TMHM(TM26_EARTHQUAKE)
+                                        | TMHM(TM27_RETURN)
+                                        | TMHM(TM31_BRICK_BREAK)
+										| TMHM(TM32_DOUBLE_TEAM)
+										| TMHM(TM33_REFLECT)
+										| TMHM(TM34_SHOCK_WAVE)
+										| TMHM(TM39_ROCK_TOMB)
+										| TMHM(TM40_AERIAL_ACE)
+                                        | TMHM(TM42_FACADE)
+                                        | TMHM(TM43_SECRET_POWER)
+                                        | TMHM(TM44_REST)
+                                        | TMHM(TM45_ATTRACT)
+										| TMHM(HM04_STRENGTH)
+										| TMHM(HM06_ROCK_SMASH)),
 };
 
 

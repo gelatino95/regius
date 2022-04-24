@@ -5101,4 +5101,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_ELASTRIKE] =
+    {
+        .categoryName = _("ELASTIC"),
+        .height = 15,
+        .weight = 654,
+        .description = gElastrikePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

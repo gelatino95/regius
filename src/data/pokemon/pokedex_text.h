@@ -2549,3 +2549,9 @@ const u8 gBibfernoPokedexText[] = _(
 	"constantly ablaze and never burns away.\n"
 	"It can be found patrolling the abandoned\n"
 	"sites of disasters long past.");
+	
+const u8 gElastrikePokedexText[] = _(
+    "Its body is made of a rubbery material\n"
+	"that can stretch up to ten times its\n"
+	"normal length. It can wind up and throw\n"
+	"powerful punches from a distance.");

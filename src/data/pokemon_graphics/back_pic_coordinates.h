@@ -2391,5 +2391,10 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 2,
     },
+	[SPECIES_ELASTRIKE] =
+    {
+        .size = 0x87,
+        .y_offset = 14,
+    },
 };
 

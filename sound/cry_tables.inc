@@ -427,6 +427,7 @@ gCryTable::
 	cry Cry_Coprisaw 
 	cry Cry_Biblit 
 	cry Cry_Bibferno 
+	cry Cry_Elastrike 
 
 
 	.align 2
@@ -858,3 +859,4 @@ gCryTable2::
 	cry2 Cry_Coprisaw 
 	cry2 Cry_Biblit 
 	cry2 Cry_Bibferno 
+	cry2 Cry_Elastrike 

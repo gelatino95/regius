@@ -1431,6 +1431,15 @@ const u16 gEggMoves[] = {
               MOVE_FORESIGHT,
               MOVE_DISABLE,
               MOVE_AMNESIA),
+			  
+	egg_moves(ELASTRIKE,
+              MOVE_YAWN,
+              MOVE_FIRE_PUNCH,
+              MOVE_ICE_PUNCH,
+              MOVE_THUNDER_PUNCH,
+              MOVE_MEDITATE,
+              MOVE_HI_JUMP_KICK,
+              MOVE_DETECT),
 
     EGG_MOVES_TERMINATOR
 };

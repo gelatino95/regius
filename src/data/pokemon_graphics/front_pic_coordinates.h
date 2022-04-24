@@ -2385,9 +2385,15 @@ const struct MonCoords gMonFrontPicCoords[] =
     {
         .size = 0x66,
         .y_offset = 10,
-    },[SPECIES_BIBFERNO] =
+    },
+	[SPECIES_BIBFERNO] =
     {
         .size = 0x78,
+        .y_offset = 0,
+    },
+	[SPECIES_ELASTRIKE] =
+    {
+        .size = 0x77,
         .y_offset = 0,
     },
 };

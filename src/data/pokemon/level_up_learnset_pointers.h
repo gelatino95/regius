@@ -451,4 +451,5 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_COPRISAW] = sCoprisawLevelUpLearnset,
 	[SPECIES_BIBLIT] = sBiblitLevelUpLearnset,
 	[SPECIES_BIBFERNO] = sBibfernoLevelUpLearnset,
+	[SPECIES_ELASTRIKE] = sElastrikeLevelUpLearnset,
 };

@@ -2091,6 +2091,10 @@ Cry_Biblit::
 	.align 2
 Cry_Bibferno::
 	.incbin "sound/direct_sound_samples/cries/bibferno.bin"
+	
+	.align 2
+Cry_Elastrike::
+	.incbin "sound/direct_sound_samples/cries/elastrike.bin"
 
 //end new pokemon
 

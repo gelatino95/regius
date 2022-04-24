@@ -5226,6 +5226,15 @@ static const union AnimCmd sAnim_BIBFERNO_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_ELASTRIKE_1[] =
+{
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7560,6 +7569,11 @@ static const union AnimCmd *const sAnims_BIBFERNO[] ={
     sAnim_BIBFERNO_1,
 };
 
+static const union AnimCmd *const sAnims_ELASTRIKE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_ELASTRIKE_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -8046,6 +8060,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(COPRISAW),
 	ANIM_CMD(BIBLIT),
 	ANIM_CMD(BIBFERNO),
+	ANIM_CMD(ELASTRIKE),
 };
 
 #undef ANIM_CMD
