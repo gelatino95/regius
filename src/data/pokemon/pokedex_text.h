@@ -2573,3 +2573,21 @@ const u8 gVolquitoPokedexText[] = _(
 	"to survive, which it stores in its abdomen.\n"
 	"It prefers to feed on the vital fluids of\n"
 	"FIRE-type POKéMON.");
+	
+const u8 gCeboraPokedexText[] = _(
+    "It is a highly competitive member of coral\n"
+	"reefs, attacking other corals for space\n"
+	"with its tentacles. It shares power with\n"
+	"other CEBORA using telepathic links.");
+	
+const u8 gManobellumPokedexText[] = _(
+    "MANOBELLUM uses its powerful intellect to\n"
+	"manage a delicate coral reef ecosystem.\n"
+	"It will relentlessly attack anyone who\n"
+	"pollutes or threatens its reef.");
+	
+const u8 gCowrenseaPokedexText[] = _(
+    "Its shell was prized by ancient people for\n"
+	"its beauty, and it was traded as currency.\n"
+	"Highly sought after by collectors, it has\n"
+	"been harvested to near extinction.");

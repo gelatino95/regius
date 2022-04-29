@@ -5278,6 +5278,44 @@ static const union AnimCmd sAnim_VOLQUITO_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_CEBORA_1[] =
+{
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(1, 11),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MANOBELLUM_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_COWRENSEA_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7632,6 +7670,21 @@ static const union AnimCmd *const sAnims_VOLQUITO[] ={
     sAnim_VOLQUITO_1,
 };
 
+static const union AnimCmd *const sAnims_CEBORA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_CEBORA_1,
+};
+
+static const union AnimCmd *const sAnims_MANOBELLUM[] ={
+    sAnim_GeneralFrame0,
+    sAnim_MANOBELLUM_1,
+};
+
+static const union AnimCmd *const sAnims_COWRENSEA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_COWRENSEA_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -8122,6 +8175,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(MAGVA),
 	ANIM_CMD(PUPAVA),
 	ANIM_CMD(VOLQUITO),
+	ANIM_CMD(CEBORA),
+	ANIM_CMD(MANOBELLUM),
+	ANIM_CMD(COWRENSEA),
 };
 
 #undef ANIM_CMD

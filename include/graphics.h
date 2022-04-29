@@ -3191,6 +3191,30 @@ extern const u32 gMonStillFrontPic_Volquito[];
 extern const u8 gMonIcon_Volquito[];
 extern const u8 gMonFootprint_Volquito[];
 
+extern const u32 gMonFrontPic_Cebora[];
+extern const u32 gMonPalette_Cebora[];
+extern const u32 gMonBackPic_Cebora[];
+extern const u32 gMonShinyPalette_Cebora[];
+extern const u32 gMonStillFrontPic_Cebora[];
+extern const u8 gMonIcon_Cebora[];
+extern const u8 gMonFootprint_Cebora[];
+
+extern const u32 gMonFrontPic_Manobellum[];
+extern const u32 gMonPalette_Manobellum[];
+extern const u32 gMonBackPic_Manobellum[];
+extern const u32 gMonShinyPalette_Manobellum[];
+extern const u32 gMonStillFrontPic_Manobellum[];
+extern const u8 gMonIcon_Manobellum[];
+extern const u8 gMonFootprint_Manobellum[];
+
+extern const u32 gMonFrontPic_Cowrensea[];
+extern const u32 gMonPalette_Cowrensea[];
+extern const u32 gMonBackPic_Cowrensea[];
+extern const u32 gMonShinyPalette_Cowrensea[];
+extern const u32 gMonStillFrontPic_Cowrensea[];
+extern const u8 gMonIcon_Cowrensea[];
+extern const u8 gMonFootprint_Cowrensea[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];

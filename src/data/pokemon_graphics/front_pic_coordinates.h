@@ -2411,4 +2411,19 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x86,
         .y_offset = 2,
     },
+	[SPECIES_CEBORA] =
+    {
+        .size = 0x64,
+        .y_offset = 8,
+    },
+	[SPECIES_MANOBELLUM] =
+    {
+        .size = 0x86,
+        .y_offset = 0,
+    },
+	[SPECIES_COWRENSEA] =
+    {
+        .size = 0x64,
+        .y_offset = 14,
+    },
 };

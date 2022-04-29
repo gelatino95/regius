@@ -455,4 +455,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_MAGVA] = sMagvaLevelUpLearnset,
 	[SPECIES_PUPAVA] = sPupavaLevelUpLearnset,
 	[SPECIES_VOLQUITO] = sVolquitoLevelUpLearnset,
+	[SPECIES_CEBORA] = sCeboraLevelUpLearnset,
+	[SPECIES_MANOBELLUM] = sManobellumLevelUpLearnset,
+	[SPECIES_COWRENSEA] = sCowrenseaLevelUpLearnset,
 };

@@ -431,6 +431,9 @@ gCryTable::
 	cry Cry_Magva 
 	cry Cry_Pupava 
 	cry Cry_Volquito 
+	cry Cry_Cebora 
+	cry Cry_Manobellum 
+	cry Cry_Cowrensea 
 
 
 	.align 2
@@ -866,3 +869,6 @@ gCryTable2::
 	cry2 Cry_Magva 
 	cry2 Cry_Pupava 
 	cry2 Cry_Volquito 
+	cry2 Cry_Cebora 
+	cry2 Cry_Manobellum 
+	cry2 Cry_Cowrensea 

@@ -2107,6 +2107,18 @@ Cry_Pupava::
 	.align 2
 Cry_Volquito::
 	.incbin "sound/direct_sound_samples/cries/volquito.bin"
+	
+	.align 2
+Cry_Cebora::
+	.incbin "sound/direct_sound_samples/cries/cebora.bin"
+	
+	.align 2
+Cry_Manobellum::
+	.incbin "sound/direct_sound_samples/cries/manobellum.bin"
+	
+	.align 2
+Cry_Cowrensea::
+	.incbin "sound/direct_sound_samples/cries/cowrensea.bin"
 
 //end new pokemon
 

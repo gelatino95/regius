@@ -509,6 +509,9 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_MAGVA] = gMonIcon_Magva,
 	[SPECIES_PUPAVA] = gMonIcon_Pupava,
 	[SPECIES_VOLQUITO] = gMonIcon_Volquito,
+	[SPECIES_CEBORA] = gMonIcon_Cebora,
+	[SPECIES_MANOBELLUM] = gMonIcon_Manobellum,
+	[SPECIES_COWRENSEA] = gMonIcon_Cowrensea,
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -996,6 +999,9 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_MAGVA] = 0,
 	[SPECIES_PUPAVA] = 0,
 	[SPECIES_VOLQUITO] = 0,
+	[SPECIES_CEBORA] = 0,
+	[SPECIES_MANOBELLUM] = 0,
+	[SPECIES_COWRENSEA] = 0,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

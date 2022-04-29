@@ -2411,5 +2411,20 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 3,
     },
+	[SPECIES_CEBORA] =
+    {
+        .size = 0x66,
+        .y_offset = 10,
+    },
+	[SPECIES_MANOBELLUM] =
+    {
+        .size = 0x87,
+        .y_offset = 8,
+    },
+	[SPECIES_COWRENSEA] =
+    {
+        .size = 0x66,
+        .y_offset = 12,
+    },
 };
 

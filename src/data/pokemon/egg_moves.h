@@ -1445,6 +1445,25 @@ const u16 gEggMoves[] = {
               MOVE_SUPERSONIC,
               MOVE_FORESIGHT,
               MOVE_SCARY_FACE),
+			  
+	egg_moves(CEBORA,
+              MOVE_HEADBUTT,
+              MOVE_CONFUSE_RAY,
+              MOVE_AMNESIA,
+              MOVE_ROCK_BLAST,
+              MOVE_TICKLE,
+              MOVE_MEGA_DRAIN,
+              MOVE_METAL_SOUND,
+              MOVE_REFRESH,
+              MOVE_BUBBLE_BEAM),
+			  
+	egg_moves(COWRENSEA,
+              MOVE_IRON_DEFENSE,
+              MOVE_AMNESIA,
+              MOVE_AGILITY,
+              MOVE_BATON_PASS,
+              MOVE_REFRESH,
+              MOVE_MIRROR_COAT),
 
     EGG_MOVES_TERMINATOR
 };

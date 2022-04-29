@@ -5149,4 +5149,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_CEBORA] =
+    {
+        .categoryName = _("BRAIN"),
+        .height = 7,
+        .weight = 157,
+        .description = gCeboraPokedexText,
+        .pokemonScale = 300,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_MANOBELLUM] =
+    {
+        .categoryName = _("CEREBRAL"),
+        .height = 20,
+        .weight = 980,
+        .description = gManobellumPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 317,
+        .trainerOffset = 3,
+    },
+	
+	[NATIONAL_DEX_COWRENSEA] =
+    {
+        .categoryName = _("TREASURE"),
+        .height = 4,
+        .weight = 45,
+        .description = gCowrenseaPokedexText,
+        .pokemonScale = 691,
+        .pokemonOffset = 22,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };
