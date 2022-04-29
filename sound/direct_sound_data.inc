@@ -2095,6 +2095,18 @@ Cry_Bibferno::
 	.align 2
 Cry_Elastrike::
 	.incbin "sound/direct_sound_samples/cries/elastrike.bin"
+	
+	.align 2
+Cry_Magva::
+	.incbin "sound/direct_sound_samples/cries/magva.bin"
+	
+	.align 2
+Cry_Pupava::
+	.incbin "sound/direct_sound_samples/cries/pupava.bin"
+	
+	.align 2
+Cry_Volquito::
+	.incbin "sound/direct_sound_samples/cries/volquito.bin"
 
 //end new pokemon
 

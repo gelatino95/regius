@@ -2396,5 +2396,20 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 14,
     },
+	[SPECIES_MAGVA] =
+    {
+        .size = 0x66,
+        .y_offset = 10,
+    },
+	[SPECIES_PUPAVA] =
+    {
+        .size = 0x66,
+        .y_offset = 10,
+    },
+	[SPECIES_VOLQUITO] =
+    {
+        .size = 0x87,
+        .y_offset = 3,
+    },
 };
 

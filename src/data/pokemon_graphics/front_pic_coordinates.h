@@ -2396,4 +2396,19 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x77,
         .y_offset = 0,
     },
+	[SPECIES_MAGVA] =
+    {
+        .size = 0x64,
+        .y_offset = 8,
+    },
+	[SPECIES_PUPAVA] =
+    {
+        .size = 0x64,
+        .y_offset = 8,
+    },
+	[SPECIES_VOLQUITO] =
+    {
+        .size = 0x86,
+        .y_offset = 2,
+    },
 };

@@ -454,4 +454,7 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_BIBLIT] = gMonFootprint_Biblit,
 	[SPECIES_BIBFERNO] = gMonFootprint_Bibferno,
 	[SPECIES_ELASTRIKE] = gMonFootprint_Elastrike,
+	[SPECIES_MAGVA] = gMonFootprint_Magva,
+	[SPECIES_PUPAVA] = gMonFootprint_Pupava,
+	[SPECIES_VOLQUITO] = gMonFootprint_Volquito,
 };

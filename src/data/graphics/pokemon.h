@@ -3097,3 +3097,24 @@ const u32 gMonBackPic_Elastrike[] = INCBIN_U32("graphics/pokemon/elastrike/back.
 const u32 gMonShinyPalette_Elastrike[] = INCBIN_U32("graphics/pokemon/elastrike/shiny.gbapal.lz");
 const u8 gMonIcon_Elastrike[] = INCBIN_U8("graphics/pokemon/elastrike/icon.4bpp");
 const u8 gMonFootprint_Elastrike[] = INCBIN_U8("graphics/pokemon/elastrike/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Magva[] = INCBIN_U32("graphics/pokemon/magva/front.4bpp.lz");
+const u32 gMonPalette_Magva[] = INCBIN_U32("graphics/pokemon/magva/normal.gbapal.lz");
+const u32 gMonBackPic_Magva[] = INCBIN_U32("graphics/pokemon/magva/back.4bpp.lz");
+const u32 gMonShinyPalette_Magva[] = INCBIN_U32("graphics/pokemon/magva/shiny.gbapal.lz");
+const u8 gMonIcon_Magva[] = INCBIN_U8("graphics/pokemon/magva/icon.4bpp");
+const u8 gMonFootprint_Magva[] = INCBIN_U8("graphics/pokemon/magva/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Pupava[] = INCBIN_U32("graphics/pokemon/pupava/front.4bpp.lz");
+const u32 gMonPalette_Pupava[] = INCBIN_U32("graphics/pokemon/pupava/normal.gbapal.lz");
+const u32 gMonBackPic_Pupava[] = INCBIN_U32("graphics/pokemon/pupava/back.4bpp.lz");
+const u32 gMonShinyPalette_Pupava[] = INCBIN_U32("graphics/pokemon/pupava/shiny.gbapal.lz");
+const u8 gMonIcon_Pupava[] = INCBIN_U8("graphics/pokemon/pupava/icon.4bpp");
+const u8 gMonFootprint_Pupava[] = INCBIN_U8("graphics/pokemon/pupava/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Volquito[] = INCBIN_U32("graphics/pokemon/volquito/front.4bpp.lz");
+const u32 gMonPalette_Volquito[] = INCBIN_U32("graphics/pokemon/volquito/normal.gbapal.lz");
+const u32 gMonBackPic_Volquito[] = INCBIN_U32("graphics/pokemon/volquito/back.4bpp.lz");
+const u32 gMonShinyPalette_Volquito[] = INCBIN_U32("graphics/pokemon/volquito/shiny.gbapal.lz");
+const u8 gMonIcon_Volquito[] = INCBIN_U8("graphics/pokemon/volquito/icon.4bpp");
+const u8 gMonFootprint_Volquito[] = INCBIN_U8("graphics/pokemon/volquito/footprint.1bpp");

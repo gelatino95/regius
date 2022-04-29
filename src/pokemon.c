@@ -546,6 +546,9 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(BIBLIT),
 	SPECIES_TO_HOENN(BIBFERNO),
 	SPECIES_TO_HOENN(ELASTRIKE),
+	SPECIES_TO_HOENN(MAGVA),
+	SPECIES_TO_HOENN(PUPAVA),
+	SPECIES_TO_HOENN(VOLQUITO),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1001,6 +1004,9 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(BIBLIT),
 	SPECIES_TO_NATIONAL(BIBFERNO),
 	SPECIES_TO_NATIONAL(ELASTRIKE),
+	SPECIES_TO_NATIONAL(MAGVA),
+	SPECIES_TO_NATIONAL(PUPAVA),
+	SPECIES_TO_NATIONAL(VOLQUITO),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -1054,6 +1060,9 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(BIBLIT),
 	HOENN_TO_NATIONAL(BIBFERNO),
 	HOENN_TO_NATIONAL(ELASTRIKE),
+	HOENN_TO_NATIONAL(MAGVA),
+	HOENN_TO_NATIONAL(PUPAVA),
+	HOENN_TO_NATIONAL(VOLQUITO),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1938,6 +1947,9 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_BIBLIT - 1]      = ANIM_V_SLIDE_WOBBLE,
     [SPECIES_BIBFERNO - 1]    = ANIM_H_SHAKE,
     [SPECIES_ELASTRIKE - 1]   = ANIM_H_JUMPS_V_STRETCH,
+	[SPECIES_MAGVA - 1]       = ANIM_V_SQUISH_AND_BOUNCE,
+	[SPECIES_PUPAVA - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_VOLQUITO - 1]    = ANIM_H_SLIDE_SLOW,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

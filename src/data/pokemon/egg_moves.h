@@ -1440,6 +1440,11 @@ const u16 gEggMoves[] = {
               MOVE_MEDITATE,
               MOVE_HI_JUMP_KICK,
               MOVE_DETECT),
+			  
+	egg_moves(MAGVA,
+              MOVE_SUPERSONIC,
+              MOVE_FORESIGHT,
+              MOVE_SCARY_FACE),
 
     EGG_MOVES_TERMINATOR
 };

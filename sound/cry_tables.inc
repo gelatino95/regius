@@ -428,6 +428,9 @@ gCryTable::
 	cry Cry_Biblit 
 	cry Cry_Bibferno 
 	cry Cry_Elastrike 
+	cry Cry_Magva 
+	cry Cry_Pupava 
+	cry Cry_Volquito 
 
 
 	.align 2
@@ -860,3 +863,6 @@ gCryTable2::
 	cry2 Cry_Biblit 
 	cry2 Cry_Bibferno 
 	cry2 Cry_Elastrike 
+	cry2 Cry_Magva 
+	cry2 Cry_Pupava 
+	cry2 Cry_Volquito 

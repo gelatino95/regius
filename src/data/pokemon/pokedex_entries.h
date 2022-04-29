@@ -5113,4 +5113,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_MAGVA] =
+    {
+        .categoryName = _("LAVA BUG"),
+        .height = 4,
+        .weight = 12,
+        .description = gMagvaPokedexText,
+        .pokemonScale = 479,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_PUPAVA] =
+    {
+        .categoryName = _("LAVA BUG"),
+        .height = 4,
+        .weight = 100,
+        .description = gPupavaPokedexText,
+        .pokemonScale = 479,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_VOLQUITO] =
+    {
+        .categoryName = _("LAVA FLY"),
+        .height = 9,
+        .weight = 159,
+        .description = gVolquitoPokedexText,
+        .pokemonScale = 366,
+        .pokemonOffset = 2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

@@ -506,6 +506,9 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_BIBLIT] = gMonIcon_Biblit,
 	[SPECIES_BIBFERNO] = gMonIcon_Bibferno,
 	[SPECIES_ELASTRIKE] = gMonIcon_Elastrike,
+	[SPECIES_MAGVA] = gMonIcon_Magva,
+	[SPECIES_PUPAVA] = gMonIcon_Pupava,
+	[SPECIES_VOLQUITO] = gMonIcon_Volquito,
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -990,6 +993,9 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_BIBLIT] = 2,
 	[SPECIES_BIBFERNO] = 0,
 	[SPECIES_ELASTRIKE] = 0,
+	[SPECIES_MAGVA] = 0,
+	[SPECIES_PUPAVA] = 0,
+	[SPECIES_VOLQUITO] = 0,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

@@ -464,3 +464,6 @@ const u32 gMonFrontPic_Coprisaw[] = INCBIN_U32("graphics/pokemon/coprisaw/anim_f
 const u32 gMonFrontPic_Biblit[] = INCBIN_U32("graphics/pokemon/biblit/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Bibferno[] = INCBIN_U32("graphics/pokemon/bibferno/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Elastrike[] = INCBIN_U32("graphics/pokemon/elastrike/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Magva[] = INCBIN_U32("graphics/pokemon/magva/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Pupava[] = INCBIN_U32("graphics/pokemon/pupava/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Volquito[] = INCBIN_U32("graphics/pokemon/volquito/anim_front.4bpp.lz");

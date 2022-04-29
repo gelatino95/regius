@@ -2555,3 +2555,21 @@ const u8 gElastrikePokedexText[] = _(
 	"that can stretch up to ten times its\n"
 	"normal length. It can wind up and throw\n"
 	"powerful punches from a distance.");
+	
+const u8 gMagvaPokedexText[] = _(
+    "Only found in active volcanoes, its body\n"
+	"is full of molten lava. It wriggles along\n"
+	"the surface of magma pools, looking for\n"
+	"bits of molten rock to eat.");
+	
+const u8 gPupavaPokedexText[] = _(
+    "During its metamorphosis, it encases itself\n"
+	"in cooled lava that forms a heavy, durable\n"
+	"shell. Its mobility is decreased, but it\n"
+	"can defend itself if needed.");
+	
+const u8 gVolquitoPokedexText[] = _(
+    "It requires a steady diet of molten lava\n"
+	"to survive, which it stores in its abdomen.\n"
+	"It prefers to feed on the vital fluids of\n"
+	"FIRE-type POKéMON.");
