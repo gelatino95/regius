@@ -5185,4 +5185,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	
+	[NATIONAL_DEX_MAGMACLE] =
+    {
+        .categoryName = _("BARNACLE"),
+        .height = 4,
+        .weight = 105,
+        .description = gMagmaclePokedexText,
+        .pokemonScale = 469,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_LIMPACLE] =
+    {
+        .categoryName = _("BARNACLE"),
+        .height = 2,
+        .weight = 89,
+        .description = gLimpaclePokedexText,
+        .pokemonScale = 603,
+        .pokemonOffset = 23,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	
+	[NATIONAL_DEX_TERRISLA] =
+    {
+        .categoryName = _("ISLAND"),
+        .height = 43,
+        .weight = 5667,
+        .description = gTerrislaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 614,
+        .trainerOffset = 13,
+    },
 };

@@ -552,6 +552,9 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(CEBORA),
 	SPECIES_TO_HOENN(MANOBELLUM),
 	SPECIES_TO_HOENN(COWRENSEA),
+	SPECIES_TO_HOENN(MAGMACLE),
+	SPECIES_TO_HOENN(LIMPACLE),
+	SPECIES_TO_HOENN(TERRISLA),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1013,6 +1016,9 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(CEBORA),
 	SPECIES_TO_NATIONAL(MANOBELLUM),
 	SPECIES_TO_NATIONAL(COWRENSEA),
+	SPECIES_TO_NATIONAL(MAGMACLE),
+	SPECIES_TO_NATIONAL(LIMPACLE),
+	SPECIES_TO_NATIONAL(TERRISLA),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -1072,6 +1078,9 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(CEBORA),
 	HOENN_TO_NATIONAL(MANOBELLUM),
 	HOENN_TO_NATIONAL(COWRENSEA),
+	HOENN_TO_NATIONAL(MAGMACLE),
+	HOENN_TO_NATIONAL(LIMPACLE),
+	HOENN_TO_NATIONAL(TERRISLA),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1962,6 +1971,9 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_CEBORA - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_MANOBELLUM - 1]  = ANIM_H_SLIDE_SLOW,
     [SPECIES_COWRENSEA - 1]   = ANIM_H_SLIDE_SLOW,
+    [SPECIES_MAGMACLE - 1]    = ANIM_H_SLIDE,
+    [SPECIES_LIMPACLE - 1]    = ANIM_V_SHAKE,
+    [SPECIES_TERRISLA - 1]    = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -2026,6 +2038,7 @@ static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
     [SPECIES_LEVILITH - 1]   = 15,
     [SPECIES_SIRENITEE - 1]  = 10,
     [SPECIES_GLADITHER - 1]  = 5,
+    [SPECIES_LIMPACLE - 1]   = 5,
 };
 
 const u8 gPPUpGetMask[] = {0x03, 0x0c, 0x30, 0xc0}; // Masks for getting PP Up count, also PP Max values

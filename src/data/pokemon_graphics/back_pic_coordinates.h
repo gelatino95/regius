@@ -2426,5 +2426,20 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x66,
         .y_offset = 12,
     },
+	[SPECIES_MAGMACLE] =
+    {
+        .size = 0x66,
+        .y_offset = 10,
+    },
+	[SPECIES_LIMPACLE] =
+    {
+        .size = 0x66,
+        .y_offset = 19,
+    },
+	[SPECIES_TERRISLA] =
+    {
+        .size = 0x87,
+        .y_offset = 7,
+    },
 };
 

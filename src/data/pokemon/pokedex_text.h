@@ -2591,3 +2591,21 @@ const u8 gCowrenseaPokedexText[] = _(
 	"its beauty, and it was traded as currency.\n"
 	"Highly sought after by collectors, it has\n"
 	"been harvested to near extinction.");
+	
+const u8 gMagmaclePokedexText[] = _(
+    "It can be found near ocean volcanoes.\n"
+	"It is drawn to extreme heat, and will seek\n"
+	"out veins of magma. Large groups of these\n"
+	"POKéMON can cause seismic disturbances.");
+	
+const u8 gLimpaclePokedexText[] = _(
+    "A meek POKéMON that will hide under its\n"
+	"large, durable shell at any sign of danger.\n"
+	"Once it sticks to a surface, it cannot be\n"
+	"removed by even the strongest force.");
+	
+const u8 gTerrislaPokedexText[] = _(
+    "A massive POKéMON that cruises along\n"
+	"the ocean surface. The largest specimens\n"
+	"are easily mistaken for real islands, and\n"
+	"some can even support human settlements.");

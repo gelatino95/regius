@@ -434,6 +434,9 @@ gCryTable::
 	cry Cry_Cebora 
 	cry Cry_Manobellum 
 	cry Cry_Cowrensea 
+	cry Cry_Magmacle 
+	cry Cry_Limpacle 
+	cry Cry_Terrisla 
 
 
 	.align 2
@@ -872,3 +875,6 @@ gCryTable2::
 	cry2 Cry_Cebora 
 	cry2 Cry_Manobellum 
 	cry2 Cry_Cowrensea 
+	cry2 Cry_Magmacle 
+	cry2 Cry_Limpacle 
+	cry2 Cry_Terrisla 

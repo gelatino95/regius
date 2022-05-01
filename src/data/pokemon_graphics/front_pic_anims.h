@@ -5316,6 +5316,33 @@ static const union AnimCmd sAnim_COWRENSEA_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_MAGMACLE_1[] =
+{
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_LIMPACLE_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_TERRISLA_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7685,6 +7712,21 @@ static const union AnimCmd *const sAnims_COWRENSEA[] ={
     sAnim_COWRENSEA_1,
 };
 
+static const union AnimCmd *const sAnims_MAGMACLE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_MAGMACLE_1,
+};
+
+static const union AnimCmd *const sAnims_LIMPACLE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_LIMPACLE_1,
+};
+
+static const union AnimCmd *const sAnims_TERRISLA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_TERRISLA_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -8178,6 +8220,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(CEBORA),
 	ANIM_CMD(MANOBELLUM),
 	ANIM_CMD(COWRENSEA),
+	ANIM_CMD(MAGMACLE),
+	ANIM_CMD(LIMPACLE),
+	ANIM_CMD(TERRISLA),
 };
 
 #undef ANIM_CMD

@@ -470,3 +470,6 @@ const u32 gMonFrontPic_Volquito[] = INCBIN_U32("graphics/pokemon/volquito/anim_f
 const u32 gMonFrontPic_Cebora[] = INCBIN_U32("graphics/pokemon/cebora/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Manobellum[] = INCBIN_U32("graphics/pokemon/manobellum/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Cowrensea[] = INCBIN_U32("graphics/pokemon/cowrensea/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Magmacle[] = INCBIN_U32("graphics/pokemon/magmacle/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Limpacle[] = INCBIN_U32("graphics/pokemon/limpacle/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/anim_front.4bpp.lz");

@@ -458,4 +458,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_CEBORA] = sCeboraLevelUpLearnset,
 	[SPECIES_MANOBELLUM] = sManobellumLevelUpLearnset,
 	[SPECIES_COWRENSEA] = sCowrenseaLevelUpLearnset,
+	[SPECIES_MAGMACLE] = sMagmacleLevelUpLearnset,
+	[SPECIES_LIMPACLE] = sLimpacleLevelUpLearnset,
+	[SPECIES_TERRISLA] = sTerrislaLevelUpLearnset,
 };

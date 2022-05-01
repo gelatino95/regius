@@ -460,4 +460,7 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_CEBORA] = gMonFootprint_Cebora,
 	[SPECIES_MANOBELLUM] = gMonFootprint_Manobellum,
 	[SPECIES_COWRENSEA] = gMonFootprint_Cowrensea,
+	[SPECIES_MAGMACLE] = gMonFootprint_Magmacle,
+	[SPECIES_LIMPACLE] = gMonFootprint_Limpacle,
+	[SPECIES_TERRISLA] = gMonFootprint_Terrisla,
 };

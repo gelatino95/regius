@@ -2426,4 +2426,19 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x64,
         .y_offset = 14,
     },
+	[SPECIES_MAGMACLE] =
+    {
+        .size = 0x64,
+        .y_offset = 12,
+    },
+	[SPECIES_LIMPACLE] =
+    {
+        .size = 0x64,
+        .y_offset = 18,
+    },
+	[SPECIES_TERRISLA] =
+    {
+        .size = 0x86,
+        .y_offset = 4,
+    },
 };

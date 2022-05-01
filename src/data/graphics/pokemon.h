@@ -3139,3 +3139,27 @@ const u32 gMonBackPic_Cowrensea[] = INCBIN_U32("graphics/pokemon/cowrensea/back.
 const u32 gMonShinyPalette_Cowrensea[] = INCBIN_U32("graphics/pokemon/cowrensea/shiny.gbapal.lz");
 const u8 gMonIcon_Cowrensea[] = INCBIN_U8("graphics/pokemon/cowrensea/icon.4bpp");
 const u8 gMonFootprint_Cowrensea[] = INCBIN_U8("graphics/pokemon/cowrensea/footprint.1bpp");
+
+
+const u32 gMonStillFrontPic_Magmacle[] = INCBIN_U32("graphics/pokemon/magmacle/front.4bpp.lz");
+const u32 gMonPalette_Magmacle[] = INCBIN_U32("graphics/pokemon/magmacle/normal.gbapal.lz");
+const u32 gMonBackPic_Magmacle[] = INCBIN_U32("graphics/pokemon/magmacle/back.4bpp.lz");
+const u32 gMonShinyPalette_Magmacle[] = INCBIN_U32("graphics/pokemon/magmacle/shiny.gbapal.lz");
+const u8 gMonIcon_Magmacle[] = INCBIN_U8("graphics/pokemon/magmacle/icon.4bpp");
+const u8 gMonFootprint_Magmacle[] = INCBIN_U8("graphics/pokemon/magmacle/footprint.1bpp");
+
+
+const u32 gMonStillFrontPic_Limpacle[] = INCBIN_U32("graphics/pokemon/limpacle/front.4bpp.lz");
+const u32 gMonPalette_Limpacle[] = INCBIN_U32("graphics/pokemon/limpacle/normal.gbapal.lz");
+const u32 gMonBackPic_Limpacle[] = INCBIN_U32("graphics/pokemon/limpacle/back.4bpp.lz");
+const u32 gMonShinyPalette_Limpacle[] = INCBIN_U32("graphics/pokemon/limpacle/shiny.gbapal.lz");
+const u8 gMonIcon_Limpacle[] = INCBIN_U8("graphics/pokemon/limpacle/icon.4bpp");
+const u8 gMonFootprint_Limpacle[] = INCBIN_U8("graphics/pokemon/limpacle/footprint.1bpp");
+
+
+const u32 gMonStillFrontPic_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/front.4bpp.lz");
+const u32 gMonPalette_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/normal.gbapal.lz");
+const u32 gMonBackPic_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/back.4bpp.lz");
+const u32 gMonShinyPalette_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/shiny.gbapal.lz");
+const u8 gMonIcon_Terrisla[] = INCBIN_U8("graphics/pokemon/terrisla/icon.4bpp");
+const u8 gMonFootprint_Terrisla[] = INCBIN_U8("graphics/pokemon/terrisla/footprint.1bpp");

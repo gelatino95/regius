@@ -2119,6 +2119,18 @@ Cry_Manobellum::
 	.align 2
 Cry_Cowrensea::
 	.incbin "sound/direct_sound_samples/cries/cowrensea.bin"
+	
+	.align 2
+Cry_Magmacle::
+	.incbin "sound/direct_sound_samples/cries/magmacle.bin"
+	
+	.align 2
+Cry_Limpacle::
+	.incbin "sound/direct_sound_samples/cries/limpacle.bin"
+	
+	.align 2
+Cry_Terrisla::
+	.incbin "sound/direct_sound_samples/cries/terrisla.bin"
 
 //end new pokemon
 

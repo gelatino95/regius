@@ -512,6 +512,9 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_CEBORA] = gMonIcon_Cebora,
 	[SPECIES_MANOBELLUM] = gMonIcon_Manobellum,
 	[SPECIES_COWRENSEA] = gMonIcon_Cowrensea,
+	[SPECIES_MAGMACLE] = gMonIcon_Magmacle,
+	[SPECIES_LIMPACLE] = gMonIcon_Limpacle,
+	[SPECIES_TERRISLA] = gMonIcon_Terrisla,
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -1002,6 +1005,9 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_CEBORA] = 0,
 	[SPECIES_MANOBELLUM] = 0,
 	[SPECIES_COWRENSEA] = 0,
+	[SPECIES_MAGMACLE] = 0,
+	[SPECIES_LIMPACLE] = 0,
+	[SPECIES_TERRISLA] = 1,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

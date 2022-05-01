@@ -1464,6 +1464,18 @@ const u16 gEggMoves[] = {
               MOVE_BATON_PASS,
               MOVE_REFRESH,
               MOVE_MIRROR_COAT),
+			  
+	egg_moves(MAGMACLE,
+              MOVE_DRAGON_DANCE,
+              MOVE_ASTONISH,
+              MOVE_SMOKESCREEN,
+              MOVE_AMNESIA),
+			  
+	egg_moves(LIMPACLE,
+              MOVE_DRAGON_DANCE,
+              MOVE_ASTONISH,
+              MOVE_MIST,
+              MOVE_AMNESIA),
 
     EGG_MOVES_TERMINATOR
 };
