@@ -555,6 +555,7 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(MAGMACLE),
 	SPECIES_TO_HOENN(LIMPACLE),
 	SPECIES_TO_HOENN(TERRISLA),
+	SPECIES_TO_HOENN(REGIGIGAS),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1019,6 +1020,7 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(MAGMACLE),
 	SPECIES_TO_NATIONAL(LIMPACLE),
 	SPECIES_TO_NATIONAL(TERRISLA),
+	SPECIES_TO_NATIONAL(REGIGIGAS),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -1081,6 +1083,7 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(MAGMACLE),
 	HOENN_TO_NATIONAL(LIMPACLE),
 	HOENN_TO_NATIONAL(TERRISLA),
+	HOENN_TO_NATIONAL(REGIGIGAS),
 //end new pokemon
     HOENN_TO_NATIONAL(POOCHYENA),
     HOENN_TO_NATIONAL(MIGHTYENA),
@@ -1974,6 +1977,7 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_MAGMACLE - 1]    = ANIM_H_SLIDE,
     [SPECIES_LIMPACLE - 1]    = ANIM_V_SHAKE,
     [SPECIES_TERRISLA - 1]    = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+    [SPECIES_REGIGIGAS - 1]   = ANIM_V_SHAKE_TWICE,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

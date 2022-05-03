@@ -2609,3 +2609,9 @@ const u8 gTerrislaPokedexText[] = _(
 	"the ocean surface. The largest specimens\n"
 	"are easily mistaken for real islands, and\n"
 	"some can even support human settlements.");
+	
+const u8 gRegigigasPokedexText[] = _(
+    "An awe-inspiring POKéMON that appears in\n"
+	"countless legends around the world.\n"
+	"Though little is known about its history,\n"
+	"REGIGIGAS is believed to be royalty.");

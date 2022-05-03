@@ -473,3 +473,4 @@ const u32 gMonFrontPic_Cowrensea[] = INCBIN_U32("graphics/pokemon/cowrensea/anim
 const u32 gMonFrontPic_Magmacle[] = INCBIN_U32("graphics/pokemon/magmacle/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Limpacle[] = INCBIN_U32("graphics/pokemon/limpacle/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Regigigas[] = INCBIN_U32("graphics/pokemon/regigigas/anim_front.4bpp.lz");

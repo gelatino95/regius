@@ -2131,6 +2131,10 @@ Cry_Limpacle::
 	.align 2
 Cry_Terrisla::
 	.incbin "sound/direct_sound_samples/cries/terrisla.bin"
+	
+	.align 2
+Cry_Regigigas::
+	.incbin "sound/direct_sound_samples/cries/regigigas.bin"
 
 //end new pokemon
 

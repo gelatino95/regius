@@ -3239,6 +3239,14 @@ extern const u32 gMonStillFrontPic_Terrisla[];
 extern const u8 gMonIcon_Terrisla[];
 extern const u8 gMonFootprint_Terrisla[];
 
+extern const u32 gMonFrontPic_Regigigas[];
+extern const u32 gMonPalette_Regigigas[];
+extern const u32 gMonBackPic_Regigigas[];
+extern const u32 gMonShinyPalette_Regigigas[];
+extern const u32 gMonStillFrontPic_Regigigas[];
+extern const u8 gMonIcon_Regigigas[];
+extern const u8 gMonFootprint_Regigigas[];
+
 //end new pokemon
 
 extern const u32 gMonFrontPic_CircledQuestionMark[];

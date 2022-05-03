@@ -515,6 +515,7 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_MAGMACLE] = gMonIcon_Magmacle,
 	[SPECIES_LIMPACLE] = gMonIcon_Limpacle,
 	[SPECIES_TERRISLA] = gMonIcon_Terrisla,
+	[SPECIES_REGIGIGAS] = gMonIcon_Regigigas,
 };
 
 const u8 gMonIconPaletteIndices[] =
@@ -1008,6 +1009,7 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_MAGMACLE] = 0,
 	[SPECIES_LIMPACLE] = 0,
 	[SPECIES_TERRISLA] = 1,
+	[SPECIES_REGIGIGAS] = 0,
 };
 
 const struct SpritePalette gMonIconPaletteTable[] =

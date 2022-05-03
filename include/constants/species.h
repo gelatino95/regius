@@ -464,8 +464,9 @@
 #define SPECIES_MAGMACLE 457
 #define SPECIES_LIMPACLE 458
 #define SPECIES_TERRISLA 459
+#define SPECIES_REGIGIGAS 460
 //end new pokemon
-#define SPECIES_EGG 460
+#define SPECIES_EGG 461
 
 #define NUM_SPECIES SPECIES_EGG
 
@@ -941,8 +942,9 @@
 #define NATIONAL_DEX_MAGMACLE       432
 #define NATIONAL_DEX_LIMPACLE       433
 #define NATIONAL_DEX_TERRISLA       434
+#define NATIONAL_DEX_REGIGIGAS      435
 
-#define NATIONAL_DEX_COUNT          NATIONAL_DEX_TERRISLA
+#define NATIONAL_DEX_COUNT          NATIONAL_DEX_REGIGIGAS
 
 #define NATIONAL_DEX_OLD_UNOWN_B    (NATIONAL_DEX_COUNT + 1)
 #define NATIONAL_DEX_OLD_UNOWN_C    (NATIONAL_DEX_OLD_UNOWN_B + 1)
@@ -984,7 +986,7 @@
 #define HOENN_DEX_SWAMPERT      9
 #define HOENN_DEX_MAGMACLE      10 //change back to POOCHYENA
 #define HOENN_DEX_LIMPACLE      11 //change back to MIGHTYENA
-#define HOENN_DEX_TERRISLA      12 //change back to ZIGZAGOON
+#define HOENN_DEX_REGIGIGAS     12 //change back to ZIGZAGOON
 #define HOENN_DEX_LINOONE       13
 #define HOENN_DEX_WURMPLE       14
 #define HOENN_DEX_SILCOON       15
@@ -1408,9 +1410,10 @@
 #define HOENN_DEX_CEBORA        429
 #define HOENN_DEX_MANOBELLUM    430
 #define HOENN_DEX_COWRENSEA     431
-#define HOENN_DEX_POOCHYENA     432
-#define HOENN_DEX_MIGHTYENA     433
-#define HOENN_DEX_ZIGZAGOON     434 //change back to final new pokemon
+#define HOENN_DEX_TERRISLA      432
+#define HOENN_DEX_POOCHYENA     433
+#define HOENN_DEX_MIGHTYENA     434
+#define HOENN_DEX_ZIGZAGOON     435 //change back to final new pokemon
 
 #define HOENN_DEX_OLD_UNOWN_B   (HOENN_DEX_ZIGZAGOON + 1) //change back to final new pokemon
 #define HOENN_DEX_OLD_UNOWN_C   (HOENN_DEX_OLD_UNOWN_B + 1)

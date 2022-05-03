@@ -437,6 +437,7 @@ gCryTable::
 	cry Cry_Magmacle 
 	cry Cry_Limpacle 
 	cry Cry_Terrisla 
+	cry Cry_Regigigas 
 
 
 	.align 2
@@ -878,3 +879,4 @@ gCryTable2::
 	cry2 Cry_Magmacle 
 	cry2 Cry_Limpacle 
 	cry2 Cry_Terrisla 
+	cry2 Cry_Regigigas 

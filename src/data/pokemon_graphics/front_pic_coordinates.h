@@ -2441,4 +2441,9 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x86,
         .y_offset = 4,
     },
+	[SPECIES_REGIGIGAS] =
+    {
+        .size = 0x88,
+        .y_offset = 1,
+    },
 };

@@ -461,4 +461,5 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_MAGMACLE] = sMagmacleLevelUpLearnset,
 	[SPECIES_LIMPACLE] = sLimpacleLevelUpLearnset,
 	[SPECIES_TERRISLA] = sTerrislaLevelUpLearnset,
+	[SPECIES_REGIGIGAS] = sRegigigasLevelUpLearnset,
 };

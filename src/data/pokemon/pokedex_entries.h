@@ -5221,4 +5221,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 614,
         .trainerOffset = 13,
     },
+	
+	[NATIONAL_DEX_REGIGIGAS] =
+    {
+        .categoryName = _("COLOSSAL"),
+        .height = 37,
+        .weight = 4200,
+        .description = gRegigigasPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 515,
+        .trainerOffset = 14,
+    },
 };

@@ -10512,6 +10512,30 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
+										
+	[SPECIES_REGIGIGAS]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_PUNCH)
+                                        | TMHM(TM06_TOXIC)
+                                        | TMHM(TM10_HIDDEN_POWER)
+                                        | TMHM(TM11_SUNNY_DAY)
+                                        | TMHM(TM15_HYPER_BEAM)
+                                        | TMHM(TM17_PROTECT)
+                                        | TMHM(TM18_RAIN_DANCE)
+                                        | TMHM(TM20_SAFEGUARD)
+                                        | TMHM(TM21_FRUSTRATION)
+                                        | TMHM(TM24_THUNDERBOLT)
+                                        | TMHM(TM25_THUNDER)
+                                        | TMHM(TM26_EARTHQUAKE)
+                                        | TMHM(TM27_RETURN)
+                                        | TMHM(TM31_BRICK_BREAK)
+                                        | TMHM(TM32_DOUBLE_TEAM)
+                                        | TMHM(TM34_SHOCK_WAVE)
+                                        | TMHM(TM39_ROCK_TOMB)
+                                        | TMHM(TM40_AERIAL_ACE)
+                                        | TMHM(TM42_FACADE)
+                                        | TMHM(TM43_SECRET_POWER)
+                                        | TMHM(TM44_REST)
+                                        | TMHM(HM04_STRENGTH)
+                                        | TMHM(HM06_ROCK_SMASH)),
 };
 
 

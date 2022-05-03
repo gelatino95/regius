@@ -463,4 +463,5 @@ const u8 *const gMonFootprintTable[] =
 	[SPECIES_MAGMACLE] = gMonFootprint_Magmacle,
 	[SPECIES_LIMPACLE] = gMonFootprint_Limpacle,
 	[SPECIES_TERRISLA] = gMonFootprint_Terrisla,
+	[SPECIES_REGIGIGAS] = gMonFootprint_Regigigas,
 };

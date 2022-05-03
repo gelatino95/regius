@@ -5343,6 +5343,14 @@ static const union AnimCmd sAnim_TERRISLA_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_REGIGIGAS_1[] =
+{
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 44),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_END,
+};
+
 //new pokemon end
 
 static const union AnimCmd *const sAnims_NONE[] ={
@@ -7727,6 +7735,11 @@ static const union AnimCmd *const sAnims_TERRISLA[] ={
     sAnim_TERRISLA_1,
 };
 
+static const union AnimCmd *const sAnims_REGIGIGAS[] ={
+    sAnim_GeneralFrame0,
+    sAnim_REGIGIGAS_1,
+};
+
 //new pokemon end
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
@@ -8223,6 +8236,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(MAGMACLE),
 	ANIM_CMD(LIMPACLE),
 	ANIM_CMD(TERRISLA),
+	ANIM_CMD(REGIGIGAS),
 };
 
 #undef ANIM_CMD

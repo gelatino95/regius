@@ -3163,3 +3163,10 @@ const u32 gMonBackPic_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/back.4b
 const u32 gMonShinyPalette_Terrisla[] = INCBIN_U32("graphics/pokemon/terrisla/shiny.gbapal.lz");
 const u8 gMonIcon_Terrisla[] = INCBIN_U8("graphics/pokemon/terrisla/icon.4bpp");
 const u8 gMonFootprint_Terrisla[] = INCBIN_U8("graphics/pokemon/terrisla/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Regigigas[] = INCBIN_U32("graphics/pokemon/regigigas/front.4bpp.lz");
+const u32 gMonPalette_Regigigas[] = INCBIN_U32("graphics/pokemon/regigigas/normal.gbapal.lz");
+const u32 gMonBackPic_Regigigas[] = INCBIN_U32("graphics/pokemon/regigigas/back.4bpp.lz");
+const u32 gMonShinyPalette_Regigigas[] = INCBIN_U32("graphics/pokemon/regigigas/shiny.gbapal.lz");
+const u8 gMonIcon_Regigigas[] = INCBIN_U8("graphics/pokemon/regigigas/icon.4bpp");
+const u8 gMonFootprint_Regigigas[] = INCBIN_U8("graphics/pokemon/regigigas/footprint.1bpp");
