@@ -1606,7 +1606,8 @@ u8 DoBattlerEndTurnEffects(void)
                     for (gBattlerAttacker = 0; gBattlerAttacker < gBattlersCount; gBattlerAttacker++)
                     {
                         if ((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP)
-                         && gBattleMons[gBattlerAttacker].ability != ABILITY_SOUNDPROOF)
+                         && gBattleMons[gBattlerAttacker].ability != ABILITY_SOUNDPROOF
+                         && gBattleMons[gBattlerAttacker].ability != ABILITY_CACOPHONY)
                         {
                             gBattleMons[gBattlerAttacker].status1 &= ~(STATUS1_SLEEP);
                             gBattleMons[gBattlerAttacker].status2 &= ~(STATUS2_NIGHTMARE);
@@ -2642,8 +2643,9 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
             }
             break;
         case ABILITYEFFECT_MOVES_BLOCK: // 2
-            if (gLastUsedAbility == ABILITY_SOUNDPROOF)
-            {
+            switch (gLastUsedAbility)
+			{
+			case ABILITY_SOUNDPROOF:
                 for (i = 0; sSoundMovesTable[i] != 0xFFFF; i++)
                 {
                     if (sSoundMovesTable[i] == move)
@@ -2656,7 +2658,22 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     gBattlescriptCurrInstr = BattleScript_SoundproofProtected;
                     effect = 1;
                 }
-            }
+				break;
+			case ABILITY_CACOPHONY:
+                for (i = 0; sSoundMovesTable[i] != 0xFFFF; i++)
+                {
+                    if (sSoundMovesTable[i] == move)
+                        break;
+                }
+                if (sSoundMovesTable[i] != 0xFFFF)
+                {
+                    if (gBattleMons[gBattlerAttacker].status2 & STATUS2_MULTIPLETURNS)
+                        gHitMarker |= HITMARKER_NO_PPDEDUCT;
+                    gBattlescriptCurrInstr = BattleScript_CacophonyProtected;
+                    effect = 1;
+                }
+				break;
+			}
             break;
         case ABILITYEFFECT_ABSORBING: // 3
             if (move)

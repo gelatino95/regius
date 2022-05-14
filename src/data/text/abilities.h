@@ -76,6 +76,9 @@ static const u8 sPurePowerDescription[] = _("Raises ATTACK.");
 static const u8 sShellArmorDescription[] = _("Blocks critical hits.");
 static const u8 sCacophonyDescription[] = _("Avoids sound-based moves.");
 static const u8 sAirLockDescription[] = _("Negates weather effects.");
+static const u8 sCalderaDescription[] = _("Boosts FIRE moves.");
+static const u8 sCisternDescription[] = _("Boosts WATER moves.");
+static const u8 sSlowStartDescription[] = _("Temporarily halves stats.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -157,6 +160,9 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_SHELL_ARMOR] = _("SHELL ARMOR"),
     [ABILITY_CACOPHONY] = _("CACOPHONY"),
     [ABILITY_AIR_LOCK] = _("AIR LOCK"),
+    [ABILITY_CALDERA] = _("CALDERA"),
+    [ABILITY_CISTERN] = _("CISTERN"),
+    [ABILITY_SLOW_START] = _("SLOW START"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -239,4 +245,7 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_SHELL_ARMOR] = sShellArmorDescription,
     [ABILITY_CACOPHONY] = sCacophonyDescription,
     [ABILITY_AIR_LOCK] = sAirLockDescription,
+    [ABILITY_CALDERA] = sCalderaDescription,
+    [ABILITY_CISTERN] = sCisternDescription,
+    [ABILITY_SLOW_START] = sSlowStartDescription,
 };
