@@ -3,6 +3,6 @@ SoutheastSea_MapScripts::
 
 
 SoutheastSea_EventScript_ItemRareCandy::
-	finditem ITEM_RARE_CANDY
+	finditem ITEM_HM03
 	end
 

@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_QUETINI, 15, ITEM_FIRE_STONE
+	givemon SPECIES_TERRISLA, 15, ITEM_TM35
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare
@@ -36,8 +36,8 @@ GatewayIsland_PlayersHouse_ItemBall_Text_0:
 	.string "how much you've grown.$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_1:
-	.string "{PLAYER} received QUETINI!$"
+	.string "{PLAYER} received TERRISLA!$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_2:
 	.string "Would you like to give a\n"
-	.string "nickname to your QUETINI?$"
+	.string "nickname to your TERRISLA?$"
