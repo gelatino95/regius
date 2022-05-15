@@ -4558,3 +4558,15 @@ BattleScript_PrintPlayerForfeitedLinkBattle::
 	endlinkbattle
 	waitmessage B_WAIT_TIME_LONG
 	end2
+
+BattleScript_SlowStartEnters::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_SLOWSTARTENTERS
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_SlowStartEnds::
+	pause 5
+	printstring STRINGID_SLOWSTARTEND
+	waitmessage B_WAIT_TIME_LONG
+	end2

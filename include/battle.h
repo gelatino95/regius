@@ -99,6 +99,7 @@ struct DisableStruct
     u8 filler_17; // Unused field.
     u8 truantCounter:1;
     u8 truantSwitchInHack:1;
+	u8 slowStartTimer;
     u8 filler_18_2:2; // Unused field.
     u8 mimickedMoves:4;
     u8 rechargeTimer;
@@ -140,6 +141,7 @@ struct SpecialStatus
     u32 intimidatedMon:1;
     u32 traced:1;
     u32 ppNotAffectedByPressure:1;
+	u8 switchInAbilityDone:1;
     u32 flag40:1;
     u32 focusBanded:1;
     s32 dmg;

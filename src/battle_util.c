@@ -1436,6 +1436,7 @@ enum
     ENDTURN_TAUNT,
     ENDTURN_YAWN,
     ENDTURN_ITEMS2,
+    ENDTURN_SLOW_START,
     ENDTURN_BATTLER_COUNT
 };
 
@@ -1748,6 +1749,16 @@ u8 DoBattlerEndTurnEffects(void)
                 }
                 gBattleStruct->turnEffectsTracker++;
                 break;
+			case ENDTURN_SLOW_START:  // slow start
+				if (gDisableStructs[gActiveBattler].slowStartTimer
+					&& --gDisableStructs[gActiveBattler].slowStartTimer == 0
+					&& gBattleMons[gActiveBattler].ability == ABILITY_SLOW_START)
+				{
+					BattleScriptExecute(BattleScript_SlowStartEnds);
+					effect++;
+				}
+				gBattleStruct->turnEffectsTracker++;
+				break;
             case ENDTURN_BATTLER_COUNT:  // done
                 gBattleStruct->turnEffectsTracker = 0;
                 gBattleStruct->turnEffectsBattlerId++;
@@ -2542,6 +2553,15 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     effect++;
                 }
                 break;
+			case ABILITY_SLOW_START:
+                if (!gSpecialStatuses[battler].switchInAbilityDone)
+				{
+					gDisableStructs[battler].slowStartTimer = 5;
+					gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+					BattleScriptPushCursorAndCallback(BattleScript_SlowStartEnters);
+					effect++;
+				}
+				break;
             case ABILITY_INTIMIDATE:
                 if (!(gSpecialStatuses[battler].intimidatedMon))
                 {

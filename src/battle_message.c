@@ -434,6 +434,8 @@ static const u8 sText_SpAtk2[] = _("SP. ATK");
 static const u8 sText_SpDef2[] = _("SP. DEF");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
+static const u8 sText_SlowStartEnters[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nmakes it sluggish!");
+static const u8 sText_SlowStartEnd[] = _("{B_ATK_NAME_WITH_PREFIX} regained\nits strength!");
 
 const u8 * const gStatNamesTable[NUM_BATTLE_STATS] =
 {
@@ -889,6 +891,8 @@ const u8 * const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNBOXLANETTESPCFULL - 12] = gText_PkmnTransferredLanettesPCBoxFull,
     [STRINGID_TRAINER1WINTEXT - 12] = sText_Trainer1WinText,
     [STRINGID_TRAINER2WINTEXT - 12] = sText_Trainer2WinText,
+	[STRINGID_SLOWSTARTENTERS - 12] = sText_SlowStartEnters,
+    [STRINGID_SLOWSTARTEND - 12] = sText_SlowStartEnd,
 };
 
 const u16 gMissStringIds[] =

@@ -4574,6 +4574,9 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
 
     if (holdEffect == HOLD_EFFECT_QUICK_CLAW && gRandomTurnNumber < (0xFFFF * holdEffectParam) / 100)
         speedBattler1 = UINT_MAX;
+	
+	if (gBattleMons[battler1].ability == ABILITY_SLOW_START && gDisableStructs[battler1].slowStartTimer != 0)
+		speedBattler1 /= 2;
 
     // check second battlerId's speed
 
@@ -4608,6 +4611,9 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
 
     if (holdEffect == HOLD_EFFECT_QUICK_CLAW && gRandomTurnNumber < (0xFFFF * holdEffectParam) / 100)
         speedBattler2 = UINT_MAX;
+	
+	if (gBattleMons[battler2].ability == ABILITY_SLOW_START && gDisableStructs[battler2].slowStartTimer != 0)
+		speedBattler2 /= 2;
 
     if (ignoreChosenMoves)
     {
