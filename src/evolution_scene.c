@@ -582,6 +582,22 @@ static void CreateShedinja(u16 preEvoSpecies, struct Pokemon* mon)
     }
 }
 
+static void TerrislaAbility(u16 preEvoSpecies, struct Pokemon* mon)
+{
+	u16 newAbility;
+	switch (preEvoSpecies)
+	{
+	case SPECIES_MAGMACLE:
+		newAbility = 0;
+		SetMonData(mon, MON_DATA_ABILITY_NUM, &newAbility);
+		break;
+	case SPECIES_LIMPACLE:
+		newAbility = 1;
+		SetMonData(mon, MON_DATA_ABILITY_NUM, &newAbility);
+		break;
+	}
+}
+
 // States for the main switch in Task_EvolutionScene
 enum {
     EVOSTATE_FADE_IN,
@@ -812,7 +828,10 @@ static void Task_EvolutionScene(u8 taskId)
                 Overworld_PlaySpecialMapMusic();
             }
             if (!gTasks[taskId].tEvoWasStopped)
+			{
                 CreateShedinja(gTasks[taskId].tPreEvoSpecies, mon);
+				TerrislaAbility(gTasks[taskId].tPreEvoSpecies, mon);
+			}
 
             DestroyTask(taskId);
             FreeMonSpritesGfx();
