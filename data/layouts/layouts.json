@@ -4440,6 +4440,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/GatewayIsland_PlayersHouse/border.bin",
       "blockdata_filepath": "data/layouts/GatewayIsland_PlayersHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARID_ISLAND",
+      "name": "AridIsland_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Arid_Island",
+      "border_filepath": "data/layouts/AridIsland/border.bin",
+      "blockdata_filepath": "data/layouts/AridIsland/map.bin"
     }
   ]
 }

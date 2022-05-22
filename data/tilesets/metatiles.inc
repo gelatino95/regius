@@ -557,3 +557,11 @@ gMetatiles_UnionRoom::
 	.align 1
 gMetatileAttributes_UnionRoom::
 	.incbin "data/tilesets/secondary/union_room/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Arid_Island::
+	.incbin "data/tilesets/secondary/arid_island/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Arid_Island::
+	.incbin "data/tilesets/secondary/arid_island/metatile_attributes.bin"
