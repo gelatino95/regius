@@ -19,9 +19,9 @@
       "map": "MAP_GATEWAY_ISLAND"
     },
     {
-      "direction": "left",
-      "offset": 0,
-      "map": "MAP_GATEWAY_ISLAND"
+      "direction": "up",
+      "offset": 40,
+      "map": "MAP_ARID_ISLAND"
     }
   ],
   "object_events": [
