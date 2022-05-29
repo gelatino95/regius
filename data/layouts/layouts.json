@@ -4450,6 +4450,36 @@
       "secondary_tileset": "gTileset_Arid_Island",
       "border_filepath": "data/layouts/AridIsland/border.bin",
       "blockdata_filepath": "data/layouts/AridIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARID_DESERT",
+      "name": "AridDesert_Layout",
+      "width": 65,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Arid_Island",
+      "border_filepath": "data/layouts/AridDesert/border.bin",
+      "blockdata_filepath": "data/layouts/AridDesert/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARID_RUINS",
+      "name": "AridRuins_Layout",
+      "width": 80,
+      "height": 58,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AridRuins/border.bin",
+      "blockdata_filepath": "data/layouts/AridRuins/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARID_ISLAND_DESERT_TUNNEL",
+      "name": "AridIsland_DesertTunnel_Layout",
+      "width": 20,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AridIsland_DesertTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/AridIsland_DesertTunnel/map.bin"
     }
   ]
 }

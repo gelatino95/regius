@@ -35,7 +35,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorGatewayIsland"
+    "gMapGroup_IndoorGatewayIsland",
+    "gMapGroup_IndoorAridIsland"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -97,7 +98,8 @@
     "Underwater_Route125",
     "GatewayIsland",
     "SoutheastSea",
-    "AridIsland"
+    "AridIsland",
+    "AridDesert"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -434,7 +436,8 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "AridRuins"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -628,5 +631,8 @@
   ],
   "gMapGroup_IndoorGatewayIsland": [
     "GatewayIsland_PlayersHouse"
+  ],
+  "gMapGroup_IndoorAridIsland": [
+    "AridIsland_DesertTunnel"
   ]
 }

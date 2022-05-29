@@ -1068,3 +1068,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GatewayIsland_PlayersHouse/scripts.inc"
 
 	.include "data/maps/AridIsland/scripts.inc"
+
+	.include "data/maps/AridDesert/scripts.inc"
+
+	.include "data/maps/AridRuins/scripts.inc"
+
+	.include "data/maps/AridIsland_DesertTunnel/scripts.inc"
