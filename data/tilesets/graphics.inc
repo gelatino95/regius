@@ -1749,3 +1749,23 @@ gTilesetPalettes_Arid_Island::
 	.align 2
 gTilesetTiles_Arid_Island::
 	.incbin "data/tilesets/secondary/arid_island/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_AridIslandIndoors::
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/aridislandindoors/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_AridIslandIndoors::
+	.incbin "data/tilesets/secondary/aridislandindoors/tiles.4bpp.lz"

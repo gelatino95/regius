@@ -1074,3 +1074,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AridRuins/scripts.inc"
 
 	.include "data/maps/AridIsland_DesertTunnel/scripts.inc"
+
+	.include "data/maps/AridIsland_House1/scripts.inc"
+
+	.include "data/maps/AridIsland_House2/scripts.inc"
+
+	.include "data/maps/AridIsland_PokemonCenter/scripts.inc"
+
+	.include "data/maps/AridIsland_House3/scripts.inc"

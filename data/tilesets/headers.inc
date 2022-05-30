@@ -841,3 +841,14 @@ gTileset_Arid_Island::
 	.4byte gMetatiles_Arid_Island
 	.4byte gMetatileAttributes_Arid_Island
 	.4byte NULL
+
+	.align 2
+gTileset_AridIslandIndoors::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_AridIslandIndoors
+	.4byte gTilesetPalettes_AridIslandIndoors
+	.4byte gMetatiles_AridIslandIndoors
+	.4byte gMetatileAttributes_AridIslandIndoors
+	.4byte NULL

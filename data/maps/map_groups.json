@@ -633,6 +633,10 @@
     "GatewayIsland_PlayersHouse"
   ],
   "gMapGroup_IndoorAridIsland": [
-    "AridIsland_DesertTunnel"
+    "AridIsland_DesertTunnel",
+    "AridIsland_House1",
+    "AridIsland_House2",
+    "AridIsland_PokemonCenter",
+    "AridIsland_House3"
   ]
 }

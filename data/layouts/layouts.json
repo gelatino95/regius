@@ -4480,6 +4480,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AridIsland_DesertTunnel/border.bin",
       "blockdata_filepath": "data/layouts/AridIsland_DesertTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARID_ISLAND_HOUSE1",
+      "name": "AridIsland_House1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AridIslandIndoors",
+      "border_filepath": "data/layouts/AridIsland_House1/border.bin",
+      "blockdata_filepath": "data/layouts/AridIsland_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARID_ISLAND_POKEMON_CENTER",
+      "name": "AridIsland_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AridIslandIndoors",
+      "border_filepath": "data/layouts/AridIsland_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/AridIsland_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARID_ISLAND_HOUSE3",
+      "name": "AridIsland_House3_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AridIslandIndoors",
+      "border_filepath": "data/layouts/AridIsland_House3/border.bin",
+      "blockdata_filepath": "data/layouts/AridIsland_House3/map.bin"
     }
   ]
 }
