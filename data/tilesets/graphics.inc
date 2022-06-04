@@ -1769,3 +1769,23 @@ gTilesetPalettes_AridIslandIndoors::
 	.align 2
 gTilesetTiles_AridIslandIndoors::
 	.incbin "data/tilesets/secondary/aridislandindoors/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Kapok_Island::
+	.incbin "data/tilesets/secondary/kapok_island/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/kapok_island/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Kapok_Island::
+	.incbin "data/tilesets/secondary/kapok_island/tiles.4bpp.lz"

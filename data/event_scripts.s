@@ -1082,3 +1082,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AridIsland_PokemonCenter/scripts.inc"
 
 	.include "data/maps/AridIsland_House3/scripts.inc"
+
+	.include "data/maps/KapokIsland/scripts.inc"
+
+	.include "data/maps/NortheastSea/scripts.inc"
+
+	.include "data/maps/KapokJungle/scripts.inc"

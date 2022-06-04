@@ -99,7 +99,10 @@
     "GatewayIsland",
     "SoutheastSea",
     "AridIsland",
-    "AridDesert"
+    "AridDesert",
+    "KapokIsland",
+    "NortheastSea",
+    "KapokJungle"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

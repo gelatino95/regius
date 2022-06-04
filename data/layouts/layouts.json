@@ -4510,6 +4510,36 @@
       "secondary_tileset": "gTileset_AridIslandIndoors",
       "border_filepath": "data/layouts/AridIsland_House3/border.bin",
       "blockdata_filepath": "data/layouts/AridIsland_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPOK_ISLAND",
+      "name": "KapokIsland_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kapok_Island",
+      "border_filepath": "data/layouts/KapokIsland/border.bin",
+      "blockdata_filepath": "data/layouts/KapokIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTHEAST_SEA",
+      "name": "NortheastSea_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kapok_Island",
+      "border_filepath": "data/layouts/NortheastSea/border.bin",
+      "blockdata_filepath": "data/layouts/NortheastSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPOK_JUNGLE",
+      "name": "KapokJungle_Layout",
+      "width": 55,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kapok_Island",
+      "border_filepath": "data/layouts/KapokJungle/border.bin",
+      "blockdata_filepath": "data/layouts/KapokJungle/map.bin"
     }
   ]
 }

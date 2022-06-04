@@ -17,6 +17,11 @@
       "direction": "down",
       "offset": -40,
       "map": "MAP_SOUTHEAST_SEA"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_NORTHEAST_SEA"
     }
   ],
   "object_events": [
