@@ -36,7 +36,8 @@
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorGatewayIsland",
-    "gMapGroup_IndoorAridIsland"
+    "gMapGroup_IndoorAridIsland",
+    "gMapGroup_IndoorKapokIsland"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -440,7 +441,10 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "AridRuins"
+    "AridRuins",
+    "IceCave_1F",
+    "IceCave_B1F",
+    "IceCave_B2F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -641,5 +645,13 @@
     "AridIsland_House2",
     "AridIsland_PokemonCenter",
     "AridIsland_House3"
+  ],
+  "gMapGroup_IndoorKapokIsland": [
+    "KapokIsland_PokemonCenter",
+    "KapokIsland_MoveRelearner",
+    "KapokIsland_House1",
+    "KapokIsland_House2",
+    "KapokIsland_PokemonDayCare",
+    "KapokIsland_Mart"
   ]
 }

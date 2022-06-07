@@ -1,0 +1,19 @@
+mapscripts KapokIsland_House1_MapScripts {}
+
+script KapokIsland_House1_EventScript_Beauty {
+	lock
+	faceplayer
+	if (flag(FLAG_RECEIVED_HM04))
+	{
+		msgbox(format("Good luck out there."))
+	}
+	else
+	{
+		msgbox(format("Exploring the ICE CAVE?,\nYou'll need these."))
+		giveitem(ITEM_HM04)
+		giveitem(ITEM_HM07)
+		setflag(FLAG_RECEIVED_HM04)
+	}
+	release
+	end
+}

@@ -4540,6 +4540,46 @@
       "secondary_tileset": "gTileset_Kapok_Island",
       "border_filepath": "data/layouts/KapokJungle/border.bin",
       "blockdata_filepath": "data/layouts/KapokJungle/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPOK_ISLAND_POKEMON_CENTER",
+      "name": "KapokIsland_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/KapokIsland_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KapokIsland_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVE_1F",
+      "name": "IceCave_1F_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/IceCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVE_B1F",
+      "name": "IceCave_B1F_Layout",
+      "width": 35,
+      "height": 41,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/IceCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVE_B2F",
+      "name": "IceCave_B2F_Layout",
+      "width": 35,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IceCave_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/IceCave_B2F/map.bin"
     }
   ]
 }

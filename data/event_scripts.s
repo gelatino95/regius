@@ -1088,3 +1088,21 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NortheastSea/scripts.inc"
 
 	.include "data/maps/KapokJungle/scripts.inc"
+
+	.include "data/maps/KapokIsland_PokemonCenter/scripts.inc"
+
+	.include "data/maps/KapokIsland_MoveRelearner/scripts.inc"
+
+	.include "data/maps/KapokIsland_House1/scripts.inc"
+
+	.include "data/maps/KapokIsland_House2/scripts.inc"
+
+	.include "data/maps/KapokIsland_PokemonDayCare/scripts.inc"
+
+	.include "data/maps/KapokIsland_Mart/scripts.inc"
+
+	.include "data/maps/IceCave_1F/scripts.inc"
+
+	.include "data/maps/IceCave_B1F/scripts.inc"
+
+	.include "data/maps/IceCave_B2F/scripts.inc"

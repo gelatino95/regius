@@ -408,6 +408,9 @@
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_ARID_RUINS                               (108 | (24 << 8))
+#define MAP_ICE_CAVE_1F                              (109 | (24 << 8))
+#define MAP_ICE_CAVE_B1F                             (110 | (24 << 8))
+#define MAP_ICE_CAVE_B2F                             (111 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
@@ -609,6 +612,14 @@
 #define MAP_ARID_ISLAND_POKEMON_CENTER (3 | (35 << 8))
 #define MAP_ARID_ISLAND_HOUSE3         (4 | (35 << 8))
 
-#define MAP_GROUPS_COUNT 36
+// gMapGroup_IndoorKapokIsland
+#define MAP_KAPOK_ISLAND_POKEMON_CENTER   (0 | (36 << 8))
+#define MAP_KAPOK_ISLAND_MOVE_RELEARNER   (1 | (36 << 8))
+#define MAP_KAPOK_ISLAND_HOUSE1           (2 | (36 << 8))
+#define MAP_KAPOK_ISLAND_HOUSE2           (3 | (36 << 8))
+#define MAP_KAPOK_ISLAND_POKEMON_DAY_CARE (4 | (36 << 8))
+#define MAP_KAPOK_ISLAND_MART             (5 | (36 << 8))
+
+#define MAP_GROUPS_COUNT 37
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
