@@ -1106,3 +1106,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/IceCave_B1F/scripts.inc"
 
 	.include "data/maps/IceCave_B2F/scripts.inc"
+
+	.include "data/maps/KapokJungle_HerbShop/scripts.inc"
+
+	.include "data/maps/KapokJungle_BioLab/scripts.inc"
+
+	.include "data/maps/CentralSea/scripts.inc"
+
+	.include "data/maps/NorthwestSea/scripts.inc"

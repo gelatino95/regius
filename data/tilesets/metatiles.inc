@@ -565,6 +565,7 @@ gMetatiles_Arid_Island::
 	.align 1
 gMetatileAttributes_Arid_Island::
 	.incbin "data/tilesets/secondary/arid_island/metatile_attributes.bin"
+	
 	.align 1
 gMetatiles_AridIslandIndoors::
 	.incbin "data/tilesets/secondary/aridislandindoors/metatiles.bin"
@@ -572,6 +573,7 @@ gMetatiles_AridIslandIndoors::
 	.align 1
 gMetatileAttributes_AridIslandIndoors::
 	.incbin "data/tilesets/secondary/aridislandindoors/metatile_attributes.bin"
+	
 	.align 1
 gMetatiles_Kapok_Island::
 	.incbin "data/tilesets/secondary/kapok_island/metatiles.bin"
@@ -579,3 +581,4 @@ gMetatiles_Kapok_Island::
 	.align 1
 gMetatileAttributes_Kapok_Island::
 	.incbin "data/tilesets/secondary/kapok_island/metatile_attributes.bin"
+	

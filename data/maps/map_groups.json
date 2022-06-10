@@ -37,7 +37,8 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorGatewayIsland",
     "gMapGroup_IndoorAridIsland",
-    "gMapGroup_IndoorKapokIsland"
+    "gMapGroup_IndoorKapokIsland",
+    "gMapGroup_IndoorKapokJungle"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -103,7 +104,9 @@
     "AridDesert",
     "KapokIsland",
     "NortheastSea",
-    "KapokJungle"
+    "KapokJungle",
+    "CentralSea",
+    "NorthwestSea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -653,5 +656,9 @@
     "KapokIsland_House2",
     "KapokIsland_PokemonDayCare",
     "KapokIsland_Mart"
+  ],
+  "gMapGroup_IndoorKapokJungle": [
+    "KapokJungle_HerbShop",
+    "KapokJungle_BioLab"
   ]
 }

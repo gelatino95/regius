@@ -42,14 +42,14 @@
       "x": 7,
       "y": 37,
       "elevation": 0,
-      "dest_map": "MAP_KAPOK_JUNGLE",
+      "dest_map": "MAP_KAPOK_JUNGLE_HERB_SHOP",
       "dest_warp_id": 0
     },
     {
       "x": 36,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_KAPOK_JUNGLE",
+      "dest_map": "MAP_KAPOK_JUNGLE_BIO_LAB",
       "dest_warp_id": 0
     },
     {

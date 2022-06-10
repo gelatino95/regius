@@ -4427,7 +4427,7 @@
       "width": 80,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_Arid_Island",
       "border_filepath": "data/layouts/SoutheastSea/border.bin",
       "blockdata_filepath": "data/layouts/SoutheastSea/map.bin"
     },
@@ -4580,6 +4580,46 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/IceCave_B2F/border.bin",
       "blockdata_filepath": "data/layouts/IceCave_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPOK_JUNGLE_HERB_SHOP",
+      "name": "KapokJungle_HerbShop_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/KapokJungle_HerbShop/border.bin",
+      "blockdata_filepath": "data/layouts/KapokJungle_HerbShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPOK_JUNGLE_BIO_LAB",
+      "name": "KapokJungle_BioLab_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/KapokJungle_BioLab/border.bin",
+      "blockdata_filepath": "data/layouts/KapokJungle_BioLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_CENTRAL_SEA",
+      "name": "CentralSea_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Arid_Island",
+      "border_filepath": "data/layouts/CentralSea/border.bin",
+      "blockdata_filepath": "data/layouts/CentralSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTHWEST_SEA",
+      "name": "NorthwestSea_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kapok_Island",
+      "border_filepath": "data/layouts/NorthwestSea/border.bin",
+      "blockdata_filepath": "data/layouts/NorthwestSea/map.bin"
     }
   ]
 }

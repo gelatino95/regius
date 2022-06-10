@@ -1,12 +1,12 @@
 {
-  "id": "MAP_GATEWAY_ISLAND",
-  "name": "GatewayIsland",
-  "layout": "LAYOUT_GATEWAY_ISLAND",
-  "music": "MUS_FORTREE",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "id": "MAP_NORTHWEST_SEA",
+  "name": "NorthwestSea",
+  "layout": "LAYOUT_NORTHWEST_SEA",
+  "music": "MUS_ROUTE118",
+  "region_map_section": "MAPSEC_ROUTE_126",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -16,11 +16,11 @@
     {
       "direction": "right",
       "offset": 0,
-      "map": "MAP_SOUTHEAST_SEA"
+      "map": "MAP_KAPOK_ISLAND"
     },
     {
-      "direction": "up",
-      "offset": 0,
+      "direction": "down",
+      "offset": 40,
       "map": "MAP_CENTRAL_SEA"
     }
   ],
@@ -28,13 +28,7 @@
 
   ],
   "warp_events": [
-    {
-      "x": 34,
-      "y": 21,
-      "elevation": 0,
-      "dest_map": "MAP_GATEWAY_ISLAND_PLAYERS_HOUSE",
-      "dest_warp_id": 1
-    }
+
   ],
   "coord_events": [
 

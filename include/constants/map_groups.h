@@ -70,6 +70,8 @@
 #define MAP_KAPOK_ISLAND        (61 | (0 << 8))
 #define MAP_NORTHEAST_SEA       (62 | (0 << 8))
 #define MAP_KAPOK_JUNGLE        (63 | (0 << 8))
+#define MAP_CENTRAL_SEA         (64 | (0 << 8))
+#define MAP_NORTHWEST_SEA       (65 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -620,6 +622,10 @@
 #define MAP_KAPOK_ISLAND_POKEMON_DAY_CARE (4 | (36 << 8))
 #define MAP_KAPOK_ISLAND_MART             (5 | (36 << 8))
 
-#define MAP_GROUPS_COUNT 37
+// gMapGroup_IndoorKapokJungle
+#define MAP_KAPOK_JUNGLE_HERB_SHOP (0 | (37 << 8))
+#define MAP_KAPOK_JUNGLE_BIO_LAB   (1 | (37 << 8))
+
+#define MAP_GROUPS_COUNT 38
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

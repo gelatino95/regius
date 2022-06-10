@@ -22,6 +22,11 @@
       "direction": "up",
       "offset": 40,
       "map": "MAP_ARID_ISLAND"
+    },
+    {
+      "direction": "up",
+      "offset": -40,
+      "map": "MAP_CENTRAL_SEA"
     }
   ],
   "object_events": [
