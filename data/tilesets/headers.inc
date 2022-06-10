@@ -840,7 +840,7 @@ gTileset_Arid_Island::
 	.4byte gTilesetPalettes_Arid_Island
 	.4byte gMetatiles_Arid_Island
 	.4byte gMetatileAttributes_Arid_Island
-	.4byte NULL
+	.4byte InitTilesetAnim_Pacifidlog
 
 	.align 2
 gTileset_AridIslandIndoors::
@@ -862,4 +862,4 @@ gTileset_Kapok_Island::
 	.4byte gTilesetPalettes_Kapok_Island
 	.4byte gMetatiles_Kapok_Island
 	.4byte gMetatileAttributes_Kapok_Island
-	.4byte NULL
+	.4byte InitTilesetAnim_Pacifidlog

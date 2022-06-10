@@ -581,4 +581,3 @@ gMetatiles_Kapok_Island::
 	.align 1
 gMetatileAttributes_Kapok_Island::
 	.incbin "data/tilesets/secondary/kapok_island/metatile_attributes.bin"
-	
