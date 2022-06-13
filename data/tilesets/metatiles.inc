@@ -581,3 +581,11 @@ gMetatiles_Kapok_Island::
 	.align 1
 gMetatileAttributes_Kapok_Island::
 	.incbin "data/tilesets/secondary/kapok_island/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Pirate_Ship::
+	.incbin "data/tilesets/secondary/pirate_ship/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Pirate_Ship::
+	.incbin "data/tilesets/secondary/pirate_ship/metatile_attributes.bin"

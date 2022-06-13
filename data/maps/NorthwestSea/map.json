@@ -28,10 +28,43 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 16,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_GHOST_SHIP_1F",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
-
+    {
+      "type": "weather",
+      "x": 25,
+      "y": 16,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 25,
+      "y": 17,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 20,
+      "y": 17,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "type": "weather",
+      "x": 20,
+      "y": 18,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+    }
   ],
   "bg_events": [
 

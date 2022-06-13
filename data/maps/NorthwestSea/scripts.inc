@@ -1,3 +1,14 @@
 NorthwestSea_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, NorthwestSea_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+NorthwestSea_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	compare VAR_TEMP_0, 16
+	goto_if_eq NorthwestSea_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	return
+
+NorthwestSea_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	setweather WEATHER_FOG_HORIZONTAL
+	return
 

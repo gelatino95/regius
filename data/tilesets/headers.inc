@@ -863,3 +863,14 @@ gTileset_Kapok_Island::
 	.4byte gMetatiles_Kapok_Island
 	.4byte gMetatileAttributes_Kapok_Island
 	.4byte InitTilesetAnim_Pacifidlog
+
+	.align 2
+gTileset_Pirate_Ship::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Pirate_Ship
+	.4byte gTilesetPalettes_Pirate_Ship
+	.4byte gMetatiles_Pirate_Ship
+	.4byte gMetatileAttributes_Pirate_Ship
+	.4byte NULL

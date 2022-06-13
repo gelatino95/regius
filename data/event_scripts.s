@@ -1114,3 +1114,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CentralSea/scripts.inc"
 
 	.include "data/maps/NorthwestSea/scripts.inc"
+
+	.include "data/maps/GhostShip_1F/scripts.inc"
