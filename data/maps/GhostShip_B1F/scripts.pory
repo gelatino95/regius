@@ -1,0 +1,22 @@
+mapscripts GhostShip_B1F_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		clearflag(FLAG_GHOST_SHIP_HIDE_DUSCLOPS)
+		showobjectat(1, MAP_GHOST_SHIP_B1F)
+		getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+		if (var(VAR_TEMP_1) == 17) {
+			setobjectxyperm(1, 10, 22)
+		}
+		elif (var(VAR_TEMP_0) == 25 || var(VAR_TEMP_0) == 41) {
+			setobjectxyperm(1, 34, 20)
+		}
+		else {
+			setobjectxyperm(1, 0, 0)
+		}
+	}
+}
+
+script GhostShip_B1F_HideDusclopsTrigger {
+	setflag(FLAG_GHOST_SHIP_HIDE_DUSCLOPS)
+	removeobject(1)
+	end
+}

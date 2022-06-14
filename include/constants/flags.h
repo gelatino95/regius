@@ -42,7 +42,7 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
 #define FLAG_GATEWAYISLAND_PLAYERSHOUSE_ITEMBALL    0x20
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
+#define FLAG_GHOST_SHIP_HIDE_DUSCLOPS			    0x21
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag

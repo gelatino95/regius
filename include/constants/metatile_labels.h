@@ -245,6 +245,9 @@
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
+// gTileset_GhostShip
+#define METATILE_GhostShip_Door  0x220
+
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
 #define METATILE_InsideOfTruck_DoorClosedFloor_Mid     0x215
@@ -259,6 +262,10 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Interior  0x297
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x233
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
+
+// gTileset_KapokIsland
+#define METATILE_KapokIsland_DewfordDoor    0x27A
+#define METATILE_KapokIsland_SlateportDoor  0x273
 
 // gTileset_Lavaridge
 #define METATILE_Lavaridge_AshGrass             0x207
