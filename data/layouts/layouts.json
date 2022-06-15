@@ -4640,6 +4640,16 @@
       "secondary_tileset": "gTileset_Pirate_Ship",
       "border_filepath": "data/layouts/GhostShip_B1F/border.bin",
       "blockdata_filepath": "data/layouts/GhostShip_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GHOST_SHIP_UNDERWATER",
+      "name": "GhostShip_Underwater_Layout",
+      "width": 50,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pirate_Ship",
+      "border_filepath": "data/layouts/GhostShip_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/GhostShip_Underwater/map.bin"
     }
   ]
 }

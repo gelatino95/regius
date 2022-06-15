@@ -449,7 +449,8 @@
     "IceCave_B1F",
     "IceCave_B2F",
     "GhostShip_1F",
-    "GhostShip_B1F"
+    "GhostShip_B1F",
+    "GhostShip_Underwater"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

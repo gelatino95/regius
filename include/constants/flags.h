@@ -1219,7 +1219,7 @@
 //My items
 
 #define FLAG_ITEM_SOUTHEASTSEA_RARE_CANDY                           0x493
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
+#define FLAG_ITEM_GHOST_SHIP_HM08                                   0x494 // Unused Flag
 #define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag

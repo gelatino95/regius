@@ -29,3 +29,9 @@ GhostShip_B1F_HideDusclopsTrigger::
 	removeobject 1
 	end
 
+
+GhostShip_EventScript_ItemHM08::
+	finditem ITEM_HM08
+	setflag FLAG_RECEIVED_HM08
+	end
+
