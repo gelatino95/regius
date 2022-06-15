@@ -1,1 +1,5 @@
-mapscripts KapokIsland_PokemonCenter_MapScripts {}
+mapscripts KapokIsland_PokemonCenter_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_KAPOK_ISLAND)
+	}
+}

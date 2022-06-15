@@ -1,3 +1,8 @@
 KapokIsland_PokemonCenter_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, KapokIsland_PokemonCenter_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+KapokIsland_PokemonCenter_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setrespawn HEAL_LOCATION_KAPOK_ISLAND
+	return
 

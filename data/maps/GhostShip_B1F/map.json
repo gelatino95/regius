@@ -45,6 +45,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GhostShip_EventScript_ItemHM08",
       "flag": "FLAG_ITEM_GHOST_SHIP_HM08"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
+      "x": 17,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS"
     }
   ],
   "warp_events": [
@@ -254,6 +267,24 @@
       "var": "0",
       "var_value": "0",
       "script": "GhostShip_B1F_HideDusclopsTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_GHOST_SHIP_STATE",
+      "var_value": "1",
+      "script": "GhostShip_EventScript_DusclopsEncounter"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_GHOST_SHIP_STATE",
+      "var_value": "1",
+      "script": "GhostShip_EventScript_DusclopsEncounter"
     }
   ],
   "bg_events": [

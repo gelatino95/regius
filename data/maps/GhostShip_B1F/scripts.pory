@@ -3,15 +3,17 @@ mapscripts GhostShip_B1F_MapScripts {
 		clearflag(FLAG_GHOST_SHIP_HIDE_DUSCLOPS)
 		showobjectat(1, MAP_GHOST_SHIP_B1F)
 		getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
-		if (var(VAR_TEMP_1) == 17) {
+		if (var(VAR_TEMP_1) == 17 && var(VAR_GHOST_SHIP_STATE) == 0) {
 			setobjectxyperm(1, 10, 22)
 		}
-		elif (var(VAR_TEMP_0) == 25 || var(VAR_TEMP_0) == 41) {
+		elif ((var(VAR_TEMP_0) == 25 || var(VAR_TEMP_0) == 41) && var(VAR_GHOST_SHIP_STATE) == 0) {
 			setobjectxyperm(1, 34, 20)
 		}
 		else {
 			setobjectxyperm(1, 0, 0)
 		}
+		setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
+		removeobject(3)
 	}
 }
 
@@ -24,5 +26,72 @@ script GhostShip_B1F_HideDusclopsTrigger {
 script GhostShip_EventScript_ItemHM08 {
 	finditem(ITEM_HM08)
 	setflag(FLAG_RECEIVED_HM08)
+	setvar(VAR_GHOST_SHIP_STATE, 1)
 	end
+}
+
+script GhostShip_EventScript_DusclopsEncounter {
+	lock
+	playse(SE_CLICK)
+	delay(40)
+	msgbox(format("The door is locked..."))
+	playmoncry(SPECIES_DUSCLOPS, 2)
+	delay(40)
+	waitmoncry
+	fadescreen(1)
+	msgbox(format(".......mine...."))
+	closemessage
+	clearflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
+	addobject(3)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	fadescreen(0)
+	delay(40)
+	applymovement(3, DusclopsAppears)
+	waitmovement(0)
+	playmoncry(SPECIES_DUSCLOPS, 0)
+	msgbox(format("....off........\nmy.....ship...."))
+	setwildbattle(SPECIES_DUSCLOPS, 50, ITEM_NONE)
+	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	dowildbattle
+	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED) {
+		fadescreen(1)
+		setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
+		removeobject(3)
+		fadescreen(0)
+		delay(40)
+		playse(SE_UNLOCK)
+		delay(40)
+		msgbox(format("The door was unlocked."))
+		setvar(VAR_GHOST_SHIP_STATE, 2)
+	}
+	setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
+	removeobject(3)
+	release
+	end
+}
+
+movement DusclopsAppears {
+	set_visible
+	delay_4
+	set_invisible
+	delay_4
+	set_visible
+	delay_4
+	set_invisible
+	delay_4
+	set_visible
+	delay_8
+	set_invisible
+	delay_8
+	set_visible
+	delay_8
+	set_invisible
+	delay_8
+	set_visible
+	delay_16
+	set_invisible
+	delay_16
+	set_visible
 }
