@@ -42,6 +42,11 @@
       "direction": "up",
       "offset": -40,
       "map": "MAP_NORTHWEST_SEA"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_IGNEOUS_ISLAND"
     }
   ],
   "object_events": [

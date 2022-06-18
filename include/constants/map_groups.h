@@ -72,6 +72,8 @@
 #define MAP_KAPOK_JUNGLE        (63 | (0 << 8))
 #define MAP_CENTRAL_SEA         (64 | (0 << 8))
 #define MAP_NORTHWEST_SEA       (65 | (0 << 8))
+#define MAP_IGNEOUS_ISLAND      (66 | (0 << 8))
+#define MAP_IGNEOUS_CLIMB       (67 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -416,6 +418,8 @@
 #define MAP_GHOST_SHIP_1F                            (112 | (24 << 8))
 #define MAP_GHOST_SHIP_B1F                           (113 | (24 << 8))
 #define MAP_GHOST_SHIP_UNDERWATER                    (114 | (24 << 8))
+#define MAP_IGNEOUS_CALDERA_1F                       (115 | (24 << 8))
+#define MAP_IGNEOUS_CALDERA_B1F                      (116 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

@@ -4650,6 +4650,46 @@
       "secondary_tileset": "gTileset_Pirate_Ship",
       "border_filepath": "data/layouts/GhostShip_Underwater/border.bin",
       "blockdata_filepath": "data/layouts/GhostShip_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_IGNEOUS_ISLAND",
+      "name": "IgneousIsland_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Arid_Island",
+      "border_filepath": "data/layouts/IgneousIsland/border.bin",
+      "blockdata_filepath": "data/layouts/IgneousIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_IGNEOUS_CLIMB",
+      "name": "IgneousClimb_Layout",
+      "width": 35,
+      "height": 47,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/IgneousClimb/border.bin",
+      "blockdata_filepath": "data/layouts/IgneousClimb/map.bin"
+    },
+    {
+      "id": "LAYOUT_IGNEOUS_CALDERA_1F",
+      "name": "IgneousCaldera_1F_Layout",
+      "width": 41,
+      "height": 66,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IgneousCaldera_1F/border.bin",
+      "blockdata_filepath": "data/layouts/IgneousCaldera_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_IGNEOUS_CALDERA_B1F",
+      "name": "IgneousCaldera_B1F_Layout",
+      "width": 34,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IgneousCaldera_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/IgneousCaldera_B1F/map.bin"
     }
   ]
 }

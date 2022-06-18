@@ -1,0 +1,52 @@
+{
+  "id": "MAP_IGNEOUS_ISLAND",
+  "name": "IgneousIsland",
+  "layout": "LAYOUT_IGNEOUS_ISLAND",
+  "music": "MUS_FALLARBOR",
+  "region_map_section": "MAPSEC_SOOTOPOLIS_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_NORTHWEST_SEA"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_CENTRAL_SEA"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 11,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_IGNEOUS_CLIMB",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 12,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_IGNEOUS_CLIMB",
+      "dest_warp_id": 1
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

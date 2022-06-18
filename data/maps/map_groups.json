@@ -106,7 +106,9 @@
     "NortheastSea",
     "KapokJungle",
     "CentralSea",
-    "NorthwestSea"
+    "NorthwestSea",
+    "IgneousIsland",
+    "IgneousClimb"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -450,7 +452,9 @@
     "IceCave_B2F",
     "GhostShip_1F",
     "GhostShip_B1F",
-    "GhostShip_Underwater"
+    "GhostShip_Underwater",
+    "IgneousCaldera_1F",
+    "IgneousCaldera_B1F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

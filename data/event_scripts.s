@@ -1120,3 +1120,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GhostShip_B1F/scripts.inc"
 
 	.include "data/maps/GhostShip_Underwater/scripts.inc"
+
+	.include "data/maps/IgneousIsland/scripts.inc"
+
+	.include "data/maps/IgneousClimb/scripts.inc"
+
+	.include "data/maps/IgneousCaldera_1F/scripts.inc"
+
+	.include "data/maps/IgneousCaldera_B1F/scripts.inc"
