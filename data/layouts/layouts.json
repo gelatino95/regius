@@ -4690,6 +4690,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/IgneousCaldera_B1F/border.bin",
       "blockdata_filepath": "data/layouts/IgneousCaldera_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_IGNEOUS_ISLAND_HEALING_SPOT",
+      "name": "IgneousIsland_HealingSpot_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/IgneousIsland_HealingSpot/border.bin",
+      "blockdata_filepath": "data/layouts/IgneousIsland_HealingSpot/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTHWEST_SEA",
+      "name": "SouthwestSea_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kapok_Island",
+      "border_filepath": "data/layouts/SouthwestSea/border.bin",
+      "blockdata_filepath": "data/layouts/SouthwestSea/map.bin"
     }
   ]
 }

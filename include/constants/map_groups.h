@@ -74,6 +74,7 @@
 #define MAP_NORTHWEST_SEA       (65 | (0 << 8))
 #define MAP_IGNEOUS_ISLAND      (66 | (0 << 8))
 #define MAP_IGNEOUS_CLIMB       (67 | (0 << 8))
+#define MAP_SOUTHWEST_SEA       (68 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -633,6 +634,9 @@
 #define MAP_KAPOK_JUNGLE_HERB_SHOP (0 | (37 << 8))
 #define MAP_KAPOK_JUNGLE_BIO_LAB   (1 | (37 << 8))
 
-#define MAP_GROUPS_COUNT 38
+// gMapGroup_IndoorIgneousIsland
+#define MAP_IGNEOUS_ISLAND_HEALING_SPOT (0 | (38 << 8))
+
+#define MAP_GROUPS_COUNT 39
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -38,7 +38,8 @@
     "gMapGroup_IndoorGatewayIsland",
     "gMapGroup_IndoorAridIsland",
     "gMapGroup_IndoorKapokIsland",
-    "gMapGroup_IndoorKapokJungle"
+    "gMapGroup_IndoorKapokJungle",
+    "gMapGroup_IndoorIgneousIsland"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -108,7 +109,8 @@
     "CentralSea",
     "NorthwestSea",
     "IgneousIsland",
-    "IgneousClimb"
+    "IgneousClimb",
+    "SouthwestSea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -667,5 +669,8 @@
   "gMapGroup_IndoorKapokJungle": [
     "KapokJungle_HerbShop",
     "KapokJungle_BioLab"
+  ],
+  "gMapGroup_IndoorIgneousIsland": [
+    "IgneousIsland_HealingSpot"
   ]
 }

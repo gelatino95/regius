@@ -1128,3 +1128,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/IgneousCaldera_1F/scripts.inc"
 
 	.include "data/maps/IgneousCaldera_B1F/scripts.inc"
+
+	.include "data/maps/IgneousIsland_HealingSpot/scripts.inc"
+
+	.include "data/maps/SouthwestSea/scripts.inc"

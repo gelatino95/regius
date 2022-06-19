@@ -1,0 +1,44 @@
+{
+  "id": "MAP_SOUTHWEST_SEA",
+  "name": "SouthwestSea",
+  "layout": "LAYOUT_SOUTHWEST_SEA",
+  "music": "MUS_ROUTE120",
+  "region_map_section": "MAPSEC_ROUTE_132",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_IGNEOUS_ISLAND"
+    },
+    {
+      "direction": "right",
+      "offset": -40,
+      "map": "MAP_CENTRAL_SEA"
+    },
+    {
+      "direction": "right",
+      "offset": 40,
+      "map": "MAP_GATEWAY_ISLAND"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
