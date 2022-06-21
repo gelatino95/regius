@@ -589,3 +589,11 @@ gMetatiles_Pirate_Ship::
 	.align 1
 gMetatileAttributes_Pirate_Ship::
 	.incbin "data/tilesets/secondary/pirate_ship/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_SouthSea::
+	.incbin "data/tilesets/secondary/southsea/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_SouthSea::
+	.incbin "data/tilesets/secondary/southsea/metatile_attributes.bin"

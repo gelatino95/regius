@@ -4710,6 +4710,16 @@
       "secondary_tileset": "gTileset_Kapok_Island",
       "border_filepath": "data/layouts/SouthwestSea/border.bin",
       "blockdata_filepath": "data/layouts/SouthwestSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTH_SEA",
+      "name": "SouthSea_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SouthSea",
+      "border_filepath": "data/layouts/SouthSea/border.bin",
+      "blockdata_filepath": "data/layouts/SouthSea/map.bin"
     }
   ]
 }

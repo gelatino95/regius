@@ -110,7 +110,8 @@
     "NorthwestSea",
     "IgneousIsland",
     "IgneousClimb",
-    "SouthwestSea"
+    "SouthwestSea",
+    "SouthSea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -649,7 +650,8 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_IndoorGatewayIsland": [
-    "GatewayIsland_PlayersHouse"
+    "GatewayIsland_PlayersHouse",
+    "GatewayIsland_House1"
   ],
   "gMapGroup_IndoorAridIsland": [
     "AridIsland_DesertTunnel",

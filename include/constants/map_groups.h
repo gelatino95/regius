@@ -75,6 +75,7 @@
 #define MAP_IGNEOUS_ISLAND      (66 | (0 << 8))
 #define MAP_IGNEOUS_CLIMB       (67 | (0 << 8))
 #define MAP_SOUTHWEST_SEA       (68 | (0 << 8))
+#define MAP_SOUTH_SEA           (69 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -614,6 +615,7 @@
 
 // gMapGroup_IndoorGatewayIsland
 #define MAP_GATEWAY_ISLAND_PLAYERS_HOUSE (0 | (34 << 8))
+#define MAP_GATEWAY_ISLAND_HOUSE1        (1 | (34 << 8))
 
 // gMapGroup_IndoorAridIsland
 #define MAP_ARID_ISLAND_DESERT_TUNNEL  (0 | (35 << 8))

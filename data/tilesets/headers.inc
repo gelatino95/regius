@@ -874,3 +874,14 @@ gTileset_Pirate_Ship::
 	.4byte gMetatiles_Pirate_Ship
 	.4byte gMetatileAttributes_Pirate_Ship
 	.4byte NULL
+
+	.align 2
+gTileset_SouthSea::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_SouthSea
+	.4byte gTilesetPalettes_SouthSea
+	.4byte gMetatiles_SouthSea
+	.4byte gMetatileAttributes_SouthSea
+	.4byte NULL

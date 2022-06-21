@@ -1809,3 +1809,23 @@ gTilesetPalettes_Pirate_Ship::
 	.align 2
 gTilesetTiles_Pirate_Ship::
 	.incbin "data/tilesets/secondary/pirate_ship/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_SouthSea::
+	.incbin "data/tilesets/secondary/southsea/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/southsea/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_SouthSea::
+	.incbin "data/tilesets/secondary/southsea/tiles.4bpp.lz"

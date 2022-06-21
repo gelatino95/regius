@@ -1132,3 +1132,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/IgneousIsland_HealingSpot/scripts.inc"
 
 	.include "data/maps/SouthwestSea/scripts.inc"
+
+	.include "data/maps/GatewayIsland_House1/scripts.inc"
+
+	.include "data/maps/SouthSea/scripts.inc"
