@@ -45,7 +45,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 63,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SOUTHEAST_SEA_FISHING_CLUB",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

@@ -4720,6 +4720,26 @@
       "secondary_tileset": "gTileset_SouthSea",
       "border_filepath": "data/layouts/SouthSea/border.bin",
       "blockdata_filepath": "data/layouts/SouthSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_FAR_REACH_SEA",
+      "name": "FarReachSea_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SouthSea",
+      "border_filepath": "data/layouts/FarReachSea/border.bin",
+      "blockdata_filepath": "data/layouts/FarReachSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTHEAST_SEA_FISHING_CLUB",
+      "name": "SoutheastSea_FishingClub_Layout",
+      "width": 10,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SoutheastSea_FishingClub/border.bin",
+      "blockdata_filepath": "data/layouts/SoutheastSea_FishingClub/map.bin"
     }
   ]
 }

@@ -76,6 +76,7 @@
 #define MAP_IGNEOUS_CLIMB       (67 | (0 << 8))
 #define MAP_SOUTHWEST_SEA       (68 | (0 << 8))
 #define MAP_SOUTH_SEA           (69 | (0 << 8))
+#define MAP_FAR_REACH_SEA       (70 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -639,6 +640,17 @@
 // gMapGroup_IndoorIgneousIsland
 #define MAP_IGNEOUS_ISLAND_HEALING_SPOT (0 | (38 << 8))
 
-#define MAP_GROUPS_COUNT 39
+// gMapGroup_IndoorSoutheastSea
+#define MAP_SOUTHEAST_SEA_FISHING_CLUB (0 | (39 << 8))
+
+// gMapGroup_IndoorNorthwestSea
+
+// gMapGroup_IndoorSouthwestSea
+
+// gMapGroup_IndoorSouthSea
+
+// gMapGroup_IndoorFarReachSea
+
+#define MAP_GROUPS_COUNT 44
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

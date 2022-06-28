@@ -39,7 +39,12 @@
     "gMapGroup_IndoorAridIsland",
     "gMapGroup_IndoorKapokIsland",
     "gMapGroup_IndoorKapokJungle",
-    "gMapGroup_IndoorIgneousIsland"
+    "gMapGroup_IndoorIgneousIsland",
+    "gMapGroup_IndoorSoutheastSea",
+    "gMapGroup_IndoorNorthwestSea",
+    "gMapGroup_IndoorSouthwestSea",
+    "gMapGroup_IndoorSouthSea",
+    "gMapGroup_IndoorFarReachSea"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -111,7 +116,8 @@
     "IgneousIsland",
     "IgneousClimb",
     "SouthwestSea",
-    "SouthSea"
+    "SouthSea",
+    "FarReachSea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -674,5 +680,20 @@
   ],
   "gMapGroup_IndoorIgneousIsland": [
     "IgneousIsland_HealingSpot"
+  ],
+  "gMapGroup_IndoorSoutheastSea": [
+    "SoutheastSea_FishingClub"
+  ],
+  "gMapGroup_IndoorNorthwestSea": [
+
+  ],
+  "gMapGroup_IndoorSouthwestSea": [
+
+  ],
+  "gMapGroup_IndoorSouthSea": [
+
+  ],
+  "gMapGroup_IndoorFarReachSea": [
+
   ]
 }
