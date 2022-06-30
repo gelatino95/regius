@@ -1140,3 +1140,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FarReachSea/scripts.inc"
 
 	.include "data/maps/SoutheastSea_FishingClub/scripts.inc"
+
+	.include "data/maps/NorthwestSea_House1/scripts.inc"
+
+	.include "data/maps/SouthwestSea_House1/scripts.inc"
+
+	.include "data/maps/FarReachSea_House1/scripts.inc"
+
+	.include "data/maps/Biological_Institute_1F/scripts.inc"
+
+	.include "data/maps/Biological_Institute_B1F/scripts.inc"

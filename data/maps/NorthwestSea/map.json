@@ -34,6 +34,13 @@
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_1F",
       "dest_warp_id": 0
+    },
+    {
+      "x": 42,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NORTHWEST_SEA_HOUSE1",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

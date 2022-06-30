@@ -685,15 +685,16 @@
     "SoutheastSea_FishingClub"
   ],
   "gMapGroup_IndoorNorthwestSea": [
-
+    "NorthwestSea_House1"
   ],
   "gMapGroup_IndoorSouthwestSea": [
-
+    "SouthwestSea_House1"
   ],
   "gMapGroup_IndoorSouthSea": [
-
+    "Biological_Institute_1F",
+    "Biological_Institute_B1F"
   ],
   "gMapGroup_IndoorFarReachSea": [
-
+    "FarReachSea_House1"
   ]
 }

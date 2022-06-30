@@ -4740,6 +4740,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SoutheastSea_FishingClub/border.bin",
       "blockdata_filepath": "data/layouts/SoutheastSea_FishingClub/map.bin"
+    },
+    {
+      "id": "LAYOUT_BIOLOGICAL_INSTITUTE_1F",
+      "name": "Biological_Institute_1F_Layout",
+      "width": 20,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Biological_Institute_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Biological_Institute_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BIOLOGICAL_INSTITUTE_B1F",
+      "name": "Biological_Institute_B1F_Layout",
+      "width": 20,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Biological_Institute_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Biological_Institute_B1F/map.bin"
     }
   ]
 }

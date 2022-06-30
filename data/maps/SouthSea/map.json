@@ -28,7 +28,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 12,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_BIOLOGICAL_INSTITUTE_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 8,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_BIOLOGICAL_INSTITUTE_B1F",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

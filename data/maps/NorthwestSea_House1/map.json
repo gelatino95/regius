@@ -1,0 +1,41 @@
+{
+  "id": "MAP_NORTHWEST_SEA_HOUSE1",
+  "name": "NorthwestSea_House1",
+  "layout": "LAYOUT_HOUSE1",
+  "music": "MUS_ROUTE118",
+  "region_map_section": "MAPSEC_ROUTE_126",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NORTHWEST_SEA",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NORTHWEST_SEA",
+      "dest_warp_id": 1
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
