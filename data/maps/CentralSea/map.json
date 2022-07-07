@@ -58,7 +58,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 48,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_OF_SOBRIETY",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

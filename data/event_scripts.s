@@ -1150,3 +1150,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Biological_Institute_1F/scripts.inc"
 
 	.include "data/maps/Biological_Institute_B1F/scripts.inc"
+
+	.include "data/maps/CaveOfAwakening/scripts.inc"
+
+	.include "data/maps/CaveOfSobriety/scripts.inc"
+
+	.include "data/maps/CaveOfChastity/scripts.inc"

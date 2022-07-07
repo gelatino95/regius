@@ -1,0 +1,6 @@
+mapscripts CaveOfAwakening_MapScripts {}
+
+script CaveOfAwakening_EventScript_ItemBlueFlute {
+	finditem(ITEM_BLUE_FLUTE)
+	end
+}

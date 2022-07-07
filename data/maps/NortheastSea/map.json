@@ -33,7 +33,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 25,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_OF_AWAKENING",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

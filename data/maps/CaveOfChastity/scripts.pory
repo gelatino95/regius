@@ -1,0 +1,6 @@
+mapscripts CaveOfChastity_MapScripts {}
+
+script CaveOfChastity_EventScript_ItemRedFlute {
+	finditem(ITEM_RED_FLUTE)
+	end
+}

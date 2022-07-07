@@ -41,6 +41,7 @@
     "gMapGroup_IndoorKapokJungle",
     "gMapGroup_IndoorIgneousIsland",
     "gMapGroup_IndoorSoutheastSea",
+    "gMapGroup_IndoorNortheastSea",
     "gMapGroup_IndoorNorthwestSea",
     "gMapGroup_IndoorSouthwestSea",
     "gMapGroup_IndoorSouthSea",
@@ -463,7 +464,10 @@
     "GhostShip_B1F",
     "GhostShip_Underwater",
     "IgneousCaldera_1F",
-    "IgneousCaldera_B1F"
+    "IgneousCaldera_B1F",
+    "CaveOfAwakening",
+    "CaveOfSobriety",
+    "CaveOfChastity"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -683,6 +687,9 @@
   ],
   "gMapGroup_IndoorSoutheastSea": [
     "SoutheastSea_FishingClub"
+  ],
+  "gMapGroup_IndoorNortheastSea": [
+
   ],
   "gMapGroup_IndoorNorthwestSea": [
     "NorthwestSea_House1"

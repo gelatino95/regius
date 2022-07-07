@@ -423,6 +423,9 @@
 #define MAP_GHOST_SHIP_UNDERWATER                    (114 | (24 << 8))
 #define MAP_IGNEOUS_CALDERA_1F                       (115 | (24 << 8))
 #define MAP_IGNEOUS_CALDERA_B1F                      (116 | (24 << 8))
+#define MAP_CAVE_OF_AWAKENING                        (117 | (24 << 8))
+#define MAP_CAVE_OF_SOBRIETY                         (118 | (24 << 8))
+#define MAP_CAVE_OF_CHASTITY                         (119 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
@@ -643,19 +646,21 @@
 // gMapGroup_IndoorSoutheastSea
 #define MAP_SOUTHEAST_SEA_FISHING_CLUB (0 | (39 << 8))
 
+// gMapGroup_IndoorNortheastSea
+
 // gMapGroup_IndoorNorthwestSea
-#define MAP_NORTHWEST_SEA_HOUSE1 (0 | (40 << 8))
+#define MAP_NORTHWEST_SEA_HOUSE1 (0 | (41 << 8))
 
 // gMapGroup_IndoorSouthwestSea
-#define MAP_SOUTHWEST_SEA_HOUSE1 (0 | (41 << 8))
+#define MAP_SOUTHWEST_SEA_HOUSE1 (0 | (42 << 8))
 
 // gMapGroup_IndoorSouthSea
-#define MAP_BIOLOGICAL_INSTITUTE_1F  (0 | (42 << 8))
-#define MAP_BIOLOGICAL_INSTITUTE_B1F (1 | (42 << 8))
+#define MAP_BIOLOGICAL_INSTITUTE_1F  (0 | (43 << 8))
+#define MAP_BIOLOGICAL_INSTITUTE_B1F (1 | (43 << 8))
 
 // gMapGroup_IndoorFarReachSea
-#define MAP_FAR_REACH_SEA_HOUSE1 (0 | (43 << 8))
+#define MAP_FAR_REACH_SEA_HOUSE1 (0 | (44 << 8))
 
-#define MAP_GROUPS_COUNT 44
+#define MAP_GROUPS_COUNT 45
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

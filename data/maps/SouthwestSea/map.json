@@ -39,6 +39,13 @@
       "elevation": 0,
       "dest_map": "MAP_SOUTHWEST_SEA_HOUSE1",
       "dest_warp_id": 0
+    },
+    {
+      "x": 29,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_OF_CHASTITY",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

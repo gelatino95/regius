@@ -1,0 +1,6 @@
+mapscripts CaveOfSobriety_MapScripts {}
+
+script CaveOfSobriety_EventScript_ItemYellowFlute {
+	finditem(ITEM_YELLOW_FLUTE)
+	end
+}

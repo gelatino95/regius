@@ -4760,6 +4760,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/Biological_Institute_B1F/border.bin",
       "blockdata_filepath": "data/layouts/Biological_Institute_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_AWAKENING",
+      "name": "CaveOfAwakening_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfAwakening/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfAwakening/map.bin"
     }
   ]
 }
