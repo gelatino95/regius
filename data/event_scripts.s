@@ -1156,3 +1156,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CaveOfSobriety/scripts.inc"
 
 	.include "data/maps/CaveOfChastity/scripts.inc"
+
+	.include "data/maps/Underwater_SoutheastSea/scripts.inc"
+
+	.include "data/maps/Underwater_CentralSea/scripts.inc"

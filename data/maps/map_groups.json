@@ -118,7 +118,9 @@
     "IgneousClimb",
     "SouthwestSea",
     "SouthSea",
-    "FarReachSea"
+    "FarReachSea",
+    "Underwater_SoutheastSea",
+    "Underwater_CentralSea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

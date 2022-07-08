@@ -4770,6 +4770,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CaveOfAwakening/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfAwakening/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_SOUTHEAST_SEA",
+      "name": "Underwater_SoutheastSea_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_SoutheastSea/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_SoutheastSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_CENTRAL_SEA",
+      "name": "Underwater_CentralSea_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_CentralSea/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_CentralSea/map.bin"
     }
   ]
 }
