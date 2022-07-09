@@ -1160,3 +1160,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Underwater_SoutheastSea/scripts.inc"
 
 	.include "data/maps/Underwater_CentralSea/scripts.inc"
+
+	.include "data/maps/Underwater_SouthwestSea/scripts.inc"

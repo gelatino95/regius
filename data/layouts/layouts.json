@@ -4790,6 +4790,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_CentralSea/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_CentralSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_SOUTHWEST_SEA",
+      "name": "Underwater_SouthwestSea_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_SouthwestSea/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_SouthwestSea/map.bin"
     }
   ]
 }

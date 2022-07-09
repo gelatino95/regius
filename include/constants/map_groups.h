@@ -79,6 +79,7 @@
 #define MAP_FAR_REACH_SEA            (70 | (0 << 8))
 #define MAP_UNDERWATER_SOUTHEAST_SEA (71 | (0 << 8))
 #define MAP_UNDERWATER_CENTRAL_SEA   (72 | (0 << 8))
+#define MAP_UNDERWATER_SOUTHWEST_SEA (73 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

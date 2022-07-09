@@ -120,7 +120,8 @@
     "SouthSea",
     "FarReachSea",
     "Underwater_SoutheastSea",
-    "Underwater_CentralSea"
+    "Underwater_CentralSea",
+    "Underwater_SouthwestSea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
