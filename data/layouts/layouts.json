@@ -4800,6 +4800,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_SouthwestSea/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_SouthwestSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_TUNNEL",
+      "name": "Underwater_Tunnel_Layout",
+      "width": 38,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_Tunnel/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_Tunnel/map.bin"
     }
   ]
 }

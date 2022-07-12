@@ -429,6 +429,7 @@
 #define MAP_CAVE_OF_AWAKENING                        (117 | (24 << 8))
 #define MAP_CAVE_OF_SOBRIETY                         (118 | (24 << 8))
 #define MAP_CAVE_OF_CHASTITY                         (119 | (24 << 8))
+#define MAP_UNDERWATER_TUNNEL                        (120 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

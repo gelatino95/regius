@@ -1,0 +1,41 @@
+{
+  "id": "MAP_UNDERWATER_TUNNEL",
+  "name": "Underwater_Tunnel",
+  "layout": "LAYOUT_UNDERWATER_TUNNEL",
+  "music": "MUS_UNDERWATER",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_UNDERWATER",
+  "map_type": "MAP_TYPE_UNDERWATER",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_CENTRAL_SEA",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 34,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_SOUTHEAST_SEA",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
