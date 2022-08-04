@@ -665,6 +665,10 @@
 // gMapGroup_IndoorFarReachSea
 #define MAP_FAR_REACH_SEA_HOUSE1 (0 | (44 << 8))
 
-#define MAP_GROUPS_COUNT 45
+// gMapGroup_BattleGrotto
+#define MAP_BATTLE_GROTTO_ENTRANCE (0 | (45 << 8))
+#define MAP_BATTLE_GROTTO_B1F      (1 | (45 << 8))
+
+#define MAP_GROUPS_COUNT 46
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

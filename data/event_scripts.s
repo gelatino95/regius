@@ -1164,3 +1164,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Underwater_SouthwestSea/scripts.inc"
 
 	.include "data/maps/Underwater_Tunnel/scripts.inc"
+
+	.include "data/maps/BattleGrotto_Entrance/scripts.inc"
+
+	.include "data/maps/BattleGrotto_B1F/scripts.inc"

@@ -885,3 +885,14 @@ gTileset_SouthSea::
 	.4byte gMetatiles_SouthSea
 	.4byte gMetatileAttributes_SouthSea
 	.4byte NULL
+
+	.align 2
+gTileset_BattleGrotto::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_BattleGrotto
+	.4byte gTilesetPalettes_BattleGrotto
+	.4byte gMetatiles_BattleGrotto
+	.4byte gMetatileAttributes_BattleGrotto
+	.4byte NULL

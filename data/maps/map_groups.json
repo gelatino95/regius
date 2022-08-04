@@ -45,7 +45,8 @@
     "gMapGroup_IndoorNorthwestSea",
     "gMapGroup_IndoorSouthwestSea",
     "gMapGroup_IndoorSouthSea",
-    "gMapGroup_IndoorFarReachSea"
+    "gMapGroup_IndoorFarReachSea",
+    "gMapGroup_BattleGrotto"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -707,5 +708,9 @@
   ],
   "gMapGroup_IndoorFarReachSea": [
     "FarReachSea_House1"
+  ],
+  "gMapGroup_BattleGrotto": [
+    "BattleGrotto_Entrance",
+    "BattleGrotto_B1F"
   ]
 }

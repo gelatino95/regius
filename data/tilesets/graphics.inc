@@ -1829,3 +1829,23 @@ gTilesetPalettes_SouthSea::
 	.align 2
 gTilesetTiles_SouthSea::
 	.incbin "data/tilesets/secondary/southsea/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_BattleGrotto::
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/battlegrotto/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_BattleGrotto::
+	.incbin "data/tilesets/secondary/battlegrotto/tiles.4bpp.lz"

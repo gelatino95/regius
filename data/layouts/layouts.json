@@ -4810,6 +4810,26 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_Tunnel/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Tunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_GROTTO_ENTRANCE",
+      "name": "BattleGrotto_Entrance_Layout",
+      "width": 21,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleGrotto",
+      "border_filepath": "data/layouts/BattleGrotto_Entrance/border.bin",
+      "blockdata_filepath": "data/layouts/BattleGrotto_Entrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_GROTTO_B1F",
+      "name": "BattleGrotto_B1F_Layout",
+      "width": 12,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BattleGrotto_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/BattleGrotto_B1F/map.bin"
     }
   ]
 }

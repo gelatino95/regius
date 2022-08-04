@@ -597,3 +597,11 @@ gMetatiles_SouthSea::
 	.align 1
 gMetatileAttributes_SouthSea::
 	.incbin "data/tilesets/secondary/southsea/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_BattleGrotto::
+	.incbin "data/tilesets/secondary/battlegrotto/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_BattleGrotto::
+	.incbin "data/tilesets/secondary/battlegrotto/metatile_attributes.bin"
