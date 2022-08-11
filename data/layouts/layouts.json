@@ -4830,6 +4830,66 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/BattleGrotto_B1F/border.bin",
       "blockdata_filepath": "data/layouts/BattleGrotto_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLUMBER_PATH_1F",
+      "name": "SlumberPath_1F_Layout",
+      "width": 11,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/SlumberPath_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SlumberPath_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLUMBER_PATH_B1F",
+      "name": "SlumberPath_B1F_Layout",
+      "width": 19,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/SlumberPath_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/SlumberPath_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLUMBER_ISLAND",
+      "name": "SlumberIsland_Layout",
+      "width": 46,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kapok_Island",
+      "border_filepath": "data/layouts/SlumberIsland/border.bin",
+      "blockdata_filepath": "data/layouts/SlumberIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_NORTHEAST_SEA",
+      "name": "Underwater_Northeast_Sea_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_Northeast_Sea/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_Northeast_Sea/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_NORTHWEST_SEA",
+      "name": "Underwater_NorthwestSea_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_NorthwestSea/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_NorthwestSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLUMBER_ISLAND_THRONE_ROOM",
+      "name": "SlumberIsland_ThroneRoom_Layout",
+      "width": 17,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/SlumberIsland_ThroneRoom/border.bin",
+      "blockdata_filepath": "data/layouts/SlumberIsland_ThroneRoom/map.bin"
     }
   ]
 }

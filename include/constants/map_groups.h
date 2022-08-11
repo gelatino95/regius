@@ -80,6 +80,9 @@
 #define MAP_UNDERWATER_SOUTHEAST_SEA (71 | (0 << 8))
 #define MAP_UNDERWATER_CENTRAL_SEA   (72 | (0 << 8))
 #define MAP_UNDERWATER_SOUTHWEST_SEA (73 | (0 << 8))
+#define MAP_SLUMBER_ISLAND           (74 | (0 << 8))
+#define MAP_UNDERWATER_NORTHEAST_SEA (75 | (0 << 8))
+#define MAP_UNDERWATER_NORTHWEST_SEA (76 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -430,6 +433,9 @@
 #define MAP_CAVE_OF_SOBRIETY                         (118 | (24 << 8))
 #define MAP_CAVE_OF_CHASTITY                         (119 | (24 << 8))
 #define MAP_UNDERWATER_TUNNEL                        (120 | (24 << 8))
+#define MAP_SLUMBER_PATH_1F                          (121 | (24 << 8))
+#define MAP_SLUMBER_PATH_B1F                         (122 | (24 << 8))
+#define MAP_SLUMBER_ISLAND_THRONE_ROOM               (123 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

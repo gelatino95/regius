@@ -1168,3 +1168,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/BattleGrotto_Entrance/scripts.inc"
 
 	.include "data/maps/BattleGrotto_B1F/scripts.inc"
+
+	.include "data/maps/SlumberPath_1F/scripts.inc"
+
+	.include "data/maps/SlumberPath_B1F/scripts.inc"
+
+	.include "data/maps/SlumberIsland/scripts.inc"
+
+	.include "data/maps/Underwater_Northeast_Sea/scripts.inc"
+
+	.include "data/maps/Underwater_NorthwestSea/scripts.inc"
+
+	.include "data/maps/SlumberIsland_ThroneRoom/scripts.inc"

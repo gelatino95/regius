@@ -122,7 +122,10 @@
     "FarReachSea",
     "Underwater_SoutheastSea",
     "Underwater_CentralSea",
-    "Underwater_SouthwestSea"
+    "Underwater_SouthwestSea",
+    "SlumberIsland",
+    "Underwater_Northeast_Sea",
+    "Underwater_NorthwestSea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -472,7 +475,10 @@
     "CaveOfAwakening",
     "CaveOfSobriety",
     "CaveOfChastity",
-    "Underwater_Tunnel"
+    "Underwater_Tunnel",
+    "SlumberPath_1F",
+    "SlumberPath_B1F",
+    "SlumberIsland_ThroneRoom"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
