@@ -2184,3 +2184,7 @@ static const struct SpriteFrameImage sPicTable_RuinManiac[] = {
     overworld_frame(gObjectEventPic_RuinManiac, 2, 4, 7),
     overworld_frame(gObjectEventPic_RuinManiac, 2, 4, 8),
 };
+
+static const struct SpriteFrameImage sPicTable_FossilUnderwater[] = {
+    obj_frame_tiles(gObjectEventPic_FossilUnderwater),
+};

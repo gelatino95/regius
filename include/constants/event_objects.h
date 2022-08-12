@@ -241,8 +241,9 @@
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
 #define OBJ_EVENT_GFX_RUIN_MANIAC                239
+#define OBJ_EVENT_GFX_FOSSIL_UNDERWATER          240
 
-#define NUM_OBJ_EVENT_GFX                        240
+#define NUM_OBJ_EVENT_GFX                        241
 
 
 // These are dynamic object gfx ids.
