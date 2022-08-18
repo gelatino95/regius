@@ -363,3 +363,13 @@ const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/h
 
 const u32 gObjectEventPic_RuinManiac[] = INCBIN_U32("graphics/object_events/pics/people/ruin_maniac.4bpp");
 const u32 gObjectEventPic_FossilUnderwater[] = INCBIN_U32("graphics/object_events/pics/misc/fossil_underwater.4bpp");
+const u32 gObjectEventPic_Regirock[] = INCBIN_U32("graphics/object_events/pics/pokemon/regirock.4bpp");
+const u16 gObjectEventPal_Regirock[] = INCBIN_U16("graphics/object_events/palettes/regirock.gbapal");
+const u32 gObjectEventPic_Regice[] = INCBIN_U32("graphics/object_events/pics/pokemon/regice.4bpp");
+const u16 gObjectEventPal_Regice[] = INCBIN_U16("graphics/object_events/palettes/regice.gbapal");
+const u32 gObjectEventPic_Registeel[] = INCBIN_U32("graphics/object_events/pics/pokemon/registeel.4bpp");
+const u16 gObjectEventPal_Registeel[] = INCBIN_U16("graphics/object_events/palettes/registeel.gbapal");
+const u32 gObjectEventPic_Regigigas[] = INCBIN_U32("graphics/object_events/pics/pokemon/regigigas.4bpp");
+const u16 gObjectEventPal_Regigigas[] = INCBIN_U16("graphics/object_events/palettes/regigigas.gbapal");
+const u32 gObjectEventPic_Litturch[] = INCBIN_U32("graphics/object_events/pics/pokemon/litturch.4bpp");
+const u32 gObjectEventPic_Book[] = INCBIN_U32("graphics/object_events/pics/misc/book.4bpp");

@@ -143,6 +143,7 @@
 #define OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN      139
 #define OBJ_EVENT_GFX_SS_TIDAL                   140
 #define OBJ_EVENT_GFX_SUBMARINE_SHADOW           141
+
 #define OBJ_EVENT_GFX_PICHU_DOLL                 142
 #define OBJ_EVENT_GFX_PIKACHU_DOLL               143
 #define OBJ_EVENT_GFX_MARILL_DOLL                144
@@ -168,11 +169,12 @@
 #define OBJ_EVENT_GFX_GULPIN_DOLL                164
 #define OBJ_EVENT_GFX_LOTAD_DOLL                 165
 #define OBJ_EVENT_GFX_SEEDOT_DOLL                166
-#define OBJ_EVENT_GFX_PIKA_CUSHION               167
-#define OBJ_EVENT_GFX_ROUND_CUSHION              168
-#define OBJ_EVENT_GFX_KISS_CUSHION               169
-#define OBJ_EVENT_GFX_ZIGZAG_CUSHION             170
-#define OBJ_EVENT_GFX_SPIN_CUSHION               171
+
+#define OBJ_EVENT_GFX_RUIN_MANIAC                167
+#define OBJ_EVENT_GFX_FOSSIL_UNDERWATER          168
+#define OBJ_EVENT_GFX_BOOK                       169
+#define OBJ_EVENT_GFX_LITTURCH                   170
+#define OBJ_EVENT_GFX_REGIGIGAS                  171
 #define OBJ_EVENT_GFX_DIAMOND_CUSHION            172
 #define OBJ_EVENT_GFX_BALL_CUSHION               173
 #define OBJ_EVENT_GFX_GRASS_CUSHION              174
@@ -188,6 +190,7 @@
 #define OBJ_EVENT_GFX_BIG_REGIROCK_DOLL          184
 #define OBJ_EVENT_GFX_BIG_REGICE_DOLL            185
 #define OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL         186
+
 #define OBJ_EVENT_GFX_LATIAS                     187
 #define OBJ_EVENT_GFX_LATIOS                     188
 #define OBJ_EVENT_GFX_GAMEBOY_KID                189
@@ -240,10 +243,8 @@
 #define OBJ_EVENT_GFX_LINK_RS_MAY                236
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
-#define OBJ_EVENT_GFX_RUIN_MANIAC                239
-#define OBJ_EVENT_GFX_FOSSIL_UNDERWATER          240
 
-#define NUM_OBJ_EVENT_GFX                        241
+#define NUM_OBJ_EVENT_GFX                        239
 
 
 // These are dynamic object gfx ids.

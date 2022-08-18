@@ -2188,3 +2188,67 @@ static const struct SpriteFrameImage sPicTable_RuinManiac[] = {
 static const struct SpriteFrameImage sPicTable_FossilUnderwater[] = {
     obj_frame_tiles(gObjectEventPic_FossilUnderwater),
 };
+
+static const struct SpriteFrameImage sPicTable_Regirock[] = {
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+    obj_frame_tiles(gObjectEventPic_Regirock),
+};
+
+static const struct SpriteFrameImage sPicTable_Regice[] = {
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+    obj_frame_tiles(gObjectEventPic_Regice),
+};
+
+static const struct SpriteFrameImage sPicTable_Registeel[] = {
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+    obj_frame_tiles(gObjectEventPic_Registeel),
+};
+
+static const struct SpriteFrameImage sPicTable_Regigigas[] = {
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+    obj_frame_tiles(gObjectEventPic_Regigigas),
+};
+
+static const struct SpriteFrameImage sPicTable_Book[] = {
+    obj_frame_tiles(gObjectEventPic_Book),
+};
+
+static const struct SpriteFrameImage sPicTable_Litturch[] = {
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Litturch, 2, 2, 2),
+};
