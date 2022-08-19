@@ -253,13 +253,15 @@
 #define ITEM_METAL_POWDER 223
 #define ITEM_THICK_CLUB 224
 #define ITEM_STICK 225
-#define ITEM_0E2 226
-#define ITEM_0E3 227
-#define ITEM_0E4 228
-#define ITEM_0E5 229
-#define ITEM_0E6 230
-#define ITEM_0E7 231
-#define ITEM_0E8 232
+
+// my items
+#define ITEM_REGIUS_CREST 226
+#define ITEM_ELEGANT_KEY 227
+#define ITEM_OLD_KEY 228
+#define ITEM_STONE_KEY 229
+#define ITEM_ANCIENT_SLAB 230
+#define ITEM_PLATE_FOSSIL 231
+#define ITEM_FROND_FOSSIL 232
 #define ITEM_0E9 233
 #define ITEM_0EA 234
 #define ITEM_0EB 235

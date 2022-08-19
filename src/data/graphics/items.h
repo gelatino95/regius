@@ -736,3 +736,26 @@ const u32 gItemIconPalette_MagmaEmblem[] = INCBIN_U32("graphics/items/icon_palet
 
 const u32 gItemIcon_OldSeaMap[] = INCBIN_U32("graphics/items/icons/old_sea_map.4bpp.lz");
 const u32 gItemIconPalette_OldSeaMap[] = INCBIN_U32("graphics/items/icon_palettes/old_sea_map.gbapal.lz");
+
+// New items
+
+const u32 gItemIcon_RegiusCrest[] = INCBIN_U32("graphics/items/icons/regius_crest.4bpp.lz");
+const u32 gItemIconPalette_RegiusCrest[] = INCBIN_U32("graphics/items/icon_palettes/regius_crest.gbapal.lz");
+
+const u32 gItemIcon_ElegantKey[] = INCBIN_U32("graphics/items/icons/elegant_key.4bpp.lz");
+const u32 gItemIconPalette_ElegantKey[] = INCBIN_U32("graphics/items/icon_palettes/elegant_key.gbapal.lz");
+
+const u32 gItemIcon_OldKey[] = INCBIN_U32("graphics/items/icons/old_key.4bpp.lz");
+const u32 gItemIconPalette_OldKey2[] = INCBIN_U32("graphics/items/icon_palettes/old_key_2.gbapal.lz");
+
+const u32 gItemIcon_StoneKey[] = INCBIN_U32("graphics/items/icons/stone_key.4bpp.lz");
+const u32 gItemIconPalette_StoneKey[] = INCBIN_U32("graphics/items/icon_palettes/stone_key.gbapal.lz");
+
+const u32 gItemIcon_AncientSlab[] = INCBIN_U32("graphics/items/icons/ancient_slab.4bpp.lz");
+const u32 gItemIconPalette_AncientSlab[] = INCBIN_U32("graphics/items/icon_palettes/ancient_slab.gbapal.lz");
+
+const u32 gItemIcon_PlateFossil[] = INCBIN_U32("graphics/items/icons/plate_fossil.4bpp.lz");
+const u32 gItemIconPalette_PlateFossil[] = INCBIN_U32("graphics/items/icon_palettes/plate_fossil.gbapal.lz");
+
+const u32 gItemIcon_FrondFossil[] = INCBIN_U32("graphics/items/icons/frond_fossil.4bpp.lz");
+const u32 gItemIconPalette_FrondFossil[] = INCBIN_U32("graphics/items/icon_palettes/frond_fossil.gbapal.lz");

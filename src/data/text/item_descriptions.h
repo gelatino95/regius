@@ -1549,3 +1549,40 @@ static const u8 sOldSeaMapDesc[] = _(
     "A faded sea chart\n"
     "that shows the way\n"
     "to a certain island.");
+	
+// New items
+
+static const u8 sRegiusCrestDesc[] = _(
+    "A stone pendant\n"
+    "with dots carved\n"
+    "in its face.");
+	
+static const u8 sElegantKeyDesc[] = _(
+    "A shiny silver\n"
+    "key found on\n"
+    "the GHOST SHIP.");
+	
+static const u8 sOldKeyDesc[] = _(
+    "A rusted iron key\n"
+    "that opens a door\n"
+    "on the GHOST SHIP.");
+	
+static const u8 sStoneKeyDesc[] = _(
+    "A carved piece of\n"
+    "stone that may\n"
+    "open something.");
+	
+static const u8 sAncientSlabDesc[] = _(
+    "A stone tablet\n"
+    "carved with\n"
+    "ancient writing.");
+	
+static const u8 sPlateFossilDesc[] = _(
+    "Fossilized remains\n"
+    "of a piece of hard\n"
+    "stone armor.");
+	
+static const u8 sFrondFossilDesc[] = _(
+    "Fossilized remains\n"
+    "of a fern-like\n"
+    "leaf impression.");

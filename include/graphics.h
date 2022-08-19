@@ -4245,6 +4245,21 @@ extern const u32 gItemIcon_MagmaEmblem[];
 extern const u32 gItemIconPalette_MagmaEmblem[];
 extern const u32 gItemIcon_OldSeaMap[];
 extern const u32 gItemIconPalette_OldSeaMap[];
+// New items
+extern const u32 gItemIcon_RegiusCrest[];
+extern const u32 gItemIconPalette_RegiusCrest[];
+extern const u32 gItemIcon_ElegantKey[];
+extern const u32 gItemIconPalette_ElegantKey[];
+extern const u32 gItemIcon_OldKey[];
+extern const u32 gItemIconPalette_OldKey2[];
+extern const u32 gItemIcon_StoneKey[];
+extern const u32 gItemIconPalette_StoneKey[];
+extern const u32 gItemIcon_AncientSlab[];
+extern const u32 gItemIconPalette_AncientSlab[];
+extern const u32 gItemIcon_PlateFossil[];
+extern const u32 gItemIconPalette_PlateFossil[];
+extern const u32 gItemIcon_FrondFossil[];
+extern const u32 gItemIconPalette_FrondFossil[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
