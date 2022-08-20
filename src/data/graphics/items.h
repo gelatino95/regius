@@ -759,3 +759,6 @@ const u32 gItemIconPalette_PlateFossil[] = INCBIN_U32("graphics/items/icon_palet
 
 const u32 gItemIcon_FrondFossil[] = INCBIN_U32("graphics/items/icons/frond_fossil.4bpp.lz");
 const u32 gItemIconPalette_FrondFossil[] = INCBIN_U32("graphics/items/icon_palettes/frond_fossil.gbapal.lz");
+
+const u32 gItemIcon_RegiBall[] = INCBIN_U32("graphics/items/icons/regi_ball.4bpp.lz");
+const u32 gItemIconPalette_RegiBall[] = INCBIN_U32("graphics/items/icon_palettes/regi_ball.gbapal.lz");

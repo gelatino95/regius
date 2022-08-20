@@ -1586,3 +1586,8 @@ static const u8 sFrondFossilDesc[] = _(
     "Fossilized remains\n"
     "of a fern-like\n"
     "leaf impression.");
+	
+static const u8 sRegiBallDesc[] = _(
+    "A BALL designed\n"
+    "to capture the\n"
+    "REGI family.");

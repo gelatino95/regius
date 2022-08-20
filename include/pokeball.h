@@ -15,6 +15,7 @@ enum
     BALL_TIMER,
     BALL_LUXURY,
     BALL_PREMIER,
+    BALL_REGI,
     POKEBALL_COUNT
 };
 

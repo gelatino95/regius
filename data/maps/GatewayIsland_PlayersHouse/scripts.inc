@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_DUNKETRA, 15, ITEM_ANCIENT_SLAB
+	givemon SPECIES_DUNKETRA, 50, ITEM_REGI_BALL
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare
@@ -16,12 +16,7 @@ GatewayIsland_PlayersHouse_ItemBall_1:
 	setflag FLAG_SYS_POKEMON_GET
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	removeobject 1
-	giveitem ITEM_REGIUS_CREST, 1
-	giveitem ITEM_ELEGANT_KEY, 1
-	giveitem ITEM_OLD_KEY, 1
-	giveitem ITEM_STONE_KEY, 1
-	giveitem ITEM_PLATE_FOSSIL, 1
-	giveitem ITEM_FROND_FOSSIL, 1
+	giveitem ITEM_ULTRA_BALL, 1
 	release
 	end
 

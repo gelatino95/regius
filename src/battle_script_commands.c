@@ -9827,6 +9827,11 @@ static void Cmd_handleballthrow(void)
             case ITEM_PREMIER_BALL:
                 ballMultiplier = 10;
                 break;
+			case ITEM_REGI_BALL:
+				if (gBattleMons[gBattlerTarget].species == SPECIES_REGIROCK || gBattleMons[gBattlerTarget].species == SPECIES_REGICE || gBattleMons[gBattlerTarget].species == SPECIES_REGISTEEL || gBattleMons[gBattlerTarget].species == SPECIES_REGIGIGAS)
+					ballMultiplier = 80;
+				else
+					ballMultiplier = 10;
             }
         }
         else
