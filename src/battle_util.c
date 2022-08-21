@@ -2556,6 +2556,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
 			case ABILITY_SLOW_START:
                 if (!gSpecialStatuses[battler].switchInAbilityDone)
 				{
+					gBattleScripting.battler = battler;
 					gDisableStructs[battler].slowStartTimer = 5;
 					gSpecialStatuses[battler].switchInAbilityDone = TRUE;
 					BattleScriptPushCursorAndCallback(BattleScript_SlowStartEnters);
