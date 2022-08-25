@@ -3,7 +3,7 @@
   "name": "NorthwestSea",
   "layout": "LAYOUT_NORTHWEST_SEA",
   "music": "MUS_ROUTE118",
-  "region_map_section": "MAPSEC_ROUTE_126",
+  "region_map_section": "MAPSEC_NORTHWEST_SEA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",

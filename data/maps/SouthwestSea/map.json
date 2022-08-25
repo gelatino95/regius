@@ -3,7 +3,7 @@
   "name": "SouthwestSea",
   "layout": "LAYOUT_SOUTHWEST_SEA",
   "music": "MUS_ROUTE120",
-  "region_map_section": "MAPSEC_ROUTE_132",
+  "region_map_section": "MAPSEC_SOUTHWEST_SEA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",

@@ -3,7 +3,7 @@
   "name": "KapokJungle_BioLab",
   "layout": "LAYOUT_KAPOK_JUNGLE_BIO_LAB",
   "music": "MUS_SAFARI_ZONE",
-  "region_map_section": "MAPSEC_ROUTE_119",
+  "region_map_section": "MAPSEC_KAPOK_JUNGLE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

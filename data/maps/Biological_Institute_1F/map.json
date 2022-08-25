@@ -3,7 +3,7 @@
   "name": "Biological_Institute_1F",
   "layout": "LAYOUT_BIOLOGICAL_INSTITUTE_1F",
   "music": "MUS_OCEANIC_MUSEUM",
-  "region_map_section": "MAPSEC_ROUTE_133",
+  "region_map_section": "MAPSEC_MARINE_BIO_LAB",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

@@ -3,7 +3,7 @@
   "name": "AridIsland_DesertTunnel",
   "layout": "LAYOUT_ARID_ISLAND_DESERT_TUNNEL",
   "music": "MUS_ROUTE111",
-  "region_map_section": "MAPSEC_ROUTE_111",
+  "region_map_section": "MAPSEC_ARID_DESERT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

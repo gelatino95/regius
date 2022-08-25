@@ -199,6 +199,33 @@ static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
 
+static const u8 sMapName_GatewayIsland[] = _("GATEWAY ISLAND");
+static const u8 sMapName_AridIsland[] = _("ARID ISLAND");
+static const u8 sMapName_KapokIsland[] = _("KAPOK ISLAND");
+static const u8 sMapName_IgneousIsland[] = _("IGNEOUS ISLAND");
+static const u8 sMapName_SlumberIsland[] = _("SLUMBER ISLAND");
+static const u8 sMapName_SoutheastSea[] = _("SOUTHEAST SEA");
+static const u8 sMapName_NortheastSea[] = _("NORTHEAST SEA");
+static const u8 sMapName_NorthwestSea[] = _("NORTHWEST SEA");
+static const u8 sMapName_SouthwestSea[] = _("SOUTHWEST SEA");
+static const u8 sMapName_CentralSea[] = _("CENTRAL SEA");
+static const u8 sMapName_SouthSea[] = _("SOUTH SEA");
+static const u8 sMapName_FarReachSea[] = _("FAR REACH SEA");
+static const u8 sMapName_AridDesert[] = _("ARID DESERT");
+static const u8 sMapName_AridRuins[] = _("ARID RUINS");
+static const u8 sMapName_KapokJungle[] = _("KAPOK JUNGLE");
+static const u8 sMapName_IceCave[] = _("ICE CAVE");
+static const u8 sMapName_GhostShip[] = _("GHOST SHIP");
+static const u8 sMapName_IgneousClimb[] = _("IGNEOUS CLIMB");
+static const u8 sMapName_IgneousCaldera[] = _("IGNEOUS CALDERA");
+static const u8 sMapName_SlumberPath[] = _("SLUMBER PATH");
+static const u8 sMapName_CaveOfAwakening[] = _("AWAKENING CAVE");
+static const u8 sMapName_CaveOfSobriety[] = _("SOBRIETY CAVE");
+static const u8 sMapName_CaveOfChastity[] = _("CHASTITY CAVE");
+static const u8 sMapName_BattleGrotto[] = _("BATTLE GROTTO");
+static const u8 sMapName_MarineBioLab[] = _("MARINE INSTITUTE");
+static const u8 sMapName_PirateFortress[] = _("PIRATE FORTRESS");
+
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]            = { 4, 11, 1, 1, sMapName_LittlerootTown},
     [MAPSEC_OLDALE_TOWN]                = { 4,  9, 1, 1, sMapName_OldaleTown},
@@ -412,7 +439,41 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_DESERT_UNDERPASS]           = { 2,  0, 1, 1, sMapName_DesertUnderpass},
     [MAPSEC_ALTERING_CAVE]              = { 6,  8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_NAVEL_ROCK]                 = { 0,  0, 1, 1, sMapName_NavelRock},
-    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill}
+    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill},
+	
+    [MAPSEC_GATEWAY_ISLAND]             = { 2,  8, 2, 2, sMapName_GatewayIsland},
+    [MAPSEC_ARID_ISLAND]                = { 8,  6, 2, 2, sMapName_AridIsland},
+    [MAPSEC_KAPOK_ISLAND]               = { 6,  0, 2, 2, sMapName_KapokIsland},
+    [MAPSEC_IGNEOUS_ISLAND]             = { 0,  2, 2, 2, sMapName_IgneousIsland},
+    [MAPSEC_SLUMBER_ISLAND]             = { 4,  5, 1, 1, sMapName_SlumberIsland},
+    [MAPSEC_SOUTHEAST_SEA]              = { 4,  8, 6, 2, sMapName_SoutheastSea},
+    [MAPSEC_NORTHEAST_SEA]              = { 8,  0, 2, 6, sMapName_NortheastSea},
+    [MAPSEC_NORTHWEST_SEA]              = { 0,  0, 6, 2, sMapName_NorthwestSea},
+    [MAPSEC_SOUTHWEST_SEA]              = { 0,  4, 2, 6, sMapName_SouthwestSea},
+    [MAPSEC_CENTRAL_SEA]                = { 2,  2, 6, 6, sMapName_CentralSea},
+    [MAPSEC_SOUTH_SEA]                  = { 2, 10, 2, 5, sMapName_SouthSea},
+    [MAPSEC_FAR_REACH_SEA]              = { 0, 13, 2, 5, sMapName_FarReachSea},
+    [MAPSEC_ARID_DESERT]                = { 9,  6, 1, 1, sMapName_AridDesert},
+    [MAPSEC_ARID_RUINS]                 = { 9,  6, 1, 1, sMapName_AridRuins},
+    [MAPSEC_KAPOK_JUNGLE]               = { 6,  0, 2, 1, sMapName_KapokJungle},
+    [MAPSEC_ICE_CAVE]                   = { 6,  0, 1, 1, sMapName_IceCave},
+    [MAPSEC_GHOST_SHIP]                 = { 0,  0, 1, 1, sMapName_GhostShip},
+    [MAPSEC_IGNEOUS_CLIMB]              = { 0,  2, 1, 2, sMapName_IgneousClimb},
+    [MAPSEC_IGNEOUS_CALDERA]            = { 0,  2, 1, 1, sMapName_IgneousCaldera},
+    [MAPSEC_SLUMBER_PATH]               = { 3,  5, 1, 4, sMapName_SlumberPath},
+    [MAPSEC_UNDERWATER_SE_SEA]          = { 4,  8, 6, 2, sMapName_Underwater},
+    [MAPSEC_UNDERWATER_NE_SEA]          = { 8,  0, 2, 6, sMapName_Underwater},
+    [MAPSEC_UNDERWATER_NW_SEA]          = { 0,  0, 6, 2, sMapName_Underwater},
+    [MAPSEC_UNDERWATER_SW_SEA]          = { 0,  4, 2, 6, sMapName_Underwater},
+    [MAPSEC_UNDERWATER_CENTRAL_SEA]     = { 2,  2, 6, 6, sMapName_Underwater},
+    [MAPSEC_UNDERWATER_TUNNEL]          = { 1,  7, 6, 1, sMapName_Underwater},
+    [MAPSEC_CAVE_OF_AWAKENING]          = { 9,  3, 1, 1, sMapName_CaveOfAwakening},
+    [MAPSEC_CAVE_OF_SOBRIETY]           = { 5,  4, 1, 1, sMapName_CaveOfSobriety},
+    [MAPSEC_CAVE_OF_CHASTITY]           = { 1,  8, 1, 1, sMapName_CaveOfChastity},
+    [MAPSEC_BATTLE_GROTTO]              = { 9,  1, 1, 1, sMapName_BattleGrotto},
+    [MAPSEC_MARINE_BIO_LAB]             = { 2, 12, 1, 1, sMapName_MarineBioLab},
+    [MAPSEC_PIRATE_FORTRESS]            = { 1, 15, 1, 1, sMapName_PirateFortress}
+	
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

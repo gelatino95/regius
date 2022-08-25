@@ -3,7 +3,7 @@
   "name": "KapokJungle",
   "layout": "LAYOUT_KAPOK_JUNGLE",
   "music": "MUS_SAFARI_ZONE",
-  "region_map_section": "MAPSEC_ROUTE_119",
+  "region_map_section": "MAPSEC_KAPOK_JUNGLE",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_ROUTE",

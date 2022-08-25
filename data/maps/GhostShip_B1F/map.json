@@ -3,7 +3,7 @@
   "name": "GhostShip_B1F",
   "layout": "LAYOUT_GHOST_SHIP_B1F",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_GHOST_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",
   "map_type": "MAP_TYPE_INDOOR",

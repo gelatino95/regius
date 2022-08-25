@@ -3,7 +3,7 @@
   "name": "GhostShip_Underwater",
   "layout": "LAYOUT_GHOST_SHIP_UNDERWATER",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_GHOST_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_UNDERWATER",
   "map_type": "MAP_TYPE_UNDERWATER",

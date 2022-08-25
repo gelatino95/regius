@@ -214,7 +214,41 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+// new map sections:
+#define MAPSEC_UNDERWATER_SW_SEA            0xD5
+#define MAPSEC_GATEWAY_ISLAND               0xD6
+#define MAPSEC_ARID_ISLAND                  0xD7
+#define MAPSEC_KAPOK_ISLAND                 0xD8
+#define MAPSEC_IGNEOUS_ISLAND               0xD9
+#define MAPSEC_SLUMBER_ISLAND               0xDA
+#define MAPSEC_SOUTHEAST_SEA                0xDB
+#define MAPSEC_NORTHEAST_SEA                0xDC
+#define MAPSEC_NORTHWEST_SEA                0xDD
+#define MAPSEC_SOUTHWEST_SEA                0xDE
+#define MAPSEC_CENTRAL_SEA                  0xDF
+#define MAPSEC_SOUTH_SEA                    0xE0
+#define MAPSEC_FAR_REACH_SEA                0xE1
+#define MAPSEC_ARID_DESERT                  0xE2
+#define MAPSEC_ARID_RUINS                   0xE3
+#define MAPSEC_KAPOK_JUNGLE                 0xE4
+#define MAPSEC_ICE_CAVE                     0xE5
+#define MAPSEC_GHOST_SHIP                   0xE6
+#define MAPSEC_IGNEOUS_CLIMB                0xE7
+#define MAPSEC_IGNEOUS_CALDERA              0xE8
+#define MAPSEC_SLUMBER_PATH                 0xE9
+#define MAPSEC_UNDERWATER_SE_SEA            0xEA
+#define MAPSEC_UNDERWATER_NE_SEA            0xEB
+#define MAPSEC_UNDERWATER_NW_SEA            0xEC
+#define MAPSEC_UNDERWATER_CENTRAL_SEA       0xED
+#define MAPSEC_UNDERWATER_TUNNEL            0xEE
+#define MAPSEC_CAVE_OF_AWAKENING            0xEF
+#define MAPSEC_CAVE_OF_SOBRIETY             0xF0
+#define MAPSEC_CAVE_OF_CHASTITY             0xF1
+#define MAPSEC_BATTLE_GROTTO                0xF2
+#define MAPSEC_MARINE_BIO_LAB               0xF3
+#define MAPSEC_PIRATE_FORTRESS              0xF4
+
+#define MAPSEC_NONE                         0xF5
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
