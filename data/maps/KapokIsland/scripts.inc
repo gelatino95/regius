@@ -1,3 +1,8 @@
 KapokIsland_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setflag FLAG_VISITED_KAPOK_ISLAND
+	return
 

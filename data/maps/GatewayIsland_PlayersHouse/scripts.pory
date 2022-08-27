@@ -3,9 +3,9 @@ mapscripts GatewayIsland_PlayersHouse_MapScripts {}
 script GatewayIsland_PlayersHouse_ItemBall {
 	lock
 	msgbox(format("Dear {PLAYER},\pToday is the day you earn\nyour first POKéMON.\pI'm sorry I couldn't be here\nfor your big day.\pPlease explore the islands with your\nnew partner, and come find me.\pI'm looking forward to seeing\nhow much you've grown."))
-    givemon(SPECIES_DUNKETRA, 50, ITEM_REGI_BALL)
+    givemon(SPECIES_PELIPPER, 50, ITEM_REGI_BALL)
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} received DUNKETRA!")
+    msgbox("{PLAYER} received PELIPPER!")
 	waitfanfare
     msgbox(format("Would you like to give a\nnickname to your DUNKETRA?"), MSGBOX_YESNO)
     if (var(VAR_RESULT)){
@@ -14,7 +14,11 @@ script GatewayIsland_PlayersHouse_ItemBall {
 	setflag(FLAG_SYS_POKEMON_GET)
 	call(LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex)
 	removeobject(1)
-	giveitem(ITEM_ULTRA_BALL, 1)
+	giveitem(ITEM_HM02, 1)
+	setflag(FLAG_SYS_POKENAV_GET)
+	setflag(FLAG_RECEIVED_POKENAV)
+	setflag(FLAG_SYS_B_DASH)
+	setflag(FLAG_RECEIVED_RUNNING_SHOES)
 	release
 	end
 }

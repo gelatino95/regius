@@ -311,6 +311,10 @@ static const u8 sMapHealLocations[][3] =
     {MAP_GROUP(MOSSDEEP_CITY), MAP_NUM(MOSSDEEP_CITY), HEAL_LOCATION_MOSSDEEP_CITY},
     {MAP_GROUP(SOOTOPOLIS_CITY), MAP_NUM(SOOTOPOLIS_CITY), HEAL_LOCATION_SOOTOPOLIS_CITY},
     {MAP_GROUP(EVER_GRANDE_CITY), MAP_NUM(EVER_GRANDE_CITY), HEAL_LOCATION_EVER_GRANDE_CITY},
+    {MAP_GROUP(GATEWAY_ISLAND), MAP_NUM(GATEWAY_ISLAND), HEAL_LOCATION_GATEWAY_ISLAND},
+    {MAP_GROUP(ARID_ISLAND), MAP_NUM(ARID_ISLAND), HEAL_LOCATION_ARID_ISLAND},
+    {MAP_GROUP(KAPOK_ISLAND), MAP_NUM(KAPOK_ISLAND), HEAL_LOCATION_KAPOK_ISLAND},
+    {MAP_GROUP(IGNEOUS_ISLAND), MAP_NUM(IGNEOUS_ISLAND), HEAL_LOCATION_IGNEOUS_ISLAND},
     {MAP_GROUP(ROUTE101), MAP_NUM(ROUTE101), 0},
     {MAP_GROUP(ROUTE102), MAP_NUM(ROUTE102), 0},
     {MAP_GROUP(ROUTE103), MAP_NUM(ROUTE103), 0},
@@ -740,22 +744,22 @@ static u8 ProcessRegionMapInput_Zoomed(void)
     input = MAP_INPUT_NONE;
     gRegionMap->zoomedCursorDeltaX = 0;
     gRegionMap->zoomedCursorDeltaY = 0;
-    if (JOY_HELD(DPAD_UP) && gRegionMap->scrollY > -0x34)
+    if (JOY_HELD(DPAD_UP) && gRegionMap->zoomedCursorPosY > MAPCURSOR_Y_MIN)
     {
         gRegionMap->zoomedCursorDeltaY = -1;
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_DOWN) && gRegionMap->scrollY < 0x3c)
+    if (JOY_HELD(DPAD_DOWN) && gRegionMap->zoomedCursorPosY < MAPCURSOR_Y_MAX)
     {
         gRegionMap->zoomedCursorDeltaY = +1;
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_LEFT) && gRegionMap->scrollX > -0x2c)
+    if (JOY_HELD(DPAD_LEFT) && gRegionMap->zoomedCursorPosX > MAPCURSOR_X_MIN)
     {
         gRegionMap->zoomedCursorDeltaX = -1;
         input = MAP_INPUT_MOVE_START;
     }
-    if (JOY_HELD(DPAD_RIGHT) && gRegionMap->scrollX < 0xac)
+    if (JOY_HELD(DPAD_RIGHT) && gRegionMap->zoomedCursorPosX < MAPCURSOR_X_MAX)
     {
         gRegionMap->zoomedCursorDeltaX = +1;
         input = MAP_INPUT_MOVE_START;
@@ -1223,6 +1227,14 @@ static u8 GetMapsecType(u16 mapSecId)
         return FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_NONE;
     case MAPSEC_SOUTHERN_ISLAND:
         return FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) ? MAPSECTYPE_ROUTE : MAPSECTYPE_NONE;
+	case MAPSEC_GATEWAY_ISLAND:
+        return FlagGet(FLAG_VISITED_GATEWAY_ISLAND) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+	case MAPSEC_ARID_ISLAND:
+        return FlagGet(FLAG_VISITED_ARID_ISLAND) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+	case MAPSEC_KAPOK_ISLAND:
+        return FlagGet(FLAG_VISITED_KAPOK_ISLAND) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+	case MAPSEC_IGNEOUS_ISLAND:
+        return FlagGet(FLAG_VISITED_IGNEOUS_ISLAND) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     default:
         return MAPSECTYPE_ROUTE;
     }

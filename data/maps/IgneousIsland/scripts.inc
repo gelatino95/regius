@@ -1,3 +1,8 @@
 IgneousIsland_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, IgneousIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+IgneousIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setflag FLAG_VISITED_IGNEOUS_ISLAND
+	return
 

@@ -1,3 +1,8 @@
 GatewayIsland_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, GatewayIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+GatewayIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setflag FLAG_VISITED_GATEWAY_ISLAND
+	return
 

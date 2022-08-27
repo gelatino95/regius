@@ -1,1 +1,5 @@
-mapscripts IgneousIsland_MapScripts {}
+mapscripts IgneousIsland_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag(FLAG_VISITED_IGNEOUS_ISLAND)
+	}
+}
