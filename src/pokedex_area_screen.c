@@ -319,7 +319,7 @@ static bool8 DrawAreaGlow(void)
         }
         return TRUE;
     case 4:
-        ChangeBgY(2, -0x800, 0);
+        ChangeBgY(2, -0x1000, 0);
         break;
     default:
         return FALSE;
@@ -460,6 +460,10 @@ static bool8 MapHasMon(const struct WildPokemonHeader *info, u16 species)
         if (sPokedexAreaScreen->unk6E2 != sPokedexAreaScreen->unk6E4 + 1)
             return FALSE;
     }
+	
+	//added to only search new maps:
+	if (GetRegionMapSectionId(info->mapGroup, info->mapNum) < REGIUS_MAPSEC_START)
+		return FALSE;
 
     if (MonListHasMon(info->landMonsInfo, species, 12))
         return TRUE;
@@ -667,7 +671,7 @@ static void Task_ShowPokedexAreaScreen(u8 taskId)
         case 2:
             if (sub_81C4E90() == TRUE)
                 return;
-            PokedexAreaMapChangeBgY(-8);
+            PokedexAreaMapChangeBgY(-16);
             break;
         case 3:
             ResetDrawAreaGlowState();
@@ -679,7 +683,7 @@ static void Task_ShowPokedexAreaScreen(u8 taskId)
         case 5:
             ShowRegionMapForPokedexAreaScreen(&sPokedexAreaScreen->regionMap);
             CreateRegionMapPlayerIcon(1, 1);
-            PokedexAreaScreen_UpdateRegionMapVariablesAndVideoRegs(0, -8);
+            PokedexAreaScreen_UpdateRegionMapVariablesAndVideoRegs(0, -16);
             break;
         case 6:
             CreateAreaMarkerSprites();
@@ -774,7 +778,7 @@ static void CreateAreaMarkerSprites(void)
     for (i = 0; i < sPokedexAreaScreen->numSpecialAreas; i++)
     {
         mapSecId = sPokedexAreaScreen->specialAreaRegionMapSectionIds[i];
-        x = 8 * (gRegionMapEntries[mapSecId].x + 1) + 4;
+        x = 8 * (gRegionMapEntries[mapSecId].x + 1) + 36;  //updated to new map margins
         y = 8 * (gRegionMapEntries[mapSecId].y) + 28;
         x += 4 * (gRegionMapEntries[mapSecId].width - 1);
         y += 4 * (gRegionMapEntries[mapSecId].height - 1);

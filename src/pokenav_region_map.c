@@ -532,6 +532,8 @@ static void UpdateMapSecInfoWindow(struct Pokenav5Struct_2 *state)
     struct RegionMap *regionMap = GetSubstructPtr(POKENAV_SUBSTRUCT_REGION_MAP);
     switch (regionMap->mapSecType)
     {
+		/* Updated so cities won't show city maps, and will behave like regular routes:
+		
     case MAPSECTYPE_CITY_CANFLY:
         FillWindowPixelBuffer(state->infoWindowId, PIXEL_FILL(1));
         PutWindowRectTilemap(state->infoWindowId, 0, 0, 12, 2);
@@ -548,6 +550,9 @@ static void UpdateMapSecInfoWindow(struct Pokenav5Struct_2 *state)
         CopyWindowToVram(state->infoWindowId, 3);
         SetCityZoomTextInvisibility(TRUE);
         break;
+		*/
+	case MAPSECTYPE_CITY_CANFLY:
+	case MAPSECTYPE_CITY_CANTFLY:
     case MAPSECTYPE_ROUTE:
     case MAPSECTYPE_BATTLE_FRONTIER:
         FillWindowPixelBuffer(state->infoWindowId, PIXEL_FILL(1));

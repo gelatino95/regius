@@ -57,6 +57,17 @@ static const u8 LandmarkName_MirageTower[] = _("MIRAGE TOWER");
 static const u8 LandmarkName_AlteringCave[] = _("ALTERING CAVE");
 static const u8 LandmarkName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 LandmarkName_TrainerHill[] = _("TRAINER HILL");
+static const u8 LandmarkName_FishingClub[] = _("FISHING CLUB");
+static const u8 LandmarkName_AridDesert[] = _("ARID DESERT");
+static const u8 LandmarkName_AridRuins[] = _("ARID RUINS");
+static const u8 LandmarkName_BattleGrotto[] = _("BATTLE GROTTO");
+static const u8 LandmarkName_KapokJungle[] = _("KAPOK JUNGLE");
+static const u8 LandmarkName_IceCave[] = _("ICE CAVE");
+static const u8 LandmarkName_GhostShip[] = _("GHOST SHIP");
+static const u8 LandmarkName_IgneousClimb[] = _("IGNEOUS CLIMB");
+static const u8 LandmarkName_IgneousCaldera[] = _("IGNEOUS CALDERA");
+static const u8 LandmarkName_MarineInstitute[] = _("MARINE INSITUTE");
+static const u8 LandmarkName_PirateFortress[] = _("PIRATE FORTRESS");
 
 static const struct Landmark Landmark_FlowerShop = {LandmarkName_FlowerShop, FLAG_LANDMARK_FLOWER_SHOP};
 static const struct Landmark Landmark_PetalburgWoods = {LandmarkName_PetalburgWoods, -1};
@@ -99,6 +110,17 @@ static const struct Landmark Landmark_MirageTower = {LandmarkName_MirageTower, F
 static const struct Landmark Landmark_AlteringCave = {LandmarkName_AlteringCave, FLAG_LANDMARK_ALTERING_CAVE};
 static const struct Landmark Landmark_DesertUnderpass = {LandmarkName_DesertUnderpass, FLAG_LANDMARK_DESERT_UNDERPASS};
 static const struct Landmark Landmark_TrainerHill = {LandmarkName_TrainerHill, FLAG_LANDMARK_TRAINER_HILL};
+static const struct Landmark Landmark_FishingClub = {LandmarkName_FishingClub, -1};
+static const struct Landmark Landmark_AridDesert = {LandmarkName_AridDesert, -1};
+static const struct Landmark Landmark_AridRuins = {LandmarkName_AridRuins, -1};
+static const struct Landmark Landmark_BattleGrotto = {LandmarkName_BattleGrotto, -1};
+static const struct Landmark Landmark_KapokJungle = {LandmarkName_KapokJungle, -1};
+static const struct Landmark Landmark_IceCave = {LandmarkName_IceCave, -1};
+static const struct Landmark Landmark_GhostShip = {LandmarkName_GhostShip, -1};
+static const struct Landmark Landmark_IgneousClimb = {LandmarkName_IgneousClimb, -1};
+static const struct Landmark Landmark_IgneousCaldera = {LandmarkName_IgneousCaldera, -1};
+static const struct Landmark Landmark_MarineInstitute = {LandmarkName_MarineInstitute, -1};
+static const struct Landmark Landmark_PirateFortress = {LandmarkName_PirateFortress, -1};
 
 static const struct Landmark *const Landmarks_Route103_2[]  =
 {
@@ -336,6 +358,71 @@ static const struct Landmark *const Landmarks_MtChimney_2[]  =
     NULL,
 };
 
+static const struct Landmark *const Landmarks_SoutheastSea_10[]  =
+{
+    &Landmark_FishingClub,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_AridIsland_1[]  =
+{
+    &Landmark_AridDesert,
+    &Landmark_AridRuins,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_NortheastSea_3[]  =
+{
+    &Landmark_BattleGrotto,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_KapokIsland_0[]  =
+{
+    &Landmark_KapokJungle,
+    &Landmark_IceCave,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_KapokIsland_1[]  =
+{
+    &Landmark_KapokJungle,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_NorthwestSea_0[]  =
+{
+    &Landmark_GhostShip,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_IgneousIsland_0[]  =
+{
+    &Landmark_IgneousClimb,
+    &Landmark_IgneousCaldera,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_IgneousIsland_2[]  =
+{
+    &Landmark_IgneousClimb,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_SouthSea_4[]  =
+{
+    &Landmark_MarineInstitute,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_FarReachSea_5[]  =
+{
+    &Landmark_PirateFortress,
+    NULL,
+};
+
+
+
 static const struct LandmarkList gLandmarkLists[] =
 {
     {MAPSEC_ROUTE_103, 2, Landmarks_Route103_2},
@@ -384,6 +471,16 @@ static const struct LandmarkList gLandmarkLists[] =
     {MAPSEC_ROUTE_134, 1, Landmarks_OceanCurrent},
     {MAPSEC_ROUTE_134, 2, Landmarks_Route134_2},
     {MAPSEC_MT_CHIMNEY, 2, Landmarks_MtChimney_2},
+    {MAPSEC_ARID_ISLAND, 1, Landmarks_AridIsland_1},
+    {MAPSEC_KAPOK_ISLAND, 0, Landmarks_KapokIsland_0},
+    {MAPSEC_KAPOK_ISLAND, 1, Landmarks_KapokIsland_1},
+    {MAPSEC_IGNEOUS_ISLAND, 0, Landmarks_IgneousIsland_0},
+    {MAPSEC_IGNEOUS_ISLAND, 2, Landmarks_IgneousIsland_2},
+    {MAPSEC_SOUTHEAST_SEA, 10, Landmarks_SoutheastSea_10},
+    {MAPSEC_NORTHEAST_SEA, 3, Landmarks_NortheastSea_3},
+    {MAPSEC_NORTHWEST_SEA, 0, Landmarks_NorthwestSea_0},
+    {MAPSEC_SOUTH_SEA, 4, Landmarks_SouthSea_4},
+    {MAPSEC_FAR_REACH_SEA, 5, Landmarks_FarReachSea_5},
     {MAPSEC_NONE, 0, NULL},
 };
 

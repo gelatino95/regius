@@ -11645,6 +11645,486 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_FAR_REACH_SEA",
+          "base_label": "gFarReachSea0",
+          "water_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_IGNEOUS_CLIMB",
+          "base_label": "gIgneousClimb0",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_IGNEOUS_CALDERA_1F",
+          "base_label": "gIgneousCaldera_1F0",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_GHOST_SHIP_1F",
+          "base_label": "gGhostShip_1F0",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ICE_CAVE_B1F",
+          "base_label": "gIceCave_B1F0",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
         }
       ]
     },
