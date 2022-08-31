@@ -434,14 +434,12 @@ static const struct SpritePalette sFlyTargetIconsSpritePalette =
 
 static const u16 sRedOutlineFlyDestinations[][2] =
 {
-    {
-        FLAG_LANDMARK_BATTLE_FRONTIER,
-        MAPSEC_BATTLE_FRONTIER
-    },
-    {
-        -1,
-        MAPSEC_NONE
-    }
+    {FLAG_LANDMARK_BATTLE_FRONTIER, MAPSEC_BATTLE_FRONTIER},
+    {FLAG_VISITED_GATEWAY_ISLAND, MAPSEC_GATEWAY_ISLAND},
+    {FLAG_VISITED_ARID_ISLAND, MAPSEC_ARID_ISLAND},
+    {FLAG_VISITED_KAPOK_ISLAND, MAPSEC_KAPOK_ISLAND},
+    {FLAG_VISITED_IGNEOUS_ISLAND, MAPSEC_IGNEOUS_ISLAND},
+    {-1, MAPSEC_NONE}
 };
 
 static const struct OamData sFlyDestIcon_OamData =
@@ -1848,7 +1846,7 @@ static void LoadFlyDestIcons(void)
     sheet.tag = TAG_FLY_ICON;
     LoadSpriteSheet(&sheet);
     LoadSpritePalette(&sFlyTargetIconsSpritePalette);
-    CreateFlyDestIcons();
+    //CreateFlyDestIcons();			removed to get rid of fly icons
     TryCreateRedOutlineFlyDestIcons();
 }
 
@@ -1918,6 +1916,8 @@ static void TryCreateRedOutlineFlyDestIcons(void)
             GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
             x = (x + MAPCURSOR_X_MIN) * 8;
             y = (y + MAPCURSOR_Y_MIN) * 8;
+			x += (width - 1) * 4;
+			y += (height - 1) * 4;
             spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
             if (spriteId != MAX_SPRITES)
             {
