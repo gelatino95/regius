@@ -175,8 +175,8 @@
 #define OBJ_EVENT_GFX_BOOK                       169
 #define OBJ_EVENT_GFX_LITTURCH                   170
 #define OBJ_EVENT_GFX_REGIGIGAS                  171
-#define OBJ_EVENT_GFX_DIAMOND_CUSHION            172
-#define OBJ_EVENT_GFX_BALL_CUSHION               173
+#define OBJ_EVENT_GFX_DIVER_M                    172
+#define OBJ_EVENT_GFX_DIVER_F                    173
 #define OBJ_EVENT_GFX_GRASS_CUSHION              174
 #define OBJ_EVENT_GFX_FIRE_CUSHION               175
 #define OBJ_EVENT_GFX_WATER_CUSHION              176

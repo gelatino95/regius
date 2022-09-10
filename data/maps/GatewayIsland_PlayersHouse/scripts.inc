@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_PELIPPER, 50, ITEM_REGI_BALL
+	givemon SPECIES_DUNKETRA, 50, ITEM_REGI_BALL
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare
@@ -17,6 +17,7 @@ GatewayIsland_PlayersHouse_ItemBall_1:
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	removeobject 1
 	giveitem ITEM_HM02, 1
+	giveitem ITEM_HM08, 1
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_RECEIVED_POKENAV
 	setflag FLAG_SYS_B_DASH
@@ -41,7 +42,7 @@ GatewayIsland_PlayersHouse_ItemBall_Text_0:
 	.string "how much you've grown.$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_1:
-	.string "{PLAYER} received PELIPPER!$"
+	.string "{PLAYER} received DUNKETRA!$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_2:
 	.string "Would you like to give a\n"

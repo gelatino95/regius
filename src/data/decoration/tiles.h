@@ -583,11 +583,11 @@ const u16 DecorGfx_SPIN_CUSHION[] = {
 };
 
 const u16 DecorGfx_DIAMOND_CUSHION[] = {
-    OBJ_EVENT_GFX_DIAMOND_CUSHION
+    OBJ_EVENT_GFX_DIVER_M
 };
 
 const u16 DecorGfx_BALL_CUSHION[] = {
-    OBJ_EVENT_GFX_BALL_CUSHION
+    OBJ_EVENT_GFX_DIVER_F
 };
 
 const u16 DecorGfx_GRASS_CUSHION[] = {

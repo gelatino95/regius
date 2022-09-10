@@ -373,3 +373,5 @@ const u32 gObjectEventPic_Regigigas[] = INCBIN_U32("graphics/object_events/pics/
 const u16 gObjectEventPal_Regigigas[] = INCBIN_U16("graphics/object_events/palettes/regigigas.gbapal");
 const u32 gObjectEventPic_Litturch[] = INCBIN_U32("graphics/object_events/pics/pokemon/litturch.4bpp");
 const u32 gObjectEventPic_Book[] = INCBIN_U32("graphics/object_events/pics/misc/book.4bpp");
+const u32 gObjectEventPic_DiverM[] = INCBIN_U32("graphics/object_events/pics/people/diver_m.4bpp");
+const u32 gObjectEventPic_DiverF[] = INCBIN_U32("graphics/object_events/pics/people/diver_f.4bpp");

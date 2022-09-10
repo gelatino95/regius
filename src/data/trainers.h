@@ -153,18 +153,18 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_GruntPetalburgWoods},
     },
 
-    [TRAINER_MARCEL] =
+    [TRAINER_DAHLIA] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .trainerName = _("MARCEL"),
+        .trainerClass = TRAINER_CLASS_DIVER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_DIVER_F,
+        .trainerName = _("DAHLIA"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_Marcel),
-        .party = {.NoItemDefaultMoves = sParty_Marcel},
+        .partySize = ARRAY_COUNT(sParty_Dahlia),
+        .party = {.NoItemDefaultMoves = sParty_Dahlia},
     },
 
     [TRAINER_ALBERTO] =

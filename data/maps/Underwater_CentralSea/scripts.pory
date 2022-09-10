@@ -1,1 +1,6 @@
 mapscripts Underwater_CentralSea_MapScripts {}
+
+script Underwater_CentralSea_EventScript_Dahlia {
+	trainerbattle_single(TRAINER_DAHLIA, format("There are so many lovely corals around here!"), format("Oh no! My corals!"))
+	msgbox(format("Corals may seem peaceful, but they don't get along with each other well."), MSGBOX_AUTOCLOSE)
+}
