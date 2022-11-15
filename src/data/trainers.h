@@ -170,9 +170,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ALBERTO] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = TRAINER_CLASS_FISHERMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("ALBERTO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -184,9 +184,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ED] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("ED"),
         .items = {},
         .doubleBattle = FALSE,

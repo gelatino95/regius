@@ -4,3 +4,13 @@ script SoutheastSea_EventScript_ItemRareCandy {
 	finditem(ITEM_HM03)
 	end
 }
+
+script SoutheastSea_EventScript_Alberto {
+	trainerbattle_single(TRAINER_ALBERTO, format("Ho there, TRAINER! Care for a battle?"), format("Drat..."))
+	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+}
+
+script SoutheastSea_EventScript_Ed {
+	trainerbattle_single(TRAINER_ED, format("Hey! I see you!"), format("Drat..."))
+	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+}

@@ -125,12 +125,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Alberto[] = {
     {
     .iv = 0,
     .lvl = 30,
-    .species = SPECIES_PELIPPER,
+    .species = SPECIES_HELIMAW,
     },
     {
     .iv = 0,
     .lvl = 30,
-    .species = SPECIES_XATU,
+    .species = SPECIES_DUNKASMA,
     }
 };
 
@@ -138,12 +138,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ed[] = {
     {
     .iv = 0,
     .lvl = 30,
-    .species = SPECIES_ZANGOOSE,
+    .species = SPECIES_KELPENT,
     },
     {
     .iv = 0,
     .lvl = 30,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_COCONIT,
     }
 };
 

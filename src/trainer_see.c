@@ -386,6 +386,8 @@ static u8 CheckPathBetweenTrainerAndPlayer(struct ObjectEvent *trainerObj, u8 ap
     for (i = 0; i < approachDistance - 1; i++, MoveCoords(direction, &x, &y))
     {
         collision = GetCollisionFlagsAtCoords(trainerObj, x, y, direction);
+		if ((collision & 0x10) != 0) // returns true if there is a specific z-coordinate mismatch, i.e. land and water
+			return 1;
         if (collision != 0 && (collision & COLLISION_MASK))
             return 0;
     }
@@ -395,11 +397,11 @@ static u8 CheckPathBetweenTrainerAndPlayer(struct ObjectEvent *trainerObj, u8 ap
     trainerObj->rangeX = 0;
     trainerObj->rangeY = 0;
 
-    collision = GetCollisionAtCoords(trainerObj, x, y, direction);
+    collision = GetCollisionFlagsAtCoords(trainerObj, x, y, direction);
 
     trainerObj->rangeX = rangeX;
     trainerObj->rangeY = rangeY;
-    if (collision == COLLISION_OBJECT_EVENT)
+    if ((collision & 0x18) != 0)
         return approachDistance;
 
     return 0;
