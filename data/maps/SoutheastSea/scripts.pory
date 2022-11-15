@@ -5,9 +5,19 @@ script SoutheastSea_EventScript_ItemRareCandy {
 	end
 }
 
+script SoutheastSea_EventScript_ItemRepel {
+	finditem(ITEM_REPEL)
+	end
+}
+
 script SoutheastSea_EventScript_Alberto {
 	trainerbattle_single(TRAINER_ALBERTO, format("Ho there, TRAINER! Care for a battle?"), format("Drat..."))
-	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+	if (flag(FLAG_USED_REPEL)) {
+		msgbox(format("Sniff...\nUh, you smell like REPEL."), MSGBOX_AUTOCLOSE)
+		}
+	else {
+		msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+		}
 }
 
 script SoutheastSea_EventScript_Ed {

@@ -401,6 +401,8 @@ static u8 CheckPathBetweenTrainerAndPlayer(struct ObjectEvent *trainerObj, u8 ap
 
     trainerObj->rangeX = rangeX;
     trainerObj->rangeY = rangeY;
+	if ((collision & 0x10) != 0)
+		return 1;
     if ((collision & 0x18) != 0)
         return approachDistance;
 

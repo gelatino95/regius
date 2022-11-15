@@ -844,6 +844,7 @@ static void Task_StartUseRepel(u8 taskId)
     if (++data[8] > 7)
     {
         data[8] = 0;
+		FlagSet(FLAG_USED_REPEL);
         PlaySE(SE_REPEL);
         gTasks[taskId].func = Task_UseRepel;
     }

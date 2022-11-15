@@ -1223,7 +1223,7 @@
 #define FLAG_ITEM_CAVE_OF_AWAKENING_BLUE_FLUTE                      0x495
 #define FLAG_ITEM_CAVE_OF_SOBRIETY_YELLOW_FLUTE                     0x496
 #define FLAG_ITEM_CAVE_OF_CHASTITY_RED_FLUTE                        0x497
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
+#define FLAG_ITEM_SOUTHEASTSEA_REPEL                                0x498
 #define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
 #define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
@@ -1498,7 +1498,7 @@
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 
-#define FLAG_UNUSED_0x8E3                           (SYSTEM_FLAGS + 0x83) // Unused Flag
+#define FLAG_USED_REPEL                             (SYSTEM_FLAGS + 0x83) // new
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
