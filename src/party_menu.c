@@ -2536,9 +2536,16 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
     // Add field moves to action list
+	if (CanMonLearnTMHM(&mons[slotId], ITEM_HM01 - ITEM_TM01) > 0 && FlagGet(FLAG_RECEIVED_HM01))
+		AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 0 + MENU_FIELD_MOVES);
+	if (CanMonLearnTMHM(&mons[slotId], ITEM_HM02 - ITEM_TM01) > 0 && FlagGet(FLAG_RECEIVED_HM02))
+		AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
+	//if (CanMonLearnTMHM(&mons[slotId], ITEM_HM05 - ITEM_TM01) > 0 && FlagGet(FLAG_RECEIVED_HM05))
+	//	AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
+	
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
-        for (j = 0; sFieldMoves[j] != FIELD_MOVE_TERMINATOR; j++)
+        for (j = 3; sFieldMoves[j] != FIELD_MOVE_TERMINATOR; j++) //Checks for non-HM field moves known by the pokemon
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
             {

@@ -4,6 +4,9 @@ SoutheastSea_MapScripts::
 
 SoutheastSea_EventScript_ItemRareCandy::
 	finditem ITEM_HM03
+	setflag FLAG_RECEIVED_HM03
+	finditem ITEM_HM01
+	setflag FLAG_RECEIVED_HM01
 	end
 
 

@@ -3,3 +3,18 @@ mapscripts GatewayIsland_MapScripts {
 		setflag(FLAG_VISITED_GATEWAY_ISLAND)
 	}
 }
+
+script GatewayIsland_EventScript_Lass {
+	lock
+	faceplayer
+	checkpartytmhm(ITEM_HM07)
+	if (var(VAR_RESULT) == PARTY_SIZE) {
+		msgbox(format("Hmm... None of your POKéMON can learn WATERFALL."), MSGBOX_AUTOCLOSE)
+	}
+	else {
+		bufferpartymonnick(0, VAR_RESULT)
+		msgbox(format("Oh! Your {STR_VAR_1}\ncan learn WATERFALL!"), MSGBOX_AUTOCLOSE)
+	}
+	release
+	end
+}

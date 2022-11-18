@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_SEADRA, 50, ITEM_DRAGON_SCALE
+	givemon SPECIES_COCKATRIX, 50, ITEM_DRAGON_SCALE
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare
@@ -17,7 +17,11 @@ GatewayIsland_PlayersHouse_ItemBall_1:
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	removeobject 1
 	giveitem ITEM_HM02, 1
+	setflag FLAG_RECEIVED_HM02
+	giveitem ITEM_HM07, 1
+	setflag FLAG_RECEIVED_HM07
 	giveitem ITEM_HM08, 1
+	setflag FLAG_RECEIVED_HM08
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_RECEIVED_POKENAV
 	setflag FLAG_SYS_B_DASH
@@ -42,8 +46,8 @@ GatewayIsland_PlayersHouse_ItemBall_Text_0:
 	.string "how much you've grown.$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_1:
-	.string "{PLAYER} received SEADRA!$"
+	.string "{PLAYER} received COCKATRIX!$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_2:
 	.string "Would you like to give a\n"
-	.string "nickname to your SEADRA?$"
+	.string "nickname to your COCKATRIX?$"
