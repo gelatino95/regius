@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_COCKATRIX, 50, ITEM_DRAGON_SCALE
+	givemon SPECIES_DUNKETRA, 50, ITEM_DRAGON_SCALE
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare
@@ -46,8 +46,8 @@ GatewayIsland_PlayersHouse_ItemBall_Text_0:
 	.string "how much you've grown.$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_1:
-	.string "{PLAYER} received COCKATRIX!$"
+	.string "{PLAYER} received DUNKETRA!$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_2:
 	.string "Would you like to give a\n"
-	.string "nickname to your COCKATRIX?$"
+	.string "nickname to your DUNKETRA?$"

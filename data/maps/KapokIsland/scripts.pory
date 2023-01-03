@@ -1,5 +1,18 @@
 mapscripts KapokIsland_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag(FLAG_VISITED_KAPOK_ISLAND)
+		goto(KapokIsland_EventScript_TryMoveDayCareMan)
+		end
 	}
+}
+
+script KapokIsland_EventScript_TryMoveDayCareMan {
+	if (flag(FLAG_PENDING_DAYCARE_EGG)) {
+		applymovement(1, KapokIsland_Movement_MoveDayCareMan)
+	}
+	end
+}
+
+movement KapokIsland_Movement_MoveDayCareMan {
+	face_down
 }

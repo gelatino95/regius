@@ -1,1 +1,18 @@
 mapscripts KapokIsland_PokemonDayCare_MapScripts {}
+
+script KapokIsland_PokemonDayCare_EventScript_ItemBall {
+	givemon(SPECIES_TERRISLA, 50, ITEM_NONE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("{PLAYER} received TERRISLA!")
+	waitfanfare
+	givemon(SPECIES_DITTO, 50, ITEM_NONE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("{PLAYER} received DITTO!")
+	waitfanfare
+	givemon(SPECIES_MAGMAR, 50, ITEM_NONE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("{PLAYER} received MAGMAR!")
+	waitfanfare
+	release
+	end
+}

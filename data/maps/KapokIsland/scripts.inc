@@ -4,5 +4,20 @@ KapokIsland_MapScripts::
 
 KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setflag FLAG_VISITED_KAPOK_ISLAND
-	return
+	goto KapokIsland_EventScript_TryMoveDayCareMan
+	end
 
+
+KapokIsland_EventScript_TryMoveDayCareMan::
+	goto_if_set FLAG_PENDING_DAYCARE_EGG, KapokIsland_EventScript_TryMoveDayCareMan_2
+KapokIsland_EventScript_TryMoveDayCareMan_1:
+	end
+
+KapokIsland_EventScript_TryMoveDayCareMan_2:
+	applymovement 1, KapokIsland_Movement_MoveDayCareMan
+	goto KapokIsland_EventScript_TryMoveDayCareMan_1
+
+
+KapokIsland_Movement_MoveDayCareMan:
+	face_down
+	step_end
