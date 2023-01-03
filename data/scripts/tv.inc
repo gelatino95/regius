@@ -1,5 +1,6 @@
 EventScript_TV::
 	lockall
+	goto EventScript_TV_Regius
 	incrementgamestat GAME_STAT_WATCHED_TV
 	special ResetTVShowState
 	specialvar VAR_RESULT, CheckForPlayersHouseNews
@@ -90,3 +91,12 @@ EventScript_DoInSearchOfTrainers::
 	goto_if_eq EventScript_DoInSearchOfTrainers
 	goto EventScript_TurnOffTV
 	end
+
+EventScript_TV_Regius::
+	msgbox TV_Text_NoSignal, MSGBOX_DEFAULT
+	releaseall
+	end
+	
+TV_Text_NoSignal:
+	.string "There's no TV signal out here\n"
+	.string "on the islands…$"
