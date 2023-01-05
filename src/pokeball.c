@@ -15,9 +15,6 @@
 #include "data.h"
 #include "constants/songs.h"
 
-extern struct MusicPlayerInfo gMPlayInfo_BGM;
-
-// this file's functions
 static void Task_DoPokeballSendOutAnim(u8 taskId);
 static void SpriteCB_PlayerMonSendOut_1(struct Sprite *sprite);
 static void SpriteCB_PlayerMonSendOut_2(struct Sprite *sprite);
@@ -210,6 +207,7 @@ static const union AffineAnimCmd *const sAffineAnim_BallRotate[] =
 
 const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
 {
+    [BALL_POKE] =
     {
         .tileTag = GFX_TAG_POKEBALL,
         .paletteTag = GFX_TAG_POKEBALL,
@@ -219,6 +217,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_GREAT] =
     {
         .tileTag = GFX_TAG_GREATBALL,
         .paletteTag = GFX_TAG_GREATBALL,
@@ -228,6 +227,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_SAFARI] =
     {
         .tileTag = GFX_TAG_SAFARIBALL,
         .paletteTag = GFX_TAG_SAFARIBALL,
@@ -237,6 +237,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_ULTRA] =
     {
         .tileTag = GFX_TAG_ULTRABALL,
         .paletteTag = GFX_TAG_ULTRABALL,
@@ -246,6 +247,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_MASTER] =
     {
         .tileTag = GFX_TAG_MASTERBALL,
         .paletteTag = GFX_TAG_MASTERBALL,
@@ -255,6 +257,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_NET] =
     {
         .tileTag = GFX_TAG_NETBALL,
         .paletteTag = GFX_TAG_NETBALL,
@@ -264,6 +267,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_DIVE] =
     {
         .tileTag = GFX_TAG_DIVEBALL,
         .paletteTag = GFX_TAG_DIVEBALL,
@@ -273,6 +277,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_NEST] =
     {
         .tileTag = GFX_TAG_NESTBALL,
         .paletteTag = GFX_TAG_NESTBALL,
@@ -282,6 +287,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_REPEAT] =
     {
         .tileTag = GFX_TAG_REPEATBALL,
         .paletteTag = GFX_TAG_REPEATBALL,
@@ -291,6 +297,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_TIMER] =
     {
         .tileTag = GFX_TAG_TIMERBALL,
         .paletteTag = GFX_TAG_TIMERBALL,
@@ -300,6 +307,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_LUXURY] =
     {
         .tileTag = GFX_TAG_LUXURYBALL,
         .paletteTag = GFX_TAG_LUXURYBALL,
@@ -309,6 +317,7 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
+    [BALL_PREMIER] =
     {
         .tileTag = GFX_TAG_PREMIERBALL,
         .paletteTag = GFX_TAG_PREMIERBALL,
@@ -656,7 +665,7 @@ static void SpriteCB_BallThrow_Shake(struct Sprite *sprite)
 #define tCryTaskSpecies         data[0]
 #define tCryTaskPan             data[1]
 #define tCryTaskWantedCry       data[2]
-#define tCryTaskBattler            data[3]
+#define tCryTaskBattler         data[3]
 #define tCryTaskMonSpriteId     data[4]
 #define tCryTaskMonPtr1         data[5]
 #define tCryTaskMonPtr2         data[6]
@@ -680,10 +689,11 @@ static void Task_PlayCryWhenReleasedFromBall(u8 taskId)
             gTasks[taskId].tCryTaskState = wantedCry + 1;
         break;
     case 1:
+        // Play single cry
         if (ShouldPlayNormalMonCry(mon) == TRUE)
-            PlayCry3(species, pan, 0);
+            PlayCry_ByMode(species, pan, CRY_MODE_NORMAL);
         else
-            PlayCry3(species, pan, 11);
+            PlayCry_ByMode(species, pan, CRY_MODE_WEAK);
         gBattleSpritesDataPtr->healthBoxesData[battlerId].waitForCry = FALSE;
         DestroyTask(taskId);
         break;
@@ -695,10 +705,11 @@ static void Task_PlayCryWhenReleasedFromBall(u8 taskId)
     case 20:
         if (gTasks[taskId].tCryTaskFrames == 0)
         {
+            // Play first doubles cry
             if (ShouldPlayNormalMonCry(mon) == TRUE)
-                PlayCry4(species, pan, 1);
+                PlayCry_ReleaseDouble(species, pan, CRY_MODE_DOUBLES);
             else
-                PlayCry4(species, pan, 12);
+                PlayCry_ReleaseDouble(species, pan, CRY_MODE_WEAK_DOUBLES);
 
             gBattleSpritesDataPtr->healthBoxesData[battlerId].waitForCry = FALSE;
             DestroyTask(taskId);
@@ -734,10 +745,11 @@ static void Task_PlayCryWhenReleasedFromBall(u8 taskId)
             gTasks[taskId].tCryTaskFrames--;
             break;
         }
+        // Play second doubles cry
         if (ShouldPlayNormalMonCry(mon) == TRUE)
-            PlayCry4(species, pan, 0);
+            PlayCry_ReleaseDouble(species, pan, CRY_MODE_NORMAL);
         else
-            PlayCry4(species, pan, 11);
+            PlayCry_ReleaseDouble(species, pan, CRY_MODE_WEAK);
 
         gBattleSpritesDataPtr->healthBoxesData[battlerId].waitForCry = FALSE;
         DestroyTask(taskId);
@@ -786,7 +798,7 @@ static void SpriteCB_ReleaseMonFromBall(struct Sprite *sprite)
             }
             else
             {
-                m4aMPlayVolumeControl(&gMPlayInfo_BGM, 0xFFFF, 128);
+                m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 128);
             }
         }
 
@@ -813,9 +825,9 @@ static void SpriteCB_ReleaseMonFromBall(struct Sprite *sprite)
     StartSpriteAffineAnim(&gSprites[gBattlerSpriteIds[sprite->sBattler]], BATTLER_AFFINE_EMERGE);
 
     if (GetBattlerSide(sprite->sBattler) == B_SIDE_OPPONENT)
-        gSprites[gBattlerSpriteIds[sprite->sBattler]].callback = SpriteCb_OpponentMonFromBall;
+        gSprites[gBattlerSpriteIds[sprite->sBattler]].callback = SpriteCB_OpponentMonFromBall;
     else
-        gSprites[gBattlerSpriteIds[sprite->sBattler]].callback = SpriteCb_PlayerMonFromBall;
+        gSprites[gBattlerSpriteIds[sprite->sBattler]].callback = SpriteCB_PlayerMonFromBall;
 
     AnimateSprite(&gSprites[gBattlerSpriteIds[sprite->sBattler]]);
     gSprites[gBattlerSpriteIds[sprite->sBattler]].data[1] = 0x1000;
@@ -909,8 +921,8 @@ static void SpriteCB_BallThrow_CaptureMon(struct Sprite *sprite)
 static void SpriteCB_PlayerMonSendOut_1(struct Sprite *sprite)
 {
     sprite->data[0] = 25;
-    sprite->data[2] = GetBattlerSpriteCoord(sprite->sBattler, 2);
-    sprite->data[4] = GetBattlerSpriteCoord(sprite->sBattler, 3) + 24;
+    sprite->data[2] = GetBattlerSpriteCoord(sprite->sBattler, BATTLER_COORD_X_2);
+    sprite->data[4] = GetBattlerSpriteCoord(sprite->sBattler, BATTLER_COORD_Y_PIC_OFFSET) + 24;
     sprite->data[5] = -30;
     sprite->oam.affineParam = sprite->sBattler;
     InitAnimArcTranslation(sprite);
@@ -1150,7 +1162,7 @@ static void SpriteCB_TradePokeball(struct Sprite *sprite)
         sprite->callback = SpriteCB_TradePokeballSendOff;
 #ifdef BUGFIX
         // FIX: If this is used on a sprite that has previously had an affine animation, it will not
-        // play the shrink anim properly due to being paused. Works together with the fix to `sub_817F77C`.
+        // play the shrink anim properly due to being paused. Works together with the fix to ResetSpriteAfterAnim.
         gSprites[monSpriteId].affineAnimPaused = FALSE;
 #endif // BUGFIX
         StartSpriteAffineAnim(&gSprites[monSpriteId], BATTLER_AFFINE_RETURN);

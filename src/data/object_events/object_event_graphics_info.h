@@ -252,3 +252,4 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Litturch = {0xFFFF
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverM = {0xFFFF, OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 0, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_DiverM, gDummySpriteAffineAnimTable};
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverF = {0xFFFF, OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 0, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_DiverF, gDummySpriteAffineAnimTable};
 
+

@@ -3,6 +3,7 @@
 *.i
 *.elf
 *.gba
+!data/*.gba
 *.sgm
 *.sa1
 *.ss[0-9]
@@ -31,7 +32,19 @@ build/
 .idea/
 porymap.project.cfg
 .vscode/
+*.ss1
+*.ss2
+*.ss3
+*.ss4
+*.ss5
+*.ss6
+*.ss7
+*.ss8
+*.ss9
 *.a
 .fuse_hidden*
 *.sna
 tools/poryscript
+*.diff
+*.sym
+*.js

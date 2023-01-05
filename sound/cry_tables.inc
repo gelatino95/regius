@@ -880,3 +880,4 @@ gCryTable2::
 	cry2 Cry_Limpacle 
 	cry2 Cry_Terrisla 
 	cry2 Cry_Regigigas 
+
