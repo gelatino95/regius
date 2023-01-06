@@ -93,3 +93,4 @@ EventScript_TV_Regius::
 TV_Text_NoSignal:
 	.string "There's no TV signal out here\n"
 	.string "on the islands…$"
+	

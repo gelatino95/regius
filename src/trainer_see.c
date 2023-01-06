@@ -387,7 +387,7 @@ static u8 CheckPathBetweenTrainerAndPlayer(struct ObjectEvent *trainerObj, u8 ap
         collision = GetCollisionFlagsAtCoords(trainerObj, x, y, direction);
 		if ((collision & 0x10) != 0) // returns true if there is a specific z-coordinate mismatch, i.e. land and water
 			return 1;
-        if (collision != 0 && (collision & COLLISION_MASK))
+        if (collision != 0 && (collision & MAPGRID_COLLISION_MASK))
             return 0;
     }
 

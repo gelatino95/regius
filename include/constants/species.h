@@ -498,6 +498,8 @@
 #define SPECIES_UNOWN_EMARK (SPECIES_UNOWN_B + 25)
 #define SPECIES_UNOWN_QMARK (SPECIES_UNOWN_B + 26)
 
+/* The following are now contained in include/constants/pokedex.h
+
 // National Dex Index Defines
 
 #define NATIONAL_DEX_NONE           0
@@ -1440,5 +1442,7 @@
 #define HOENN_DEX_OLD_UNOWN_X   (HOENN_DEX_OLD_UNOWN_B + 22)
 #define HOENN_DEX_OLD_UNOWN_Y   (HOENN_DEX_OLD_UNOWN_B + 23)
 #define HOENN_DEX_OLD_UNOWN_Z   (HOENN_DEX_OLD_UNOWN_B + 24)
+
+*/
 
 #endif  // GUARD_CONSTANTS_SPECIES_H
