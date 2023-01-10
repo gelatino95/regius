@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_CRAWDAUNT, 50, ITEM_DRAGON_SCALE
+	givemon SPECIES_CRAWDAUNT, 50, ITEM_SITRUS_BERRY
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare

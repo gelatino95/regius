@@ -9,9 +9,9 @@ script KapokIsland_PokemonDayCare_EventScript_ItemBall {
     playfanfare(MUS_OBTAIN_ITEM)
     msgbox("{PLAYER} received DITTO!")
 	waitfanfare
-	givemon(SPECIES_MAGMAR, 50, ITEM_NONE)
+	givemon(SPECIES_SHUCKLE, 50, ITEM_PECHA_BERRY)
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} received MAGMAR!")
+    msgbox("{PLAYER} received SHUCKLE!")
 	waitfanfare
 	release
 	end

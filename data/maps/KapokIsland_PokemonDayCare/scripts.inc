@@ -11,7 +11,7 @@ KapokIsland_PokemonDayCare_EventScript_ItemBall::
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_1
 	waitfanfare
-	givemon SPECIES_MAGMAR, 50, ITEM_NONE
+	givemon SPECIES_SHUCKLE, 50, ITEM_PECHA_BERRY
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_2
 	waitfanfare
@@ -26,4 +26,4 @@ KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_1:
 	.string "{PLAYER} received DITTO!$"
 
 KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_2:
-	.string "{PLAYER} received MAGMAR!$"
+	.string "{PLAYER} received SHUCKLE!$"
