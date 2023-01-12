@@ -5,7 +5,7 @@ GatewayIsland_PlayersHouse_MapScripts::
 GatewayIsland_PlayersHouse_ItemBall::
 	lock
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_0
-	givemon SPECIES_CRAWDAUNT, 50, ITEM_SITRUS_BERRY
+	givemon SPECIES_PELIPPER, 50, ITEM_SITRUS_BERRY
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox GatewayIsland_PlayersHouse_ItemBall_Text_1
 	waitfanfare
@@ -46,8 +46,8 @@ GatewayIsland_PlayersHouse_ItemBall_Text_0:
 	.string "how much you've grown.$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_1:
-	.string "{PLAYER} received CRAWDAUNT!$"
+	.string "{PLAYER} received PELIPPER!$"
 
 GatewayIsland_PlayersHouse_ItemBall_Text_2:
 	.string "Would you like to give a\n"
-	.string "nickname to your CRAWDAUNT?$"
+	.string "nickname to your PELIPPER?$"

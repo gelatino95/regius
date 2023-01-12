@@ -1,5 +1,6 @@
 #include "global.h"
 #include "decompress.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "field_camera.h"
 #include "field_control_avatar.h"
@@ -27,6 +28,7 @@
 #include "trig.h"
 #include "util.h"
 #include "constants/field_effects.h"
+#include "constants/field_specials.h"
 #include "constants/event_object_movement.h"
 #include "constants/metatile_behaviors.h"
 #include "constants/rgb.h"
@@ -205,6 +207,8 @@ static void FlyOutFieldEffect_JumpOnBird(struct Task *);
 static void FlyOutFieldEffect_FlyOffWithBird(struct Task *);
 static void FlyOutFieldEffect_WaitFlyOff(struct Task *);
 static void FlyOutFieldEffect_End(struct Task *);
+
+static void FlyingTaxiFieldEffect_FlyNoises(struct Task *);
 
 static u8 CreateFlyBirdSprite(void);
 static u8 GetFlyBirdAnimCompleted(u8);
@@ -2572,10 +2576,19 @@ bool8 FldEff_FieldMoveShowMonInit(void)
 {
     struct Pokemon *pokemon;
     bool32 noDucking = gFieldEffectArguments[0] & SHOW_MON_CRY_NO_DUCKING;
-    pokemon = &gPlayerParty[(u8)gFieldEffectArguments[0]];
-    gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
-    gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_OT_ID);
-    gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
+	if (VarGet(VAR_0x800A) == LAST_TALKED_TO_FLYING_TAXI)
+	{
+		gFieldEffectArguments[0] = SPECIES_COCKATRIX;
+		gFieldEffectArguments[1] = 0;
+		gFieldEffectArguments[2] = 12;
+	}
+	else
+	{
+		pokemon = &gPlayerParty[(u8)gFieldEffectArguments[0]];
+		gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
+		gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_OT_ID);
+		gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
+	}
     gFieldEffectArguments[0] |= noDucking;
     FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON);
     FieldEffectActiveListRemove(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
@@ -3166,9 +3179,44 @@ void (*const sFlyOutFieldEffectFuncs[])(struct Task *) = {
     FlyOutFieldEffect_End,
 };
 
+/*
+void (*const sFlyingTaxiFieldEffectFuncs[])(struct Task *) = {
+    FlyingTaxiFieldEffect_FlyNoises,
+    FlyOutFieldEffect_End,
+};
+*/
+
+void (*const sFlyingTaxiFieldEffectFuncs[])(struct Task *) = {
+    FlyOutFieldEffect_FieldMovePose,
+    FlyOutFieldEffect_ShowMon,
+    FlyOutFieldEffect_BirdLeaveBall,
+    FlyOutFieldEffect_WaitBirdLeave,
+    FlyOutFieldEffect_BirdSwoopDown,
+    FlyOutFieldEffect_JumpOnBird,
+    FlyOutFieldEffect_FlyOffWithBird,
+    FlyOutFieldEffect_WaitFlyOff,
+    FlyOutFieldEffect_End,
+};
+
+static void FlyingTaxiFieldEffect_FlyNoises(struct Task *task)
+{
+    struct ObjectEvent *objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    if ((task->tTimer == 0 || (--task->tTimer) == 0) && ObjectEventClearHeldMovementIfFinished(objectEvent))
+    {
+        task->tState++;
+        task->tTimer = 2;
+        PlaySE(SE_M_FLY);
+        StartFlyBirdSwoopDown(task->tBirdSpriteId);
+    }
+}
+
+
 static void Task_FlyOut(u8 taskId)
 {
-    sFlyOutFieldEffectFuncs[gTasks[taskId].tState](&gTasks[taskId]);
+    if (VarGet(VAR_0x800A) == LAST_TALKED_TO_FLYING_TAXI)
+        sFlyingTaxiFieldEffectFuncs[gTasks[taskId].tState](&gTasks[taskId]);
+    else
+        sFlyOutFieldEffectFuncs[gTasks[taskId].tState](&gTasks[taskId]);
 }
 
 static void FlyOutFieldEffect_FieldMovePose(struct Task *task)
@@ -3456,7 +3504,8 @@ void (*const sFlyInFieldEffectFuncs[])(struct Task *) = {
 
 static void Task_FlyIn(u8 taskId)
 {
-    sFlyInFieldEffectFuncs[gTasks[taskId].tState](&gTasks[taskId]);
+		sFlyInFieldEffectFuncs[gTasks[taskId].tState](&gTasks[taskId]);
+		VarSet(VAR_0x800A, 0);
 }
 
 static void FlyInFieldEffect_BirdSwoopDown(struct Task *task)

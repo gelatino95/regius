@@ -24,6 +24,22 @@ GatewayIsland_EventScript_Lass_2:
 	goto GatewayIsland_EventScript_Lass_1
 
 
+GatewayIsland_EventScript_FlyingTaxi::
+	lock
+	faceplayer
+	msgbox GatewayIsland_EventScript_FlyingTaxi_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 1
+	goto_if_eq GatewayIsland_EventScript_FlyingTaxi_2
+GatewayIsland_EventScript_FlyingTaxi_1:
+	release
+	end
+
+GatewayIsland_EventScript_FlyingTaxi_2:
+	setvar VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI
+	special FieldLoadFlyMap
+	goto GatewayIsland_EventScript_FlyingTaxi_1
+
+
 GatewayIsland_EventScript_Lass_Text_0:
 	.string "Hmm... None of your POKéMON can learn\n"
 	.string "WATERFALL.$"
@@ -31,3 +47,6 @@ GatewayIsland_EventScript_Lass_Text_0:
 GatewayIsland_EventScript_Lass_Text_1:
 	.string "Oh! Your {STR_VAR_1}\n"
 	.string "can learn WATERFALL!$"
+
+GatewayIsland_EventScript_FlyingTaxi_Text_0:
+	.string "Want a lift?$"

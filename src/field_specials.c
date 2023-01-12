@@ -966,6 +966,16 @@ void FieldShowRegionMap(void)
     SetMainCallback2(CB2_FieldShowRegionMap);
 }
 
+static void CB2_FieldLoadFlyMap(void)
+{
+    FieldInitRegionMap(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+}
+
+void FieldLoadFlyMap(void)
+{
+    SetMainCallback2(CB2_OpenFlyMap);
+}
+
 void DoPCTurnOnEffect(void)
 {
     if (FuncIsActiveTask(Task_PCTurnOnEffect) != TRUE)

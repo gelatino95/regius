@@ -1283,7 +1283,7 @@ bool8 PartyHasMonWithSurf(void)
         {
             if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
-            if (CanMonLearnTMHM(&gPlayerParty[i], ITEM_HM08 - ITEM_TM01)) //Modified to check if a party pokemon can learn surf
+            if (CanMonLearnTMHM(&gPlayerParty[i], ITEM_HM03 - ITEM_TM01)) //Modified to check if a party pokemon can learn surf
                 return TRUE;
         }
     }
