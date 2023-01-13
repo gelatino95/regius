@@ -995,7 +995,8 @@ static void Task_EvolutionScene(u8 taskId)
                 {
                     // Selected move to forget
                     u16 move = GetMonData(mon, var + MON_DATA_MOVE1);
-                    if (IsHMMove2(move))
+                    //if (IsHMMove2(move))         removed check so HM moves can be replaced
+					if (FALSE)
                     {
                         // Can't forget HMs
                         BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_HMMOVESCANTBEFORGOTTEN - BATTLESTRINGS_ID_ADDER]);
@@ -1379,7 +1380,8 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 {
                     // Selected move to forget
                     u16 move = GetMonData(mon, var + MON_DATA_MOVE1);
-                    if (IsHMMove2(move))
+                    //if (IsHMMove2(move))       removed check so HM moves can be replaced
+					if (FALSE)
                     {
                         // Can't forget HMs
                         BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_HMMOVESCANTBEFORGOTTEN - BATTLESTRINGS_ID_ADDER]);

@@ -5424,7 +5424,8 @@ static void Cmd_yesnoboxlearnmove(void)
             else
             {
                 u16 moveId = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MOVE1 + movePosition);
-                if (IsHMMove2(moveId))
+                //if (IsHMMove2(moveId))    removed check so HM moves can be replaced
+				if (FALSE)
                 {
                     PrepareStringBattle(STRINGID_HMMOVESCANTBEFORGOTTEN, gActiveBattler);
                     gBattleScripting.learnMoveState = 6;
