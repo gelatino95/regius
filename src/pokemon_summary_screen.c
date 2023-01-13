@@ -2277,7 +2277,8 @@ static void Task_HandleReplaceMoveInput(u8 taskId)
             }
             else if (JOY_NEW(A_BUTTON))
             {
-                if (CanReplaceMove() == TRUE)
+                //if (CanReplaceMove() == TRUE)      removed check so HM moves can be replaced
+				if (TRUE)
                 {
                     StopPokemonAnimations();
                     PlaySE(SE_SELECT);
