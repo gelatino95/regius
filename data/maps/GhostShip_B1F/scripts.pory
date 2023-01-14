@@ -12,6 +12,12 @@ mapscripts GhostShip_B1F_MapScripts {
 		else {
 			setobjectxyperm(1, 0, 0)
 		}
+		//lock door if dusclops battle is still active:
+		if (var(VAR_GHOST_SHIP_STATE) == 1)
+		{
+			setmetatile(17, 9, METATILE_Pirate_Ship_SouthExitLeftNoArrow, FALSE)
+			setmetatile(18, 9, METATILE_Pirate_Ship_SouthExitRightNoArrow, FALSE)
+		}
 		setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
 		removeobject(3)
 	}
@@ -27,6 +33,8 @@ script GhostShip_EventScript_ItemHM08 {
 	finditem(ITEM_HM08)
 	setflag(FLAG_RECEIVED_HM08)
 	setvar(VAR_GHOST_SHIP_STATE, 1)
+	setmetatile(17, 9, METATILE_Pirate_Ship_SouthExitLeftNoArrow, FALSE)
+	setmetatile(18, 9, METATILE_Pirate_Ship_SouthExitRightNoArrow, FALSE)
 	end
 }
 
@@ -50,7 +58,8 @@ script GhostShip_EventScript_DusclopsEncounter {
 	waitmovement(0)
 	playmoncry(SPECIES_DUSCLOPS, 0)
 	msgbox(format("....off........\nmy.....ship...."))
-	setwildbattle(SPECIES_DUSCLOPS, 50, ITEM_NONE)
+	//setwildbattle(SPECIES_DUSCLOPS, 50, ITEM_NONE)
+	special(SetDusclopsBattle)
 	setflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	dowildbattle
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
@@ -64,6 +73,8 @@ script GhostShip_EventScript_DusclopsEncounter {
 		playse(SE_UNLOCK)
 		delay(40)
 		msgbox(format("The door was unlocked."))
+		setmetatile(17, 9, METATILE_Pirate_Ship_SouthExitLeft, FALSE)
+		setmetatile(18, 9, METATILE_Pirate_Ship_SouthExitRight, FALSE)
 		setvar(VAR_GHOST_SHIP_STATE, 2)
 	}
 	setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)

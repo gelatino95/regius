@@ -16,6 +16,9 @@ GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 	setobjectxyperm 1, 0, 0
 GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	compare VAR_GHOST_SHIP_STATE, 1
+	goto_if_eq GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_14
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_13:
 	setflag FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS
 	removeobject 3
 	return
@@ -38,6 +41,11 @@ GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 	goto_if_eq GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 	goto GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_14:
+	setmetatile 17, 9, METATILE_Pirate_Ship_SouthExitLeftNoArrow, FALSE
+	setmetatile 18, 9, METATILE_Pirate_Ship_SouthExitRightNoArrow, FALSE
+	goto GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_13
+
 
 GhostShip_B1F_HideDusclopsTrigger::
 	setflag FLAG_GHOST_SHIP_HIDE_DUSCLOPS
@@ -49,6 +57,8 @@ GhostShip_EventScript_ItemHM08::
 	finditem ITEM_HM08
 	setflag FLAG_RECEIVED_HM08
 	setvar VAR_GHOST_SHIP_STATE, 1
+	setmetatile 17, 9, METATILE_Pirate_Ship_SouthExitLeftNoArrow, FALSE
+	setmetatile 18, 9, METATILE_Pirate_Ship_SouthExitRightNoArrow, FALSE
 	end
 
 
@@ -72,7 +82,7 @@ GhostShip_EventScript_DusclopsEncounter::
 	waitmovement 0
 	playmoncry SPECIES_DUSCLOPS, 0
 	msgbox GhostShip_EventScript_DusclopsEncounter_Text_2
-	setwildbattle SPECIES_DUSCLOPS, 50, ITEM_NONE
+	special SetDusclopsBattle
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -98,6 +108,8 @@ GhostShip_EventScript_DusclopsEncounter_2:
 	playse SE_UNLOCK
 	delay 40
 	msgbox GhostShip_EventScript_DusclopsEncounter_Text_3
+	setmetatile 17, 9, METATILE_Pirate_Ship_SouthExitLeft, FALSE
+	setmetatile 18, 9, METATILE_Pirate_Ship_SouthExitRight, FALSE
 	setvar VAR_GHOST_SHIP_STATE, 2
 	goto GhostShip_EventScript_DusclopsEncounter_1
 
