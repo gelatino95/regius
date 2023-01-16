@@ -416,6 +416,7 @@
 #define METATILE_PetalburgGym_SlidingDoor_Frame2  0x21A
 #define METATILE_PetalburgGym_SlidingDoor_Frame3  0x21B
 #define METATILE_PetalburgGym_SlidingDoor_Frame4  0x21C
+#define METATILE_PetalburgGym_Door                0x224
 
 // gTileset_Petalburg
 #define METATILE_Petalburg_Door_BirchsLab   0x249

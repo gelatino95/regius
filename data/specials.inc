@@ -537,3 +537,4 @@ gSpecials::
 	def_special TrySetBattleTowerLinkType
 	def_special FieldLoadFlyMap
 	def_special SetDusclopsBattle
+	def_special BufferUnitSystemText

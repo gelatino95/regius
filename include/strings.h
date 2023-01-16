@@ -182,7 +182,7 @@ extern const u8 gText_EmptyString2[];
 extern const u8 gText_Confirm3[];
 extern const u8 gText_Cancel4[];
 extern const u8 gText_IsThisTheCorrectTime[];
-extern const u8 gText_PkmnFainted3[];
+extern const u8 gText_PkmnFainted_FldPsn[];
 extern const u8 gText_Coins[];
 extern const u8 gText_Silver[];
 extern const u8 gText_Gold[];
@@ -303,6 +303,8 @@ extern const u8 gText_BattleSceneOn[];
 extern const u8 gText_BattleSceneOff[];
 extern const u8 gText_BattleStyleShift[];
 extern const u8 gText_BattleStyleSet[];
+extern const u8 gText_UnitSystemMetric[];   //tx_optionsPlus
+extern const u8 gText_UnitSystemImperial[]; //tx_optionsPlus
 extern const u8 gText_SoundMono[];
 extern const u8 gText_SoundStereo[];
 extern const u8 gText_FrameTypeNumber[];
@@ -317,7 +319,11 @@ extern const u8 gText_BattleScene[];
 extern const u8 gText_BattleStyle[];
 extern const u8 gText_Sound[];
 extern const u8 gText_Frame[];
-extern const u8 gText_OptionMenuCancel[];
+extern const u8 gText_Font[];               //tx_optionsPlus
+extern const u8 gText_OptionFontFireRed[];  //tx_optionsPlus
+extern const u8 gText_OptionFontEmerald[];  //tx_optionsPlus
+extern const u8 gText_OptionMatchCalls[];   //tx_optionsPlus
+extern const u8 gText_OptionMenuSave[];
 extern const u8 gText_ButtonMode[];
 
 extern const u8 gText_MaleSymbol[];
@@ -417,6 +423,7 @@ extern const u8 gText_BerryTag[];
 extern const u8 gText_NumberVar1Var2[];
 extern const u8 gText_SizeSlash[];
 extern const u8 gText_Var1DotVar2[];
+extern const u8 gText_Var1DotVar2_Metric[];
 extern const u8 gText_ThreeMarks[];
 extern const u8 gText_FirmSlash[];
 
@@ -2156,9 +2163,7 @@ extern const u8 gText_Switch2[];
 extern const u8 gText_Item[];
 extern const u8 gText_NotPkmnOtherTrainerWants[];
 extern const u8 gText_ThatIsntAnEgg[];
-extern const u8 gText_PkmnCantBeTradedNow[];
 extern const u8 gText_OtherTrainersPkmnCantBeTraded[];
-extern const u8 gText_EggCantBeTradedNow[];
 extern const u8 gText_OtherTrainerCantAcceptPkmn[];
 extern const u8 gText_CantTradeWithTrainer[];
 
@@ -3024,5 +3029,12 @@ extern const u8 gText_Summary2[];
 extern const u8 gText_PkmnForSwap[];
 extern const u8 gText_SamePkmnInPartyAlready[];
 extern const u8 gText_Cancel3[];
+
+// Naming Screen
+extern const u8 gText_MoveOkBack[];
+extern const u8 gText_YourName[];
+extern const u8 gText_BoxName[];
+extern const u8 gText_PkmnsNickname[];
+extern const u8 gText_TellHimTheWords[];
 
 #endif // GUARD_STRINGS_H

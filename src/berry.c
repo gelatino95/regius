@@ -91,6 +91,8 @@ static const u8 sBerryDescriptionPart1_Pamtre[] = _("Drifts on the sea from some
 static const u8 sBerryDescriptionPart2_Pamtre[] = _("It is thought to grow elsewhere.");
 static const u8 sBerryDescriptionPart1_Watmel[] = _("A huge BERRY, with some over 20");
 static const u8 sBerryDescriptionPart2_Watmel[] = _("inches discovered. Exceedingly sweet.");
+const u8 sBerryDescriptionPart1_WatmelMetric[] = _("A huge Berry, with some over half a");
+const u8 sBerryDescriptionPart2_WatmelMetric[] = _("meter discovered. Exceedingly sweet.");
 static const u8 sBerryDescriptionPart1_Durin[] = _("Bitter to even look at. It is so");
 static const u8 sBerryDescriptionPart2_Durin[] = _("bitter, no one has ever eaten it as is.");
 static const u8 sBerryDescriptionPart1_Belue[] = _("It is glossy and looks delicious, but");
@@ -946,7 +948,7 @@ void ClearEnigmaBerries(void)
 void SetEnigmaBerry(u8 *src)
 {
     u32 i;
-    u8 *dest = (u8*)&gSaveBlock1Ptr->enigmaBerry;
+    u8 *dest = (u8 *)&gSaveBlock1Ptr->enigmaBerry;
 
     for (i = 0; i < sizeof(gSaveBlock1Ptr->enigmaBerry); i++)
         dest[i] = src[i];
@@ -958,7 +960,7 @@ static u32 GetEnigmaBerryChecksum(struct EnigmaBerry *enigmaBerry)
     u32 checksum;
     u8 *dest;
 
-    dest = (u8*)enigmaBerry;
+    dest = (u8 *)enigmaBerry;
     checksum = 0;
     for (i = 0; i < sizeof(gSaveBlock1Ptr->enigmaBerry) - sizeof(gSaveBlock1Ptr->enigmaBerry.checksum); i++)
         checksum += dest[i];
@@ -980,7 +982,7 @@ bool32 IsEnigmaBerryValid(void)
 const struct Berry *GetBerryInfo(u8 berry)
 {
     if (berry == ITEM_TO_BERRY(ITEM_ENIGMA_BERRY) && IsEnigmaBerryValid())
-        return (struct Berry*)(&gSaveBlock1Ptr->enigmaBerry.berry);
+        return (struct Berry *)(&gSaveBlock1Ptr->enigmaBerry.berry);
     else
     {
         if (berry == BERRY_NONE || berry > ITEM_TO_BERRY(LAST_BERRY_INDEX))
@@ -1172,7 +1174,7 @@ void GetBerryNameByBerryType(u8 berry, u8 *string)
     string[BERRY_NAME_LENGTH] = EOS;
 }
 
-void GetBerryCountStringByBerryType(u8 berry, u8* dest, u32 berryCount)
+void GetBerryCountStringByBerryType(u8 berry, u8 *dest, u32 berryCount)
 {
     GetBerryCountString(dest, GetBerryInfo(berry)->name, berryCount);
 }
@@ -1300,7 +1302,7 @@ void ObjectEventInteractionPlantBerryTree(void)
 {
     u8 berry = ItemIdToBerryType(gSpecialVar_ItemId);
 
-    PlantBerryTree(GetObjectEventBerryTreeId(gSelectedObjectEvent), berry, 1, TRUE);
+    PlantBerryTree(GetObjectEventBerryTreeId(gSelectedObjectEvent), berry, BERRY_STAGE_PLANTED, TRUE);
     ObjectEventInteractionGetBerryTreeData();
 }
 

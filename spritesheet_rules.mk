@@ -636,7 +636,7 @@ $(FLDEFFGFXDIR)/tall_grass.4bpp: %.4bpp: %.png
 $(FLDEFFGFXDIR)/tree_disguise.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(FLDEFFGFXDIR)/unknown_16.4bpp: %.4bpp: %.png
+$(FLDEFFGFXDIR)/jump_long_grass.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(FLDEFFGFXDIR)/unknown_17.4bpp: %.4bpp: %.png
@@ -686,4 +686,6 @@ $(OBJEVENTGFXDIR)/people/diver_m.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 	
 $(OBJEVENTGFXDIR)/people/diver_f.4bpp: %.4bpp: %.png
+
+graphics/door_anims/battle_tower_multi_corridor.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
