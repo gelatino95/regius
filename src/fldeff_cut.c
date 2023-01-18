@@ -360,6 +360,7 @@ static void SetCutGrassMetatile(s16 x, s16 y)
     case METATILE_Fortree_LongGrass_Root:
     case METATILE_General_LongGrass:
     case METATILE_General_TallGrass:
+	case METATILE_Kapok_Island_LongGrass:
         MapGridSetMetatileIdAt(x, y, METATILE_General_Grass);
         break;
     case METATILE_General_TallGrass_TreeLeft:
@@ -386,6 +387,7 @@ static void SetCutGrassMetatile(s16 x, s16 y)
         MapGridSetMetatileIdAt(x, y, METATILE_Fallarbor_AshField);
         break;
     case METATILE_General_TallGrass_TreeUp:
+    case METATILE_Kapok_Island_LongGrass_TreeUp:
         MapGridSetMetatileIdAt(x, y, METATILE_General_Grass_TreeUp);
         break;
     }
@@ -424,7 +426,8 @@ static void SetCutGrassMetatiles(s16 x, s16 y)
     for (i = 0; i < sCutSquareSide; i++)
     {
         s16 currentX = x + i;
-        if (MapGridGetMetatileIdAt(currentX, y) == METATILE_General_LongGrass)
+        if (MapGridGetMetatileIdAt(currentX, y) == METATILE_General_LongGrass
+			|| MapGridGetMetatileIdAt(currentX, y) == METATILE_Kapok_Island_LongGrass)
         {
             switch (GetLongGrassCaseAt(currentX, y + 1))
             {
@@ -452,6 +455,10 @@ static void SetCutGrassMetatiles(s16 x, s16 y)
                 MapGridSetMetatileIdAt(currentX, lowerY + 1, METATILE_Fortree_SecretBase_LongGrass_TopMid);
             if (MapGridGetMetatileIdAt(currentX, lowerY + 1) == METATILE_Fortree_SecretBase_LongGrass_BottomRight)
                 MapGridSetMetatileIdAt(currentX, lowerY + 1, METATILE_Fortree_SecretBase_LongGrass_TopRight);
+            if (MapGridGetMetatileIdAt(currentX, lowerY + 1) == METATILE_Kapok_Island_LongGrass)
+                MapGridSetMetatileIdAt(currentX, lowerY + 1, METATILE_General_LongGrass);
+            if (MapGridGetMetatileIdAt(currentX, lowerY + 1) == METATILE_Kapok_Island_LongGrass_TreeUp)
+                MapGridSetMetatileIdAt(currentX, lowerY + 1, METATILE_General_Grass_TreeUp);
         }
     }
 
@@ -496,10 +503,15 @@ static void HandleLongGrassOnHyper(u8 caseId, s16 x, s16 y)
             MapGridSetMetatileIdAt(newX, y + 3, METATILE_Fortree_SecretBase_LongGrass_TopMid);
         if (MapGridGetMetatileIdAt(newX, y + 3) == METATILE_Fortree_SecretBase_LongGrass_BottomRight)
             MapGridSetMetatileIdAt(newX, y + 3, METATILE_Fortree_SecretBase_LongGrass_TopRight);
+		if (MapGridGetMetatileIdAt(newX, y + 3) == METATILE_Kapok_Island_LongGrass)
+            MapGridSetMetatileIdAt(newX, y + 3, METATILE_General_LongGrass);
+		if (MapGridGetMetatileIdAt(newX, y + 3) == METATILE_Kapok_Island_LongGrass_TreeUp)
+            MapGridSetMetatileIdAt(newX, y + 3, METATILE_General_Grass_TreeUp);
     }
     if (arr[1] == TRUE)
     {
-        if (MapGridGetMetatileIdAt(newX, y + 2) == METATILE_General_LongGrass)
+        if (MapGridGetMetatileIdAt(newX, y + 2) == METATILE_General_LongGrass
+			|| MapGridGetMetatileIdAt(newX, y + 2) == METATILE_Kapok_Island_LongGrass)
         {
             switch (GetLongGrassCaseAt(newX, y + 3))
             {
@@ -526,6 +538,10 @@ static void HandleLongGrassOnHyper(u8 caseId, s16 x, s16 y)
             MapGridSetMetatileIdAt(newX, y + 4, METATILE_Fortree_SecretBase_LongGrass_TopMid);
         if (MapGridGetMetatileIdAt(newX, y + 4) == METATILE_Fortree_SecretBase_LongGrass_BottomRight)
             MapGridSetMetatileIdAt(newX, y + 4, METATILE_Fortree_SecretBase_LongGrass_TopRight);
+        if (MapGridGetMetatileIdAt(newX, y + 4) == METATILE_Kapok_Island_LongGrass)
+            MapGridSetMetatileIdAt(newX, y + 4, METATILE_General_LongGrass);
+        if (MapGridGetMetatileIdAt(newX, y + 4) == METATILE_Kapok_Island_LongGrass_TreeUp)
+            MapGridSetMetatileIdAt(newX, y + 4, METATILE_General_Grass_TreeUp);
     }
     if (arr[2] == TRUE)
     {

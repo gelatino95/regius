@@ -272,6 +272,11 @@
 #define METATILE_KapokIsland_DewfordDoor    0x27A
 #define METATILE_KapokIsland_SlateportDoor  0x273
 
+// gTileset_Kapok
+#define METATILE_Kapok_Island_LongGrass         0x291
+#define METATILE_Kapok_Island_LongGrass_Root    0x208
+#define METATILE_Kapok_Island_LongGrass_TreeUp  0x29B
+
 // gTileset_Lavaridge
 #define METATILE_Lavaridge_AshGrass             0x207
 #define METATILE_Lavaridge_CaveEntrance_Bottom  0x25E
@@ -409,6 +414,7 @@
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalTop          0x25A
 
 // gTileset_PetalburgGym
+#define METATILE_PetalburgGym_Door                0x224
 #define METATILE_PetalburgGym_RoomEntrance_Left   0x210
 #define METATILE_PetalburgGym_RoomEntrance_Right  0x211
 #define METATILE_PetalburgGym_SlidingDoor_Frame0  0x218
@@ -416,7 +422,6 @@
 #define METATILE_PetalburgGym_SlidingDoor_Frame2  0x21A
 #define METATILE_PetalburgGym_SlidingDoor_Frame3  0x21B
 #define METATILE_PetalburgGym_SlidingDoor_Frame4  0x21C
-#define METATILE_PetalburgGym_Door                0x224
 
 // gTileset_Petalburg
 #define METATILE_Petalburg_Door_BirchsLab   0x249
