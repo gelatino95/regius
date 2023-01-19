@@ -27,7 +27,7 @@ SoutheastSea_EventScript_Alberto_1:
 
 
 SoutheastSea_EventScript_Ed::
-	trainerbattle_single TRAINER_ED, SoutheastSea_EventScript_Ed_Text_0, SoutheastSea_EventScript_Alberto_Text_1
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_ED, 0, SoutheastSea_EventScript_Ed_Text_0, SoutheastSea_EventScript_Alberto_Text_1
 	msgbox SoutheastSea_EventScript_Alberto_Text_3, MSGBOX_AUTOCLOSE
 	return
 

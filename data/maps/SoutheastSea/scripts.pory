@@ -24,6 +24,6 @@ script SoutheastSea_EventScript_Alberto {
 }
 
 script SoutheastSea_EventScript_Ed {
-	trainerbattle_single(TRAINER_ED, format("Hey! I see you!"), format("Drat..."))
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ED, 0, format("Hey! I see you!"), format("Drat..."))
 	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
 }

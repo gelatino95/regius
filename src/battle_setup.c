@@ -11,6 +11,7 @@
 #include "field_player_avatar.h"
 #include "fieldmap.h"
 #include "random.h"
+#include "pokemon.h"
 #include "starter_choose.h"
 #include "script_pokemon_util.h"
 #include "palette.h"
@@ -1145,6 +1146,14 @@ const u8 *BattleSetup_ConfigureTrainerBattle(const u8 *data)
             gTrainerBattleOpponent_B = LocalIdToHillTrainerId(gSpecialVar_LastTalked);
         }
         return EventScript_TryDoNormalTrainerBattle;
+	case TRAINER_BATTLE_DETECT:
+		//if (GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS)
+		//{
+		//	gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
+		//}
+        TrainerBattleLoadArgs(sOrdinaryBattleParams, data);
+        SetMapVarsToTrainer();
+        return EventScript_TryDoNormalTrainerBattle;
     default:
         if (gApproachingTrainerId == 0)
         {
@@ -1244,6 +1253,10 @@ void BattleSetup_StartTrainerBattle(void)
         gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
+	
+	//If using BATTLE_TYPE_DETECT and the player has at least two mons, add the double battle flag
+	if (sTrainerBattleMode == TRAINER_BATTLE_DETECT && GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS)
+		gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
 
     if (InBattlePyramid())
     {

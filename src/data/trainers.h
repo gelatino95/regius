@@ -160,7 +160,6 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
         .trainerPic = TRAINER_PIC_FISHERMAN,
-
         .trainerName = _("ALBERTO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -174,7 +173,6 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-
         .trainerName = _("ED"),
         .items = {},
         .doubleBattle = FALSE,
