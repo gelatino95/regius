@@ -1254,8 +1254,10 @@ void BattleSetup_StartTrainerBattle(void)
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
 	
-	//If using BATTLE_TYPE_DETECT and the player has at least two mons, add the double battle flag
-	if (sTrainerBattleMode == TRAINER_BATTLE_DETECT && GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS)
+	//If using BATTLE_TYPE_DETECT, the player has at least two mons, and double battle mode is on, add the double battle flag
+	if (sTrainerBattleMode == TRAINER_BATTLE_DETECT
+		&& GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS
+		&& gSaveBlock2Ptr->optionsBattleType == 0)
 		gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
 
     if (InBattlePyramid())
