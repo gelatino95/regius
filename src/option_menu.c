@@ -30,10 +30,9 @@ enum
     MENUITEM_MAIN_TEXTSPEED,
     MENUITEM_MAIN_BATTLESCENE,
     MENUITEM_MAIN_BATTLESTYLE,
+    MENUITEM_MAIN_BATTLETYPE,
     MENUITEM_MAIN_SOUND,
     MENUITEM_MAIN_BUTTONMODE,
-    MENUITEM_MAIN_UNIT_SYSTEM,
-    MENUITEM_MAIN_FRAMETYPE,
     MENUITEM_MAIN_CANCEL,
     MENUITEM_MAIN_COUNT,
 };
@@ -43,7 +42,8 @@ enum
     MENUITEM_CUSTOM_HP_BAR,
     MENUITEM_CUSTOM_EXP_BAR,
     MENUITEM_CUSTOM_FONT,
-    MENUITEM_CUSTOM_BATTLETYPE,
+    MENUITEM_CUSTOM_UNIT_SYSTEM,
+    MENUITEM_CUSTOM_FRAMETYPE,
     MENUITEM_CUSTOM_CANCEL,
     MENUITEM_CUSTOM_COUNT,
 };
@@ -200,10 +200,9 @@ struct // MENU_MAIN
     [MENUITEM_MAIN_TEXTSPEED]    = {DrawChoices_TextSpeed,   ProcessInput_Options_Four},
     [MENUITEM_MAIN_BATTLESCENE]  = {DrawChoices_BattleScene, ProcessInput_Options_Two},
     [MENUITEM_MAIN_BATTLESTYLE]  = {DrawChoices_BattleStyle, ProcessInput_Options_Two},
+    [MENUITEM_MAIN_BATTLETYPE]   = {DrawChoices_BattleType,  ProcessInput_Options_Two},
     [MENUITEM_MAIN_SOUND]        = {DrawChoices_Sound,       ProcessInput_Options_Two},
     [MENUITEM_MAIN_BUTTONMODE]   = {DrawChoices_ButtonMode,  ProcessInput_Options_Three},
-    [MENUITEM_MAIN_UNIT_SYSTEM]  = {DrawChoices_UnitSystem,  ProcessInput_Options_Two},
-    [MENUITEM_MAIN_FRAMETYPE]    = {DrawChoices_FrameType,   ProcessInput_FrameType},
     [MENUITEM_MAIN_CANCEL]       = {NULL, NULL},
 };
 
@@ -216,7 +215,8 @@ struct // MENU_CUSTOM
     [MENUITEM_CUSTOM_HP_BAR]       = {DrawChoices_BarSpeed,    ProcessInput_Options_Eleven},
     [MENUITEM_CUSTOM_EXP_BAR]      = {DrawChoices_BarSpeed,    ProcessInput_Options_Eleven},
     [MENUITEM_CUSTOM_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
-    [MENUITEM_CUSTOM_BATTLETYPE]   = {DrawChoices_BattleType,  ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_UNIT_SYSTEM]  = {DrawChoices_UnitSystem,  ProcessInput_Options_Two},
+    [MENUITEM_CUSTOM_FRAMETYPE]    = {DrawChoices_FrameType,   ProcessInput_FrameType},
     [MENUITEM_CUSTOM_CANCEL]       = {NULL, NULL},
 };
 
@@ -229,10 +229,9 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
     [MENUITEM_MAIN_TEXTSPEED]   = gText_TextSpeed,
     [MENUITEM_MAIN_BATTLESCENE] = gText_BattleScene,
     [MENUITEM_MAIN_BATTLESTYLE] = gText_BattleStyle,
+    [MENUITEM_MAIN_BATTLETYPE]  = gText_BattleType,
     [MENUITEM_MAIN_SOUND]       = gText_Sound,
     [MENUITEM_MAIN_BUTTONMODE]  = gText_ButtonMode,
-    [MENUITEM_MAIN_UNIT_SYSTEM] = sText_UnitSystem,
-    [MENUITEM_MAIN_FRAMETYPE]   = gText_Frame,
     [MENUITEM_MAIN_CANCEL]      = gText_OptionMenuSave,
 };
 
@@ -241,7 +240,8 @@ static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
     [MENUITEM_CUSTOM_HP_BAR]      = sText_HpBar,
     [MENUITEM_CUSTOM_EXP_BAR]     = sText_ExpBar,
     [MENUITEM_CUSTOM_FONT]        = gText_Font,
-    [MENUITEM_CUSTOM_BATTLETYPE]  = gText_BattleType,
+    [MENUITEM_CUSTOM_UNIT_SYSTEM] = sText_UnitSystem,
+    [MENUITEM_CUSTOM_FRAMETYPE]   = gText_Frame,
     [MENUITEM_CUSTOM_CANCEL]      = gText_OptionMenuSave,
 };
 
@@ -265,10 +265,9 @@ static bool8 CheckConditions(int selection)
         case MENUITEM_MAIN_TEXTSPEED:       return TRUE;
         case MENUITEM_MAIN_BATTLESCENE:     return TRUE;
         case MENUITEM_MAIN_BATTLESTYLE:     return TRUE;
+        case MENUITEM_MAIN_BATTLETYPE:      return TRUE;
         case MENUITEM_MAIN_SOUND:           return TRUE;
         case MENUITEM_MAIN_BUTTONMODE:      return TRUE;
-        case MENUITEM_MAIN_UNIT_SYSTEM:     return TRUE;
-        case MENUITEM_MAIN_FRAMETYPE:       return TRUE;
         case MENUITEM_MAIN_CANCEL:          return TRUE;
         case MENUITEM_MAIN_COUNT:           return TRUE;
         }
@@ -278,7 +277,8 @@ static bool8 CheckConditions(int selection)
         case MENUITEM_CUSTOM_HP_BAR:          return TRUE;
         case MENUITEM_CUSTOM_EXP_BAR:         return TRUE;
         case MENUITEM_CUSTOM_FONT:            return TRUE;
-        case MENUITEM_CUSTOM_BATTLETYPE:      return TRUE;
+        case MENUITEM_CUSTOM_UNIT_SYSTEM:     return TRUE;
+        case MENUITEM_CUSTOM_FRAMETYPE:       return TRUE;
         case MENUITEM_CUSTOM_CANCEL:          return TRUE;
         case MENUITEM_CUSTOM_COUNT:           return TRUE;
         }
@@ -293,23 +293,21 @@ static const u8 sText_Desc_BattleScene_On[]     = _("Show the POKéMON battle an
 static const u8 sText_Desc_BattleScene_Off[]    = _("Skip the POKéMON battle animations.");
 static const u8 sText_Desc_BattleStyle_Shift[]  = _("Get the option to switch your\nPOKéMON after the enemies faints.");
 static const u8 sText_Desc_BattleStyle_Set[]    = _("No free switch after fainting the\nenemies POKéMON.");
+static const u8 sText_Desc_BattleTypeDouble[]   = _("TRAINERs will do double battles\nby default.");
+static const u8 sText_Desc_BattleTypeSingle[]   = _("TRAINERs will do single battles\nby default.");
 static const u8 sText_Desc_SoundMono[]          = _("Sound is the same in all speakers.\nRecommended for original hardware.");
 static const u8 sText_Desc_SoundStereo[]        = _("Play the left and right audio channel\nseperatly. Great with headphones.");
 static const u8 sText_Desc_ButtonMode[]         = _("All buttons work as normal.");
 static const u8 sText_Desc_ButtonMode_LR[]      = _("On some screens the L and R buttons\nact as left and right.");
 static const u8 sText_Desc_ButtonMode_LA[]      = _("The L button acts as another A\nbutton for one-handed play.");
-static const u8 sText_Desc_UnitSystemImperial[] = _("Display BERRY and POKéMON weight\nand size in pounds and inches.");
-static const u8 sText_Desc_UnitSystemMetric[]   = _("Display BERRY and POKéMON weight\nand size in kilograms and meters.");
-static const u8 sText_Desc_FrameType[]          = _("Choose the frame surrounding the\nwindows.");
 static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][3] =
 {
     [MENUITEM_MAIN_TEXTSPEED]   = {sText_Desc_TextSpeed,            sText_Empty,                sText_Empty},
     [MENUITEM_MAIN_BATTLESCENE] = {sText_Desc_BattleScene_On,       sText_Desc_BattleScene_Off, sText_Empty},
     [MENUITEM_MAIN_BATTLESTYLE] = {sText_Desc_BattleStyle_Shift,    sText_Desc_BattleStyle_Set, sText_Empty},
+    [MENUITEM_MAIN_BATTLETYPE]  = {sText_Desc_BattleTypeDouble,   sText_Desc_BattleTypeSingle},
     [MENUITEM_MAIN_SOUND]       = {sText_Desc_SoundMono,            sText_Desc_SoundStereo,     sText_Empty},
     [MENUITEM_MAIN_BUTTONMODE]  = {sText_Desc_ButtonMode,           sText_Desc_ButtonMode_LR,   sText_Desc_ButtonMode_LA},
-    [MENUITEM_MAIN_UNIT_SYSTEM] = {sText_Desc_UnitSystemImperial,   sText_Desc_UnitSystemMetric,sText_Empty},
-    [MENUITEM_MAIN_FRAMETYPE]   = {sText_Desc_FrameType,            sText_Empty,                sText_Empty},
     [MENUITEM_MAIN_CANCEL]      = {sText_Desc_Save,                 sText_Empty,                sText_Empty},
 };
 
@@ -321,14 +319,16 @@ static const u8 sText_Desc_SurfOn[]             = _("Enables the SURF theme\nwhe
 static const u8 sText_Desc_BikeOff[]            = _("Disables the BIKE theme when\nusing the BIKE.");
 static const u8 sText_Desc_BikeOn[]             = _("Enables the BIKE theme when\nusing the BIKE.");
 static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
-static const u8 sText_Desc_BattleTypeDouble[]   = _("TRAINERs will do double battles\nby default.");
-static const u8 sText_Desc_BattleTypeSingle[]   = _("TRAINERs will do single battles\nby default.");
+static const u8 sText_Desc_UnitSystemImperial[] = _("Display BERRY and POKéMON weight\nand size in pounds and inches.");
+static const u8 sText_Desc_UnitSystemMetric[]   = _("Display BERRY and POKéMON weight\nand size in kilograms and meters.");
+static const u8 sText_Desc_FrameType[]          = _("Choose the frame surrounding the\nwindows.");
 static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
 {
     [MENUITEM_CUSTOM_HP_BAR]      = {sText_Desc_BattleHPBar,        sText_Empty},
     [MENUITEM_CUSTOM_EXP_BAR]     = {sText_Desc_BattleExpBar,       sText_Empty},
     [MENUITEM_CUSTOM_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
-    [MENUITEM_CUSTOM_BATTLETYPE]  = {sText_Desc_BattleTypeDouble,   sText_Desc_BattleTypeSingle},
+    [MENUITEM_CUSTOM_UNIT_SYSTEM] = {sText_Desc_UnitSystemImperial,   sText_Desc_UnitSystemMetric},
+    [MENUITEM_CUSTOM_FRAMETYPE]   = {sText_Desc_FrameType,            sText_Empty},
     [MENUITEM_CUSTOM_CANCEL]      = {sText_Desc_Save,               sText_Empty},
 };
 
@@ -339,10 +339,9 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMain[MENUITEM_MAIN_COU
     [MENUITEM_MAIN_TEXTSPEED]   = sText_Desc_Disabled_Textspeed,
     [MENUITEM_MAIN_BATTLESCENE] = sText_Empty,
     [MENUITEM_MAIN_BATTLESTYLE] = sText_Empty,
+    [MENUITEM_MAIN_BATTLETYPE]  = sText_Empty,
     [MENUITEM_MAIN_SOUND]       = sText_Empty,
     [MENUITEM_MAIN_BUTTONMODE]  = sText_Empty,
-    [MENUITEM_MAIN_UNIT_SYSTEM] = sText_Empty,
-    [MENUITEM_MAIN_FRAMETYPE]   = sText_Empty,
     [MENUITEM_MAIN_CANCEL]      = sText_Empty,
 };
 
@@ -353,7 +352,8 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM
     [MENUITEM_CUSTOM_HP_BAR]      = sText_Desc_Disabled_BattleHPBar,
     [MENUITEM_CUSTOM_EXP_BAR]     = sText_Empty,
     [MENUITEM_CUSTOM_FONT]        = sText_Empty,
-    [MENUITEM_CUSTOM_BATTLETYPE]  = sText_Empty,
+    [MENUITEM_CUSTOM_UNIT_SYSTEM] = sText_Empty,
+    [MENUITEM_CUSTOM_FRAMETYPE]   = sText_Empty,
     [MENUITEM_CUSTOM_CANCEL]      = sText_Empty,
 };
 
@@ -368,14 +368,14 @@ static const u8 *const OptionTextDescription(void)
         if (!CheckConditions(menuItem))
             return sOptionMenuItemDescriptionsDisabledMain[menuItem];
         selection = sOptions->sel[menuItem];
-        if (menuItem == MENUITEM_MAIN_TEXTSPEED || menuItem == MENUITEM_MAIN_FRAMETYPE)
+        if (menuItem == MENUITEM_MAIN_TEXTSPEED)
             selection = 0;
         return sOptionMenuItemDescriptionsMain[menuItem][selection];
     case MENU_CUSTOM:
         if (!CheckConditions(menuItem))
             return sOptionMenuItemDescriptionsDisabledMain[menuItem];
         selection = sOptions->sel_custom[menuItem];
-        if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_EXP_BAR)
+        if (menuItem == MENUITEM_CUSTOM_HP_BAR || menuItem == MENUITEM_CUSTOM_EXP_BAR || menuItem == MENUITEM_CUSTOM_FRAMETYPE)
             selection = 0;
         return sOptionMenuItemDescriptionsCustom[menuItem][selection];
     }
@@ -590,15 +590,15 @@ void CB2_InitOptionMenu(void)
         sOptions->sel[MENUITEM_MAIN_TEXTSPEED]   = gSaveBlock2Ptr->optionsTextSpeed;
         sOptions->sel[MENUITEM_MAIN_BATTLESCENE] = gSaveBlock2Ptr->optionsBattleSceneOff;
         sOptions->sel[MENUITEM_MAIN_BATTLESTYLE] = gSaveBlock2Ptr->optionsBattleStyle;
+        sOptions->sel[MENUITEM_MAIN_BATTLETYPE]  = gSaveBlock2Ptr->optionsBattleType;
         sOptions->sel[MENUITEM_MAIN_SOUND]       = gSaveBlock2Ptr->optionsSound;
         sOptions->sel[MENUITEM_MAIN_BUTTONMODE]  = gSaveBlock2Ptr->optionsButtonMode;
-        sOptions->sel[MENUITEM_MAIN_UNIT_SYSTEM] = gSaveBlock2Ptr->optionsUnitSystem;
-        sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
         
         sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR]      = gSaveBlock2Ptr->optionsHpBarSpeed;
         sOptions->sel_custom[MENUITEM_CUSTOM_EXP_BAR]     = gSaveBlock2Ptr->optionsExpBarSpeed;
         sOptions->sel_custom[MENUITEM_CUSTOM_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
-        sOptions->sel_custom[MENUITEM_CUSTOM_BATTLETYPE]   = gSaveBlock2Ptr->optionsBattleType;
+        sOptions->sel_custom[MENUITEM_CUSTOM_UNIT_SYSTEM] = gSaveBlock2Ptr->optionsUnitSystem;
+        sOptions->sel_custom[MENUITEM_CUSTOM_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
 
         sOptions->submenu = MENU_MAIN;
 
@@ -779,15 +779,15 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsTextSpeed        = sOptions->sel[MENUITEM_MAIN_TEXTSPEED];
     gSaveBlock2Ptr->optionsBattleSceneOff   = sOptions->sel[MENUITEM_MAIN_BATTLESCENE];
     gSaveBlock2Ptr->optionsBattleStyle      = sOptions->sel[MENUITEM_MAIN_BATTLESTYLE];
+    gSaveBlock2Ptr->optionsBattleType       = sOptions->sel[MENUITEM_MAIN_BATTLETYPE];
     gSaveBlock2Ptr->optionsSound            = sOptions->sel[MENUITEM_MAIN_SOUND];
     gSaveBlock2Ptr->optionsButtonMode       = sOptions->sel[MENUITEM_MAIN_BUTTONMODE];
-    gSaveBlock2Ptr->optionsUnitSystem       = sOptions->sel[MENUITEM_MAIN_UNIT_SYSTEM];
-    gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel[MENUITEM_MAIN_FRAMETYPE];
 
     gSaveBlock2Ptr->optionsHpBarSpeed       = sOptions->sel_custom[MENUITEM_CUSTOM_HP_BAR];
     gSaveBlock2Ptr->optionsExpBarSpeed      = sOptions->sel_custom[MENUITEM_CUSTOM_EXP_BAR];
     gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel_custom[MENUITEM_CUSTOM_FONT];
-    gSaveBlock2Ptr->optionsBattleType       = sOptions->sel_custom[MENUITEM_CUSTOM_BATTLETYPE];
+    gSaveBlock2Ptr->optionsUnitSystem       = sOptions->sel_custom[MENUITEM_CUSTOM_UNIT_SYSTEM];
+    gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel_custom[MENUITEM_CUSTOM_FRAMETYPE];
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -1081,7 +1081,7 @@ static void DrawChoices_BarSpeed(int selection, int y) //HP and EXP
 
 static void DrawChoices_UnitSystem(int selection, int y)
 {
-    bool8 active = CheckConditions(MENUITEM_MAIN_UNIT_SYSTEM);
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_UNIT_SYSTEM);
     u8 styles[2] = {0};
     styles[selection] = 1;
 
@@ -1091,7 +1091,7 @@ static void DrawChoices_UnitSystem(int selection, int y)
 
 static void DrawChoices_FrameType(int selection, int y)
 {
-    bool8 active = CheckConditions(MENUITEM_MAIN_FRAMETYPE);
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_FRAMETYPE);
     u8 text[16];
     u8 n = selection + 1;
     u16 i;
@@ -1133,7 +1133,7 @@ static void DrawChoices_Font(int selection, int y)
 
 static void DrawChoices_BattleType(int selection, int y)
 {
-    bool8 active = CheckConditions(MENUITEM_CUSTOM_BATTLETYPE);
+    bool8 active = CheckConditions(MENUITEM_MAIN_BATTLETYPE);
     u8 styles[2] = {0};
     styles[selection] = 1;
 
