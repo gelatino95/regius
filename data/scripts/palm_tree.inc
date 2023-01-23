@@ -9,7 +9,7 @@ EventScript_PalmTree::
 	playse SE_M_POISON_POWDER
 	waitse
 	special RockSmashWildEncounter
-	goto_if_eq VAR_RESULT, FALSE, EventScript_EndShakeTree
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CheckPalmTreeItem
 	waitstate
 	releaseall
 	end
@@ -19,8 +19,16 @@ EventScript_CancelShakeTree::
 	releaseall
 	end
 	
-EventScript_EndShakeTree::
+EventScript_CheckPalmTreeItem::
+	random 3
+	goto_if_eq VAR_RESULT, 2, EventScript_GivePalmTreeItem
 	msgbox Text_NothingHappened MSGBOX_DEFAULT
+	releaseall
+	end
+	
+EventScript_GivePalmTreeItem::
+	special SetRockSmashItem
+	callstd STD_OBTAIN_ITEM
 	releaseall
 	end
 	

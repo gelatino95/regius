@@ -18,6 +18,8 @@ GatewayIsland_PlayersHouse_ItemBall_1:
 	removeobject 1
 	giveitem ITEM_HM02, 1
 	setflag FLAG_RECEIVED_HM02
+	giveitem ITEM_HM06, 1
+	setflag FLAG_RECEIVED_HM06
 	giveitem ITEM_HM07, 1
 	setflag FLAG_RECEIVED_HM07
 	giveitem ITEM_HM08, 1

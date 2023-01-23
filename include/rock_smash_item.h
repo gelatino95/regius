@@ -1,0 +1,23 @@
+
+#define ITEM_CHANCE_SLOT_0 30
+#define ITEM_CHANCE_SLOT_1 ITEM_CHANCE_SLOT_0 + 30
+#define ITEM_CHANCE_SLOT_2 ITEM_CHANCE_SLOT_1 + 10
+#define ITEM_CHANCE_SLOT_3 ITEM_CHANCE_SLOT_2 + 10
+#define ITEM_CHANCE_SLOT_4 ITEM_CHANCE_SLOT_3 + 5
+#define ITEM_CHANCE_SLOT_5 ITEM_CHANCE_SLOT_4 + 5
+#define ITEM_CHANCE_SLOT_6 ITEM_CHANCE_SLOT_5 + 4
+#define ITEM_CHANCE_SLOT_7 ITEM_CHANCE_SLOT_6 + 4
+#define ITEM_CHANCE_SLOT_8 ITEM_CHANCE_SLOT_7 + 1
+#define ITEM_CHANCE_SLOT_9 ITEM_CHANCE_SLOT_8 + 1
+#define ITEM_CHANCE_TOTAL (ITEM_CHANCE_SLOT_9)
+
+#define HEADER_NONE 0xFFFF
+
+struct RockSmashItemHeader
+{
+    u8 mapGroup;
+    u8 mapNum;
+    const u16 *itemTable;
+};
+
+const struct RockSmashItemHeader gRockSmashItemHeaders[];

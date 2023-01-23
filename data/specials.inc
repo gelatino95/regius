@@ -538,3 +538,4 @@ gSpecials::
 	def_special FieldLoadFlyMap
 	def_special SetDusclopsBattle
 	def_special BufferUnitSystemText
+	def_special SetRockSmashItem

@@ -92,8 +92,20 @@ EventScript_SmashRock::
 	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
 	goto_if_eq VAR_RESULT, TRUE, EventScript_EndSmash
 	special RockSmashWildEncounter
-	goto_if_eq VAR_RESULT, FALSE, EventScript_EndSmash
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CheckRockSmashItem
 	waitstate
+	releaseall
+	end
+
+EventScript_CheckRockSmashItem::
+	random 3
+	goto_if_eq VAR_RESULT, 2, EventScript_GiveRockSmashItem
+	releaseall
+	end
+	
+EventScript_GiveRockSmashItem::
+	special SetRockSmashItem
+	callstd STD_OBTAIN_ITEM
 	releaseall
 	end
 
