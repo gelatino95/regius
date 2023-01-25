@@ -701,6 +701,36 @@ extern const u8 gText_Iron1BP[];
 extern const u8 gText_Zinc1BP[];
 extern const u8 gText_Carbos1BP[];
 extern const u8 gText_HpUp1BP[];
+extern const u8 gText_PpUp5BP[];
+extern const u8 gText_RareCandy10BP[];
+
+extern const u8 gText_PomegBerry1BP[];
+extern const u8 gText_KelpsyBerry1BP[];
+extern const u8 gText_QualotBerry1BP[];
+extern const u8 gText_HondewBerry1BP[];
+extern const u8 gText_GrepaBerry1BP[];
+extern const u8 gText_TamatoBerry1BP[];
+extern const u8 gText_LumBerry5BP[];
+
+extern const u8 gText_TM16LightScreen10BP[];
+extern const u8 gText_TM17Protect10BP[];
+extern const u8 gText_TM20Safeguard10BP[];
+extern const u8 gText_TM33Reflect10BP[];
+extern const u8 gText_TM14Blizzard20BP[];
+extern const u8 gText_TM15HyperBeam20BP[];
+extern const u8 gText_TM22SolarBeam20BP[];
+extern const u8 gText_TM25Thunder20BP[];
+extern const u8 gText_TM38FireBlast20BP[];
+
+extern const u8 gText_WhiteHerb5BP[];
+extern const u8 gText_MentalHerb5BP[];
+extern const u8 gText_QuickClaw10BP[];
+extern const u8 gText_BrightPowder10BP[];
+extern const u8 gText_KingsRock10BP[];
+extern const u8 gText_FocusBand10BP[];
+extern const u8 gText_ScopeLens10BP[];
+extern const u8 gText_ChoiceBand20BP[];
+extern const u8 gText_Leftovers20BP[];
 
 extern const u8 gText_Leftovers48BP[];
 extern const u8 gText_WhiteHerb48BP[];

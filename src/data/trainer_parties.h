@@ -158,8 +158,13 @@ static const struct TrainerMon sParty_GruntSeafloorCavern4[] = {
 static const struct TrainerMon sParty_Declan[] = {
     {
     .iv = 0,
-    .lvl = 34,
-    .species = SPECIES_GYARADOS,
+    .lvl = 17,
+    .species = SPECIES_CHICKLET,
+    },
+	{
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_MAGVA,
     }
 };
 

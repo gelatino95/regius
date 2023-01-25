@@ -1167,6 +1167,37 @@ const u8 gText_Iron1BP[] = _("IRON{CLEAR_TO 0x64}1BP");
 const u8 gText_Zinc1BP[] = _("ZINC{CLEAR_TO 0x64}1BP");
 const u8 gText_Carbos1BP[] = _("CARBOS{CLEAR_TO 0x64}1BP");
 const u8 gText_HpUp1BP[] = _("HP UP{CLEAR_TO 0x64}1BP");
+const u8 gText_PpUp5BP[] = _("PP UP{CLEAR_TO 0x64}5BP");
+const u8 gText_RareCandy10BP[] = _("RARE CANDY{CLEAR_TO 0x5E}10BP");
+
+const u8 gText_PomegBerry1BP[] = _("POMEG BERRY{CLEAR_TO 0x64}1BP");
+const u8 gText_KelpsyBerry1BP[] = _("KELPSY BERRY{CLEAR_TO 0x64}1BP");
+const u8 gText_QualotBerry1BP[] = _("QUALOT BERRY{CLEAR_TO 0x64}1BP");
+const u8 gText_HondewBerry1BP[] = _("HONDEW BERRY{CLEAR_TO 0x64}1BP");
+const u8 gText_GrepaBerry1BP[] = _("GREPA BERRY{CLEAR_TO 0x64}1BP");
+const u8 gText_TamatoBerry1BP[] = _("TAMATO BERRY{CLEAR_TO 0x64}1BP");
+const u8 gText_LumBerry5BP[] = _("LUM BERRY{CLEAR_TO 0x64}5BP");
+
+const u8 gText_TM16LightScreen10BP[] = _("TM16 LIGHT SCREEN{CLEAR_TO 0x64}10BP");
+const u8 gText_TM17Protect10BP[] = _("TM17 PROTECT{CLEAR_TO 0x64}10BP");
+const u8 gText_TM20Safeguard10BP[] = _("TM20 SAFEGUARD{CLEAR_TO 0x64}10BP");
+const u8 gText_TM33Reflect10BP[] = _("TM33 REFLECT{CLEAR_TO 0x64}10BP");
+const u8 gText_TM14Blizzard20BP[] = _("TM14 BLIZZARD{CLEAR_TO 0x64}20BP");
+const u8 gText_TM15HyperBeam20BP[] = _("TM15 HYPER BEAM{CLEAR_TO 0x64}20BP");
+const u8 gText_TM22SolarBeam20BP[] = _("TM22 SOLARBEAM{CLEAR_TO 0x64}20BP");
+const u8 gText_TM25Thunder20BP[] = _("TM25 THUNDER{CLEAR_TO 0x64}20BP");
+const u8 gText_TM38FireBlast20BP[] = _("TM38 FIRE BLAST{CLEAR_TO 0x64}20BP");
+
+const u8 gText_WhiteHerb5BP[] = _("WHITE HERB{CLEAR_TO 0x64}5BP");
+const u8 gText_MentalHerb5BP[] = _("MENTAL HERB{CLEAR_TO 0x64}5BP");
+const u8 gText_QuickClaw10BP[] = _("QUICK CLAW{CLEAR_TO 0x5E}10BP");
+const u8 gText_BrightPowder10BP[] = _("BRIGHTPOWDER{CLEAR_TO 0x5E}10BP");
+const u8 gText_KingsRock10BP[] = _("KING'S ROCK{CLEAR_TO 0x5E}10BP");
+const u8 gText_FocusBand10BP[] = _("FOCUS BAND{CLEAR_TO 0x5E}10BP");
+const u8 gText_ScopeLens10BP[] = _("SCOPE LENS{CLEAR_TO 0x5E}10BP");
+const u8 gText_ChoiceBand20BP[] = _("CHOICE BAND{CLEAR_TO 0x5E}20BP");
+const u8 gText_Leftovers20BP[] = _("LEFTOVERS{CLEAR_TO 0x5E}20BP");
+
 const u8 gText_Leftovers48BP[] = _("LEFTOVERS{CLEAR_TO 0x5E}48BP");
 const u8 gText_WhiteHerb48BP[] = _("WHITE HERB{CLEAR_TO 0x5E}48BP");
 const u8 gText_QuickClaw48BP[] = _("QUICK CLAW{CLEAR_TO 0x5E}48BP");

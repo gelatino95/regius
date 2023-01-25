@@ -735,6 +735,14 @@
 	.elseif \type == TRAINER_BATTLE_DETECT
 		.4byte \pointer1 @ text
 		.4byte \pointer2 @ text
+	.elseif \type == TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC
+		.4byte \pointer1 @ text
+		.4byte \pointer2 @ text
+		.4byte \pointer3 @ event script
+	.elseif \type == TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT
+		.4byte \pointer1 @ text
+		.4byte \pointer2 @ text
+		.4byte \pointer3 @ event script
 	.endif
 	.endm
 
@@ -761,6 +769,18 @@
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text, \event_script
 	.else
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text, \event_script
+	.endif
+	.endm
+	
+	@ Starts a trainer battle that will be single or double based on context. Takes a trainer, intro text, loss text,
+	@ and an optional event script. When used with an event script, you can also pass in an optional flag to disable music
+	.macro trainerbattle_detect trainer:req, intro_text:req, lose_text:req, event_script=FALSE, music=TRUE
+	.if \event_script == FALSE
+	trainerbattle TRAINER_BATTLE_DETECT, \trainer, 0, \intro_text, \lose_text
+	.elseif \music == TRUE
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT, \trainer, 0, \intro_text, \lose_text, \event_script
+	.else
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, \trainer, 0, \intro_text, \lose_text, \event_script
 	.endif
 	.endm
 

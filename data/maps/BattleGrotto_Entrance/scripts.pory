@@ -1,1 +1,390 @@
 mapscripts BattleGrotto_Entrance_MapScripts {}
+
+script BattleGrotto_Entrance_BerryVendor {
+	lock
+	faceplayer
+	msgbox(format("Welcome!"), MSGBOX_DEFAULT)
+	special(ShowBattlePointsWindow)
+	goto(BattleGrotto_Entrance_ChooseBerry)
+}
+
+script BattleGrotto_Entrance_ChooseBerry {
+	msgbox(format("Please choose a prize."), MSGBOX_DEFAULT)
+	setvar(VAR_0x8004, SCROLL_MULTI_GROTTO_BERRY_VENDOR)
+	special(ShowScrollableMultichoice)
+	waitstate
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("You want the\nPOMEG BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_POMEG_BERRY)
+		case 1:
+			msgbox(format("You want the\nKELPSY BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_KELPSY_BERRY)
+		case 2:
+			msgbox(format("You want the\nQUALOT BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_QUALOT_BERRY)
+		case 3:
+			msgbox(format("You want the\nHONDEW BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_HONDEW_BERRY)
+		case 4:
+			msgbox(format("You want the\nGREPA BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_GREPA_BERRY)
+		case 5:
+			msgbox(format("You want the\nTAMATO BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_TAMATO_BERRY)
+		case 6:
+			msgbox(format("You want the\nLUM BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_LUM_BERRY)
+		case 7:
+		case MULTI_B_PRESSED:
+			goto(BattleGrotto_Entrance_Goodbye)
+		default: goto(BattleGrotto_Entrance_ChooseBerry)
+	}
+	specialvar(VAR_TEMP_1, GetFrontierBattlePoints)
+	if (var(VAR_TEMP_1) < VAR_0x8008) {  //if insufficient BP
+		msgbox(format("I'm sorry, you don't\nhave enough Battle Points."))
+		goto(BattleGrotto_Entrance_ChooseBerry)
+	}
+	checkitemspace(VAR_0x8009)
+	if (var(VAR_RESULT) == FALSE) {
+		msgbox(format("You don't have enough room\nin your BAG for this item."))
+		goto(BattleGrotto_Entrance_ChooseBerry)
+	}
+	copyvar(VAR_0x8004, VAR_0x8008)
+	special(TakeFrontierBattlePoints)
+	additem(VAR_0x8009)
+	special(UpdateBattlePointsWindow)
+	playse(SE_SHOP)
+	msgbox(format("Here is your prize!"), MSGBOX_DEFAULT)
+	goto(BattleGrotto_Entrance_ChooseBerry)
+}
+
+script BattleGrotto_Entrance_VitaminVendor {
+	lock
+	faceplayer
+	msgbox(format("Welcome!"), MSGBOX_DEFAULT)
+	special(ShowBattlePointsWindow)
+	goto(BattleGrotto_Entrance_ChooseVitamin)
+}
+
+script BattleGrotto_Entrance_ChooseVitamin {
+	msgbox(format("Please choose a prize."), MSGBOX_DEFAULT)
+	setvar(VAR_0x8004, SCROLL_MULTI_GROTTO_VITAMIN_VENDOR)
+	special(ShowScrollableMultichoice)
+	waitstate
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("You want the\nPROTEIN?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_PROTEIN)
+		case 1:
+			msgbox(format("You want the\nIRON?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_IRON)
+		case 2:
+			msgbox(format("You want the\nCALCIUM?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_CALCIUM)
+		case 3:
+			msgbox(format("You want the\nZINC?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_ZINC)
+		case 4:
+			msgbox(format("You want the\nCARBOS?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_CARBOS)
+		case 5:
+			msgbox(format("You want the\nHP UP?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 1)
+			setvar(VAR_0x8009, ITEM_HP_UP)
+		case 6:
+			msgbox(format("You want the\nPP UP?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_PP_UP)
+		case 7:
+			msgbox(format("You want the\nRARE CANDY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseVitamin)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_RARE_CANDY)
+		case 8:
+		case MULTI_B_PRESSED:
+			goto(BattleGrotto_Entrance_Goodbye)
+		default: goto(BattleGrotto_Entrance_ChooseVitamin)
+	}
+	specialvar(VAR_TEMP_1, GetFrontierBattlePoints)
+	if (var(VAR_TEMP_1) < VAR_0x8008) {  //if insufficient BP
+		msgbox(format("I'm sorry, you don't\nhave enough Battle Points."))
+		goto(BattleGrotto_Entrance_ChooseVitamin)
+	}
+	checkitemspace(VAR_0x8009)
+	if (var(VAR_RESULT) == FALSE) {
+		msgbox(format("You don't have enough room\nin your BAG for this item."))
+		goto(BattleGrotto_Entrance_ChooseVitamin)
+	}
+	copyvar(VAR_0x8004, VAR_0x8008)
+	special(TakeFrontierBattlePoints)
+	additem(VAR_0x8009)
+	special(UpdateBattlePointsWindow)
+	playse(SE_SHOP)
+	msgbox(format("Here is your prize!"), MSGBOX_DEFAULT)
+	goto(BattleGrotto_Entrance_ChooseVitamin)
+}
+
+script BattleGrotto_Entrance_TMVendor {
+	lock
+	faceplayer
+	msgbox(format("Welcome!"), MSGBOX_DEFAULT)
+	special(ShowBattlePointsWindow)
+	goto(BattleGrotto_Entrance_ChooseTM)
+}
+
+script BattleGrotto_Entrance_ChooseTM {
+	msgbox(format("Please choose a prize."), MSGBOX_DEFAULT)
+	setvar(VAR_0x8004, SCROLL_MULTI_GROTTO_TM_VENDOR)
+	special(ShowScrollableMultichoice)
+	waitstate
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("You want the\nTM16 LIGHT SCREEN?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_TM16)
+		case 1:
+			msgbox(format("You want the\nTM17 PROTECT?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_TM17)
+		case 2:
+			msgbox(format("You want the\nTM20 SAFEGUARD?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_TM20)
+		case 3:
+			msgbox(format("You want the\nTM33 REFLECT?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_TM33)
+		case 4:
+			msgbox(format("You want the\nTM14 BLIZZARD?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 20)
+			setvar(VAR_0x8009, ITEM_TM14)
+		case 5:
+			msgbox(format("You want the\nTM15 HYPER BEAM?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 20)
+			setvar(VAR_0x8009, ITEM_TM15)
+		case 6:
+			msgbox(format("You want the\nTM22 SOLAR BEAM?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 20)
+			setvar(VAR_0x8009, ITEM_TM22)
+		case 7:
+			msgbox(format("You want the\nTM25 THUNDER?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 20)
+			setvar(VAR_0x8009, ITEM_TM25)
+		case 8:
+			msgbox(format("You want the\nTM38 FIRE BLAST?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseTM)
+			}
+			setvar(VAR_0x8008, 20)
+			setvar(VAR_0x8009, ITEM_TM38)
+		case 9:
+		case MULTI_B_PRESSED:
+			goto(BattleGrotto_Entrance_Goodbye)
+		default: goto(BattleGrotto_Entrance_ChooseTM)
+	}
+	specialvar(VAR_TEMP_1, GetFrontierBattlePoints)
+	if (var(VAR_TEMP_1) < VAR_0x8008) {  //if insufficient BP
+		msgbox(format("I'm sorry, you don't\nhave enough Battle Points."))
+		goto(BattleGrotto_Entrance_ChooseTM)
+	}
+	checkitemspace(VAR_0x8009)
+	if (var(VAR_RESULT) == FALSE) {
+		msgbox(format("You don't have enough room\nin your BAG for this item."))
+		goto(BattleGrotto_Entrance_ChooseTM)
+	}
+	copyvar(VAR_0x8004, VAR_0x8008)
+	special(TakeFrontierBattlePoints)
+	additem(VAR_0x8009)
+	special(UpdateBattlePointsWindow)
+	playse(SE_SHOP)
+	msgbox(format("Here is your prize!"), MSGBOX_DEFAULT)
+	goto(BattleGrotto_Entrance_ChooseTM)
+}
+
+script BattleGrotto_Entrance_ItemVendor {
+	lock
+	faceplayer
+	msgbox(format("Welcome!"), MSGBOX_DEFAULT)
+	special(ShowBattlePointsWindow)
+	goto(BattleGrotto_Entrance_ChooseItem)
+}
+
+script BattleGrotto_Entrance_ChooseItem {
+	msgbox(format("Please choose a prize."), MSGBOX_DEFAULT)
+	setvar(VAR_0x8004, SCROLL_MULTI_GROTTO_ITEM_VENDOR)
+	special(ShowScrollableMultichoice)
+	waitstate
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("You want the\nWHITE HERB?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_WHITE_HERB)
+		case 1:
+			msgbox(format("You want the\nMENTAL HERB?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_MENTAL_HERB)
+		case 2:
+			msgbox(format("You want the\nQUICK CLAW?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_QUICK_CLAW)
+		case 3:
+			msgbox(format("You want the\nBRIGHTPOWDER?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_BRIGHT_POWDER)
+		case 4:
+			msgbox(format("You want the\nKING'S ROCK?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_KINGS_ROCK)
+		case 5:
+			msgbox(format("You want the\nFOCUS BAND?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_FOCUS_BAND)
+		case 6:
+			msgbox(format("You want the\nSCOPE LENS?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 10)
+			setvar(VAR_0x8009, ITEM_SCOPE_LENS)
+		case 7:
+			msgbox(format("You want the\nCHOICE BAND?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 20)
+			setvar(VAR_0x8009, ITEM_CHOICE_BAND)
+		case 8:
+			msgbox(format("You want the\nLEFTOVERS?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseItem)
+			}
+			setvar(VAR_0x8008, 20)
+			setvar(VAR_0x8009, ITEM_LEFTOVERS)
+		case 9:
+		case MULTI_B_PRESSED:
+			goto(BattleGrotto_Entrance_Goodbye)
+		default: goto(BattleGrotto_Entrance_ChooseItem)
+	}
+	specialvar(VAR_TEMP_1, GetFrontierBattlePoints)
+	if (var(VAR_TEMP_1) < VAR_0x8008) {  //if insufficient BP
+		msgbox(format("I'm sorry, you don't\nhave enough Battle Points."))
+		goto(BattleGrotto_Entrance_ChooseItem)
+	}
+	checkitemspace(VAR_0x8009)
+	if (var(VAR_RESULT) == FALSE) {
+		msgbox(format("You don't have enough room\nin your BAG for this item."))
+		goto(BattleGrotto_Entrance_ChooseItem)
+	}
+	copyvar(VAR_0x8004, VAR_0x8008)
+	special(TakeFrontierBattlePoints)
+	additem(VAR_0x8009)
+	special(UpdateBattlePointsWindow)
+	playse(SE_SHOP)
+	msgbox(format("Here is your prize!"), MSGBOX_DEFAULT)
+	goto(BattleGrotto_Entrance_ChooseItem)
+}
+
+script BattleGrotto_Entrance_Goodbye {
+	special(CloseBattlePointsWindow)
+	msgbox(format("Come again!"), MSGBOX_DEFAULT)
+	closemessage
+}

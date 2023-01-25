@@ -1147,12 +1147,17 @@ const u8 *BattleSetup_ConfigureTrainerBattle(const u8 *data)
         }
         return EventScript_TryDoNormalTrainerBattle;
 	case TRAINER_BATTLE_DETECT:
-		//if (GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS)
-		//{
-		//	gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
-		//}
-        TrainerBattleLoadArgs(sOrdinaryBattleParams, data);
-        SetMapVarsToTrainer();
+	case TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT:
+	case TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC:
+        if (gApproachingTrainerId == 0)
+        {
+            TrainerBattleLoadArgs(sContinueScriptBattleParams, data);
+            SetMapVarsToTrainer();
+        }
+        else
+        {
+            TrainerBattleLoadArgs(sTrainerBContinueScriptBattleParams, data);
+        }
         return EventScript_TryDoNormalTrainerBattle;
     default:
         if (gApproachingTrainerId == 0)
@@ -1254,11 +1259,14 @@ void BattleSetup_StartTrainerBattle(void)
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
 	
-	//If using BATTLE_TYPE_DETECT, the player has at least two mons, and double battle mode is on, add the double battle flag
+	//If using detect mode, the player has at least two mons, and double battle mode is on, add the double battle flag
 	if (sTrainerBattleMode == TRAINER_BATTLE_DETECT
-		&& GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS
-		&& gSaveBlock2Ptr->optionsBattleType == 0)
+		|| sTrainerBattleMode == TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT
+		|| sTrainerBattleMode == TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC)
+	{
+		if (GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS && gSaveBlock2Ptr->optionsBattleType == 0)
 		gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
+	}
 
     if (InBattlePyramid())
     {

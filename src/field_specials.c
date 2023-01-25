@@ -2316,6 +2316,46 @@ void ShowScrollableMultichoice(void)
         task->tKeepOpenAfterSelect = FALSE;
         task->tTaskId = taskId;
         break;
+	case SCROLL_MULTI_GROTTO_BERRY_VENDOR:
+        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
+        task->tNumItems = 8;
+        task->tLeft = 14;
+        task->tTop = 1;
+        task->tWidth = 15;
+        task->tHeight = 12;
+        task->tKeepOpenAfterSelect = FALSE;
+        task->tTaskId = taskId;
+        break;
+	case SCROLL_MULTI_GROTTO_VITAMIN_VENDOR:
+        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
+        task->tNumItems = 9;
+        task->tLeft = 14;
+        task->tTop = 1;
+        task->tWidth = 15;
+        task->tHeight = 12;
+        task->tKeepOpenAfterSelect = FALSE;
+        task->tTaskId = taskId;
+        break;
+	case SCROLL_MULTI_GROTTO_TM_VENDOR:
+        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
+        task->tNumItems = 10;
+        task->tLeft = 14;
+        task->tTop = 1;
+        task->tWidth = 15;
+        task->tHeight = 12;
+        task->tKeepOpenAfterSelect = FALSE;
+        task->tTaskId = taskId;
+        break;
+	case SCROLL_MULTI_GROTTO_ITEM_VENDOR:
+        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
+        task->tNumItems = 10;
+        task->tLeft = 14;
+        task->tTop = 1;
+        task->tWidth = 15;
+        task->tHeight = 12;
+        task->tKeepOpenAfterSelect = FALSE;
+        task->tTaskId = taskId;
+        break;
     default:
         gSpecialVar_Result = MULTI_B_PRESSED;
         DestroyTask(taskId);
@@ -2475,6 +2515,55 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_PokemonMoves,
         gText_Underpowered,
         gText_WhenInDanger,
+        gText_Exit
+    },
+	[SCROLL_MULTI_GROTTO_BERRY_VENDOR] =
+    {
+        gText_PomegBerry1BP,
+        gText_KelpsyBerry1BP,
+        gText_QualotBerry1BP,
+        gText_HondewBerry1BP,
+        gText_GrepaBerry1BP,
+        gText_TamatoBerry1BP,
+        gText_LumBerry5BP,
+        gText_Exit
+    },
+	[SCROLL_MULTI_GROTTO_VITAMIN_VENDOR] =
+    {
+        gText_Protein1BP,
+        gText_Iron1BP,
+        gText_Calcium1BP,
+        gText_Zinc1BP,
+        gText_Carbos1BP,
+        gText_HpUp1BP,
+        gText_PpUp5BP,
+        gText_RareCandy10BP,
+        gText_Exit
+    },
+	[SCROLL_MULTI_GROTTO_TM_VENDOR] =
+    {
+        gText_TM16LightScreen10BP,
+        gText_TM17Protect10BP,
+        gText_TM20Safeguard10BP,
+        gText_TM33Reflect10BP,
+        gText_TM14Blizzard20BP,
+        gText_TM15HyperBeam20BP,
+        gText_TM22SolarBeam20BP,
+        gText_TM25Thunder20BP,
+		gText_TM38FireBlast20BP,
+        gText_Exit
+    },
+	[SCROLL_MULTI_GROTTO_ITEM_VENDOR] =
+    {
+        gText_WhiteHerb5BP,
+        gText_MentalHerb5BP,
+        gText_QuickClaw10BP,
+        gText_BrightPowder10BP,
+        gText_KingsRock10BP,
+        gText_FocusBand10BP,
+        gText_ScopeLens10BP,
+        gText_ChoiceBand20BP,
+		gText_Leftovers20BP,
         gText_Exit
     }
 };
