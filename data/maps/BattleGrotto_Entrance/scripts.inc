@@ -1,5 +1,51 @@
 BattleGrotto_Entrance_MapScripts::
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleGrotto_Entrance_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE
 	.byte 0
+
+BattleGrotto_Entrance_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
+	map_script_2 VAR_TEMP_1, 0, BattleGrotto_Entrance_PlayerFaceNorth
+	return
+
+
+BattleGrotto_Entrance_PlayerFaceNorth::
+	setvar VAR_TEMP_1, 1
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+
+BattleGrotto_Entrance_FrontDesk::
+	lock
+	faceplayer
+	msgbox BattleGrotto_Entrance_FrontDesk_Text_0, MSGBOX_DEFAULT
+	goto BattleGrotto_Entrance_BattleGrottoChallenge
+	return
+
+
+BattleGrotto_Entrance_BattleGrottoChallenge::
+	message BattleGrotto_Entrance_BattleGrottoChallenge_Text_0
+	waitmessage
+	multichoice 17, 6, MULTI_CHALLENGEINFO, FALSE
+	switch VAR_RESULT
+	case 0, BattleGrotto_Entrance_BattleGrottoChallenge_2
+	case 1, BattleGrotto_Entrance_BattleGrottoChallenge_3
+	case 2, BattleGrotto_Entrance_BattleGrottoChallenge_4
+	case MULTI_B_PRESSED, BattleGrotto_Entrance_BattleGrottoChallenge_4
+	return
+
+BattleGrotto_Entrance_BattleGrottoChallenge_2:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	warp MAP_BATTLE_GROTTO_B1F, 4, 36
+	return
+
+BattleGrotto_Entrance_BattleGrottoChallenge_3:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_2, MSGBOX_DEFAULT
+	goto BattleGrotto_Entrance_BattleGrottoChallenge
+	return
+
+BattleGrotto_Entrance_BattleGrottoChallenge_4:
+	goto BattleGrotto_Entrance_Goodbye
+	return
 
 
 BattleGrotto_Entrance_BerryVendor::
@@ -674,6 +720,36 @@ BattleGrotto_Entrance_Goodbye::
 	closemessage
 	return
 
+
+BattleGrotto_Entrance_FrontDesk_Text_0:
+	.string "Welcome to the BATTLE GROTTO!$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_Text_0:
+	.string "Would you like to take the\n"
+	.string "BATTLE GROTTO challenge?$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_Text_1:
+	.string "Best of luck!$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_Text_2:
+	.string "In the BATTLE GROTTO, you will make\n"
+	.string "your way through a long cave\l"
+	.string "full of TRAINERs.\l"
+	.string "If you defeat all seven TRAINERs\l"
+	.string "on the floor in a row, you will\l"
+	.string "earn Battle Points (BP), which can be\l"
+	.string "exchanged for prizes in the lobby.\p"
+	.string "You can then descend to the\n"
+	.string "next floor, where you will find\l"
+	.string "even harder TRAINERs.\p"
+	.string "If you want to quit your challenge,\n"
+	.string "you will be able to start at the\l"
+	.string "beginning of any floor you've\l"
+	.string "previously visited.\p"
+	.string "However, at the moment, we only\n"
+	.string "have one floor available.\l"
+	.string "The rest are still being prepared.\l"
+	.string "Thank you for your patience.$"
 
 BattleGrotto_Entrance_BerryVendor_Text_0:
 	.string "Welcome!$"

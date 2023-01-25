@@ -1147,6 +1147,16 @@ const u8 *BattleSetup_ConfigureTrainerBattle(const u8 *data)
         }
         return EventScript_TryDoNormalTrainerBattle;
 	case TRAINER_BATTLE_DETECT:
+		if (gApproachingTrainerId == 0)
+        {
+            TrainerBattleLoadArgs(sOrdinaryBattleParams, data);
+            SetMapVarsToTrainer();
+        }
+        else
+        {
+            TrainerBattleLoadArgs(sTrainerBOrdinaryBattleParams, data);
+        }
+        return EventScript_TryDoNormalTrainerBattle;
 	case TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT:
 	case TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC:
         if (gApproachingTrainerId == 0)

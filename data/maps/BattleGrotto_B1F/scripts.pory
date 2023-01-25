@@ -1,13 +1,42 @@
-mapscripts BattleGrotto_B1F_MapScripts {}
-
-script BattleGrotto_B1F_EventScript_Declan {
-	trainerbattle_detect(TRAINER_DECLAN, format("You won't get past me\nthat easily!"), format("Drat..."), BattleGrotto_B1F_EventScript_Give1BP)
-	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+mapscripts BattleGrotto_B1F_MapScripts {
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+		map_script_2(VAR_TEMP_1, 0, BattleGrotto_B1F_EventScript_PlayerFaceNorth)
+		end
+	}
 }
 
-script BattleGrotto_B1F_EventScript_Give1BP {
-	buffernumberstring(STR_VAR_1, 1)
-	setvar(VAR_0x8004, 1)
+script BattleGrotto_B1F_EventScript_PlayerFaceNorth {
+	setvar(VAR_TEMP_1, 1)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	end
+}
+
+script BattleGrotto_B1F_EventScript_StartAttendant {
+	lock
+	faceplayer
+	msgbox(format("Would you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	}
+	else {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BattleGrotto_B1F_EventScript_EndAttendant {
+	lock
+	faceplayer
+	msgbox(format("Congratulations on defeating\nall TRAINERs on the floor!\lHere is your reward."), MSGBOX_DEFAULT)
+	buffernumberstring(STR_VAR_1, 7)
+	setvar(VAR_0x8004, 7)
 	special(GiveFrontierBattlePoints)
-	msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Point(s)."), MSGBOX_GETPOINTS)
+	msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Points."), MSGBOX_GETPOINTS)
+	waitmessage
+	closemessage
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+}
+
+script BattleGrotto_B1F_EventScript_Declan {
+	trainerbattle_detect(TRAINER_DECLAN, format("You won't get past me\nthat easily!"), format("Drat..."))
+	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
 }
