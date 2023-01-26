@@ -44,7 +44,7 @@ BattleGrotto_Entrance_BattleGrottoChallenge_3:
 	return
 
 BattleGrotto_Entrance_BattleGrottoChallenge_4:
-	goto BattleGrotto_Entrance_Goodbye
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_3, MSGBOX_AUTOCLOSE
 	return
 
 
@@ -716,7 +716,7 @@ BattleGrotto_Entrance_ChooseItem_45:
 
 BattleGrotto_Entrance_Goodbye::
 	special CloseBattlePointsWindow
-	msgbox BattleGrotto_Entrance_Goodbye_Text_0, MSGBOX_DEFAULT
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_3, MSGBOX_DEFAULT
 	closemessage
 	return
 
@@ -750,6 +750,9 @@ BattleGrotto_Entrance_BattleGrottoChallenge_Text_2:
 	.string "have one floor available.\l"
 	.string "The rest are still being prepared.\l"
 	.string "Thank you for your patience.$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_Text_3:
+	.string "Come again!$"
 
 BattleGrotto_Entrance_BerryVendor_Text_0:
 	.string "Welcome!$"
@@ -899,6 +902,3 @@ BattleGrotto_Entrance_ChooseItem_Text_7:
 BattleGrotto_Entrance_ChooseItem_Text_8:
 	.string "You want the\n"
 	.string "LEFTOVERS?$"
-
-BattleGrotto_Entrance_Goodbye_Text_0:
-	.string "Come again!$"
