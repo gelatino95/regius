@@ -41,15 +41,15 @@
 #define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
-#define FLAG_GATEWAYISLAND_PLAYERSHOUSE_ITEMBALL    0x20
-#define FLAG_GHOST_SHIP_HIDE_DUSCLOPS			    0x21
-#define FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS		    0x22
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
+#define FLAG_SYS_NO_COLLISION       0x20 // Unused Flag //DEBUG
+#define FLAG_SYS_NO_ENCOUNTER       0x21 // Unused Flag //DEBUG
+#define FLAG_SYS_NO_TRAINER_SEE     0x22 // Unused Flag //DEBUG
+#define FLAG_SYS_NO_BAG_USE         0x23 // Unused Flag //DEBUG
+#define FLAG_SYS_NO_CATCHING        0x24 // Unused Flag //DEBUG
+#define FLAG_SYS_PC_FROM_DEBUG_MENU 0x25 // Unused Flag //DEBUG
+#define FLAG_GATEWAYISLAND_PLAYERSHOUSE_ITEMBALL    0x26
+#define FLAG_GHOST_SHIP_HIDE_DUSCLOPS    			0x27
+#define FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS    		0x28
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
