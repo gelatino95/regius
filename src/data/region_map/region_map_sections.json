@@ -1710,6 +1710,262 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+	{
+      "map_section": "MAPSEC_ARID_DESERT",
+      "name": "ARID DESERT",
+      "x": 9,
+      "y": 6,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_ARID_ISLAND",
+      "name": "ARID ISLAND",
+      "x": 8,
+      "y": 6,
+      "width": 2,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_ARID_RUINS",
+      "name": "ARID RUINS",
+      "x": 9,
+      "y": 6,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_BATTLE_GROTTO",
+      "name": "BATTLE GROTTO",
+      "x": 9,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_CAVE_OF_AWAKENING",
+      "name": "AWAKENING CAVE",
+      "x": 9,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_CAVE_OF_CHASTITY",
+      "name": "CHASTITY CAVE",
+      "x": 1,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_CAVE_OF_SOBRIETY",
+      "name": "SOBRIETY CAVE",
+      "x": 5,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_CENTRAL_SEA",
+      "name": "CENTRAL SEA",
+      "x": 2,
+      "y": 2,
+      "width": 6,
+      "height": 6
+    },
+	{
+      "map_section": "MAPSEC_FAR_REACH_SEA",
+      "name": "FAR REACH SEA",
+      "x": 0,
+      "y": 13,
+      "width": 2,
+      "height": 5
+    },
+	{
+      "map_section": "MAPSEC_GATEWAY_ISLAND",
+      "name": "GATEWAY ISLAND",
+      "x": 2,
+      "y": 8,
+      "width": 2,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_GHOST_SHIP",
+      "name": "GHOST SHIP",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_ICE_CAVE",
+      "name": "ICE CAVE",
+      "x": 6,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_IGNEOUS_CALDERA",
+      "name": "IGNEOUS CALDERA",
+      "x": 0,
+      "y": 2,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_IGNEOUS_CLIMB",
+      "name": "IGNEOUS CLIMB",
+      "x": 0,
+      "y": 2,
+      "width": 1,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_IGNEOUS_ISLAND",
+      "name": "IGNEOUS ISLAND",
+      "x": 0,
+      "y": 2,
+      "width": 2,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_KAPOK_ISLAND",
+      "name": "KAPOK ISLAND",
+      "x": 6,
+      "y": 0,
+      "width": 2,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_KAPOK_JUNGLE",
+      "name": "KAPOK JUNGLE",
+      "x": 6,
+      "y": 0,
+      "width": 2,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_MARINE_BIO_LAB",
+      "name": "MARINE INSTITUTE",
+      "x": 2,
+      "y": 12,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_NORTHEAST_SEA",
+      "name": "NORTHEAST SEA",
+      "x": 8,
+      "y": 0,
+      "width": 2,
+      "height": 6
+    },
+	{
+      "map_section": "MAPSEC_NORTHWEST_SEA",
+      "name": "NORTHWEST SEA",
+      "x": 0,
+      "y": 0,
+      "width": 6,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_PIRATE_FORTRESS",
+      "name": "PIRATE FORTRESS",
+      "x": 1,
+      "y": 15,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_SLUMBER_ISLAND",
+      "name": "SLUMBER ISLAND",
+      "x": 4,
+      "y": 5,
+      "width": 1,
+      "height": 1
+    },
+	{
+      "map_section": "MAPSEC_SLUMBER_PATH",
+      "name": "SLUMBER PATH",
+      "x": 3,
+      "y": 5,
+      "width": 1,
+      "height": 4
+    },
+	{
+      "map_section": "MAPSEC_SOUTHEAST_SEA",
+      "name": "SOUTHEAST SEA",
+      "x": 4,
+      "y": 8,
+      "width": 6,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_SOUTHWEST_SEA",
+      "name": "SOUTHWEST SEA",
+      "x": 0,
+      "y": 4,
+      "width": 2,
+      "height": 6
+    },
+	{
+      "map_section": "MAPSEC_SOUTH_SEA",
+      "name": "SOUTH SEA",
+      "x": 2,
+      "y": 10,
+      "width": 2,
+      "height": 5
+    },
+	{
+      "map_section": "MAPSEC_UNDERWATER_CENTRAL_SEA",
+      "name": "UNDERWATER",
+      "x": 2,
+      "y": 2,
+      "width": 6,
+      "height": 6
+    },
+	{
+      "map_section": "MAPSEC_UNDERWATER_NE_SEA",
+      "name": "UNDERWATER",
+      "x": 8,
+      "y": 0,
+      "width": 2,
+      "height": 6
+    },
+	{
+      "map_section": "MAPSEC_UNDERWATER_NW_SEA",
+      "name": "UNDERWATER",
+      "x": 0,
+      "y": 0,
+      "width": 6,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_UNDERWATER_SE_SEA",
+      "name": "UNDERWATER",
+      "x": 4,
+      "y": 8,
+      "width": 6,
+      "height": 2
+    },
+	{
+      "map_section": "MAPSEC_UNDERWATER_SW_SEA",
+      "name": "UNDERWATER",
+      "x": 0,
+      "y": 4,
+      "width": 2,
+      "height": 6
+    },
+	{
+      "map_section": "MAPSEC_UNDERWATER_TUNNEL",
+      "name": "UNDERWATER",
+      "x": 1,
+      "y": 7,
+      "width": 6,
+      "height": 1
     }
   ]
 }
