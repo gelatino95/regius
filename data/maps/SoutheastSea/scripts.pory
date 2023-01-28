@@ -1,8 +1,6 @@
 mapscripts SoutheastSea_MapScripts {}
 
 script SoutheastSea_EventScript_ItemRareCandy {
-	finditem(ITEM_HM03)
-	setflag(FLAG_RECEIVED_HM03)
 	finditem(ITEM_HM01)
 	setflag(FLAG_RECEIVED_HM01)
 	end
@@ -13,8 +11,21 @@ script SoutheastSea_EventScript_ItemRepel {
 	end
 }
 
+script SoutheastSea_EventScript_SurfNPC {
+	lock
+	faceplayer
+	if (!flag(FLAG_RECEIVED_HM03)) {
+		msgbox(format("Ah, {PLAYER}!\nFinally setting off on your own?\pIf you want to travel between\nthe islands, you'll need this."), MSGBOX_DEFAULT)
+		giveitem(ITEM_HM03, 1)
+		setflag(FLAG_RECEIVED_HM03)
+	}
+	msgbox(format("That HM contains SURF.\pNot only will it let your POKéMON\ncarry you across the ocean,\lbut it's also great in battle!\pOh! But teaching the move isn't\nnecessary to use it in the field.\pAs long as your POKéMON is\ncapable of learning it,\ljust owning the HM is good enough!"), MSGBOX_AUTOCLOSE)
+	release
+	end
+}
+
 script SoutheastSea_EventScript_Alberto {
-	trainerbattle_single(TRAINER_ALBERTO, format("Ho there, TRAINER! Care for a battle?"), format("Drat..."))
+	trainerbattle_single(TRAINER_ALBERTO, format("Ho there, trainer! Care for a battle?"), format("Drat..."))
 	if (flag(FLAG_USED_REPEL)) {
 		msgbox(format("Sniff...\nUh, you smell like REPEL."), MSGBOX_AUTOCLOSE)
 		}
@@ -26,4 +37,9 @@ script SoutheastSea_EventScript_Alberto {
 script SoutheastSea_EventScript_Ed {
 	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ED, 0, format("Hey! I see you!"), format("Drat..."))
 	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+}
+
+script SoutheastSea_EventScript_Declan {
+	trainerbattle_single(TRAINER_DECLAN, format("You got your first POKéMON?\nSo did I!"), format("Drat…"))
+	msgbox(format("All the trainers around here\nlike double battles.\lBut I only have one POKéMON…"), MSGBOX_AUTOCLOSE)
 }

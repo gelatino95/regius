@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_GATEWAY_ISLAND",
       "offset": 0,
-      "map": "MAP_GATEWAY_ISLAND"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_FAR_REACH_SEA",
       "offset": 40,
-      "map": "MAP_FAR_REACH_SEA"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -33,14 +33,14 @@
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_BIOLOGICAL_INSTITUTE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 8,
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_BIOLOGICAL_INSTITUTE_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

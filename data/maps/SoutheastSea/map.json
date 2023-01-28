@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_GATEWAY_ISLAND",
       "offset": 0,
-      "map": "MAP_GATEWAY_ISLAND"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_ARID_ISLAND",
       "offset": 40,
-      "map": "MAP_ARID_ISLAND"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_CENTRAL_SEA",
       "offset": -40,
-      "map": "MAP_CENTRAL_SEA"
+      "direction": "up"
     },
     {
-      "direction": "dive",
+      "map": "MAP_UNDERWATER_SOUTHEAST_SEA",
       "offset": 0,
-      "map": "MAP_UNDERWATER_SOUTHEAST_SEA"
+      "direction": "dive"
     }
   ],
   "object_events": [
@@ -86,6 +86,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SoutheastSea_EventScript_ItemRepel",
       "flag": "FLAG_ITEM_SOUTHEASTSEA_REPEL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "x": 32,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SoutheastSea_EventScript_SurfNPC",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 10,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SoutheastSea_EventScript_Declan",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -94,7 +120,7 @@
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_SOUTHEAST_SEA_FISHING_CLUB",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

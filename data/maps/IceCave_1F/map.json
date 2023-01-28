@@ -22,14 +22,14 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_JUNGLE",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 5,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVE_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -22,14 +22,14 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_UNDERWATER_CENTRAL_SEA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_UNDERWATER_SOUTHEAST_SEA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

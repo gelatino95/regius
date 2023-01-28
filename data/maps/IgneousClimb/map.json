@@ -22,21 +22,21 @@
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_IGNEOUS_ISLAND",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_IGNEOUS_ISLAND",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 11,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_IGNEOUS_CALDERA_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

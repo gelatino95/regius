@@ -2,30 +2,47 @@ mapscripts GatewayIsland_PlayersHouse_MapScripts {}
 
 script GatewayIsland_PlayersHouse_ItemBall {
 	lock
-	msgbox(format("Dear {PLAYER},\pToday is the day you earn\nyour first POKéMON.\pI'm sorry I couldn't be here\nfor your big day.\pPlease explore the islands with your\nnew partner, and come find me.\pI'm looking forward to seeing\nhow much you've grown."))
-    givemon(SPECIES_CRAWDAUNT, 50, ITEM_SITRUS_BERRY)
+	msgbox(format("Dear {PLAYER},\pToday is the day you set off\non your first adventure.\pI'm sorry I couldn't be here\nfor your big day.\pI've provided everything you will\nneed as a new TRAINER,\lincluding your first POKéMON.\pTreat it with love, and it\nwill care for you in return."))
+    givemon(SPECIES_PLAKOMASK 15, ITEM_NONE)
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} received CRAWDAUNT!")
+    msgbox("{PLAYER} received PLAKOMASK!", MSGBOX_DEFAULT)
 	waitfanfare
-    msgbox(format("Would you like to give a\nnickname to your CRAWDAUNT?"), MSGBOX_YESNO)
+    msgbox(format("Would you like to give a\nnickname to your PLAKOMASK?"), MSGBOX_YESNO)
     if (var(VAR_RESULT)){
     	call(Common_EventScript_NameReceivedPartyMon)
     }
 	setflag(FLAG_SYS_POKEMON_GET)
 	call(LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex)
-	removeobject(1)
-	giveitem(ITEM_HM02, 1)
-	setflag(FLAG_RECEIVED_HM02)
-	giveitem(ITEM_HM06, 1)
-	setflag(FLAG_RECEIVED_HM06)
-	giveitem(ITEM_HM07, 1)
-	setflag(FLAG_RECEIVED_HM07)
-	giveitem(ITEM_HM08, 1)
-	setflag(FLAG_RECEIVED_HM08)
 	setflag(FLAG_SYS_POKENAV_GET)
 	setflag(FLAG_RECEIVED_POKENAV)
-	setflag(FLAG_SYS_B_DASH)
-	setflag(FLAG_RECEIVED_RUNNING_SHOES)
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox("{PLAYER} received the POKéNAV!", MSGBOX_DEFAULT)
+	waitfanfare
+	giveitem(ITEM_POKE_BALL, 5)
+	removeobject(1)
+	msgbox(format("And remember, if you grow\nweary from your adventure,\lyou can always return home and\lrest in your bed.\pThere's no shame in\ntaking a break.\pI'm out exploring the islands.\nCome find me once you have\lseen everything the REGIUS\lARCHIPELAGO has to offer.\pI'll be waiting!\p- GRANDMA"), MSGBOX_AUTOCLOSE)
 	release
 	end
+}
+
+script GatewayIsland_PlayersHouse_EventScript_PlayersBed {
+	lock
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(0)
+	msgbox(format("Would you like to take\na rest?"), MSGBOX_YESNO)
+	closemessage
+	if (var(VAR_RESULT)) {
+		fadescreen(1)
+		playfanfare(MUS_HEAL)
+		special(HealPlayerParty)
+		waitfanfare
+		fadescreen(0)
+		msgbox(format("You and your POKéMON\nare feeling refreshed!"), MSGBOX_AUTOCLOSE)
+	}
+	release
+	end
+}
+
+script GatewayIsland_PlayersHouse_EventScript_GrandmasBed {
+	msgbox(format("GRANDMA's bed.\nBetter not mess with it!"), MSGBOX_SIGN)
 }

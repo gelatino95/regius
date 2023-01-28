@@ -47,28 +47,28 @@
       "y": 50,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVE_B1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 23,
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVE_B1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 17,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVE_B2F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 17,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ICE_CAVE_B2F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

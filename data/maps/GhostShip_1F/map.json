@@ -22,28 +22,28 @@
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_NORTHWEST_SEA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_NORTHWEST_SEA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

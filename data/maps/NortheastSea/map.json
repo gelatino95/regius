@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ARID_ISLAND",
       "offset": 0,
-      "map": "MAP_ARID_ISLAND"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_KAPOK_ISLAND",
       "offset": 0,
-      "map": "MAP_KAPOK_ISLAND"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_CENTRAL_SEA",
       "offset": 40,
-      "map": "MAP_CENTRAL_SEA"
+      "direction": "left"
     },
     {
-      "direction": "dive",
+      "map": "MAP_UNDERWATER_NORTHEAST_SEA",
       "offset": 0,
-      "map": "MAP_UNDERWATER_NORTHEAST_SEA"
+      "direction": "dive"
     }
   ],
   "object_events": [
@@ -43,14 +43,14 @@
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_CAVE_OF_AWAKENING",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 29,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_BATTLE_GROTTO_ENTRANCE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

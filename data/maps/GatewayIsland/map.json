@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_SOUTHEAST_SEA",
       "offset": 0,
-      "map": "MAP_SOUTHEAST_SEA"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_CENTRAL_SEA",
       "offset": 0,
-      "map": "MAP_CENTRAL_SEA"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_SOUTHWEST_SEA",
       "offset": -40,
-      "map": "MAP_SOUTHWEST_SEA"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_SOUTH_SEA",
       "offset": 0,
-      "map": "MAP_SOUTH_SEA"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -55,21 +55,21 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_GATEWAY_ISLAND_PLAYERS_HOUSE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 19,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_GATEWAY_ISLAND_HOUSE1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_SLUMBER_PATH_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

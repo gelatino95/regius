@@ -14,9 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "emerge",
+      "map": "MAP_GHOST_SHIP_B1F",
       "offset": 0,
-      "map": "MAP_GHOST_SHIP_B1F"
+      "direction": "emerge"
     }
   ],
   "object_events": [

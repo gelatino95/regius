@@ -22,21 +22,21 @@
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_ARID_ISLAND_DESERT_TUNNEL",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 33,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ARID_RUINS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 57,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ARID_RUINS",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

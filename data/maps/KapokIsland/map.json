@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_NORTHEAST_SEA",
       "offset": 0,
-      "map": "MAP_NORTHEAST_SEA"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_CENTRAL_SEA",
       "offset": -40,
-      "map": "MAP_CENTRAL_SEA"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_NORTHWEST_SEA",
       "offset": 0,
-      "map": "MAP_NORTHWEST_SEA"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -50,63 +50,63 @@
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_ISLAND_POKEMON_CENTER",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_ISLAND_MOVE_RELEARNER",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 24,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_ISLAND_HOUSE1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 30,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_ISLAND_MART",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_ISLAND_HOUSE2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_ISLAND_POKEMON_DAY_CARE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 18,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_JUNGLE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 19,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_JUNGLE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 20,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_KAPOK_JUNGLE",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

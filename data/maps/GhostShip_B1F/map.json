@@ -14,9 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "dive",
+      "map": "MAP_GHOST_SHIP_UNDERWATER",
       "offset": 0,
-      "map": "MAP_GHOST_SHIP_UNDERWATER"
+      "direction": "dive"
     }
   ],
   "object_events": [
@@ -66,196 +66,196 @@
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 20,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 8,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 9,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 2,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 10,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     },
     {
       "x": 11,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     },
     {
       "x": 10,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 2,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 3,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 14,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 11
+      "dest_warp_id": "11"
     },
     {
       "x": 25,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 10
+      "dest_warp_id": "10"
     },
     {
       "x": 26,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 10
+      "dest_warp_id": "10"
     },
     {
       "x": 20,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 14
+      "dest_warp_id": "14"
     },
     {
       "x": 33,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 13
+      "dest_warp_id": "13"
     },
     {
       "x": 34,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 13
+      "dest_warp_id": "13"
     },
     {
       "x": 26,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 17
+      "dest_warp_id": "17"
     },
     {
       "x": 41,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 16
+      "dest_warp_id": "16"
     },
     {
       "x": 42,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 16
+      "dest_warp_id": "16"
     },
     {
       "x": 32,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 20
+      "dest_warp_id": "20"
     },
     {
       "x": 17,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 19
+      "dest_warp_id": "19"
     },
     {
       "x": 18,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 19
+      "dest_warp_id": "19"
     },
     {
       "x": 38,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 23
+      "dest_warp_id": "23"
     },
     {
       "x": 32,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 22
+      "dest_warp_id": "22"
     },
     {
       "x": 33,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 22
+      "dest_warp_id": "22"
     },
     {
       "x": 44,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 26
+      "dest_warp_id": "26"
     },
     {
       "x": 46,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 25
+      "dest_warp_id": "25"
     },
     {
       "x": 47,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GHOST_SHIP_B1F",
-      "dest_warp_id": 25
+      "dest_warp_id": "25"
     }
   ],
   "coord_events": [

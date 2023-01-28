@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_NORTHWEST_SEA",
       "offset": 0,
-      "map": "MAP_NORTHWEST_SEA"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_CENTRAL_SEA",
       "offset": 0,
-      "map": "MAP_CENTRAL_SEA"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_SOUTHWEST_SEA",
       "offset": 0,
-      "map": "MAP_SOUTHWEST_SEA"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -38,21 +38,21 @@
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_IGNEOUS_CLIMB",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 12,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_IGNEOUS_CLIMB",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 25,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_IGNEOUS_ISLAND_HEALING_SPOT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
