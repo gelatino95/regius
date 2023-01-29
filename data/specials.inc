@@ -539,3 +539,7 @@ gSpecials::
 	def_special SetDusclopsBattle
 	def_special BufferUnitSystemText
 	def_special SetRockSmashItem
+	def_special GetSeenMon
+	def_special GetCaughtMon
+	def_special SetSeenMon
+	def_special SetCaughtMon

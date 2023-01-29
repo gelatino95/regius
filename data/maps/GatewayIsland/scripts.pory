@@ -8,6 +8,105 @@ mapscripts GatewayIsland_MapScripts {
 			setobjectmovementtype(3, MOVEMENT_TYPE_FACE_LEFT)
 		}
 	}
+	MAP_SCRIPT_ON_LOAD {
+		if (!flag(FLAG_REGIROCK_SEAL_OPEN)) {
+			setmetatile(25, 12, METATILE_Fortree_RegiSeal_Off, TRUE)
+			setmetatile(29, 12, METATILE_Fortree_RegiSeal_Off, TRUE)
+		}
+		if (!flag(FLAG_REGICE_SEAL_OPEN)) {
+			setmetatile(25, 13, METATILE_Fortree_RegiSeal_Off, TRUE)
+			setmetatile(29, 13, METATILE_Fortree_RegiSeal_Off, TRUE)
+		}
+		if (!flag(FLAG_REGISTEEL_SEAL_OPEN)) {
+			setmetatile(25, 14, METATILE_Fortree_RegiSeal_Off_Bottom, TRUE)
+			setmetatile(29, 14, METATILE_Fortree_RegiSeal_Off_Bottom, TRUE)
+		}
+		if (!flag(FLAG_GATEWAY_DOOR_OPEN)) {
+			setmetatile(27, 13, METATILE_Fortree_Gateway_Entrance_Cover_Top, TRUE)
+			setmetatile(27, 14, METATILE_Fortree_Gateway_Entrance_Cover_Bottom, TRUE)
+		}
+	}
+}
+
+script GatewayIsland_EventScript_StoneGate {
+	lock
+	setvar(VAR_TEMP_1, SPECIES_REGIROCK)
+	specialvar(VAR_RESULT, GetCaughtMon)
+	if (var(VAR_RESULT) && !flag(FLAG_REGIROCK_SEAL_OPEN)) { //if regirock is caught and the seal isn't open, update gate state
+		goto(GatewayIsland_EventScript_UpdateGateState)
+	}
+	setvar(VAR_TEMP_1, SPECIES_REGICE)
+	specialvar(VAR_RESULT, GetCaughtMon)
+	if (var(VAR_RESULT) && !flag(FLAG_REGICE_SEAL_OPEN)) { //if regice is caught and the seal isn't open, update gate state
+		goto(GatewayIsland_EventScript_UpdateGateState)
+	}
+	setvar(VAR_TEMP_1, SPECIES_REGISTEEL)
+	specialvar(VAR_RESULT, GetCaughtMon)
+	if (var(VAR_RESULT) && !flag(FLAG_REGISTEEL_SEAL_OPEN)) { //if registeel is caught and the seal isn't open, update gate state
+		goto(GatewayIsland_EventScript_UpdateGateState)
+	}
+	if (flag(FLAG_GATEWAY_DOOR_OPEN)) {
+		msgbox("The way is open.", MSGBOX_AUTOCLOSE)
+	}
+	else {
+		braillemsgbox(GatewayIsland_Braille_StoneGate1)
+		braillemsgbox(GatewayIsland_Braille_StoneGate2)
+	}
+	release
+	end
+}
+
+script GatewayIsland_EventScript_UpdateGateState {
+	fadeoutbgm(1)
+	setvar(VAR_0x8004, 0)  //vertical pan
+	setvar(VAR_0x8005, 1)  //horizontal pan
+	setvar(VAR_0x8006, 8)  //num shakes
+	setvar(VAR_0x8007, 5)  //shake delay
+	special(ShakeCamera)
+	waitstate
+	delay(30)
+	setvar(VAR_TEMP_1, SPECIES_REGIROCK)
+	specialvar(VAR_RESULT, GetCaughtMon)
+	if (var(VAR_RESULT) && !flag(FLAG_REGIROCK_SEAL_OPEN)) { //if regirock is caught and the seal isn't open, open the seal
+		setmetatile(25, 12, METATILE_Fortree_RegiSeal_Red, TRUE)
+		setmetatile(29, 12, METATILE_Fortree_RegiSeal_Red, TRUE)
+		special(DrawWholeMapView)
+		playse(SE_UNLOCK)
+		setflag(FLAG_REGIROCK_SEAL_OPEN)
+		delay(30)
+	}
+	setvar(VAR_TEMP_1, SPECIES_REGICE)
+	specialvar(VAR_RESULT, GetCaughtMon)
+	if (var(VAR_RESULT) && !flag(FLAG_REGICE_SEAL_OPEN)) { //if regice is caught and the seal isn't open, open the seal
+		setmetatile(25, 13, METATILE_Fortree_RegiSeal_Blue, TRUE)
+		setmetatile(29, 13, METATILE_Fortree_RegiSeal_Blue, TRUE)
+		special(DrawWholeMapView)
+		playse(SE_UNLOCK)
+		setflag(FLAG_REGICE_SEAL_OPEN)
+		delay(30)
+	}
+	setvar(VAR_TEMP_1, SPECIES_REGISTEEL)
+	specialvar(VAR_RESULT, GetCaughtMon)
+	if (var(VAR_RESULT) && !flag(FLAG_REGISTEEL_SEAL_OPEN)) { //if registeel is caught and the seal isn't open, open the seal
+		setmetatile(25, 14, METATILE_Fortree_RegiSeal_Gray, TRUE)
+		setmetatile(29, 14, METATILE_Fortree_RegiSeal_Gray, TRUE)
+		special(DrawWholeMapView)
+		playse(SE_UNLOCK)
+		setflag(FLAG_REGISTEEL_SEAL_OPEN)
+		delay(30)
+	}
+	delay(30)
+	if (flag(FLAG_REGIROCK_SEAL_OPEN) && flag(FLAG_REGICE_SEAL_OPEN) && flag(FLAG_REGISTEEL_SEAL_OPEN)) { //if all three seals are open, open the door
+		setmetatile(27, 13, METATILE_Fortree_Gateway_Entrance_Top, TRUE)
+		setmetatile(27, 14, METATILE_Fortree_Gateway_Entrance_Bottom, FALSE)
+		special(DrawWholeMapView)
+		playse(SE_UNLOCK)
+		setflag(FLAG_GATEWAY_DOOR_OPEN)
+		delay(30)
+	}
+	fadeinbgm(0)
+	release
+	end
 }
 
 script GatewayIsland_EventScript_KecleonBoy {
@@ -18,6 +117,21 @@ script GatewayIsland_EventScript_KecleonBoy {
 	}
 	else {
 		msgbox(format("There are wild POKéMON out this way.\nI can't let you go out there unless\lyou have a POKéMON of your own."), MSGBOX_AUTOCLOSE)
+	}
+	release
+	end
+}
+
+script GatewayIsland_EventScript_LittleGirl {
+	lock
+	faceplayer
+	setvar(VAR_TEMP_1, SPECIES_REGIROCK)
+	specialvar(VAR_RESULT, GetCaughtMon)
+	if (var(VAR_RESULT)) {
+		msgbox(format("Oh!\nYou have REGIROCK!"), MSGBOX_AUTOCLOSE)
+	}
+	else {
+		msgbox(format("Hmm... You don't have\nany POKéMON I'm interested in!"))
 	}
 	release
 	end
@@ -60,3 +174,19 @@ script GatewayIsland_EventScript_FlyingTaxi {
 	release
 	end
 }
+
+raw `
+GatewayIsland_Braille_StoneGate1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "AWAKEN THE\n"
+	.braille "CHILDREN OF\n"
+	.braille "ROCK, ICE,\n"
+	.braille "AND STEEL.$"
+	
+GatewayIsland_Braille_StoneGate2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "THE RESTING\n"
+	.braille "PLACE OF\n"
+	.braille "THE COLOSSUS\n"
+	.braille "WILL OPEN.$"
+`
