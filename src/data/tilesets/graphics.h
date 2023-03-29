@@ -1732,19 +1732,19 @@ const u32 gTilesetTiles_SouthSea[] = INCBIN_U32("data/tilesets/secondary/southse
 
 const u16 gTilesetPalettes_BattleGrotto[][16] =
 {
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/00.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/01.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/02.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/03.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/04.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/05.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/06.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/07.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/08.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/09.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/10.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/11.gbapal"),
-	INCBIN_U16("data/tilesets/secondary/kapok_island/palettes/12.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/00.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/01.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/02.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/03.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/04.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/05.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/06.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/07.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/08.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/09.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/10.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/11.gbapal"),
+	INCBIN_U16("data/tilesets/secondary/battlegrotto/palettes/12.gbapal"),
 };
 
 const u32 gTilesetTiles_BattleGrotto[] = INCBIN_U32("data/tilesets/secondary/battlegrotto/tiles.4bpp.lz");
