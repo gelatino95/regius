@@ -36,16 +36,16 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 16,
-      "y": 22,
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
+      "x": 12,
+      "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "GatewayIsland_EventScript_FlyingTaxi",
+      "script": "GatewayIsland_EventScript_Woman",
       "flag": "0"
     },
     {
@@ -86,6 +86,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GatewayIsland_EventScript_LittleGirl",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 25,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GatewayIsland_EventScript_GateMan",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 23,
+      "y": 38,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GatewayIsland_EventScript_SouthBeachBoy",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 5,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GatewayIsland_EventScript_ItemPokeBall",
+      "flag": "FLAG_ITEM_GATEWAY_ISLAND_POKE_BALL"
     }
   ],
   "warp_events": [
@@ -122,6 +161,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "GatewayIsland_EventScript_StoneGate"
+    },
+    {
+      "type": "hidden_item",
+      "x": 36,
+      "y": 10,
+      "elevation": 0,
+      "item": "ITEM_SUPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_GATEWAY_ISLAND_SUPER_POTION"
     }
   ]
 }

@@ -67,7 +67,9 @@ SoutheastSea_EventScript_SurfNPC_Text_1:
 	.string "necessary to use it in the field.\p"
 	.string "As long as your POKéMON is\n"
 	.string "capable of learning it,\l"
-	.string "just owning the HM is good enough!$"
+	.string "just owning the HM is good enough!\p"
+	.string "Go on, just face the water\n"
+	.string "and give it a try!$"
 
 SoutheastSea_EventScript_Alberto_Text_0:
 	.string "Ho there, trainer! Care for a battle?$"

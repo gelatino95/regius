@@ -1,1 +1,18 @@
 mapscripts GatewayIsland_House1_MapScripts {}
+
+script GatewayIsland_House1_EventScript_OldLady {
+	if (!flag(FLAG_RECEIVED_MYSTIC_WATER)) {
+        lock
+        faceplayer
+        msgbox(format("You're setting out on a journey?\nThat's wonderful.\pHere, take this charm with you.\nI've been saving it for a\lspecial occasion such as this."), MSGBOX_AUTOCLOSE)
+        giveitem(ITEM_MYSTIC_WATER, 1)
+        setflag(FLAG_RECEIVED_MYSTIC_WATER)
+        closemessage
+        release
+        end
+	}
+    else {
+        msgbox(format("The ocean is dangerous.\nBut it is not your enemy.\pSpend enough time on the sea,\nand you will form a spiritual\lbond with it."), MSGBOX_NPC)
+        end
+    }
+}

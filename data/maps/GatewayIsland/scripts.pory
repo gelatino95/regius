@@ -50,6 +50,7 @@ script GatewayIsland_EventScript_StoneGate {
 	}
 	else {
 		braillemsgbox(GatewayIsland_Braille_StoneGate1)
+		delay(5)
 		braillemsgbox(GatewayIsland_Braille_StoneGate2)
 	}
 	release
@@ -125,14 +126,7 @@ script GatewayIsland_EventScript_KecleonBoy {
 script GatewayIsland_EventScript_LittleGirl {
 	lock
 	faceplayer
-	setvar(VAR_TEMP_1, SPECIES_REGIROCK)
-	specialvar(VAR_RESULT, GetCaughtMon)
-	if (var(VAR_RESULT)) {
-		msgbox(format("Oh!\nYou have REGIROCK!"), MSGBOX_AUTOCLOSE)
-	}
-	else {
-		msgbox(format("Hmm... You don't have\nany POKéMON I'm interested in!"))
-	}
+	msgbox(format("Hi!\nDo you have any cute POKéMON?"), MSGBOX_AUTOCLOSE)
 	release
 	end
 }
@@ -162,6 +156,26 @@ script GatewayIsland_EventScript_Lass {
 	end
 }
 
+script GatewayIsland_EventScript_Woman {
+	msgbox(format("Sigh…\pLife on the island can be\na bit uneventful.\lBut I wouldn't trade it for anything."), MSGBOX_NPC)
+	end
+}
+
+script GatewayIsland_EventScript_GateMan {
+	if (flag(FLAG_GATEWAY_DOOR_OPEN)) {
+		msgbox(format("Huh? The gate is open!\nDid you do that…?"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("This stone gate has been here as long\nas anyone can remember.\pApparently it was left by some\nancient civilization.\pNo one has been able to see what's\nbehind it, either.\lIt's quite an enigma."), MSGBOX_NPC)
+	}
+	end
+}
+
+script GatewayIsland_EventScript_SouthBeachBoy {
+	msgbox(format("The trainers down this way are\ntoo tough!\pIf you're a newbie trainer,\nyou might want to rethink\lgoing down south."), MSGBOX_NPC)
+	end
+}
+
 script GatewayIsland_EventScript_FlyingTaxi {
 	lock
 	faceplayer
@@ -172,6 +186,11 @@ script GatewayIsland_EventScript_FlyingTaxi {
 		special(FieldLoadFlyMap)
 	}
 	release
+	end
+}
+
+script GatewayIsland_EventScript_ItemPokeBall {
+	finditem(ITEM_POKE_BALL)
 	end
 }
 

@@ -19,7 +19,7 @@ script SoutheastSea_EventScript_SurfNPC {
 		giveitem(ITEM_HM03, 1)
 		setflag(FLAG_RECEIVED_HM03)
 	}
-	msgbox(format("That HM contains SURF.\pNot only will it let your POKéMON\ncarry you across the ocean,\lbut it's also great in battle!\pOh! But teaching the move isn't\nnecessary to use it in the field.\pAs long as your POKéMON is\ncapable of learning it,\ljust owning the HM is good enough!"), MSGBOX_AUTOCLOSE)
+	msgbox(format("That HM contains SURF.\pNot only will it let your POKéMON\ncarry you across the ocean,\lbut it's also great in battle!\pOh! But teaching the move isn't\nnecessary to use it in the field.\pAs long as your POKéMON is\ncapable of learning it,\ljust owning the HM is good enough!\pGo on, just face the water\nand give it a try!"), MSGBOX_AUTOCLOSE)
 	release
 	end
 }

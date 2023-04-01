@@ -65,6 +65,7 @@ GatewayIsland_EventScript_StoneGate_6:
 GatewayIsland_EventScript_StoneGate_11:
 	goto_if_set FLAG_GATEWAY_DOOR_OPEN, GatewayIsland_EventScript_StoneGate_17
 	braillemsgbox GatewayIsland_Braille_StoneGate1
+	delay 5
 	braillemsgbox GatewayIsland_Braille_StoneGate2
 GatewayIsland_EventScript_StoneGate_16:
 	release
@@ -204,18 +205,9 @@ GatewayIsland_EventScript_KecleonBoy_2:
 GatewayIsland_EventScript_LittleGirl::
 	lock
 	faceplayer
-	setvar VAR_TEMP_1, SPECIES_REGIROCK
-	specialvar VAR_RESULT, GetCaughtMon
-	compare VAR_RESULT, 0
-	goto_if_ne GatewayIsland_EventScript_LittleGirl_2
-	msgbox GatewayIsland_EventScript_LittleGirl_Text_1
-GatewayIsland_EventScript_LittleGirl_1:
+	msgbox GatewayIsland_EventScript_LittleGirl_Text_0, MSGBOX_AUTOCLOSE
 	release
 	end
-
-GatewayIsland_EventScript_LittleGirl_2:
-	msgbox GatewayIsland_EventScript_LittleGirl_Text_0, MSGBOX_AUTOCLOSE
-	goto GatewayIsland_EventScript_LittleGirl_1
 
 
 GatewayIsland_EventScript_Kecleon::
@@ -245,6 +237,27 @@ GatewayIsland_EventScript_Lass_2:
 	goto GatewayIsland_EventScript_Lass_1
 
 
+GatewayIsland_EventScript_Woman::
+	msgbox GatewayIsland_EventScript_Woman_Text_0, MSGBOX_NPC
+	end
+
+
+GatewayIsland_EventScript_GateMan::
+	goto_if_set FLAG_GATEWAY_DOOR_OPEN, GatewayIsland_EventScript_GateMan_2
+	msgbox GatewayIsland_EventScript_GateMan_Text_1, MSGBOX_NPC
+GatewayIsland_EventScript_GateMan_1:
+	end
+
+GatewayIsland_EventScript_GateMan_2:
+	msgbox GatewayIsland_EventScript_GateMan_Text_0, MSGBOX_NPC
+	goto GatewayIsland_EventScript_GateMan_1
+
+
+GatewayIsland_EventScript_SouthBeachBoy::
+	msgbox GatewayIsland_EventScript_SouthBeachBoy_Text_0, MSGBOX_NPC
+	end
+
+
 GatewayIsland_EventScript_FlyingTaxi::
 	lock
 	faceplayer
@@ -259,6 +272,11 @@ GatewayIsland_EventScript_FlyingTaxi_2:
 	setvar VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI
 	special FieldLoadFlyMap
 	goto GatewayIsland_EventScript_FlyingTaxi_1
+
+
+GatewayIsland_EventScript_ItemPokeBall::
+	finditem ITEM_POKE_BALL
+	end
 
 
 GatewayIsland_Braille_StoneGate1:
@@ -291,12 +309,8 @@ GatewayIsland_EventScript_KecleonBoy_Text_1:
 	.string "you have a POKéMON of your own.$"
 
 GatewayIsland_EventScript_LittleGirl_Text_0:
-	.string "Oh!\n"
-	.string "You have REGIROCK!$"
-
-GatewayIsland_EventScript_LittleGirl_Text_1:
-	.string "Hmm... You don't have\n"
-	.string "any POKéMON I'm interested in!$"
+	.string "Hi!\n"
+	.string "Do you have any cute POKéMON?$"
 
 GatewayIsland_EventScript_Kecleon_Text_0:
 	.string "Kiyahn!$"
@@ -308,6 +322,32 @@ GatewayIsland_EventScript_Lass_Text_0:
 GatewayIsland_EventScript_Lass_Text_1:
 	.string "Oh! Your {STR_VAR_1}\n"
 	.string "can learn WATERFALL!$"
+
+GatewayIsland_EventScript_Woman_Text_0:
+	.string "Sigh…\p"
+	.string "Life on the island can be\n"
+	.string "a bit uneventful.\l"
+	.string "But I wouldn't trade it for anything.$"
+
+GatewayIsland_EventScript_GateMan_Text_0:
+	.string "Huh? The gate is open!\n"
+	.string "Did you do that…?$"
+
+GatewayIsland_EventScript_GateMan_Text_1:
+	.string "This stone gate has been here as long\n"
+	.string "as anyone can remember.\p"
+	.string "Apparently it was left by some\n"
+	.string "ancient civilization.\p"
+	.string "No one has been able to see what's\n"
+	.string "behind it, either.\l"
+	.string "It's quite an enigma.$"
+
+GatewayIsland_EventScript_SouthBeachBoy_Text_0:
+	.string "The trainers down this way are\n"
+	.string "too tough!\p"
+	.string "If you're a newbie trainer,\n"
+	.string "you might want to rethink\l"
+	.string "going down south.$"
 
 GatewayIsland_EventScript_FlyingTaxi_Text_0:
 	.string "Want a lift?$"
