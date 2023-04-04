@@ -653,9 +653,9 @@
 
 //my hidden items
 #define FLAG_HIDDEN_ITEM_GATEWAY_ISLAND_SUPER_POTION    0x264
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
+#define FLAG_HIDDEN_ITEM_SOUTHEASTSEA_NET_BALL          0x265
+#define FLAG_HIDDEN_ITEM_SOUTHEASTSEA_PEARL             0x266
+#define FLAG_HIDDEN_ITEM_SOUTHEASTSEA_HEART_SCALE       0x267
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
@@ -1220,12 +1220,12 @@
 
 //My items
 
-#define FLAG_ITEM_SOUTHEASTSEA_RARE_CANDY                           0x493
+#define FLAG_ITEM_SOUTHEASTSEA_POTION                               0x493
 #define FLAG_ITEM_GHOST_SHIP_HM08                                   0x494
 #define FLAG_ITEM_CAVE_OF_AWAKENING_BLUE_FLUTE                      0x495
 #define FLAG_ITEM_CAVE_OF_SOBRIETY_YELLOW_FLUTE                     0x496
 #define FLAG_ITEM_CAVE_OF_CHASTITY_RED_FLUTE                        0x497
-#define FLAG_ITEM_SOUTHEASTSEA_REPEL                                0x498
+#define FLAG_ITEM_SOUTHEASTSEA_ETHER                                0x498
 #define FLAG_ITEM_GATEWAY_ISLAND_POKE_BALL                          0x499
 #define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag

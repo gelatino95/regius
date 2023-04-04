@@ -1,14 +1,37 @@
 mapscripts SoutheastSea_MapScripts {}
 
-script SoutheastSea_EventScript_ItemRareCandy {
-	finditem(ITEM_HM01)
-	setflag(FLAG_RECEIVED_HM01)
+script SoutheastSea_EventScript_ItemPotion {
+	finditem(ITEM_POTION)
 	end
 }
 
-script SoutheastSea_EventScript_ItemRepel {
-	finditem(ITEM_REPEL)
+script SoutheastSea_EventScript_ItemEther {
+	finditem(ITEM_ETHER)
 	end
+}
+
+script SoutheastSea_EventScript_Girl1 {
+	msgbox(format("People drop useful items\non the ground all the time.\pCheck out any suspicious-looking\nspots you see, maybe you'll find\lsomething good!"), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_TrainerTips {
+	msgbox(format("TRAINER TIPS\pTRAINERS in the REGIUS\nARCHIPELAGO love to take part\lin DOUBLE BATTLES!\pIf you and your opponent both\nhave enough POKéMON, you will\lautomatically begin a DOUBLE BATTLE.\pIf you prefer SINGLE BATTLES,\nyou can change this setting\lin the OPTIONS menu."), MSGBOX_SIGN)
+}
+
+script SoutheastSea_EventScript_Girl2 {
+	msgbox(format("FISHING is popular here on\nthe islands.\pThis is where all the serious\nFISHERS gather.\pIf you pay them a visit, maybe they'll\neven let you join their club."), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Girl3 {
+	msgbox(format("SLUMBER ISLAND is surrounded by\nthese sharp rocks on all sides.\lThe water is too choppy and\ldangerous to swim or ride through.\pAnyone who tries to FLY there\ngets turned around in a dense\lfog that covers the island.\pIt's as if the island doesn't\nwant to be visited.\lWhat could be out there?"), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_RouteSign {
+	msgbox(format("SOUTHEAST SEA\n{UP_ARROW}ARID ISLAND\l{LEFT_ARROW}GATEWAY ISLAND"), MSGBOX_SIGN)
+}
+
+script SoutheastSea_EventScript_FishingClub {
+	msgbox(format("REGIUS FISHING CLUB\nFree RODS for members!"), MSGBOX_SIGN)
 }
 
 script SoutheastSea_EventScript_SurfNPC {
@@ -25,21 +48,41 @@ script SoutheastSea_EventScript_SurfNPC {
 }
 
 script SoutheastSea_EventScript_Alberto {
-	trainerbattle_single(TRAINER_ALBERTO, format("Ho there, trainer! Care for a battle?"), format("Drat..."))
-	if (flag(FLAG_USED_REPEL)) {
-		msgbox(format("Sniff...\nUh, you smell like REPEL."), MSGBOX_AUTOCLOSE)
-		}
-	else {
-		msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
-		}
+	trainerbattle_single(TRAINER_ALBERTO, format("Ho there, trainer! Care for a battle?"), format("Hmm…"))
+	msgbox(format("Fishin's good today. Why not\ngrab a rod and join me?"), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Fredrick {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_FREDRICK, 0, format("With these POKéMON I fished\nup, I'm unstoppable!"), format("I may have miscalculated…"))
+	msgbox(format("You have what it takes to be a\npro at FISHING, I'm sure of it."), MSGBOX_NPC)
 }
 
 script SoutheastSea_EventScript_Ed {
-	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ED, 0, format("Hey! I see you!"), format("Drat..."))
-	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ED, 0, format("Hey, nice ride!\nWanna see mine?"), format("My ride!"))
+	msgbox(format("Letting your POKéMON carry you\nacross the water is the way to go!"), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Leah {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_LEAH, 0, format("Would you mind staying\nout of my way?"), format("I'm just trying to swim here…"))
+	msgbox(format("Aren't the waves nice today?"), MSGBOX_NPC)
 }
 
 script SoutheastSea_EventScript_Declan {
 	trainerbattle_single(TRAINER_DECLAN, format("You got your first POKéMON?\nSo did I!"), format("Drat…"))
-	msgbox(format("All the trainers around here\nlike double battles.\lBut I only have one POKéMON…"), MSGBOX_AUTOCLOSE)
+	msgbox(format("All the trainers around here\nlike double battles.\lBut I only have one POKéMON…"), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Matt {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_MATT, 0, format("Ho there!\nI see you there, TRAINER!"), format("I let it go!"))
+	msgbox(format("I've been FISHING all over\nthese islands. There's so much\llife out there, you never know\lwhat you'll find next!"), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Daisy {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_DAISY, 0, format("Heeeey! You!\nWanna play with me?"), format("Aww…"))
+	msgbox(format("I'm not stuck out here!\nMy POKéMON can carry me back."), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Rosie {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ROSIE, 0, format("My POKéMON are itching to\ncome out and play!"), format("Alright! Good fight!"))
+	msgbox(format("I keep bumping into wild\nKELPENT. They're so wiggly!"), MSGBOX_NPC)
 }
