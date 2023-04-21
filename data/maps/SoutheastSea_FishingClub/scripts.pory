@@ -1,1 +1,41 @@
 mapscripts SoutheastSea_FishingClub_MapScripts {}
+
+script SoutheastSea_FishingClub_EventScript_Healer {
+	lock
+	faceplayer
+	msgbox(format("We keep supplies around for\nvisiting TRAINERS.\lDo you need to rest up?"), MSGBOX_YESNO)
+	closemessage
+	if (var(VAR_RESULT)) {
+		fadescreen(1)
+		playfanfare(MUS_HEAL)
+		special(HealPlayerParty)
+		waitfanfare
+		fadescreen(0)
+		msgbox(format("Take care out there."), MSGBOX_AUTOCLOSE)
+	}
+	release
+	end
+}
+
+script SoutheastSea_EventScript_Felix {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_FELIX, 0, format("You think you got what it\ntakes to be one of us?"), format("You have the FISHER's spirit!"))
+	msgbox(format("We're real serious about FISHING\nhere in this club."), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Anton {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ANTON, 0, format("The club president need not be\ntroubled by the likes of you!"), format("Welp."))
+	msgbox(format("Our president is the most\nexperienced FISHER on the islands!"), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Sanders {
+	trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_SANDERS, 0, format("What's this? An up-and-coming\nFISHER wants to join our club?\pYou've done well to beat\nmy pals, but you'll still have to\lprove your might if you want to\learn your ROD.\pThat's right, you have to face\nme, the club president!"), format("Incredible!"), SoutheastSea_EventScript_Sanders_PostBattle)
+	msgbox(format("There are countless wonders\nout there in the sea!\pNever stop fishing, kid, and maybe\nyou'll see some of them."), MSGBOX_NPC)
+}
+
+script SoutheastSea_EventScript_Sanders_PostBattle {
+	msgbox(format("Wow! I shouldn't have\nunderestimated you for a second.\pI've seen enough!\nWelcome to the REGIUS FISHING CLUB, kid!\pWe provide only the best RODS\nfor our members.\lGo on, you've earned it."), MSGBOX_AUTOCLOSE)
+	giveitem(ITEM_SUPER_ROD, 1)
+	closemessage
+	release
+	end
+}

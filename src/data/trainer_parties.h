@@ -426,47 +426,50 @@ static const struct TrainerMon sParty_Rosie[] = {
     .iv = 0,
     .lvl = 13,
     .species = SPECIES_REMORAID,
-    },
+    }
 };
 
 static const struct TrainerMon sParty_Felix[] = {
     {
     .iv = 0,
-    .lvl = 43,
-    .species = SPECIES_MEDICHAM,
-    .moves = {MOVE_PSYCHIC, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .lvl = 13,
+    .species = SPECIES_CORPHISH,
     },
     {
     .iv = 0,
-    .lvl = 43,
-    .species = SPECIES_CLAYDOL,
-    .moves = {MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE}
+    .lvl = 13,
+    .species = SPECIES_RADULIN,
     }
 };
 
-static const struct TrainerMon sParty_Violet[] = {
+static const struct TrainerMon sParty_Anton[] = {
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .lvl = 13,
+    .species = SPECIES_REMORAID,
     },
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_GLOOM,
+    .lvl = 13,
+    .species = SPECIES_REMORAID,
     }
 };
 
-static const struct TrainerMon sParty_Rose2[] = {
+static const struct TrainerMon sParty_Sanders[] = {
     {
     .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_SHROOMISH,
+    .lvl = 13,
+    .species = SPECIES_HORSEA,
     },
     {
     .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .lvl = 13,
+    .species = SPECIES_SHELLDER,
+    },
+    {
+    .iv = 10,
+    .lvl = 15,
+    .species = SPECIES_HELIMAW,
     }
 };
 

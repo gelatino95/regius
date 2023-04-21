@@ -48,7 +48,7 @@ script SoutheastSea_EventScript_SurfNPC {
 }
 
 script SoutheastSea_EventScript_Alberto {
-	trainerbattle_single(TRAINER_ALBERTO, format("Ho there, trainer! Care for a battle?"), format("Hmm…"))
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ALBERTO, 0, format("Ho there, trainer! Care for a battle?"), format("Hmm…"))
 	msgbox(format("Fishin's good today. Why not\ngrab a rod and join me?"), MSGBOX_NPC)
 }
 

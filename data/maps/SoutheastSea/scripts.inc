@@ -59,7 +59,7 @@ SoutheastSea_EventScript_SurfNPC_2:
 
 
 SoutheastSea_EventScript_Alberto::
-	trainerbattle_single TRAINER_ALBERTO, SoutheastSea_EventScript_Alberto_Text_0, SoutheastSea_EventScript_Alberto_Text_1
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_ALBERTO, 0, SoutheastSea_EventScript_Alberto_Text_0, SoutheastSea_EventScript_Alberto_Text_1
 	msgbox SoutheastSea_EventScript_Alberto_Text_2, MSGBOX_NPC
 	return
 
@@ -116,12 +116,11 @@ SoutheastSea_EventScript_Girl1_Text_0:
 SoutheastSea_EventScript_TrainerTips_Text_0:
 	.string "TRAINER TIPS\p"
 	.string "TRAINERS in the REGIUS\n"
-	.string "ARCHIPELAGO love to take\l"
-	.string "part in DOUBLE BATTLES!\p"
+	.string "ARCHIPELAGO love to take part\l"
+	.string "in DOUBLE BATTLES!\p"
 	.string "If you and your opponent both\n"
 	.string "have enough POKéMON, you will\l"
-	.string "automatically begin a DOUBLE\l"
-	.string "BATTLE.\p"
+	.string "automatically begin a DOUBLE BATTLE.\p"
 	.string "If you prefer SINGLE BATTLES,\n"
 	.string "you can change this setting\l"
 	.string "in the OPTIONS menu.$"
@@ -131,9 +130,8 @@ SoutheastSea_EventScript_Girl2_Text_0:
 	.string "the islands.\p"
 	.string "This is where all the serious\n"
 	.string "FISHERS gather.\p"
-	.string "If you pay them a visit, maybe\n"
-	.string "they'll even let you join\l"
-	.string "their club.$"
+	.string "If you pay them a visit, maybe they'll\n"
+	.string "even let you join their club.$"
 
 SoutheastSea_EventScript_Girl3_Text_0:
 	.string "SLUMBER ISLAND is surrounded by\n"
@@ -205,8 +203,7 @@ SoutheastSea_EventScript_Ed_Text_1:
 
 SoutheastSea_EventScript_Ed_Text_2:
 	.string "Letting your POKéMON carry you\n"
-	.string "across the water is the\l"
-	.string "way to go!$"
+	.string "across the water is the way to go!$"
 
 SoutheastSea_EventScript_Leah_Text_0:
 	.string "Would you mind staying\n"

@@ -38,10 +38,10 @@
 #define TRAINER_ARCHIE                       34
 #define TRAINER_LEAH                         35 // new
 #define TRAINER_DAISY                        36 // new
-#define TRAINER_ROSIE                        37
-#define TRAINER_FELIX                        38
-#define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40
+#define TRAINER_ROSIE                        37 // new
+#define TRAINER_FELIX                        38 // new
+#define TRAINER_ANTON                        39 // new
+#define TRAINER_SANDERS                      40 // new
 #define TRAINER_ROSE_3                       41
 #define TRAINER_ROSE_4                       42
 #define TRAINER_ROSE_5                       43
