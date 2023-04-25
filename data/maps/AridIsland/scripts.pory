@@ -3,3 +3,88 @@ mapscripts AridIsland_MapScripts {
 		setflag(FLAG_VISITED_ARID_ISLAND)
 	}
 }
+
+script AridIsland_EventScript_ItemProtein {
+	finditem(ITEM_PROTEIN)
+	end
+}
+
+script AridIsland_EventScript_AridIslandSign {
+	msgbox(format("ARID ISLAND\nThe hot, dry market town."), MSGBOX_SIGN)
+}
+
+script AridIsland_EventScript_DesertSign {
+	msgbox(format("Passage to ARID DESERT.\pWARNING: Severe sandstorms ahead."), MSGBOX_SIGN)
+}
+
+script AridIsland_EventScript_Boy1 {
+	msgbox(format("All the MARTS around here\nare outdoors.\pThe cool ocean breeze makes the weather on this side of the island just perfect."), MSGBOX_NPC)
+}
+
+script AridIsland_EventScript_Boy2 {
+	msgbox(format("I'm not allowed to play in\nthe desert!\pIt's easy to get lost in the\nsandstorm, and it's full of\lscary POKéMON!"), MSGBOX_NPC)
+}
+
+script AridIsland_EventScript_RuinManiac {
+	msgbox(format("The ARID DESERT hides a great secret!\nIt's home to ancient ruins just\nbegging to be explored!\pAdventurers come from all over\njust to see them."), MSGBOX_NPC)
+}
+
+script AridIsland_EventScript_DrinkMart {
+	lock
+	message("The desert is hot!\nBeat the heat with a drink!")
+	waitmessage
+	pokemart(DrinkMartItems)
+	msgbox("Come again soon!")
+	release
+}
+
+mart DrinkMartItems {
+	ITEM_BERRY_JUICE
+	ITEM_FRESH_WATER
+	ITEM_SODA_POP
+	ITEM_LEMONADE
+	ITEM_MOOMOO_MILK
+}
+
+script AridIsland_EventScript_GeneralMart {
+	lock
+	message("General goods here!\nNeed to stock up?")
+	waitmessage
+	pokemart(GeneralMartItems)
+	msgbox("Thank you.")
+	release
+}
+
+mart GeneralMartItems {
+	ITEM_POTION
+	ITEM_SUPER_POTION
+	ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+	ITEM_BURN_HEAL
+	ITEM_AWAKENING
+	ITEM_REVIVE
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+}
+
+script AridIsland_EventScript_BerryMart {
+	lock
+	message("Berries for sale!\nGet them while they're ripe!")
+	waitmessage
+	pokemart(BerryMartItems)
+	msgbox("Come again!")
+	release
+}
+
+mart BerryMartItems {
+	ITEM_ORAN_BERRY
+	ITEM_LEPPA_BERRY
+	ITEM_CHERI_BERRY
+	ITEM_PECHA_BERRY
+	ITEM_RAWST_BERRY
+	ITEM_CHESTO_BERRY
+	ITEM_ASPEAR_BERRY
+	ITEM_PERSIM_BERRY
+}

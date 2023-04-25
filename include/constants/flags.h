@@ -656,8 +656,8 @@
 #define FLAG_HIDDEN_ITEM_SOUTHEASTSEA_NET_BALL          0x265
 #define FLAG_HIDDEN_ITEM_SOUTHEASTSEA_PEARL             0x266
 #define FLAG_HIDDEN_ITEM_SOUTHEASTSEA_HEART_SCALE       0x267
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
+#define FLAG_HIDDEN_ITEM_ARID_ISLAND_ELIXIR             0x268
+#define FLAG_HIDDEN_ITEM_ARID_ISLAND_HEART_SCALE        0x269
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
@@ -1227,7 +1227,7 @@
 #define FLAG_ITEM_CAVE_OF_CHASTITY_RED_FLUTE                        0x497
 #define FLAG_ITEM_SOUTHEASTSEA_ETHER                                0x498
 #define FLAG_ITEM_GATEWAY_ISLAND_POKE_BALL                          0x499
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+#define FLAG_ITEM_ARID_ISLAND_PROTEIN                               0x49A
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag

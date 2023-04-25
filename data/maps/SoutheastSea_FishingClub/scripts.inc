@@ -37,12 +37,12 @@ SoutheastSea_EventScript_Anton::
 
 SoutheastSea_EventScript_Sanders::
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_SANDERS, 0, SoutheastSea_EventScript_Sanders_Text_0, SoutheastSea_EventScript_Sanders_Text_1, SoutheastSea_EventScript_Sanders_PostBattle
-	msgbox SoutheastSea_EventScript_Sanders_Text_2
+	msgbox SoutheastSea_EventScript_Sanders_Text_2, MSGBOX_NPC
 	return
 
 
 SoutheastSea_EventScript_Sanders_PostBattle::
-	msgbox SoutheastSea_EventScript_Sanders_PostBattle_Text_0
+	msgbox SoutheastSea_EventScript_Sanders_PostBattle_Text_0, MSGBOX_AUTOCLOSE
 	giveitem ITEM_SUPER_ROD, 1
 	closemessage
 	release
