@@ -2824,9 +2824,9 @@ const struct Item gItems[] =
     {
         .name = _("ANCIENT SLAB"),
         .itemId = ITEM_ANCIENT_SLAB,
-        .price = 4000,
+        .price = 1000,
         .description = sAncientSlabDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },

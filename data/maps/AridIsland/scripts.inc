@@ -119,14 +119,14 @@ AridIsland_EventScript_Boy1_Text_0:
 	.string "perfect.$"
 
 AridIsland_EventScript_Boy2_Text_0:
-	.string "I'm not allowed to play\n"
-	.string "in the desert!\p"
+	.string "I'm not allowed to play in\n"
+	.string "the desert!\p"
 	.string "It's easy to get lost in the\n"
 	.string "sandstorm, and it's full of\l"
 	.string "scary POKéMON!$"
 
 AridIsland_EventScript_RuinManiac_Text_0:
-	.string "The ARID DESERT hides a great secret!\p"
+	.string "The ARID DESERT hides a great secret!\n"
 	.string "It's home to ancient ruins just\n"
 	.string "begging to be explored!\p"
 	.string "Adventurers come from all over\n"
