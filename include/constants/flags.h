@@ -56,10 +56,10 @@
 #define FLAG_GATEWAY_DOOR_OPEN 						0x2C
 #define FLAG_RECEIVED_MYSTIC_WATER                  0x2D
 #define FLAG_TALKED_TO_ARCHAEOLOGIST                0x2E
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
+#define FLAG_TALKED_TO_REPEL_LADY                   0x2F
+#define FLAG_RECEIVED_REPEL_LADY_GIFT_1             0x30
+#define FLAG_RECEIVED_REPEL_LADY_GIFT_2             0x31
+#define FLAG_RECEIVED_REPEL_LADY_GIFT_3             0x32
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag

@@ -1,1 +1,50 @@
 mapscripts AridIsland_House1_MapScripts {}
+
+script AridIsland_House1_EventScript_Repel_Lady {
+    if (flag(FLAG_RECEIVED_REPEL_LADY_GIFT_1) && flag(FLAG_RECEIVED_REPEL_LADY_GIFT_2) && flag(FLAG_RECEIVED_REPEL_LADY_GIFT_3)) {
+        msgbox(format("Child, you have demonstrated time and again that you care for our environment.\lI have nothing else to offer you.\pThank you for restoring my faith in the future of our precious islands."), MSGBOX_NPC)
+    }
+    else {
+        if (flag(FLAG_USED_REPEL)) {
+            msgbox(format("Sniff…\pEugh… you reek of REPEL.\nThat nasty chemical that pollutes\lour ocean…\pPlease, leave me be.\nI want nothing to do with you."), MSGBOX_NPC)
+        }
+        else {
+            if (!flag(FLAG_TALKED_TO_REPEL_LADY)) {
+                msgbox(format("Sniff…\pHm… you smell clean, child.\nMany other trainers can't say\lthe same.\pThey have all been tainted by REPEL.\nIt's a foul-smelling chemical that\lpollutes our pristine waters.\pI won't even associate with those\nwho use it.\pChild, please don't be like the rest.\nI encourage you to never use REPEL,\lfor the sake of our environment.\pI know it's a great inconvenience\nto you as a TRAINER,\lbut I will reward you for your efforts.\pReturn to me later, and I may\nhave something for you.\pBut I will know if you used any\nkind of REPEL in the meantime.\lI can smell it a mile away."), MSGBOX_NPC)
+                setflag(FLAG_TALKED_TO_REPEL_LADY)
+            }
+            else {
+                setvar(VAR_TEMP_1, SPECIES_REGIROCK)
+	            specialvar(VAR_RESULT, GetCaughtMon)
+                if (var(VAR_RESULT) && !flag(FLAG_RECEIVED_REPEL_LADY_GIFT_1)) { //if you have captured regirock but haven't received the first gift
+                    msgbox(format("Ah, child, you have been on\nquite an adventure, haven't you?\pSniff…\nAnd you still smell fresh as ever.\pThank you for choosing to avoid using REPEL. You have helped our ocean remain clean.\pFor that, I think you deserve a reward. Don't be shy!"), MSGBOX_NPC)
+                    giveitem(ITEM_BLACK_FLUTE, 1)
+                    msgbox(format("This should help a TRAINER such as you. It may not be as effective as a REPEL, but it will ward off wild POKéMON in a way that does not hurt the environment."), MSGBOX_NPC)
+                    setflag(FLAG_RECEIVED_REPEL_LADY_GIFT_1)
+                    end
+                }
+                setvar(VAR_TEMP_1, SPECIES_REGICE)
+	            specialvar(VAR_RESULT, GetCaughtMon)
+                if (var(VAR_RESULT) && !flag(FLAG_RECEIVED_REPEL_LADY_GIFT_2)) { //if you have captured regice but haven't received the second gift
+                    msgbox(format("Ah, child, you have been on\nquite an adventure, haven't you?\pSniff…\nAnd you still smell fresh as ever.\pThank you for choosing to avoid using REPEL. You have helped our ocean remain clean.\pFor that, I think you deserve a reward. Don't be shy!"), MSGBOX_NPC)
+                    giveitem(ITEM_RARE_CANDY, 1)
+                    msgbox(format("I hope this gift serves you well, child."), MSGBOX_NPC)
+                    setflag(FLAG_RECEIVED_REPEL_LADY_GIFT_2)
+                    end
+                }
+                setvar(VAR_TEMP_1, SPECIES_REGISTEEL)
+	            specialvar(VAR_RESULT, GetCaughtMon)
+                if (var(VAR_RESULT) && !flag(FLAG_RECEIVED_REPEL_LADY_GIFT_3)) { //if you have captured registeel but haven't received the third gift
+                    msgbox(format("Ah, child, you have been on\nquite an adventure, haven't you?\pSniff…\nAnd you still smell fresh as ever.\pThank you for choosing to avoid using REPEL. You have helped our ocean remain clean.\pFor that, I think you deserve a reward. Don't be shy!"), MSGBOX_NPC)
+                    giveitem(ITEM_PP_MAX, 1)
+                    msgbox(format("I hope this gift serves you well, child."), MSGBOX_NPC)
+                    setflag(FLAG_RECEIVED_REPEL_LADY_GIFT_3)
+                    end
+                }
+                else {
+                    msgbox(format("I have not prepared anything yet, but please continue to avoid using REPEL and come back later.\lI may have a reward for you."), MSGBOX_NPC)
+                }
+            }
+        }
+    }
+}
