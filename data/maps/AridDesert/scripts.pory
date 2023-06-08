@@ -1,1 +1,43 @@
 mapscripts AridDesert_MapScripts {}
+
+script AridDesert_EventScript_Sign {
+    msgbox(format("{LEFT_ARROW} ARID ISLAND\n{RIGHT_ARROW} ARID RUINS"), MSGBOX_SIGN)
+}
+
+script AridDesert_EventScript_Boy {
+    msgbox(format("Ack, I can't see a thing in this sandstorm!\pI'm gonna need to go back to town and stock up…\lThere's nowhere to heal my POKéMON out here."), MSGBOX_NPC)
+}
+
+script AridDesert_EventScript_RuinManiac {
+    msgbox(format("I'm having difficulty locating the\nruins…\lI hear there are multiple entrances, so where in blazes are they?"), MSGBOX_NPC)
+}
+
+script AridDesert_EventScript_Zander {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ZANDER, 0, format("Fellow TRAINER spotted!\nGet ready!"), format("Fumbled it!"))
+	msgbox(format("Be careful running through the sand.\nYou might trip over wild POKéMON!"), MSGBOX_NPC)
+}
+
+script AridDesert_EventScript_Armin {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ARMIN, 0, format("Hey, this isn't the ocean…!"), format("I'm so confused…"))
+	msgbox(format("I think I took a wrong turn\nsomewhere…"), MSGBOX_NPC)
+}
+
+script AridDesert_EventScript_Charlie {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_CHARLIE, 0, format("I'm on the hunt for ruins!"), format("Magnificent!"))
+	msgbox(format("Have you seen any ruins around here?"), MSGBOX_NPC)
+}
+
+script AridDesert_EventScript_Alexa {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ALEXA, 0, format("Are you watching your POKéMON's health?"), format("My POKéMON's health!"))
+	msgbox(format("Sandstorms can wear down your POKéMON.\nMy secret? I use POKéMON that aren't hurt by sandstorms!"), MSGBOX_NPC)
+}
+
+script AridDesert_EventScript_ItemSuperPotion {
+	finditem(ITEM_SUPER_POTION)
+	end
+}
+
+script AridDesert_EventScript_ItemGreatBall {
+	finditem(ITEM_GREAT_BALL)
+	end
+}

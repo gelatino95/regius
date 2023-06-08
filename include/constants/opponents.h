@@ -32,7 +32,7 @@
 #define TRAINER_GRUNT_AQUA_HIDEOUT_6         28
 #define TRAINER_FREDRICK                     29 // new
 #define TRAINER_MATT                         30 // new
-#define TRAINER_ZANDER                       31
+#define TRAINER_ZANDER                       31 // new
 #define TRAINER_SHELLY_WEATHER_INSTITUTE     32
 #define TRAINER_SHELLY_SEAFLOOR_CAVERN       33
 #define TRAINER_ARCHIE                       34
@@ -42,7 +42,7 @@
 #define TRAINER_FELIX                        38 // new
 #define TRAINER_ANTON                        39 // new
 #define TRAINER_SANDERS                      40 // new
-#define TRAINER_ROSE_3                       41
+#define TRAINER_ARMIN                        41 // new
 #define TRAINER_ROSE_4                       42
 #define TRAINER_ROSE_5                       43
 #define TRAINER_DUSTY_1                      44
@@ -67,7 +67,7 @@
 #define TRAINER_LOLA_5                       63
 #define TRAINER_RICKY_1                      64
 #define TRAINER_SIMON                        65
-#define TRAINER_CHARLIE                      66
+#define TRAINER_CHARLIE                      66 // new
 #define TRAINER_RICKY_2                      67
 #define TRAINER_RICKY_3                      68
 #define TRAINER_RICKY_4                      69
@@ -671,7 +671,7 @@
 #define TRAINER_JONAH                       667
 #define TRAINER_HENRY                       668
 #define TRAINER_ROGER                       669
-#define TRAINER_ALEXA                       670
+#define TRAINER_ALEXA                       670 // new
 #define TRAINER_RUBEN                       671
 #define TRAINER_KOJI_1                      672
 #define TRAINER_WAYNE                       673

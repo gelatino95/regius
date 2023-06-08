@@ -658,8 +658,8 @@
 #define FLAG_HIDDEN_ITEM_SOUTHEASTSEA_HEART_SCALE       0x267
 #define FLAG_HIDDEN_ITEM_ARID_ISLAND_ELIXIR             0x268
 #define FLAG_HIDDEN_ITEM_ARID_ISLAND_HEART_SCALE        0x269
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+#define FLAG_HIDDEN_ITEM_ARID_DESERT_ETHER              0x26A
+#define FLAG_HIDDEN_ITEM_ARID_DESERT_STARDUST           0x26B
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
@@ -1228,8 +1228,8 @@
 #define FLAG_ITEM_SOUTHEASTSEA_ETHER                                0x498
 #define FLAG_ITEM_GATEWAY_ISLAND_POKE_BALL                          0x499
 #define FLAG_ITEM_ARID_ISLAND_PROTEIN                               0x49A
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
+#define FLAG_ITEM_ARID_DESERT_SUPER_POTION                          0x49B
+#define FLAG_ITEM_ARID_DESERT_GREAT_BALL                            0x49C
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag

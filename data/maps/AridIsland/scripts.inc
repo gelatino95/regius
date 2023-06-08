@@ -127,7 +127,7 @@ AridIsland_EventScript_Boy2_Text_0:
 
 AridIsland_EventScript_RuinManiac_Text_0:
 	.string "The ARID DESERT hides a great secret!\n"
-	.string "It's home to ancient ruins just\n"
+	.string "It's home to ancient ruins just\l"
 	.string "begging to be explored!\p"
 	.string "Adventurers come from all over\n"
 	.string "just to see them.$"
