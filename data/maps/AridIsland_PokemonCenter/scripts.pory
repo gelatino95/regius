@@ -1,1 +1,35 @@
-mapscripts AridIsland_PokemonCenter_MapScripts {}
+mapscripts AridIsland_PokemonCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_ARID_ISLAND)
+	}
+}
+
+script AridIsland_PokemonCenter_Nurse {
+	lock
+	faceplayer
+    msgbox(format("Hello, and welcome to\nthe POKéMON CENTER.\pWe restore your tired POKéMON\nto full health.\pWould you like to rest your POKéMON?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT)) {
+		msgbox(format("Okay, I'll take your POKéMON\nfor a few seconds."), MSGBOX_DEFAULT)
+		waitmessage
+		fadescreen(1)
+		playfanfare(MUS_HEAL)
+		special(HealPlayerParty)
+		waitfanfare
+		fadescreen(0)
+		message(format("Thank you for waiting.\pWe've restored your POKéMON\nto full health."))
+		waitmessage
+		applymovement(1, Movement_PkmnCenterNurse_Bow)
+		waitmovement(0)
+		msgbox(format("We hope to see you again!"), MSGBOX_DEFAULT)
+	}
+	release
+	end
+}
+
+script AridIsland_PokemonCenter_Man {
+	msgbox(format("Hoho! My POKéMON adores BERRY JUICE! It will even drink up BERRY JUICE right in the middle of battle!\pI hear BERRY JUICE is actually made by a rare POKéMON…"), MSGBOX_NPC)
+}
+
+script AridIsland_PokemonCenter_Girl {
+	msgbox(format("So we're on ARID ISLAND, on the eastern side of the archipelago…\pIf I get lost, I check a MAP in a POKéMON CENTER to get my bearings.\pIf you have a POKéNAV, you can even check where you are in the middle of the sea!"), MSGBOX_NPC)
+}
