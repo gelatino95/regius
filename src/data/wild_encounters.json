@@ -12402,6 +12402,105 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ARID_RUINS",
+          "base_label": "gAridRuins0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_GLYPHMITE"
+              },
+              {
+                "min_level": 10,
+                "max_level": 13,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 13,
+                "max_level": 14,
+                "species": "SPECIES_GLYPHMITE"
+              },
+              {
+                "min_level": 12,
+                "max_level": 13,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 14,
+                "max_level": 15,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 14,
+                "max_level": 15,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 13,
+                "max_level": 14,
+                "species": "SPECIES_GLYPHMITE"
+              },
+              {
+                "min_level": 12,
+                "max_level": 13,
+                "species": "SPECIES_GLIGAR"
+              },
+              {
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_GLYPHMITE"
+              },
+              {
+                "min_level": 13,
+                "max_level": 14,
+                "species": "SPECIES_GLIGAR"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_GLYPHMITE"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_GLIGAR"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_SHUCKLE"
+              },
+              {
+                "min_level": 13,
+                "max_level": 13,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_LEVILITH"
+              }
+            ]
+          }
         }
       ]
     },
