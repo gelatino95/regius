@@ -1,1 +1,151 @@
-mapscripts AridRuins_MapScripts {}
+mapscripts AridRuins_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        if (!flag(FLAG_ARID_RUINS_CHAMBER_OPEN)) { //if chamber hasn't been opened yet, close the door
+            setmetatile(33, 19, 0x236, TRUE)
+            setmetatile(34, 19, 0x236, TRUE)
+            setmetatile(35, 19, 0x236, TRUE)
+            setmetatile(33, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+            setmetatile(34, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+            setmetatile(35, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+        }
+    }
+}
+
+script AridRuins_EventScript_Braille_EastWall {
+    lock
+    braillemsgbox(AridRuins_Braille_EastWall1)
+    delay(5)
+    braillemsgbox(AridRuins_Braille_EastWall2)
+    release
+    end
+}
+
+script AridRuins_EventScript_Braille_WestWall {
+    lock
+    braillemsgbox(AridRuins_Braille_WestWall1)
+    delay(5)
+    braillemsgbox(AridRuins_Braille_WestWall2)
+    release
+    end
+}
+
+script AridRuins_EventScript_ChamberDoor {
+    lock
+    if (flag(FLAG_ARID_RUINS_CHAMBER_OPEN)) {
+        msgbox("The way is open.", MSGBOX_AUTOCLOSE)
+    }
+    else {
+        braillemsgbox(AridRuins_Braille_ChamberDoor1)
+        delay(5)
+        braillemsgbox(AridRuins_Braille_ChamberDoor2)
+        checkitem(ITEM_REGIUS_CREST)
+        if (var(VAR_RESULT)) {
+            msgbox(format("Use the REGIUS CREST?"), MSGBOX_YESNO)
+            closemessage
+            if (var(VAR_RESULT)) {
+                fadeoutbgm(1)
+                setvar(VAR_0x8004, 0)  //vertical pan
+                setvar(VAR_0x8005, 1)  //horizontal pan
+                setvar(VAR_0x8006, 8)  //num shakes
+                setvar(VAR_0x8007, 5)  //shake delay
+                special(ShakeCamera)
+                waitstate
+                delay(30)
+                setmetatile(33, 19, METATILE_Cave_SealedChamberEntrance_TopLeft, TRUE)
+                setmetatile(34, 19, METATILE_Cave_SealedChamberEntrance_TopMid, TRUE)
+                setmetatile(35, 19, METATILE_Cave_SealedChamberEntrance_TopRight, TRUE)
+                setmetatile(33, 20, METATILE_Cave_SealedChamberEntrance_BottomLeft, TRUE)
+                setmetatile(34, 20, METATILE_Cave_SealedChamberEntrance_BottomMid, FALSE)
+                setmetatile(35, 20, METATILE_Cave_SealedChamberEntrance_BottomRight, TRUE)
+                special(DrawWholeMapView)
+                playse(SE_UNLOCK)
+                setflag(FLAG_ARID_RUINS_CHAMBER_OPEN)
+                delay(30)
+                fadeinbgm(0)
+            }
+        }
+    }
+    release
+    end
+}
+
+script AridRuins_EventScript_RuinManiac {
+    msgbox(format("This may look like an ordinary cave, but look closer!\lThe symmetrical design indicates that this structure was built by intelligent hands.\pSadly, much of the original detail has long since eroded away.\pAs archaeologists, it is our job to glean what we can from the clues that still remain."), MSGBOX_NPC)
+}
+
+script AridRuins_EventScript_Custer {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_CUSTER, 0, format("Have you seen the writing on the wall?"), format("I see the writing on the wall…"))
+	msgbox(format("To think that some carvings still remain after all these years!"), MSGBOX_NPC)
+}
+
+script AridRuins_EventScript_Mindy {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_MINDY, 0, format("This place is starting to give me the creeps!"), format("My head is spinning!"))
+	msgbox(format("Just who were the people who built this place?"), MSGBOX_NPC)
+}
+
+script AridRuins_EventScript_RockSmashGuy {
+    lock
+    faceplayer
+    msgbox(format("Ah! You surprised me.\pMe? I'm digging for treasure!\nI'm getting my POKéMON to smash rocks and recover the stuff inside.\lThese islands are chock full of valuable minerals and ancient artifacts!\pPhew, I think I'm done for today.\nWhy don't you give it a try?"), MSGBOX_DEFAULT)
+    giveitem(ITEM_HM06, 1)
+    setflag(FLAG_RECEIVED_HM06)
+    msgbox(format("Just owning that HM should let your POKéMON break rocks like these.\lYou might uncover some rare ITEMS!\lBut watch out, because sometimes wild POKéMON will come out instead!\pWell, I'll leave you to it.\nHappy hunting!"), MSGBOX_DEFAULT)
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    removeobject(4)
+    setflag(FLAG_HIDE_ARID_RUINS_ROCK_SMASH_GUY)
+    playse(SE_EXIT)
+    waitse
+    fadescreen(FADE_FROM_BLACK)
+    release
+    end
+}
+
+script AridRuins_EventScript_ItemAncientSlab {
+    finditem(ITEM_ANCIENT_SLAB)
+    end
+}
+
+raw `
+AridRuins_Braille_EastWall1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "THIS WAS A\n"
+	.braille "PLACE OF\n"
+	.braille "HIGH HONOR\n"
+	.braille "LONG AGO.$"
+	
+AridRuins_Braille_EastWall2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "WITNESS OUR\n"
+	.braille "GREAT WORKS\n"
+	.braille "AND FOREVER\n"
+	.braille "REMEMBER US.$"
+
+AridRuins_Braille_WestWall1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "THE CHILDREN\n"
+	.braille "OF THE GREAT\n"
+	.braille "COLOSSUS ARE\n"
+	.braille "SEALED AWAY.$"
+
+AridRuins_Braille_WestWall2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "THE TITANS\n"
+	.braille "WILL SURVIVE\n"
+	.braille "EVEN AS WE\n"
+	.braille "PERISH.$"
+
+AridRuins_Braille_ChamberDoor1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "THE TITAN OF\n"
+	.braille "STONE AWAITS\n"
+	.braille "THE ORDER TO\n"
+	.braille "RISE AGAIN.$"
+
+AridRuins_Braille_ChamberDoor2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "IT WILL ONLY\n"
+	.braille "RESPOND TO\n"
+	.braille "THE MARK OF\n"
+	.braille "THE COLOSSUS$"
+`

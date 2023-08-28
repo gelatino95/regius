@@ -43,8 +43,8 @@
 #define TRAINER_ANTON                        39 // new
 #define TRAINER_SANDERS                      40 // new
 #define TRAINER_ARMIN                        41 // new
-#define TRAINER_ROSE_4                       42
-#define TRAINER_ROSE_5                       43
+#define TRAINER_CUSTER                       42 // new
+#define TRAINER_MINDY                        43 // new
 #define TRAINER_DUSTY_1                      44
 #define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46

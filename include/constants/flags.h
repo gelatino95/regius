@@ -60,12 +60,12 @@
 #define FLAG_RECEIVED_REPEL_LADY_GIFT_1             0x30
 #define FLAG_RECEIVED_REPEL_LADY_GIFT_2             0x31
 #define FLAG_RECEIVED_REPEL_LADY_GIFT_3             0x32
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
+#define FLAG_HIDE_ARID_RUINS_ROCK_1                 0x33
+#define FLAG_HIDE_ARID_RUINS_ROCK_2                 0x34
+#define FLAG_HIDE_ARID_RUINS_ROCK_SMASH_GUY         0x35
+#define FLAG_ARID_RUINS_CHAMBER_OPEN                0x36
+#define FLAG_ICE_CAVE_CHAMBER_OPEN                  0x37
+#define FLAG_IGNEOUS_CALDERA_CHAMBER_OPEN           0x38
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
@@ -660,8 +660,8 @@
 #define FLAG_HIDDEN_ITEM_ARID_ISLAND_HEART_SCALE        0x269
 #define FLAG_HIDDEN_ITEM_ARID_DESERT_ETHER              0x26A
 #define FLAG_HIDDEN_ITEM_ARID_DESERT_STARDUST           0x26B
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
+#define FLAG_HIDDEN_ITEM_ARID_RUINS_EVERSTONE           0x26C
+#define FLAG_HIDDEN_ITEM_ARID_RUINS_ELIXIR              0x26D
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
@@ -1230,7 +1230,7 @@
 #define FLAG_ITEM_ARID_ISLAND_PROTEIN                               0x49A
 #define FLAG_ITEM_ARID_DESERT_SUPER_POTION                          0x49B
 #define FLAG_ITEM_ARID_DESERT_GREAT_BALL                            0x49C
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
+#define FLAG_ITEM_ARID_RUINS_ANCIENT_SLAB                           0x49D
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
