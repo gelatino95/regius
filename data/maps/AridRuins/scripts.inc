@@ -53,6 +53,7 @@ AridRuins_EventScript_ChamberDoor_2:
 
 AridRuins_EventScript_ChamberDoor_5:
 	msgbox AridRuins_EventScript_ChamberDoor_Text_1, MSGBOX_YESNO
+	closemessage
 	compare VAR_RESULT, 0
 	goto_if_ne AridRuins_EventScript_ChamberDoor_7
 	goto AridRuins_EventScript_ChamberDoor_1
@@ -78,6 +79,31 @@ AridRuins_EventScript_ChamberDoor_7:
 	delay 30
 	fadeinbgm 0
 	goto AridRuins_EventScript_ChamberDoor_1
+
+
+AridRuins_EventScript_Regirock::
+	lock
+	waitse
+	playmoncry SPECIES_REGIROCK, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_REGIROCK, 25
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special StartRegiBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq AridRuins_EventScript_Regirock_2
+	msgbox AridRuins_EventScript_Regirock_Text_0, MSGBOX_AUTOCLOSE
+AridRuins_EventScript_Regirock_1:
+	release
+	end
+
+AridRuins_EventScript_Regirock_2:
+	setflag FLAG_DEFEATED_REGIROCK
+	goto Common_EventScript_RemoveStaticPokemon
+	goto AridRuins_EventScript_Regirock_1
 
 
 AridRuins_EventScript_RuinManiac::
@@ -167,6 +193,9 @@ AridRuins_EventScript_ChamberDoor_Text_0:
 
 AridRuins_EventScript_ChamberDoor_Text_1:
 	.string "Use the REGIUS CREST?$"
+
+AridRuins_EventScript_Regirock_Text_0:
+	.string "REGIROCK is recharging…$"
 
 AridRuins_EventScript_RuinManiac_Text_0:
 	.string "This may look like an ordinary cave, but\n"
