@@ -261,7 +261,7 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
 {
     [REMATCH_ROSE] = REMATCH(TRAINER_ROSIE, TRAINER_SANDERS, TRAINER_ARMIN, TRAINER_CUSTER, TRAINER_MINDY, ROUTE118),
     [REMATCH_ANDRES] = REMATCH(TRAINER_ANDRES_1, TRAINER_ANDRES_2, TRAINER_ANDRES_3, TRAINER_ANDRES_4, TRAINER_ANDRES_5, ROUTE105),
-    [REMATCH_DUSTY] = REMATCH(TRAINER_DUSTY_1, TRAINER_DUSTY_2, TRAINER_DUSTY_3, TRAINER_DUSTY_4, TRAINER_DUSTY_5, ROUTE111),
+    [REMATCH_DUSTY] = REMATCH(TRAINER_TANNER, TRAINER_DUSTY_2, TRAINER_DUSTY_3, TRAINER_DUSTY_4, TRAINER_DUSTY_5, ROUTE111),
     [REMATCH_LOLA] = REMATCH(TRAINER_LOLA_1, TRAINER_LOLA_2, TRAINER_LOLA_3, TRAINER_LOLA_4, TRAINER_LOLA_5, ROUTE109),
     [REMATCH_RICKY] = REMATCH(TRAINER_RICKY_1, TRAINER_RICKY_2, TRAINER_RICKY_3, TRAINER_RICKY_4, TRAINER_RICKY_5, ROUTE109),
     [REMATCH_LILA_AND_ROY] = REMATCH(TRAINER_LILA_AND_ROY_1, TRAINER_LILA_AND_ROY_2, TRAINER_LILA_AND_ROY_3, TRAINER_LILA_AND_ROY_4, TRAINER_LILA_AND_ROY_5, ROUTE124),
@@ -833,12 +833,16 @@ static u8 GetWildBattleTransition(void)
     }
 }
 
+#define RANDOM_TRANSITION(table)(table[Random() % ARRAY_COUNT(table)])
 static u8 GetTrainerBattleTransition(void)
 {
     u8 minPartyCount;
     u8 transitionType;
     u8 enemyLevel;
     u8 playerLevel;
+
+    if (VarGet(gSpecialVar_0x8003) == 1)
+        return RANDOM_TRANSITION(sBattleTransitionTable_BattleFrontier);
 
     if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
         return B_TRANSITION_CHAMPION;
@@ -884,7 +888,6 @@ static u8 GetTrainerBattleTransition(void)
         return sBattleTransitionTable_Trainer[transitionType][1];
 }
 
-#define RANDOM_TRANSITION(table)(table[Random() % ARRAY_COUNT(table)])
 u8 GetSpecialBattleTransition(s32 id)
 {
     u16 var;
@@ -1213,6 +1216,8 @@ const u8 *BattleSetup_ConfigureTrainerBattle(const u8 *data)
         return EventScript_TryDoNormalTrainerBattle;
 	case TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT:
 	case TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC:
+	case TRAINER_BATTLE_GROTTO:
+	case TRAINER_BATTLE_GROTTO_NO_MUSIC:
         if (gApproachingTrainerId == 0)
         {
             TrainerBattleLoadArgs(sContinueScriptBattleParams, data);
@@ -1326,10 +1331,16 @@ void BattleSetup_StartTrainerBattle(void)
 	//If using detect mode, the player has at least two mons, and double battle mode is on, add the double battle flag
 	if (sTrainerBattleMode == TRAINER_BATTLE_DETECT
 		|| sTrainerBattleMode == TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT
-		|| sTrainerBattleMode == TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC)
+		|| sTrainerBattleMode == TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC
+		|| sTrainerBattleMode == TRAINER_BATTLE_GROTTO
+		|| sTrainerBattleMode == TRAINER_BATTLE_GROTTO_NO_MUSIC)
 	{
 		if (GetMonsStateToDoubles_2() == PLAYER_HAS_TWO_USABLE_MONS && gSaveBlock2Ptr->optionsBattleType == 0)
 		gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
+
+        if (sTrainerBattleMode == TRAINER_BATTLE_GROTTO //If in the battle grotto, set the var that turns off prize money
+            || sTrainerBattleMode == TRAINER_BATTLE_GROTTO_NO_MUSIC)
+        VarSet(VAR_0x8003, 1);
 	}
 
     if (InBattlePyramid())
@@ -1518,7 +1529,8 @@ void PlayTrainerEncounterMusic(void)
 
     if (sTrainerBattleMode != TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC
         && sTrainerBattleMode != TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC
-        && sTrainerBattleMode != TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC)
+        && sTrainerBattleMode != TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC
+        && sTrainerBattleMode != TRAINER_BATTLE_GROTTO_NO_MUSIC)
     {
         switch (GetTrainerEncounterMusicId(trainerId))
         {

@@ -35,6 +35,7 @@ BattleGrotto_Entrance_BattleGrottoChallenge::
 BattleGrotto_Entrance_BattleGrottoChallenge_2:
 	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
 	waitmessage
+	special HealPlayerParty
 	warp MAP_BATTLE_GROTTO_B1F, 4, 36
 	return
 

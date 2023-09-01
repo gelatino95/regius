@@ -36,7 +36,17 @@ script BattleGrotto_B1F_EventScript_EndAttendant {
 	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
 }
 
-script BattleGrotto_B1F_EventScript_Declan {
-	trainerbattle_detect(TRAINER_DECLAN, format("You won't get past me\nthat easily!"), format("Drat..."))
+script BattleGrotto_B1F_EventScript_Tanner {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_TANNER, 0, format("You won't get past me\nthat easily!"), format("Drat..."), BattleGrotto_B1F_EventScript_Give1BP)
 	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+}
+
+script BattleGrotto_B1F_EventScript_Give1BP {
+	buffernumberstring(STR_VAR_1, 1)
+	setvar(VAR_0x8004, 1)
+	special(GiveFrontierBattlePoints)
+	msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Points."), MSGBOX_GETPOINTS)
+	waitmessage
+	closemessage
+	special(HealPlayerParty)
 }

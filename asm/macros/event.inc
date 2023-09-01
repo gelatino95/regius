@@ -743,6 +743,14 @@
 		.4byte \pointer1 @ text
 		.4byte \pointer2 @ text
 		.4byte \pointer3 @ event script
+	.elseif \type == TRAINER_BATTLE_GROTTO
+		.4byte \pointer1 @ text
+		.4byte \pointer2 @ text
+		.4byte \pointer3 @ event script
+	.elseif \type == TRAINER_BATTLE_GROTTO_NO_MUSIC
+		.4byte \pointer1 @ text
+		.4byte \pointer2 @ text
+		.4byte \pointer3 @ event script
 	.endif
 	.endm
 

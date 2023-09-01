@@ -522,12 +522,16 @@ static const struct TrainerMon sParty_Mindy[] = {
     }
 };
 
-static const struct TrainerMon sParty_Dusty1[] = {
+static const struct TrainerMon sParty_Tanner[] = {
     {
-    .iv = 50,
-    .lvl = 23,
-    .species = SPECIES_SANDSLASH,
-    .moves = {MOVE_DIG, MOVE_SLASH, MOVE_SAND_ATTACK, MOVE_POISON_STING}
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_COCONIT,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_HATCHICK,
     }
 };
 

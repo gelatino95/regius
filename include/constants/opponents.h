@@ -45,7 +45,7 @@
 #define TRAINER_ARMIN                        41 // new
 #define TRAINER_CUSTER                       42 // new
 #define TRAINER_MINDY                        43 // new
-#define TRAINER_DUSTY_1                      44
+#define TRAINER_TANNER                       44 // new
 #define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46
 #define TRAINER_DUSTY_2                      47
