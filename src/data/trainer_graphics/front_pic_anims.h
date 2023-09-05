@@ -378,6 +378,10 @@ static const union AnimCmd *const sAnims_DiverF[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_Scientist[] ={
+    sAnim_GeneralFrame0,
+};
+
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     [TRAINER_PIC_HIKER] = sAnims_Hiker,
@@ -475,4 +479,5 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_RS_MAY] = sAnims_RubySapphireMay,
     [TRAINER_PIC_DIVER_M] = sAnims_RubySapphireMay,
     [TRAINER_PIC_DIVER_F] = sAnims_RubySapphireMay,
+    [TRAINER_PIC_SCIENTIST] = sAnims_Scientist,
 };

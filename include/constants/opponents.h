@@ -45,13 +45,13 @@
 #define TRAINER_ARMIN                        41 // new
 #define TRAINER_CUSTER                       42 // new
 #define TRAINER_MINDY                        43 // new
-#define TRAINER_TANNER                       44 // new
-#define TRAINER_CHIP                         45
-#define TRAINER_FOSTER                       46
-#define TRAINER_DUSTY_2                      47
-#define TRAINER_DUSTY_3                      48
-#define TRAINER_DUSTY_4                      49
-#define TRAINER_DUSTY_5                      50
+#define TRAINER_TANNER                       44 // Battle Grotto
+#define TRAINER_CHIP                         45 // Battle Grotto
+#define TRAINER_GARTH                        46 // Battle Grotto
+#define TRAINER_DUSTY_2                      47 // Battle Grotto
+#define TRAINER_DUSTY_3                      48 // Battle Grotto
+#define TRAINER_DUSTY_4                      49 // Battle Grotto
+#define TRAINER_DUSTY_5                      50 // Battle Grotto
 #define TRAINER_GABBY_AND_TY_1               51
 #define TRAINER_GABBY_AND_TY_2               52
 #define TRAINER_GABBY_AND_TY_3               53

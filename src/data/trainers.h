@@ -597,17 +597,17 @@ const struct Trainer gTrainers[] = {
         .party = {.TrainerMon = sParty_Chip},
     },
 
-    [TRAINER_FOSTER] =
+    [TRAINER_GARTH] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .trainerName = _("FOSTER"),
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = TRAINER_PIC_SCIENTIST,
+        .trainerName = _("GARTH"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_Foster),
-        .party = {.TrainerMon = sParty_Foster},
+        .partySize = ARRAY_COUNT(sParty_Garth),
+        .party = {.TrainerMon = sParty_Garth},
     },
 
     [TRAINER_DUSTY_2] =

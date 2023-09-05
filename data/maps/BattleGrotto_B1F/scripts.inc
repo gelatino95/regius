@@ -47,6 +47,12 @@ BattleGrotto_B1F_EventScript_Tanner::
 	return
 
 
+BattleGrotto_B1F_EventScript_Garth::
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_GARTH, 0, BattleGrotto_B1F_EventScript_Tanner_Text_0, BattleGrotto_B1F_EventScript_Tanner_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	msgbox BattleGrotto_B1F_EventScript_Tanner_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
 BattleGrotto_B1F_EventScript_Give1BP::
 	buffernumberstring STR_VAR_1, 1
 	setvar VAR_0x8004, 1

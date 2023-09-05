@@ -556,18 +556,16 @@ static const struct TrainerMon sParty_Chip[] = {
     }
 };
 
-static const struct TrainerMon sParty_Foster[] = {
+static const struct TrainerMon sParty_Garth[] = {
     {
-    .iv = 100,
-    .lvl = 25,
-    .species = SPECIES_SANDSHREW,
-    .moves = {MOVE_DIG, MOVE_SLASH, MOVE_SAND_ATTACK, MOVE_POISON_STING}
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_CATRIC
     },
     {
-    .iv = 100,
-    .lvl = 25,
-    .species = SPECIES_SANDSLASH,
-    .moves = {MOVE_DIG, MOVE_SLASH, MOVE_SAND_ATTACK, MOVE_POISON_STING}
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_MINUN
     }
 };
 

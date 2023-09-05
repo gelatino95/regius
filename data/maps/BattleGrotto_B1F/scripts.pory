@@ -41,6 +41,11 @@ script BattleGrotto_B1F_EventScript_Tanner {
 	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
 }
 
+script BattleGrotto_B1F_EventScript_Garth {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_GARTH, 0, format("You won't get past me\nthat easily!"), format("Drat..."), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+}
+
 script BattleGrotto_B1F_EventScript_Give1BP {
 	buffernumberstring(STR_VAR_1, 1)
 	setvar(VAR_0x8004, 1)

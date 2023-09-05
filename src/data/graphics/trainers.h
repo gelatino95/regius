@@ -283,6 +283,9 @@ const u32 gTrainerPalette_DiverM[] = INCBIN_U32("graphics/trainers/palettes/dive
 const u32 gTrainerFrontPic_DiverF[] = INCBIN_U32("graphics/trainers/front_pics/diver_f_front_pic.4bpp.lz");
 const u32 gTrainerPalette_DiverF[] = INCBIN_U32("graphics/trainers/palettes/diver_f.gbapal.lz");
 
+const u32 gTrainerFrontPic_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.4bpp.lz");
+const u32 gTrainerPalette_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.gbapal.lz");
+
 //back pics
 
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
