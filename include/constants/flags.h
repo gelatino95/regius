@@ -1293,13 +1293,15 @@
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
 #define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
 #define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
+
+// Battle Grotto
+#define FLAG_GROTTO_FLOOR_1_COMPLETE                                0x4DC
+#define FLAG_GROTTO_FLOOR_2_COMPLETE                                0x4DD
+#define FLAG_GROTTO_FLOOR_3_COMPLETE                                0x4DE
+#define FLAG_GROTTO_FLOOR_4_COMPLETE                                0x4DF
+#define FLAG_GROTTO_FLOOR_5_COMPLETE                                0x4E0
+#define FLAG_GROTTO_FLOOR_6_COMPLETE                                0x4E1
+#define FLAG_GROTTO_FLOOR_7_COMPLETE                                0x4E2
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag

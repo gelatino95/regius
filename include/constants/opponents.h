@@ -46,12 +46,12 @@
 #define TRAINER_CUSTER                       42 // new
 #define TRAINER_MINDY                        43 // new
 #define TRAINER_TANNER                       44 // Battle Grotto
-#define TRAINER_CHIP                         45 // Battle Grotto
+#define TRAINER_MICHAELA                     45 // Battle Grotto
 #define TRAINER_GARTH                        46 // Battle Grotto
-#define TRAINER_DUSTY_2                      47 // Battle Grotto
-#define TRAINER_DUSTY_3                      48 // Battle Grotto
-#define TRAINER_DUSTY_4                      49 // Battle Grotto
-#define TRAINER_DUSTY_5                      50 // Battle Grotto
+#define TRAINER_MILTON                       47 // Battle Grotto
+#define TRAINER_AUDREY                       48 // Battle Grotto
+#define TRAINER_HOGARTH                      49 // Battle Grotto
+#define TRAINER_ARIANA                       50 // Battle Grotto
 #define TRAINER_GABBY_AND_TY_1               51
 #define TRAINER_GABBY_AND_TY_2               52
 #define TRAINER_GABBY_AND_TY_3               53

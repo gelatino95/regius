@@ -3,6 +3,16 @@ mapscripts BattleGrotto_B1F_MapScripts {
 		map_script_2(VAR_TEMP_1, 0, BattleGrotto_B1F_EventScript_PlayerFaceNorth)
 		end
 	}
+	MAP_SCRIPT_ON_TRANSITION {
+		cleartrainerflag(TRAINER_TANNER)
+		cleartrainerflag(TRAINER_MICHAELA)
+		cleartrainerflag(TRAINER_GARTH)
+		cleartrainerflag(TRAINER_MILTON)
+		cleartrainerflag(TRAINER_AUDREY)
+		cleartrainerflag(TRAINER_HOGARTH)
+		cleartrainerflag(TRAINER_ARIANA)
+		end
+	}
 }
 
 script BattleGrotto_B1F_EventScript_PlayerFaceNorth {
@@ -26,31 +36,55 @@ script BattleGrotto_B1F_EventScript_StartAttendant {
 script BattleGrotto_B1F_EventScript_EndAttendant {
 	lock
 	faceplayer
-	msgbox(format("Congratulations on defeating\nall TRAINERs on the floor!\lHere is your reward."), MSGBOX_DEFAULT)
-	buffernumberstring(STR_VAR_1, 7)
-	setvar(VAR_0x8004, 7)
-	special(GiveFrontierBattlePoints)
-	msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Points."), MSGBOX_GETPOINTS)
-	waitmessage
-	closemessage
+	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
+	if (!flag(FLAG_GROTTO_FLOOR_1_COMPLETE)) {
+		msgbox(format("For clearing floor 1 for the first time, here is a special prize."), MSGBOX_DEFAULT)
+		giveitem(ITEM_IRON)
+		setflag(FLAG_GROTTO_FLOOR_1_COMPLETE)
+	}
 	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
 }
 
 script BattleGrotto_B1F_EventScript_Tanner {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_TANNER, 0, format("You won't get past me\nthat easily!"), format("Drat..."), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_TANNER, 0, format("You won't get past me that easily!"), format("Drat…"), BattleGrotto_B1F_EventScript_Give1BP)
 	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
 }
 
+script BattleGrotto_B1F_EventScript_Michaela {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_MICHAELA, 0, format("So you're taking the challenge too?"), format("Eek!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Good luck out there!"), MSGBOX_AUTOCLOSE)
+}
+
 script BattleGrotto_B1F_EventScript_Garth {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_GARTH, 0, format("You won't get past me\nthat easily!"), format("Drat..."), BattleGrotto_B1F_EventScript_Give1BP)
-	msgbox(format("Well fought, TRAINER."), MSGBOX_AUTOCLOSE)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_GARTH, 0, format("Check out what I caught!"), format("Huh? Is that it?"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Come fight me again later, okay?"), MSGBOX_AUTOCLOSE)
+}
+
+script BattleGrotto_B1F_EventScript_Milton {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_MILTON, 0, format("This is a grueling challenge, is it not?"), format("I'm clearly outmatched."), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Yes, I think you'll do just fine."), MSGBOX_AUTOCLOSE)
+}
+
+script BattleGrotto_B1F_EventScript_Audrey {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_AUDREY, 0, format("Do you really want to go deeper into this scary cave?"), format("Ah, wonderful."), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Me? I'll stay right here near the entrance."), MSGBOX_AUTOCLOSE)
+}
+
+script BattleGrotto_B1F_EventScript_Hogarth {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HOGARTH, 0, format("Go on! Get my blood pumping!"), format("Ahahahaha!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("I want to see just how deep this place goes."), MSGBOX_AUTOCLOSE)
+}
+
+script BattleGrotto_B1F_EventScript_Ariana {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ARIANA, 0, format("I'm the leader of this floor!\nDo you really think you have what it takes to get past me?"), format("Hm! Well played."), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Congratulations! Talk to the attendant just ahead to get your reward."), MSGBOX_AUTOCLOSE)
 }
 
 script BattleGrotto_B1F_EventScript_Give1BP {
 	buffernumberstring(STR_VAR_1, 1)
 	setvar(VAR_0x8004, 1)
 	special(GiveFrontierBattlePoints)
-	msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Points."), MSGBOX_GETPOINTS)
+	msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Point."), MSGBOX_GETPOINTS)
 	waitmessage
 	closemessage
 	special(HealPlayerParty)
