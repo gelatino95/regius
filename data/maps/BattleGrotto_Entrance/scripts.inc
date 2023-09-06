@@ -1,9 +1,14 @@
 BattleGrotto_Entrance_MapScripts::
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleGrotto_Entrance_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleGrotto_Entrance_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 BattleGrotto_Entrance_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
 	map_script_2 VAR_TEMP_1, 0, BattleGrotto_Entrance_PlayerFaceNorth
+	return
+
+BattleGrotto_Entrance_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_TEMP_0, 0, BattleGrotto_Entrance_ComeAgain
 	return
 
 
@@ -11,6 +16,21 @@ BattleGrotto_Entrance_PlayerFaceNorth::
 	setvar VAR_TEMP_1, 1
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
+
+
+BattleGrotto_Entrance_ComeAgain::
+	setvar VAR_TEMP_0, 1
+	getplayerxy VAR_TEMP_2, VAR_TEMP_3
+	compare VAR_TEMP_3, 7
+	goto_if_eq BattleGrotto_Entrance_ComeAgain_2
+BattleGrotto_Entrance_ComeAgain_1:
+	end
+
+BattleGrotto_Entrance_ComeAgain_2:
+	lock
+	msgbox BattleGrotto_Entrance_ComeAgain_Text_0, MSGBOX_AUTOCLOSE
+	release
+	goto BattleGrotto_Entrance_ComeAgain_1
 
 
 BattleGrotto_Entrance_FrontDesk::
@@ -722,6 +742,19 @@ BattleGrotto_Entrance_Goodbye::
 	return
 
 
+BattleGrotto_Entrance_Woman::
+	msgbox BattleGrotto_Entrance_Woman_Text_0, MSGBOX_NPC
+	end
+
+
+BattleGrotto_Entrance_Hiker::
+	msgbox BattleGrotto_Entrance_Hiker_Text_0, MSGBOX_NPC
+	end
+
+
+BattleGrotto_Entrance_ComeAgain_Text_0:
+	.string "We hope to see you again!$"
+
 BattleGrotto_Entrance_FrontDesk_Text_0:
 	.string "Welcome to the BATTLE GROTTO!$"
 
@@ -903,3 +936,16 @@ BattleGrotto_Entrance_ChooseItem_Text_7:
 BattleGrotto_Entrance_ChooseItem_Text_8:
 	.string "You want the\n"
 	.string "LEFTOVERS?$"
+
+BattleGrotto_Entrance_Woman_Text_0:
+	.string "Your POKéMON are healed after every\n"
+	.string "battle here, so it's the perfect place\l"
+	.string "for some intense training.$"
+
+BattleGrotto_Entrance_Hiker_Text_0:
+	.string "Did you know? This cave is a natural\n"
+	.string "formation.\l"
+	.string "It stretches deep below sea level.\p"
+	.string "No one has explored the full length of\n"
+	.string "this grotto.\l"
+	.string "Will you be the first?$"

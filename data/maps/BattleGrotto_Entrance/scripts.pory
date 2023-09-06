@@ -2,11 +2,25 @@ mapscripts BattleGrotto_Entrance_MapScripts {
 	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
 		map_script_2(VAR_TEMP_1, 0, BattleGrotto_Entrance_PlayerFaceNorth)
 	}
+	MAP_SCRIPT_ON_FRAME_TABLE {
+		map_script_2(VAR_TEMP_0, 0, BattleGrotto_Entrance_ComeAgain)
+	}
 }
 
 script BattleGrotto_Entrance_PlayerFaceNorth {
 	setvar(VAR_TEMP_1, 1)
 	turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	end
+}
+
+script BattleGrotto_Entrance_ComeAgain {
+	setvar(VAR_TEMP_0, 1)
+	getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+	if (var(VAR_TEMP_3) == 7) {
+		lock
+		msgbox(format("We hope to see you again!"), MSGBOX_AUTOCLOSE)
+		release
+	}
 	end
 }
 
@@ -423,4 +437,14 @@ script BattleGrotto_Entrance_Goodbye {
 	special(CloseBattlePointsWindow)
 	msgbox(format("Come again!"), MSGBOX_DEFAULT)
 	closemessage
+}
+
+script BattleGrotto_Entrance_Woman {
+	msgbox(format("Your POKéMON are healed after every battle here, so it's the perfect place for some intense training."), MSGBOX_NPC)
+	end
+}
+
+script BattleGrotto_Entrance_Hiker {
+	msgbox(format("Did you know? This cave is a natural formation.\lIt stretches deep below sea level.\pNo one has explored the full length of this grotto.\lWill you be the first?"), MSGBOX_NPC)
+	end
 }
