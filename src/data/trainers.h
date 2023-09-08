@@ -662,43 +662,43 @@ const struct Trainer gTrainers[] = {
         .party = {.TrainerMon = sParty_Ariana},
     },
 
-    [TRAINER_GABBY_AND_TY_1] =
+    [TRAINER_RONALDO] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .trainerName = _("GABBY & TY"),
+        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerName = _("RONALDO"),
         .items = {},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_GabbyAndTy1),
-        .party = {.TrainerMon = sParty_GabbyAndTy1},
+        .partySize = ARRAY_COUNT(sParty_Ronaldo),
+        .party = {.TrainerMon = sParty_Ronaldo},
     },
 
-    [TRAINER_GABBY_AND_TY_2] =
+    [TRAINER_LUKAS] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .trainerName = _("GABBY & TY"),
+        .trainerClass = TRAINER_CLASS_FISHERMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerName = _("LUKAS"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_GabbyAndTy2),
-        .party = {.TrainerMon = sParty_GabbyAndTy2},
+        .partySize = ARRAY_COUNT(sParty_Lukas),
+        .party = {.TrainerMon = sParty_Lukas},
     },
 
-    [TRAINER_GABBY_AND_TY_3] =
+    [TRAINER_LISSY] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .trainerName = _("GABBY & TY"),
+        .trainerClass = TRAINER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerName = _("LISSY"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_GabbyAndTy3),
-        .party = {.TrainerMon = sParty_GabbyAndTy3},
+        .partySize = ARRAY_COUNT(sParty_Lissy),
+        .party = {.TrainerMon = sParty_Lissy},
     },
 
     [TRAINER_GABBY_AND_TY_4] =

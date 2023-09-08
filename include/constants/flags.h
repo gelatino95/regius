@@ -66,9 +66,9 @@
 #define FLAG_ARID_RUINS_CHAMBER_OPEN                0x36
 #define FLAG_ICE_CAVE_CHAMBER_OPEN                  0x37
 #define FLAG_IGNEOUS_CALDERA_CHAMBER_OPEN           0x38
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
+#define FLAG_HIDE_NORTHEAST_SEA_ROCK                0x39
+#define FLAG_DEFEATED_ATTACK_GURU                   0x3A
+#define FLAG_DEFEATED_DEFENSE_GURU                  0x3B
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
@@ -1231,8 +1231,8 @@
 #define FLAG_ITEM_ARID_DESERT_SUPER_POTION                          0x49B
 #define FLAG_ITEM_ARID_DESERT_GREAT_BALL                            0x49C
 #define FLAG_ITEM_ARID_RUINS_ANCIENT_SLAB                           0x49D
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
+#define FLAG_ITEM_NORTHEAST_SEA_HEART_SCALE                         0x49E
+#define FLAG_ITEM_NORTHEAST_SEA_WATER_STONE                         0x49F
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag

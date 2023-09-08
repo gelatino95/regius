@@ -1,1 +1,45 @@
 mapscripts NortheastSea_MapScripts {}
+
+script NortheastSea_EventScript_BattleGrottoSign {
+    msgbox(format("BATTLE GROTTO\nReach new depths in your training!"), MSGBOX_SIGN)
+    end
+}
+
+script NortheastSea_EventScript_MinusIslandSign {
+    msgbox(format("MINUS ISLAND"), MSGBOX_SIGN)
+    end
+}
+
+script NortheastSea_EventScript_RouteSign {
+    msgbox(format("NORTHEAST SEA\n{LEFT_ARROW} KAPOK ISLAND\lBATTLE GROTTO {RIGHT_ARROW}"), MSGBOX_SIGN)
+}
+
+script NortheastSea_EventScript_Boy {
+    msgbox(format("What an oddly-shaped island. Whose idea was this?"), MSGBOX_NPC)
+    end
+}
+
+script NortheastSea_EventScript_Ronaldo {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_RONALDO, 0, format("I've collected bird POKéMON from all over the region! Check them out!"), format("Crash and burn!"))
+	msgbox(format("I wonder if there are more birds out there I haven't found yet?"), MSGBOX_NPC)
+}
+
+script NortheastSea_EventScript_Lukas {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_LUKAS, 0, format("Out of the way! I sense a big catch coming!"), format("Ack, just missed it!"))
+	msgbox(format("Some ocean-dwelling POKéMON can be quite fearsome."), MSGBOX_NPC)
+}
+
+script NortheastSea_EventScript_Lissy {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_LISSY, 0, format("What a cute TRAINER! Why don't you let your POKéMON out to play?"), format("Adorable!"))
+	msgbox(format("I think every POKéMON is cute. Yes, even the big scary ones!"), MSGBOX_NPC)
+}
+
+script NortheastSea_EventScript_ItemHeartScale {
+    finditem(ITEM_HEART_SCALE)
+    end
+}
+
+script NortheastSea_EventScript_ItemWaterStone {
+    finditem(ITEM_WATER_STONE)
+    end
+}

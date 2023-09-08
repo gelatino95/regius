@@ -52,9 +52,9 @@
 #define TRAINER_AUDREY                       48 // Battle Grotto
 #define TRAINER_HOGARTH                      49 // Battle Grotto
 #define TRAINER_ARIANA                       50 // Battle Grotto
-#define TRAINER_GABBY_AND_TY_1               51
-#define TRAINER_GABBY_AND_TY_2               52
-#define TRAINER_GABBY_AND_TY_3               53
+#define TRAINER_RONALDO                      51 // new
+#define TRAINER_LUKAS                        52 // new
+#define TRAINER_LISSY                        53 // new
 #define TRAINER_GABBY_AND_TY_4               54
 #define TRAINER_GABBY_AND_TY_5               55
 #define TRAINER_GABBY_AND_TY_6               56
