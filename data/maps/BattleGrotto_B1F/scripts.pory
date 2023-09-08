@@ -39,7 +39,7 @@ script BattleGrotto_B1F_EventScript_EndAttendant {
 	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
 	if (!flag(FLAG_GROTTO_FLOOR_1_COMPLETE)) {
 		msgbox(format("For clearing floor 1 for the first time, here is a special prize."), MSGBOX_DEFAULT)
-		giveitem(ITEM_IRON)
+		giveitem(ITEM_MACHO_BRACE)
 		setflag(FLAG_GROTTO_FLOOR_1_COMPLETE)
 	}
 	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)

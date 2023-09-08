@@ -682,7 +682,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("LUKAS"),
         .items = {},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_Lukas),
         .party = {.TrainerMon = sParty_Lukas},
@@ -695,36 +695,36 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("LISSY"),
         .items = {},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_Lissy),
         .party = {.TrainerMon = sParty_Lissy},
     },
 
-    [TRAINER_GABBY_AND_TY_4] =
+    [TRAINER_MANDY] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .trainerName = _("GABBY & TY"),
+        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerName = _("MANDY"),
         .items = {},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_GabbyAndTy4),
-        .party = {.TrainerMon = sParty_GabbyAndTy4},
+        .partySize = ARRAY_COUNT(sParty_Mandy),
+        .party = {.TrainerMon = sParty_Mandy},
     },
 
-    [TRAINER_GABBY_AND_TY_5] =
+    [TRAINER_BRUTUS] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .trainerName = _("GABBY & TY"),
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerName = _("BRUTUS"),
         .items = {},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_GabbyAndTy5),
-        .party = {.TrainerMon = sParty_GabbyAndTy5},
+        .partySize = ARRAY_COUNT(sParty_Brutus),
+        .party = {.TrainerMon = sParty_Brutus},
     },
 
     [TRAINER_GABBY_AND_TY_6] =

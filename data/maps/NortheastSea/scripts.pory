@@ -1,5 +1,91 @@
 mapscripts NortheastSea_MapScripts {}
 
+script NortheastSea_EventScript_AttackGuru {
+    lock
+    faceplayer
+    cleartrainerflag(TRAINER_MANDY)
+    if (flag(FLAG_DEFEATED_ATTACK_GURU)) { // if speaking to the attack guru after first victory
+        msgbox(format("HYAAAAH! What's this?\nYou're back for more ATTACK training?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) {
+            trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_MANDY, 0, format("HYAAAAH! I won't hold back!"), format("Your power… it's overwhelming!"), NortheastSea_EventScript_AttackGuru_PostBattle)
+        }
+        else {
+            msgbox(format("HYAAAAH! Do not disturb my training!"), MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else { // if speaking to the attack guru for the first time
+        msgbox(format("HYAAAAH! Overwhelming power! That is the key to victory! Do you not agree?\pTRAINER! Your POKéMON are weak!\nTrain with me, and together we will boost their ATTACK to new levels!\pWhat do you say? Will you do ATTACK training with me?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) {
+            trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_MANDY, 0, format("HYAAAAH! I won't hold back!"), format("Your power… it's overwhelming!"), NortheastSea_EventScript_AttackGuru_FirstVictory)
+        }
+        else {
+            msgbox(format("HYAAAAH! Do not disturb my training!"), MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+}
+
+script NortheastSea_EventScript_AttackGuru_PostBattle {
+    msgbox(format("You're getting stronger by the day.\pI'll be here when you're ready to push your power to new heights!\lCome train with me again!"), MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script NortheastSea_EventScript_AttackGuru_FirstVictory {
+    setflag(FLAG_DEFEATED_ATTACK_GURU)
+    msgbox(format("Your POKéMON look stronger! You are already well on the path to ultimate power.\pPlease take this as a token of your victory."), MSGBOX_DEFAULT)
+    giveitem(ITEM_PROTEIN)
+    msgbox(format("I'll be here when you're ready to push your power to new heights!\lCome train with me again!"), MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script NortheastSea_EventScript_DefenseGuru {
+    lock
+    faceplayer
+    cleartrainerflag(TRAINER_BRUTUS)
+    if (flag(FLAG_DEFEATED_DEFENSE_GURU)) {  // if speaking to the defense guru after first victory
+        msgbox(format("HUAAAAH! What's this? Have you returned for more DEFENSE training?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) {
+            trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_BRUTUS, 0, format("HUAAAAH! Just try and break through!"), format("You proved your resilience."), NortheastSea_EventScript_DefenseGuru_PostBattle)
+        }
+        else {
+            msgbox(format("HUAAAAH! Leave me to my training, then!"))
+            release
+            end
+        }
+    }
+    else { // if speaking to defense guru for the first time
+        msgbox(format("HUAAAAH! To be impenetrable! To shrug off any attack! Don't you see? DEFENSE is the key to true might!\pYour POKéMON look much too frail.\nTrain with me, and we will toughen their DEFENSE to the max.\pWhat do you say? Will you do DEFENSE training with me?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) {
+            trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_BRUTUS, 0, format("HUAAAAH! Just try and break through!"), format("You proved your resilience."), NortheastSea_EventScript_DefenseGuru_FirstVictory)
+        }
+        else {
+            msgbox(format("HUAAAAH! Leave me to my training, then!"))
+            release
+            end
+        }
+    }
+}
+
+script NortheastSea_EventScript_DefenseGuru_PostBattle {
+    msgbox(format("Hm! Your toughness is commendable.\pWhen you are ready to boost your DEFENSE even higher, come train with me again. I will be waiting!"), MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script NortheastSea_EventScript_DefenseGuru_FirstVictory {
+    setflag(FLAG_DEFEATED_DEFENSE_GURU)
+    msgbox(format("Hm! You have proven that you know the value of DEFENSE.\pTake this to commemorate your victory."), MSGBOX_DEFAULT)
+    giveitem(ITEM_IRON)
+    msgbox(format("When you are ready to boost your DEFENSE even higher, come train with me again. I will be waiting!"), MSGBOX_DEFAULT)
+    release
+    end
+}
+
 script NortheastSea_EventScript_BattleGrottoSign {
     msgbox(format("BATTLE GROTTO\nReach new depths in your training!"), MSGBOX_SIGN)
     end

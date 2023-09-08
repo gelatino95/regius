@@ -55,8 +55,8 @@
 #define TRAINER_RONALDO                      51 // new
 #define TRAINER_LUKAS                        52 // new
 #define TRAINER_LISSY                        53 // new
-#define TRAINER_GABBY_AND_TY_4               54
-#define TRAINER_GABBY_AND_TY_5               55
+#define TRAINER_MANDY                        54 // new
+#define TRAINER_BRUTUS                       55 // new
 #define TRAINER_GABBY_AND_TY_6               56
 #define TRAINER_LOLA_1                       57
 #define TRAINER_AUSTINA                      58

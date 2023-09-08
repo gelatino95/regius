@@ -692,29 +692,49 @@ static const struct TrainerMon sParty_Lissy[] = {
     }
 };
 
-static const struct TrainerMon sParty_GabbyAndTy4[] = {
+static const struct TrainerMon sParty_Mandy[] = {
     {
-    .iv = 200,
-    .lvl = 33,
-    .species = SPECIES_MAGNETON,
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_CHICKLET,
     },
     {
-    .iv = 200,
-    .lvl = 33,
-    .species = SPECIES_LOUDRED,
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_RADULIN,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_HELIMAW,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_PINSIR,
     }
 };
 
-static const struct TrainerMon sParty_GabbyAndTy5[] = {
+static const struct TrainerMon sParty_Brutus[] = {
     {
-    .iv = 250,
-    .lvl = 36,
-    .species = SPECIES_MAGNETON,
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_SHELLDER,
     },
     {
-    .iv = 250,
-    .lvl = 36,
-    .species = SPECIES_LOUDRED,
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_COCONIT,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_GLYPHMITE,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_SHUCKLE,
     }
 };
 

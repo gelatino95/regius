@@ -49,7 +49,7 @@ BattleGrotto_B1F_EventScript_EndAttendant_1:
 
 BattleGrotto_B1F_EventScript_EndAttendant_2:
 	msgbox BattleGrotto_B1F_EventScript_EndAttendant_Text_1, MSGBOX_DEFAULT
-	giveitem ITEM_IRON
+	giveitem ITEM_MACHO_BRACE
 	setflag FLAG_GROTTO_FLOOR_1_COMPLETE
 	goto BattleGrotto_B1F_EventScript_EndAttendant_1
 
