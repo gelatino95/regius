@@ -57,14 +57,14 @@
 #define TRAINER_LISSY                        53 // new
 #define TRAINER_MANDY                        54 // new
 #define TRAINER_BRUTUS                       55 // new
-#define TRAINER_GABBY_AND_TY_6               56
-#define TRAINER_LOLA_1                       57
-#define TRAINER_AUSTINA                      58
-#define TRAINER_GWEN                         59
-#define TRAINER_LOLA_2                       60
-#define TRAINER_LOLA_3                       61
-#define TRAINER_LOLA_4                       62
-#define TRAINER_LOLA_5                       63
+#define TRAINER_FRANCESCA                    56 // new
+#define TRAINER_KEGAN                        57 // new
+#define TRAINER_AUSTINA                      58 // new
+#define TRAINER_LOGAN                        59 // new
+#define TRAINER_ZEKE                         60 // new
+#define TRAINER_APOLLO                       61 // new
+#define TRAINER_HAROLD                       62 // new
+#define TRAINER_BETSY                        63 // new
 #define TRAINER_RICKY_1                      64
 #define TRAINER_SIMON                        65
 #define TRAINER_CHARLIE                      66 // new

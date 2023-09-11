@@ -1,1 +1,75 @@
 mapscripts CentralSea_MapScripts {}
+
+script CentralSea_EventScript_BikeGirl {
+    if (flag(FLAG_RECEIVED_BIKE)) {
+        msgbox(format("Hello again! Still haven't found a way off this island with a bike.\lI'll keep you posted if I make any progress in that area."), MSGBOX_NPC)
+    }
+    else {
+        lock
+        faceplayer
+        msgbox(format("I know what you're thinking: How did this girl get way out here with a bike?\pHaha! There's a funny story about that.\nUh… Hmm…\lTo be honest, I'm not sure.\pWell, obviously keeping this spare around isn't going to help me leave, so why don't you take it?"), MSGBOX_DEFAULT)
+        giveitem(ITEM_ACRO_BIKE)
+        setflag(FLAG_RECEIVED_BIKE)
+        msgbox(format("There aren't really a lot of great biking spots on these islands, but give it a shot anyway. You can't end up any worse than me, that's for sure.\pNow, how am I going to get off this island…"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+}
+
+script CentralSea_EventScript_RouteSignEast {
+    msgbox(format("CENTRAL SEA\n{UP_ARROW} KAPOK ISLAND\lNORTHEAST SEA {RIGHT_ARROW}\l{DOWN_ARROW} ARID ISLAND"), MSGBOX_SIGN)
+}
+
+script CentralSea_EventScript_RouteSignWest {
+    msgbox(format("CENTRAL SEA\n{LEFT_ARROW} IGNEOUS ISLAND"), MSGBOX_SIGN)
+}
+
+script CentralSea_EventScript_Francesca {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_FRANCESCA, 0, format("Please look at all my pretty POKéMON!"), format("They were pretty, right?"))
+	msgbox(format("I only like pretty pink POKéMON."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Kegan {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_KEGAN, 0, format("Watch out for deep water!"), format("Glub…"))
+	msgbox(format("I can't hold my breath long enough to DIVE."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Austina {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_AUSTINA, 0, format("You're in my training zone! Prepare for defeat!"), format("Huh?"))
+	msgbox(format("Swimming is a great way to build stamina."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Logan {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_LOGAN, 0, format("I'll swim laps around you!"), format("You swam laps around me…"))
+	msgbox(format("My POKéMON love to play in the water while I'm training."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Zeke {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ZEKE, 0, format("Hey, kid! You want to be a rock star?"), format("My star has fallen…"))
+	msgbox(format("You've got more mojo than I'll ever have, kid."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Apollo {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_APOLLO, 0, format("Let the crashing waves wash over you!"), format("Huaaaaah!!!"))
+	msgbox(format("To be as fierce and unrelenting as the sea itself… that is my dream."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Harold {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_HAROLD, 0, format("Are you here to help us make our sandcastle?"), format("You meanie!"))
+	msgbox(format("How did we get way out here? We floated on our tubes!"), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Betsy {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_BETSY, 0, format("I claim this island as my own! Bow to your queen!"), format("Usurper!"))
+	msgbox(format("This will be a perfect spot for my castle!"), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_ItemNetBall {
+    finditem(ITEM_NET_BALL)
+    end
+}
+
+script CentralSea_EventScript_ItemSoftSand {
+    finditem(ITEM_SOFT_SAND)
+    end
+}

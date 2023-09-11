@@ -1233,8 +1233,8 @@
 #define FLAG_ITEM_ARID_RUINS_ANCIENT_SLAB                           0x49D
 #define FLAG_ITEM_NORTHEAST_SEA_HEART_SCALE                         0x49E
 #define FLAG_ITEM_NORTHEAST_SEA_WATER_STONE                         0x49F
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
+#define FLAG_ITEM_CENTRAL_SEA_NET_BALL                              0x4A0
+#define FLAG_ITEM_CENTRAL_SEA_SOFT_SAND                             0x4A1
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
