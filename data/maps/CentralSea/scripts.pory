@@ -8,7 +8,7 @@ script CentralSea_EventScript_BikeGirl {
         lock
         faceplayer
         msgbox(format("I know what you're thinking: How did this girl get way out here with a bike?\pHaha! There's a funny story about that.\nUh… Hmm…\lTo be honest, I'm not sure.\pWell, obviously keeping this spare around isn't going to help me leave, so why don't you take it?"), MSGBOX_DEFAULT)
-        giveitem(ITEM_ACRO_BIKE)
+        giveitem(ITEM_MACH_BIKE)
         setflag(FLAG_RECEIVED_BIKE)
         msgbox(format("There aren't really a lot of great biking spots on these islands, but give it a shot anyway. You can't end up any worse than me, that's for sure.\pNow, how am I going to get off this island…"), MSGBOX_DEFAULT)
         release

@@ -1340,7 +1340,9 @@ void BattleSetup_StartTrainerBattle(void)
 
         if (sTrainerBattleMode == TRAINER_BATTLE_GROTTO //If in the battle grotto, set the var that turns off prize money
             || sTrainerBattleMode == TRAINER_BATTLE_GROTTO_NO_MUSIC)
-        VarSet(VAR_0x8003, 1);
+        VarSet(VAR_0x800B, 1);
+        else
+        VarSet(VAR_0x800B, 0);
 	}
 
     if (InBattlePyramid())

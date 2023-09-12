@@ -2933,14 +2933,13 @@ BattleScript_LocalBattleWonLoseTexts::
 	trainerslidein BS_FAINTED
 	waitstate
 	printstring STRINGID_TRAINER2LOSETEXT
-BattleScript_LocalBattleNoReward::
-	setbyte gSpecialVar_0x8003, 0
-	end2
 BattleScript_LocalBattleWonReward::
-	jumpifbyte CMP_EQUAL, gSpecialVar_0x8003, 1, BattleScript_LocalBattleNoReward
+	jumpifbyte CMP_EQUAL, gSpecialVar_0x800B, 1, BattleScript_LocalBattleNoReward
 	getmoneyreward
 	printstring STRINGID_PLAYERGOTMONEY
 	waitmessage B_WAIT_TIME_LONG
+BattleScript_LocalBattleNoReward::
+	setbyte gSpecialVar_0x800B, 0
 BattleScript_PayDayMoneyAndPickUpItems::
 	givepaydaymoney
 	pickup

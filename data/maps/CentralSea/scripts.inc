@@ -7,7 +7,7 @@ CentralSea_EventScript_BikeGirl::
 	lock
 	faceplayer
 	msgbox CentralSea_EventScript_BikeGirl_Text_1, MSGBOX_DEFAULT
-	giveitem ITEM_ACRO_BIKE
+	giveitem ITEM_MACH_BIKE
 	setflag FLAG_RECEIVED_BIKE
 	msgbox CentralSea_EventScript_BikeGirl_Text_2, MSGBOX_DEFAULT
 	release
