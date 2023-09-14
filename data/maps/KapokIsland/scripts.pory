@@ -13,6 +13,144 @@ script KapokIsland_EventScript_TryMoveDayCareMan {
 	end
 }
 
+script KapokIsland_EventScript_DefenseCurlTutor {
+	lock
+	faceplayer
+	msgbox(format("Curl up! Roll out! The ultimate strategy that cannot be beat!\pWould you like me to teach DEFENSE CURL to your POKéMON? I'll do it for one HEART SCALE!"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) { //player says yes
+		checkitem(ITEM_HEART_SCALE)
+		if (var(VAR_RESULT)) { //if player has heart scale
+			msgbox(format("Okay! Which one should learn it?"), MSGBOX_DEFAULT)
+			setvar(VAR_0x8005, TUTOR_MOVE_DEFENSE_CURL)
+			call(MoveTutor_EventScript_OpenPartyMenu)
+			if (var(VAR_RESULT) == 0) {
+				goto(KapokIsland_EventScript_DefenseCurlDeclined)
+			}
+			msgbox(format("{PLAYER} handed over one HEART SCALE."), MSGBOX_DEFAULT)
+			removeitem(ITEM_HEART_SCALE)
+			release
+			end
+		}
+		else { //if player doesn't have heart scale
+			msgbox(format("You don't even have a single HEART SCALE? Uh oh!"), MSGBOX_DEFAULT)
+			release
+			end
+		}
+	}
+	else { //player says no
+		goto(KapokIsland_EventScript_DefenseCurlDeclined)
+	}
+}
+
+script KapokIsland_EventScript_DefenseCurlDeclined {
+	msgbox(format("Aw… I guess I'll just curl up here, then…"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script KapokIsland_EventScript_RolloutTutor {
+	lock
+	faceplayer
+	msgbox(format("Curl up! Roll out! Do it, and your power will double just like that!\pWould you like me to teach ROLLOUT to your POKéMON? I'll do it for one HEART SCALE!"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) { //player says yes
+		checkitem(ITEM_HEART_SCALE)
+		if (var(VAR_RESULT)) { //if player has heart scale
+			msgbox(format("Okay! Which one should learn it?"), MSGBOX_DEFAULT)
+			setvar(VAR_0x8005, TUTOR_MOVE_ROLLOUT)
+			call(MoveTutor_EventScript_OpenPartyMenu)
+			if (var(VAR_RESULT) == 0) {
+				goto(KapokIsland_EventScript_RolloutDeclined)
+			}
+			msgbox(format("{PLAYER} handed over one HEART SCALE."), MSGBOX_DEFAULT)
+			removeitem(ITEM_HEART_SCALE)
+			release
+			end
+		}
+		else { //if player doesn't have heart scale
+			msgbox(format("Hey, you don't have a HEART SCALE!\nThat's too bad."), MSGBOX_DEFAULT)
+			release
+			end
+		}
+	}
+	else { //player says no
+		goto(KapokIsland_EventScript_RolloutDeclined)
+	}
+}
+
+script KapokIsland_EventScript_RolloutDeclined {
+	msgbox(format("Aw… I'll just roll away, then…"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script KapokIsland_EventScript_ItemFinderMan {
+	lock
+	faceplayer
+	if (flag(FLAG_RECEIVED_ITEMFINDER)) {
+		msgbox(format("Beaches like this are chock full of hidden treasure. I trust you'll have no problem sniffing it out with your ITEMFINDER!"), MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox(format("Fufufu… do you ever think about all the stuff that gets lost on beaches like this? All the things that wash up on shore?\pI used to be quite the treasure hunter back in my day.\lYou'd be surprised how much treasure you can find just laying around, if you're thorough.\pYou look to be a bit of a treasure hunter yourself. Perhaps you'd like to be my apprentice?\lHohoho! Just a little joke.\pListen to me ramble on! For keeping me company, I think you've earned this."), MSGBOX_DEFAULT)
+		giveitem(ITEM_ITEMFINDER)
+		setflag(FLAG_RECEIVED_ITEMFINDER)
+		msgbox(format("Good luck on your treasure hunt! Leave nothing to waste, I always say."), MSGBOX_DEFAULT)
+	}
+	release
+	end
+}
+
+script KapokIsland_EventScript_Scientist {
+	msgbox(format("KAPOK JUNGLE is a hotbed of biodiversity. You'll find lots of wildlife researchers doing field work in there."), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_Boy {
+	msgbox(format("This island is the most populated in the REGIUS ARCHIPELAGO.\lIt's also the only one with a modern POKéMON CENTER and POKéMART."), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_Mom {
+	msgbox(format("I'm letting my kids run free while I relax.\lMake sure they don't get in any trouble, okay?"), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_PalmTreeGirl {
+	msgbox(format("Yum! If you shake trees, you might get BERRIES!"), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_PalmTreeBoy {
+	msgbox(format("Waaah! A POKéMON fell out of the tree!"), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_Woman1 {
+	msgbox(format("Would you mind not blocking our sun?\p…Actually, I kinda like the shade.\nCan you stand there all day for me?"), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_Woman2 {
+	msgbox(format("We're on vacation. We couldn't have picked a better beach!"), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_Tuber {
+	msgbox(format("I want to see that POKéMON! The big, lumpy one with the grassy back… Do you know what I'm talking about?"), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_Swimmer {
+	msgbox(format("Eep! A POKéMON brushed past my feet!"), MSGBOX_NPC)
+}
+
+script KapokIsland_EventScript_CitySign {
+	msgbox(format("KAPOK ISLAND\nA verdant slice of paradise."), MSGBOX_SIGN)
+}
+
+script KapokIsland_EventScript_MoveTutorSign {
+	msgbox(format("POKéMON MOVES SOCIETY\nWe know moves better than anyone!"), MSGBOX_SIGN)
+}
+
+script KapokIsland_EventScript_KapokJungleSign {
+	msgbox(format("KAPOK JUNGLE ahead."), MSGBOX_SIGN)
+}
+
+script KapokIsland_EventScript_DayCareSign {
+	msgbox(format("POKéMON DAY CARE"), MSGBOX_SIGN)
+}
+
 movement KapokIsland_Movement_MoveDayCareMan {
 	face_down
 }

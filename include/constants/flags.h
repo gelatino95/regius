@@ -69,7 +69,7 @@
 #define FLAG_HIDE_NORTHEAST_SEA_ROCK                0x39
 #define FLAG_DEFEATED_ATTACK_GURU                   0x3A
 #define FLAG_DEFEATED_DEFENSE_GURU                  0x3B
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
+#define FLAG_RECEIVED_ITEMFINDER                    0x3C
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
@@ -662,9 +662,9 @@
 #define FLAG_HIDDEN_ITEM_ARID_DESERT_STARDUST           0x26B
 #define FLAG_HIDDEN_ITEM_ARID_RUINS_EVERSTONE           0x26C
 #define FLAG_HIDDEN_ITEM_ARID_RUINS_ELIXIR              0x26D
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
+#define FLAG_HIDDEN_ITEM_KAPOK_ISLAND_HEART_SCALE       0x26E
+#define FLAG_HIDDEN_ITEM_KAPOK_ISLAND_PEARL             0x26F
+#define FLAG_HIDDEN_ITEM_KAPOK_ISLAND_MAX_ETHER         0x270
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
