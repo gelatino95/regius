@@ -1,5 +1,51 @@
+raw `
+.set LOCALID_NURSE, 1
+`
+
 mapscripts KapokIsland_PokemonCenter_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setrespawn(HEAL_LOCATION_KAPOK_ISLAND)
 	}
+}
+
+script KapokIsland_PokemonCenter_Nurse {
+	setvar(VAR_0x800B, LOCALID_NURSE)
+	msgbox(format("Hello, and welcome to\nthe POKéMON CENTER.\pWe restore your tired POKéMON\nto full health.\pWould you like to rest your POKéMON?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		msgbox(format("Okay, I'll take your POKéMON\nfor a few seconds."), MSGBOX_DEFAULT)
+		waitmessage
+		applymovement(VAR_0x800B, Common_Movement_WalkInPlaceFasterLeft)
+		waitmovement(0)
+		dofieldeffect(FLDEFF_POKECENTER_HEAL)
+		waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+		applymovement(VAR_0x800B, Common_Movement_WalkInPlaceFasterDown)
+		waitmovement(0)
+		special(HealPlayerParty)
+		message(format("Thank you for waiting.\pWe've restored your POKéMON\nto full health."))
+		waitmessage
+		applymovement(1, Movement_PkmnCenterNurse_Bow)
+		waitmovement(0)
+		goto(KapokIsland_PokemonCenter_Nurse_Goodbye)
+	}
+	else {
+		goto(KapokIsland_PokemonCenter_Nurse_Goodbye)
+	}
+}
+
+script KapokIsland_PokemonCenter_Nurse_Goodbye {
+	msgbox(format("We hope to see you again!"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script KapokIsland_PokemonCenter_Woman {
+	msgbox(format("I'm resting up before an expedition into the jungle."), MSGBOX_NPC)
+}
+
+script KapokIsland_PokemonCenter_HexManiac {
+	msgbox(format("I'm reading about the history of the REGIUS ARCHIPELAGO.\lDid you know these seas used to be ruled by pirates? Can you believe that?\pI wonder where they all went…"), MSGBOX_NPC)
+}
+
+script KapokIsland_PokemonCenter_Boy {
+	msgbox(format("Thank goodness for air conditioning!\nModern amenities are hard to come by on these islands, but KAPOK ISLAND always delivers."), MSGBOX_NPC)
 }

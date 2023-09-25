@@ -1,1 +1,125 @@
 mapscripts KapokIsland_MoveRelearner_MapScripts {}
+
+script KapokIsland_MoveRelearner_EventScript_Main {
+    lock
+    faceplayer
+    if (!flag(FLAG_TEMP_1)) { //if talking to the player for the first time since entering the room
+    msgbox(format("I know every move learned by every POKéMON. Impressive, right?\lWhat, you don't believe me?\pJust to prove it, I'll teach your POKéMON a move it's forgotten.\lIn exchange for one HEART SCALE, of course."), MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_1)
+    }
+    checkitem(ITEM_HEART_SCALE)
+    if (!var(VAR_RESULT)) { //ends script if player does not have a heart scale
+        goto(KapokIsland_MoveRelearner_EventScript_ComeBackWithHeartScale)
+    }
+    msgbox(format("Want me to teach your POKéMON a move?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)) { //player says yes
+        goto(KapokIsland_MoveRelearner_EventScript_ChooseMon)
+    }
+    else { //player says no
+        goto(KapokIsland_MoveRelearner_EventScript_ComeBackWithHeartScale)
+    }
+    release
+    end
+}
+
+script KapokIsland_MoveRelearner_EventScript_ChooseMon {
+    msgbox(format("Which POKéMON should remember a move?"), MSGBOX_DEFAULT)
+    special(ChooseMonForMoveRelearner)
+    waitstate
+    if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+        goto(KapokIsland_MoveRelearner_EventScript_ComeBackWithHeartScale)
+    }
+    special(IsSelectedMonEgg)
+    if (var(VAR_RESULT)) {
+        msgbox(format("Um… this is an EGG.\nWhat do you expect me to do with this?\lLet's try this again."), MSGBOX_DEFAULT)
+        goto(KapokIsland_MoveRelearner_EventScript_ChooseMon)
+    }
+    if (var(VAR_0x8005) == 0) {
+        msgbox(format("Wow… I don't believe this.\nI can't think of a single move I can teach this POKéMON."), MSGBOX_DEFAULT)
+        goto(KapokIsland_MoveRelearner_EventScript_ChooseMon)
+    }
+    msgbox(format("Which move should I teach it?"), MSGBOX_DEFAULT)
+    special(TeachMoveRelearnerMove)
+    waitstate
+    if (var(VAR_0x8004) == 0) {
+        goto(KapokIsland_MoveRelearner_EventScript_ChooseMon)
+    }
+    removeitem(ITEM_HEART_SCALE)
+    msgbox(format("{PLAYER} handed over one HEART SCALE."))
+    release
+    end
+}
+
+script KapokIsland_MoveRelearner_EventScript_ComeBackWithHeartScale {
+    msgbox(format("Come back with a HEART SCALE and maybe I can help you out."), MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script KapokIsland_MoveRelearner_EventScript_MoveDeleter_Main {
+    lock
+    faceplayer
+    msgbox(LilycoveCity_MoveDeletersHouse_Text_ICanMakeMonForgetMove, MSGBOX_YESNO)
+    if (var(VAR_RESULT)) {
+        goto(KapokIsland_MoveRelearner_EventScript_MoveDeleter_ChooseMon)
+    }
+    else {
+        goto(KapokIsland_MoveRelearner_EventsScript_MoveDeleter_ComeAgain)
+    }
+    release
+    end
+}
+
+script KapokIsland_MoveRelearner_EventScript_MoveDeleter_ChooseMon {
+    msgbox(LilycoveCity_MoveDeletersHouse_Text_WhichMonShouldForget, MSGBOX_DEFAULT)
+    special(ChoosePartyMon)
+    waitstate
+    if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+        goto(KapokIsland_MoveRelearner_EventsScript_MoveDeleter_ComeAgain)
+    }
+    special(IsSelectedMonEgg)
+    if (var(VAR_RESULT)) {
+        msgbox(LilycoveCity_MoveDeletersHouse_Text_EggCantForgetMoves, MSGBOX_DEFAULT)
+        goto(KapokIsland_MoveRelearner_EventScript_MoveDeleter_ChooseMon)
+    }
+    special(GetNumMovesSelectedMonHas)
+    if (var(VAR_RESULT) == 1) {
+        special(BufferMoveDeleterNicknameAndMove)
+        msgbox(LilycoveCity_MoveDeletersHouse_Text_MonOnlyKnowsOneMove, MSGBOX_DEFAULT)
+        goto(KapokIsland_MoveRelearner_EventScript_MoveDeleter_ChooseMon)
+    }
+    msgbox(LilycoveCity_MoveDeletersHouse_Text_WhichMoveShouldBeForgotten, MSGBOX_DEFAULT)
+    fadescreen(FADE_TO_BLACK)
+    special(MoveDeleterChooseMoveToForget)
+    fadescreen(FADE_FROM_BLACK)
+    if (var(VAR_0x8005) == MAX_MON_MOVES) {
+        goto(KapokIsland_MoveRelearner_EventScript_MoveDeleter_ChooseMon)
+    }
+    special(BufferMoveDeleterNicknameAndMove)
+    msgbox(LilycoveCity_MoveDeletersHouse_Text_MonsMoveShouldBeForgotten, MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) { //player says no
+        goto(KapokIsland_MoveRelearner_EventsScript_MoveDeleter_ComeAgain)
+    }
+    special(MoveDeleterForgetMove)
+    playfanfare(MUS_MOVE_DELETED)
+    waitfanfare
+    msgbox(LilycoveCity_MoveDeletersHouse_Text_MonHasForgottenMove, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script KapokIsland_MoveRelearner_EventsScript_MoveDeleter_ComeAgain {
+    msgbox(LilycoveCity_MoveDeletersHouse_Text_ComeAgain, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script KapokIsland_MoveRelearner_EventScript_NameRater {
+    msgbox(format("Hello hello! I'm the NAME RATER!\pBut TRAINERS haven't needed my services lately, since they learned they can change a POKéMON's nickname from the PARTY menu."), MSGBOX_NPC)
+    end
+}
+
+script KapokIsland_MoveRelearner_EventScript_Girl {
+    msgbox(format("HEART SCALES are a popular collectible on the islands. Every MOVE TUTOR accepts them as payment.\pThey're not super common, but they're not hard to find if you search sandy beaches or break open rocks."), MSGBOX_NPC)
+    end
+}
