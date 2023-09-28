@@ -1,1 +1,111 @@
 mapscripts KapokIsland_House2_MapScripts {}
+
+script KapokIsland_House2_EventScript_PlateFossilMan {
+    lock
+    faceplayer
+    if (flag(FLAG_RECEIVED_PLATE_FOSSIL)) {
+        msgbox(format("Thanks again for your help!\pI hope that PLATE FOSSIL helps you make some discoveries of your own."), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    if (!flag(FLAG_TEMP_1) && !flag(FLAG_ACCEPTED_PLATE_FOSSIL_QUEST)) {
+    msgbox(format("I'm a paleontologist. I study the FOSSILS of extinct POKéMON.\pI have here a PLATE FOSSIL. It appears to be from an undiscovered species.\pIf I could identify a living relative of this FOSSIL, I could learn a lot about the species it belongs to…\pSay, you look like a capable TRAINER.\nHow would you like to do a little field work for me?"), MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_1)
+    }
+    if (!flag(FLAG_ACCEPTED_PLATE_FOSSIL_QUEST)) { //player did not yet accept quest
+        msgbox(format("So, what do you say?\nWant to help me track down a living relative of this PLATE FOSSIL?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) { //player says yes
+            msgbox(format("Fantastic! Okay, let me fill you in on the details.\pBased on my analysis… this POKéMON had strong limbs, so it was likely arboreal.\lThat means it lived in trees.\pThere is also clear evidence that it had fur and sharp claws.\pFinally, it's highly likely this POKéMON's descendants still live on this island.\pThat's all I've got for you.\nIf you find a POKéMON matching that description, please capture one and show me its POKéDEX entry.\pI'm counting on you!"), MSGBOX_DEFAULT)
+            setflag(FLAG_ACCEPTED_PLATE_FOSSIL_QUEST)
+            release
+            end
+        }
+        else { //player says no
+            msgbox(format("Oh, fine then.\nI'll continue my analysis alone."), MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else { //player already accepted quest
+        msgbox(format("Hello again!\nHave you found a living relative to the PLATE FOSSIL yet?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) {
+            goto(KapokIsland_House2_EventScript_PlateFossilMan_CheckPokemon)
+        }
+        else {
+            msgbox(format("Remember, I'm looking for a POKéMON that lives in trees, with fur and sharp claws.\pIf you find one like that on KAPOK ISLAND, please show me its POKéDEX info."), MSGBOX_DEFAULT)
+        }
+    }
+    release
+    end
+}
+
+script KapokIsland_House2_EventScript_PlateFossilMan_CheckPokemon {
+    setvar(VAR_TEMP_1, SPECIES_SLAKOTH)
+	specialvar(VAR_RESULT, GetCaughtMon)
+    if (var(VAR_RESULT)) { //player has slakoth
+        msgbox(format("Oh? Let me see your POKéDEX…\p…SLAKOTH, hm?\nLet me see if it matches my analysis…\pIt lives in trees…\n…has fur, and strong arms with sharp claws…\pEgad! I think this might be the missing link I've been looking for!\pYour help has been invaluable so far.\pI know the perfect reward for your efforts!"), MSGBOX_DEFAULT)
+        giveitem(ITEM_PLATE_FOSSIL)
+        setflag(FLAG_RECEIVED_PLATE_FOSSIL)
+        msgbox(format("Bring this to the lab in KAPOK JUNGLE, and they may be able to revive it into a POKéMON.\pAs a TRAINER, you can learn about this new species through hands-on experience.\pGood luck with your research!"), MSGBOX_DEFAULT)
+    }
+    else { //player doesn't have slakoth
+        msgbox(format("Hmm…\p…\pI'm sorry, but I don't see any POKéMON matching this FOSSIL's lineage.\pRemember, I'm looking for a POKéMON that lives in trees, with fur and sharp claws.\pIf you find one like that on KAPOK ISLAND, please show me its POKéDEX info."), MSGBOX_DEFAULT)
+    }
+    release
+    end
+}
+
+script KapokIsland_House2_EventScript_FrondFossilMan {
+    lock
+    faceplayer
+    if (flag(FLAG_RECEIVED_FROND_FOSSIL)) {
+        msgbox(format("Thanks again for your help!\pHave you revived that FROND FOSSIL yet?"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    if (!flag(FLAG_TEMP_2) && !flag(FLAG_ACCEPTED_FROND_FOSSIL_QUEST)) {
+    msgbox(format("I'm a paleontologist. I study the FOSSILS of extinct POKéMON.\pI have here a FROND FOSSIL. I've never seen anything like it before.\pI need something I can compare it to, so I can learn more about it…\lperhaps a living relative?\pHey, is that a POKéDEX?\nYou must be a researcher of your own!\lCan you help me out here?"), MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_2)
+    }
+    if (!flag(FLAG_ACCEPTED_FROND_FOSSIL_QUEST)) { //player did not yet accept quest
+        msgbox(format("So, what do you say?\nWant to help me track down a living relative of this FROND FOSSIL?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) { //player says yes
+            msgbox(format("Wonderful! Okay, let me tell you what I know so far.\pBased on my analysis…\nwe're looking for something plant-like.\lBut not quite like any common plant.\pI estimate that this POKéMON has a hard outer shell, like a seed.\lIn fact, it may not even need any limbs to move around.\pFinally, it's likely this POKéMON still thrives in the jungles of KAPOK ISLAND to this day.\pIt's not much, but I hope that helps.\nIf you find a POKéMON matching that description, please capture one and show me its POKéDEX entry.\pI'm counting on you!"), MSGBOX_DEFAULT)
+            setflag(FLAG_ACCEPTED_FROND_FOSSIL_QUEST)
+            release
+            end
+        }
+        else { //player says no
+            msgbox(format("Oh, fine then.\nI'm sure something will turn up, eventually…"), MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else { //player already accepted quest
+        msgbox(format("Hello again!\nHave you found a living relative to the FROND FOSSIL yet?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)) {
+            goto(KapokIsland_House2_EventScript_FrondFossilMan_CheckPokemon)
+        }
+        else {
+            msgbox(format("Remember, I'm looking for a seed-like plant POKéMON with no limbs.\pIt should be here on KAPOK ISLAND, so if you find one, please show me its complete POKéDEX page."), MSGBOX_DEFAULT)
+        }
+    }
+    release
+    end
+}
+
+script KapokIsland_House2_EventScript_FrondFossilMan_CheckPokemon {
+    setvar(VAR_TEMP_1, SPECIES_EXEGGCUTE)
+	specialvar(VAR_RESULT, GetCaughtMon)
+    if (var(VAR_RESULT)) { //player has exeggcute
+        msgbox(format("Oh? Let me see your POKéDEX…\p…EXEGGCUTE? Fascinating…\nLet me see if it fits the description…\pIt's a plant POKéMON…\n…with a seed-like body, and no limbs…\pEureka! We've established a complete lineage for this species!\pI couldn't have done this without you.\pNow that I'm done with this, why don't you have it for your trouble?"), MSGBOX_DEFAULT)
+        giveitem(ITEM_FROND_FOSSIL)
+        setflag(FLAG_RECEIVED_FROND_FOSSIL)
+        msgbox(format("Bring this to the lab in KAPOK JUNGLE, and they may be able to revive it into a POKéMON.\pThere's no more I can learn from studying this rock, but as a TRAINER, I'm sure you could benefit from the real thing.\pPlease treat it with care!"), MSGBOX_DEFAULT)
+    }
+    else { //player doesn't have slakoth
+        msgbox(format("Hmm…\p…\pI'm sorry, but I don't see any POKéMON matching this FOSSIL's lineage.\pRemember, I'm looking for a seed-like plant POKéMON with no limbs.\pIt should be here on KAPOK ISLAND, so if you find one, please show me its complete POKéDEX page."), MSGBOX_DEFAULT)
+    }
+    release
+    end
+}

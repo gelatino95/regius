@@ -70,11 +70,11 @@
 #define FLAG_DEFEATED_ATTACK_GURU                   0x3A
 #define FLAG_DEFEATED_DEFENSE_GURU                  0x3B
 #define FLAG_RECEIVED_ITEMFINDER                    0x3C
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
+#define FLAG_RECEIVED_PLATE_FOSSIL                  0x3D
+#define FLAG_RECEIVED_FROND_FOSSIL                  0x3E
+#define FLAG_ACCEPTED_PLATE_FOSSIL_QUEST            0x3F
+#define FLAG_ACCEPTED_FROND_FOSSIL_QUEST            0x40
+#define FLAG_RECEIVED_LUCKY_EGG                     0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag

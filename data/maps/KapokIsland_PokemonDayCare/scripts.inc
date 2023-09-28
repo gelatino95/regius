@@ -2,28 +2,28 @@ KapokIsland_PokemonDayCare_MapScripts::
 	.byte 0
 
 
-KapokIsland_PokemonDayCare_EventScript_ItemBall::
-	givemon SPECIES_TERRISLA, 50, ITEM_NONE
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_0
-	waitfanfare
-	givemon SPECIES_DITTO, 50, ITEM_NONE
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_1
-	waitfanfare
-	givemon SPECIES_SHUCKLE, 50, ITEM_PECHA_BERRY
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_2
-	waitfanfare
+KapokIsland_PokemonDayCare_EventScript_LuckyEggMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_LUCKY_EGG, KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_2
+	msgbox KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_Text_1, MSGBOX_DEFAULT
+	giveitem ITEM_LUCKY_EGG
+	setflag FLAG_RECEIVED_LUCKY_EGG
+KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_1:
 	release
 	end
 
+KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_2:
+	msgbox KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_Text_0, MSGBOX_DEFAULT
+	goto KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_1
 
-KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_0:
-	.string "{PLAYER} received TERRISLA!$"
 
-KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_1:
-	.string "{PLAYER} received DITTO!$"
+KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_Text_0:
+	.string "Sometimes EGGS go unclaimed by their\n"
+	.string "TRAINERS.\p"
+	.string "I wonder what happens to them?$"
 
-KapokIsland_PokemonDayCare_EventScript_ItemBall_Text_2:
-	.string "{PLAYER} received SHUCKLE!$"
+KapokIsland_PokemonDayCare_EventScript_LuckyEggMan_Text_1:
+	.string "I found an EGG, but I don't think it's a\n"
+	.string "POKéMON egg.\p"
+	.string "Maybe you'll know what to do with this?$"

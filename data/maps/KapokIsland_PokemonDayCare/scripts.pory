@@ -1,18 +1,16 @@
 mapscripts KapokIsland_PokemonDayCare_MapScripts {}
 
-script KapokIsland_PokemonDayCare_EventScript_ItemBall {
-	givemon(SPECIES_TERRISLA, 50, ITEM_NONE)
-    playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} received TERRISLA!")
-	waitfanfare
-	givemon(SPECIES_DITTO, 50, ITEM_NONE)
-    playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} received DITTO!")
-	waitfanfare
-	givemon(SPECIES_SHUCKLE, 50, ITEM_PECHA_BERRY)
-    playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} received SHUCKLE!")
-	waitfanfare
+script KapokIsland_PokemonDayCare_EventScript_LuckyEggMan {
+	lock
+	faceplayer
+	if (flag(FLAG_RECEIVED_LUCKY_EGG)) {
+		msgbox(format("Sometimes EGGS go unclaimed by their TRAINERS.\pI wonder what happens to them?"), MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox(format("I found an EGG, but I don't think it's a POKéMON egg.\pMaybe you'll know what to do with this?"), MSGBOX_DEFAULT)
+		giveitem(ITEM_LUCKY_EGG)
+		setflag(FLAG_RECEIVED_LUCKY_EGG)
+	}
 	release
 	end
 }

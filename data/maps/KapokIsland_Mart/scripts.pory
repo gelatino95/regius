@@ -1,1 +1,53 @@
 mapscripts KapokIsland_Mart_MapScripts {}
+
+script KapokIsland_Mart_EventScript_MainClerk {
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(KapokIsland_Mart_Pokemart_Main)
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script KapokIsland_Mart_EventScript_BallClerk {
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(KapokIsland_Mart_Pokemart_Balls)
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script KapokIsland_Mart_EventScript_Girl {
+    msgbox(format("Since this is the only official POKéMART serving the islands, it's very well stocked!"), MSGBOX_NPC)
+    end
+}
+
+mart KapokIsland_Mart_Pokemart_Main {
+	ITEM_SUPER_POTION
+	ITEM_HYPER_POTION
+    ITEM_MAX_POTION
+    ITEM_FULL_RESTORE
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_BURN_HEAL
+    ITEM_AWAKENING
+    ITEM_ICE_HEAL
+    ITEM_FULL_HEAL
+    ITEM_REVIVE
+    ITEM_SUPER_REPEL
+    ITEM_POKE_DOLL
+    ITEM_ESCAPE_ROPE
+}
+
+mart KapokIsland_Mart_Pokemart_Balls {
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+    ITEM_NET_BALL
+    ITEM_DIVE_BALL
+}
