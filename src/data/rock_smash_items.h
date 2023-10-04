@@ -23,7 +23,7 @@ static const u16 sKapokJungle_RockSmashItems[] =
 	ITEM_LEAF_STONE,	// 5%
 	ITEM_HARD_STONE,	// 5%
 	ITEM_OLD_AMBER,		// 4%
-	ITEM_CLAW_FOSSIL,	// 4%
+	ITEM_OLD_AMBER,		// 4%
 	ITEM_NUGGET,		// 1%
 	ITEM_STAR_PIECE,	// 1%
 };

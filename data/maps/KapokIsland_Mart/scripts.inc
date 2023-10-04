@@ -25,8 +25,8 @@ KapokIsland_Mart_EventScript_BallClerk::
 
 
 KapokIsland_Mart_EventScript_Girl::
-	msgbox KapokIsland_Mart_EventScript_Girl_Text_0
-	return
+	msgbox KapokIsland_Mart_EventScript_Girl_Text_0, MSGBOX_NPC
+	end
 
 
 	.align 2

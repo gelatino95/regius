@@ -857,25 +857,44 @@ static const struct TrainerMon sParty_Betsy[] = {
     }
 };
 
-static const struct TrainerMon sParty_Ricky1[] = {
+static const struct TrainerMon sParty_Holden[] = {
     {
-    .iv = 10,
-    .lvl = 13,
-    .species = SPECIES_ZIGZAGOON,
-    .moves = {MOVE_SAND_ATTACK, MOVE_HEADBUTT, MOVE_TAIL_WHIP, MOVE_SURF}
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_QUETINI,
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_QUETINI,
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_CASSOWILY,
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_CHICKLET,
     }
 };
 
 static const struct TrainerMon sParty_Simon[] = {
     {
-    .iv = 0,
-    .lvl = 12,
-    .species = SPECIES_AZURILL,
+    .iv = 20,
+    .lvl = 21,
+    .species = SPECIES_ODDISH,
     },
     {
-    .iv = 0,
-    .lvl = 12,
-    .species = SPECIES_MARILL,
+    .iv = 20,
+    .lvl = 21,
+    .species = SPECIES_SLAKOTH,
+    },
+    {
+    .iv = 20,
+    .lvl = 21,
+    .species = SPECIES_TROPIUS,
     }
 };
 
@@ -897,21 +916,45 @@ static const struct TrainerMon sParty_Charlie[] = {
     }
 };
 
-static const struct TrainerMon sParty_Ricky2[] = {
+static const struct TrainerMon sParty_Leslie[] = {
     {
-    .iv = 10,
-    .lvl = 27,
-    .species = SPECIES_LINOONE,
-    .moves = {MOVE_SAND_ATTACK, MOVE_PIN_MISSILE, MOVE_TAIL_WHIP, MOVE_SURF}
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_YANMA,
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_MAGVA,
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_PINSIR,
     }
 };
 
-static const struct TrainerMon sParty_Ricky3[] = {
+static const struct TrainerMon sParty_Glen[] = {
     {
-    .iv = 20,
-    .lvl = 30,
-    .species = SPECIES_LINOONE,
-    .moves = {MOVE_SAND_ATTACK, MOVE_PIN_MISSILE, MOVE_TAIL_WHIP, MOVE_SURF}
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_MINUN,
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_CATRIC,
+    .ability = ABILITY_SLOT_2,
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_LILEEP,
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_ANORITH,
     }
 };
 

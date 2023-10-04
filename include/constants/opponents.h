@@ -65,11 +65,11 @@
 #define TRAINER_APOLLO                       61 // new
 #define TRAINER_HAROLD                       62 // new
 #define TRAINER_BETSY                        63 // new
-#define TRAINER_RICKY_1                      64
-#define TRAINER_SIMON                        65
+#define TRAINER_HOLDEN                       64 // new
+#define TRAINER_SIMON                        65 // new
 #define TRAINER_CHARLIE                      66 // new
-#define TRAINER_RICKY_2                      67
-#define TRAINER_RICKY_3                      68
+#define TRAINER_LESLIE                       67 // new
+#define TRAINER_GLEN                         68 // new
 #define TRAINER_RICKY_4                      69
 #define TRAINER_RICKY_5                      70
 #define TRAINER_RANDALL                      71

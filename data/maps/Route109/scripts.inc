@@ -395,7 +395,7 @@ Route109_EventScript_Edmond::
 	end
 
 Route109_EventScript_Ricky::
-	trainerbattle_single TRAINER_RICKY_1, Route109_Text_RickyIntro, Route109_Text_RickyDefeated, Route109_EventScript_RickyRegisterMatchCallAfterBattle
+	trainerbattle_single TRAINER_HOLDEN, Route109_Text_RickyIntro, Route109_Text_RickyDefeated, Route109_EventScript_RickyRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_RickyRematch
 	msgbox Route109_Text_RickyPostBattle, MSGBOX_DEFAULT
@@ -406,12 +406,12 @@ Route109_EventScript_RickyRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route109_Text_RickyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_RICKY_1
+	register_matchcall TRAINER_HOLDEN
 	release
 	end
 
 Route109_EventScript_RickyRematch::
-	trainerbattle_rematch TRAINER_RICKY_1, Route109_Text_RickyRematchIntro, Route109_Text_RickyRematchDefeated
+	trainerbattle_rematch TRAINER_HOLDEN, Route109_Text_RickyRematchIntro, Route109_Text_RickyRematchDefeated
 	msgbox Route109_Text_RickyRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 

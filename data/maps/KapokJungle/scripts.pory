@@ -1,1 +1,85 @@
-mapscripts KapokJungle_MapScripts {}
+mapscripts KapokJungle_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        random(20)
+        if (var(VAR_RESULT) == 19) {
+            setweather(WEATHER_RAIN_THUNDERSTORM)
+        }
+        elif (var(VAR_RESULT) >= 13) {
+            setweather(WEATHER_RAIN)
+        }
+        else {
+            setweather(WEATHER_SHADE)
+        }
+        doweather
+        end
+    }
+}
+
+script KapokJungle_EventScript_HerbShopSign {
+    msgbox(format("HERB SHOP"), MSGBOX_SIGN)
+    end
+}
+
+script KapokJungle_EventScript_TrainerTipsSign {
+    msgbox(format("TRAINER TIPS\pWant to evolve your POKéMON that needs to be traded with an item?\pNo need for trading: simply USE the item, and you're all set.\pBe sure to frequently check if your POKéMON can evolve with an ITEM in your bag!"), MSGBOX_SIGN)
+    end
+}
+
+script KapokJungle_EventScript_DirectionsSign {
+    msgbox(format("KAPOK JUNGLE\p{UP_ARROW} RESEARCH LAB\n{LEFT_ARROW} HERB SHOP\l{DOWN_ARROW} KAPOK ISLAND"), MSGBOX_SIGN)
+    end
+}
+
+script KapokJungle_EventScript_LabSign {
+    msgbox(format("REGIUS BIOLOGICAL INSTITUTE\nKAPOK JUNGLE BRANCH"), MSGBOX_SIGN)
+    end
+}
+
+script KapokJungle_EventScript_Picnicker {
+    msgbox(format("Keep a vigilant eye out for trash left on the forest floor.\lPick it up whenever you see it!"), MSGBOX_NPC)
+    end
+}
+
+script KapokJungle_EventScript_Holden {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_HOLDEN, 0, format("I can't see over the tall grass!\nWhere am I?"), format("I'm hopelessly lost…"))
+	msgbox(format("The exit is right down there? Phew, I'm not actually lost!"), MSGBOX_NPC)
+    end
+}
+
+script KapokJungle_EventScript_Simon {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_SIMON, 0, format("Are you doing your part to keep the jungle safe?"), format("You're all set!"))
+	msgbox(format("This is a lush ecosystem. It needs protecting!"), MSGBOX_NPC)
+    end
+}
+
+script KapokJungle_EventScript_Leslie {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_LESLIE, 0, format("Look what I found…"), format("Uh…"))
+	msgbox(format("These islands are teeming with quality bugs, if you know where to look…"), MSGBOX_NPC)
+    end
+}
+
+script KapokJungle_EventScript_Glen {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_GLEN, 0, format("My survey of the local species is nearly complete!"), format("My data!"))
+	msgbox(format("There are so many POKéMON to catalogue here, it's making my head spin!"), MSGBOX_NPC)
+    end
+}
+
+script KapokJungle_EventScript_ItemLeafStone {
+    finditem(ITEM_LEAF_STONE)
+    end
+}
+
+script KapokJungle_EventScript_ItemRareCandy {
+    finditem(ITEM_RARE_CANDY)
+    end
+}
+
+script KapokJungle_EventScript_ItemMiracleSeed {
+    finditem(ITEM_MIRACLE_SEED)
+    end
+}
+
+script KapokJungle_EventScript_ItemElixir {
+    finditem(ITEM_ELIXIR)
+    end
+}

@@ -665,10 +665,10 @@
 #define FLAG_HIDDEN_ITEM_KAPOK_ISLAND_HEART_SCALE       0x26E
 #define FLAG_HIDDEN_ITEM_KAPOK_ISLAND_PEARL             0x26F
 #define FLAG_HIDDEN_ITEM_KAPOK_ISLAND_MAX_ETHER         0x270
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
+#define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_HYPER_POTION      0x271
+#define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_FULL_HEAL         0x272
+#define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_REVIVE            0x273
+#define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_SUPER_POTION      0x274
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
@@ -1235,10 +1235,10 @@
 #define FLAG_ITEM_NORTHEAST_SEA_WATER_STONE                         0x49F
 #define FLAG_ITEM_CENTRAL_SEA_NET_BALL                              0x4A0
 #define FLAG_ITEM_CENTRAL_SEA_SOFT_SAND                             0x4A1
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
+#define FLAG_ITEM_KAPOK_JUNGLE_LEAF_STONE                           0x4A2
+#define FLAG_ITEM_KAPOK_JUNGLE_RARE_CANDY                           0x4A3
+#define FLAG_ITEM_KAPOK_JUNGLE_MIRACLE_SEED                         0x4A4
+#define FLAG_ITEM_KAPOK_JUNGLE_ELIXIR                               0x4A5
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag

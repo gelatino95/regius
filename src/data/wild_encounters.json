@@ -12190,7 +12190,7 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 30,
             "mons": [
               {
                 "min_level": 5,
@@ -12771,6 +12771,190 @@
                 "min_level": 19,
                 "max_level": 21,
                 "species": "SPECIES_CLAMPERL"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_KAPOK_JUNGLE",
+          "base_label": "gKapokJungle0",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_ODDISH"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_QUETINI"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_ODDISH"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_QUETINI"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_SLAKOTH"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_EXEGGCUTE"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_CASSOWILY"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_CASSOWILY"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_CASSOWILY"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_TROPIUS"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_CASSOWILY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_TROPIUS"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_CATRIC"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_YANMA"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_YANMA"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_YANMA"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_NOSEPASS"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_SHUCKLE"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_NOSEPASS"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_NOSEPASS"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_NOSEPASS"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 14,
+                "max_level": 21,
+                "species": "SPECIES_CARVANHA"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_CATRIC"
+              },
+              {
+                "min_level": 14,
+                "max_level": 20,
+                "species": "SPECIES_CATRIC"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_CATRIC"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_CATRIC"
               }
             ]
           }
