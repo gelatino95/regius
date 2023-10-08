@@ -1,1 +1,28 @@
 mapscripts KapokJungle_HerbShop_MapScripts {}
+
+script KapokJungle_HerbShop_EventScript_Clerk {
+    lock
+    faceplayer
+    message(format("Looking for medicinal herbs?"))
+    waitmessage
+    pokemart(KapokJungle_Mart_HerbShop)
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+mart KapokJungle_Mart_HerbShop {
+    ITEM_ENERGY_POWDER
+    ITEM_ENERGY_ROOT
+    ITEM_HEAL_POWDER
+    ITEM_REVIVAL_HERB
+    ITEM_WHITE_HERB
+    ITEM_MENTAL_HERB
+    ITEM_CHARCOAL
+    ITEM_SILVER_POWDER
+}
+
+script KapokJungle_HerbShop_EventScript_AromaLady {
+    msgbox(format("This jungle is rich with plant life.\nSome of it has beneficial properties for POKéMON."), MSGBOX_NPC)
+    end
+}

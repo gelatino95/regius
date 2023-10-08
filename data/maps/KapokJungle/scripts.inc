@@ -101,7 +101,7 @@ KapokJungle_EventScript_TrainerTipsSign_Text_0:
 	.string "No need for trading: simply USE the\n"
 	.string "item, and you're all set.\p"
 	.string "Be sure to frequently check if your\n"
-	.string "POKeMON can evolve with an ITEM in\l"
+	.string "POKéMON can evolve with an ITEM in\l"
 	.string "your bag!$"
 
 KapokJungle_EventScript_DirectionsSign_Text_0:

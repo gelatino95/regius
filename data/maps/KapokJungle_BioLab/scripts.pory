@@ -1,1 +1,125 @@
 mapscripts KapokJungle_BioLab_MapScripts {}
+
+script KapokJungle_BioLab_EventScript_FossilMan {
+    lock
+    faceplayer
+    msgbox(format("I do research on extinct species of POKéMON.\pI can revive POKéMON from FOSSILS with this machine behind me.\pDo you have a FOSSIL you would like me to revive?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        msgbox(format("FOSSILS can sometimes be found by smashing rocks.\pIf you find any, I'd love to help you revive them."), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    msgbox(format("Fantastic! Can you show me?"), MSGBOX_DEFAULT)
+    goto(KapokJungle_BioLab_EventScript_FossilMan_ChooseFossil)
+    release
+    end
+}
+
+script KapokJungle_BioLab_EventScript_FossilMan_ChooseFossil {
+    chooseitem(TREASURES_POCKET)
+    bufferitemname(STR_VAR_1, VAR_ITEM_ID)
+    switch(var(VAR_ITEM_ID)) {
+        case ITEM_HELIX_FOSSIL:
+            bufferspeciesname(STR_VAR_2, SPECIES_OMANYTE)
+        case ITEM_DOME_FOSSIL:
+            bufferspeciesname(STR_VAR_2, SPECIES_KABUTO)
+        case ITEM_OLD_AMBER:
+            bufferspeciesname(STR_VAR_2, SPECIES_AERODACTYL)
+        case ITEM_ROOT_FOSSIL:
+            bufferspeciesname(STR_VAR_2, SPECIES_LILEEP)
+        case ITEM_CLAW_FOSSIL:
+            bufferspeciesname(STR_VAR_2, SPECIES_ANORITH)
+        case ITEM_PLATE_FOSSIL:
+            bufferspeciesname(STR_VAR_2, SPECIES_SLOTHER)
+        case ITEM_FROND_FOSSIL:
+            bufferspeciesname(STR_VAR_2, SPECIES_ZAMIAD)
+        case ITEM_NONE:
+            msgbox(format("Come back if you want to revive a FOSSIL."), MSGBOX_DEFAULT)
+            release
+            end
+        default:
+            msgbox(format("I can't revive something that's not a FOSSIL!"), MSGBOX_DEFAULT)
+            goto(KapokJungle_BioLab_EventScript_FossilMan_ChooseFossil)
+    }
+    msgbox(format("Would you like me to revive this\n{STR_VAR_1}?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        msgbox(format("Changed your mind?\nDo you want to revive something else?"), MSGBOX_DEFAULT)
+        goto(KapokJungle_BioLab_EventScript_FossilMan_ChooseFossil)
+    }
+    removeitem(VAR_ITEM_ID)
+    msgbox(format("Okay! I can have it done in a jiffy!\pJust wait one moment…"), MSGBOX_DEFAULT)
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    delay(60)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(format("Success! Your {STR_VAR_1}\nwas revived into {STR_VAR_2}!"), MSGBOX_DEFAULT)
+    switch(var(VAR_ITEM_ID)) {
+        case ITEM_HELIX_FOSSIL:
+            givemon(SPECIES_OMANYTE, 20)
+        case ITEM_DOME_FOSSIL:
+            givemon(SPECIES_KABUTO, 20)
+        case ITEM_OLD_AMBER:
+            givemon(SPECIES_AERODACTYL, 20)
+        case ITEM_ROOT_FOSSIL:
+            givemon(SPECIES_LILEEP, 20)
+        case ITEM_CLAW_FOSSIL:
+            givemon(SPECIES_ANORITH, 20)
+        case ITEM_PLATE_FOSSIL:
+            givemon(SPECIES_SLOTHER, 20)
+        case ITEM_FROND_FOSSIL:
+            givemon(SPECIES_ZAMIAD, 20)
+    }
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format("{PLAYER} received {STR_VAR_2}!"), MSGBOX_DEFAULT)
+    waitmessage
+    waitfanfare
+    if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
+        msgbox(format("{STR_VAR_2} was added\nto your party."), MSGBOX_DEFAULT)
+    }
+    elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+        msgbox(format("{STR_VAR_2} was transferred\nto the PC."), MSGBOX_DEFAULT)
+    }
+    else {
+        goto(Common_EventScript_NoMoreRoomForPokemon)
+    }
+    msgbox(format("Please take good care of that\n{STR_VAR_2}."))
+    release
+    end
+}
+
+script KapokJungle_BioLab_EventScript_Scientist {
+    lock
+    faceplayer
+    if (flag(FLAG_RECEIVED_HM07)) {
+        msgbox(format("Use WATERFALL to navigate the jungle more easily.\pYou might even uncover places you couldn't reach before!"), MSGBOX_DEFAULT)
+    }
+    else {
+        msgbox(format("Wow, you came all the way out here?\nYou must be an intrepid explorer!\pWe SCIENTISTS use the river as a shortcut to reach the lab.\pWhy don't you take this?\nIt will help you navigate the jungle more easily."), MSGBOX_DEFAULT)
+        giveitem(ITEM_HM07)
+        setflag(FLAG_RECEIVED_HM07)
+    }
+    release
+    end
+}
+
+script KapokJungle_BioLab_EventScript_Notebook {
+    msgbox(format("It's a survey of all the species in KAPOK JUNGLE.\lThe list is very long…"), MSGBOX_SIGN)
+    end
+}
+
+script KapokJungle_BioLab_EventScript_Bed {
+    lock
+    msgbox(format("It's a bed.\nWant to take a rest?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)) {
+        closemessage
+        fadescreen(FADE_TO_BLACK)
+        playfanfare(MUS_HEAL)
+		special(HealPlayerParty)
+        waitfanfare
+        fadescreen(FADE_FROM_BLACK)
+        msgbox(format("You and your POKéMON\nare feeling refreshed!"), MSGBOX_DEFAULT)
+    }
+    closemessage
+    release
+    end
+}
