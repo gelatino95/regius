@@ -669,8 +669,8 @@
 #define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_FULL_HEAL         0x272
 #define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_REVIVE            0x273
 #define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_SUPER_POTION      0x274
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
+#define FLAG_HIDDEN_ITEM_ICE_CAVE_MAX_REVIVE            0x275
+#define FLAG_HIDDEN_ITEM_ICE_CAVE_HYPER_POTION          0x276
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
@@ -1239,10 +1239,10 @@
 #define FLAG_ITEM_KAPOK_JUNGLE_RARE_CANDY                           0x4A3
 #define FLAG_ITEM_KAPOK_JUNGLE_MIRACLE_SEED                         0x4A4
 #define FLAG_ITEM_KAPOK_JUNGLE_ELIXIR                               0x4A5
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
+#define FLAG_ITEM_ICE_CAVE_ICE_HEAL                                 0x4A6
+#define FLAG_ITEM_ICE_CAVE_ULTRA_BALL                               0x4A7
+#define FLAG_ITEM_ICE_CAVE_ANCIENT_SLAB                             0x4A8
+#define FLAG_ITEM_ICE_CAVE_TM07                                     0x4A9
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag

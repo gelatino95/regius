@@ -18,10 +18,10 @@ static const u16 sKapokJungle_RockSmashItems[] =
 {
 	ITEM_GREEN_SHARD,	// 30%
 	ITEM_HEART_SCALE,	// 30%
-	ITEM_PEARL,			// 10%
+	ITEM_REVIVE,		// 10%
 	ITEM_STARDUST,		// 10%
 	ITEM_LEAF_STONE,	// 5%
-	ITEM_HARD_STONE,	// 5%
+	ITEM_PEARL,			// 5%
 	ITEM_OLD_AMBER,		// 4%
 	ITEM_OLD_AMBER,		// 4%
 	ITEM_NUGGET,		// 1%
@@ -56,6 +56,20 @@ static const u16 sNortheastSea_RockSmashItems[] =
 	ITEM_STAR_PIECE,	// 1%
 };
 
+static const u16 sIceCaveB2F_RockSmashItems[] =
+{
+	ITEM_BLUE_SHARD,	// 30%
+	ITEM_HEART_SCALE,	// 30%
+	ITEM_NEVER_MELT_ICE,// 10%
+	ITEM_ANCIENT_SLAB,	// 10%
+	ITEM_WATER_STONE,	// 5%
+	ITEM_PEARL,			// 5%
+	ITEM_CLAW_FOSSIL,	// 4%
+	ITEM_ROOT_FOSSIL,	// 4%
+	ITEM_NUGGET,		// 1%
+	ITEM_STAR_PIECE,	// 1%
+};
+
 const struct RockSmashItemHeader gRockSmashItemHeaders[] =
 {
 	{
@@ -77,6 +91,11 @@ const struct RockSmashItemHeader gRockSmashItemHeaders[] =
         .mapGroup = MAP_GROUP(NORTHEAST_SEA),
         .mapNum = MAP_NUM(NORTHEAST_SEA),
         .itemTable = sNortheastSea_RockSmashItems,
+    },
+	{
+        .mapGroup = MAP_GROUP(ICE_CAVE_B2F),
+        .mapNum = MAP_NUM(ICE_CAVE_B2F),
+        .itemTable = sIceCaveB2F_RockSmashItems,
     },
 	{
         .mapGroup = MAP_GROUP(UNDEFINED),

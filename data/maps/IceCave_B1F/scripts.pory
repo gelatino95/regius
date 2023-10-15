@@ -1,1 +1,33 @@
 mapscripts IceCave_B1F_MapScripts {}
+
+script IceCave_B1F_EventScript_ItemIceHeal {
+    finditem(ITEM_ICE_HEAL)
+    end
+}
+
+script IceCave_B1F_EventScript_ItemUltraBall {
+    finditem(ITEM_ULTRA_BALL)
+    end
+}
+
+script IceCave_B1F_EventScript_Braille_Water {
+    lock
+    braillemsgbox(IceCave_B1F_Braille_Water)
+    release
+    end
+}
+
+script IceCave_B1F_EventScript_Lyra {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_LYRA, 0, format("The cold strengthens our resolve!\nFight me!"), format("Brr…"))
+	msgbox(format("Not many TRAINERS come down here.\nIt's too chilly for the average person.\lYou must be really determined."), MSGBOX_NPC)
+    end
+}
+
+raw `
+IceCave_B1F_Braille_Water:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "AS LONG AS\n"
+	.braille "OUR WORKS\n"
+	.braille "STILL STAND\n"
+	.braille "WE SURVIVE.$"
+`

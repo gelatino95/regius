@@ -896,17 +896,17 @@ const struct Trainer gTrainers[] = {
         .party = {.TrainerMon = sParty_Glen},
     },
 
-    [TRAINER_RICKY_4] =
+    [TRAINER_LYRA] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
-        .trainerName = _("RICKY"),
+        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerName = _("LYRA"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_Ricky4),
-        .party = {.TrainerMon = sParty_Ricky4},
+        .partySize = ARRAY_COUNT(sParty_Lyra),
+        .party = {.TrainerMon = sParty_Lyra},
     },
 
     [TRAINER_RICKY_5] =

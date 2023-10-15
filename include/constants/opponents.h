@@ -70,7 +70,7 @@
 #define TRAINER_CHARLIE                      66 // new
 #define TRAINER_LESLIE                       67 // new
 #define TRAINER_GLEN                         68 // new
-#define TRAINER_RICKY_4                      69
+#define TRAINER_LYRA                         69 // new
 #define TRAINER_RICKY_5                      70
 #define TRAINER_RANDALL                      71
 #define TRAINER_PARKER                       72
