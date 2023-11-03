@@ -2,7 +2,7 @@
   "id": "MAP_NORTHWEST_SEA",
   "name": "NorthwestSea",
   "layout": "LAYOUT_NORTHWEST_SEA",
-  "music": "MUS_ROUTE118",
+  "music": "MUS_ROUTE119",
   "region_map_section": "MAPSEC_NORTHWEST_SEA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -27,10 +27,131 @@
       "map": "MAP_UNDERWATER_NORTHWEST_SEA",
       "offset": 0,
       "direction": "dive"
+    },
+    {
+      "map": "MAP_IGNEOUS_ISLAND",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 27,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthwestSea_EventScript_ItemTM46",
+      "flag": "FLAG_ITEM_NORTHWEST_SEA_TM46"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 23,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthwestSea_EventScript_ItemMaxElixir",
+      "flag": "FLAG_ITEM_NORTHWEST_SEA_MAX_ELIXIR"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 65,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "NorthwestSea_EventScript_Anya",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 62,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthwestSea_EventScript_George",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 27,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "NorthwestSea_EventScript_Morgan",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 32,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "NorthwestSea_EventScript_Amanda",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 53,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "NorthwestSea_EventScript_Akira",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 64,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthwestSea_EventScript_ItemDiveBall",
+      "flag": "FLAG_ITEM_NORTHWEST_SEA_DIVE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 34,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthwestSea_EventScript_Swimmer",
+      "flag": "0"
+    }
   ],
   "warp_events": [
     {
@@ -44,7 +165,7 @@
       "x": 42,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_NORTHWEST_SEA_HOUSE1",
+      "dest_map": "MAP_NORTHWEST_SEA_HOUSE2",
       "dest_warp_id": "0"
     }
   ],
@@ -79,6 +200,13 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 40,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NorthwestSea_EventScript_ShardHouseSign"
+    }
   ]
 }

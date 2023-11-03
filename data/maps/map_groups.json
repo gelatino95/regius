@@ -702,7 +702,8 @@
 
   ],
   "gMapGroup_IndoorNorthwestSea": [
-    "NorthwestSea_House1"
+    "NorthwestSea_House1",
+    "NorthwestSea_House2"
   ],
   "gMapGroup_IndoorSouthwestSea": [
     "SouthwestSea_House1"

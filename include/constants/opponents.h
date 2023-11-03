@@ -71,11 +71,11 @@
 #define TRAINER_LESLIE                       67 // new
 #define TRAINER_GLEN                         68 // new
 #define TRAINER_LYRA                         69 // new
-#define TRAINER_RICKY_5                      70
-#define TRAINER_RANDALL                      71
-#define TRAINER_PARKER                       72
-#define TRAINER_GEORGE                       73
-#define TRAINER_BERKE                        74
+#define TRAINER_AKIRA                        70 // new
+#define TRAINER_AMANDA                       71 // new
+#define TRAINER_MORGAN                       72 // new
+#define TRAINER_GEORGE                       73 // new
+#define TRAINER_ANYA                         74 // new
 #define TRAINER_BRAXTON                      75
 #define TRAINER_VINCENT                      76
 #define TRAINER_LEROY                        77

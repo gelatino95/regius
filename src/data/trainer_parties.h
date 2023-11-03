@@ -976,52 +976,88 @@ static const struct TrainerMon sParty_Lyra[] = {
     }
 };
 
-static const struct TrainerMon sParty_Ricky5[] = {
+static const struct TrainerMon sParty_Akira[] = {
     {
-    .iv = 40,
-    .lvl = 36,
-    .species = SPECIES_LINOONE,
-    .moves = {MOVE_SAND_ATTACK, MOVE_PIN_MISSILE, MOVE_TAIL_WHIP, MOVE_SURF}
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_LIMPACLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_MAGMACLE,
     }
 };
 
-static const struct TrainerMon sParty_Randall[] = {
+static const struct TrainerMon sParty_Amanda[] = {
     {
-    .iv = 255,
-    .lvl = 26,
-    .species = SPECIES_SWELLOW,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_QUICK_ATTACK, MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_NONE}
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_AIPOM,
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_CLAMPERL,
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_SUNFLORA,
     }
 };
 
-static const struct TrainerMon sParty_Parker[] = {
+static const struct TrainerMon sParty_Morgan[] = {
     {
-    .iv = 255,
-    .lvl = 26,
-    .species = SPECIES_SPINDA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_FOCUS_PUNCH, MOVE_NONE}
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_BIBLIT,
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_MISDREAVUS,
     }
 };
 
 static const struct TrainerMon sParty_George[] = {
     {
-    .iv = 255,
-    .lvl = 26,
-    .species = SPECIES_SLAKOTH,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SLACK_OFF, MOVE_COUNTER, MOVE_SHADOW_BALL, MOVE_NONE}
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_HELIMAW,
+    },
+    {
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_WAILMER,
+    },
+    {
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_HELIMAW,
+    },
+    {
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_WAILMER,
     }
 };
 
-static const struct TrainerMon sParty_Berke[] = {
+static const struct TrainerMon sParty_Anya[] = {
     {
-    .iv = 255,
-    .lvl = 26,
-    .species = SPECIES_VIGOROTH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_ENERGY, MOVE_SLASH, MOVE_NONE, MOVE_NONE}
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_CHINCHOU,
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_SPHEAL,
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_PELURCHIN,
     }
 };
 

@@ -2,7 +2,7 @@
   "id": "MAP_CENTRAL_SEA",
   "name": "CentralSea",
   "layout": "LAYOUT_CENTRAL_SEA",
-  "music": "MUS_ROUTE119",
+  "music": "MUS_ROUTE120",
   "region_map_section": "MAPSEC_CENTRAL_SEA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

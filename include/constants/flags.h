@@ -1243,9 +1243,9 @@
 #define FLAG_ITEM_ICE_CAVE_ULTRA_BALL                               0x4A7
 #define FLAG_ITEM_ICE_CAVE_ANCIENT_SLAB                             0x4A8
 #define FLAG_ITEM_ICE_CAVE_TM07                                     0x4A9
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
+#define FLAG_ITEM_NORTHWEST_SEA_DIVE_BALL                           0x4AA
+#define FLAG_ITEM_NORTHWEST_SEA_TM46                                0x4AB
+#define FLAG_ITEM_NORTHWEST_SEA_MAX_ELIXIR                          0x4AC
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag

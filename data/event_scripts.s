@@ -1182,3 +1182,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Underwater_NorthwestSea/scripts.inc"
 
 	.include "data/maps/SlumberIsland_ThroneRoom/scripts.inc"
+
+	.include "data/maps/NorthwestSea_House2/scripts.inc"

@@ -1,0 +1,82 @@
+mapscripts NorthwestSea_House2_MapScripts {}
+
+script NorthwestSea_House2_EventScript_ShardSign {
+    msgbox(format("SHARD TRADING GUIDE\p5 RED SHARDS {RIGHT_ARROW} TM35 FLAMETHROWER\n5 YELLOW SHARDS {RIGHT_ARROW} TM24 THUNDERBOLT\p5 BLUE SHARDS {RIGHT_ARROW} TM13 ICE BEAM\n5 GREEN SHARDS {RIGHT_ARROW} TM19 GIGA DRAIN"), MSGBOX_SIGN)
+    end
+}
+
+script NorthwestSea_House2_EventScript_ShardTrader {
+    lock
+    faceplayer
+    msgbox(format("Do you have any colored SHARDS?\nI collect them.\pIf you have five of any one color, I'll trade you a good TM for them.\pWould you like to trade in some SHARDS?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        goto(NorthwestSea_House2_EventScript_ShardTrader_ComeAgain)
+    }
+    checkitem(ITEM_RED_SHARD, 5)
+    if (var(VAR_RESULT)) {
+        goto(NorthwestSea_House2_EventScript_ShardTrader_ChooseShard)
+    }
+    checkitem(ITEM_YELLOW_SHARD, 5)
+    if (var(VAR_RESULT)) {
+        goto(NorthwestSea_House2_EventScript_ShardTrader_ChooseShard)
+    }
+    checkitem(ITEM_BLUE_SHARD, 5)
+    if (var(VAR_RESULT)) {
+        goto(NorthwestSea_House2_EventScript_ShardTrader_ChooseShard)
+    }
+    checkitem(ITEM_GREEN_SHARD, 5)
+    if (var(VAR_RESULT)) {
+        goto(NorthwestSea_House2_EventScript_ShardTrader_ChooseShard)
+    }
+    msgbox(format("Hmm… I don't think you have enough SHARDS. I'll only trade five matching ones at a time."), MSGBOX_DEFAULT)
+    goto(NorthwestSea_House2_EventScript_ShardTrader_ComeAgain)
+}
+
+script NorthwestSea_House2_EventScript_ShardTrader_ChooseShard {
+    chooseitem(TREASURES_POCKET)
+    bufferitemname(STR_VAR_1, VAR_ITEM_ID)
+    switch(var(VAR_ITEM_ID)) {
+        case ITEM_RED_SHARD:
+            bufferitemname(STR_VAR_2, ITEM_TM35)
+        case ITEM_YELLOW_SHARD:
+            bufferitemname(STR_VAR_2, ITEM_TM24)
+        case ITEM_BLUE_SHARD:
+            bufferitemname(STR_VAR_2, ITEM_TM13)
+        case ITEM_GREEN_SHARD:
+            bufferitemname(STR_VAR_2, ITEM_TM19)
+        case ITEM_NONE:
+            goto(NorthwestSea_House2_EventScript_ShardTrader_ComeAgain)
+        default:
+            msgbox(format("That's not what I'm looking for.\nPlease show me a SHARD."), MSGBOX_DEFAULT)
+            goto(NorthwestSea_House2_EventScript_ShardTrader_ChooseShard)
+    }
+    checkitem(VAR_ITEM_ID, 5)
+    if (!var(VAR_RESULT)) {
+        msgbox(format("Hmm… This isn't enough SHARDS. I'll only trade five matching ones at a time."), MSGBOX_DEFAULT)
+        goto(NorthwestSea_House2_EventScript_ShardTrader_ChooseShard)
+    }
+    msgbox(format("Would you like to trade five\n{STR_VAR_1}S for a {STR_VAR_2}?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        goto(NorthwestSea_House2_EventScript_ShardTrader_ChooseShard)
+    }
+    removeitem(VAR_ITEM_ID, 5)
+    switch(var(VAR_ITEM_ID)) {
+        case ITEM_RED_SHARD:
+            giveitem(ITEM_TM35)
+        case ITEM_YELLOW_SHARD:
+            giveitem(ITEM_TM24)
+        case ITEM_BLUE_SHARD:
+            giveitem(ITEM_TM13)
+        case ITEM_GREEN_SHARD:
+            giveitem(ITEM_TM19)
+    }
+    msgbox(format("Thanks very much!\pIf you find more SHARDS, you know where to find me."), MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script NorthwestSea_House2_EventScript_ShardTrader_ComeAgain {
+    msgbox(format("SHARDS can be found by smashing rocks. If you find enough, please consider trading with me."), MSGBOX_DEFAULT)
+    release
+    end
+}
