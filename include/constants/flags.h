@@ -74,9 +74,9 @@
 #define FLAG_RECEIVED_FROND_FOSSIL                  0x3E
 #define FLAG_ACCEPTED_PLATE_FOSSIL_QUEST            0x3F
 #define FLAG_ACCEPTED_FROND_FOSSIL_QUEST            0x40
-#define FLAG_RECEIVED_LUCKY_EGG                     0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
+#define FLAG_RECEIVED_LUCKY_EGG                     0x41
+#define FLAG_UNLOCKED_CAPTAINS_QUARTERS             0x42
+#define FLAG_UNLOCKED_SECRET_CABIN                  0x43
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
@@ -671,8 +671,8 @@
 #define FLAG_HIDDEN_ITEM_KAPOK_JUNGLE_SUPER_POTION      0x274
 #define FLAG_HIDDEN_ITEM_ICE_CAVE_MAX_REVIVE            0x275
 #define FLAG_HIDDEN_ITEM_ICE_CAVE_HYPER_POTION          0x276
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
+#define FLAG_HIDDEN_ITEM_GHOST_SHIP_NUGGET              0x277
+#define FLAG_HIDDEN_ITEM_GHOST_SHIP_REVIVE              0x278
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
@@ -1246,11 +1246,11 @@
 #define FLAG_ITEM_NORTHWEST_SEA_DIVE_BALL                           0x4AA
 #define FLAG_ITEM_NORTHWEST_SEA_TM46                                0x4AB
 #define FLAG_ITEM_NORTHWEST_SEA_MAX_ELIXIR                          0x4AC
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
+#define FLAG_ITEM_GHOST_SHIP_SPELL_TAG                              0x4AD
+#define FLAG_ITEM_GHOST_SHIP_HYPER_POTION                           0x4AE
+#define FLAG_ITEM_GHOST_SHIP_DIVE_BALL                              0x4AF
+#define FLAG_ITEM_GHOST_SHIP_TM30                                   0x4B0
+#define FLAG_ITEM_GHOST_SHIP_ELEGANT_KEY                            0x4B1
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
 #define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
 #define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag

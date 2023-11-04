@@ -1,1 +1,11 @@
 mapscripts GhostShip_1F_MapScripts {}
+
+script GhostShip_1F_EventScript_ItemSpellTag {
+    finditem(ITEM_SPELL_TAG)
+    end
+}
+
+script GhostShip_1F_EventScript_ItemHyperPotion {
+    finditem(ITEM_HYPER_POTION)
+    end
+}

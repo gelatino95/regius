@@ -445,6 +445,8 @@
 #define METATILE_Petalburg_Door_Oldale      0x287
 
 // gTileset_Pirate
+#define METATILE_Pirate_Ship_Door_Locked            0x2DB
+#define METATILE_Pirate_Ship_Door_Unlocked          0x220
 #define METATILE_Pirate_Ship_SouthExitLeft          0x223
 #define METATILE_Pirate_Ship_SouthExitLeftNoArrow   0x2DE
 #define METATILE_Pirate_Ship_SouthExitRight         0x224

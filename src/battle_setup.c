@@ -1974,5 +1974,5 @@ u16 CountBattledRematchTeams(u16 trainerId)
 
 void SetDusclopsBattle(void)
 {
-    CreateFemaleMon(&gEnemyParty[0], SPECIES_DUSCLOPS, 50);
+    CreateFemaleMon(&gEnemyParty[0], SPECIES_DUSCLOPS, 30);
 }

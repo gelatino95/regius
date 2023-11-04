@@ -1,5 +1,6 @@
 GhostShip_B1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_LOAD, GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
 
 GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
@@ -16,9 +17,6 @@ GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 	setobjectxyperm 1, 0, 0
 GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-	compare VAR_GHOST_SHIP_STATE, 1
-	goto_if_eq GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_14
-GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_13:
 	setflag FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS
 	removeobject 3
 	return
@@ -41,10 +39,125 @@ GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_10:
 	goto_if_eq GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 	goto GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
 
-GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_14:
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD:
+	goto_if_unset FLAG_UNLOCKED_CAPTAINS_QUARTERS, GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_2
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	goto_if_unset FLAG_UNLOCKED_SECRET_CABIN, GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_5
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_4:
+	compare VAR_GHOST_SHIP_STATE, 1
+	goto_if_eq GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_7
+	return
+
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_2:
+	setmetatile 32, 29, METATILE_Pirate_Ship_Door_Locked, TRUE
+	goto GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_1
+
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_5:
+	setmetatile 38, 30, METATILE_Pirate_Ship_Door_Locked, TRUE
+	goto GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_4
+
+GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_LOAD_7:
 	setmetatile 17, 9, METATILE_Pirate_Ship_SouthExitLeftNoArrow, FALSE
 	setmetatile 18, 9, METATILE_Pirate_Ship_SouthExitRightNoArrow, FALSE
-	goto GhostShip_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_13
+	return
+
+
+GhostShip_B1F_EventScript_CaptainsQuartersDoor::
+	lock
+	goto_if_set FLAG_UNLOCKED_CAPTAINS_QUARTERS, GhostShip_B1F_EventScript_CaptainsQuartersDoor_2
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_1, MSGBOX_DEFAULT
+	checkitem ITEM_ELEGANT_KEY
+	compare VAR_RESULT, 0
+	goto_if_ne GhostShip_B1F_EventScript_CaptainsQuartersDoor_5
+GhostShip_B1F_EventScript_CaptainsQuartersDoor_4:
+	release
+	end
+
+GhostShip_B1F_EventScript_CaptainsQuartersDoor_2:
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_0, MSGBOX_DEFAULT
+	release
+	end
+
+GhostShip_B1F_EventScript_CaptainsQuartersDoor_5:
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq GhostShip_B1F_EventScript_CaptainsQuartersDoor_8
+	delay 10
+	playse SE_UNLOCK
+	waitse
+	setmetatile 32, 29, METATILE_Pirate_Ship_Door_Unlocked, TRUE
+	special DrawWholeMapView
+	setflag FLAG_UNLOCKED_CAPTAINS_QUARTERS
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_0, MSGBOX_DEFAULT
+	goto GhostShip_B1F_EventScript_CaptainsQuartersDoor_4
+
+GhostShip_B1F_EventScript_CaptainsQuartersDoor_8:
+	release
+	end
+
+
+GhostShip_B1F_EventScript_SecretCabinDoor::
+	lock
+	goto_if_set FLAG_UNLOCKED_SECRET_CABIN, GhostShip_B1F_EventScript_SecretCabinDoor_2
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_1, MSGBOX_DEFAULT
+	checkitem ITEM_OLD_KEY
+	compare VAR_RESULT, 0
+	goto_if_ne GhostShip_B1F_EventScript_SecretCabinDoor_5
+GhostShip_B1F_EventScript_SecretCabinDoor_4:
+	release
+	end
+
+GhostShip_B1F_EventScript_SecretCabinDoor_2:
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_0, MSGBOX_DEFAULT
+	release
+	end
+
+GhostShip_B1F_EventScript_SecretCabinDoor_5:
+	msgbox GhostShip_B1F_EventScript_SecretCabinDoor_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq GhostShip_B1F_EventScript_SecretCabinDoor_8
+	delay 10
+	playse SE_UNLOCK
+	waitse
+	setmetatile 38, 30, METATILE_Pirate_Ship_Door_Unlocked, TRUE
+	special DrawWholeMapView
+	setflag FLAG_UNLOCKED_SECRET_CABIN
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_0, MSGBOX_DEFAULT
+	goto GhostShip_B1F_EventScript_SecretCabinDoor_4
+
+GhostShip_B1F_EventScript_SecretCabinDoor_8:
+	release
+	end
+
+
+GhostShip_B1F_EventScript_ItemDiveBall::
+	finditem ITEM_DIVE_BALL
+	end
+
+
+GhostShip_B1F_EventScript_ItemTM30::
+	finditem ITEM_TM30
+	end
+
+
+GhostShip_B1F_EventScript_ItemElegantKey::
+	finditem ITEM_ELEGANT_KEY
+	end
+
+
+GhostShip_B1F_EventScript_GalleySign::
+	msgbox GhostShip_B1F_EventScript_GalleySign_Text_0, MSGBOX_SIGN
+	end
+
+
+GhostShip_B1F_EventScript_StoreRoomSign::
+	msgbox GhostShip_B1F_EventScript_StoreRoomSign_Text_0, MSGBOX_SIGN
+	end
+
+
+GhostShip_B1F_EventScript_CaptainsQuartersSign::
+	msgbox GhostShip_B1F_EventScript_CaptainsQuartersSign_Text_0, MSGBOX_SIGN
+	end
 
 
 GhostShip_B1F_HideDusclopsTrigger::
@@ -137,6 +250,27 @@ DusclopsAppears:
 	delay_16
 	set_visible
 	step_end
+
+GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_0:
+	.string "The door is unlocked.$"
+
+GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_1:
+	.string "The door is locked.$"
+
+GhostShip_B1F_EventScript_CaptainsQuartersDoor_Text_2:
+	.string "Use the ELEGANT KEY?$"
+
+GhostShip_B1F_EventScript_SecretCabinDoor_Text_0:
+	.string "Use the OLD KEY?$"
+
+GhostShip_B1F_EventScript_GalleySign_Text_0:
+	.string "GALLEY$"
+
+GhostShip_B1F_EventScript_StoreRoomSign_Text_0:
+	.string "STORE ROOM$"
+
+GhostShip_B1F_EventScript_CaptainsQuartersSign_Text_0:
+	.string "CAPTAIN'S QUARTERS$"
 
 GhostShip_EventScript_DusclopsEncounter_Text_0:
 	.string "The door is locked...$"

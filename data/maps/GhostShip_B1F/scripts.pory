@@ -12,15 +12,108 @@ mapscripts GhostShip_B1F_MapScripts {
 		else {
 			setobjectxyperm(1, 0, 0)
 		}
+		setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
+		removeobject(3)
+	}
+	MAP_SCRIPT_ON_LOAD {
+		//lock doors if not unlocked yet:
+		if (!flag(FLAG_UNLOCKED_CAPTAINS_QUARTERS)) {
+			setmetatile(32, 29, METATILE_Pirate_Ship_Door_Locked, TRUE)
+		}
+		if (!flag(FLAG_UNLOCKED_SECRET_CABIN)) {
+			setmetatile(38, 30, METATILE_Pirate_Ship_Door_Locked, TRUE)
+		}
 		//lock door if dusclops battle is still active:
 		if (var(VAR_GHOST_SHIP_STATE) == 1)
 		{
 			setmetatile(17, 9, METATILE_Pirate_Ship_SouthExitLeftNoArrow, FALSE)
 			setmetatile(18, 9, METATILE_Pirate_Ship_SouthExitRightNoArrow, FALSE)
 		}
-		setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
-		removeobject(3)
 	}
+}
+
+script GhostShip_B1F_EventScript_CaptainsQuartersDoor {
+	lock
+	if (flag(FLAG_UNLOCKED_CAPTAINS_QUARTERS)) {
+		msgbox(format("The door is unlocked."), MSGBOX_DEFAULT)
+		release
+		end
+	}
+	msgbox(format("The door is locked."), MSGBOX_DEFAULT)
+	checkitem(ITEM_ELEGANT_KEY)
+	if (var(VAR_RESULT)) {
+		msgbox(format("Use the ELEGANT KEY?"), MSGBOX_YESNO)
+		if (!var(VAR_RESULT)) {
+			release
+			end
+		}
+		delay(10)
+		playse(SE_UNLOCK)
+		waitse
+		setmetatile(32, 29, METATILE_Pirate_Ship_Door_Unlocked, TRUE)
+		special(DrawWholeMapView)
+		setflag(FLAG_UNLOCKED_CAPTAINS_QUARTERS)
+		msgbox(format("The door is unlocked."), MSGBOX_DEFAULT)
+	}
+	release
+	end
+}
+
+script GhostShip_B1F_EventScript_SecretCabinDoor {
+	lock
+	if (flag(FLAG_UNLOCKED_SECRET_CABIN)) {
+		msgbox(format("The door is unlocked."), MSGBOX_DEFAULT)
+		release
+		end
+	}
+	msgbox(format("The door is locked."), MSGBOX_DEFAULT)
+	checkitem(ITEM_OLD_KEY)
+	if (var(VAR_RESULT)) {
+		msgbox(format("Use the OLD KEY?"), MSGBOX_YESNO)
+		if (!var(VAR_RESULT)) {
+			release
+			end
+		}
+		delay(10)
+		playse(SE_UNLOCK)
+		waitse
+		setmetatile(38, 30, METATILE_Pirate_Ship_Door_Unlocked, TRUE)
+		special(DrawWholeMapView)
+		setflag(FLAG_UNLOCKED_SECRET_CABIN)
+		msgbox(format("The door is unlocked."), MSGBOX_DEFAULT)
+	}
+	release
+	end
+}
+
+script GhostShip_B1F_EventScript_ItemDiveBall {
+	finditem(ITEM_DIVE_BALL)
+	end
+}
+
+script GhostShip_B1F_EventScript_ItemTM30 {
+	finditem(ITEM_TM30)
+	end
+}
+
+script GhostShip_B1F_EventScript_ItemElegantKey {
+	finditem(ITEM_ELEGANT_KEY)
+	end
+}
+
+script GhostShip_B1F_EventScript_GalleySign {
+	msgbox(format("GALLEY"), MSGBOX_SIGN)
+	end
+}
+
+script GhostShip_B1F_EventScript_StoreRoomSign {
+	msgbox(format("STORE ROOM"), MSGBOX_SIGN)
+	end
+}
+
+script GhostShip_B1F_EventScript_CaptainsQuartersSign {
+	msgbox(format("CAPTAIN'S QUARTERS"), MSGBOX_SIGN)
+	end
 }
 
 script GhostShip_B1F_HideDusclopsTrigger {

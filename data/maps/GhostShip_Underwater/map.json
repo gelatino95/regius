@@ -29,6 +29,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 18,
+      "elevation": 0,
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_GHOST_SHIP_NUGGET"
+    }
   ]
 }
