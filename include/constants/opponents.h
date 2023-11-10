@@ -76,11 +76,11 @@
 #define TRAINER_MORGAN                       72 // new
 #define TRAINER_GEORGE                       73 // new
 #define TRAINER_ANYA                         74 // new
-#define TRAINER_BRAXTON                      75
-#define TRAINER_VINCENT                      76
-#define TRAINER_LEROY                        77
-#define TRAINER_WILTON_1                     78
-#define TRAINER_EDGAR                        79
+#define TRAINER_ALICIA                       75 // new
+#define TRAINER_CALEB                        76 // new
+#define TRAINER_CANDACE                      77 // new
+#define TRAINER_LANDON                       78 // new
+#define TRAINER_RICHMOND                     79 // new
 #define TRAINER_ALBERT                       80
 #define TRAINER_SAMUEL                       81
 #define TRAINER_VITO                         82

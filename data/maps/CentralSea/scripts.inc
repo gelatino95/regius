@@ -28,6 +28,11 @@ CentralSea_EventScript_RouteSignWest::
 	return
 
 
+CentralSea_EventScript_Swimmer::
+	msgbox CentralSea_EventScript_Swimmer_Text_0, MSGBOX_NPC
+	return
+
+
 CentralSea_EventScript_Francesca::
 	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_FRANCESCA, 0, CentralSea_EventScript_Francesca_Text_0, CentralSea_EventScript_Francesca_Text_1
 	msgbox CentralSea_EventScript_Francesca_Text_2, MSGBOX_NPC
@@ -76,6 +81,36 @@ CentralSea_EventScript_Betsy::
 	return
 
 
+CentralSea_EventScript_Alicia::
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_ALICIA, 0, CentralSea_EventScript_Alicia_Text_0, CentralSea_EventScript_Alicia_Text_1
+	msgbox CentralSea_EventScript_Alicia_Text_2, MSGBOX_NPC
+	return
+
+
+CentralSea_EventScript_Caleb::
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_CALEB, 0, CentralSea_EventScript_Caleb_Text_0, CentralSea_EventScript_Caleb_Text_1
+	msgbox CentralSea_EventScript_Caleb_Text_2, MSGBOX_NPC
+	return
+
+
+CentralSea_EventScript_Candace::
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_CANDACE, 0, CentralSea_EventScript_Candace_Text_0, CentralSea_EventScript_Candace_Text_1
+	msgbox CentralSea_EventScript_Candace_Text_2, MSGBOX_NPC
+	return
+
+
+CentralSea_EventScript_Landon::
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_LANDON, 0, CentralSea_EventScript_Landon_Text_0, CentralSea_EventScript_Landon_Text_1
+	msgbox CentralSea_EventScript_Landon_Text_2, MSGBOX_NPC
+	return
+
+
+CentralSea_EventScript_Richmond::
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_RICHMOND, 0, CentralSea_EventScript_Kegan_Text_0, CentralSea_EventScript_Richmond_Text_0
+	msgbox CentralSea_EventScript_Richmond_Text_1, MSGBOX_NPC
+	return
+
+
 CentralSea_EventScript_ItemNetBall::
 	finditem ITEM_NET_BALL
 	end
@@ -119,6 +154,11 @@ CentralSea_EventScript_RouteSignEast_Text_0:
 CentralSea_EventScript_RouteSignWest_Text_0:
 	.string "CENTRAL SEA\n"
 	.string "{LEFT_ARROW} IGNEOUS ISLAND$"
+
+CentralSea_EventScript_Swimmer_Text_0:
+	.string "Every time I try to swim up north, the\n"
+	.string "current spits me out right here.\l"
+	.string "There's no going back this way.$"
 
 CentralSea_EventScript_Francesca_Text_0:
 	.string "Please look at all my pretty POKéMON!$"
@@ -201,3 +241,55 @@ CentralSea_EventScript_Betsy_Text_1:
 CentralSea_EventScript_Betsy_Text_2:
 	.string "This will be a perfect spot for my\n"
 	.string "castle!$"
+
+CentralSea_EventScript_Alicia_Text_0:
+	.string "Out of my way!\n"
+	.string "I'm on a mission!$"
+
+CentralSea_EventScript_Alicia_Text_1:
+	.string "Yeowch!$"
+
+CentralSea_EventScript_Alicia_Text_2:
+	.string "My mission?\n"
+	.string "I want to swim around the entire\l"
+	.string "perimeter of the REGIUS ARCHIPELAGO.$"
+
+CentralSea_EventScript_Caleb_Text_0:
+	.string "Can you take me to the volcano?$"
+
+CentralSea_EventScript_Caleb_Text_1:
+	.string "Aww…$"
+
+CentralSea_EventScript_Caleb_Text_2:
+	.string "Mom says I'm not allowed to play in\n"
+	.string "volcanoes any more.$"
+
+CentralSea_EventScript_Candace_Text_0:
+	.string "Excuse me! Please don't distract me.$"
+
+CentralSea_EventScript_Candace_Text_1:
+	.string "Tch…$"
+
+CentralSea_EventScript_Candace_Text_2:
+	.string "I have to watch my little brother so he\n"
+	.string "doesn't do something stupid, like walk\l"
+	.string "into a volcano.$"
+
+CentralSea_EventScript_Landon_Text_0:
+	.string "Look at my super rare POKéMON!$"
+
+CentralSea_EventScript_Landon_Text_1:
+	.string "No! My precious!$"
+
+CentralSea_EventScript_Landon_Text_2:
+	.string "Some POKéMON are hard to find in the\n"
+	.string "wild. Owning a rare POKéMON is a sign of\l"
+	.string "greatness.$"
+
+CentralSea_EventScript_Richmond_Text_0:
+	.string "Gah!$"
+
+CentralSea_EventScript_Richmond_Text_1:
+	.string "I wonder what's down there in the deep\n"
+	.string "water? I could ride down on my POKéMON\l"
+	.string "and see.$"

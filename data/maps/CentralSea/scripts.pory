@@ -24,6 +24,10 @@ script CentralSea_EventScript_RouteSignWest {
     msgbox(format("CENTRAL SEA\n{LEFT_ARROW} IGNEOUS ISLAND"), MSGBOX_SIGN)
 }
 
+script CentralSea_EventScript_Swimmer {
+    msgbox(format("Every time I try to swim up north, the current spits me out right here. It looks like a one-way exit."), MSGBOX_NPC)
+}
+
 script CentralSea_EventScript_Francesca {
     trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_FRANCESCA, 0, format("Please look at all my pretty POKéMON!"), format("They were pretty, right?"))
 	msgbox(format("I only like pretty pink POKéMON."), MSGBOX_NPC)
@@ -62,6 +66,31 @@ script CentralSea_EventScript_Harold {
 script CentralSea_EventScript_Betsy {
     trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_BETSY, 0, format("I claim this island as my own! Bow to your queen!"), format("Usurper!"))
 	msgbox(format("This will be a perfect spot for my castle!"), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Alicia {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ALICIA, 0, format("Out of my way!\nI'm on a mission!"), format("Yeowch!"))
+	msgbox(format("My mission?\nI want to swim around the entire perimeter of the REGIUS ARCHIPELAGO."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Caleb {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_CALEB, 0, format("Can you take me to the volcano?"), format("Aww…"))
+	msgbox(format("Mom says I'm not allowed to play in volcanoes any more."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Candace {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_CANDACE, 0, format("Excuse me! Please don't distract me."), format("Tch…"))
+	msgbox(format("I have to watch my little brother so he doesn't do something stupid, like walk into a volcano."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Landon {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_LANDON, 0, format("Look at my super rare POKéMON!"), format("No! My precious!"))
+	msgbox(format("Some POKéMON are hard to find in the wild. Owning a rare POKéMON is a sign of greatness."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Richmond {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_RICHMOND, 0, format("Watch out for deep water!"), format("Gah!"))
+	msgbox(format("I wonder what's down there in the deep water? I could ride down on my POKéMON and see."), MSGBOX_NPC)
 }
 
 script CentralSea_EventScript_ItemNetBall {
