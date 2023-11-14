@@ -30,7 +30,32 @@
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 16,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IgneousIsland_EventScript_Girl",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IgneousIsland_EventScript_ItemUltraBall",
+      "flag": "FLAG_ITEM_IGNEOUS_ISLAND_ULTRA_BALL"
+    }
   ],
   "warp_events": [
     {
@@ -59,6 +84,45 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "IgneousIsland_EventScript_IslandSign"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "IgneousIsland_EventScript_RestStopSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 33,
+      "y": 20,
+      "elevation": 0,
+      "item": "ITEM_MAX_ELIXIR",
+      "flag": "FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_MAX_ELIXIR"
+    },
+    {
+      "type": "hidden_item",
+      "x": 25,
+      "y": 29,
+      "elevation": 0,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_HEART_SCALE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 34,
+      "y": 26,
+      "elevation": 0,
+      "item": "ITEM_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_PEARL"
+    }
   ]
 }

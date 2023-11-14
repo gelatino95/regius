@@ -3,3 +3,23 @@ mapscripts IgneousIsland_MapScripts {
 		setflag(FLAG_VISITED_IGNEOUS_ISLAND)
 	}
 }
+
+script IgneousIsland_EventScript_IslandSign {
+	msgbox(format("IGNEOUS ISLAND\nA volcanic trial by fire."), MSGBOX_SIGN)
+	end
+}
+
+script IgneousIsland_EventScript_RestStopSign {
+	msgbox(format("REST STOP"), MSGBOX_SIGN)
+	end
+}
+
+script IgneousIsland_EventScript_Girl {
+	msgbox(format("Are you wondering why it's so quiet around here?\pIGNEOUS ISLAND isn't exactly a popular destination. We're at the foot of an active volcano, home to lots of strong POKéMON.\pOnly tough trainers hang around here, and you'll find them all further up the mountain."), MSGBOX_NPC)
+	end
+}
+
+script IgneousIsland_EventScript_ItemUltraBall {
+	finditem(ITEM_ULTRA_BALL)
+	end
+}

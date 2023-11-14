@@ -13300,6 +13300,95 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_IGNEOUS_ISLAND",
+          "base_label": "gIgneousIsland0",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 8,
+                "max_level": 16,
+                "species": "SPECIES_LITTURCH"
+              },
+              {
+                "min_level": 8,
+                "max_level": 16,
+                "species": "SPECIES_KELPENT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 16,
+                "species": "SPECIES_MANTINE"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_MANTINE"
+              },
+              {
+                "min_level": 19,
+                "max_level": 20,
+                "species": "SPECIES_MANTINE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 10,
+                "max_level": 18,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 10,
+                "max_level": 18,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 18,
+                "species": "SPECIES_RADULIN"
+              },
+              {
+                "min_level": 10,
+                "max_level": 18,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 19,
+                "max_level": 21,
+                "species": "SPECIES_CLAMPERL"
+              }
+            ]
+          }
         }
       ]
     },

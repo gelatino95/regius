@@ -1,1 +1,20 @@
-mapscripts IgneousIsland_HealingSpot_MapScripts {}
+mapscripts IgneousIsland_HealingSpot_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_IGNEOUS_ISLAND)
+	}
+}
+
+script IgneousIsland_HealingSpot_EventScript_OldMan {
+    lock
+    faceplayer
+    msgbox(format("Yar… ye have the look of an adventurer.\pI suppose ye want to hear the tale of the GHOST SHIP, then?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        msgbox(format("Ha! Perhaps that be for the best…"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    msgbox(format("North of here, in the treacherous seas that no ship can sail, there be a hidden cove, shrouded by fog.\pThere ye'll find the GHOST SHIP, a great vessel wrecked some years ago in a terrible battle.\lEven I know not the circumstances behind its scuttling.\pIt's said that the spirits of the lost crew still haunt the ship's gutted frame, returned to the world as ghost POKéMON."), MSGBOX_DEFAULT)
+    msgbox(format("Knowing all this, ye'd still be fool enough to seek out the haunted ship?\pYar… then heed my words.\nThere be only one path through the winding currents that will take ye there.\pThere be a house on a small island in the NORTHWEST SEA, home to one who trades in treasure.\pTo the west of this house, enter the current from the northernmost possible location, and ye'll be carried to the foggy cove where the GHOST SHIP lies."))
+    release
+    end
+}

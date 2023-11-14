@@ -1,4 +1,8 @@
-mapscripts GatewayIsland_PlayersHouse_MapScripts {}
+mapscripts GatewayIsland_PlayersHouse_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_GATEWAY_ISLAND)
+	}
+}
 
 script GatewayIsland_PlayersHouse_ItemBall {
 	lock

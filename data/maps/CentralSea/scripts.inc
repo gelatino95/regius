@@ -157,8 +157,8 @@ CentralSea_EventScript_RouteSignWest_Text_0:
 
 CentralSea_EventScript_Swimmer_Text_0:
 	.string "Every time I try to swim up north, the\n"
-	.string "current spits me out right here.\l"
-	.string "There's no going back this way.$"
+	.string "current spits me out right here. It\l"
+	.string "looks like a one-way exit.$"
 
 CentralSea_EventScript_Francesca_Text_0:
 	.string "Please look at all my pretty POKéMON!$"

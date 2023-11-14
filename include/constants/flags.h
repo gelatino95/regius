@@ -673,9 +673,9 @@
 #define FLAG_HIDDEN_ITEM_ICE_CAVE_HYPER_POTION          0x276
 #define FLAG_HIDDEN_ITEM_GHOST_SHIP_NUGGET              0x277
 #define FLAG_HIDDEN_ITEM_GHOST_SHIP_REVIVE              0x278
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
+#define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_HEART_SCALE     0x279
+#define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_PEARL           0x27A
+#define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_MAX_ELIXIR      0x27B
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
@@ -1251,7 +1251,7 @@
 #define FLAG_ITEM_GHOST_SHIP_DIVE_BALL                              0x4AF
 #define FLAG_ITEM_GHOST_SHIP_TM30                                   0x4B0
 #define FLAG_ITEM_GHOST_SHIP_ELEGANT_KEY                            0x4B1
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
+#define FLAG_ITEM_IGNEOUS_ISLAND_ULTRA_BALL                         0x4B2
 #define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
 #define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
 #define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag

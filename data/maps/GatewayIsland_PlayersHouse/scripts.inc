@@ -1,5 +1,10 @@
 GatewayIsland_PlayersHouse_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, GatewayIsland_PlayersHouse_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+GatewayIsland_PlayersHouse_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setrespawn HEAL_LOCATION_GATEWAY_ISLAND
+	return
 
 
 GatewayIsland_PlayersHouse_ItemBall::
