@@ -1,1 +1,60 @@
 mapscripts IgneousClimb_MapScripts {}
+
+script IgneousClimb_EventScript_ExplosionTutor {
+    lock
+    faceplayer
+	msgbox(format("Ah, clear blue skies as far as the eye can see.\pOf course, if the volcano erupts, the sky will be blotted out with ash.\pOh well, if we're going down in flames, we may as well get a head start.\pWant me to teach your POKéMON the move EXPLOSION?\lI'll do it for one HEART SCALE."), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) { //player says no
+        goto(IgneousClimb_EventScript_ExplosionDeclined)
+    }
+    checkitem(ITEM_HEART_SCALE)
+    if (!var(VAR_RESULT)) { //player doesn't have heart scale
+        msgbox(format("Uh… you don't have a HEART SCALE.\nMaybe come back later, yeah?"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    msgbox(format("Which POKéMON should learn EXPLOSION?"), MSGBOX_DEFAULT)
+    setvar(VAR_0x8005, TUTOR_MOVE_EXPLOSION)
+    call(MoveTutor_EventScript_OpenPartyMenu)
+    if (var(VAR_RESULT) == 0) { //player cancels
+        goto(IgneousClimb_EventScript_ExplosionDeclined)
+    }
+    msgbox(format("{PLAYER} handed over one HEART SCALE."), MSGBOX_DEFAULT)
+    removeitem(ITEM_HEART_SCALE)
+    release
+    end
+}
+
+script IgneousClimb_EventScript_ExplosionDeclined {
+	msgbox(format("You're only putting off the inevitable, you know."), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script IgneousClimb_EventScript_Albert {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ALBERT, 0, format("It's a long way up the mountain!"), format("Haha! I lost!"))
+	msgbox(format("Are you sure you're prepared for this rugged terrain?"), MSGBOX_NPC)
+    end
+}
+
+script IgneousClimb_EventScript_Vito {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_VITO, 0, format("Rock out with me!"), format("Metal…"))
+	msgbox(format("I'm looking for a sick backdrop for my next music video."), MSGBOX_NPC)
+    end
+}
+
+script IgneousClimb_EventScript_Janet {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_JANET, 0, format("You aren't thinking of going in the volcano, are you?"), format("Impossible…!"))
+	msgbox(format("I'm not sure I'm ready for the volcano yet. I'm staying here for now."), MSGBOX_NPC)
+    end
+}
+
+script IgneousClimb_EventScript_ItemTM11 {
+    finditem(ITEM_TM11)
+    end
+}
+
+script IgneousClimb_EventScript_ItemSunStone {
+    finditem(ITEM_SUN_STONE)
+    end
+}

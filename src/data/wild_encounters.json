@@ -11739,67 +11739,67 @@
           "map": "MAP_IGNEOUS_CLIMB",
           "base_label": "gIgneousClimb0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_NUMEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_NUMEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_NUMEL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_ELASTRIKE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_ELASTRIKE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_SKARMORY"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_ELASTRIKE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 31,
+                "max_level": 32,
+                "species": "SPECIES_SKARMORY"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 31,
+                "max_level": 32,
+                "species": "SPECIES_ELASTRIKE"
               }
             ]
           }

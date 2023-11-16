@@ -676,9 +676,9 @@
 #define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_HEART_SCALE     0x279
 #define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_PEARL           0x27A
 #define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_MAX_ELIXIR      0x27B
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
+#define FLAG_HIDDEN_ITEM_IGNEOUS_CLIMB_MAX_POTION       0x27C
+#define FLAG_HIDDEN_ITEM_RARE_CANDY                     0x27D
+#define FLAG_HIDDEN_ITEM_PP_UP                          0x27E
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
 #define FLAG_UNUSED_0x281  0x281 // Unused Flag
@@ -1252,8 +1252,8 @@
 #define FLAG_ITEM_GHOST_SHIP_TM30                                   0x4B0
 #define FLAG_ITEM_GHOST_SHIP_ELEGANT_KEY                            0x4B1
 #define FLAG_ITEM_IGNEOUS_ISLAND_ULTRA_BALL                         0x4B2
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
+#define FLAG_ITEM_IGNEOUS_CLIMB_TM11                                0x4B3
+#define FLAG_ITEM_IGNEOUS_CLIMB_SUN_STONE                           0x4B4
 #define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
 #define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
 #define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag

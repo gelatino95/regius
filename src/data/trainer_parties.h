@@ -1148,55 +1148,55 @@ static const struct TrainerMon sParty_Richmond[] = {
 
 static const struct TrainerMon sParty_Albert[] = {
     {
-    .iv = 100,
-    .lvl = 43,
-    .species = SPECIES_MAGNETON,
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_LEVILITH,
     },
     {
-    .iv = 100,
-    .lvl = 43,
-    .species = SPECIES_MUK,
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_NUMEL,
     }
 };
 
-static const struct TrainerMon sParty_Samuel[] = {
+static const struct TrainerMon sParty_Janet[] = {
     {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_SWELLOW,
+    .iv = 50,
+    .lvl = 28,
+    .species = SPECIES_BELLOSSOM,
     },
     {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_MAWILE,
+    .iv = 50,
+    .lvl = 28,
+    .species = SPECIES_CEBORA,
     },
     {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_KADABRA,
+    .iv = 50,
+    .lvl = 28,
+    .species = SPECIES_FRIGALA,
+    },
+    {
+    .iv = 50,
+    .lvl = 28,
+    .species = SPECIES_SKARMORY,
     }
 };
 
 static const struct TrainerMon sParty_Vito[] = {
     {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_DODRIO,
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_MINUN,
     },
     {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_KADABRA,
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_PLUSLE,
     },
     {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_ELECTRODE,
-    },
-    {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_SHIFTRY,
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_AMPEDO,
     }
 };
 

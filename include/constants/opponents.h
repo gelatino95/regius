@@ -81,9 +81,9 @@
 #define TRAINER_CANDACE                      77 // new
 #define TRAINER_LANDON                       78 // new
 #define TRAINER_RICHMOND                     79 // new
-#define TRAINER_ALBERT                       80
-#define TRAINER_SAMUEL                       81
-#define TRAINER_VITO                         82
+#define TRAINER_ALBERT                       80 // new
+#define TRAINER_JANET                        81 // new
+#define TRAINER_VITO                         82 // new
 #define TRAINER_OWEN                         83
 #define TRAINER_WILTON_2                     84
 #define TRAINER_WILTON_3                     85
