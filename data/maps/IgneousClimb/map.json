@@ -134,7 +134,7 @@
       "y": 27,
       "elevation": 0,
       "item": "ITEM_PP_UP",
-      "flag": "FLAG_HIDDEN_ITEM_PP_UP"
+      "flag": "FLAG_HIDDEN_ITEM_IGNEOUS_CLIMB_PP_UP"
     },
     {
       "type": "hidden_item",
@@ -142,7 +142,7 @@
       "y": 19,
       "elevation": 0,
       "item": "ITEM_RARE_CANDY",
-      "flag": "FLAG_HIDDEN_ITEM_RARE_CANDY"
+      "flag": "FLAG_HIDDEN_ITEM_IGNEOUS_CLIMB_RARE_CANDY"
     }
   ]
 }

@@ -677,10 +677,10 @@
 #define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_PEARL           0x27A
 #define FLAG_HIDDEN_ITEM_IGNEOUS_ISLAND_MAX_ELIXIR      0x27B
 #define FLAG_HIDDEN_ITEM_IGNEOUS_CLIMB_MAX_POTION       0x27C
-#define FLAG_HIDDEN_ITEM_RARE_CANDY                     0x27D
-#define FLAG_HIDDEN_ITEM_PP_UP                          0x27E
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
+#define FLAG_HIDDEN_ITEM_IGNEOUS_CLIMB_RARE_CANDY       0x27D
+#define FLAG_HIDDEN_ITEM_IGNEOUS_CLIMB_PP_UP            0x27E
+#define FLAG_HIDDEN_ITEM_IGNEOUS_CALDERA_MAX_ETHER      0x27F
+#define FLAG_HIDDEN_ITEM_IGNEOUS_CALDERA_MAX_REVIVE     0x280
 #define FLAG_UNUSED_0x281  0x281 // Unused Flag
 #define FLAG_UNUSED_0x282  0x282 // Unused Flag
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
@@ -1254,9 +1254,9 @@
 #define FLAG_ITEM_IGNEOUS_ISLAND_ULTRA_BALL                         0x4B2
 #define FLAG_ITEM_IGNEOUS_CLIMB_TM11                                0x4B3
 #define FLAG_ITEM_IGNEOUS_CLIMB_SUN_STONE                           0x4B4
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
+#define FLAG_ITEM_IGNEOUS_CALDERA_BURN_HEAL                         0x4B5
+#define FLAG_ITEM_IGNEOUS_CALDERA_FIRE_STONE                        0x4B6
+#define FLAG_ITEM_IGNEOUS_CALDERA_ANCIENT_SLAB                      0x4B7
 #define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
 #define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
 #define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag

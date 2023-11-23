@@ -84,11 +84,11 @@
 #define TRAINER_ALBERT                       80 // new
 #define TRAINER_JANET                        81 // new
 #define TRAINER_VITO                         82 // new
-#define TRAINER_OWEN                         83
-#define TRAINER_WILTON_2                     84
-#define TRAINER_WILTON_3                     85
-#define TRAINER_WILTON_4                     86
-#define TRAINER_WILTON_5                     87
+#define TRAINER_ORTEGA                       83 // new
+#define TRAINER_MAURICE                      84 // new
+#define TRAINER_GIORNO                       85 // new
+#define TRAINER_RAUL                         86 // new
+#define TRAINER_ZHAO                         87 // new
 #define TRAINER_WARREN                       88
 #define TRAINER_MARY                         89
 #define TRAINER_ALEXIA                       90

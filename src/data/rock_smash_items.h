@@ -70,6 +70,20 @@ static const u16 sIceCaveB2F_RockSmashItems[] =
 	ITEM_STAR_PIECE,	// 1%
 };
 
+static const u16 sIgneousCalderaB1F_RockSmashItems[] =
+{
+	ITEM_RED_SHARD,	    // 30%
+	ITEM_HEART_SCALE,	// 30%
+	ITEM_HARD_STONE,    // 10%
+	ITEM_ANCIENT_SLAB,	// 10%
+	ITEM_FIRE_STONE,	// 5%
+	ITEM_HARD_STONE,	// 5%
+	ITEM_DOME_FOSSIL,	// 4%
+	ITEM_HELIX_FOSSIL,	// 4%
+	ITEM_NUGGET,		// 1%
+	ITEM_STAR_PIECE,	// 1%
+};
+
 const struct RockSmashItemHeader gRockSmashItemHeaders[] =
 {
 	{
@@ -96,6 +110,11 @@ const struct RockSmashItemHeader gRockSmashItemHeaders[] =
         .mapGroup = MAP_GROUP(ICE_CAVE_B2F),
         .mapNum = MAP_NUM(ICE_CAVE_B2F),
         .itemTable = sIceCaveB2F_RockSmashItems,
+    },
+	{
+        .mapGroup = MAP_GROUP(IGNEOUS_CALDERA_B1F),
+        .mapNum = MAP_NUM(IGNEOUS_CALDERA_B1F),
+        .itemTable = sIgneousCalderaB1F_RockSmashItems,
     },
 	{
         .mapGroup = MAP_GROUP(UNDEFINED),

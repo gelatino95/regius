@@ -1200,93 +1200,83 @@ static const struct TrainerMon sParty_Vito[] = {
     }
 };
 
-static const struct TrainerMon sParty_Owen[] = {
+static const struct TrainerMon sParty_Ortega[] = {
     {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_KECLEON,
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_MAGMAR,
     },
     {
     .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_GRAVELER,
+    .lvl = 30,
+    .species = SPECIES_MAGVA,
+    }
+};
+
+static const struct TrainerMon sParty_Maurice[] = {
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_PYRAMITE,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_BALTOY,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_VIBRAVA,
+    }
+};
+
+static const struct TrainerMon sParty_Giorno[] = {
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SLOTHER,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_ZAMIAD,
+    }
+};
+
+static const struct TrainerMon sParty_Raul[] = {
+    {
+    .iv = 100,
+    .lvl = 29,
+    .species = SPECIES_RADULIN,
     },
     {
     .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_WAILORD,
-    }
-};
-
-static const struct TrainerMon sParty_Wilton2[] = {
-    {
-    .iv = 110,
-    .lvl = 26,
-    .species = SPECIES_ELECTRIKE,
-    },
-    {
-    .iv = 110,
-    .lvl = 26,
-    .species = SPECIES_WAILMER,
-    },
-    {
-    .iv = 110,
-    .lvl = 26,
-    .species = SPECIES_MAKUHITA,
-    }
-};
-
-static const struct TrainerMon sParty_Wilton3[] = {
-    {
-    .iv = 120,
     .lvl = 29,
-    .species = SPECIES_MANECTRIC,
+    .species = SPECIES_HELIMAW,
     },
     {
-    .iv = 120,
+    .iv = 100,
     .lvl = 29,
-    .species = SPECIES_WAILMER,
+    .species = SPECIES_CAMERUPT,
     },
     {
-    .iv = 120,
+    .iv = 100,
     .lvl = 29,
-    .species = SPECIES_MAKUHITA,
+    .species = SPECIES_QUETZIN,
     }
 };
 
-static const struct TrainerMon sParty_Wilton4[] = {
+static const struct TrainerMon sParty_Zhao[] = {
     {
-    .iv = 130,
-    .lvl = 32,
-    .species = SPECIES_MANECTRIC,
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_ELASTRIKE,
     },
     {
-    .iv = 130,
-    .lvl = 32,
-    .species = SPECIES_WAILMER,
-    },
-    {
-    .iv = 130,
-    .lvl = 32,
-    .species = SPECIES_MAKUHITA,
-    }
-};
-
-static const struct TrainerMon sParty_Wilton5[] = {
-    {
-    .iv = 140,
-    .lvl = 35,
-    .species = SPECIES_MANECTRIC,
-    },
-    {
-    .iv = 140,
-    .lvl = 35,
-    .species = SPECIES_WAILMER,
-    },
-    {
-    .iv = 140,
-    .lvl = 35,
-    .species = SPECIES_HARIYAMA,
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_CASSOWILY,
     }
 };
 
