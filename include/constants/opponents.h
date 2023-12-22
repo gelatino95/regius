@@ -89,13 +89,13 @@
 #define TRAINER_GIORNO                       85 // new
 #define TRAINER_RAUL                         86 // new
 #define TRAINER_ZHAO                         87 // new
-#define TRAINER_WARREN                       88
-#define TRAINER_MARY                         89
-#define TRAINER_ALEXIA                       90
-#define TRAINER_JODY                         91
-#define TRAINER_WENDY                        92
-#define TRAINER_KEIRA                        93
-#define TRAINER_BROOKE_1                     94
+#define TRAINER_WARREN                       88 // Battle Grotto
+#define TRAINER_MARY                         89 // Battle Grotto
+#define TRAINER_ALEXIA                       90 // Battle Grotto
+#define TRAINER_RANDY                        91 // Battle Grotto
+#define TRAINER_ABDUL                        92 // Battle Grotto
+#define TRAINER_KEIRA                        93 // Battle Grotto
+#define TRAINER_GILLIGAN                     94 // Battle Grotto
 #define TRAINER_JENNIFER                     95
 #define TRAINER_HOPE                         96
 #define TRAINER_SHANNON                      97

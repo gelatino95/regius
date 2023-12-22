@@ -717,6 +717,7 @@
   ],
   "gMapGroup_BattleGrotto": [
     "BattleGrotto_Entrance",
-    "BattleGrotto_B1F"
+    "BattleGrotto_B1F",
+    "BattleGrotto_B2F"
   ]
 }

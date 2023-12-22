@@ -51,7 +51,7 @@ PetalburgCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_ANYA
 	settrainerflag TRAINER_MARY
 	settrainerflag TRAINER_ALEXIA
-	settrainerflag TRAINER_JODY
+	settrainerflag TRAINER_RANDY
 	return
 
 FortreeCity_Gym_SetGymTrainers::

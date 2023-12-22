@@ -24,7 +24,7 @@ script BattleGrotto_B1F_EventScript_PlayerFaceNorth {
 script BattleGrotto_B1F_EventScript_StartAttendant {
 	lock
 	faceplayer
-	msgbox(format("Would you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
+	msgbox(format("You're currently on sublevel 1.\pWould you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT) == YES) {
 		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
 	}
@@ -38,10 +38,17 @@ script BattleGrotto_B1F_EventScript_EndAttendant {
 	faceplayer
 	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
 	if (!flag(FLAG_GROTTO_FLOOR_1_COMPLETE)) {
-		msgbox(format("For clearing floor 1 for the first time, here is a special prize."), MSGBOX_DEFAULT)
-		giveitem(ITEM_MACHO_BRACE)
+		msgbox(format("For clearing sublevel 1 for the first time, here is a special prize."), MSGBOX_DEFAULT)
+		giveitem(ITEM_EXP_SHARE)
 		setflag(FLAG_GROTTO_FLOOR_1_COMPLETE)
 	}
+	msgbox(format("Would you like to move on to\nsublevel 2?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+		warp(MAP_BATTLE_GROTTO_B2F, 11, 36)
+		end
+	}
+	msgbox(format("Okay, I'll return you to the lobby. Thank you for playing!"), MSGBOX_AUTOCLOSE)
 	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
 }
 

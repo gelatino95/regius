@@ -1,0 +1,82 @@
+mapscripts BattleGrotto_B2F_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+		map_script_2(VAR_TEMP_1, 0, BattleGrotto_B1F_EventScript_PlayerFaceNorth)
+		end
+	}
+    MAP_SCRIPT_ON_TRANSITION {
+		cleartrainerflag(TRAINER_WARREN)
+		cleartrainerflag(TRAINER_MARY)
+		cleartrainerflag(TRAINER_ALEXIA)
+		cleartrainerflag(TRAINER_RANDY)
+		cleartrainerflag(TRAINER_ABDUL)
+		cleartrainerflag(TRAINER_KEIRA)
+		cleartrainerflag(TRAINER_GILLIGAN)
+		end
+	}
+}
+
+script BattleGrotto_B2F_EventScript_StartAttendant {
+	lock
+	faceplayer
+	msgbox(format("You're currently on sublevel 2.\pWould you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	}
+	else {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BattleGrotto_B2F_EventScript_EndAttendant {
+	lock
+	faceplayer
+	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
+	if (!flag(FLAG_GROTTO_FLOOR_2_COMPLETE)) {
+		msgbox(format("For clearing sublevel 2 for the first time, here is a special prize."), MSGBOX_DEFAULT)
+		giveitem(ITEM_MACHO_BRACE)
+		setflag(FLAG_GROTTO_FLOOR_2_COMPLETE)
+	}
+	msgbox(format("Would you like to move on to\nsublevel 3?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		msgbox(format("Too bad!"), MSGBOX_AUTOCLOSE)
+		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+        end
+	}
+	msgbox(format("Okay, I'll return you to the lobby. Thank you for playing!"), MSGBOX_AUTOCLOSE)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+}
+
+script BattleGrotto_B2F_EventScript_Warren {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_WARREN, 0, format("Welcome to sublevel 2!\nNow it's serious!"), format("Argh!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("You're gonna go far, I can tell."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B2F_EventScript_Mary {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_MARY, 0, format("My shoes are getting wet…"), format("Oh, come on…"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("The sooner I get out of this damp cave, the better."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B2F_EventScript_Alexia {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ALEXIA, 0, format("Deeper… deeper…"), format("Too deep!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("What lies at the end, I wonder…"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B2F_EventScript_Randy {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_RANDY, 0, format("Go on, show me what you're made of!"), format("Fascinating!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Too bad there are no wild POKéMON around here, right?"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B2F_EventScript_Abdul {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ABDUL, 0, format("Hm? We are to do battle?"), format("Aiyeee!!!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("So I've been bested! It can't be helped."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B2F_EventScript_Keira {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_KEIRA, 0, format("Getting tired yet?"), format("Hmph!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Don't give up hope yet!"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B2F_EventScript_Gilligan {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_GILLIGAN, 0, format("So you've made it!\nI'm very much looking forward to our bout."), format("Confound it all!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Yes, you did well. Now move on, and spare me my dignity!"), MSGBOX_NPC)
+}

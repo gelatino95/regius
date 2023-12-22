@@ -42,7 +42,7 @@ script BattleGrotto_Entrance_BattleGrottoChallenge {
 			special(HealPlayerParty)
 			warp(MAP_BATTLE_GROTTO_B1F, 4, 36)
 		case 1:
-			msgbox(format("In the BATTLE GROTTO, you will make\nyour way through a long cave\lfull of TRAINERs.\lIf you defeat all seven TRAINERs\lon the floor in a row, you will\learn Battle Points (BP), which can be\lexchanged for prizes in the lobby.\pYou can then descend to the\nnext floor, where you will find\leven harder TRAINERs.\pIf you want to quit your challenge,\nyou will be able to start at the\lbeginning of any floor you've\lpreviously visited.\pHowever, at the moment, we only\nhave one floor available.\lThe rest are still being prepared.\lThank you for your patience."), MSGBOX_DEFAULT)
+			msgbox(format("In the BATTLE GROTTO, you will make\nyour way through a long cave\lfull of TRAINERS.\lIf you defeat all seven TRAINERS\lon the floor in a row, you will\learn Battle Points (BP), which can be\lexchanged for prizes in the lobby.\pYou can then descend to the\nnext sublevel, where you will find\leven harder TRAINERS.\pIf you want to quit your challenge,\nyou will be able to start at the\lbeginning of any sublevel you've\lpreviously visited.\pAt the moment, we only have one floor available.\lThe rest are still being prepared.\lThank you for your patience."), MSGBOX_DEFAULT)
 			goto(BattleGrotto_Entrance_BattleGrottoChallenge)
 		case 2:
 		case MULTI_B_PRESSED:	

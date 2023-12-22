@@ -675,9 +675,10 @@
 // gMapGroup_BattleGrotto
 #define MAP_BATTLE_GROTTO_ENTRANCE (0 | (45 << 8))
 #define MAP_BATTLE_GROTTO_B1F      (1 | (45 << 8))
+#define MAP_BATTLE_GROTTO_B2F      (2 | (45 << 8))
 
 #define MAP_GROUPS_COUNT 46
 
-// static const u8 MAP_GROUP_COUNT[] = {77, 5, 5, 6, 7, 8, 9, 7, 7, 14, 8, 17, 10, 23, 13, 15, 15, 2, 2, 2, 3, 1, 1, 1, 124, 61, 89, 2, 1, 13, 1, 1, 3, 1, 2, 5, 6, 2, 1, 1, 0, 2, 1, 2, 1, 2, 0};
+// static const u8 MAP_GROUP_COUNT[] = {77, 5, 5, 6, 7, 8, 9, 7, 7, 14, 8, 17, 10, 23, 13, 15, 15, 2, 2, 2, 3, 1, 1, 1, 124, 61, 89, 2, 1, 13, 1, 1, 3, 1, 2, 5, 6, 2, 1, 1, 0, 2, 1, 2, 1, 3, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
