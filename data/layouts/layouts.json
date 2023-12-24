@@ -4900,6 +4900,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/BattleGrotto_B2F/border.bin",
       "blockdata_filepath": "data/layouts/BattleGrotto_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_GROTTO_B3F",
+      "name": "BattleGrotto_B3F_Layout",
+      "width": 24,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BattleGrotto_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/BattleGrotto_B3F/map.bin"
     }
   ]
 }

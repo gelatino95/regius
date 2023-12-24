@@ -101,10 +101,10 @@ BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16:
 	case 1, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_21
 	case 2, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_22
 	case 3, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
-	case 4, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
-	case 5, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
-	case 6, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
-	case 7, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
+	case 4, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_24
+	case 5, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_24
+	case 6, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_24
+	case 7, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_24
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19:
 	release
 	end
@@ -148,6 +148,13 @@ BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_22:
 	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	special HealPlayerParty
+	warp MAP_BATTLE_GROTTO_B3F, 13, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_24:
 	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_9, MSGBOX_DEFAULT
 	goto BattleGrotto_Entrance_BattleGrottoChallenge
 	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
@@ -902,8 +909,8 @@ BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_8:
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_9:
 	.string "I'm sorry, but that floor isn't ready\n"
-	.string "yet. We apologize for the\l"
-	.string "inconvenience.$"
+	.string "yet.\l"
+	.string "We apologize for the inconvenience.$"
 
 BattleGrotto_Entrance_BerryVendor_Text_0:
 	.string "Welcome!$"

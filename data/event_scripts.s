@@ -1187,3 +1187,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NorthwestSea_House2/scripts.inc"
 
 	.include "data/maps/BattleGrotto_B2F/scripts.inc"
+
+	.include "data/maps/BattleGrotto_B3F/scripts.inc"

@@ -96,13 +96,13 @@
 #define TRAINER_ABDUL                        92 // Battle Grotto
 #define TRAINER_KEIRA                        93 // Battle Grotto
 #define TRAINER_GILLIGAN                     94 // Battle Grotto
-#define TRAINER_JENNIFER                     95
-#define TRAINER_HOPE                         96
-#define TRAINER_SHANNON                      97
-#define TRAINER_MICHELLE                     98
-#define TRAINER_CAROLINE                     99
-#define TRAINER_JULIE                       100
-#define TRAINER_BROOKE_2                    101
+#define TRAINER_BOONE                        95 // Battle Grotto
+#define TRAINER_HOPE                         96 // Battle Grotto
+#define TRAINER_LINNEUS                      97 // Battle Grotto
+#define TRAINER_GRANT                        98 // Battle Grotto
+#define TRAINER_NAM                          99 // Battle Grotto
+#define TRAINER_JULIE                       100 // Battle Grotto
+#define TRAINER_CASADY                      101 // Battle Grotto
 #define TRAINER_BROOKE_3                    102
 #define TRAINER_BROOKE_4                    103
 #define TRAINER_BROOKE_5                    104

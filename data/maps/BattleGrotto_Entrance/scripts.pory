@@ -94,6 +94,10 @@ script BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor {
 			special(HealPlayerParty)
 			warp(MAP_BATTLE_GROTTO_B2F, 11, 36)
 		case 3:
+			msgbox("Best of luck!", MSGBOX_DEFAULT)
+			waitmessage
+			special(HealPlayerParty)
+			warp(MAP_BATTLE_GROTTO_B3F, 13, 36)
 		case 4:
 		case 5:
 		case 6:
