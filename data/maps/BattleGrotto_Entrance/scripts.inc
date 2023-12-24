@@ -46,27 +46,111 @@ BattleGrotto_Entrance_BattleGrottoChallenge::
 	waitmessage
 	multichoice 17, 6, MULTI_CHALLENGEINFO, FALSE
 	switch VAR_RESULT
-	case 0, BattleGrotto_Entrance_BattleGrottoChallenge_2
-	case 1, BattleGrotto_Entrance_BattleGrottoChallenge_3
-	case 2, BattleGrotto_Entrance_BattleGrottoChallenge_4
-	case MULTI_B_PRESSED, BattleGrotto_Entrance_BattleGrottoChallenge_4
-	return
+	case 0, BattleGrotto_Entrance_BattleGrottoChallenge_3
+	case 1, BattleGrotto_Entrance_BattleGrottoChallenge_4
+	case 2, BattleGrotto_Entrance_BattleGrottoChallenge_5
+	case MULTI_B_PRESSED, BattleGrotto_Entrance_BattleGrottoChallenge_5
+BattleGrotto_Entrance_BattleGrottoChallenge_1:
+	release
+	end
 
-BattleGrotto_Entrance_BattleGrottoChallenge_2:
+BattleGrotto_Entrance_BattleGrottoChallenge_3:
+	goto_if_unset FLAG_GROTTO_FLOOR_1_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_7
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_1
+
+BattleGrotto_Entrance_BattleGrottoChallenge_4:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_2, MSGBOX_DEFAULT
+	goto BattleGrotto_Entrance_BattleGrottoChallenge
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_1
+
+BattleGrotto_Entrance_BattleGrottoChallenge_5:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_3, MSGBOX_AUTOCLOSE
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_1
+
+BattleGrotto_Entrance_BattleGrottoChallenge_7:
 	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
 	waitmessage
 	special HealPlayerParty
 	warp MAP_BATTLE_GROTTO_B1F, 4, 36
-	return
+	release
+	end
 
-BattleGrotto_Entrance_BattleGrottoChallenge_3:
-	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_2, MSGBOX_DEFAULT
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor::
+	message BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_0
+	waitmessage
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_1, 1
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_2, 2
+	goto_if_set FLAG_GROTTO_FLOOR_2_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_2
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_1:
+	goto_if_set FLAG_GROTTO_FLOOR_3_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_5
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_4:
+	goto_if_set FLAG_GROTTO_FLOOR_4_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_8
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_7:
+	goto_if_set FLAG_GROTTO_FLOOR_5_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_11
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_10:
+	goto_if_set FLAG_GROTTO_FLOOR_6_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_14
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13:
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_8, 127
+	dynmultistack 0, 0, FALSE, 5, FALSE, 1, DYN_MULTICHOICE_CB_NONE
+	compare VAR_RESULT, 127
+	goto_if_eq BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_17
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16:
+	switch VAR_RESULT
+	case 1, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_21
+	case 2, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_22
+	case 3, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
+	case 4, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
+	case 5, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
+	case 6, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
+	case 7, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19:
+	release
+	end
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_2:
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_3, 3
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_1
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_5:
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_4, 4
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_4
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_8:
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_5, 5
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_7
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_11:
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_6, 6
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_10
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_14:
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_7, 7
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_17:
 	goto BattleGrotto_Entrance_BattleGrottoChallenge
-	return
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
 
-BattleGrotto_Entrance_BattleGrottoChallenge_4:
-	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_3, MSGBOX_AUTOCLOSE
-	return
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_21:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	special HealPlayerParty
+	warp MAP_BATTLE_GROTTO_B1F, 4, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_22:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	special HealPlayerParty
+	warp MAP_BATTLE_GROTTO_B2F, 11, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_9, MSGBOX_DEFAULT
+	goto BattleGrotto_Entrance_BattleGrottoChallenge
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
 
 
 BattleGrotto_Entrance_BerryVendor::
@@ -787,6 +871,39 @@ BattleGrotto_Entrance_BattleGrottoChallenge_Text_2:
 
 BattleGrotto_Entrance_BattleGrottoChallenge_Text_3:
 	.string "Come again!$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_0:
+	.string "Which sublevel would you like to start\n"
+	.string "from?$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_1:
+	.string "1$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_2:
+	.string "2$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_3:
+	.string "3$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_4:
+	.string "4$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_5:
+	.string "5$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_6:
+	.string "6$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_7:
+	.string "7$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_8:
+	.string "CANCEL$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_9:
+	.string "I'm sorry, but that floor isn't ready\n"
+	.string "yet. We apologize for the\l"
+	.string "inconvenience.$"
 
 BattleGrotto_Entrance_BerryVendor_Text_0:
 	.string "Welcome!$"

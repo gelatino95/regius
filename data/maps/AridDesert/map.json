@@ -2,7 +2,7 @@
   "id": "MAP_ARID_DESERT",
   "name": "AridDesert",
   "layout": "LAYOUT_ARID_DESERT",
-  "music": "MUS_ROUTE111",
+  "music": "MUS_DESERT",
   "region_map_section": "MAPSEC_ARID_DESERT",
   "requires_flash": false,
   "weather": "WEATHER_SANDSTORM",

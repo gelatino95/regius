@@ -86,4 +86,10 @@
 
 #define LAST_TALKED_TO_FLYING_TAXI 255 // used for determining if Fly or a flying taxi was used
 
+// Return values for DoDeoxysRockInteraction
+#define DEOXYS_ROCK_FAILED     0
+#define DEOXYS_ROCK_PROGRESSED 1
+#define DEOXYS_ROCK_SOLVED     2
+#define DEOXYS_ROCK_COMPLETE   3
+
 #endif // GUARD_CONSTANTS_FIELD_SPECIALS_H

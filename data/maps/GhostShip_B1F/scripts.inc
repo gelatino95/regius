@@ -168,7 +168,7 @@ GhostShip_B1F_HideDusclopsTrigger::
 
 GhostShip_EventScript_ItemHM08::
 	finditem ITEM_HM08
-	setflag FLAG_RECEIVED_HM08
+	setflag FLAG_RECEIVED_HM_DIVE
 	setvar VAR_GHOST_SHIP_STATE, 1
 	setmetatile 17, 9, METATILE_Pirate_Ship_SouthExitLeftNoArrow, FALSE
 	setmetatile 18, 9, METATILE_Pirate_Ship_SouthExitRightNoArrow, FALSE

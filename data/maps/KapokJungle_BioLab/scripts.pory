@@ -90,13 +90,13 @@ script KapokJungle_BioLab_EventScript_FossilMan_ChooseFossil {
 script KapokJungle_BioLab_EventScript_Scientist {
     lock
     faceplayer
-    if (flag(FLAG_RECEIVED_HM07)) {
+    if (flag(FLAG_RECEIVED_HM_WATERFALL)) {
         msgbox(format("Use WATERFALL to navigate the jungle more easily.\pYou might even uncover places you couldn't reach before!"), MSGBOX_DEFAULT)
     }
     else {
         msgbox(format("Wow, you came all the way out here?\nYou must be an intrepid explorer!\pWe SCIENTISTS use the river as a shortcut to reach the lab.\pWhy don't you take this?\nIt will help you navigate the jungle more easily."), MSGBOX_DEFAULT)
         giveitem(ITEM_HM07)
-        setflag(FLAG_RECEIVED_HM07)
+        setflag(FLAG_RECEIVED_HM_WATERFALL)
     }
     release
     end

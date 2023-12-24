@@ -111,7 +111,7 @@ script AridRuins_EventScript_RockSmashGuy {
     faceplayer
     msgbox(format("Ah! You surprised me.\pMe? I'm digging for treasure!\nI'm getting my POKéMON to smash rocks and recover the stuff inside.\lThese islands are chock full of valuable minerals and ancient artifacts!\pPhew, I think I'm done for today.\nWhy don't you give it a try?"), MSGBOX_DEFAULT)
     giveitem(ITEM_HM06, 1)
-    setflag(FLAG_RECEIVED_HM06)
+    setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
     msgbox(format("Just owning that HM should let your POKéMON break rocks like these.\lYou might uncover some rare ITEMS!\lBut watch out, because sometimes wild POKéMON will come out instead!\pWell, I'll leave you to it.\nHappy hunting!"), MSGBOX_DEFAULT)
     closemessage
     fadescreen(FADE_TO_BLACK)

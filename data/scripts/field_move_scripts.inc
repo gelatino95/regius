@@ -1,7 +1,7 @@
 @ Interact with cuttable tree
 EventScript_CutTree::
 	lockall
-	goto_if_unset FLAG_RECEIVED_HM01, EventScript_CheckTreeCantCut
+	goto_if_unset FLAG_RECEIVED_HM_CUT, EventScript_CheckTreeCantCut
 	checkpartytmhm ITEM_TM01
 	compare VAR_RESULT, PARTY_SIZE
 	goto_if_eq EventScript_CheckTreeCantCut
@@ -61,7 +61,7 @@ Text_CantCut:
 @ Interact with smashable rock
 EventScript_RockSmash::
 	lockall
-	goto_if_unset FLAG_RECEIVED_HM06, EventScript_CantSmashRock
+	goto_if_unset FLAG_RECEIVED_HM_ROCK_SMASH, EventScript_CantSmashRock
 	checkpartytmhm ITEM_HM06
 	compare VAR_RESULT, PARTY_SIZE
 	goto_if_eq EventScript_CantSmashRock
@@ -137,7 +137,7 @@ Text_CantSmash:
 
 EventScript_StrengthBoulder::
 	lockall
-	goto_if_unset FLAG_RECEIVED_HM04, EventScript_CantStrength
+	goto_if_unset FLAG_RECEIVED_HM_STRENGTH, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	checkpartytmhm ITEM_HM04
 	compare VAR_RESULT, PARTY_SIZE

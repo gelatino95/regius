@@ -37,10 +37,15 @@ script BattleGrotto_Entrance_BattleGrottoChallenge {
 	multichoice(17, 6, MULTI_CHALLENGEINFO, FALSE)
 	switch(var(VAR_RESULT)) {
 		case 0:
-			msgbox("Best of luck!", MSGBOX_DEFAULT)
-			waitmessage
-			special(HealPlayerParty)
-			warp(MAP_BATTLE_GROTTO_B1F, 4, 36)
+			if (!flag(FLAG_GROTTO_FLOOR_1_COMPLETE)){ //if player hasn't beaten floor 1, automatically send them there
+				msgbox("Best of luck!", MSGBOX_DEFAULT)
+				waitmessage
+				special(HealPlayerParty)
+				warp(MAP_BATTLE_GROTTO_B1F, 4, 36)
+				release
+				end
+			}
+			goto(BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor)
 		case 1:
 			msgbox(format("In the BATTLE GROTTO, you will make\nyour way through a long cave\lfull of TRAINERS.\lIf you defeat all seven TRAINERS\lon the floor in a row, you will\learn Battle Points (BP), which can be\lexchanged for prizes in the lobby.\pYou can then descend to the\nnext sublevel, where you will find\leven harder TRAINERS.\pIf you want to quit your challenge,\nyou will be able to start at the\lbeginning of any sublevel you've\lpreviously visited.\pAt the moment, we only have one floor available.\lThe rest are still being prepared.\lThank you for your patience."), MSGBOX_DEFAULT)
 			goto(BattleGrotto_Entrance_BattleGrottoChallenge)
@@ -48,6 +53,56 @@ script BattleGrotto_Entrance_BattleGrottoChallenge {
 		case MULTI_B_PRESSED:	
 			msgbox(format("Come again!"), MSGBOX_AUTOCLOSE)
 	}
+	release
+	end
+}
+
+script BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor {
+	message(format("Which sublevel would you like to start from?"))
+	waitmessage
+	dynmultipush("1", 1)
+	dynmultipush("2", 2)
+	if (flag(FLAG_GROTTO_FLOOR_2_COMPLETE)) {
+		dynmultipush("3", 3)
+	}
+	if (flag(FLAG_GROTTO_FLOOR_3_COMPLETE)) {
+		dynmultipush("4", 4)
+	}
+	if (flag(FLAG_GROTTO_FLOOR_4_COMPLETE)) {
+		dynmultipush("5", 5)
+	}
+	if (flag(FLAG_GROTTO_FLOOR_5_COMPLETE)) {
+		dynmultipush("6", 6)
+	}
+	if (flag(FLAG_GROTTO_FLOOR_6_COMPLETE)) {
+		dynmultipush("7", 7)
+	}
+	dynmultipush("CANCEL", 127)
+	dynmultistack(0, 0, FALSE, 5, FALSE, 1, DYN_MULTICHOICE_CB_NONE)
+	if (var(VAR_RESULT) == 127) { //player chooses cancel or presses B
+		goto(BattleGrotto_Entrance_BattleGrottoChallenge)
+	}
+	switch(var(VAR_RESULT)) {
+		case 1:
+			msgbox("Best of luck!", MSGBOX_DEFAULT)
+			waitmessage
+			special(HealPlayerParty)
+			warp(MAP_BATTLE_GROTTO_B1F, 4, 36)
+		case 2:
+			msgbox("Best of luck!", MSGBOX_DEFAULT)
+			waitmessage
+			special(HealPlayerParty)
+			warp(MAP_BATTLE_GROTTO_B2F, 11, 36)
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+			msgbox(format("I'm sorry, but that floor isn't ready\nyet.\lWe apologize for the inconvenience."), MSGBOX_DEFAULT)
+			goto(BattleGrotto_Entrance_BattleGrottoChallenge)
+	}
+	release
+	end
 }
 
 script BattleGrotto_Entrance_BerryVendor {
