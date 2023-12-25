@@ -103,13 +103,13 @@
 #define TRAINER_NAM                          99 // Battle Grotto
 #define TRAINER_JULIE                       100 // Battle Grotto
 #define TRAINER_CASADY                      101 // Battle Grotto
-#define TRAINER_BROOKE_3                    102
-#define TRAINER_BROOKE_4                    103
-#define TRAINER_BROOKE_5                    104
-#define TRAINER_PATRICIA                    105
-#define TRAINER_KINDRA                      106
-#define TRAINER_TAMMY                       107
-#define TRAINER_VALERIE_1                   108
+#define TRAINER_ARATAKA                     102 // Battle Grotto
+#define TRAINER_HANS                        103 // Battle Grotto
+#define TRAINER_ASTRID                      104 // Battle Grotto
+#define TRAINER_KEITO                       105 // Battle Grotto
+#define TRAINER_YURI                        106 // Battle Grotto
+#define TRAINER_VINCENT                     107 // Battle Grotto
+#define TRAINER_TAMARA                      108 // Battle Grotto
 #define TRAINER_TASHA                       109
 #define TRAINER_VALERIE_2                   110
 #define TRAINER_VALERIE_3                   111

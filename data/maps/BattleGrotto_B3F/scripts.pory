@@ -38,8 +38,8 @@ script BattleGrotto_B3F_EventScript_EndAttendant {
 	}
 	msgbox(format("Would you like to move on to\nsublevel 4?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT)) {
-		msgbox(format("Too bad!"), MSGBOX_AUTOCLOSE)
-		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+		warp(MAP_BATTLE_GROTTO_B4F, 11, 36)
         end
 	}
 	msgbox(format("Okay, I'll return you to the lobby. Thank you for playing!"), MSGBOX_AUTOCLOSE)

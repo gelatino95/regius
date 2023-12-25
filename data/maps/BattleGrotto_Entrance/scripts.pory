@@ -68,15 +68,15 @@ script BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor {
 	if (flag(FLAG_GROTTO_FLOOR_3_COMPLETE)) {
 		dynmultipush("4", 4)
 	}
-	if (flag(FLAG_GROTTO_FLOOR_4_COMPLETE)) {
-		dynmultipush("5", 5)
-	}
-	if (flag(FLAG_GROTTO_FLOOR_5_COMPLETE)) {
-		dynmultipush("6", 6)
-	}
-	if (flag(FLAG_GROTTO_FLOOR_6_COMPLETE)) {
-		dynmultipush("7", 7)
-	}
+//	if (flag(FLAG_GROTTO_FLOOR_4_COMPLETE)) {	//Uncomment when these floors are complete!
+//		dynmultipush("5", 5)
+//	}
+//	if (flag(FLAG_GROTTO_FLOOR_5_COMPLETE)) {
+//		dynmultipush("6", 6)
+//	}
+//	if (flag(FLAG_GROTTO_FLOOR_6_COMPLETE)) {
+//		dynmultipush("7", 7)
+//	}
 	dynmultipush("CANCEL", 127)
 	dynmultistack(0, 0, FALSE, 5, FALSE, 1, DYN_MULTICHOICE_CB_NONE)
 	if (var(VAR_RESULT) == 127) { //player chooses cancel or presses B
@@ -99,6 +99,10 @@ script BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor {
 			special(HealPlayerParty)
 			warp(MAP_BATTLE_GROTTO_B3F, 13, 36)
 		case 4:
+			msgbox("Best of luck!", MSGBOX_DEFAULT)
+			waitmessage
+			special(HealPlayerParty)
+			warp(MAP_BATTLE_GROTTO_B4F, 11, 36)
 		case 5:
 		case 6:
 		case 7:

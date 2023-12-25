@@ -41,7 +41,7 @@ BattleGrotto_B3F_EventScript_EndAttendant_1:
 	msgbox BattleGrotto_B3F_EventScript_EndAttendant_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne BattleGrotto_B3F_EventScript_EndAttendant_5
-	msgbox BattleGrotto_B3F_EventScript_EndAttendant_Text_4, MSGBOX_AUTOCLOSE
+	msgbox BattleGrotto_B3F_EventScript_EndAttendant_Text_3, MSGBOX_AUTOCLOSE
 	warp MAP_BATTLE_GROTTO_ENTRANCE, 10, 7
 	return
 
@@ -52,8 +52,8 @@ BattleGrotto_B3F_EventScript_EndAttendant_2:
 	goto BattleGrotto_B3F_EventScript_EndAttendant_1
 
 BattleGrotto_B3F_EventScript_EndAttendant_5:
-	msgbox BattleGrotto_B3F_EventScript_EndAttendant_Text_3, MSGBOX_AUTOCLOSE
-	warp MAP_BATTLE_GROTTO_ENTRANCE, 10, 7
+	msgbox BattleGrotto_B3F_EventScript_StartAttendant_Text_1, MSGBOX_AUTOCLOSE
+	warp MAP_BATTLE_GROTTO_B4F, 11, 36
 	end
 
 
@@ -120,9 +120,6 @@ BattleGrotto_B3F_EventScript_EndAttendant_Text_2:
 	.string "sublevel 4?$"
 
 BattleGrotto_B3F_EventScript_EndAttendant_Text_3:
-	.string "Too bad!$"
-
-BattleGrotto_B3F_EventScript_EndAttendant_Text_4:
 	.string "Okay, I'll return you to the lobby. Thank\n"
 	.string "you for playing!$"
 

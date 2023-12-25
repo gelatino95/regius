@@ -1189,3 +1189,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/BattleGrotto_B2F/scripts.inc"
 
 	.include "data/maps/BattleGrotto_B3F/scripts.inc"
+
+	.include "data/maps/BattleGrotto_B4F/scripts.inc"

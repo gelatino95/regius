@@ -1,0 +1,76 @@
+mapscripts BattleGrotto_B4F_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+		map_script_2(VAR_TEMP_1, 0, BattleGrotto_B1F_EventScript_PlayerFaceNorth)
+		end
+	}
+    MAP_SCRIPT_ON_TRANSITION {
+		cleartrainerflag(TRAINER_ARATAKA)
+		cleartrainerflag(TRAINER_HANS)
+		cleartrainerflag(TRAINER_ASTRID)
+		cleartrainerflag(TRAINER_KEITO)
+		cleartrainerflag(TRAINER_YURI)
+		cleartrainerflag(TRAINER_VINCENT)
+		cleartrainerflag(TRAINER_TAMARA)
+		end
+	}
+}
+
+script BattleGrotto_B4F_EventScript_StartAttendant {
+	lock
+	faceplayer
+	msgbox(format("You're currently on sublevel 4.\pWould you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	}
+	else {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BattleGrotto_B4F_EventScript_EndAttendant {
+	lock
+	faceplayer
+	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
+	if (!flag(FLAG_GROTTO_FLOOR_4_COMPLETE)) {
+		msgbox(format("For clearing sublevel 4 for the first time, here is a special prize."), MSGBOX_DEFAULT)
+		giveitem(ITEM_DRAGON_SCALE)
+		setflag(FLAG_GROTTO_FLOOR_4_COMPLETE)
+	}
+	msgbox(format("You've completed all the sublevels that are currently available.\pI will return you to the lobby."), MSGBOX_AUTOCLOSE)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+}
+
+script BattleGrotto_B4F_EventScript_Arataka {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ARATAKA, 0, format("Join me for non-stop training!"), format("Uh… break time?"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("I have been training here for 72 straight hours."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Hans {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HANS, 0, format("It's hard to stretch our wings down here."), format("Grounded!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("At least this chamber is a bit spacious. I can let my birds fly!"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Astrid {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ASTRID, 0, format("I've seen your future!"), format("This wasn't meant to be!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Only you can forge your own destiny. Remember that."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Keito {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_KEITO, 0, format("Could I bother you for a battle?"), format("Well done."), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Please do visit again sometime."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Yuri {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_YURI, 0, format("The secrets of the universe…!"), format("Eureka!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("There's much to be discovered in this place, I'm sure of it…"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Vincent {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_VINCENT, 0, format("Face the serpent's wrath!"), format("Impossible…!"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("Mark my words, if you underestimate the power of DRAGONS, it will be your last mistake."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Tamara {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_TAMARA, 0, format("Ah, a challenger!\pWell, what are you waiting for?\nDon't disappoint me!"), format("Hohoho! Wonderful…"), BattleGrotto_B1F_EventScript_Give1BP)
+	msgbox(format("You were a worthy foe. Keep climbing higher!"), MSGBOX_NPC)
+}
