@@ -28,6 +28,11 @@ CentralSea_EventScript_RouteSignWest::
 	return
 
 
+CentralSea_EventScript_RouteSignSouth::
+	msgbox CentralSea_EventScript_RouteSignSouth_Text_0, MSGBOX_SIGN
+	return
+
+
 CentralSea_EventScript_Swimmer::
 	msgbox CentralSea_EventScript_Swimmer_Text_0, MSGBOX_NPC
 	return
@@ -111,6 +116,18 @@ CentralSea_EventScript_Richmond::
 	return
 
 
+CentralSea_EventScript_Melody::
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_MELODY, 0, CentralSea_EventScript_Melody_Text_0, CentralSea_EventScript_Melody_Text_1
+	msgbox CentralSea_EventScript_Melody_Text_2, MSGBOX_NPC
+	return
+
+
+CentralSea_EventScript_Augustus::
+	trainerbattle TRAINER_BATTLE_DETECT, TRAINER_AUGUSTUS, 0, CentralSea_EventScript_Augustus_Text_0, CentralSea_EventScript_Augustus_Text_1
+	msgbox CentralSea_EventScript_Augustus_Text_2, MSGBOX_NPC
+	return
+
+
 CentralSea_EventScript_ItemNetBall::
 	finditem ITEM_NET_BALL
 	end
@@ -146,14 +163,19 @@ CentralSea_EventScript_BikeGirl_Text_2:
 	.string "island…$"
 
 CentralSea_EventScript_RouteSignEast_Text_0:
-	.string "CENTRAL SEA\n"
-	.string "{UP_ARROW} KAPOK ISLAND\l"
+	.string "CENTRAL SEA\p"
+	.string "{UP_ARROW} KAPOK ISLAND\n"
 	.string "NORTHEAST SEA {RIGHT_ARROW}\l"
 	.string "{DOWN_ARROW} ARID ISLAND$"
 
 CentralSea_EventScript_RouteSignWest_Text_0:
-	.string "CENTRAL SEA\n"
+	.string "CENTRAL SEA\p"
 	.string "{LEFT_ARROW} IGNEOUS ISLAND$"
+
+CentralSea_EventScript_RouteSignSouth_Text_0:
+	.string "CENTRAL SEA\p"
+	.string "{UP_ARROW} IGNEOUS ISLAND\n"
+	.string "{DOWN_ARROW} GATEWAY ISLAND$"
 
 CentralSea_EventScript_Swimmer_Text_0:
 	.string "Every time I try to swim up north, the\n"
@@ -293,3 +315,23 @@ CentralSea_EventScript_Richmond_Text_1:
 	.string "I wonder what's down there in the deep\n"
 	.string "water? I could ride down on my POKéMON\l"
 	.string "and see.$"
+
+CentralSea_EventScript_Melody_Text_0:
+	.string "Halt! Are you tough enough to pass?$"
+
+CentralSea_EventScript_Melody_Text_1:
+	.string "You may pass!$"
+
+CentralSea_EventScript_Melody_Text_2:
+	.string "Trainers around these parts are tough.\n"
+	.string "I'm just making sure you're ready!$"
+
+CentralSea_EventScript_Augustus_Text_0:
+	.string "I went DIVING! Look what I caught!$"
+
+CentralSea_EventScript_Augustus_Text_1:
+	.string "Buh…?$"
+
+CentralSea_EventScript_Augustus_Text_2:
+	.string "There are lots of unique POKéMON on the\n"
+	.string "ocean floor.$"

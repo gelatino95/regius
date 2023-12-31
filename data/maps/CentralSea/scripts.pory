@@ -17,11 +17,15 @@ script CentralSea_EventScript_BikeGirl {
 }
 
 script CentralSea_EventScript_RouteSignEast {
-    msgbox(format("CENTRAL SEA\n{UP_ARROW} KAPOK ISLAND\lNORTHEAST SEA {RIGHT_ARROW}\l{DOWN_ARROW} ARID ISLAND"), MSGBOX_SIGN)
+    msgbox(format("CENTRAL SEA\p{UP_ARROW} KAPOK ISLAND\nNORTHEAST SEA {RIGHT_ARROW}\l{DOWN_ARROW} ARID ISLAND"), MSGBOX_SIGN)
 }
 
 script CentralSea_EventScript_RouteSignWest {
-    msgbox(format("CENTRAL SEA\n{LEFT_ARROW} IGNEOUS ISLAND"), MSGBOX_SIGN)
+    msgbox(format("CENTRAL SEA\p{LEFT_ARROW} IGNEOUS ISLAND"), MSGBOX_SIGN)
+}
+
+script CentralSea_EventScript_RouteSignSouth {
+    msgbox(format("CENTRAL SEA\p{UP_ARROW} IGNEOUS ISLAND\n{DOWN_ARROW} GATEWAY ISLAND"), MSGBOX_SIGN)
 }
 
 script CentralSea_EventScript_Swimmer {
@@ -91,6 +95,16 @@ script CentralSea_EventScript_Landon {
 script CentralSea_EventScript_Richmond {
     trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_RICHMOND, 0, format("Watch out for deep water!"), format("Gah!"))
 	msgbox(format("I wonder what's down there in the deep water? I could ride down on my POKéMON and see."), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Melody {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_MELODY, 0, format("Halt! Are you tough enough to pass?"), format("You may pass!"))
+	msgbox(format("Trainers around these parts are tough. I'm just making sure you're ready!"), MSGBOX_NPC)
+}
+
+script CentralSea_EventScript_Augustus {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_AUGUSTUS, 0, format("I went DIVING! Look what I caught!"), format("Buh…?"))
+	msgbox(format("There are lots of unique POKéMON on the ocean floor."), MSGBOX_NPC)
 }
 
 script CentralSea_EventScript_ItemNetBall {

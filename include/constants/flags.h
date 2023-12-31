@@ -682,8 +682,8 @@
 #define FLAG_HIDDEN_ITEM_IGNEOUS_CLIMB_PP_UP            0x27E
 #define FLAG_HIDDEN_ITEM_IGNEOUS_CALDERA_MAX_ETHER      0x27F
 #define FLAG_HIDDEN_ITEM_IGNEOUS_CALDERA_MAX_REVIVE     0x280
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
+#define FLAG_HIDDEN_ITEM_SOUTHWEST_SEA_HEART_SCALE      0x281
+#define FLAG_HIDDEN_ITEM_SOUTHWEST_SEA_MAX_ELIXIR       0x282
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag
@@ -1258,8 +1258,8 @@
 #define FLAG_ITEM_IGNEOUS_CALDERA_BURN_HEAL                         0x4B5
 #define FLAG_ITEM_IGNEOUS_CALDERA_FIRE_STONE                        0x4B6
 #define FLAG_ITEM_IGNEOUS_CALDERA_ANCIENT_SLAB                      0x4B7
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
+#define FLAG_ITEM_SOUTHWEST_SEA_TM18                                0x4B8
+#define FLAG_ITEM_SOUTHWEST_SEA_HYPER_POTION                        0x4B9
 #define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
 #define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
 #define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag

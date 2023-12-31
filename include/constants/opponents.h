@@ -110,13 +110,13 @@
 #define TRAINER_YURI                        106 // Battle Grotto
 #define TRAINER_VINCENT                     107 // Battle Grotto
 #define TRAINER_TAMARA                      108 // Battle Grotto
-#define TRAINER_TASHA                       109
-#define TRAINER_VALERIE_2                   110
-#define TRAINER_VALERIE_3                   111
-#define TRAINER_VALERIE_4                   112
-#define TRAINER_VALERIE_5                   113
-#define TRAINER_CINDY_1                     114
-#define TRAINER_DAPHNE                      115
+#define TRAINER_TASHA                       109 // new
+#define TRAINER_HANK                        110 // new
+#define TRAINER_HIBIKI                      111 // new
+#define TRAINER_TINA                        112 // new
+#define TRAINER_ELWYN                       113 // new
+#define TRAINER_MELODY                      114 // new
+#define TRAINER_AUGUSTUS                    115 // new
 #define TRAINER_GRUNT_SPACE_CENTER_2        116
 #define TRAINER_CINDY_2                     117
 #define TRAINER_BRIANNA                     118

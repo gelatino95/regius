@@ -1,1 +1,72 @@
 mapscripts SouthwestSea_MapScripts {}
+
+script SouthwestSea_EventScript_SubstituteTutor {
+    lock
+    faceplayer
+	msgbox(format("I feel a little out of place around really talented TRAINERS.\pDon't you ever feel that way?\nCome on, put yourself in my shoes!\pWould it help if I teach the move SUBSTITUTE to your POKéMON?\lI'll do it for a HEART SCALE."), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) { //player says no
+        goto(SouthwestSea_EventScript_SubstituteDeclined)
+    }
+    checkitem(ITEM_HEART_SCALE)
+    if (!var(VAR_RESULT)) { //player doesn't have heart scale
+        msgbox(format("Sorry, I can't help you without a HEART SCALE. Another time?"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    msgbox(format("Which POKéMON should learn SUBSTITUTE?"), MSGBOX_DEFAULT)
+    setvar(VAR_0x8005, TUTOR_MOVE_SUBSTITUTE)
+    call(MoveTutor_EventScript_OpenPartyMenu)
+    if (var(VAR_RESULT) == 0) { //player cancels
+        goto(SouthwestSea_EventScript_SubstituteDeclined)
+    }
+    msgbox(format("{PLAYER} handed over one HEART SCALE."), MSGBOX_DEFAULT)
+    removeitem(ITEM_HEART_SCALE)
+    release
+    end
+}
+
+script SouthwestSea_EventScript_SubstituteDeclined {
+	msgbox(format("Well, okay. Thanks for the conversation."), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script SouthwestSea_EventScript_PlusIslandSign {
+	msgbox(format("PLUS ISLAND"), MSGBOX_SIGN)
+	end
+}
+
+script SouthwestSea_EventScript_ItemTM18 {
+	finditem(ITEM_TM18)
+	end
+}
+
+script SouthwestSea_EventScript_ItemHyperPotion {
+	finditem(ITEM_HYPER_POTION)
+	end
+}
+
+script SouthwestSea_EventScript_Hank {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_HANK, 0, format("Ho there! Don't get tangled in my line!"), format("Catch and release, huh?"))
+	msgbox(format("Listen, I'm just here to fish, okay?"), MSGBOX_NPC)
+}
+
+script SouthwestSea_EventScript_Tasha {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_TASHA, 0, format("Heeeey! Come over and play!"), format("Not like that!"))
+	msgbox(format("The waves are so bouncy around here!"), MSGBOX_NPC)
+}
+
+script SouthwestSea_EventScript_Hibiki {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_HIBIKI, 0, format("Won't you join me in this little slice of paradise?"), format("Ah…"))
+	msgbox(format("Little patches of green like this make the trip across the sea worth it."), MSGBOX_NPC)
+}
+
+script SouthwestSea_EventScript_Tina {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_TINA, 0, format("Excuse us! We're trying to train here!"), format("Unbelievable!"))
+	msgbox(format("By training against someone of equal skill, you can both reach new heights you never dreamed of."), MSGBOX_NPC)
+}
+
+script SouthwestSea_EventScript_Elwyn {
+	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ELWYN, 0, format("So you want to join in on our sparring session, do you?"), format("Impossible!"))
+	msgbox(format("There's no better way to become stronger than to join forces with others."), MSGBOX_NPC)
+}

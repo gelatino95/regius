@@ -13458,6 +13458,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SOUTHWEST_SEA",
+          "base_label": "gSouthwestSea0",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PLUSLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_ODDISH"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PLUSLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_CHICKLET"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PLUSLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_CHICKLET"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PLUSLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_ODDISH"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PLUSLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_GLOOM"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PLUSLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_GLOOM"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_LITTURCH"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_KELPENT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_PELURCHIN"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_HELIMAW"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_QWILFISH"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 28,
+                "species": "SPECIES_GYARADOS"
+              }
+            ]
+          }
         }
       ]
     },
