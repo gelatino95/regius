@@ -1792,8 +1792,8 @@ static void DebugAction_Util_PoisonMons(u8 taskId)
     for (i = 0; i < PARTY_SIZE; i++)
     {
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, 0)
-            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2) != SPECIES_NONE
-            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2) != SPECIES_EGG)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG)
         {
             u32 curStatus = STATUS1_POISON;
             SetMonData(&gPlayerParty[i], MON_DATA_STATUS, &curStatus);
@@ -3441,7 +3441,7 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
     }
 
     if (i >= PARTY_SIZE)
-        sentToPc = SendMonToPC(&mon);
+        sentToPc = CopyMonToPC(&mon);
     else
     {
         sentToPc = MON_GIVEN_TO_PARTY;
@@ -3846,7 +3846,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_MT_CHIMNEY, "MUS-MT-CHIMNEY") \
     X(MUS_ENCOUNTER_FEMALE, "MUS-ENCOUNTER-FEMALE") \
     X(MUS_LILYCOVE, "MUS-LILYCOVE") \
-    X(MUS_ROUTE111, "MUS-ROUTE111") \
+    X(MUS_DESERT, "MUS-ROUTE111") \
     X(MUS_HELP, "MUS-HELP") \
     X(MUS_UNDERWATER, "MUS-UNDERWATER") \
     X(MUS_VICTORY_TRAINER, "MUS-VICTORY-TRAINER") \

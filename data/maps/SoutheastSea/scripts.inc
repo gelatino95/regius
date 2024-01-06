@@ -45,7 +45,7 @@ SoutheastSea_EventScript_FishingClub::
 SoutheastSea_EventScript_SurfNPC::
 	lock
 	faceplayer
-	goto_if_unset FLAG_RECEIVED_HM03, SoutheastSea_EventScript_SurfNPC_2
+	goto_if_unset FLAG_RECEIVED_HM_SURF, SoutheastSea_EventScript_SurfNPC_2
 SoutheastSea_EventScript_SurfNPC_1:
 	msgbox SoutheastSea_EventScript_SurfNPC_Text_1, MSGBOX_AUTOCLOSE
 	release
@@ -54,7 +54,7 @@ SoutheastSea_EventScript_SurfNPC_1:
 SoutheastSea_EventScript_SurfNPC_2:
 	msgbox SoutheastSea_EventScript_SurfNPC_Text_0, MSGBOX_DEFAULT
 	giveitem ITEM_HM03, 1
-	setflag FLAG_RECEIVED_HM03
+	setflag FLAG_RECEIVED_HM_SURF
 	goto SoutheastSea_EventScript_SurfNPC_1
 
 

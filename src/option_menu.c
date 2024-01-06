@@ -1,19 +1,19 @@
 #include "global.h"
 #include "option_menu.h"
-#include "main.h"
-#include "menu.h"
-#include "scanline_effect.h"
-#include "palette.h"
-#include "sprite.h"
-#include "task.h"
-#include "malloc.h"
 #include "bg.h"
 #include "gpu_regs.h"
-#include "window.h"
+#include "international_string_util.h"
+#include "main.h"
+#include "menu.h"
+#include "palette.h"
+#include "scanline_effect.h"
+#include "sprite.h"
+#include "strings.h"
+#include "task.h"
+#include "malloc.h"
 #include "text.h"
 #include "text_window.h"
-#include "international_string_util.h"
-#include "strings.h"
+#include "window.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
 
@@ -24,7 +24,6 @@ enum
     MENU_COUNT,
 };
 
-// Menu items
 enum
 {
     MENUITEM_MAIN_TEXTSPEED,
@@ -48,7 +47,6 @@ enum
     MENUITEM_CUSTOM_COUNT,
 };
 
-// Window Ids
 enum
 {
     WIN_TOPBAR,
@@ -577,12 +575,12 @@ void CB2_InitOptionMenu(void)
         gMain.state++;
         break;
     case 4:
-        LoadPalette(sOptionMenuBg_Pal, 0, sizeof(sOptionMenuBg_Pal));
-        LoadPalette(GetWindowFrameTilesPal(gSaveBlock2Ptr->optionsWindowFrameType)->pal, 0x70, 0x20);
+        LoadPalette(sOptionMenuBg_Pal, BG_PLTT_ID(0), sizeof(sOptionMenuBg_Pal));
+        LoadPalette(GetWindowFrameTilesPal(gSaveBlock2Ptr->optionsWindowFrameType)->pal, BG_PLTT_ID(7), PLTT_SIZE_4BPP);
         gMain.state++;
         break;
     case 5:
-        LoadPalette(sOptionMenuText_Pal, 16, sizeof(sOptionMenuText_Pal));
+        LoadPalette(sOptionMenuText_Pal, BG_PLTT_ID(1), sizeof(sOptionMenuText_Pal));
         gMain.state++;
         break;
     case 6:
@@ -789,7 +787,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsUnitSystem       = sOptions->sel_custom[MENUITEM_CUSTOM_UNIT_SYSTEM];
     gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel_custom[MENUITEM_CUSTOM_FRAMETYPE];
 
-    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
 }
 
@@ -1111,7 +1109,7 @@ static void DrawChoices_FrameType(int selection, int y)
     {
         text[i] = n % 10 + CHAR_0;
         i++;
-        text[i] = 0x77;
+        text[i] = CHAR_SPACER;
         i++;
     }
 

@@ -5,10 +5,10 @@ KapokIsland_House1_MapScripts::
 KapokIsland_House1_EventScript_Beauty::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM44, KapokIsland_House1_EventScript_Beauty_2
+	goto_if_set FLAG_RECEIVED_TM_REST, KapokIsland_House1_EventScript_Beauty_2
 	msgbox KapokIsland_House1_EventScript_Beauty_Text_1, MSGBOX_DEFAULT
 	giveitem ITEM_TM44
-	setflag FLAG_RECEIVED_TM44
+	setflag FLAG_RECEIVED_TM_REST
 	msgbox KapokIsland_House1_EventScript_Beauty_Text_2, MSGBOX_DEFAULT
 KapokIsland_House1_EventScript_Beauty_1:
 	release

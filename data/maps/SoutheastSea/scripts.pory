@@ -37,10 +37,10 @@ script SoutheastSea_EventScript_FishingClub {
 script SoutheastSea_EventScript_SurfNPC {
 	lock
 	faceplayer
-	if (!flag(FLAG_RECEIVED_HM03)) {
+	if (!flag(FLAG_RECEIVED_HM_SURF)) {
 		msgbox(format("Ah, {PLAYER}!\nFinally setting off on your own?\pIf you want to travel between\nthe islands, you'll need this."), MSGBOX_DEFAULT)
 		giveitem(ITEM_HM03, 1)
-		setflag(FLAG_RECEIVED_HM03)
+		setflag(FLAG_RECEIVED_HM_SURF)
 	}
 	msgbox(format("That HM contains SURF.\pNot only will it let your POKéMON\ncarry you across the ocean,\lbut it's also great in battle!\pOh! But teaching the move isn't\nnecessary to use it in the field.\pAs long as your POKéMON is\ncapable of learning it,\ljust owning the HM is good enough!\pGo on, just face the water\nand give it a try!"), MSGBOX_AUTOCLOSE)
 	release

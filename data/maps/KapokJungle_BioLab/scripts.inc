@@ -146,10 +146,10 @@ KapokJungle_BioLab_EventScript_FossilMan_ChooseFossil_26:
 KapokJungle_BioLab_EventScript_Scientist::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_HM07, KapokJungle_BioLab_EventScript_Scientist_2
+	goto_if_set FLAG_RECEIVED_HM_WATERFALL, KapokJungle_BioLab_EventScript_Scientist_2
 	msgbox KapokJungle_BioLab_EventScript_Scientist_Text_1, MSGBOX_DEFAULT
 	giveitem ITEM_HM07
-	setflag FLAG_RECEIVED_HM07
+	setflag FLAG_RECEIVED_HM_WATERFALL
 KapokJungle_BioLab_EventScript_Scientist_1:
 	release
 	end

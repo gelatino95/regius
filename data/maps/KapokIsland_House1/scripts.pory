@@ -3,7 +3,7 @@ mapscripts KapokIsland_House1_MapScripts {}
 script KapokIsland_House1_EventScript_Beauty {
 	lock
 	faceplayer
-	if (flag(FLAG_RECEIVED_TM44))
+	if (flag(FLAG_RECEIVED_TM_REST))
 	{
 		msgbox(format("Do you ever wonder how POKéMON find time to nap in the middle of a battle?"), MSGBOX_DEFAULT)
 	}
@@ -11,7 +11,7 @@ script KapokIsland_House1_EventScript_Beauty {
 	{
 		msgbox(format("You traveled all the way from GATEWAY ISLAND? You must be tired.\lYour POKéMON, too.\pHere, I'm sure your team could use this."), MSGBOX_DEFAULT)
 		giveitem(ITEM_TM44)
-		setflag(FLAG_RECEIVED_TM44)
+		setflag(FLAG_RECEIVED_TM_REST)
 		msgbox(format("TM44 contains REST.\pEven the middle of a battle is a fine place to take a break."), MSGBOX_DEFAULT)
 	}
 	release

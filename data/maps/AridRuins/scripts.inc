@@ -128,7 +128,7 @@ AridRuins_EventScript_RockSmashGuy::
 	faceplayer
 	msgbox AridRuins_EventScript_RockSmashGuy_Text_0, MSGBOX_DEFAULT
 	giveitem ITEM_HM06, 1
-	setflag FLAG_RECEIVED_HM06
+	setflag FLAG_RECEIVED_HM_ROCK_SMASH
 	msgbox AridRuins_EventScript_RockSmashGuy_Text_1, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
