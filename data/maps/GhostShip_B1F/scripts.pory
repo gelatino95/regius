@@ -157,7 +157,7 @@ script GhostShip_EventScript_DusclopsEncounter {
 	dowildbattle
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar(VAR_RESULT, GetBattleOutcome)
-	if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED) {
+	if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED) {
 		fadescreen(1)
 		setflag(FLAG_GHOST_SHIP_HIDE_EVENT_DUSCLOPS)
 		removeobject(3)
