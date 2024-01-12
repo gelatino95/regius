@@ -2588,15 +2588,13 @@ void CreateMaleMon(struct Pokemon *mon, u16 species, u8 level)
 void CreateFemaleMon(struct Pokemon *mon, u16 species, u8 level)
 {
     u32 personality;
-    u32 otId;
 
     do
     {
-        otId = Random32();
         personality = Random32();
     }
     while (GetGenderFromSpeciesAndPersonality(species, personality) == MON_MALE);
-    CreateMon(mon, species, level, USE_RANDOM_IVS, 1, personality, OT_ID_PRESET, otId);
+    CreateMon(mon, species, level, USE_RANDOM_IVS, 1, personality, OT_ID_PLAYER_ID, 0);
 }
 
 void CreateMonWithIVsPersonality(struct Pokemon *mon, u16 species, u8 level, u32 ivs, u32 personality)

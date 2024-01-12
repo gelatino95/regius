@@ -202,6 +202,8 @@ GhostShip_EventScript_DusclopsEncounter::
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq GhostShip_EventScript_DusclopsEncounter_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq GhostShip_EventScript_DusclopsEncounter_2
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq GhostShip_EventScript_DusclopsEncounter_2
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED

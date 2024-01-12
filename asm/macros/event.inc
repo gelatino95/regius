@@ -1759,14 +1759,6 @@
 	.2byte \item
 	.2byte \quantity
 	.endm
-	
-	@ Checks if at least one Pokemon in the player's party can learn the specified (index) TM or HM. If so, VAR_RESULT is set to the
-	@ (zero-indexed) slot number of the first Pokemon that knows the move. If not, VAR_RESULT is set to PARTY_SIZE.
-	@ VAR_0x8004 is also set to this Pokemon's species.
-	.macro checkpartytmhm index:req
-	.byte 0xe3
-	.2byte \index
-	.endm
 
 	.macro _dynmultichoice left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req argv:vararg
 	.byte 0xe3
@@ -1798,6 +1790,14 @@
 
 	.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
+	.endm
+
+	@ Checks if at least one Pokemon in the player's party can learn the specified (index) TM or HM. If so, VAR_RESULT is set to the
+	@ (zero-indexed) slot number of the first Pokemon that knows the move. If not, VAR_RESULT is set to PARTY_SIZE.
+	@ VAR_0x8004 is also set to this Pokemon's species.
+	.macro checkpartytmhm index:req
+	.byte 0xe5
+	.2byte \index
 	.endm
 
 
