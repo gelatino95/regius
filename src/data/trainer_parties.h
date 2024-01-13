@@ -1149,12 +1149,12 @@ static const struct TrainerMon sParty_Richmond[] = {
 static const struct TrainerMon sParty_Albert[] = {
     {
     .iv = 0,
-    .lvl = 30,
+    .lvl = 28,
     .species = SPECIES_LEVILITH,
     },
     {
     .iv = 0,
-    .lvl = 30,
+    .lvl = 28,
     .species = SPECIES_NUMEL,
     }
 };
@@ -1162,22 +1162,22 @@ static const struct TrainerMon sParty_Albert[] = {
 static const struct TrainerMon sParty_Janet[] = {
     {
     .iv = 50,
-    .lvl = 28,
+    .lvl = 26,
     .species = SPECIES_BELLOSSOM,
     },
     {
     .iv = 50,
-    .lvl = 28,
+    .lvl = 26,
     .species = SPECIES_CEBORA,
     },
     {
     .iv = 50,
-    .lvl = 28,
+    .lvl = 26,
     .species = SPECIES_FRIGALA,
     },
     {
     .iv = 50,
-    .lvl = 28,
+    .lvl = 26,
     .species = SPECIES_SKARMORY,
     }
 };
@@ -1185,17 +1185,17 @@ static const struct TrainerMon sParty_Janet[] = {
 static const struct TrainerMon sParty_Vito[] = {
     {
     .iv = 0,
-    .lvl = 29,
+    .lvl = 27,
     .species = SPECIES_MINUN,
     },
     {
     .iv = 0,
-    .lvl = 29,
+    .lvl = 27,
     .species = SPECIES_PLUSLE,
     },
     {
     .iv = 0,
-    .lvl = 29,
+    .lvl = 27,
     .species = SPECIES_AMPEDO,
     }
 };

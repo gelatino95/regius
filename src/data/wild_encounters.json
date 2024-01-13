@@ -11742,63 +11742,63 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_NUMEL"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_NUMEL"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_NUMEL"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_ELASTRIKE"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_ELASTRIKE"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_SKARMORY"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 22,
+                "max_level": 26,
                 "species": "SPECIES_ELASTRIKE"
               },
               {
-                "min_level": 31,
-                "max_level": 32,
+                "min_level": 27,
+                "max_level": 28,
                 "species": "SPECIES_SKARMORY"
               },
               {
-                "min_level": 31,
-                "max_level": 32,
+                "min_level": 27,
+                "max_level": 28,
                 "species": "SPECIES_ELASTRIKE"
               }
             ]
@@ -11811,59 +11811,59 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGVA"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_KOFFING"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGVA"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_KOFFING"
               },
               {
-                "min_level": 29,
-                "max_level": 30,
+                "min_level": 24,
+                "max_level": 28,
                 "species": "SPECIES_MAGVA"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGBY"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGBY"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_MAGMACLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_MAGBY"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
                 "species": "SPECIES_MAGMACLE"
               },
               {
                 "min_level": 29,
                 "max_level": 30,
-                "species": "SPECIES_MAGBY"
-              },
-              {
-                "min_level": 26,
-                "max_level": 30,
-                "species": "SPECIES_MAGMACLE"
-              },
-              {
-                "min_level": 29,
-                "max_level": 30,
-                "species": "SPECIES_MAGBY"
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 26,
@@ -13367,59 +13367,59 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGVA"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_KOFFING"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGVA"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_KOFFING"
               },
               {
-                "min_level": 29,
-                "max_level": 30,
+                "min_level": 24,
+                "max_level": 28,
                 "species": "SPECIES_MAGVA"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGBY"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_MAGBY"
               },
               {
-                "min_level": 26,
-                "max_level": 30,
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_MAGMACLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_MAGBY"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
                 "species": "SPECIES_MAGMACLE"
               },
               {
                 "min_level": 29,
                 "max_level": 30,
-                "species": "SPECIES_MAGBY"
-              },
-              {
-                "min_level": 26,
-                "max_level": 30,
-                "species": "SPECIES_MAGMACLE"
-              },
-              {
-                "min_level": 29,
-                "max_level": 30,
-                "species": "SPECIES_MAGBY"
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 26,
