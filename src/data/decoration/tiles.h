@@ -591,7 +591,7 @@ const u16 DecorGfx_BALL_CUSHION[] = {
 };
 
 const u16 DecorGfx_GRASS_CUSHION[] = {
-    OBJ_EVENT_GFX_GRASS_CUSHION
+    OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER
 };
 
 const u16 DecorGfx_FIRE_CUSHION[] = {

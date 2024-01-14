@@ -2276,3 +2276,7 @@ static const struct SpriteFrameImage sPicTable_DiverF[] = {
     overworld_frame(gObjectEventPic_DiverF, 2, 4, 7),
     overworld_frame(gObjectEventPic_DiverF, 2, 4, 8),
 };
+
+static const struct SpriteFrameImage sPicTable_ItemBallUnderwater[] = {
+    obj_frame_tiles(gObjectEventPic_ItemBallUnderwater),
+};

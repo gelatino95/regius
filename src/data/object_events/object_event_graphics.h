@@ -375,3 +375,4 @@ const u32 gObjectEventPic_Litturch[] = INCBIN_U32("graphics/object_events/pics/p
 const u32 gObjectEventPic_Book[] = INCBIN_U32("graphics/object_events/pics/misc/book.4bpp");
 const u32 gObjectEventPic_DiverM[] = INCBIN_U32("graphics/object_events/pics/people/diver_m.4bpp");
 const u32 gObjectEventPic_DiverF[] = INCBIN_U32("graphics/object_events/pics/people/diver_f.4bpp");
+const u32 gObjectEventPic_ItemBallUnderwater[] = INCBIN_U32("graphics/object_events/pics/misc/item_ball_underwater.4bpp");

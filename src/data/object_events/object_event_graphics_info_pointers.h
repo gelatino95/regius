@@ -252,6 +252,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Book;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Litturch;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverM;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverF;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBallUnderwater;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -429,7 +430,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 //    [OBJ_EVENT_GFX_SPIN_CUSHION] =             &gObjectEventGraphicsInfo_SpinCushion,
 //    [OBJ_EVENT_GFX_DIAMOND_CUSHION] =          &gObjectEventGraphicsInfo_DiamondCushion,
 //    [OBJ_EVENT_GFX_BALL_CUSHION] =             &gObjectEventGraphicsInfo_BallCushion,
-    [OBJ_EVENT_GFX_GRASS_CUSHION] =            &gObjectEventGraphicsInfo_GrassCushion,
+//    [OBJ_EVENT_GFX_GRASS_CUSHION] =            &gObjectEventGraphicsInfo_GrassCushion,
     [OBJ_EVENT_GFX_FIRE_CUSHION] =             &gObjectEventGraphicsInfo_FireCushion,
     [OBJ_EVENT_GFX_WATER_CUSHION] =            &gObjectEventGraphicsInfo_WaterCushion,
     [OBJ_EVENT_GFX_BIG_SNORLAX_DOLL] =         &gObjectEventGraphicsInfo_BigSnorlaxDoll,
@@ -501,6 +502,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LITTURCH] =                 &gObjectEventGraphicsInfo_Litturch,
     [OBJ_EVENT_GFX_DIVER_M] =                  &gObjectEventGraphicsInfo_DiverM,
     [OBJ_EVENT_GFX_DIVER_F] =                  &gObjectEventGraphicsInfo_DiverF,
+    [OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER] =     &gObjectEventGraphicsInfo_ItemBallUnderwater,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
