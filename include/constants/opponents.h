@@ -117,12 +117,12 @@
 #define TRAINER_ELWYN                       113 // new
 #define TRAINER_MELODY                      114 // new
 #define TRAINER_AUGUSTUS                    115 // new
-#define TRAINER_GRUNT_SPACE_CENTER_2        116
-#define TRAINER_CINDY_2                     117
-#define TRAINER_BRIANNA                     118
-#define TRAINER_NAOMI                       119
-#define TRAINER_CINDY_3                     120
-#define TRAINER_CINDY_4                     121
+#define TRAINER_TULIO                       116 // new
+#define TRAINER_NATALIE                     117 // new
+#define TRAINER_IKECHI                      118 // new
+#define TRAINER_NAOMI                       119 // new
+#define TRAINER_FRANCINE                    120 // new
+#define TRAINER_MILES                       121 // new
 #define TRAINER_CINDY_5                     122
 #define TRAINER_CINDY_6                     123
 #define TRAINER_MELISSA                     124

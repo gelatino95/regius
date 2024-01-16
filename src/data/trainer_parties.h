@@ -1781,67 +1781,103 @@ static const struct TrainerMon sParty_Augustus[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntSpaceCenter2[] = {
+static const struct TrainerMon sParty_Tulio[] = {
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_MIGHTYENA,
+    .lvl = 28,
+    .species = SPECIES_GOREBYSS,
     },
     {
     .iv = 0,
     .lvl = 28,
-    .species = SPECIES_MIGHTYENA,
+    .species = SPECIES_HUNTAIL,
+    }
+};
+
+static const struct TrainerMon sParty_Natalie[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_CEBORA,
     },
     {
     .iv = 0,
-    .lvl = 30,
-    .species = SPECIES_NUMEL,
-    }
-};
-
-static const struct TrainerMon sParty_Cindy2[] = {
+    .lvl = 26,
+    .species = SPECIES_CORSOLA,
+    },
     {
     .iv = 0,
-    .lvl = 11,
-    .species = SPECIES_ZIGZAGOON,
-    .heldItem = ITEM_NUGGET,
-    .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE}
+    .lvl = 26,
+    .species = SPECIES_CEBORA,
+    },
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_CORSOLA,
     }
 };
 
-static const struct TrainerMon sParty_Brianna[] = {
+static const struct TrainerMon sParty_Ikechi[] = {
     {
-    .iv = 150,
-    .lvl = 40,
-    .species = SPECIES_SEAKING,
-    .heldItem = ITEM_NUGGET
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_CHINCHOU,
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_CHINCHOU,
     }
 };
 
 static const struct TrainerMon sParty_Naomi[] = {
     {
-    .iv = 100,
-    .lvl = 45,
-    .species = SPECIES_ROSELIA,
-    .heldItem = ITEM_NUGGET
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_HORSEA,
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_OCTILLERY,
     }
 };
 
-static const struct TrainerMon sParty_Cindy3[] = {
+static const struct TrainerMon sParty_Francine[] = {
     {
-    .iv = 10,
-    .lvl = 27,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NUGGET
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_RADULIN,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_CLAMPERL,
+    .heldItem = ITEM_DEEP_SEA_SCALE,
+    .moves = {MOVE_WATER_PULSE, MOVE_CLAMP, MOVE_IRON_DEFENSE, MOVE_WHIRLPOOL}
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_PELURCHIN,
     }
 };
 
-static const struct TrainerMon sParty_Cindy4[] = {
+static const struct TrainerMon sParty_Miles[] = {
     {
-    .iv = 20,
-    .lvl = 30,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NUGGET
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_GYARADOS,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_FRIGALA,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_RELICANTH,
     }
 };
 

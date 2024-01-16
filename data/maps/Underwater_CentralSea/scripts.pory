@@ -1,6 +1,47 @@
 mapscripts Underwater_CentralSea_MapScripts {}
 
-script Underwater_CentralSea_EventScript_Dahlia {
-	trainerbattle_single(TRAINER_DAHLIA, format("There are so many lovely corals around here!"), format("Oh no! My corals!"))
-	msgbox(format("Corals may seem peaceful, but they don't get along with each other well."), MSGBOX_AUTOCLOSE)
+script Underwater_CentralSea_EventScript_Tulio {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_TULIO, 0, format("Are you hunting for treasure?"), format("Alright, alright!"))
+	msgbox(format("Lots of stuff sinks to the sea floor.\nIt's all free for the taking!"), MSGBOX_NPC)
+    end
+}
+
+script Underwater_CentralSea_EventScript_Natalie {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_NATALIE, 0, format("Look at my precious corals!"), format("My corals!"))
+	msgbox(format("Corals may look friendly, but they\nactually don't get along too well\lwith each other."), MSGBOX_NPC)
+    end
+}
+
+script Underwater_CentralSea_EventScript_Ikechi {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_IKECHI, 0, format("From east to west, we're the best!"), format("Not the best!"))
+	msgbox(format("The tunnel over there is a shortcut to the other side of the ARCHIPELAGO.\lNifty, huh?"), MSGBOX_NPC)
+    end
+}
+
+script Underwater_CentralSea_EventScript_Naomi {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_NAOMI, 0, format("From south to north, we'll prove our worth!"), format("I'm not worthy!"))
+	msgbox(format("You can reach most places in the region by traveling underwater."), MSGBOX_NPC)
+    end
+}
+
+script Underwater_CentralSea_EventScript_Francine {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_FRANCINE, 0, format("Hey, nice ride!\nMind giving me a turn?"), format("Message received!"))
+	msgbox(format("Having a POKéMON to guide you while DIVING is such a magical experience!"), MSGBOX_NPC)
+    end
+}
+
+script Underwater_CentralSea_EventScript_Miles {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_MILES, 0, format("You're a new face!\nWhat brings you down here?"), format("Erm…"))
+	msgbox(format("DIVING is a popular activity around here.\pWe love seeing new faces on the sea floor!"), MSGBOX_NPC)
+    end
+}
+
+script Underwater_CentralSea_EventScript_ItemDeepSeaScale {
+	finditem(ITEM_DEEP_SEA_SCALE)
+	end
+}
+
+script Underwater_CentralSea_EventScript_ItemDiveBall {
+	finditem(ITEM_DIVE_BALL)
+	end
 }
