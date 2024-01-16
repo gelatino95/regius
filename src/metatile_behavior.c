@@ -818,6 +818,10 @@ bool8 MetatileBehavior_IsBridgeOverWaterNoEdge(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
 {
+    //Added to make seaweed use grass encounter table:
+    if (metatileBehavior == MB_SEAWEED || metatileBehavior == MB_SEAWEED_NO_SURFACING)
+        return TRUE;
+
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
      && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
         return TRUE;

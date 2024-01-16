@@ -13612,6 +13612,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_UNDERWATER_CENTRAL_SEA",
+          "base_label": "gUnderwater_CentralSea0",
+          "land_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CEBORA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CEBORA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_COWRENSEA"
+              }
+            ]
+          }
         }
       ]
     },
