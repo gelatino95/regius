@@ -1,1 +1,16 @@
 mapscripts Underwater_SouthwestSea_MapScripts {}
+
+script Underwater_SouthwestSea_EventScript_Diver {
+    msgbox(format("Be careful in this cave system.\pIt's like a maze, and there aren't many places to surface."), MSGBOX_NPC)
+    end
+}
+
+script Underwater_SouthwestSea_EventScript_ItemDeepSeaTooth {
+    finditem(ITEM_DEEP_SEA_TOOTH)
+    end
+}
+
+script Underwater_SouthwestSea_EventScript_ItemTM26 {
+    finditem(ITEM_TM26)
+    end
+}

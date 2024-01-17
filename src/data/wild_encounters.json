@@ -13429,7 +13429,7 @@
             ]
           },
           "rock_smash_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 26,
@@ -13463,7 +13463,7 @@
           "map": "MAP_SOUTHWEST_SEA",
           "base_label": "gSouthwestSea0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 24,
@@ -13528,7 +13528,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 4,
             "mons": [
               {
                 "min_level": 20,
@@ -13558,7 +13558,7 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 30,
             "mons": [
               {
                 "min_level": 5,
@@ -13606,7 +13606,7 @@
                 "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
+                "min_level": 24,
                 "max_level": 28,
                 "species": "SPECIES_GYARADOS"
               }
@@ -13617,7 +13617,7 @@
           "map": "MAP_UNDERWATER_CENTRAL_SEA",
           "base_label": "gUnderwater_CentralSea0",
           "land_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 22,
@@ -13673,6 +13673,75 @@
                 "min_level": 22,
                 "max_level": 26,
                 "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_COWRENSEA"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_UNDERWATER_SOUTHWEST_SEA",
+          "base_label": "gUnderwater_SouthwestSea0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CEBORA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CEBORA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_LIMPACLE"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_LIMPACLE"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 27,
+                "max_level": 28,
+                "species": "SPECIES_LIMPACLE"
               },
               {
                 "min_level": 22,
