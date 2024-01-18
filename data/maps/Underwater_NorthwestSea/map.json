@@ -21,7 +21,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_FOSSIL_UNDERWATER",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER",
       "x": 54,
       "y": 11,
       "elevation": 3,
@@ -30,8 +30,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Underwater_NorthwestSea_EventScript_ItemTM04",
+      "flag": "FLAG_ITEM_UNDERWATER_NORTHWEST_SEA_TM04"
     }
   ],
   "warp_events": [
@@ -41,6 +41,45 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 51,
+      "y": 22,
+      "elevation": 0,
+      "item": "ITEM_BIG_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_BIG_PEARL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 55,
+      "y": 23,
+      "elevation": 0,
+      "item": "ITEM_MAX_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_MAX_REVIVE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 52,
+      "y": 24,
+      "elevation": 0,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_HEART_SCALE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 45,
+      "y": 22,
+      "elevation": 0,
+      "item": "ITEM_YELLOW_SHARD",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_YELLOW_SHARD"
+    },
+    {
+      "type": "hidden_item",
+      "x": 58,
+      "y": 18,
+      "elevation": 0,
+      "item": "ITEM_RED_SHARD",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_RED_SHARD"
+    }
   ]
 }

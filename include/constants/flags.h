@@ -691,11 +691,11 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_SOUTHWEST_SEA_HEART_SCALE     0x287
 #define FLAG_HIDDEN_ITEM_UNDERWATER_SOUTHWEST_SEA_GREEN_SHARD     0x288
 #define FLAG_HIDDEN_ITEM_UNDERWATER_SOUTHWEST_SEA_MAX_ETHER       0x289
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
-#define FLAG_UNUSED_0x28E  0x28E // Unused Flag
+#define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_BIG_PEARL       0x28A
+#define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_HEART_SCALE     0x28B
+#define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_MAX_REVIVE      0x28C
+#define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_YELLOW_SHARD    0x28D
+#define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_RED_SHARD       0x28E
 #define FLAG_UNUSED_0x28F  0x28F // Unused Flag
 #define FLAG_UNUSED_0x290  0x290 // Unused Flag
 #define FLAG_UNUSED_0x291  0x291 // Unused Flag
@@ -1264,7 +1264,7 @@
 #define FLAG_ITEM_UNDERWATER_CENTRAL_SEA_DIVE_BALL                  0x4BB
 #define FLAG_ITEM_UNDERWATER_SOUTHWEST_SEA_DEEP_SEA_TOOTH           0x4BC
 #define FLAG_ITEM_UNDERWATER_SOUTHWEST_SEA_TM26                     0x4BD
-#define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
+#define FLAG_ITEM_UNDERWATER_NORTHWEST_SEA_TM04                     0x4BE
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
 #define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag

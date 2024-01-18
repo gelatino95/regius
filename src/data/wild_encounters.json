@@ -13750,6 +13750,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_UNDERWATER_NORTHWEST_SEA",
+          "base_label": "gUnderwater_NorthwestSea0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_COWRENSEA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_COWRENSEA"
+              },
+              {
+                "min_level": 27,
+                "max_level": 28,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 27,
+                "max_level": 28,
+                "species": "SPECIES_COWRENSEA"
+              }
+            ]
+          }
         }
       ]
     },
