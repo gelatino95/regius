@@ -1,1 +1,91 @@
 mapscripts SouthwestSea_House1_MapScripts {}
+
+script SouthwestSea_House1_EventScript_Man {
+    if (flag(FLAG_TEMP_1)) {
+        msgbox(format("If you want to try creating your own TM, feel free to use the computer in the corner back there.\pI haven't been able to isolate the data for each TM yet, so there's no telling which one you'll get."), MSGBOX_NPC)
+        end
+    }
+    msgbox(format("Wah! Who are you?\p…Oh, you're just a TRAINER.\nThank goodness!\lI don't get many visitors out here.\pI'm doing some sensitive research here.\nI'm trying to reverse engineer TMs.\pI'm making good headway, but the process is still… inexact. And costly.\pBut hey, if you want to try creating your own TM, feel free to use the computer in the corner back there.\pI haven't been able to isolate the data for each TM yet, so there's no telling which one you'll get."), MSGBOX_NPC)
+    setflag(FLAG_TEMP_1)
+    end
+}
+
+script SouthwestSea_House1_EventScript_TMGenerator {
+    lock
+    playse(SE_PC_LOGIN)
+    msgbox(format("Welcome to the Technical Machine generator v0.12.1."), MSGBOX_DEFAULT)
+    showmoneybox(0, 0)
+    msgbox(format("Would you like to spend ¥5000 to generate a TM?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        hidemoneybox
+        playse(SE_PC_OFF)
+        msgbox(format("Logging off…"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    checkmoney(5000)
+    if (!var(VAR_RESULT)) {
+        msgbox(format("ERROR: Insufficient funds."), MSGBOX_DEFAULT)
+        hidemoneybox
+        release
+        end
+    }
+    removemoney(5000)
+    updatemoneybox
+    playse(SE_SHOP)
+    msgbox(format("Payment accepted!"), MSGBOX_DEFAULT)
+    hidemoneybox
+    msgbox(format("Copying TM data…"), MSGBOX_DEFAULT)
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_ELEVATOR)
+    delay(60)
+    playse(SE_SUCCESS)
+    delay(30)
+    fadescreen(FADE_FROM_BLACK)
+    random(50)
+    addvar(VAR_RESULT, ITEM_TM01)
+    giveitem(VAR_RESULT)
+    release
+    end
+}
+
+script SouthwestSea_House1_EventScript_Journal {
+    lock
+    msgbox(format("It's a journal of research notes, full of lots of highly technical details…\pRead the journal?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        release
+        end
+    }
+    msgbox(format("I've dumped the data from every TM I could get my hands on.\pHowever, official ones are made with a proprietary material and advanced copy protection.\pI don't have the means to make functional copies yet.\lI will work on a solution that uses conventional materials."), MSGBOX_DEFAULT)
+    msgbox(SouthwestSea_House1_Text_KeepReading, MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        release
+        end
+    }
+    msgbox(format("Regular data discs are a no-go.\pThere's something special about the way move data is transferred from disc to POKéMON that's only possible with unique manufacturing techniques.\pThis is going to be harder than I thought."), MSGBOX_DEFAULT)
+    msgbox(SouthwestSea_House1_Text_KeepReading, MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        release
+        end
+    }
+    msgbox(format("I've managed to synthesize discs that mimic the composition of official TMs, but sourcing the materials is costly.\pSomewhere down the line I'll look into cheaper alternatives, but this will allow me to continue my work for now."), MSGBOX_DEFAULT)
+    msgbox(SouthwestSea_House1_Text_KeepReading, MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        release
+        end
+    }
+    msgbox(format("Trying to circumvent copy protection has proven fruitless.\pThose SILPH engineers may be good,\nbut I'm better.\pI already have some ideas for how I can manipulate the data to bypass all these issues, but who knows if it will yield any results."), MSGBOX_DEFAULT)
+    msgbox(SouthwestSea_House1_Text_KeepReading, MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        release
+        end
+    }
+    msgbox(format("Success! I was able to fool copy protection.\pI used a quantum algorithm to combine the data of every TM in my database.\lThe copy protection can't recognize the data any more!\pDuring the copying process, I can run the data through another algorithm to collapse it into a single TM…\pUnfortunately, there's no way to know which TM will be produced this way.\pStill, I may be the first person to successfully create a bootleg TM.\lI'll consider that a win."), MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text SouthwestSea_House1_Text_KeepReading {
+    format("Keep reading?")
+}
