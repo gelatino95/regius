@@ -1265,7 +1265,7 @@
 #define FLAG_ITEM_UNDERWATER_SOUTHWEST_SEA_DEEP_SEA_TOOTH           0x4BC
 #define FLAG_ITEM_UNDERWATER_SOUTHWEST_SEA_TM26                     0x4BD
 #define FLAG_ITEM_UNDERWATER_NORTHWEST_SEA_TM04                     0x4BE
-#define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
+#define FLAG_ITEM_SLUMBER_PATH_ANCIENT_SLAB                         0x4BF
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
 #define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag

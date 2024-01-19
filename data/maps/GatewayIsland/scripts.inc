@@ -284,14 +284,14 @@ GatewayIsland_Braille_StoneGate1:
 	.braille "AWAKEN THE\n"
 	.braille "CHILDREN OF\n"
 	.braille "ROCK, ICE,\n"
-	.braille "AND STEEL.$"
+	.braille "AND STEEL$"
 	
 GatewayIsland_Braille_StoneGate2:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "THE RESTING\n"
 	.braille "PLACE OF\n"
 	.braille "THE COLOSSUS\n"
-	.braille "WILL OPEN.$"
+	.braille "WILL OPEN$"
 
 GatewayIsland_EventScript_StoneGate_Text_0:
 	.string "The way is open.$"

@@ -166,7 +166,7 @@ SouthwestSea_House1_EventScript_Journal_Text_1:
 SouthwestSea_House1_EventScript_Journal_Text_2:
 	.string "Regular data discs are a no-go.\p"
 	.string "There's something special about the\n"
-	.string "way move data is transferred from disk\l"
+	.string "way move data is transferred from disc\l"
 	.string "to POKéMON that's only possible with\l"
 	.string "unique manufacturing techniques.\p"
 	.string "This is going to be harder than I\n"

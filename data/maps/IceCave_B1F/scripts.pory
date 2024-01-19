@@ -12,7 +12,9 @@ script IceCave_B1F_EventScript_ItemUltraBall {
 
 script IceCave_B1F_EventScript_Braille_Water {
     lock
-    braillemsgbox(IceCave_B1F_Braille_Water)
+    braillemsgbox(IceCave_B1F_Braille_Water1)
+    delay(5)
+    braillemsgbox(IceCave_B1F_Braille_Water2)
     release
     end
 }
@@ -24,10 +26,17 @@ script IceCave_B1F_EventScript_Lyra {
 }
 
 raw `
-IceCave_B1F_Braille_Water:
+IceCave_B1F_Braille_Water1:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "AS LONG AS\n"
 	.braille "OUR WORKS\n"
 	.braille "STILL STAND\n"
-	.braille "WE SURVIVE.$"
+	.braille "WE SURVIVE$"
+
+IceCave_B1F_Braille_Water2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "OUR MARK ON\n"
+	.braille "THE WORLD\n"
+	.braille "WILL NEVER\n"
+	.braille "FADE AWAY$"
 `

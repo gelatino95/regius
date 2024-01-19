@@ -5,6 +5,15 @@ script IgneousCaldera_B1F_EventScript_ItemFireStone {
     end
 }
 
+script IgneousCaldera_B1F_EventScript_Braille {
+    lock
+    braillemsgbox(IgneousCaldera_B1F_Braille_Wall1)
+    delay(5)
+    braillemsgbox(IgneousCaldera_B1F_Braille_Wall2)
+    release
+    end
+}
+
 script IgneousCaldera_B1F_EventScript_Maurice {
     trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_MAURICE, 0, format("I've climbed dozens of mountains, but this one takes the cake."), format("Burnt to a crisp…"))
 	msgbox(format("Active volcanoes aren't for the faint of heart. You've got guts, kid."), MSGBOX_NPC)
@@ -16,3 +25,19 @@ script IgneousCaldera_B1F_EventScript_Giorno {
 	msgbox(format("To think that ruins could survive for thousands of years in a churning volcano… it defies belief!"), MSGBOX_NPC)
     end
 }
+
+raw `
+IgneousCaldera_B1F_Braille_Wall1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "A GREAT\n"
+	.braille "SICKNESS\n"
+	.braille "BROUGHT US\n"
+	.braille "TO RUIN$"
+
+IgneousCaldera_B1F_Braille_Wall2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "WE SEALED IT\n"
+	.braille "AWAY BUT IT\n"
+	.braille "IS TOO LATE\n"
+	.braille "FOR US$"
+`

@@ -13819,6 +13819,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SLUMBER_PATH_B1F",
+          "base_label": "gSlumberPath_B1F0",
+          "land_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 30,
+                "species": "SPECIES_LEVILITH"
+              }
+            ]
+          }
         }
       ]
     },

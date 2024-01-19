@@ -135,35 +135,35 @@ AridRuins_Braille_EastWall1:
 	.braille "THIS WAS A\n"
 	.braille "PLACE OF\n"
 	.braille "HIGH HONOR\n"
-	.braille "LONG AGO.$"
+	.braille "LONG AGO$"
 	
 AridRuins_Braille_EastWall2:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "WITNESS OUR\n"
 	.braille "GREAT WORKS\n"
 	.braille "AND FOREVER\n"
-	.braille "REMEMBER US.$"
+	.braille "REMEMBER US$"
 
 AridRuins_Braille_WestWall1:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "THE CHILDREN\n"
 	.braille "OF THE GREAT\n"
 	.braille "COLOSSUS ARE\n"
-	.braille "SEALED AWAY.$"
+	.braille "SEALED AWAY$"
 
 AridRuins_Braille_WestWall2:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "THE TITANS\n"
 	.braille "WILL SURVIVE\n"
 	.braille "EVEN AS WE\n"
-	.braille "PERISH.$"
+	.braille "PERISH$"
 
 AridRuins_Braille_ChamberDoor1:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "THE TITAN OF\n"
 	.braille "STONE AWAITS\n"
 	.braille "THE ORDER TO\n"
-	.braille "RISE AGAIN.$"
+	.braille "RISE AGAIN$"
 
 AridRuins_Braille_ChamberDoor2:
 	brailleformat 3, 0, 25, 19, 6, 3
