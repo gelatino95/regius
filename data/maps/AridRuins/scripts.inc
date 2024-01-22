@@ -101,7 +101,7 @@ AridRuins_EventScript_Regirock_1:
 	end
 
 AridRuins_EventScript_Regirock_2:
-	setflag FLAG_DEFEATED_REGIROCK
+	setflag FLAG_CAUGHT_REGIROCK
 	goto Common_EventScript_RemoveStaticPokemon
 	goto AridRuins_EventScript_Regirock_1
 

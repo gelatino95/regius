@@ -78,7 +78,7 @@
 #define FLAG_RECEIVED_LUCKY_EGG                     0x41
 #define FLAG_UNLOCKED_CAPTAINS_QUARTERS             0x42
 #define FLAG_UNLOCKED_SECRET_CABIN                  0x43
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
+#define FLAG_CAUGHT_REGIGIGAS                       0x44
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
@@ -474,9 +474,9 @@
 #define FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH  0x1B8
 #define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9
 #define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA
-#define FLAG_DEFEATED_REGIROCK               0x1BB
-#define FLAG_DEFEATED_REGICE                 0x1BC
-#define FLAG_DEFEATED_REGISTEEL              0x1BD
+#define FLAG_CAUGHT_REGIROCK                 0x1BB
+#define FLAG_CAUGHT_REGICE                   0x1BC
+#define FLAG_CAUGHT_REGISTEEL                0x1BD
 #define FLAG_DEFEATED_KYOGRE                 0x1BE
 #define FLAG_DEFEATED_GROUDON                0x1BF
 #define FLAG_DEFEATED_RAYQUAZA               0x1C0

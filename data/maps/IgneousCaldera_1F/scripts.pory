@@ -92,7 +92,7 @@ script IgneousCaldera_1F_EventScript_Registeel {
 	clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 	specialvar(VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
-        setflag(FLAG_DEFEATED_REGISTEEL)
+        setflag(FLAG_CAUGHT_REGISTEEL)
         goto(Common_EventScript_RemoveStaticPokemon)
     }
     else {

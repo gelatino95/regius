@@ -94,7 +94,7 @@ IceCave_B2F_EventScript_Regice_1:
 	end
 
 IceCave_B2F_EventScript_Regice_2:
-	setflag FLAG_DEFEATED_REGICE
+	setflag FLAG_CAUGHT_REGICE
 	goto Common_EventScript_RemoveStaticPokemon
 	goto IceCave_B2F_EventScript_Regice_1
 

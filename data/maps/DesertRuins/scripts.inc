@@ -29,7 +29,7 @@ DesertRuins_EventScript_HideRegiEntrance::
 
 DesertRuins_OnTransition:
 	setflag FLAG_LANDMARK_DESERT_RUINS
-	call_if_unset FLAG_DEFEATED_REGIROCK, DesertRuins_EventScript_ShowRegirock
+	call_if_unset FLAG_CAUGHT_REGIROCK, DesertRuins_EventScript_ShowRegirock
 	end
 
 DesertRuins_EventScript_ShowRegirock::
@@ -70,12 +70,12 @@ DesertRuins_EventScript_Regirock::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, DesertRuins_EventScript_DefeatedRegirock
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, DesertRuins_EventScript_RanFromRegirock
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, DesertRuins_EventScript_RanFromRegirock
-	setflag FLAG_DEFEATED_REGIROCK
+	setflag FLAG_CAUGHT_REGIROCK
 	release
 	end
 
 DesertRuins_EventScript_DefeatedRegirock::
-	setflag FLAG_DEFEATED_REGIROCK
+	setflag FLAG_CAUGHT_REGIROCK
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 

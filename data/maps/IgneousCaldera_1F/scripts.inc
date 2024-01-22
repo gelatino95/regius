@@ -112,7 +112,7 @@ IgneousCaldera_1F_EventScript_Registeel_1:
 	end
 
 IgneousCaldera_1F_EventScript_Registeel_2:
-	setflag FLAG_DEFEATED_REGISTEEL
+	setflag FLAG_CAUGHT_REGISTEEL
 	goto Common_EventScript_RemoveStaticPokemon
 	goto IgneousCaldera_1F_EventScript_Registeel_1
 
