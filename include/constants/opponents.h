@@ -123,10 +123,10 @@
 #define TRAINER_NAOMI                       119 // new
 #define TRAINER_FRANCINE                    120 // new
 #define TRAINER_MILES                       121 // new
-#define TRAINER_CINDY_5                     122
-#define TRAINER_CINDY_6                     123
-#define TRAINER_MELISSA                     124
-#define TRAINER_SHEILA                      125
+#define TRAINER_FRANCISCO                   122 // new
+#define TRAINER_ANGUS                       123 // new
+#define TRAINER_MELISSA                     124 // new
+#define TRAINER_TODD                        125 // new
 #define TRAINER_SHIRLEY                     126
 #define TRAINER_JESSICA_1                   127
 #define TRAINER_CONNIE                      128

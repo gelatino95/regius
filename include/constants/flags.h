@@ -696,7 +696,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_MAX_REVIVE      0x28C
 #define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_YELLOW_SHARD    0x28D
 #define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_RED_SHARD       0x28E
-#define FLAG_UNUSED_0x28F  0x28F // Unused Flag
+#define FLAG_HIDDEN_ITEM_SOUTH_SEA_RARE_CANDY           0x28F
 #define FLAG_UNUSED_0x290  0x290 // Unused Flag
 #define FLAG_UNUSED_0x291  0x291 // Unused Flag
 #define FLAG_UNUSED_0x292  0x292 // Unused Flag
@@ -1266,8 +1266,8 @@
 #define FLAG_ITEM_UNDERWATER_SOUTHWEST_SEA_TM26                     0x4BD
 #define FLAG_ITEM_UNDERWATER_NORTHWEST_SEA_TM04                     0x4BE
 #define FLAG_ITEM_SLUMBER_PATH_ANCIENT_SLAB                         0x4BF
-#define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
+#define FLAG_ITEM_SOUTH_SEA_FULL_RESTORE                            0x4C0
+#define FLAG_ITEM_SOUTH_SEA_REVIVE                                  0x4C1
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag

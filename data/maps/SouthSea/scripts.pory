@@ -1,1 +1,36 @@
 mapscripts SouthSea_MapScripts {}
+
+script SouthSea_EventScript_InstituteSign {
+    msgbox(format("REGIUS ARCHIPELAGO\nMARINE BIOLOGY INSTITUTE"), MSGBOX_SIGN)
+    end
+}
+
+script SouthSea_EventScript_Francisco {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_FRANCISCO, 0, format("Watch out! I've hooked a lively one!"), format("It got away!"))
+	msgbox(format("There ain't much down this stretch of sea here.\lNothing but POKéMON to catch!"), MSGBOX_NPC)
+}
+
+script SouthSea_EventScript_Angus {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_ANGUS, 0, format("Don't tell me you came here to FISH, too?"), format("Ah, I see…"))
+	msgbox(format("I'm no good at conversation. Just leave me to my FISHING."), MSGBOX_NPC)
+}
+
+script SouthSea_EventScript_Melissa {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_MELISSA, 0, format("Hey, slow down! What's the rush?"), format("Ack!"))
+	msgbox(format("It would just be nice if everyone could slow down a bit and take their time.\lEnjoy life, you know?"), MSGBOX_NPC)
+}
+
+script SouthSea_EventScript_Todd {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_TODD, 0, format("I'm trying to break my record!\nOut of my way!"), format("Looks like I'm starting over…"))
+	msgbox(format("I'm trying to swim as many laps in a row as I can. Make some room!"), MSGBOX_NPC)
+}
+
+script SouthSea_EventScript_ItemFullRestore {
+    finditem(ITEM_FULL_RESTORE)
+    end
+}
+
+script SouthSea_EventScript_ItemRevive {
+    finditem(ITEM_REVIVE)
+    end
+}
