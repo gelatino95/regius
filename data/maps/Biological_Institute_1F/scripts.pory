@@ -1,1 +1,58 @@
 mapscripts Biological_Institute_1F_MapScripts {}
+
+script Biological_Institute_EventScript_Scientist1 {
+    msgbox(format("Here, we study the wide variety of life on the REGIUS ARCHIPELAGO.\pDid you visit to learn about our work?"), MSGBOX_NPC)
+    end
+}
+
+script Biological_Institute_EventScript_Scientist2 {
+    lock
+    msgbox(format("Zzzzzz…\n…\pZzz… zzz-wha?"), MSGBOX_DEFAULT)
+    faceplayer
+    msgbox(format("Aah!\nWhat? Me? Snoozing? No way!\pIt may look like I was sleeping, but I was… uh… actually getting lots of work done. Yeah!\lIt's my special power.\pWant me to impart this power to your POKéMON?\pI'll teach SLEEP TALK to your POKéMON in exchange for one HEART SCALE."), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) { //player says no
+        goto(Biological_Institute_EventScript_SleepTalkDeclined)
+    }
+    checkitem(ITEM_HEART_SCALE)
+    if (!var(VAR_RESULT)) { //player doesn't have heart scale
+        msgbox(format("Huh? You don't have a HEART SCALE?\nWell, I'll just get back to work then.\p…\n…\lZzz…"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    msgbox(format("Which POKéMON should learn SLEEP TALK?"), MSGBOX_DEFAULT)
+    setvar(VAR_0x8005, TUTOR_MOVE_SLEEP_TALK)
+    call(MoveTutor_EventScript_OpenPartyMenu)
+    if (var(VAR_RESULT) == 0) { //player cancels
+        goto(Biological_Institute_EventScript_SleepTalkDeclined)
+    }
+    msgbox(format("{PLAYER} handed over one HEART SCALE."), MSGBOX_DEFAULT)
+    removeitem(ITEM_HEART_SCALE)
+    release
+    end
+}
+
+script Biological_Institute_EventScript_SleepTalkDeclined {
+    msgbox(format("Huh, alright, if you say so.\p…\n…\lZzz…") MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Biological_Institute_EventScript_Scientist3 {
+    msgbox(format("I'm working on analyzing evidence about the ancient REGIUS civilization.\lI'm not making much progress, though…\pMost of what they left behind has been eroded beyond recognition."), MSGBOX_NPC)
+    end
+}
+
+script Biological_Institute_EventScript_Woman {
+    msgbox(format("It's important to have an appreciation for our fellow living creatures."), MSGBOX_NPC)
+    end
+}
+
+script Biological_Institute_EventScript_Girl {
+    msgbox(format("There are POKéMON downstairs!\nCan I go see them?"), MSGBOX_NPC)
+    end
+}
+
+script Biological_Institute_EventScript_ItemTM36 {
+    finditem(ITEM_TM36)
+    end
+}

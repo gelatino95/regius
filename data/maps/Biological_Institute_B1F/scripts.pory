@@ -1,1 +1,33 @@
 mapscripts Biological_Institute_B1F_MapScripts {}
+
+script Biological_Institute_EventScript_Litturch {
+    lock
+	faceplayer
+	playmoncry(SPECIES_LITTURCH, 0)
+	msgbox("Lili!", MSGBOX_AUTOCLOSE)
+	waitmoncry
+	release
+	end
+}
+
+script Biological_Institute_EventScript_LitturchPearl {
+    
+    if (!flag(FLAG_RECEIVED_LITTURCH_PEARL)) {
+        lock
+        faceplayer
+        msgbox(format("Oh? It's holding something…"), MSGBOX_DEFAULT)
+        giveitem(ITEM_PEARL)
+        setflag(FLAG_RECEIVED_LITTURCH_PEARL)
+        release
+        end
+    }
+    else {
+        lock
+        faceplayer
+        playmoncry(SPECIES_LITTURCH, 0)
+        msgbox("Lili!", MSGBOX_AUTOCLOSE)
+        waitmoncry
+        release
+        end
+    }
+}

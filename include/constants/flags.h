@@ -79,7 +79,7 @@
 #define FLAG_UNLOCKED_CAPTAINS_QUARTERS             0x42
 #define FLAG_UNLOCKED_SECRET_CABIN                  0x43
 #define FLAG_CAUGHT_REGIGIGAS                       0x44
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
+#define FLAG_RECEIVED_LITTURCH_PEARL                0x45
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
@@ -697,7 +697,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_YELLOW_SHARD    0x28D
 #define FLAG_HIDDEN_ITEM_UNDERWATER_NORTHWEST_SEA_RED_SHARD       0x28E
 #define FLAG_HIDDEN_ITEM_SOUTH_SEA_RARE_CANDY           0x28F
-#define FLAG_UNUSED_0x290  0x290 // Unused Flag
+#define FLAG_HIDDEN_ITEM_BIOLOGICAL_INSTUTUTE_LEFTOVERS 0x290
 #define FLAG_UNUSED_0x291  0x291 // Unused Flag
 #define FLAG_UNUSED_0x292  0x292 // Unused Flag
 #define FLAG_UNUSED_0x293  0x293 // Unused Flag
@@ -1268,7 +1268,7 @@
 #define FLAG_ITEM_SLUMBER_PATH_ANCIENT_SLAB                         0x4BF
 #define FLAG_ITEM_SOUTH_SEA_FULL_RESTORE                            0x4C0
 #define FLAG_ITEM_SOUTH_SEA_REVIVE                                  0x4C1
-#define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
+#define FLAG_ITEM_BIOLOGICAL_INSTITUTE_TM36                         0x4C2
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
 #define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
