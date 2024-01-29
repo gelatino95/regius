@@ -127,11 +127,11 @@
 #define TRAINER_ANGUS                       123 // new
 #define TRAINER_MELISSA                     124 // new
 #define TRAINER_TODD                        125 // new
-#define TRAINER_SHIRLEY                     126
-#define TRAINER_JESSICA_1                   127
-#define TRAINER_CONNIE                      128
-#define TRAINER_BRIDGET                     129
-#define TRAINER_OLIVIA                      130
+#define TRAINER_SHIRLEY                     126 // new
+#define TRAINER_DEBORAH                     127 // new
+#define TRAINER_CONNIE                      128 // new
+#define TRAINER_HOSHIDO                     129 // new
+#define TRAINER_YUKARI                      130 // new
 #define TRAINER_TIFFANY                     131
 #define TRAINER_JESSICA_2                   132
 #define TRAINER_JESSICA_3                   133

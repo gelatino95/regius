@@ -1961,60 +1961,90 @@ static const struct TrainerMon sParty_Todd[] = {
 static const struct TrainerMon sParty_Shirley[] = {
     {
     .iv = 0,
-    .lvl = 21,
-    .species = SPECIES_NUMEL,
-    }
-};
-
-static const struct TrainerMon sParty_Jessica1[] = {
-    {
-    .iv = 0,
-    .lvl = 29,
-    .species = SPECIES_KECLEON,
-    .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
+    .lvl = 32,
+    .species = SPECIES_MAGMACLE,
     },
     {
     .iv = 0,
-    .lvl = 29,
-    .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .lvl = 32,
+    .species = SPECIES_LIMPACLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_PINSIR,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_TROPIUS,
+    }
+};
+
+static const struct TrainerMon sParty_Deborah[] = {
+    {
+    .iv = 50,
+    .lvl = 34,
+    .species = SPECIES_LAPRAS,
+    },
+    {
+    .iv = 50,
+    .lvl = 34,
+    .species = SPECIES_VILEPLUME,
     }
 };
 
 static const struct TrainerMon sParty_Connie[] = {
     {
-    .iv = 100,
-    .lvl = 40,
-    .species = SPECIES_GOLDEEN,
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SEAKING,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_PELIPPER,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SHARPEDO,
     }
 };
 
-static const struct TrainerMon sParty_Bridget[] = {
+static const struct TrainerMon sParty_Hoshido[] = {
     {
-    .iv = 150,
-    .lvl = 40,
-    .species = SPECIES_AZUMARILL,
+    .iv = 50,
+    .lvl = 33,
+    .species = SPECIES_CRAWDAUNT,
+    },
+    {
+    .iv = 50,
+    .lvl = 33,
+    .species = SPECIES_HARIYAMA,
+    },
+    {
+    .iv = 50,
+    .lvl = 33,
+    .species = SPECIES_HERACROSS,
     }
 };
 
-static const struct TrainerMon sParty_Olivia[] = {
+static const struct TrainerMon sParty_Yukari[] = {
     {
-    .iv = 100,
-    .lvl = 35,
-    .species = SPECIES_CLAMPERL,
-    .moves = {MOVE_IRON_DEFENSE, MOVE_WHIRLPOOL, MOVE_RAIN_DANCE, MOVE_WATER_PULSE}
+    .iv = 50,
+    .lvl = 33,
+    .species = SPECIES_ELASTRIKE,
     },
     {
-    .iv = 100,
-    .lvl = 37,
-    .species = SPECIES_CORPHISH,
-    .moves = {MOVE_TAUNT, MOVE_CRABHAMMER, MOVE_WATER_PULSE, MOVE_NONE}
+    .iv = 50,
+    .lvl = 33,
+    .species = SPECIES_MEDICHAM,
     },
     {
-    .iv = 100,
-    .lvl = 39,
-    .species = SPECIES_LOMBRE,
-    .moves = {MOVE_UPROAR, MOVE_FURY_SWIPES, MOVE_FAKE_OUT, MOVE_WATER_PULSE}
+    .iv = 50,
+    .lvl = 33,
+    .species = SPECIES_PINSIR,
     }
 };
 

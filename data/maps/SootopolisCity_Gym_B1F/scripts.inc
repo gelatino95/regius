@@ -22,12 +22,12 @@ SootopolisCity_Gym_B1F_EventScript_Connie::
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Bridget::
-	trainerbattle_single TRAINER_BRIDGET, SootopolisCity_Gym_B1F_Text_BridgetIntro, SootopolisCity_Gym_B1F_Text_BridgetDefeat
+	trainerbattle_single TRAINER_HOSHIDO, SootopolisCity_Gym_B1F_Text_BridgetIntro, SootopolisCity_Gym_B1F_Text_BridgetDefeat
 	msgbox SootopolisCity_Gym_B1F_Text_BridgetPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Olivia::
-	trainerbattle_single TRAINER_OLIVIA, SootopolisCity_Gym_B1F_Text_OliviaIntro, SootopolisCity_Gym_B1F_Text_OliviaDefeat
+	trainerbattle_single TRAINER_YUKARI, SootopolisCity_Gym_B1F_Text_OliviaIntro, SootopolisCity_Gym_B1F_Text_OliviaDefeat
 	msgbox SootopolisCity_Gym_B1F_Text_OliviaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

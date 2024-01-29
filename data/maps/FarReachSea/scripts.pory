@@ -1,1 +1,46 @@
 mapscripts FarReachSea_MapScripts {}
+
+script FarReachSea_EventScript_PirateFortressSign {
+    msgbox(format("PIRATE FORTRESS"), MSGBOX_SIGN)
+    end
+}
+
+script FarReachSea_EventScript_KeepOutSign {
+    msgbox(format("KEEP OUT\nNo landlubbers allowed!"), MSGBOX_SIGN)
+    end
+}
+
+script FarReachSea_EventScript_Shirley {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_SHIRLEY, 0, format("I've done it… all the rarest POKéMON in the region are mine!"), format("My collection!"))
+	msgbox(format("I can't help but wonder if my collection of rare POKéMON is incomplete…"), MSGBOX_NPC)
+}
+
+script FarReachSea_EventScript_Deborah {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_DEBORAH, 0, format("Are you prepared for a long journey?"), format("Yep, you're prepared!"))
+	msgbox(format("We're in the furthest reaches of the REGIUS ARCHIPELAGO.\lThere's nothing but open sea beyond."), MSGBOX_NPC)
+}
+
+script FarReachSea_EventScript_Connie {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_CONNIE, 0, format("Yarr!\nBe ye tough enough to face me trial?"), format("Yarr…"))
+	msgbox(format("I'm not actually a pirate. They wouldn't let me in their fortress…"), MSGBOX_NPC)
+}
+
+script FarReachSea_EventScript_Hoshido {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_HOSHIDO, 0, format("I challenge you to test your might against me!"), format("Huoh!"))
+	msgbox(format("We use this secluded training spot to measure our abilities."), MSGBOX_NPC)
+}
+
+script FarReachSea_EventScript_Yukari {
+    trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_YUKARI, 0, format("You! Me! Battle! Now!"), format("Argh!"))
+	msgbox(format("You have proven yourself my superior.\nI have nothing left to say!"), MSGBOX_NPC)
+}
+
+script FarReachSea_EventScript_ItemMaxRevive {
+    finditem(ITEM_MAX_REVIVE)
+    end
+}
+
+script FarReachSea_EventScript_ItemElixir {
+    finditem(ITEM_ELIXIR)
+    end
+}

@@ -83,8 +83,8 @@ SootopolisCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_CRISSY
 	settrainerflag TRAINER_IKECHI
 	settrainerflag TRAINER_CONNIE
-	settrainerflag TRAINER_BRIDGET
-	settrainerflag TRAINER_OLIVIA
+	settrainerflag TRAINER_HOSHIDO
+	settrainerflag TRAINER_YUKARI
 	settrainerflag TRAINER_TIFFANY
 	settrainerflag TRAINER_BETHANY
 	settrainerflag TRAINER_ANNIKA
