@@ -4672,15 +4672,28 @@ static const struct TrainerMon sParty_Joey[] = {
 static const struct TrainerMon sParty_Ben[] = {
     {
     .iv = 150,
-    .lvl = 17,
-    .species = SPECIES_ZIGZAGOON,
-    .moves = {MOVE_HEADBUTT, MOVE_SAND_ATTACK, MOVE_GROWL, MOVE_THUNDERBOLT}
+    .lvl = 32,
+    .species = SPECIES_PELURCHIN,
+    .moves = {MOVE_SURF, MOVE_WHIRLPOOL, MOVE_BITE, MOVE_PROTECT}
     },
     {
     .iv = 150,
-    .lvl = 17,
-    .species = SPECIES_GULPIN,
-    .moves = {MOVE_AMNESIA, MOVE_SLUDGE, MOVE_YAWN, MOVE_POUND}
+    .lvl = 32,
+    .species = SPECIES_LEVILITH,
+    .moves = {MOVE_ANCIENT_POWER, MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_CONFUSE_RAY}
+    },
+    {
+    .iv = 150,
+    .lvl = 32,
+    .species = SPECIES_CORSOLA,
+    .moves = {MOVE_BUBBLE_BEAM, MOVE_SPIKE_CANNON, MOVE_RECOVER, MOVE_REFRESH}
+    },
+    {
+    .iv = 150,
+    .lvl = 32,
+    .species = SPECIES_PALMODON,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_BARRAGE, MOVE_BULLET_SEED, MOVE_STUN_SPORE, MOVE_FURY_CUTTER}
     }
 };
 

@@ -324,7 +324,7 @@
 #define TRAINER_JOSH                        320
 #define TRAINER_TOMMY                       321
 #define TRAINER_JOEY                        322
-#define TRAINER_BEN                         323
+#define TRAINER_BEN                         323 // new
 #define TRAINER_QUINCY                      324
 #define TRAINER_KATELYNN                    325
 #define TRAINER_JAYLEN                      326

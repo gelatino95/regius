@@ -1,1 +1,43 @@
 mapscripts FarReachSea_House1_MapScripts {}
+
+script FarReachSea_House1_EventScript_Ben {
+    lock
+    faceplayer
+    if (!flag(FLAG_TEMP_1)) {
+        msgbox(format("Hello! I'm BEN.\nI made the game you're playing!\pWell, technically, GAME FREAK did most of the work.\lI just built a new game on top of theirs.\pBut they didn't want to come all the way out here, so you get to talk to me instead. Hooray!"), MSGBOX_DEFAULT)
+        setflag(FLAG_TEMP_1)
+        release
+        end
+    }
+    random(5)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox(format("I've been creating new POKéMON for as long as I can remember.\pI hope you enjoy all the new ones!\nWhich is your favorite?"), MSGBOX_DEFAULT)
+        case 1:
+            msgbox(format("The game may not look like much yet, but I have plans to add a bunch more stuff.\lLook forward to it!"), MSGBOX_DEFAULT)
+        case 2:
+            msgbox(format("Have you tried out the BATTLE GROTTO?\pIt's inspired by a certain battle facility in the ORRE region…"), MSGBOX_DEFAULT)
+        case 3:
+            msgbox(format("I wonder when GAME FREAK will get around to making a POKéMON and JURASSIC PARK crossover.\pI keep pitching the idea to them, but for some reason they stopped answering my calls."), MSGBOX_DEFAULT)
+        case 4:
+            if (!flag(FLAG_TEMP_2)) {
+                msgbox(format("Say, would you like to have a battle?\pI'd love a chance to show off some of my favorite POKéMON in battle."), MSGBOX_YESNO)
+                if (!var(VAR_RESULT)) {
+                    msgbox(format("Ha, fair enough!"), MSGBOX_DEFAULT)
+                    release
+                    end
+                }
+                trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_BEN, 0, format("Alright, get ready!"), format("Beat at my own game?!"), FarReachSea_House1_EventScript_Ben_PostBattle)
+            }
+            goto(FarReachSea_House1_EventScript_Ben_PostBattle)
+    }
+    release
+    end
+}
+
+script FarReachSea_House1_EventScript_Ben_PostBattle {
+    msgbox(format("Wow, that's a great-looking team you put together.\pThanks for giving me a chance to see them in action!"), MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_2)
+    release
+    end
+}

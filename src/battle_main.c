@@ -531,6 +531,8 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_WINSTRATE, 10},
     {TRAINER_CLASS_DIVER, 10},
     {TRAINER_CLASS_SCIENTIST, 10},
+    {TRAINER_CLASS_DEVELOPER, 10},
+    {TRAINER_CLASS_DESIGNER, 10},
     {0xFF, 5}, // Any trainer class not listed above uses this
 };
 
