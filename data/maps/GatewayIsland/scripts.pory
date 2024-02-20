@@ -172,7 +172,12 @@ script GatewayIsland_EventScript_GateMan {
 }
 
 script GatewayIsland_EventScript_SouthBeachBoy {
-	msgbox(format("The trainers down this way are\ntoo tough!\pIf you're a newbie trainer,\nyou might want to rethink\lgoing down south."), MSGBOX_NPC)
+	if (flag(FLAG_CAUGHT_REGISTEEL)) {
+		msgbox(format("Say, you look like you've gotten a lot tougher.\pI bet the TRAINERS down south will be no problem for you."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("The TRAINERS down this way are\ntoo tough!\pIf you're a newbie TRAINER,\nyou might want to rethink\lgoing down south."), MSGBOX_NPC)
+	}
 	end
 }
 

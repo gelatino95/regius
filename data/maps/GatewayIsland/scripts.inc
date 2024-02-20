@@ -254,8 +254,14 @@ GatewayIsland_EventScript_GateMan_2:
 
 
 GatewayIsland_EventScript_SouthBeachBoy::
-	msgbox GatewayIsland_EventScript_SouthBeachBoy_Text_0, MSGBOX_NPC
+	goto_if_set FLAG_CAUGHT_REGISTEEL, GatewayIsland_EventScript_SouthBeachBoy_2
+	msgbox GatewayIsland_EventScript_SouthBeachBoy_Text_1, MSGBOX_NPC
+GatewayIsland_EventScript_SouthBeachBoy_1:
 	end
+
+GatewayIsland_EventScript_SouthBeachBoy_2:
+	msgbox GatewayIsland_EventScript_SouthBeachBoy_Text_0, MSGBOX_NPC
+	goto GatewayIsland_EventScript_SouthBeachBoy_1
 
 
 GatewayIsland_EventScript_FlyingTaxi::
@@ -343,9 +349,15 @@ GatewayIsland_EventScript_GateMan_Text_1:
 	.string "It's quite an enigma.$"
 
 GatewayIsland_EventScript_SouthBeachBoy_Text_0:
-	.string "The trainers down this way are\n"
+	.string "Say, you look like you've gotten a lot\n"
+	.string "tougher.\p"
+	.string "I bet the TRAINERS down south will be\n"
+	.string "no problem for you.$"
+
+GatewayIsland_EventScript_SouthBeachBoy_Text_1:
+	.string "The TRAINERS down this way are\n"
 	.string "too tough!\p"
-	.string "If you're a newbie trainer,\n"
+	.string "If you're a newbie TRAINER,\n"
 	.string "you might want to rethink\l"
 	.string "going down south.$"
 
