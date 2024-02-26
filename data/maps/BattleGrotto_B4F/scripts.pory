@@ -41,36 +41,60 @@ script BattleGrotto_B4F_EventScript_EndAttendant {
 }
 
 script BattleGrotto_B4F_EventScript_Arataka {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ARATAKA, 0, format("Join me for non-stop training!"), format("Uh… break time?"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ARATAKA, 0, format("Join me for non-stop training!"), format("Uh… break time?"), BattleGrotto_B4F_EventScript_PostBattle)
 	msgbox(format("I have been training here for 72 straight hours."), MSGBOX_NPC)
 }
 
 script BattleGrotto_B4F_EventScript_Hans {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HANS, 0, format("It's hard to stretch our wings down here."), format("Grounded!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HANS, 0, format("It's hard to stretch our wings down here."), format("Grounded!"), BattleGrotto_B4F_EventScript_PostBattle)
 	msgbox(format("At least this chamber is a bit spacious. I can let my birds fly!"), MSGBOX_NPC)
 }
 
 script BattleGrotto_B4F_EventScript_Astrid {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ASTRID, 0, format("I've seen your future!"), format("This wasn't meant to be!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ASTRID, 0, format("I've seen your future!"), format("This wasn't meant to be!"), BattleGrotto_B4F_EventScript_PostBattle)
 	msgbox(format("Only you can forge your own destiny. Remember that."), MSGBOX_NPC)
 }
 
 script BattleGrotto_B4F_EventScript_Keito {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_KEITO, 0, format("Could I bother you for a battle?"), format("Well done."), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_KEITO, 0, format("Could I bother you for a battle?"), format("Well done."), BattleGrotto_B4F_EventScript_PostBattle)
 	msgbox(format("Please do visit again sometime."), MSGBOX_NPC)
 }
 
 script BattleGrotto_B4F_EventScript_Yuri {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_YURI, 0, format("The secrets of the universe…!"), format("Eureka!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_YURI, 0, format("The secrets of the universe…!"), format("Eureka!"), BattleGrotto_B4F_EventScript_PostBattle)
 	msgbox(format("There's much to be discovered in this place, I'm sure of it…"), MSGBOX_NPC)
 }
 
 script BattleGrotto_B4F_EventScript_Vincent {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_VINCENT, 0, format("Face the serpent's wrath!"), format("Impossible…!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_VINCENT, 0, format("Face the serpent's wrath!"), format("Impossible…!"), BattleGrotto_B4F_EventScript_PostBattle)
 	msgbox(format("Mark my words, if you underestimate the power of DRAGONS, it will be your last mistake."), MSGBOX_NPC)
 }
 
 script BattleGrotto_B4F_EventScript_Tamara {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_TAMARA, 0, format("Ah, a challenger!\pWell, what are you waiting for?\nDon't disappoint me!"), format("Hohoho! Wonderful…"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_TAMARA, 0, format("Ah, a challenger!\pWell, what are you waiting for?\nDon't disappoint me!"), format("Hohoho! Wonderful…"), BattleGrotto_B4F_EventScript_PostBattle)
 	msgbox(format("You were a worthy foe. Keep climbing higher!"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_PostBattle {
+	special(HealPlayerParty)
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_WON)
+	{
+		buffernumberstring(STR_VAR_1, 1)
+		setvar(VAR_0x8004, 1)
+		special(GiveFrontierBattlePoints)
+		msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Point."), MSGBOX_GETPOINTS)
+		waitmessage
+		closemessage
+		end
+	}
+	settrainerflag(TRAINER_ARATAKA)
+	settrainerflag(TRAINER_HANS)
+	settrainerflag(TRAINER_ASTRID)
+	settrainerflag(TRAINER_KEITO)
+	settrainerflag(TRAINER_YURI)
+	settrainerflag(TRAINER_VINCENT)
+	settrainerflag(TRAINER_TAMARA)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	end
 }

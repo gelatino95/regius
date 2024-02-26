@@ -1411,7 +1411,10 @@ void BattleSetup_StartTrainerBattle_Debug(void)
 
 static bool8 BattleHasNoWhiteout()
 {
-    if (gTrainerBattleMode == TRAINER_BATTLE_NO_WHITEOUT_CONTINUE_SCRIPT || gTrainerBattleMode == TRAINER_BATTLE_NO_INTRO_NO_WHITEOUT)
+    if (gTrainerBattleMode == TRAINER_BATTLE_NO_WHITEOUT_CONTINUE_SCRIPT
+    || gTrainerBattleMode == TRAINER_BATTLE_NO_INTRO_NO_WHITEOUT
+    || gTrainerBattleMode == TRAINER_BATTLE_GROTTO
+    || gTrainerBattleMode == TRAINER_BATTLE_GROTTO_NO_MUSIC)
         return TRUE;
     else
         return FALSE;

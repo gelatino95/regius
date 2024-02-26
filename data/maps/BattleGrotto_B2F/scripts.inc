@@ -58,45 +58,70 @@ BattleGrotto_B2F_EventScript_EndAttendant_5:
 
 
 BattleGrotto_B2F_EventScript_Warren::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_WARREN, 0, BattleGrotto_B2F_EventScript_Warren_Text_0, BattleGrotto_B2F_EventScript_Warren_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_WARREN, 0, BattleGrotto_B2F_EventScript_Warren_Text_0, BattleGrotto_B2F_EventScript_Warren_Text_1, BattleGrotto_B2F_EventScript_PostBattle
 	msgbox BattleGrotto_B2F_EventScript_Warren_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B2F_EventScript_Mary::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_MARY, 0, BattleGrotto_B2F_EventScript_Mary_Text_0, BattleGrotto_B2F_EventScript_Mary_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_MARY, 0, BattleGrotto_B2F_EventScript_Mary_Text_0, BattleGrotto_B2F_EventScript_Mary_Text_1, BattleGrotto_B2F_EventScript_PostBattle
 	msgbox BattleGrotto_B2F_EventScript_Mary_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B2F_EventScript_Alexia::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ALEXIA, 0, BattleGrotto_B2F_EventScript_Alexia_Text_0, BattleGrotto_B2F_EventScript_Alexia_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ALEXIA, 0, BattleGrotto_B2F_EventScript_Alexia_Text_0, BattleGrotto_B2F_EventScript_Alexia_Text_1, BattleGrotto_B2F_EventScript_PostBattle
 	msgbox BattleGrotto_B2F_EventScript_Alexia_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B2F_EventScript_Randy::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_RANDY, 0, BattleGrotto_B2F_EventScript_Randy_Text_0, BattleGrotto_B2F_EventScript_Randy_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_RANDY, 0, BattleGrotto_B2F_EventScript_Randy_Text_0, BattleGrotto_B2F_EventScript_Randy_Text_1, BattleGrotto_B2F_EventScript_PostBattle
 	msgbox BattleGrotto_B2F_EventScript_Randy_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B2F_EventScript_Abdul::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ABDUL, 0, BattleGrotto_B2F_EventScript_Abdul_Text_0, BattleGrotto_B2F_EventScript_Abdul_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ABDUL, 0, BattleGrotto_B2F_EventScript_Abdul_Text_0, BattleGrotto_B2F_EventScript_Abdul_Text_1, BattleGrotto_B2F_EventScript_PostBattle
 	msgbox BattleGrotto_B2F_EventScript_Abdul_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B2F_EventScript_Keira::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_KEIRA, 0, BattleGrotto_B2F_EventScript_Keira_Text_0, BattleGrotto_B2F_EventScript_Keira_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_KEIRA, 0, BattleGrotto_B2F_EventScript_Keira_Text_0, BattleGrotto_B2F_EventScript_Keira_Text_1, BattleGrotto_B2F_EventScript_PostBattle
 	msgbox BattleGrotto_B2F_EventScript_Keira_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B2F_EventScript_Gilligan::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_GILLIGAN, 0, BattleGrotto_B2F_EventScript_Gilligan_Text_0, BattleGrotto_B2F_EventScript_Gilligan_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_GILLIGAN, 0, BattleGrotto_B2F_EventScript_Gilligan_Text_0, BattleGrotto_B2F_EventScript_Gilligan_Text_1, BattleGrotto_B2F_EventScript_PostBattle
 	msgbox BattleGrotto_B2F_EventScript_Gilligan_Text_2, MSGBOX_NPC
 	return
+
+
+BattleGrotto_B2F_EventScript_PostBattle::
+	special HealPlayerParty
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq BattleGrotto_B2F_EventScript_PostBattle_2
+	settrainerflag TRAINER_WARREN
+	settrainerflag TRAINER_MARY
+	settrainerflag TRAINER_ALEXIA
+	settrainerflag TRAINER_RANDY
+	settrainerflag TRAINER_ABDUL
+	settrainerflag TRAINER_KEIRA
+	settrainerflag TRAINER_GILLIGAN
+	warp MAP_BATTLE_GROTTO_ENTRANCE, 10, 7
+	end
+
+BattleGrotto_B2F_EventScript_PostBattle_2:
+	buffernumberstring STR_VAR_1, 1
+	setvar VAR_0x8004, 1
+	special GiveFrontierBattlePoints
+	msgbox BattleGrotto_B2F_EventScript_PostBattle_Text_0, MSGBOX_GETPOINTS
+	waitmessage
+	closemessage
+	end
 
 
 BattleGrotto_B2F_EventScript_StartAttendant_Text_0:
@@ -191,3 +216,7 @@ BattleGrotto_B2F_EventScript_Gilligan_Text_1:
 BattleGrotto_B2F_EventScript_Gilligan_Text_2:
 	.string "Yes, you did well. Now move on, and spare\n"
 	.string "me my dignity!$"
+
+BattleGrotto_B2F_EventScript_PostBattle_Text_0:
+	.string "{PLAYER} obtained\n"
+	.string "{STR_VAR_1} Battle Point.$"

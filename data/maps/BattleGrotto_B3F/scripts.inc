@@ -58,45 +58,70 @@ BattleGrotto_B3F_EventScript_EndAttendant_5:
 
 
 BattleGrotto_B3F_EventScript_Boone::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_BOONE, 0, BattleGrotto_B3F_EventScript_Boone_Text_0, BattleGrotto_B3F_EventScript_Boone_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_BOONE, 0, BattleGrotto_B3F_EventScript_Boone_Text_0, BattleGrotto_B3F_EventScript_Boone_Text_1, BattleGrotto_B3F_EventScript_PostBattle
 	msgbox BattleGrotto_B3F_EventScript_Boone_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B3F_EventScript_Hope::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_HOPE, 0, BattleGrotto_B3F_EventScript_Hope_Text_0, BattleGrotto_B3F_EventScript_Hope_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_HOPE, 0, BattleGrotto_B3F_EventScript_Hope_Text_0, BattleGrotto_B3F_EventScript_Hope_Text_1, BattleGrotto_B3F_EventScript_PostBattle
 	msgbox BattleGrotto_B3F_EventScript_Hope_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B3F_EventScript_Linneus::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_LINNEUS, 0, BattleGrotto_B3F_EventScript_Linneus_Text_0, BattleGrotto_B3F_EventScript_Linneus_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_LINNEUS, 0, BattleGrotto_B3F_EventScript_Linneus_Text_0, BattleGrotto_B3F_EventScript_Linneus_Text_1, BattleGrotto_B3F_EventScript_PostBattle
 	msgbox BattleGrotto_B3F_EventScript_Linneus_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B3F_EventScript_Grant::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_GRANT, 0, BattleGrotto_B3F_EventScript_Grant_Text_0, BattleGrotto_B3F_EventScript_Grant_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_GRANT, 0, BattleGrotto_B3F_EventScript_Grant_Text_0, BattleGrotto_B3F_EventScript_Grant_Text_1, BattleGrotto_B3F_EventScript_PostBattle
 	msgbox BattleGrotto_B3F_EventScript_Grant_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B3F_EventScript_Nam::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_NAM, 0, BattleGrotto_B3F_EventScript_Nam_Text_0, BattleGrotto_B3F_EventScript_Nam_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_NAM, 0, BattleGrotto_B3F_EventScript_Nam_Text_0, BattleGrotto_B3F_EventScript_Nam_Text_1, BattleGrotto_B3F_EventScript_PostBattle
 	msgbox BattleGrotto_B3F_EventScript_Nam_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B3F_EventScript_Julie::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_JULIE, 0, BattleGrotto_B3F_EventScript_Julie_Text_0, BattleGrotto_B3F_EventScript_Julie_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_JULIE, 0, BattleGrotto_B3F_EventScript_Julie_Text_0, BattleGrotto_B3F_EventScript_Julie_Text_1, BattleGrotto_B3F_EventScript_PostBattle
 	msgbox BattleGrotto_B3F_EventScript_Julie_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B3F_EventScript_Casady::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_CASADY, 0, BattleGrotto_B3F_EventScript_Casady_Text_0, BattleGrotto_B3F_EventScript_Casady_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_CASADY, 0, BattleGrotto_B3F_EventScript_Casady_Text_0, BattleGrotto_B3F_EventScript_Casady_Text_1, BattleGrotto_B3F_EventScript_PostBattle
 	msgbox BattleGrotto_B3F_EventScript_Casady_Text_2, MSGBOX_NPC
 	return
+
+
+BattleGrotto_B3F_EventScript_PostBattle::
+	special HealPlayerParty
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq BattleGrotto_B3F_EventScript_PostBattle_2
+	settrainerflag TRAINER_BOONE
+	settrainerflag TRAINER_HOPE
+	settrainerflag TRAINER_LINNEUS
+	settrainerflag TRAINER_GRANT
+	settrainerflag TRAINER_NAM
+	settrainerflag TRAINER_JULIE
+	settrainerflag TRAINER_CASADY
+	warp MAP_BATTLE_GROTTO_ENTRANCE, 10, 7
+	end
+
+BattleGrotto_B3F_EventScript_PostBattle_2:
+	buffernumberstring STR_VAR_1, 1
+	setvar VAR_0x8004, 1
+	special GiveFrontierBattlePoints
+	msgbox BattleGrotto_B3F_EventScript_PostBattle_Text_0, MSGBOX_GETPOINTS
+	waitmessage
+	closemessage
+	end
 
 
 BattleGrotto_B3F_EventScript_StartAttendant_Text_0:
@@ -194,3 +219,7 @@ BattleGrotto_B3F_EventScript_Casady_Text_1:
 
 BattleGrotto_B3F_EventScript_Casady_Text_2:
 	.string "You've got what it takes!$"
+
+BattleGrotto_B3F_EventScript_PostBattle_Text_0:
+	.string "{PLAYER} obtained\n"
+	.string "{STR_VAR_1} Battle Point.$"

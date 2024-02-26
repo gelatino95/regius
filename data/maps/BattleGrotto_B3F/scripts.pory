@@ -47,36 +47,60 @@ script BattleGrotto_B3F_EventScript_EndAttendant {
 }
 
 script BattleGrotto_B3F_EventScript_Boone {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_BOONE, 0, format("We're in the middle of a truly groundbreaking expedition!"), format("Marvelous!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_BOONE, 0, format("We're in the middle of a truly groundbreaking expedition!"), format("Marvelous!"), BattleGrotto_B3F_EventScript_PostBattle)
 	msgbox(format("Did you know? This tunnel has been here long before the BATTLE GROTTO set up shop."), MSGBOX_NPC)
 }
 
 script BattleGrotto_B3F_EventScript_Hope {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HOPE, 0, format("Is this really the safest place to battle?"), format("Ouch!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HOPE, 0, format("Is this really the safest place to battle?"), format("Ouch!"), BattleGrotto_B3F_EventScript_PostBattle)
 	msgbox(format("If I stand here much longer, my clothes are going to get singed…"), MSGBOX_NPC)
 }
 
 script BattleGrotto_B3F_EventScript_Linneus {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_LINNEUS, 0, format("Outta the frying pan!"), format("Into the fire!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_LINNEUS, 0, format("Outta the frying pan!"), format("Into the fire!"), BattleGrotto_B3F_EventScript_PostBattle)
 	msgbox(format("Now this is my kind of place!"), MSGBOX_NPC)
 }
 
 script BattleGrotto_B3F_EventScript_Grant {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_GRANT, 0, format("The harder the path gets, the happier I am!"), format("Hahahaha!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_GRANT, 0, format("The harder the path gets, the happier I am!"), format("Hahahaha!"), BattleGrotto_B3F_EventScript_PostBattle)
 	msgbox(format("Put me in harsh conditions like this and I'm happy!"), MSGBOX_NPC)
 }
 
 script BattleGrotto_B3F_EventScript_Nam {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_NAM, 0, format("How far are you willing to go?"), format("I see…"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_NAM, 0, format("How far are you willing to go?"), format("I see…"), BattleGrotto_B3F_EventScript_PostBattle)
 	msgbox(format("Good luck out there."), MSGBOX_NPC)
 }
 
 script BattleGrotto_B3F_EventScript_Julie {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_JULIE, 0, format("Show me your strategy!"), format("Tch…"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_JULIE, 0, format("Show me your strategy!"), format("Tch…"), BattleGrotto_B3F_EventScript_PostBattle)
 	msgbox(format("Well fought."), MSGBOX_NPC)
 }
 
 script BattleGrotto_B3F_EventScript_Casady {
-	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_CASADY, 0, format("Are you feeling the heat yet?\pI won't let you past this floor without a fight!"), format("Hot! Hot! Hot!"), BattleGrotto_B1F_EventScript_Give1BP)
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_CASADY, 0, format("Are you feeling the heat yet?\pI won't let you past this floor without a fight!"), format("Hot! Hot! Hot!"), BattleGrotto_B3F_EventScript_PostBattle)
 	msgbox(format("You've got what it takes!"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B3F_EventScript_PostBattle {
+	special(HealPlayerParty)
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_WON)
+	{
+		buffernumberstring(STR_VAR_1, 1)
+		setvar(VAR_0x8004, 1)
+		special(GiveFrontierBattlePoints)
+		msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Point."), MSGBOX_GETPOINTS)
+		waitmessage
+		closemessage
+		end
+	}
+	settrainerflag(TRAINER_BOONE)
+	settrainerflag(TRAINER_HOPE)
+	settrainerflag(TRAINER_LINNEUS)
+	settrainerflag(TRAINER_GRANT)
+	settrainerflag(TRAINER_NAM)
+	settrainerflag(TRAINER_JULIE)
+	settrainerflag(TRAINER_CASADY)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	end
 }

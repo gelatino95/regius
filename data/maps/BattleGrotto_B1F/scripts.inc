@@ -64,56 +64,70 @@ BattleGrotto_B1F_EventScript_EndAttendant_5:
 
 
 BattleGrotto_B1F_EventScript_Tanner::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_TANNER, 0, BattleGrotto_B1F_EventScript_Tanner_Text_0, BattleGrotto_B1F_EventScript_Tanner_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_TANNER, 0, BattleGrotto_B1F_EventScript_Tanner_Text_0, BattleGrotto_B1F_EventScript_Tanner_Text_1, BattleGrotto_B1F_EventScript_PostBattle
 	msgbox BattleGrotto_B1F_EventScript_Tanner_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 BattleGrotto_B1F_EventScript_Michaela::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_MICHAELA, 0, BattleGrotto_B1F_EventScript_Michaela_Text_0, BattleGrotto_B1F_EventScript_Michaela_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_MICHAELA, 0, BattleGrotto_B1F_EventScript_Michaela_Text_0, BattleGrotto_B1F_EventScript_Michaela_Text_1, BattleGrotto_B1F_EventScript_PostBattle
 	msgbox BattleGrotto_B1F_EventScript_Michaela_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 BattleGrotto_B1F_EventScript_Garth::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_GARTH, 0, BattleGrotto_B1F_EventScript_Garth_Text_0, BattleGrotto_B1F_EventScript_Garth_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_GARTH, 0, BattleGrotto_B1F_EventScript_Garth_Text_0, BattleGrotto_B1F_EventScript_Garth_Text_1, BattleGrotto_B1F_EventScript_PostBattle
 	msgbox BattleGrotto_B1F_EventScript_Garth_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 BattleGrotto_B1F_EventScript_Milton::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_MILTON, 0, BattleGrotto_B1F_EventScript_Milton_Text_0, BattleGrotto_B1F_EventScript_Milton_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_MILTON, 0, BattleGrotto_B1F_EventScript_Milton_Text_0, BattleGrotto_B1F_EventScript_Milton_Text_1, BattleGrotto_B1F_EventScript_PostBattle
 	msgbox BattleGrotto_B1F_EventScript_Milton_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 BattleGrotto_B1F_EventScript_Audrey::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_AUDREY, 0, BattleGrotto_B1F_EventScript_Audrey_Text_0, BattleGrotto_B1F_EventScript_Audrey_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_AUDREY, 0, BattleGrotto_B1F_EventScript_Audrey_Text_0, BattleGrotto_B1F_EventScript_Audrey_Text_1, BattleGrotto_B1F_EventScript_PostBattle
 	msgbox BattleGrotto_B1F_EventScript_Audrey_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 BattleGrotto_B1F_EventScript_Hogarth::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_HOGARTH, 0, BattleGrotto_B1F_EventScript_Hogarth_Text_0, BattleGrotto_B1F_EventScript_Hogarth_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_HOGARTH, 0, BattleGrotto_B1F_EventScript_Hogarth_Text_0, BattleGrotto_B1F_EventScript_Hogarth_Text_1, BattleGrotto_B1F_EventScript_PostBattle
 	msgbox BattleGrotto_B1F_EventScript_Hogarth_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 BattleGrotto_B1F_EventScript_Ariana::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ARIANA, 0, BattleGrotto_B1F_EventScript_Ariana_Text_0, BattleGrotto_B1F_EventScript_Ariana_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ARIANA, 0, BattleGrotto_B1F_EventScript_Ariana_Text_0, BattleGrotto_B1F_EventScript_Ariana_Text_1, BattleGrotto_B1F_EventScript_PostBattle
 	msgbox BattleGrotto_B1F_EventScript_Ariana_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
-BattleGrotto_B1F_EventScript_Give1BP::
+BattleGrotto_B1F_EventScript_PostBattle::
+	special HealPlayerParty
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq BattleGrotto_B1F_EventScript_PostBattle_2
+	settrainerflag TRAINER_TANNER
+	settrainerflag TRAINER_MICHAELA
+	settrainerflag TRAINER_GARTH
+	settrainerflag TRAINER_MILTON
+	settrainerflag TRAINER_AUDREY
+	settrainerflag TRAINER_HOGARTH
+	settrainerflag TRAINER_ARIANA
+	warp MAP_BATTLE_GROTTO_ENTRANCE, 10, 7
+	end
+
+BattleGrotto_B1F_EventScript_PostBattle_2:
 	buffernumberstring STR_VAR_1, 1
 	setvar VAR_0x8004, 1
 	special GiveFrontierBattlePoints
-	msgbox BattleGrotto_B1F_EventScript_Give1BP_Text_0, MSGBOX_GETPOINTS
+	msgbox BattleGrotto_B1F_EventScript_PostBattle_Text_0, MSGBOX_GETPOINTS
 	waitmessage
 	closemessage
-	special HealPlayerParty
-	return
+	end
 
 
 BattleGrotto_B1F_EventScript_StartAttendant_Text_0:
@@ -209,6 +223,6 @@ BattleGrotto_B1F_EventScript_Ariana_Text_2:
 	.string "Congratulations! Talk to the attendant\n"
 	.string "just ahead to get your reward.$"
 
-BattleGrotto_B1F_EventScript_Give1BP_Text_0:
+BattleGrotto_B1F_EventScript_PostBattle_Text_0:
 	.string "{PLAYER} obtained\n"
 	.string "{STR_VAR_1} Battle Point.$"

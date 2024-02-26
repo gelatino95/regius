@@ -50,45 +50,70 @@ BattleGrotto_B4F_EventScript_EndAttendant_2:
 
 
 BattleGrotto_B4F_EventScript_Arataka::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ARATAKA, 0, BattleGrotto_B4F_EventScript_Arataka_Text_0, BattleGrotto_B4F_EventScript_Arataka_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ARATAKA, 0, BattleGrotto_B4F_EventScript_Arataka_Text_0, BattleGrotto_B4F_EventScript_Arataka_Text_1, BattleGrotto_B4F_EventScript_PostBattle
 	msgbox BattleGrotto_B4F_EventScript_Arataka_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B4F_EventScript_Hans::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_HANS, 0, BattleGrotto_B4F_EventScript_Hans_Text_0, BattleGrotto_B4F_EventScript_Hans_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_HANS, 0, BattleGrotto_B4F_EventScript_Hans_Text_0, BattleGrotto_B4F_EventScript_Hans_Text_1, BattleGrotto_B4F_EventScript_PostBattle
 	msgbox BattleGrotto_B4F_EventScript_Hans_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B4F_EventScript_Astrid::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ASTRID, 0, BattleGrotto_B4F_EventScript_Astrid_Text_0, BattleGrotto_B4F_EventScript_Astrid_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_ASTRID, 0, BattleGrotto_B4F_EventScript_Astrid_Text_0, BattleGrotto_B4F_EventScript_Astrid_Text_1, BattleGrotto_B4F_EventScript_PostBattle
 	msgbox BattleGrotto_B4F_EventScript_Astrid_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B4F_EventScript_Keito::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_KEITO, 0, BattleGrotto_B4F_EventScript_Keito_Text_0, BattleGrotto_B4F_EventScript_Keito_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_KEITO, 0, BattleGrotto_B4F_EventScript_Keito_Text_0, BattleGrotto_B4F_EventScript_Keito_Text_1, BattleGrotto_B4F_EventScript_PostBattle
 	msgbox BattleGrotto_B4F_EventScript_Keito_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B4F_EventScript_Yuri::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_YURI, 0, BattleGrotto_B4F_EventScript_Yuri_Text_0, BattleGrotto_B4F_EventScript_Yuri_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_YURI, 0, BattleGrotto_B4F_EventScript_Yuri_Text_0, BattleGrotto_B4F_EventScript_Yuri_Text_1, BattleGrotto_B4F_EventScript_PostBattle
 	msgbox BattleGrotto_B4F_EventScript_Yuri_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B4F_EventScript_Vincent::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_VINCENT, 0, BattleGrotto_B4F_EventScript_Vincent_Text_0, BattleGrotto_B4F_EventScript_Vincent_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_VINCENT, 0, BattleGrotto_B4F_EventScript_Vincent_Text_0, BattleGrotto_B4F_EventScript_Vincent_Text_1, BattleGrotto_B4F_EventScript_PostBattle
 	msgbox BattleGrotto_B4F_EventScript_Vincent_Text_2, MSGBOX_NPC
 	return
 
 
 BattleGrotto_B4F_EventScript_Tamara::
-	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_TAMARA, 0, BattleGrotto_B4F_EventScript_Tamara_Text_0, BattleGrotto_B4F_EventScript_Tamara_Text_1, BattleGrotto_B1F_EventScript_Give1BP
+	trainerbattle TRAINER_BATTLE_GROTTO, TRAINER_TAMARA, 0, BattleGrotto_B4F_EventScript_Tamara_Text_0, BattleGrotto_B4F_EventScript_Tamara_Text_1, BattleGrotto_B4F_EventScript_PostBattle
 	msgbox BattleGrotto_B4F_EventScript_Tamara_Text_2, MSGBOX_NPC
 	return
+
+
+BattleGrotto_B4F_EventScript_PostBattle::
+	special HealPlayerParty
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq BattleGrotto_B4F_EventScript_PostBattle_2
+	settrainerflag TRAINER_ARATAKA
+	settrainerflag TRAINER_HANS
+	settrainerflag TRAINER_ASTRID
+	settrainerflag TRAINER_KEITO
+	settrainerflag TRAINER_YURI
+	settrainerflag TRAINER_VINCENT
+	settrainerflag TRAINER_TAMARA
+	warp MAP_BATTLE_GROTTO_ENTRANCE, 10, 7
+	end
+
+BattleGrotto_B4F_EventScript_PostBattle_2:
+	buffernumberstring STR_VAR_1, 1
+	setvar VAR_0x8004, 1
+	special GiveFrontierBattlePoints
+	msgbox BattleGrotto_B4F_EventScript_PostBattle_Text_0, MSGBOX_GETPOINTS
+	waitmessage
+	closemessage
+	end
 
 
 BattleGrotto_B4F_EventScript_StartAttendant_Text_0:
@@ -184,3 +209,7 @@ BattleGrotto_B4F_EventScript_Tamara_Text_1:
 BattleGrotto_B4F_EventScript_Tamara_Text_2:
 	.string "You were a worthy foe. Keep climbing\n"
 	.string "higher!$"
+
+BattleGrotto_B4F_EventScript_PostBattle_Text_0:
+	.string "{PLAYER} obtained\n"
+	.string "{STR_VAR_1} Battle Point.$"

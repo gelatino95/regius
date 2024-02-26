@@ -2957,6 +2957,8 @@ BattleScript_LocalBattleLostPrintWhiteOut::
 	waitmessage B_WAIT_TIME_LONG
 	jumpifhalfword CMP_EQUAL, gTrainerBattleMode, TRAINER_BATTLE_NO_WHITEOUT_CONTINUE_SCRIPT, BattleScript_LocalBattleLostPrintNoWhiteout
 	jumpifhalfword CMP_EQUAL, gTrainerBattleMode, TRAINER_BATTLE_NO_INTRO_NO_WHITEOUT, BattleScript_LocalBattleLostPrintNoWhiteout
+	jumpifhalfword CMP_EQUAL, gTrainerBattleMode, TRAINER_BATTLE_GROTTO, BattleScript_LocalBattleLostPrintNoWhiteout
+	jumpifhalfword CMP_EQUAL, gTrainerBattleMode, TRAINER_BATTLE_GROTTO_NO_MUSIC, BattleScript_LocalBattleLostPrintNoWhiteout
 	printstring STRINGID_PLAYERWHITEOUT2
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_LocalBattleLostEnd::
