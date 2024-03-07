@@ -19,7 +19,6 @@ GatewayIsland_PlayersHouse_ItemBall::
 	goto_if_ne GatewayIsland_PlayersHouse_ItemBall_2
 GatewayIsland_PlayersHouse_ItemBall_1:
 	setflag FLAG_SYS_POKEMON_GET
-	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_RECEIVED_POKENAV
 	playfanfare MUS_OBTAIN_ITEM

@@ -4,7 +4,7 @@ script GatewayIsland_House1_EventScript_OldLady {
 	if (!flag(FLAG_RECEIVED_MYSTIC_WATER)) {
         lock
         faceplayer
-        msgbox(format("You're setting out on a journey?\nThat's wonderful.\pHere, take this charm with you.\nI've been saving it for a\lspecial occasion such as this."), MSGBOX_AUTOCLOSE)
+        msgbox(format("You're going off on your own?\nThat's wonderful.\pHere, take this charm with you.\nI've been saving it for a\lspecial occasion such as this."), MSGBOX_AUTOCLOSE)
         giveitem(ITEM_MYSTIC_WATER, 1)
         setflag(FLAG_RECEIVED_MYSTIC_WATER)
         closemessage
@@ -15,4 +15,120 @@ script GatewayIsland_House1_EventScript_OldLady {
         msgbox(format("The ocean is dangerous.\nBut it is not your enemy.\pSpend enough time on the sea,\nand you will form a spiritual\lbond with it."), MSGBOX_NPC)
         end
     }
+}
+
+script GatewayIsland_House1_EventScript_PokedexWoman {
+    lock
+    faceplayer
+    if (!flag(FLAG_SYS_POKEMON_GET)) { // if player doesn't have pokemon yet
+        msgbox(format("Oh? You don't have a POKéMON yet?\pThen I don't think you can help me.\pHmm… what to do…"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    if (flag(FLAG_RECEIVED_PRIZE_MASTER_BALL)) {
+        msgbox(format("There's my favorite field researcher!\pEnjoying your complete POKéDEX?"), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    if (!flag(FLAG_SYS_POKEDEX_GET)) {
+        msgbox(format("Oh! You got your first POKéMON?\pMy dream is to make a record of every beautiful and unique POKéMON native to the REGIUS ARCHIPELAGO.\pBut I'm not much of a traveler…\pPlease, take my POKéDEX with you!\pIt will be an invaluable tool for you as a TRAINER, and it will help with my research."), MSGBOX_DEFAULT)
+        playfanfare(MUS_OBTAIN_ITEM)
+        message(format("{PLAYER} received the POKéDEX!"))
+        setflag(FLAG_SYS_POKEDEX_GET)
+        waitfanfare
+        msgbox(format("Thanks for your help! I can't tell you how much this means to me.\pWhen you've registered 10 entries in your POKéDEX, please show me!\pI'll reward you for your efforts."), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    setvar(VAR_0x8004, 0)
+	specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+	copyvar(VAR_0x8008, VAR_0x8005)
+	copyvar(VAR_0x8009, VAR_0x8006)
+	copyvar(VAR_0x800A, VAR_RESULT)
+	buffernumberstring(STR_VAR_1, VAR_0x8008)  // Num seen
+	buffernumberstring(STR_VAR_2, VAR_0x8009)  // Num caught
+    msgbox(format("How is your POKéDEX coming along?\nLet me see…\pSo, you've seen {STR_VAR_1} POKéMON\nand caught {STR_VAR_2} POKéMON!"), MSGBOX_DEFAULT)
+    if (flag(FLAG_RECEIVED_PRIZE_TM_EARTHQUAKE)) { // set pokedex goal
+        msgbox(format("I'm amazed at how much you've filled the POKéDEX already!\lWhich POKéMON are you missing?\pYou're in the home stretch now, so don't give up!"), MSGBOX_DEFAULT)
+        setvar(VAR_0x800B, 145)
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_TM_RETURN)) {
+        msgbox(format("Most POKéMON need training in order to evolve.\lHave you tried leveling up your POKéMON in the BATTLE GROTTO?"), MSGBOX_DEFAULT)
+        setvar(VAR_0x800B, 100)
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_AMULET_COIN)) {
+        msgbox(format("The more places you explore, the more new POKeMON you'll find.\lKeep seeking out new places!"), MSGBOX_DEFAULT)
+        setvar(VAR_0x800B, 60)
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_SUN_STONE)) {
+        msgbox(format("Evolving POKéMON is a great way to fill your POKeDEX.\pSome POKéMON evolve using ITEMS. Don't forget to check your BAG now and then!"), MSGBOX_DEFAULT)
+        setvar(VAR_0x800B, 40)
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_QUICK_CLAW)) {
+        msgbox(format("Have you tried fishing? There are lots of POKéMON you can only find with a ROD.\pMaybe the FISHING CLUB in the SOUTHEAST SEA can hook you up\lwith one."), MSGBOX_DEFAULT)
+        setvar(VAR_0x800B, 20)
+    }
+    else {
+        msgbox(format("Want to hear my advice?\nCatch every new POKéMON you see!\pThere are shops on the other islands where you can buy more BALLS for catching POKéMON."), MSGBOX_DEFAULT)
+        setvar(VAR_0x800B, 10)
+    }
+    if (var(VAR_0x8009) >= VAR_0x800B) { // if current number caught meets the current goal
+        goto(GatewayIsland_House1_EventScript_GivePokedexPrize)
+    }
+    buffernumberstring(STR_VAR_3, VAR_0x800B)
+    msgbox(GatewayIsland_House1_Text_ComeBack, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script GatewayIsland_House1_EventScript_GivePokedexPrize {
+    if (flag(FLAG_RECEIVED_PRIZE_TM_EARTHQUAKE)) {
+        msgbox(format("Hold on… am I seeing this right?\nHave you really collected data on every single POKéMON in the region?\pI'm speechless… You've helped me achieve my dream!\pI can't thank you enough for all your hard work.\pThis is the last reward I have for you.\nI don't know how useful it will be at this point, but… Here, you deserve it."), MSGBOX_DEFAULT)
+        giveitem(ITEM_MASTER_BALL, 1)
+        setflag(FLAG_RECEIVED_PRIZE_MASTER_BALL)
+        release
+        end
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_TM_RETURN)) {
+        msgbox(GatewayIsland_House1_Text_AcceptPrize, MSGBOX_DEFAULT)
+        giveitem(ITEM_TM26, 1)
+        setflag(FLAG_RECEIVED_PRIZE_TM_EARTHQUAKE)
+        setvar(VAR_0x800B, 145)
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_AMULET_COIN)) {
+        msgbox(GatewayIsland_House1_Text_AcceptPrize, MSGBOX_DEFAULT)
+        giveitem(ITEM_TM27, 1)
+        setflag(FLAG_RECEIVED_PRIZE_TM_RETURN)
+        setvar(VAR_0x800B, 100)
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_SUN_STONE)) {
+        msgbox(GatewayIsland_House1_Text_AcceptPrize, MSGBOX_DEFAULT)
+        giveitem(ITEM_AMULET_COIN, 1)
+        setflag(FLAG_RECEIVED_PRIZE_AMULET_COIN)
+        setvar(VAR_0x800B, 60)
+    }
+    elif (flag(FLAG_RECEIVED_PRIZE_QUICK_CLAW)) {
+        msgbox(GatewayIsland_House1_Text_AcceptPrize, MSGBOX_DEFAULT)
+        giveitem(ITEM_SUN_STONE, 1)
+        setflag(FLAG_RECEIVED_PRIZE_SUN_STONE)
+        setvar(VAR_0x800B, 40)
+    }
+    else {
+        msgbox(GatewayIsland_House1_Text_AcceptPrize, MSGBOX_DEFAULT)
+        giveitem(ITEM_QUICK_CLAW, 1)
+        setflag(FLAG_RECEIVED_PRIZE_QUICK_CLAW)
+        setvar(VAR_0x800B, 20)
+    }
+    buffernumberstring(STR_VAR_3, VAR_0x800B)
+    msgbox(GatewayIsland_House1_Text_ComeBack, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text GatewayIsland_House1_Text_AcceptPrize {
+    format("…Oh! Look how much progress you've made!\pHere, take this as thanks for all your help so far.")
+}
+
+text GatewayIsland_House1_Text_ComeBack {
+    format("Come back and show me when you've caught {STR_VAR_3} POKéMON.")
 }
