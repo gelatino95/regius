@@ -423,6 +423,7 @@ static bool8 MonListHasSpecies(const struct WildPokemonInfo *info, u16 species, 
 static void BuildAreaGlowTilemap(void)
 {
     u16 i, y, x, j;
+    static s16 mapSecId;
 
     // Reset tilemap
     for (i = 0; i < ARRAY_COUNT(sPokedexAreaScreen->areaGlowTilemap); i++)
@@ -430,6 +431,7 @@ static void BuildAreaGlowTilemap(void)
 
     // For each area with this species, scan the region map layout and find any locations that have a matching mapsec.
     // Add a "full glow" indicator for these matching spaces.
+    // MODIFIED 3/15/2024: now uses area sizes in gRegionMapEntries instead
     for (i = 0; i < sPokedexAreaScreen->numOverworldAreas; i++)
     {
         j = 0;
@@ -437,7 +439,13 @@ static void BuildAreaGlowTilemap(void)
         {
             for (x = 0; x < AREA_SCREEN_WIDTH; x++)
             {
-                if (GetRegionMapSecIdAt(x, y) == sPokedexAreaScreen->overworldAreasWithMons[i].regionMapSectionId)
+                mapSecId = sPokedexAreaScreen->overworldAreasWithMons[i].regionMapSectionId;
+                //if (GetRegionMapSecIdAt(x, y) == mapSecId)
+                //    sPokedexAreaScreen->areaGlowTilemap[j] = GLOW_FULL;
+                if (x >= (gRegionMapEntries[mapSecId].x + MAPCURSOR_X_MIN)
+                    && x < (gRegionMapEntries[mapSecId].x + gRegionMapEntries[mapSecId].width + MAPCURSOR_X_MIN)
+                    && y >= (gRegionMapEntries[mapSecId].y + MAPCURSOR_Y_MIN)
+                    && y < (gRegionMapEntries[mapSecId].y + gRegionMapEntries[mapSecId].height + MAPCURSOR_Y_MIN))
                     sPokedexAreaScreen->areaGlowTilemap[j] = GLOW_FULL;
                 j++;
             }
