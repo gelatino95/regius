@@ -1,7 +1,7 @@
 mapscripts GatewayIsland_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag(FLAG_VISITED_GATEWAY_ISLAND)
-		if (!flag(FLAG_SYS_POKEMON_GET)) { //move kecleon boy if the player has no pokemon
+		if (!flag(FLAG_RECEIVED_REGIUS_CREST)) { //move kecleon boy
 			setobjectxyperm(2, 39, 23)
 			setobjectxyperm(3, 39, 24)
 			setobjectmovementtype(2, MOVEMENT_TYPE_FACE_LEFT)
@@ -113,11 +113,11 @@ script GatewayIsland_EventScript_UpdateGateState {
 script GatewayIsland_EventScript_KecleonBoy {
 	lock
 	faceplayer
-	if (flag(FLAG_SYS_POKEMON_GET)) {
+	if (flag(FLAG_RECEIVED_REGIUS_CREST)) {
 		msgbox(format("These islands are chock full of\nwild POKéMON.\pIt's wonderful, but it can be\ndangerous if you don't have a\lPOKéMON to protect you."), MSGBOX_AUTOCLOSE)
 	}
 	else {
-		msgbox(format("There are wild POKéMON out this way.\nI can't let you go out there unless\lyou have a POKéMON of your own."), MSGBOX_AUTOCLOSE)
+		msgbox(format("Aren't you forgetting something?\pYou better get your GRANDMA'S permission before heading out of town!"), MSGBOX_AUTOCLOSE)
 	}
 	release
 	end

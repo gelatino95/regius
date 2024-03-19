@@ -86,7 +86,7 @@
 #define FLAG_RECEIVED_PRIZE_TM_RETURN               0x49
 #define FLAG_RECEIVED_PRIZE_TM_EARTHQUAKE           0x4A
 #define FLAG_RECEIVED_PRIZE_MASTER_BALL             0x4B
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
+#define FLAG_RECEIVED_REGIUS_CREST                  0x4C
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag

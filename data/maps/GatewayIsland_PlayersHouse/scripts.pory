@@ -4,10 +4,48 @@ mapscripts GatewayIsland_PlayersHouse_MapScripts {
 	}
 }
 
+script GatewayIsland_PlayersHouse_EventScript_Grandma {
+	lock
+	faceplayer
+	if (!flag(FLAG_RECEIVED_POKENAV)) { //haven't received pokenav yet
+		msgbox(format("GRANDMA: Ah, {PLAYER}!\nFinally got yourself out of bed, eh?\pI left you a very special present on the table.\lDid you pick it up yet?\pOh, that's right!\nI have something else important\lfor a new TRAINER like yourself."), MSGBOX_DEFAULT)
+		setflag(FLAG_SYS_POKENAV_GET)
+		setflag(FLAG_RECEIVED_POKENAV)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox("{PLAYER} received the POKéNAV!", MSGBOX_DEFAULT)
+		waitfanfare
+		msgbox(format("This will help you navigate when you're out exploring.\lDon't go and get yourself lost, now!"), MSGBOX_DEFAULT)
+		msgbox(GatewayIsland_PlayersHouse_Text_GrandmaComeBackLater, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	if (!flag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)) { //haven't received pokedex yet
+		msgbox(GatewayIsland_PlayersHouse_Text_GrandmaComeBackLater, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	if (!flag(FLAG_RECEIVED_REGIUS_CREST)) { //haven't received regius crest yet
+		msgbox(format("So she gave you a POKéDEX, eh?\pNow you're really prepared to start your journey!\pBut before you go, I have one more gift for you.\pGo on, take it."), MSGBOX_DEFAULT)
+		giveitem(ITEM_REGIUS_CREST, 1)
+		setflag(FLAG_RECEIVED_REGIUS_CREST)
+		msgbox(format("This odd charm has been passed down in my family for generations.\pI hope it will keep you safe and bring you good fortune on your adventure.\pDon't forget, if you grow weary from your travels, you can always come back here and rest in your bed.\pThere's no shame in taking a break when you need it!\pNow, what are you waiting for?\nGet out there and have fun!"), MSGBOX_DEFAULT)
+		release
+		end
+	}
+	msgbox(format("All this talk of adventure has me thinking about my youth.\pYou might inspire me to go out and have an adventure of my own!\lWouldn't that be something?"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
 script GatewayIsland_PlayersHouse_ItemBall {
 	lock
-	msgbox(format("Dear {PLAYER},\pToday is the day you set off\non your first adventure.\pI'm sorry I couldn't be here\nfor your big day.\pI've provided everything you will\nneed as a new TRAINER,\lincluding your first POKéMON.\pTreat it with love, and it\nwill care for you in return."))
-    givemon(SPECIES_PLAKOMASK 15, ITEM_NONE)
+	msgbox(format("It's a gift from GRANDMA.\nTake it?"), MSGBOX_YESNO)
+	if (!var(VAR_RESULT)) {
+		release
+		end
+	}
+    removeobject(1)
+	givemon(SPECIES_PLAKOMASK, 15, ITEM_NONE)
     playfanfare(MUS_OBTAIN_ITEM)
     msgbox("{PLAYER} received PLAKOMASK!", MSGBOX_DEFAULT)
 	waitfanfare
@@ -16,15 +54,6 @@ script GatewayIsland_PlayersHouse_ItemBall {
     	call(Common_EventScript_NameReceivedPartyMon)
     }
 	setflag(FLAG_SYS_POKEMON_GET)
-	//call(LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex)
-	setflag(FLAG_SYS_POKENAV_GET)
-	setflag(FLAG_RECEIVED_POKENAV)
-	playfanfare(MUS_OBTAIN_ITEM)
-	msgbox("{PLAYER} received the POKéNAV!", MSGBOX_DEFAULT)
-	waitfanfare
-	giveitem(ITEM_POKE_BALL, 5)
-	removeobject(1)
-	msgbox(format("And remember, if you grow\nweary from your adventure,\lyou can always return home and\lrest in your bed.\pThere's no shame in\ntaking a break.\pI'm out exploring the islands.\nCome find me once you have\lseen everything the REGIUS\lARCHIPELAGO has to offer.\pI'll be waiting!\p- GRANDMA"), MSGBOX_AUTOCLOSE)
 	release
 	end
 }
@@ -49,4 +78,8 @@ script GatewayIsland_PlayersHouse_EventScript_PlayersBed {
 
 script GatewayIsland_PlayersHouse_EventScript_GrandmasBed {
 	msgbox(format("GRANDMA's bed.\nBetter not mess with it!"), MSGBOX_SIGN)
+}
+
+text GatewayIsland_PlayersHouse_Text_GrandmaComeBackLater {
+	format("There's a nice lady nextdoor who wants to see you, too.\lWhy don't you pay her a visit?\pOh, and I left some more supplies for you in the PC.\pDon't forget to check the PC before you leave!\pCome speak with me again once you've done all that.")
 }

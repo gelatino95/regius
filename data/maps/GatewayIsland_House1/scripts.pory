@@ -30,11 +30,12 @@ script GatewayIsland_House1_EventScript_PokedexWoman {
         release
         end
     }
-    if (!flag(FLAG_SYS_POKEDEX_GET)) {
+    if (!flag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)) {
         msgbox(format("Oh! You got your first POKéMON?\pMy dream is to make a record of every beautiful and unique POKéMON native to the REGIUS ARCHIPELAGO.\pBut I'm not much of a traveler…\pPlease, take my POKéDEX with you!\pIt will be an invaluable tool for you as a TRAINER, and it will help with my research."), MSGBOX_DEFAULT)
         playfanfare(MUS_OBTAIN_ITEM)
         message(format("{PLAYER} received the POKéDEX!"))
         setflag(FLAG_SYS_POKEDEX_GET)
+        setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
         waitfanfare
         msgbox(format("Thanks for your help! I can't tell you how much this means to me.\pWhen you've registered 10 entries in your POKéDEX, please show me!\pI'll reward you for your efforts."), MSGBOX_DEFAULT)
         release

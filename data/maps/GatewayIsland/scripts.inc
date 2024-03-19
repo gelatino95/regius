@@ -5,7 +5,7 @@ GatewayIsland_MapScripts::
 
 GatewayIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setflag FLAG_VISITED_GATEWAY_ISLAND
-	goto_if_unset FLAG_SYS_POKEMON_GET, GatewayIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_unset FLAG_RECEIVED_REGIUS_CREST, GatewayIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 	return
 
 GatewayIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
@@ -191,7 +191,7 @@ GatewayIsland_EventScript_UpdateGateState_19:
 GatewayIsland_EventScript_KecleonBoy::
 	lock
 	faceplayer
-	goto_if_set FLAG_SYS_POKEMON_GET, GatewayIsland_EventScript_KecleonBoy_2
+	goto_if_set FLAG_RECEIVED_REGIUS_CREST, GatewayIsland_EventScript_KecleonBoy_2
 	msgbox GatewayIsland_EventScript_KecleonBoy_Text_1, MSGBOX_AUTOCLOSE
 GatewayIsland_EventScript_KecleonBoy_1:
 	release
@@ -310,9 +310,9 @@ GatewayIsland_EventScript_KecleonBoy_Text_0:
 	.string "POKéMON to protect you.$"
 
 GatewayIsland_EventScript_KecleonBoy_Text_1:
-	.string "There are wild POKéMON out this way.\n"
-	.string "I can't let you go out there unless\l"
-	.string "you have a POKéMON of your own.$"
+	.string "Aren't you forgetting something?\p"
+	.string "You better get your GRANDMA'S\n"
+	.string "permission before heading out of town!$"
 
 GatewayIsland_EventScript_LittleGirl_Text_0:
 	.string "Hi!\n"

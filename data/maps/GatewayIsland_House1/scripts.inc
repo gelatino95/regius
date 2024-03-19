@@ -23,7 +23,7 @@ GatewayIsland_House1_EventScript_PokedexWoman::
 	faceplayer
 	goto_if_unset FLAG_SYS_POKEMON_GET, GatewayIsland_House1_EventScript_PokedexWoman_2
 	goto_if_set FLAG_RECEIVED_PRIZE_MASTER_BALL, GatewayIsland_House1_EventScript_PokedexWoman_5
-	goto_if_unset FLAG_SYS_POKEDEX_GET, GatewayIsland_House1_EventScript_PokedexWoman_8
+	goto_if_unset FLAG_RECEIVED_POKEDEX_FROM_BIRCH, GatewayIsland_House1_EventScript_PokedexWoman_8
 	setvar VAR_0x8004, 0
 	specialvar VAR_RESULT, ScriptGetPokedexInfo
 	copyvar VAR_0x8008, VAR_0x8005
@@ -63,6 +63,7 @@ GatewayIsland_House1_EventScript_PokedexWoman_8:
 	playfanfare MUS_OBTAIN_ITEM
 	message GatewayIsland_House1_EventScript_PokedexWoman_Text_3
 	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 	waitfanfare
 	msgbox GatewayIsland_House1_EventScript_PokedexWoman_Text_4, MSGBOX_DEFAULT
 	release
