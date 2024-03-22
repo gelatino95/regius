@@ -1,7 +1,45 @@
 mapscripts IgneousIsland_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag(FLAG_VISITED_IGNEOUS_ISLAND)
+		clearflag(FLAG_HIDE_IGNEOUS_ISLAND_FLY_GUY)
+		if (!flag(FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY) || flag(FLAG_RECEIVED_HM_FLY)) {
+			setflag(FLAG_HIDE_IGNEOUS_ISLAND_FLY_GUY)
+			removeobject(3)
+		}
 	}
+}
+
+script IgneousIsland_EventScript_FlyGuy {
+	lock
+	faceplayer
+	msgbox(format("Hey, friend! Fancy seeing you all the way out here.\pRemember me?\nThe bird guy?\pMy birds have been preparing for another battle against you.\pThis time, we're going all out!\nWe won't lose!\pWhat do you say? Want to battle?"), MSGBOX_YESNO)
+	if (!var(VAR_RESULT)) {
+		msgbox(AridIsland_Text_FlyGuyIllBeHere, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_LESTER_3, 0, format("Here we come!"), format("Incredible!"), IgneousIsland_EventScript_FlyGuy_PostBattle)
+	release
+	end
+}
+
+script IgneousIsland_EventScript_FlyGuy_PostBattle {
+	msgbox(format("Even after all our training, you beat us like it was nothing!\pI have to commend a fellow traveler.\nYou've impressed me!\pHere, I have something for you."), MSGBOX_DEFAULT)
+	giveitem(ITEM_HM02, 1)
+	setflag(FLAG_RECEIVED_HM_FLY)
+	msgbox(format("This is how I get around the islands so quickly. Now you can do it too!\pTeach FLY to your bird POKéMON, and you'll be as free as the wind.\pUntil we meet again!\nI'll see you in the skies!"), MSGBOX_DEFAULT)
+	closemessage
+	applymovement(3, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(0)
+	delay(50)
+	setfieldeffectargument(0, 1)
+	dofieldeffect(FLDEFF_NPCFLY_OUT)
+	delay(15)
+	setflag(FLAG_HIDE_IGNEOUS_ISLAND_FLY_GUY)
+	removeobject(3)
+	waitfieldeffect(FLDEFF_NPCFLY_OUT)
+	release
+	end
 }
 
 script IgneousIsland_EventScript_IslandSign {

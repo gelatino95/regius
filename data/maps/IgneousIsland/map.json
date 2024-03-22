@@ -55,6 +55,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IgneousIsland_EventScript_ItemUltraBall",
       "flag": "FLAG_ITEM_IGNEOUS_ISLAND_ULTRA_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 30,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IgneousIsland_EventScript_FlyGuy",
+      "flag": "FLAG_HIDE_IGNEOUS_ISLAND_FLY_GUY"
     }
   ],
   "warp_events": [

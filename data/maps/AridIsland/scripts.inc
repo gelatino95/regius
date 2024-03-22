@@ -4,7 +4,64 @@ AridIsland_MapScripts::
 
 AridIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setflag FLAG_VISITED_ARID_ISLAND
+	goto_if_set FLAG_DEFEATED_ARID_ISLAND_FLY_GUY, AridIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 	return
+
+AridIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	setflag FLAG_HIDE_ARID_ISLAND_FLY_GUY
+	removeobject 8
+	return
+
+AridIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+	goto_if_set FLAG_VISITED_KAPOK_ISLAND, AridIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	return
+
+
+AridIsland_EventScript_FlyGuy::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ARID_ISLAND_FLY_GUY, AridIsland_EventScript_FlyGuy_2
+	msgbox AridIsland_EventScript_FlyGuy_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq AridIsland_EventScript_FlyGuy_5
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_LESTER_1, 0, AridIsland_EventScript_FlyGuy_Text_2, AridIsland_EventScript_FlyGuy_Text_3, AridIsland_EventScript_FlyGuy_PostBattle
+	release
+	end
+
+AridIsland_EventScript_FlyGuy_2:
+	msgbox AridIsland_EventScript_FlyGuy_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne AridIsland_EventScript_FlyGuy_8
+	msgbox AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT
+AridIsland_EventScript_FlyGuy_7:
+	release
+	end
+
+AridIsland_EventScript_FlyGuy_5:
+	msgbox AridIsland_Text_FlyGuyIllBeHere, MSGBOX_DEFAULT
+	release
+	end
+
+AridIsland_EventScript_FlyGuy_8:
+	setvar VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI
+	special FieldLoadFlyMap
+	goto AridIsland_EventScript_FlyGuy_7
+
+
+AridIsland_EventScript_FlyGuy_PostBattle::
+	setflag FLAG_DEFEATED_ARID_ISLAND_FLY_GUY
+	msgbox AridIsland_EventScript_FlyGuy_PostBattle_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne AridIsland_EventScript_FlyGuy_PostBattle_2
+	msgbox AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT
+AridIsland_EventScript_FlyGuy_PostBattle_1:
+	release
+	end
+
+AridIsland_EventScript_FlyGuy_PostBattle_2:
+	setvar VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI
+	special FieldLoadFlyMap
+	goto AridIsland_EventScript_FlyGuy_PostBattle_1
 
 
 AridIsland_EventScript_ItemProtein::
@@ -103,6 +160,35 @@ BerryMartItems:
 	.2byte ITEM_PERSIM_BERRY
 	.2byte ITEM_NONE
 
+AridIsland_EventScript_FlyGuy_Text_0:
+	.string "Hey, it's you again!\p"
+	.string "My birds can take you to any island\n"
+	.string "you've visited before.\p"
+	.string "What do you say, want a lift?$"
+
+AridIsland_EventScript_FlyGuy_Text_1:
+	.string "Howdy!\p"
+	.string "I've been using my bird POKéMON to FLY\n"
+	.string "around the islands.\p"
+	.string "My birds need to stretch their wings\n"
+	.string "before setting out again.\p"
+	.string "Would you help me warm them up with a\n"
+	.string "battle?$"
+
+AridIsland_EventScript_FlyGuy_Text_2:
+	.string "Alright!$"
+
+AridIsland_EventScript_FlyGuy_Text_3:
+	.string "Amazing!$"
+
+AridIsland_EventScript_FlyGuy_PostBattle_Text_0:
+	.string "Hey, you have real talent as a TRAINER!\p"
+	.string "I gotta thank you somehow…\n"
+	.string "Oh, I know!\p"
+	.string "My birds can take you to any island\n"
+	.string "you've visited before.\p"
+	.string "What do you say, want a lift?$"
+
 AridIsland_EventScript_AridIslandSign_Text_0:
 	.string "ARID ISLAND\n"
 	.string "The hot, dry market town.$"
@@ -149,3 +235,12 @@ AridIsland_EventScript_BerryMart_Text_0:
 
 AridIsland_EventScript_BerryMart_Text_1:
 	.string "Come again!$"
+
+AridIsland_Text_FlyGuyComeBack::
+	.string "I'll hang around here a little longer, so\n"
+	.string "come back if you need a lift.$"
+
+AridIsland_Text_FlyGuyIllBeHere::
+	.string "Aw, alright.\p"
+	.string "I'll be right here if you change your\n"
+	.string "mind.$"

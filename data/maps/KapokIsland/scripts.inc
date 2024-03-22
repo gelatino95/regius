@@ -4,8 +4,21 @@ KapokIsland_MapScripts::
 
 KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setflag FLAG_VISITED_KAPOK_ISLAND
+	clearflag FLAG_HIDE_KAPOK_ISLAND_FLY_GUY
+	goto_if_unset FLAG_DEFEATED_ARID_ISLAND_FLY_GUY, KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto_if_set FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY, KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	goto KapokIsland_EventScript_TryMoveDayCareMan
-	end
+	return
+
+KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+	setflag FLAG_HIDE_KAPOK_ISLAND_FLY_GUY
+	removeobject 14
+	goto KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+
+KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
+	goto_if_set FLAG_VISITED_IGNEOUS_ISLAND, KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	goto KapokIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 
 KapokIsland_EventScript_TryMoveDayCareMan::
@@ -16,6 +29,53 @@ KapokIsland_EventScript_TryMoveDayCareMan_1:
 KapokIsland_EventScript_TryMoveDayCareMan_2:
 	applymovement 1, KapokIsland_Movement_MoveDayCareMan
 	goto KapokIsland_EventScript_TryMoveDayCareMan_1
+
+
+KapokIsland_EventScript_FlyGuy::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY, KapokIsland_EventScript_FlyGuy_2
+	msgbox KapokIsland_EventScript_FlyGuy_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq KapokIsland_EventScript_FlyGuy_5
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_LESTER_2, 0, KapokIsland_EventScript_FlyGuy_Text_2, KapokIsland_EventScript_FlyGuy_Text_3, KapokIsland_EventScript_FlyGuy_PostBattle
+	release
+	end
+
+KapokIsland_EventScript_FlyGuy_2:
+	msgbox KapokIsland_EventScript_FlyGuy_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne KapokIsland_EventScript_FlyGuy_8
+	msgbox AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT
+KapokIsland_EventScript_FlyGuy_7:
+	release
+	end
+
+KapokIsland_EventScript_FlyGuy_5:
+	msgbox AridIsland_Text_FlyGuyIllBeHere, MSGBOX_DEFAULT
+	release
+	end
+
+KapokIsland_EventScript_FlyGuy_8:
+	setvar VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI
+	special FieldLoadFlyMap
+	goto KapokIsland_EventScript_FlyGuy_7
+
+
+KapokIsland_EventScript_FlyGuy_PostBattle::
+	setflag FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY
+	msgbox KapokIsland_EventScript_FlyGuy_PostBattle_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne KapokIsland_EventScript_FlyGuy_PostBattle_2
+	msgbox AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT
+KapokIsland_EventScript_FlyGuy_PostBattle_1:
+	release
+	end
+
+KapokIsland_EventScript_FlyGuy_PostBattle_2:
+	setvar VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI
+	special FieldLoadFlyMap
+	goto KapokIsland_EventScript_FlyGuy_PostBattle_1
 
 
 KapokIsland_EventScript_DefenseCurlTutor::
@@ -183,6 +243,35 @@ KapokIsland_EventScript_DayCareSign::
 KapokIsland_Movement_MoveDayCareMan:
 	face_down
 	step_end
+
+KapokIsland_EventScript_FlyGuy_Text_0:
+	.string "Hey, it's you again!\p"
+	.string "My birds can take you to any island\n"
+	.string "you've visited before.\p"
+	.string "What do you say, want a lift?$"
+
+KapokIsland_EventScript_FlyGuy_Text_1:
+	.string "Oh, it's you again!\p"
+	.string "Remember me?\n"
+	.string "The bird guy?\p"
+	.string "Funny how we keep running into each\n"
+	.string "other.\p"
+	.string "My birds have been itching for a\n"
+	.string "rematch with you!\p"
+	.string "What do you say? Want to battle?$"
+
+KapokIsland_EventScript_FlyGuy_Text_2:
+	.string "Let's do it!$"
+
+KapokIsland_EventScript_FlyGuy_Text_3:
+	.string "Amazing!$"
+
+KapokIsland_EventScript_FlyGuy_PostBattle_Text_0:
+	.string "Wow! You never fail to impress.\n"
+	.string "My birds are all pumped up now!\p"
+	.string "We could take you on another ride, if\n"
+	.string "you need it.\p"
+	.string "What do you say, want a lift?$"
 
 KapokIsland_EventScript_DefenseCurlTutor_Text_0:
 	.string "Curl up! Roll out! The ultimate strategy\n"

@@ -132,9 +132,9 @@
 #define TRAINER_CONNIE                      128 // new
 #define TRAINER_HOSHIDO                     129 // new
 #define TRAINER_YUKARI                      130 // new
-#define TRAINER_TIFFANY                     131
-#define TRAINER_JESSICA_2                   132
-#define TRAINER_JESSICA_3                   133
+#define TRAINER_LESTER_1                    131 // new
+#define TRAINER_LESTER_2                    132 // new
+#define TRAINER_LESTER_3                    133 // new
 #define TRAINER_JESSICA_4                   134
 #define TRAINER_JESSICA_5                   135
 #define TRAINER_WINSTON_1                   136

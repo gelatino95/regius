@@ -2586,7 +2586,7 @@ bool8 FldEff_FieldMoveShowMonInit(void)
     bool32 noDucking = gFieldEffectArguments[0] & SHOW_MON_CRY_NO_DUCKING;
 	if (VarGet(VAR_0x800A) == LAST_TALKED_TO_FLYING_TAXI)
 	{
-		gFieldEffectArguments[0] = SPECIES_COCKATRIX;
+		gFieldEffectArguments[0] = SPECIES_CHICKLET;
 		gFieldEffectArguments[1] = 0;
 		gFieldEffectArguments[2] = 12;
 	}

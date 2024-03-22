@@ -2048,46 +2048,45 @@ static const struct TrainerMon sParty_Yukari[] = {
     }
 };
 
-static const struct TrainerMon sParty_Tiffany[] = {
+static const struct TrainerMon sParty_Lester1[] = {
     {
-    .iv = 100,
-    .lvl = 39,
-    .species = SPECIES_CARVANHA,
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_CHICKLET,
+    .moves = {MOVE_SCRATCH, MOVE_SAND_ATTACK, MOVE_PECK, MOVE_FLY}
     },
     {
-    .iv = 100,
-    .lvl = 39,
-    .species = SPECIES_SHARPEDO,
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_WINGULL,
     }
 };
 
-static const struct TrainerMon sParty_Jessica2[] = {
+static const struct TrainerMon sParty_Lester2[] = {
     {
-    .iv = 10,
-    .lvl = 35,
-    .species = SPECIES_KECLEON,
-    .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
+    .iv = 50,
+    .lvl = 20,
+    .species = SPECIES_CHICKLET,
+    .moves = {MOVE_HEADBUTT, MOVE_SAND_ATTACK, MOVE_WING_ATTACK, MOVE_FLY}
     },
     {
-    .iv = 10,
-    .lvl = 35,
-    .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .iv = 50,
+    .lvl = 20,
+    .species = SPECIES_QUETINI,
     }
 };
 
-static const struct TrainerMon sParty_Jessica3[] = {
+static const struct TrainerMon sParty_Lester3[] = {
     {
-    .iv = 20,
-    .lvl = 38,
-    .species = SPECIES_KECLEON,
-    .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_CHICKLET,
+    .moves = {MOVE_HEADBUTT, MOVE_SAFEGUARD, MOVE_WING_ATTACK, MOVE_FLY}
     },
     {
-    .iv = 20,
-    .lvl = 38,
-    .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_SKARMORY,
     }
 };
 

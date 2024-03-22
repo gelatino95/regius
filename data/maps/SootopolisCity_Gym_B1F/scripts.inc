@@ -32,7 +32,7 @@ SootopolisCity_Gym_B1F_EventScript_Olivia::
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Tiffany::
-	trainerbattle_single TRAINER_TIFFANY, SootopolisCity_Gym_B1F_Text_TiffanyIntro, SootopolisCity_Gym_B1F_Text_TiffanyDefeat
+	trainerbattle_single TRAINER_LESTER_1, SootopolisCity_Gym_B1F_Text_TiffanyIntro, SootopolisCity_Gym_B1F_Text_TiffanyDefeat
 	msgbox SootopolisCity_Gym_B1F_Text_TiffanyPostBattle, MSGBOX_AUTOCLOSE
 	end
 

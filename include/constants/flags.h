@@ -87,8 +87,8 @@
 #define FLAG_RECEIVED_PRIZE_TM_EARTHQUAKE           0x4A
 #define FLAG_RECEIVED_PRIZE_MASTER_BALL             0x4B
 #define FLAG_RECEIVED_REGIUS_CREST                  0x4C
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
+#define FLAG_DEFEATED_ARID_ISLAND_FLY_GUY           0x4D
+#define FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY          0x4E
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 
 // Scripts
@@ -512,9 +512,9 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
+#define FLAG_HIDE_ARID_ISLAND_FLY_GUY        0x1DE
+#define FLAG_HIDE_KAPOK_ISLAND_FLY_GUY       0x1DF
+#define FLAG_HIDE_IGNEOUS_ISLAND_FLY_GUY     0x1E0
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
@@ -1388,10 +1388,10 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_VISITED_GATEWAY_ISLAND                 (SYSTEM_FLAGS + 0x21) // Unused Flag
-#define FLAG_VISITED_ARID_ISLAND                    (SYSTEM_FLAGS + 0x22) // Unused Flag
-#define FLAG_VISITED_KAPOK_ISLAND                   (SYSTEM_FLAGS + 0x23) // Unused Flag
-#define FLAG_VISITED_IGNEOUS_ISLAND                 (SYSTEM_FLAGS + 0x24) // Unused Flag
+#define FLAG_VISITED_GATEWAY_ISLAND                 (SYSTEM_FLAGS + 0x21)
+#define FLAG_VISITED_ARID_ISLAND                    (SYSTEM_FLAGS + 0x22)
+#define FLAG_VISITED_KAPOK_ISLAND                   (SYSTEM_FLAGS + 0x23)
+#define FLAG_VISITED_IGNEOUS_ISLAND                 (SYSTEM_FLAGS + 0x24)
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag

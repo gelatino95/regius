@@ -1702,43 +1702,43 @@ const struct Trainer gTrainers[] = {
         .party = {.TrainerMon = sParty_Yukari},
     },
 
-    [TRAINER_TIFFANY] =
+    [TRAINER_LESTER_1] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
-        .trainerName = _("TIFFANY"),
+        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerName = _("LESTER"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_Tiffany),
-        .party = {.TrainerMon = sParty_Tiffany},
+        .partySize = ARRAY_COUNT(sParty_Lester1),
+        .party = {.TrainerMon = sParty_Lester1},
     },
 
-    [TRAINER_JESSICA_2] =
+    [TRAINER_LESTER_2] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
-        .trainerName = _("JESSICA"),
+        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerName = _("LESTER"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_Jessica2),
-        .party = {.TrainerMon = sParty_Jessica2},
+        .partySize = ARRAY_COUNT(sParty_Lester2),
+        .party = {.TrainerMon = sParty_Lester2},
     },
 
-    [TRAINER_JESSICA_3] =
+    [TRAINER_LESTER_3] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
-        .trainerName = _("JESSICA"),
+        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerName = _("LESTER"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_Jessica3),
-        .party = {.TrainerMon = sParty_Jessica3},
+        .partySize = ARRAY_COUNT(sParty_Lester3),
+        .party = {.TrainerMon = sParty_Lester3},
     },
 
     [TRAINER_JESSICA_4] =

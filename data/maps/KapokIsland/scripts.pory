@@ -1,8 +1,12 @@
 mapscripts KapokIsland_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag(FLAG_VISITED_KAPOK_ISLAND)
+		clearflag(FLAG_HIDE_KAPOK_ISLAND_FLY_GUY)
+		if (!flag(FLAG_DEFEATED_ARID_ISLAND_FLY_GUY) || (flag(FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY) && flag(FLAG_VISITED_IGNEOUS_ISLAND))) {
+			setflag(FLAG_HIDE_KAPOK_ISLAND_FLY_GUY)
+			removeobject(14)
+		}
 		goto(KapokIsland_EventScript_TryMoveDayCareMan)
-		end
 	}
 }
 
@@ -10,6 +14,46 @@ script KapokIsland_EventScript_TryMoveDayCareMan {
 	if (flag(FLAG_PENDING_DAYCARE_EGG)) {
 		applymovement(1, KapokIsland_Movement_MoveDayCareMan)
 	}
+	end
+}
+
+script KapokIsland_EventScript_FlyGuy {
+	lock
+	faceplayer
+	if (flag(FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY)) {
+		msgbox(format("Hey, it's you again!\pMy birds can take you to any island you've visited before.\pWhat do you say, want a lift?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			setvar(VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI)
+			special(FieldLoadFlyMap)
+		}
+		else {
+			msgbox(AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT)
+		}
+		release
+		end
+	}
+	msgbox(format("Oh, it's you again!\pRemember me?\nThe bird guy?\pFunny how we keep running into each other.\pMy birds have been itching for a rematch with you!\pWhat do you say? Want to battle?"), MSGBOX_YESNO)
+	if (!var(VAR_RESULT)) {
+		msgbox(AridIsland_Text_FlyGuyIllBeHere, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_LESTER_2, 0, format("Let's do it!"), format("Amazing!"), KapokIsland_EventScript_FlyGuy_PostBattle)
+	release
+	end
+}
+
+script KapokIsland_EventScript_FlyGuy_PostBattle {
+	setflag(FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY)
+	msgbox(format("Wow! You never fail to impress.\nMy birds are all pumped up now!\pWe could take you on another ride, if you need it.\pWhat do you say, want a lift?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		setvar(VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI)
+		special(FieldLoadFlyMap)
+	}
+	else {
+		msgbox(AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT)
+	}
+	release
 	end
 }
 

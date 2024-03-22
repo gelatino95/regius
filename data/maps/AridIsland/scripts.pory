@@ -1,7 +1,51 @@
 mapscripts AridIsland_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
 		setflag(FLAG_VISITED_ARID_ISLAND)
+		if (flag(FLAG_DEFEATED_ARID_ISLAND_FLY_GUY) && flag(FLAG_VISITED_KAPOK_ISLAND)) {
+			setflag(FLAG_HIDE_ARID_ISLAND_FLY_GUY)
+			removeobject(8)
+		}
 	}
+}
+
+script AridIsland_EventScript_FlyGuy {
+	lock
+	faceplayer
+	if (flag(FLAG_DEFEATED_ARID_ISLAND_FLY_GUY)) {
+		msgbox(format("Hey, it's you again!\pMy birds can take you to any island you've visited before.\pWhat do you say, want a lift?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			setvar(VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI)
+			special(FieldLoadFlyMap)
+		}
+		else {
+			msgbox(AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT)
+		}
+		release
+		end
+	}
+	msgbox(format("Howdy!\pI've been using my bird POKéMON to FLY around the islands.\pMy birds need to stretch their wings before setting out again.\pWould you help me warm them up with a battle?"), MSGBOX_YESNO)
+	if (!var(VAR_RESULT)) {
+		msgbox(AridIsland_Text_FlyGuyIllBeHere, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_LESTER_1, 0, format("Alright!"), format("Amazing!"), AridIsland_EventScript_FlyGuy_PostBattle)
+	release
+	end
+}
+
+script AridIsland_EventScript_FlyGuy_PostBattle {
+	setflag(FLAG_DEFEATED_ARID_ISLAND_FLY_GUY)
+	msgbox(format("Hey, you have real talent as a TRAINER!\pI gotta thank you somehow…\nOh, I know!\pMy birds can take you to any island you've visited before.\pWhat do you say, want a lift?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		setvar(VAR_0x800A, LAST_TALKED_TO_FLYING_TAXI)
+		special(FieldLoadFlyMap)
+	}
+	else {
+		msgbox(AridIsland_Text_FlyGuyComeBack, MSGBOX_DEFAULT)
+	}
+	release
+	end
 }
 
 script AridIsland_EventScript_ItemProtein {
@@ -87,4 +131,12 @@ mart BerryMartItems {
 	ITEM_CHESTO_BERRY
 	ITEM_ASPEAR_BERRY
 	ITEM_PERSIM_BERRY
+}
+
+text AridIsland_Text_FlyGuyComeBack {
+	format("I'll hang around here a little longer, so come back if you need a lift.")
+}
+
+text AridIsland_Text_FlyGuyIllBeHere {
+	format("Aw, alright.\pI'll be right here if you change your mind.")
 }
