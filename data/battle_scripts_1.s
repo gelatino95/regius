@@ -2959,9 +2959,17 @@ BattleScript_LocalBattleLostPrintWhiteOut::
 	jumpifhalfword CMP_EQUAL, gTrainerBattleMode, TRAINER_BATTLE_NO_INTRO_NO_WHITEOUT, BattleScript_LocalBattleLostPrintNoWhiteout
 	jumpifhalfword CMP_EQUAL, gTrainerBattleMode, TRAINER_BATTLE_GROTTO, BattleScript_LocalBattleLostPrintNoWhiteout
 	jumpifhalfword CMP_EQUAL, gTrainerBattleMode, TRAINER_BATTLE_GROTTO_NO_MUSIC, BattleScript_LocalBattleLostPrintNoWhiteout
+	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_LocalBattleLostEnd
+	getmoneyreward
 	printstring STRINGID_PLAYERWHITEOUT2
 	waitmessage B_WAIT_TIME_LONG
+	end2
 BattleScript_LocalBattleLostEnd::
+	printstring STRINGID_PLAYERLOSTTOENEMYTRAINER
+	waitmessage B_WAIT_TIME_LONG
+	getmoneyreward
+	printstring STRINGID_PLAYERPAIDPRIZEMONEY
+	waitmessage B_WAIT_TIME_LONG
 	end2
 BattleScript_LocalBattleLostPrintNoWhiteout::
 	printstring STRINGID_PLAYERWHITEOUT3
