@@ -18,3 +18,39 @@ script IgneousIsland_HealingSpot_EventScript_OldMan {
     release
     end
 }
+
+script IgneousIsland_HealingSpot_EventScript_ShellBellLady {
+    lock
+    faceplayer
+    msgbox(format("Would you care for a SHELL BELL?\pI can fashion one out of SHOAL SHELL and SHOAL SALT, one of each."), MSGBOX_DEFAULT)
+    checkitem(ITEM_SHOAL_SHELL, 1)
+    if (!var(VAR_RESULT)) {
+        goto(IgneousIsland_HealingSpot_EventScript_ShellBellLady_ComeBack)
+    }
+    checkitem(ITEM_SHOAL_SALT, 1)
+    if (!var(VAR_RESULT)) {
+        goto(IgneousIsland_HealingSpot_EventScript_ShellBellLady_ComeBack)
+    }
+    msgbox(format("Ah, you have exactly what I need!\pWhat do you say? Want a SHELL BELL?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT)) {
+        msgbox(format("Oh, really? Fine."), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    delay(60)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(format("Finished!\nHere you are."), MSGBOX_DEFAULT)
+    removeitem(ITEM_SHOAL_SHELL, 1)
+    removeitem(ITEM_SHOAL_SALT, 1)
+    giveitem(ITEM_SHELL_BELL, 1)
+    release
+    end
+}
+
+script IgneousIsland_HealingSpot_EventScript_ShellBellLady_ComeBack {
+    msgbox(format("But, hm, you don't have the materials. Come back later."), MSGBOX_DEFAULT)
+    release
+    end
+}
