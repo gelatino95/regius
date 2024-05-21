@@ -1016,7 +1016,7 @@ static const struct TrainerMon sParty_Amanda[] = {
     .iv = 0,
     .lvl = 24,
     .species = SPECIES_SUNFLORA,
-    .heldItem = ITEM_LEAF_STONE,
+    .heldItem = ITEM_SUN_STONE,
     }
 };
 
@@ -1185,6 +1185,7 @@ static const struct TrainerMon sParty_Janet[] = {
     .iv = 50,
     .lvl = 26,
     .species = SPECIES_BELLOSSOM,
+    .heldItem = ITEM_SUN_STONE,
     },
     {
     .iv = 50,
@@ -1561,7 +1562,7 @@ static const struct TrainerMon sParty_Casady[] = {
     .iv = 100,
     .lvl = 28,
     .species = SPECIES_BELLOSSOM,
-    .heldItem = ITEM_NONE,
+    .heldItem = ITEM_SUN_STONE,
     .moves = {MOVE_GIGA_DRAIN, MOVE_MAGICAL_LEAF, MOVE_MOONLIGHT, MOVE_STUN_SPORE}
     },
     {
@@ -1687,6 +1688,7 @@ static const struct TrainerMon sParty_Tamara[] = {
     .iv = 100,
     .lvl = 33,
     .species = SPECIES_MEDITITE,
+    .heldItem = ITEM_TWISTED_SPOON,
     .moves = {MOVE_REFLECT, MOVE_DETECT, MOVE_CONFUSION, MOVE_HI_JUMP_KICK}
     },
     {
@@ -1994,6 +1996,7 @@ static const struct TrainerMon sParty_Melissa[] = {
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_MANOBELLUM,
+    .heldItem = ITEM_TWISTED_SPOON,
     },
     {
     .iv = 0,
