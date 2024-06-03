@@ -4992,10 +4992,6 @@ static const union AnimCmd sAnim_Levilith_1[] =
     ANIMCMD_FRAME(1, 43),
     ANIMCMD_FRAME(1, 60),
     ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 
