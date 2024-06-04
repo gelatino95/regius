@@ -3,16 +3,23 @@ IgneousCaldera_1F_MapScripts::
 	.byte 0
 
 IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD:
-	goto_if_unset FLAG_IGNEOUS_CALDERA_CHAMBER_OPEN, IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	goto_if_unset FLAG_IGNEOUS_CALDERA_CHAMBER_OPEN, IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_2
+IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	goto_if_unset FLAG_CAUGHT_REGISTEEL, IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_4
 	return
 
-IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_2:
 	setmetatile 18, 35, METATILE_Cave_EntranceCover, TRUE
 	setmetatile 19, 35, METATILE_Cave_EntranceCover, TRUE
 	setmetatile 20, 35, METATILE_Cave_EntranceCover, TRUE
 	setmetatile 18, 36, METATILE_Cave_SealedChamberBraille_Mid, TRUE
 	setmetatile 19, 36, METATILE_Cave_SealedChamberBraille_Mid, TRUE
 	setmetatile 20, 36, METATILE_Cave_SealedChamberBraille_Mid, TRUE
+	goto IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_1
+
+IgneousCaldera_1F_MapScripts_MAP_SCRIPT_ON_LOAD_4:
+	setmetatile 19, 7, 0x3F9, TRUE
+	setmetatile 21, 7, 0x3F9, TRUE
 	return
 
 
@@ -113,6 +120,8 @@ IgneousCaldera_1F_EventScript_Registeel_1:
 
 IgneousCaldera_1F_EventScript_Registeel_2:
 	setflag FLAG_CAUGHT_REGISTEEL
+	setmetatile 19, 7, 0x3F9, FALSE
+	setmetatile 21, 7, 0x3F9, FALSE
 	goto Common_EventScript_RemoveStaticPokemon
 	goto IgneousCaldera_1F_EventScript_Registeel_1
 

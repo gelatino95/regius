@@ -1,4 +1,11 @@
-mapscripts SlumberIsland_ThroneRoom_MapScripts {}
+mapscripts SlumberIsland_ThroneRoom_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        if (!flag(FLAG_CAUGHT_REGIGIGAS)) { //if regigigas is still there, activate impassible tiles
+            setmetatile(7, 2, 0x201, TRUE)
+            setmetatile(9, 2, 0x201, TRUE)
+        }
+    }
+}
 
 script SlumberIsland_ThroneRoom_EventScript_Regigigas {
     lock
@@ -14,6 +21,8 @@ script SlumberIsland_ThroneRoom_EventScript_Regigigas {
 	specialvar(VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
         setflag(FLAG_CAUGHT_REGIGIGAS)
+        setmetatile(7, 2, 0x201, FALSE) //clear impassible tiles
+        setmetatile(9, 2, 0x201, FALSE)
         goto(Common_EventScript_RemoveStaticPokemon)
     }
     else {

@@ -8,6 +8,10 @@ mapscripts IgneousCaldera_1F_MapScripts {
             setmetatile(19, 36, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
             setmetatile(20, 36, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
         }
+        if (!flag(FLAG_CAUGHT_REGISTEEL)) { //if registeel is still there, activate impassible tiles
+            setmetatile(19, 7, 0x3F9, TRUE)
+            setmetatile(21, 7, 0x3F9, TRUE)
+        }
     }
 }
 
@@ -93,6 +97,8 @@ script IgneousCaldera_1F_EventScript_Registeel {
 	specialvar(VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
         setflag(FLAG_CAUGHT_REGISTEEL)
+        setmetatile(19, 7, 0x3F9, FALSE)
+        setmetatile(21, 7, 0x3F9, FALSE)
         goto(Common_EventScript_RemoveStaticPokemon)
     }
     else {

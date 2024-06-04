@@ -8,6 +8,10 @@ mapscripts IceCave_B2F_MapScripts {
             setmetatile(17, 20, METATILE_Cave_IceChamberBraille_Mid, TRUE)
             setmetatile(18, 20, METATILE_Cave_IceChamberBraille_Mid, TRUE)
         }
+        if (!flag(FLAG_CAUGHT_REGICE)) { //if regice is still there, activate impassible tiles
+            setmetatile(16, 7, 0x3CF, TRUE)
+            setmetatile(18, 7, 0x3CF, TRUE)
+        }
     }
 }
 
@@ -75,6 +79,8 @@ script IceCave_B2F_EventScript_Regice {
 	specialvar(VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
         setflag(FLAG_CAUGHT_REGICE)
+        setmetatile(16, 7, 0x3CF, FALSE)
+        setmetatile(18, 7, 0x3CF, FALSE)
         goto(Common_EventScript_RemoveStaticPokemon)
     }
     else {

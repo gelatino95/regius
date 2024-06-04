@@ -3,16 +3,23 @@ IceCave_B2F_MapScripts::
 	.byte 0
 
 IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD:
-	goto_if_unset FLAG_ICE_CAVE_CHAMBER_OPEN, IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	goto_if_unset FLAG_ICE_CAVE_CHAMBER_OPEN, IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_2
+IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	goto_if_unset FLAG_CAUGHT_REGICE, IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_4
 	return
 
-IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_2:
 	setmetatile 16, 19, 0x3B7, TRUE
 	setmetatile 17, 19, 0x3B7, TRUE
 	setmetatile 18, 19, 0x3B7, TRUE
 	setmetatile 16, 20, METATILE_Cave_IceChamberBraille_Mid, TRUE
 	setmetatile 17, 20, METATILE_Cave_IceChamberBraille_Mid, TRUE
 	setmetatile 18, 20, METATILE_Cave_IceChamberBraille_Mid, TRUE
+	goto IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_1
+
+IceCave_B2F_MapScripts_MAP_SCRIPT_ON_LOAD_4:
+	setmetatile 16, 7, 0x3CF, TRUE
+	setmetatile 18, 7, 0x3CF, TRUE
 	return
 
 
@@ -95,6 +102,8 @@ IceCave_B2F_EventScript_Regice_1:
 
 IceCave_B2F_EventScript_Regice_2:
 	setflag FLAG_CAUGHT_REGICE
+	setmetatile 16, 7, 0x3CF, FALSE
+	setmetatile 18, 7, 0x3CF, FALSE
 	goto Common_EventScript_RemoveStaticPokemon
 	goto IceCave_B2F_EventScript_Regice_1
 

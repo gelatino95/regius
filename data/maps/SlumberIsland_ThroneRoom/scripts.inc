@@ -1,5 +1,15 @@
 SlumberIsland_ThroneRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, SlumberIsland_ThroneRoom_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
+
+SlumberIsland_ThroneRoom_MapScripts_MAP_SCRIPT_ON_LOAD:
+	goto_if_unset FLAG_CAUGHT_REGIGIGAS, SlumberIsland_ThroneRoom_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	return
+
+SlumberIsland_ThroneRoom_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	setmetatile 7, 2, 0x201, TRUE
+	setmetatile 9, 2, 0x201, TRUE
+	return
 
 
 SlumberIsland_ThroneRoom_EventScript_Regigigas::
@@ -23,6 +33,8 @@ SlumberIsland_ThroneRoom_EventScript_Regigigas_1:
 
 SlumberIsland_ThroneRoom_EventScript_Regigigas_2:
 	setflag FLAG_CAUGHT_REGIGIGAS
+	setmetatile 7, 2, 0x201, FALSE
+	setmetatile 9, 2, 0x201, FALSE
 	goto Common_EventScript_RemoveStaticPokemon
 	goto SlumberIsland_ThroneRoom_EventScript_Regigigas_1
 

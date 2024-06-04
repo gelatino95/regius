@@ -3,16 +3,23 @@ AridRuins_MapScripts::
 	.byte 0
 
 AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD:
-	goto_if_unset FLAG_ARID_RUINS_CHAMBER_OPEN, AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	goto_if_unset FLAG_ARID_RUINS_CHAMBER_OPEN, AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_2
+AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	goto_if_unset FLAG_CAUGHT_REGIROCK, AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_4
 	return
 
-AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_2:
 	setmetatile 33, 19, 0x236, TRUE
 	setmetatile 34, 19, 0x236, TRUE
 	setmetatile 35, 19, 0x236, TRUE
 	setmetatile 33, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE
 	setmetatile 34, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE
 	setmetatile 35, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE
+	goto AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_1
+
+AridRuins_MapScripts_MAP_SCRIPT_ON_LOAD_4:
+	setmetatile 33, 7, 0x3F8, TRUE
+	setmetatile 35, 7, 0x3F8, TRUE
 	return
 
 
@@ -102,6 +109,8 @@ AridRuins_EventScript_Regirock_1:
 
 AridRuins_EventScript_Regirock_2:
 	setflag FLAG_CAUGHT_REGIROCK
+	setmetatile 33, 7, 0x3F8, FALSE
+	setmetatile 35, 7, 0x3F8, FALSE
 	goto Common_EventScript_RemoveStaticPokemon
 	goto AridRuins_EventScript_Regirock_1
 

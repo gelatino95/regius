@@ -8,6 +8,10 @@ mapscripts AridRuins_MapScripts {
             setmetatile(34, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
             setmetatile(35, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
         }
+        if (!flag(FLAG_CAUGHT_REGIROCK)) { //if regirock is still there, activate impassible tiles
+            setmetatile(33, 7, 0x3F8, TRUE)
+            setmetatile(35, 7, 0x3F8, TRUE)
+        }
     }
 }
 
@@ -83,6 +87,8 @@ script AridRuins_EventScript_Regirock {
 	specialvar(VAR_RESULT, GetBattleOutcome)
 	if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
         setflag(FLAG_CAUGHT_REGIROCK)
+        setmetatile(33, 7, 0x3F8, FALSE)
+        setmetatile(35, 7, 0x3F8, FALSE)
         goto(Common_EventScript_RemoveStaticPokemon)
     }
     else {
