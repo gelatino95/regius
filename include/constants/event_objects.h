@@ -178,7 +178,7 @@
 #define OBJ_EVENT_GFX_DIVER_M                    172
 #define OBJ_EVENT_GFX_DIVER_F                    173
 #define OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER       174
-#define OBJ_EVENT_GFX_FIRE_CUSHION               175
+#define OBJ_EVENT_GFX_GRANDMA                    175
 #define OBJ_EVENT_GFX_WATER_CUSHION              176
 #define OBJ_EVENT_GFX_BIG_SNORLAX_DOLL           177
 #define OBJ_EVENT_GFX_BIG_RHYDON_DOLL            178

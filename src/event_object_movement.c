@@ -456,6 +456,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_REGICE                  0x1125
 #define OBJ_EVENT_PAL_TAG_REGISTEEL               0x1126
 #define OBJ_EVENT_PAL_TAG_REGIGIGAS               0x1127
+#define OBJ_EVENT_PAL_TAG_GRANDMA                 0x1128
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -506,6 +507,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Regice,                OBJ_EVENT_PAL_TAG_REGICE},
     {gObjectEventPal_Registeel,             OBJ_EVENT_PAL_TAG_REGISTEEL},
     {gObjectEventPal_Regigigas,             OBJ_EVENT_PAL_TAG_REGIGIGAS},
+    {gObjectEventPal_Grandma,               OBJ_EVENT_PAL_TAG_GRANDMA},
     {NULL,                                  0x0000},
 
 #ifdef BUGFIX

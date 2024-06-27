@@ -595,7 +595,7 @@ const u16 DecorGfx_GRASS_CUSHION[] = {
 };
 
 const u16 DecorGfx_FIRE_CUSHION[] = {
-    OBJ_EVENT_GFX_FIRE_CUSHION
+    OBJ_EVENT_GFX_GRANDMA
 };
 
 const u16 DecorGfx_WATER_CUSHION[] = {
