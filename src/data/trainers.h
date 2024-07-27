@@ -1741,17 +1741,17 @@ const struct Trainer gTrainers[] = {
         .party = {.TrainerMon = sParty_Lester3},
     },
 
-    [TRAINER_JESSICA_4] =
+    [TRAINER_DRACAENA] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
+        .trainerClass = TRAINER_CLASS_DRAGON_MASTER,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
-        .trainerName = _("JESSICA"),
+        .trainerPic = TRAINER_PIC_DRAGON_MASTER,
+        .trainerName = _("DRACAENA"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_Jessica4),
-        .party = {.TrainerMon = sParty_Jessica4},
+        .partySize = ARRAY_COUNT(sParty_Dracaena),
+        .party = {.TrainerMon = sParty_Dracaena},
     },
 
     [TRAINER_JESSICA_5] =

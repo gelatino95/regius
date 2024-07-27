@@ -135,7 +135,7 @@
 #define TRAINER_LESTER_1                    131 // new
 #define TRAINER_LESTER_2                    132 // new
 #define TRAINER_LESTER_3                    133 // new
-#define TRAINER_JESSICA_4                   134
+#define TRAINER_DRACAENA                    134 // new
 #define TRAINER_JESSICA_5                   135
 #define TRAINER_WINSTON_1                   136
 #define TRAINER_MOLLIE                      137
