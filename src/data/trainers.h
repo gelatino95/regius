@@ -1749,7 +1749,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("DRACAENA"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Dracaena),
         .party = {.TrainerMon = sParty_Dracaena},
     },

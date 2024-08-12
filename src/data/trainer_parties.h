@@ -2169,14 +2169,41 @@ static const struct TrainerMon sParty_Lester3[] = {
 
 static const struct TrainerMon sParty_Dracaena[] = {
     {
-    .iv = 30,
-    .lvl = 41,
-    .species = SPECIES_ALGOREST,
-    },
-    {
-    .iv = 30,
+    .iv = 255,
     .lvl = 41,
     .species = SPECIES_GYARADOS,
+    .moves = {MOVE_ROAR, MOVE_FLAMETHROWER, MOVE_HYPER_BEAM, MOVE_TWISTER}
+    },
+    {
+    .iv = 255,
+    .lvl = 41,
+    .species = SPECIES_ALGOREST,
+    .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_SYNTHESIS, MOVE_GROWTH}
+    },
+    {
+    .iv = 255,
+    .lvl = 41,
+    .species = SPECIES_DUNKETRA,
+    .moves = {MOVE_WATERFALL, MOVE_SUBMISSION, MOVE_SKULL_BASH, MOVE_PROTECT}
+    },
+    {
+    .iv = 255,
+    .lvl = 41,
+    .species = SPECIES_COCKATRIX,
+    .moves = {MOVE_BLIZZARD, MOVE_FIRE_BLAST, MOVE_THUNDER, MOVE_DRAGON_BREATH}
+    },
+    {
+    .iv = 255,
+    .lvl = 41,
+    .species = SPECIES_FLYGON,
+    .moves = {MOVE_DRAGON_CLAW, MOVE_DIG, MOVE_FLAMETHROWER, MOVE_ROCK_TOMB}
+    },
+    {
+    .iv = 255,
+    .lvl = 43,
+    .species = SPECIES_TERRISLA,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_WATER_SPOUT, MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_SURF}
     }
 };
 

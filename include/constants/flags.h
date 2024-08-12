@@ -89,7 +89,7 @@
 #define FLAG_RECEIVED_REGIUS_CREST                  0x4C
 #define FLAG_DEFEATED_ARID_ISLAND_FLY_GUY           0x4D
 #define FLAG_DEFEATED_KAPOK_ISLAND_FLY_GUY          0x4E
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_DEFEATED_GRANDMA                       0x4F
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50

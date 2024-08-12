@@ -1,5 +1,43 @@
 mapscripts FarReachSea_MapScripts {}
 
+script FarReachSea_EventScript_Grandma {
+    lock
+    faceplayer
+    cleartrainerflag(TRAINER_DRACAENA)
+    if (flag(FLAG_DEFEATED_GRANDMA)) {
+        msgbox(format("Back already, eh, {PLAYER}?\pLet me guess… you have new tales of adventure to share with me?\pWell, I'm sure you know the best way to show me everything you've experienced…\pAre you ready for another battle with your old GRANDMA?"), MSGBOX_YESNO)
+        if (!var(VAR_RESULT)) {
+            msgbox(format("Ha! I understand.\nI'll be here when you're ready."))
+            release
+            end
+        }
+        trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_DRACAENA, 0, format("That's what I like to hear!"), format("You've still got it!"), FarReachSea_EventScript_Grandma_PostBattle)
+    }
+    else {
+        msgbox(format("{PLAYER}!\nWhat a pleasant surprise.\pYou look a little different since\nI last saw you…\lI think you've grown on your journey.\pWhy don't you tell me all about it?\pWait… there's a better way to show me how much you've learned.\pWill you have a battle with your old GRANDMA?"), MSGBOX_YESNO)
+        if (!var(VAR_RESULT)) {
+            msgbox(format("Ah, very well…\nYour journey isn't yet over, I see.\pYou'll know when the time is right.\pCome back when you're ready!"), MSGBOX_DEFAULT)
+            release
+            end
+        }
+        trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DETECT_NO_MUSIC, TRAINER_DRACAENA, 0, format("I won't hold back, so prepare yourself!"), format("{PLAYER}…\nI couldn't be more proud."), FarReachSea_EventScript_Grandma_PostBattle)
+    }
+    release
+    end
+}
+
+script FarReachSea_EventScript_Grandma_PostBattle {
+    if (flag(FLAG_DEFEATED_GRANDMA)) {
+        msgbox(format("{PLAYER}, it makes me glad to know you're still making memories out there.\pYou'd be surprised how much of your journey I can glean just from the battles we've shared!\pSo please, once you're finished with your next adventure, come back and tell me all about it.\pI'll be waiting!"))
+    }
+    else {
+        setflag(FLAG_DEFEATED_GRANDMA)
+        msgbox(format("To think that you've only just become a\nTRAINER, and you've already bested me…\lIt does my heart good.\pYour journey doesn't have to end here, you know.\pWhat's next for you, {PLAYER}?\nThat's something only you can decide.\pWhatever it is, go out there and get it!\pI'll be here, waiting for you to tell me all about it."))
+    }
+    release
+    end
+}
+
 script FarReachSea_EventScript_PirateFortressSign {
     msgbox(format("PIRATE FORTRESS"), MSGBOX_SIGN)
     end
