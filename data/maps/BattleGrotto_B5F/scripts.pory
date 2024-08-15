@@ -1,0 +1,47 @@
+mapscripts BattleGrotto_B5F_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+		map_script_2(VAR_TEMP_1, 0, BattleGrotto_B5F_EventScript_PlayerFaceNorth)
+		end
+	}
+}
+
+script BattleGrotto_B5F_EventScript_PlayerFaceNorth {
+	setvar(VAR_TEMP_1, 1)
+    getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+	if (var(VAR_TEMP_3) == 44) {
+        turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+        cleartrainerflag(TRAINER_HELENA)
+		cleartrainerflag(TRAINER_FITZGERALD)
+		cleartrainerflag(TRAINER_MOLLIE)
+		cleartrainerflag(TRAINER_PRIYA)
+		cleartrainerflag(TRAINER_TOBY)
+		cleartrainerflag(TRAINER_RADOVAN)
+		cleartrainerflag(TRAINER_MIKA)
+    }
+    end
+}
+
+script BattleGrotto_B5F_EventScript_StartAttendant {
+	lock
+	faceplayer
+	msgbox(format("You're currently on sublevel 5.\pWould you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	}
+	else {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BattleGrotto_B5F_EventScript_EndAttendant {
+	lock
+	faceplayer
+	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
+	if (!flag(FLAG_GROTTO_FLOOR_5_COMPLETE)) {
+		msgbox(format("For clearing sublevel 5 for the first time, here is a special prize."), MSGBOX_DEFAULT)
+		giveitem(ITEM_TM29)
+		setflag(FLAG_GROTTO_FLOOR_5_COMPLETE)
+	}
+	msgbox(format("You've completed all the sublevels that are currently available.\pI will return you to the lobby."), MSGBOX_AUTOCLOSE)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+}

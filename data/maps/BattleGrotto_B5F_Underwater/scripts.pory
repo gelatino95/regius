@@ -1,0 +1,60 @@
+mapscripts BattleGrotto_B5F_Underwater_MapScripts {}
+
+script BattleGrotto_B4F_EventScript_Helena {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HELENA, 0, format("You DIVE with your POKéMON?\nThat's so cool!"), format("Haha…"), BattleGrotto_B5F_EventScript_PostBattle)
+	msgbox(format("I need special equipment to DIVE.\nIt's kind of a hassle!"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Fitzgerald {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_FITZGERALD, 0, format("There's danger on the ocean floor!"), format("Yeowch!"), BattleGrotto_B5F_EventScript_PostBattle)
+	msgbox(format("Careful what you touch on the ocean floor. Something might bite you."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Mollie {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_MOLLIE, 0, format("Need a light?"), format("Shocker!"), BattleGrotto_B5F_EventScript_PostBattle)
+	msgbox(format("It gets dark down here. My POKéMON keeps the area lit up."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Priya {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_PRIYA, 0, format("Make sure to keep an eye on your oxygen."), format("Mayday!"), BattleGrotto_B5F_EventScript_PostBattle)
+	msgbox(format("Wait, how long have we been down here anyway?"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Toby {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_TOBY, 0, format("All sorts of POKéMON live under the sea!"), format("Okay, I yield!"), BattleGrotto_B5F_EventScript_PostBattle)
+	msgbox(format("You'd be hard pressed to find a more diverse ecosystem than the ocean."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Radovan {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_RADOVAN, 0, format("Do you wonder what lurks in the abyss…?"), format("The abyss stared back…"), BattleGrotto_B5F_EventScript_PostBattle)
+	msgbox(format("I wish I could live in the deepest depths of the ocean…"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B4F_EventScript_Mika {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_MIKA, 0, format("You sure have some great endurance to make it this far!\pIf the water pressure hasn't crushed you yet, then I will!"), format("Eek! You're good!"), BattleGrotto_B5F_EventScript_PostBattle)
+	msgbox(format("You've proven that you can handle the pressure. Go on to the next sublevel!"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B5F_EventScript_PostBattle {
+	special(HealPlayerParty)
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_WON)
+	{
+		buffernumberstring(STR_VAR_1, 1)
+		setvar(VAR_0x8004, 1)
+		special(GiveFrontierBattlePoints)
+		msgbox(format("{PLAYER} obtained\n{STR_VAR_1} Battle Point."), MSGBOX_GETPOINTS)
+		waitmessage
+		closemessage
+		end
+	}
+	settrainerflag(TRAINER_HELENA)
+	settrainerflag(TRAINER_FITZGERALD)
+	settrainerflag(TRAINER_MOLLIE)
+	settrainerflag(TRAINER_PRIYA)
+	settrainerflag(TRAINER_TOBY)
+	settrainerflag(TRAINER_RADOVAN)
+	settrainerflag(TRAINER_MIKA)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	end
+}

@@ -36,7 +36,13 @@ script BattleGrotto_B4F_EventScript_EndAttendant {
 		giveitem(ITEM_DRAGON_SCALE)
 		setflag(FLAG_GROTTO_FLOOR_4_COMPLETE)
 	}
-	msgbox(format("You've completed all the sublevels that are currently available.\pI will return you to the lobby."), MSGBOX_AUTOCLOSE)
+	msgbox(format("Would you like to move on to\nsublevel 5?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+		warp(MAP_BATTLE_GROTTO_B5F, 11, 44)
+		end
+	}
+	msgbox(format("Okay, I'll return you to the lobby. Thank you for playing!"), MSGBOX_AUTOCLOSE)
 	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
 }
 

@@ -4920,6 +4920,26 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/BattleGrotto_B4F/border.bin",
       "blockdata_filepath": "data/layouts/BattleGrotto_B4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_GROTTO_B5F",
+      "name": "BattleGrotto_B5F_Layout",
+      "width": 24,
+      "height": 51,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BattleGrotto_B5F/border.bin",
+      "blockdata_filepath": "data/layouts/BattleGrotto_B5F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_GROTTO_B5F_UNDERWATER",
+      "name": "BattleGrotto_B5F_Underwater_Layout",
+      "width": 24,
+      "height": 51,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/BattleGrotto_B5F_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/BattleGrotto_B5F_Underwater/map.bin"
     }
   ]
 }

@@ -136,13 +136,13 @@
 #define TRAINER_LESTER_2                    132 // new
 #define TRAINER_LESTER_3                    133 // new
 #define TRAINER_DRACAENA                    134 // new
-#define TRAINER_JESSICA_5                   135
-#define TRAINER_WINSTON_1                   136
-#define TRAINER_MOLLIE                      137
-#define TRAINER_GARRET                      138
-#define TRAINER_WINSTON_2                   139
-#define TRAINER_WINSTON_3                   140
-#define TRAINER_WINSTON_4                   141
+#define TRAINER_HELENA                      135 // Battle Grotto
+#define TRAINER_FITZGERALD                  136 // Battle Grotto
+#define TRAINER_MOLLIE                      137 // Battle Grotto
+#define TRAINER_PRIYA                       138 // Battle Grotto
+#define TRAINER_TOBY                        139 // Battle Grotto
+#define TRAINER_RADOVAN                     140 // Battle Grotto
+#define TRAINER_MIKA                        141 // Battle Grotto
 #define TRAINER_WINSTON_5                   142
 #define TRAINER_STEVE_1                     143
 #define TRAINER_THALIA_1                    144
