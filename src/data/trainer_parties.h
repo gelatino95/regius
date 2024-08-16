@@ -2202,6 +2202,7 @@ static const struct TrainerMon sParty_Dracaena[] = {
     .iv = 255,
     .lvl = 52,
     .species = SPECIES_TERRISLA,
+	.ability = ABILITY_SLOT_2,
     .heldItem = ITEM_MYSTIC_WATER,
     .moves = {MOVE_WATER_SPOUT, MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_SURF}
     }
