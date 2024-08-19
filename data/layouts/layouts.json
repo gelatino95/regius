@@ -4940,6 +4940,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/BattleGrotto_B5F_Underwater/border.bin",
       "blockdata_filepath": "data/layouts/BattleGrotto_B5F_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_GROTTO_B6F",
+      "name": "BattleGrotto_B6F_Layout",
+      "width": 24,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BattleGrotto_B6F/border.bin",
+      "blockdata_filepath": "data/layouts/BattleGrotto_B6F/map.bin"
     }
   ]
 }

@@ -88,20 +88,22 @@ BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_1:
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_4:
 	goto_if_set FLAG_GROTTO_FLOOR_4_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_8
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_7:
-	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_6, 127
+	goto_if_set FLAG_GROTTO_FLOOR_5_COMPLETE, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_11
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_10:
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_7, 127
 	dynmultistack 0, 0, FALSE, 5, FALSE, 1, DYN_MULTICHOICE_CB_NONE
 	compare VAR_RESULT, 127
-	goto_if_eq BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_11
-BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_10:
-	switch VAR_RESULT
-	case 1, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_15
-	case 2, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
-	case 3, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_17
-	case 4, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_18
-	case 5, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
-	case 6, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_20
-	case 7, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_20
+	goto_if_eq BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_14
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13:
+	switch VAR_RESULT
+	case 1, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_18
+	case 2, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19
+	case 3, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_20
+	case 4, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_21
+	case 5, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_22
+	case 6, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23
+	case 7, BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_24
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16:
 	release
 	end
 
@@ -118,48 +120,59 @@ BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_8:
 	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_7
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_11:
-	goto BattleGrotto_Entrance_BattleGrottoChallenge
+	dynmultipush BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_6, 6
 	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_10
 
-BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_15:
-	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
-	waitmessage
-	special HealPlayerParty
-	warp MAP_BATTLE_GROTTO_B1F, 4, 36
-	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13
-
-BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16:
-	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
-	waitmessage
-	special HealPlayerParty
-	warp MAP_BATTLE_GROTTO_B2F, 11, 36
-	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13
-
-BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_17:
-	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
-	waitmessage
-	special HealPlayerParty
-	warp MAP_BATTLE_GROTTO_B3F, 13, 36
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_14:
+	goto BattleGrotto_Entrance_BattleGrottoChallenge
 	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_18:
 	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
 	waitmessage
 	special HealPlayerParty
-	warp MAP_BATTLE_GROTTO_B4F, 11, 36
-	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13
+	warp MAP_BATTLE_GROTTO_B1F, 4, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_19:
 	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
 	waitmessage
 	special HealPlayerParty
-	warp MAP_BATTLE_GROTTO_B5F, 11, 44
-	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13
+	warp MAP_BATTLE_GROTTO_B2F, 11, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_20:
-	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_7, MSGBOX_DEFAULT
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	special HealPlayerParty
+	warp MAP_BATTLE_GROTTO_B3F, 13, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_21:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	special HealPlayerParty
+	warp MAP_BATTLE_GROTTO_B4F, 11, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_22:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	special HealPlayerParty
+	warp MAP_BATTLE_GROTTO_B5F, 11, 44
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_23:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	special HealPlayerParty
+	warp MAP_BATTLE_GROTTO_B6F, 15, 36
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_24:
+	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_8, MSGBOX_DEFAULT
 	goto BattleGrotto_Entrance_BattleGrottoChallenge
-	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_13
+	goto BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_16
 
 
 BattleGrotto_Entrance_BerryVendor::
@@ -901,9 +914,12 @@ BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_5:
 	.string "5$"
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_6:
-	.string "CANCEL$"
+	.string "6$"
 
 BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_7:
+	.string "CANCEL$"
+
+BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor_Text_8:
 	.string "I'm sorry, but that floor isn't ready\n"
 	.string "yet.\l"
 	.string "We apologize for the inconvenience.$"

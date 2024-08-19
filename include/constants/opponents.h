@@ -143,13 +143,13 @@
 #define TRAINER_TOBY                        139 // Battle Grotto
 #define TRAINER_RADOVAN                     140 // Battle Grotto
 #define TRAINER_MIKA                        141 // Battle Grotto
-#define TRAINER_WINSTON_5                   142
-#define TRAINER_STEVE_1                     143
-#define TRAINER_THALIA_1                    144
-#define TRAINER_MARK                        145
-#define TRAINER_GRUNT_MT_CHIMNEY_1          146
-#define TRAINER_STEVE_2                     147
-#define TRAINER_STEVE_3                     148
+#define TRAINER_LUCIAN                      142 // Battle Grotto
+#define TRAINER_ADELAIDE                    143 // Battle Grotto
+#define TRAINER_MAGNUS                      144 // Battle Grotto
+#define TRAINER_OLIVIA                      145 // Battle Grotto
+#define TRAINER_LILLIE                      146 // Battle Grotto
+#define TRAINER_HENDRICK                    147 // Battle Grotto
+#define TRAINER_AURELIA                     148 // Battle Grotto
 #define TRAINER_STEVE_4                     149
 #define TRAINER_STEVE_5                     150
 #define TRAINER_LUIS                        151

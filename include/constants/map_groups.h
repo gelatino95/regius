@@ -680,9 +680,10 @@
 #define MAP_BATTLE_GROTTO_B4F            (4 | (45 << 8))
 #define MAP_BATTLE_GROTTO_B5F            (5 | (45 << 8))
 #define MAP_BATTLE_GROTTO_B5F_UNDERWATER (6 | (45 << 8))
+#define MAP_BATTLE_GROTTO_B6F            (7 | (45 << 8))
 
 #define MAP_GROUPS_COUNT 46
 
-// static const u8 MAP_GROUP_COUNT[] = {77, 5, 5, 6, 7, 8, 9, 7, 7, 14, 8, 17, 10, 23, 13, 15, 15, 2, 2, 2, 3, 1, 1, 1, 124, 61, 89, 2, 1, 13, 1, 1, 3, 1, 2, 5, 6, 2, 1, 1, 0, 2, 1, 2, 1, 7, 0};
+// static const u8 MAP_GROUP_COUNT[] = {77, 5, 5, 6, 7, 8, 9, 7, 7, 14, 8, 17, 10, 23, 13, 15, 15, 2, 2, 2, 3, 1, 1, 1, 124, 61, 89, 2, 1, 13, 1, 1, 3, 1, 2, 5, 6, 2, 1, 1, 0, 2, 1, 2, 1, 8, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

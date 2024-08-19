@@ -1,0 +1,76 @@
+mapscripts BattleGrotto_B6F_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+		map_script_2(VAR_TEMP_1, 0, BattleGrotto_B1F_EventScript_PlayerFaceNorth)
+		end
+	}
+    MAP_SCRIPT_ON_TRANSITION {
+		cleartrainerflag(TRAINER_LUCIAN)
+		cleartrainerflag(TRAINER_ADELAIDE)
+		cleartrainerflag(TRAINER_MAGNUS)
+		cleartrainerflag(TRAINER_OLIVIA)
+		cleartrainerflag(TRAINER_LILLIE)
+		cleartrainerflag(TRAINER_HENDRICK)
+		cleartrainerflag(TRAINER_AURELIA)
+		end
+	}
+}
+
+script BattleGrotto_B6F_EventScript_StartAttendant {
+	lock
+	faceplayer
+	msgbox(format("You're currently on sublevel 6.\pWould you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	}
+	else {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BattleGrotto_B6F_EventScript_EndAttendant {
+	lock
+	faceplayer
+	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
+	if (!flag(FLAG_GROTTO_FLOOR_6_COMPLETE)) {
+		msgbox(format("For clearing sublevel 6 for the first time, here is a special prize."), MSGBOX_DEFAULT)
+		giveitem(ITEM_TM06)
+		setflag(FLAG_GROTTO_FLOOR_6_COMPLETE)
+	}
+	msgbox(format("You've completed all the sublevels that are currently available.\pI will return you to the lobby."), MSGBOX_AUTOCLOSE)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+}
+
+script BattleGrotto_B6F_EventScript_Lucian {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_LUCIAN, 0, format("You've made it quite far.\nAre you sure you're prepared?"), format("You're prepared."), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("It's oddly peaceful this far down."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B6F_EventScript_Adelaide {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_ADELAIDE, 0, format("My poor POKéMON just can't find a worthy challenge."), format("That will do!"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("This is a lovely place to find strong TRAINERS, don't you think?"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B6F_EventScript_Magnus {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_MAGNUS, 0, format("Hey, you look chilly! I can fix that!"), format("Ice cold!"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("Keep on moving and you'll be fine."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B6F_EventScript_Olivia {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_OLIVIA, 0, format("No! S… stay back!"), format("I misunderstood…"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("I've seen your future. Your power is immense…"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B6F_EventScript_Lillie {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_LILLIE, 0, format("Don't tell me you're giving up already?"), format("Well, okay then!"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("You don't seem like the quitting type. Carry on."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B6F_EventScript_Hendrick {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HENDRICK, 0, format("So… c-c-cold…"), format("Brr…"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("I really should have come better dressed, huh?"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B6F_EventScript_Aurelia {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_AURELIA, 0, format("…\pYou don't seem bothered by the cold…\p…\pYou're just like me.\p…\pShow me what you've got."), format("Ah…"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("…\pThank you.\nYou can move on."), MSGBOX_NPC)
+}
