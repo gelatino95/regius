@@ -1,0 +1,76 @@
+mapscripts BattleGrotto_B7F_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+		map_script_2(VAR_TEMP_1, 0, BattleGrotto_B1F_EventScript_PlayerFaceNorth)
+		end
+	}
+    MAP_SCRIPT_ON_TRANSITION {
+		cleartrainerflag(TRAINER_SUZAKU)
+		cleartrainerflag(TRAINER_PATRICK)
+		cleartrainerflag(TRAINER_HITOMI)
+		cleartrainerflag(TRAINER_GULLIVER)
+		cleartrainerflag(TRAINER_FAITH)
+		cleartrainerflag(TRAINER_DARRIN)
+		cleartrainerflag(TRAINER_MIRANDA)
+		end
+	}
+}
+
+script BattleGrotto_B7F_EventScript_StartAttendant {
+	lock
+	faceplayer
+	msgbox(format("You're currently on sublevel 7.\pWould you like to quit and\nreturn to the lobby?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+	}
+	else {
+		msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script BattleGrotto_B7F_EventScript_EndAttendant {
+	lock
+	faceplayer
+	msgbox(format("Congratulations on defeating\nall TRAINERS on the floor!"), MSGBOX_DEFAULT)
+	if (!flag(FLAG_GROTTO_FLOOR_7_COMPLETE)) {
+		msgbox(format("For clearing sublevel 7 for the first time, here is a special prize."), MSGBOX_DEFAULT)
+		giveitem(ITEM_PP_MAX)
+		setflag(FLAG_GROTTO_FLOOR_7_COMPLETE)
+	}
+	msgbox(format("You've completed all the sublevels that are currently available.\pI will return you to the lobby."), MSGBOX_AUTOCLOSE)
+	warp(MAP_BATTLE_GROTTO_ENTRANCE, 10, 7)
+}
+
+script BattleGrotto_B7F_EventScript_Suzaku {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_SUZAKU, 0, format("Prepare to prove yourself!"), format("You are worthy."), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("We don't see many challengers this far in. You have done well to get here."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B7F_EventScript_Patrick {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_PATRICK, 0, format("I thought there might be rare POKéMON in this tunnel…"), format("My dreams, crushed!"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("This creepy tunnel has sat empty for millennia. No rare POKéMON to be seen!"), MSGBOX_NPC)
+}
+
+script BattleGrotto_B7F_EventScript_Hitomi {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_HITOMI, 0, format("Getting tired yet?"), format("I see!"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("It only gets tougher from here.\nPace yourself."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B7F_EventScript_Gulliver {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_GULLIVER, 0, format("There's something incredible here, I can feel it!"), format("Incredible!"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("When this tunnel is fully explored, I am certain there will be a great discovery at the end."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B7F_EventScript_Faith {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_FAITH, 0, format("If you know what's good for you, you'll turn back."), format("Fool…"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("These grounds weren't meant for human visitors. We shouldn't be here."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B7F_EventScript_Darrin {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_DARRIN, 0, format("For the greatest TRAINER of all:\nthe greatest challenge of all!"), format("I concede defeat."), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("You thought I was the greatest challenge? Oh, no. That still lies ahead."), MSGBOX_NPC)
+}
+
+script BattleGrotto_B7F_EventScript_Miranda {
+	trainerbattle(TRAINER_BATTLE_GROTTO, TRAINER_MIRANDA, 0, format("So you've made it!\pI've worked hard to become the\nstrongest TRAINER in the\lBATTLE GROTTO, and I'm not about to let\lsome newcomer take that from me.\pI'm going to defend my place with\neverything I've got! Get ready!"), format("No… it can't be!"), BattleGrotto_B4F_EventScript_PostBattle)
+	msgbox(format("I shouldn't have underestimated you. You're the real champion around here!"), MSGBOX_NPC)
+}
