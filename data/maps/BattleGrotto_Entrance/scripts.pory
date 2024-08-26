@@ -47,7 +47,7 @@ script BattleGrotto_Entrance_BattleGrottoChallenge {
 			}
 			goto(BattleGrotto_Entrance_BattleGrottoChallenge_ChooseFloor)
 		case 1:
-			msgbox(format("In the BATTLE GROTTO, you will make\nyour way through a long cave\lfull of TRAINERS.\lIf you defeat all seven TRAINERS\lon the floor in a row, you will\learn Battle Points (BP), which can be\lexchanged for prizes in the lobby.\pYou can then descend to the\nnext sublevel, where you will find\leven harder TRAINERS.\pIf you want to quit your challenge,\nyou will be able to start at the\lbeginning of any sublevel you've\lpreviously visited.\pAt the moment, we only have one floor available.\lThe rest are still being prepared.\lThank you for your patience."), MSGBOX_DEFAULT)
+			msgbox(format("In the BATTLE GROTTO, you will make\nyour way through a long cave\lfull of TRAINERS.\lIf you defeat all seven TRAINERS\lon the floor in a row, you will\learn Battle Points (BP), which can be\lexchanged for prizes in the lobby.\pYou can then descend to the\nnext sublevel, where you will find\leven harder TRAINERS.\pIf you want to quit your challenge,\nyou will be able to start at the\lbeginning of any sublevel you've\lunlocked.\pWe will make sure your POKéMON are\nhealed throughout the challenge, so\lplease battle to your heart's content!"), MSGBOX_DEFAULT)
 			goto(BattleGrotto_Entrance_BattleGrottoChallenge)
 		case 2:
 		case MULTI_B_PRESSED:	
@@ -169,6 +169,55 @@ script BattleGrotto_Entrance_ChooseBerry {
 			setvar(VAR_0x8008, 5)
 			setvar(VAR_0x8009, ITEM_LUM_BERRY)
 		case 7:
+			msgbox(format("You want the\nLIECHI BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_LIECHI_BERRY)
+		case 8:
+			msgbox(format("You want the\nGANLON BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_GANLON_BERRY)
+		case 9:
+			msgbox(format("You want the\nSALAC BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_SALAC_BERRY)
+		case 10:
+			msgbox(format("You want the\nPETAYA BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_PETAYA_BERRY)
+		case 11:
+			msgbox(format("You want the\nAPICOT BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_APICOT_BERRY)
+		case 12:
+			msgbox(format("You want the\nLANSAT BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_LANSAT_BERRY)
+		case 13:
+			msgbox(format("You want the\nSTARF BERRY?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO) {
+				goto(BattleGrotto_Entrance_ChooseBerry)
+			}
+			setvar(VAR_0x8008, 5)
+			setvar(VAR_0x8009, ITEM_STARF_BERRY)
+		case 14:
 		case MULTI_B_PRESSED:
 			goto(BattleGrotto_Entrance_Goodbye)
 		default: goto(BattleGrotto_Entrance_ChooseBerry)
@@ -492,6 +541,36 @@ script BattleGrotto_Entrance_Goodbye {
 	special(CloseBattlePointsWindow)
 	msgbox(format("Come again!"), MSGBOX_DEFAULT)
 	closemessage
+}
+
+script BattleGrotto_Entrance_Monitor {
+	lock
+	specialvar(VAR_TEMP_1, GetFrontierBattlePoints)
+	buffernumberstring(STR_VAR_1, VAR_TEMP_1)
+	if (flag(FLAG_GROTTO_FLOOR_6_COMPLETE)) {
+		buffernumberstring(STR_VAR_2, 7)
+	}
+	elif (flag(FLAG_GROTTO_FLOOR_5_COMPLETE)) {
+		buffernumberstring(STR_VAR_2, 6)
+	}
+	elif (flag(FLAG_GROTTO_FLOOR_4_COMPLETE)) {
+		buffernumberstring(STR_VAR_2, 5)
+	}
+	elif (flag(FLAG_GROTTO_FLOOR_3_COMPLETE)) {
+		buffernumberstring(STR_VAR_2, 4)
+	}
+	elif (flag(FLAG_GROTTO_FLOOR_2_COMPLETE)) {
+		buffernumberstring(STR_VAR_2, 3)
+	}
+	elif (flag(FLAG_GROTTO_FLOOR_1_COMPLETE)) {
+		buffernumberstring(STR_VAR_2, 2)
+	}
+	else {
+		buffernumberstring(STR_VAR_2, 1)
+	}
+	msgbox(format("CHALLENGER: {PLAYER}\nCURRENT BP: {STR_VAR_1}\pLOWEST FLOOR REACHED: {STR_VAR_2}"), MSGBOX_SIGN)
+	release
+	end
 }
 
 script BattleGrotto_Entrance_Woman {

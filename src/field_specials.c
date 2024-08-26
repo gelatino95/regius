@@ -2396,7 +2396,7 @@ void ShowScrollableMultichoice(void)
         break;
 	case SCROLL_MULTI_GROTTO_BERRY_VENDOR:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 8;
+        task->tNumItems = 15;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2604,6 +2604,13 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_GrepaBerry1BP,
         gText_TamatoBerry1BP,
         gText_LumBerry5BP,
+        gText_LiechiBerry5BP,
+        gText_GanlonBerry5BP,
+        gText_SalacBerry5BP,
+        gText_PetayaBerry5BP,
+        gText_ApicotBerry5BP,
+        gText_LansatBerry5BP,
+        gText_StarfBerry5BP,
         gText_Exit
     },
 	[SCROLL_MULTI_GROTTO_VITAMIN_VENDOR] =

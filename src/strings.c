@@ -1178,6 +1178,13 @@ const u8 gText_HondewBerry1BP[] = _("HONDEW BERRY{CLEAR_TO 0x64}1BP");
 const u8 gText_GrepaBerry1BP[] = _("GREPA BERRY{CLEAR_TO 0x64}1BP");
 const u8 gText_TamatoBerry1BP[] = _("TAMATO BERRY{CLEAR_TO 0x64}1BP");
 const u8 gText_LumBerry5BP[] = _("LUM BERRY{CLEAR_TO 0x64}5BP");
+const u8 gText_LiechiBerry5BP[] = _("LIECHI BERRY{CLEAR_TO 0x64}5BP");
+const u8 gText_GanlonBerry5BP[] = _("GANLON BERRY{CLEAR_TO 0x64}5BP");
+const u8 gText_SalacBerry5BP[] = _("SALAC BERRY{CLEAR_TO 0x64}5BP");
+const u8 gText_PetayaBerry5BP[] = _("PETAYA BERRY{CLEAR_TO 0x64}5BP");
+const u8 gText_ApicotBerry5BP[] = _("APICOT BERRY{CLEAR_TO 0x64}5BP");
+const u8 gText_LansatBerry5BP[] = _("LANSAT BERRY{CLEAR_TO 0x64}5BP");
+const u8 gText_StarfBerry5BP[] = _("STARF BERRY{CLEAR_TO 0x64}5BP");
 
 const u8 gText_TM16LightScreen10BP[] = _("TM16 LIGHT SCREEN{CLEAR_TO 0x64}10BP");
 const u8 gText_TM17Protect10BP[] = _("TM17 PROTECT{CLEAR_TO 0x64}10BP");

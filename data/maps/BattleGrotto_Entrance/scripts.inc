@@ -188,31 +188,38 @@ BattleGrotto_Entrance_ChooseBerry::
 	case 5, BattleGrotto_Entrance_ChooseBerry_8
 	case 6, BattleGrotto_Entrance_ChooseBerry_9
 	case 7, BattleGrotto_Entrance_ChooseBerry_10
-	case MULTI_B_PRESSED, BattleGrotto_Entrance_ChooseBerry_10
+	case 8, BattleGrotto_Entrance_ChooseBerry_11
+	case 9, BattleGrotto_Entrance_ChooseBerry_12
+	case 10, BattleGrotto_Entrance_ChooseBerry_13
+	case 11, BattleGrotto_Entrance_ChooseBerry_14
+	case 12, BattleGrotto_Entrance_ChooseBerry_15
+	case 13, BattleGrotto_Entrance_ChooseBerry_16
+	case 14, BattleGrotto_Entrance_ChooseBerry_17
+	case MULTI_B_PRESSED, BattleGrotto_Entrance_ChooseBerry_17
 	goto BattleGrotto_Entrance_ChooseBerry
 BattleGrotto_Entrance_ChooseBerry_1:
 	specialvar VAR_TEMP_1, GetFrontierBattlePoints
 	compare VAR_TEMP_1, VAR_0x8008
-	goto_if_lt BattleGrotto_Entrance_ChooseBerry_13
-BattleGrotto_Entrance_ChooseBerry_12:
+	goto_if_lt BattleGrotto_Entrance_ChooseBerry_20
+BattleGrotto_Entrance_ChooseBerry_19:
 	checkitemspace VAR_0x8009
 	compare VAR_RESULT, FALSE
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_37
-BattleGrotto_Entrance_ChooseBerry_36:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_65
+BattleGrotto_Entrance_ChooseBerry_64:
 	copyvar VAR_0x8004, VAR_0x8008
 	special TakeFrontierBattlePoints
 	additem VAR_0x8009
 	special UpdateBattlePointsWindow
 	playse SE_SHOP
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_10, MSGBOX_DEFAULT
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_17, MSGBOX_DEFAULT
 	goto BattleGrotto_Entrance_ChooseBerry
 	return
 
 BattleGrotto_Entrance_ChooseBerry_3:
 	msgbox BattleGrotto_Entrance_ChooseBerry_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_16
-BattleGrotto_Entrance_ChooseBerry_15:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_23
+BattleGrotto_Entrance_ChooseBerry_22:
 	setvar VAR_0x8008, 1
 	setvar VAR_0x8009, ITEM_POMEG_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
@@ -220,8 +227,8 @@ BattleGrotto_Entrance_ChooseBerry_15:
 BattleGrotto_Entrance_ChooseBerry_4:
 	msgbox BattleGrotto_Entrance_ChooseBerry_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_19
-BattleGrotto_Entrance_ChooseBerry_18:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_26
+BattleGrotto_Entrance_ChooseBerry_25:
 	setvar VAR_0x8008, 1
 	setvar VAR_0x8009, ITEM_KELPSY_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
@@ -229,8 +236,8 @@ BattleGrotto_Entrance_ChooseBerry_18:
 BattleGrotto_Entrance_ChooseBerry_5:
 	msgbox BattleGrotto_Entrance_ChooseBerry_Text_3, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_22
-BattleGrotto_Entrance_ChooseBerry_21:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_29
+BattleGrotto_Entrance_ChooseBerry_28:
 	setvar VAR_0x8008, 1
 	setvar VAR_0x8009, ITEM_QUALOT_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
@@ -238,8 +245,8 @@ BattleGrotto_Entrance_ChooseBerry_21:
 BattleGrotto_Entrance_ChooseBerry_6:
 	msgbox BattleGrotto_Entrance_ChooseBerry_Text_4, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_25
-BattleGrotto_Entrance_ChooseBerry_24:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_32
+BattleGrotto_Entrance_ChooseBerry_31:
 	setvar VAR_0x8008, 1
 	setvar VAR_0x8009, ITEM_HONDEW_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
@@ -247,8 +254,8 @@ BattleGrotto_Entrance_ChooseBerry_24:
 BattleGrotto_Entrance_ChooseBerry_7:
 	msgbox BattleGrotto_Entrance_ChooseBerry_Text_5, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_28
-BattleGrotto_Entrance_ChooseBerry_27:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_35
+BattleGrotto_Entrance_ChooseBerry_34:
 	setvar VAR_0x8008, 1
 	setvar VAR_0x8009, ITEM_GREPA_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
@@ -256,8 +263,8 @@ BattleGrotto_Entrance_ChooseBerry_27:
 BattleGrotto_Entrance_ChooseBerry_8:
 	msgbox BattleGrotto_Entrance_ChooseBerry_Text_6, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_31
-BattleGrotto_Entrance_ChooseBerry_30:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_38
+BattleGrotto_Entrance_ChooseBerry_37:
 	setvar VAR_0x8008, 1
 	setvar VAR_0x8009, ITEM_TAMATO_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
@@ -265,53 +272,144 @@ BattleGrotto_Entrance_ChooseBerry_30:
 BattleGrotto_Entrance_ChooseBerry_9:
 	msgbox BattleGrotto_Entrance_ChooseBerry_Text_7, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq BattleGrotto_Entrance_ChooseBerry_34
-BattleGrotto_Entrance_ChooseBerry_33:
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_41
+BattleGrotto_Entrance_ChooseBerry_40:
 	setvar VAR_0x8008, 5
 	setvar VAR_0x8009, ITEM_LUM_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
 
 BattleGrotto_Entrance_ChooseBerry_10:
-	goto BattleGrotto_Entrance_Goodbye
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_8, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_44
+BattleGrotto_Entrance_ChooseBerry_43:
+	setvar VAR_0x8008, 5
+	setvar VAR_0x8009, ITEM_LIECHI_BERRY
+	goto BattleGrotto_Entrance_ChooseBerry_1
+
+BattleGrotto_Entrance_ChooseBerry_11:
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_9, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_47
+BattleGrotto_Entrance_ChooseBerry_46:
+	setvar VAR_0x8008, 5
+	setvar VAR_0x8009, ITEM_GANLON_BERRY
+	goto BattleGrotto_Entrance_ChooseBerry_1
+
+BattleGrotto_Entrance_ChooseBerry_12:
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_10, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_50
+BattleGrotto_Entrance_ChooseBerry_49:
+	setvar VAR_0x8008, 5
+	setvar VAR_0x8009, ITEM_SALAC_BERRY
 	goto BattleGrotto_Entrance_ChooseBerry_1
 
 BattleGrotto_Entrance_ChooseBerry_13:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_8
-	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_12
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_11, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_53
+BattleGrotto_Entrance_ChooseBerry_52:
+	setvar VAR_0x8008, 5
+	setvar VAR_0x8009, ITEM_PETAYA_BERRY
+	goto BattleGrotto_Entrance_ChooseBerry_1
+
+BattleGrotto_Entrance_ChooseBerry_14:
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_12, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_56
+BattleGrotto_Entrance_ChooseBerry_55:
+	setvar VAR_0x8008, 5
+	setvar VAR_0x8009, ITEM_APICOT_BERRY
+	goto BattleGrotto_Entrance_ChooseBerry_1
+
+BattleGrotto_Entrance_ChooseBerry_15:
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_13, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_59
+BattleGrotto_Entrance_ChooseBerry_58:
+	setvar VAR_0x8008, 5
+	setvar VAR_0x8009, ITEM_LANSAT_BERRY
+	goto BattleGrotto_Entrance_ChooseBerry_1
 
 BattleGrotto_Entrance_ChooseBerry_16:
-	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_15
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_14, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq BattleGrotto_Entrance_ChooseBerry_62
+BattleGrotto_Entrance_ChooseBerry_61:
+	setvar VAR_0x8008, 5
+	setvar VAR_0x8009, ITEM_STARF_BERRY
+	goto BattleGrotto_Entrance_ChooseBerry_1
 
-BattleGrotto_Entrance_ChooseBerry_19:
-	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_18
+BattleGrotto_Entrance_ChooseBerry_17:
+	goto BattleGrotto_Entrance_Goodbye
+	goto BattleGrotto_Entrance_ChooseBerry_1
 
-BattleGrotto_Entrance_ChooseBerry_22:
+BattleGrotto_Entrance_ChooseBerry_20:
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_15
 	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_21
+	goto BattleGrotto_Entrance_ChooseBerry_19
 
-BattleGrotto_Entrance_ChooseBerry_25:
+BattleGrotto_Entrance_ChooseBerry_23:
 	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_24
+	goto BattleGrotto_Entrance_ChooseBerry_22
 
-BattleGrotto_Entrance_ChooseBerry_28:
+BattleGrotto_Entrance_ChooseBerry_26:
 	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_27
+	goto BattleGrotto_Entrance_ChooseBerry_25
 
-BattleGrotto_Entrance_ChooseBerry_31:
+BattleGrotto_Entrance_ChooseBerry_29:
 	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_30
+	goto BattleGrotto_Entrance_ChooseBerry_28
 
-BattleGrotto_Entrance_ChooseBerry_34:
+BattleGrotto_Entrance_ChooseBerry_32:
 	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_33
+	goto BattleGrotto_Entrance_ChooseBerry_31
 
-BattleGrotto_Entrance_ChooseBerry_37:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_9
+BattleGrotto_Entrance_ChooseBerry_35:
 	goto BattleGrotto_Entrance_ChooseBerry
-	goto BattleGrotto_Entrance_ChooseBerry_36
+	goto BattleGrotto_Entrance_ChooseBerry_34
+
+BattleGrotto_Entrance_ChooseBerry_38:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_37
+
+BattleGrotto_Entrance_ChooseBerry_41:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_40
+
+BattleGrotto_Entrance_ChooseBerry_44:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_43
+
+BattleGrotto_Entrance_ChooseBerry_47:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_46
+
+BattleGrotto_Entrance_ChooseBerry_50:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_49
+
+BattleGrotto_Entrance_ChooseBerry_53:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_52
+
+BattleGrotto_Entrance_ChooseBerry_56:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_55
+
+BattleGrotto_Entrance_ChooseBerry_59:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_58
+
+BattleGrotto_Entrance_ChooseBerry_62:
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_61
+
+BattleGrotto_Entrance_ChooseBerry_65:
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_16
+	goto BattleGrotto_Entrance_ChooseBerry
+	goto BattleGrotto_Entrance_ChooseBerry_64
 
 
 BattleGrotto_Entrance_VitaminVendor::
@@ -354,7 +452,7 @@ BattleGrotto_Entrance_ChooseVitamin_40:
 	additem VAR_0x8009
 	special UpdateBattlePointsWindow
 	playse SE_SHOP
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_10, MSGBOX_DEFAULT
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_17, MSGBOX_DEFAULT
 	goto BattleGrotto_Entrance_ChooseVitamin
 	return
 
@@ -435,7 +533,7 @@ BattleGrotto_Entrance_ChooseVitamin_11:
 	goto BattleGrotto_Entrance_ChooseVitamin_1
 
 BattleGrotto_Entrance_ChooseVitamin_14:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_8
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_15
 	goto BattleGrotto_Entrance_ChooseVitamin
 	goto BattleGrotto_Entrance_ChooseVitamin_13
 
@@ -472,7 +570,7 @@ BattleGrotto_Entrance_ChooseVitamin_38:
 	goto BattleGrotto_Entrance_ChooseVitamin_37
 
 BattleGrotto_Entrance_ChooseVitamin_41:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_9
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_16
 	goto BattleGrotto_Entrance_ChooseVitamin
 	goto BattleGrotto_Entrance_ChooseVitamin_40
 
@@ -518,7 +616,7 @@ BattleGrotto_Entrance_ChooseTM_44:
 	additem VAR_0x8009
 	special UpdateBattlePointsWindow
 	playse SE_SHOP
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_10, MSGBOX_DEFAULT
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_17, MSGBOX_DEFAULT
 	goto BattleGrotto_Entrance_ChooseTM
 	return
 
@@ -608,7 +706,7 @@ BattleGrotto_Entrance_ChooseTM_12:
 	goto BattleGrotto_Entrance_ChooseTM_1
 
 BattleGrotto_Entrance_ChooseTM_15:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_8
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_15
 	goto BattleGrotto_Entrance_ChooseTM
 	goto BattleGrotto_Entrance_ChooseTM_14
 
@@ -649,7 +747,7 @@ BattleGrotto_Entrance_ChooseTM_42:
 	goto BattleGrotto_Entrance_ChooseTM_41
 
 BattleGrotto_Entrance_ChooseTM_45:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_9
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_16
 	goto BattleGrotto_Entrance_ChooseTM
 	goto BattleGrotto_Entrance_ChooseTM_44
 
@@ -695,7 +793,7 @@ BattleGrotto_Entrance_ChooseItem_44:
 	additem VAR_0x8009
 	special UpdateBattlePointsWindow
 	playse SE_SHOP
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_10, MSGBOX_DEFAULT
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_17, MSGBOX_DEFAULT
 	goto BattleGrotto_Entrance_ChooseItem
 	return
 
@@ -785,7 +883,7 @@ BattleGrotto_Entrance_ChooseItem_12:
 	goto BattleGrotto_Entrance_ChooseItem_1
 
 BattleGrotto_Entrance_ChooseItem_15:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_8
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_15
 	goto BattleGrotto_Entrance_ChooseItem
 	goto BattleGrotto_Entrance_ChooseItem_14
 
@@ -826,7 +924,7 @@ BattleGrotto_Entrance_ChooseItem_42:
 	goto BattleGrotto_Entrance_ChooseItem_41
 
 BattleGrotto_Entrance_ChooseItem_45:
-	msgbox BattleGrotto_Entrance_ChooseBerry_Text_9
+	msgbox BattleGrotto_Entrance_ChooseBerry_Text_16
 	goto BattleGrotto_Entrance_ChooseItem
 	goto BattleGrotto_Entrance_ChooseItem_44
 
@@ -836,6 +934,47 @@ BattleGrotto_Entrance_Goodbye::
 	msgbox BattleGrotto_Entrance_BattleGrottoChallenge_Text_3, MSGBOX_DEFAULT
 	closemessage
 	return
+
+
+BattleGrotto_Entrance_Monitor::
+	lock
+	specialvar VAR_TEMP_1, GetFrontierBattlePoints
+	buffernumberstring STR_VAR_1, VAR_TEMP_1
+	goto_if_set FLAG_GROTTO_FLOOR_6_COMPLETE, BattleGrotto_Entrance_Monitor_2
+	goto_if_set FLAG_GROTTO_FLOOR_5_COMPLETE, BattleGrotto_Entrance_Monitor_3
+	goto_if_set FLAG_GROTTO_FLOOR_4_COMPLETE, BattleGrotto_Entrance_Monitor_4
+	goto_if_set FLAG_GROTTO_FLOOR_3_COMPLETE, BattleGrotto_Entrance_Monitor_5
+	goto_if_set FLAG_GROTTO_FLOOR_2_COMPLETE, BattleGrotto_Entrance_Monitor_6
+	goto_if_set FLAG_GROTTO_FLOOR_1_COMPLETE, BattleGrotto_Entrance_Monitor_7
+	buffernumberstring STR_VAR_2, 1
+BattleGrotto_Entrance_Monitor_1:
+	msgbox BattleGrotto_Entrance_Monitor_Text_0, MSGBOX_SIGN
+	release
+	end
+
+BattleGrotto_Entrance_Monitor_2:
+	buffernumberstring STR_VAR_2, 7
+	goto BattleGrotto_Entrance_Monitor_1
+
+BattleGrotto_Entrance_Monitor_3:
+	buffernumberstring STR_VAR_2, 6
+	goto BattleGrotto_Entrance_Monitor_1
+
+BattleGrotto_Entrance_Monitor_4:
+	buffernumberstring STR_VAR_2, 5
+	goto BattleGrotto_Entrance_Monitor_1
+
+BattleGrotto_Entrance_Monitor_5:
+	buffernumberstring STR_VAR_2, 4
+	goto BattleGrotto_Entrance_Monitor_1
+
+BattleGrotto_Entrance_Monitor_6:
+	buffernumberstring STR_VAR_2, 3
+	goto BattleGrotto_Entrance_Monitor_1
+
+BattleGrotto_Entrance_Monitor_7:
+	buffernumberstring STR_VAR_2, 2
+	goto BattleGrotto_Entrance_Monitor_1
 
 
 BattleGrotto_Entrance_Woman::
@@ -876,10 +1015,9 @@ BattleGrotto_Entrance_BattleGrottoChallenge_Text_2:
 	.string "you will be able to start at the\l"
 	.string "beginning of any sublevel you've\l"
 	.string "previously visited.\p"
-	.string "At the moment, we only have one floor\n"
-	.string "available.\l"
-	.string "The rest are still being prepared.\l"
-	.string "Thank you for your patience.$"
+	.string "We will make sure your POKéMON are\n"
+	.string "healed throughout the challenge, so\l"
+	.string "please battle to your heart's content!$"
 
 BattleGrotto_Entrance_BattleGrottoChallenge_Text_3:
 	.string "Come again!$"
@@ -947,14 +1085,42 @@ BattleGrotto_Entrance_ChooseBerry_Text_7:
 	.string "LUM BERRY?$"
 
 BattleGrotto_Entrance_ChooseBerry_Text_8:
+	.string "You want the\n"
+	.string "LIECHI BERRY?$"
+
+BattleGrotto_Entrance_ChooseBerry_Text_9:
+	.string "You want the\n"
+	.string "GANLON BERRY?$"
+
+BattleGrotto_Entrance_ChooseBerry_Text_10:
+	.string "You want the\n"
+	.string "SALAC BERRY?$"
+
+BattleGrotto_Entrance_ChooseBerry_Text_11:
+	.string "You want the\n"
+	.string "PETAYA BERRY?$"
+
+BattleGrotto_Entrance_ChooseBerry_Text_12:
+	.string "You want the\n"
+	.string "APICOT BERRY?$"
+
+BattleGrotto_Entrance_ChooseBerry_Text_13:
+	.string "You want the\n"
+	.string "LANSAT BERRY?$"
+
+BattleGrotto_Entrance_ChooseBerry_Text_14:
+	.string "You want the\n"
+	.string "STARF BERRY?$"
+
+BattleGrotto_Entrance_ChooseBerry_Text_15:
 	.string "I'm sorry, you don't\n"
 	.string "have enough Battle Points.$"
 
-BattleGrotto_Entrance_ChooseBerry_Text_9:
+BattleGrotto_Entrance_ChooseBerry_Text_16:
 	.string "You don't have enough room\n"
 	.string "in your BAG for this item.$"
 
-BattleGrotto_Entrance_ChooseBerry_Text_10:
+BattleGrotto_Entrance_ChooseBerry_Text_17:
 	.string "Here is your prize!$"
 
 BattleGrotto_Entrance_ChooseVitamin_Text_0:
@@ -1060,6 +1226,11 @@ BattleGrotto_Entrance_ChooseItem_Text_7:
 BattleGrotto_Entrance_ChooseItem_Text_8:
 	.string "You want the\n"
 	.string "LEFTOVERS?$"
+
+BattleGrotto_Entrance_Monitor_Text_0:
+	.string "CHALLENGER: {PLAYER}\n"
+	.string "CURRENT BP: {STR_VAR_1}\p"
+	.string "LOWEST FLOOR REACHED: {STR_VAR_2}$"
 
 BattleGrotto_Entrance_Woman_Text_0:
 	.string "Your POKéMON are healed after every\n"

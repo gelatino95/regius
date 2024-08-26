@@ -712,6 +712,13 @@ extern const u8 gText_HondewBerry1BP[];
 extern const u8 gText_GrepaBerry1BP[];
 extern const u8 gText_TamatoBerry1BP[];
 extern const u8 gText_LumBerry5BP[];
+extern const u8 gText_LiechiBerry5BP[];
+extern const u8 gText_GanlonBerry5BP[];
+extern const u8 gText_SalacBerry5BP[];
+extern const u8 gText_PetayaBerry5BP[];
+extern const u8 gText_ApicotBerry5BP[];
+extern const u8 gText_LansatBerry5BP[];
+extern const u8 gText_StarfBerry5BP[];
 
 extern const u8 gText_TM16LightScreen10BP[];
 extern const u8 gText_TM17Protect10BP[];
