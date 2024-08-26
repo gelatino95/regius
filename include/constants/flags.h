@@ -1271,8 +1271,8 @@
 #define FLAG_ITEM_BIOLOGICAL_INSTITUTE_TM36                         0x4C2
 #define FLAG_ITEM_FAR_REACH_SEA_MAX_REVIVE                          0x4C3
 #define FLAG_ITEM_FAR_REACH_SEA_ELIXIR                              0x4C4
-#define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
-#define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag
+#define FLAG_ITEM_ARID_DESERT_TM37                                  0x4C5
+#define FLAG_ITEM_ARID_RUINS_TM28                                   0x4C6
 #define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
 #define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
 #define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag

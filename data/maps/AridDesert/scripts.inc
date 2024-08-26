@@ -51,6 +51,11 @@ AridDesert_EventScript_ItemGreatBall::
 	end
 
 
+AridDesert_EventScript_ItemTM37::
+	finditem ITEM_TM37
+	end
+
+
 AridDesert_EventScript_Sign_Text_0:
 	.string "{LEFT_ARROW} ARID ISLAND\n"
 	.string "{RIGHT_ARROW} ARID RUINS$"

@@ -41,3 +41,8 @@ script AridDesert_EventScript_ItemGreatBall {
 	finditem(ITEM_GREAT_BALL)
 	end
 }
+
+script AridDesert_EventScript_ItemTM37 {
+	finditem(ITEM_TM37)
+	end
+}

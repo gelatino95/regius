@@ -1014,7 +1014,7 @@ BattleGrotto_Entrance_BattleGrottoChallenge_Text_2:
 	.string "If you want to quit your challenge,\n"
 	.string "you will be able to start at the\l"
 	.string "beginning of any sublevel you've\l"
-	.string "previously visited.\p"
+	.string "unlocked.\p"
 	.string "We will make sure your POKéMON are\n"
 	.string "healed throughout the challenge, so\l"
 	.string "please battle to your heart's content!$"

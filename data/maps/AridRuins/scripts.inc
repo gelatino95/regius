@@ -155,6 +155,11 @@ AridRuins_EventScript_ItemAncientSlab::
 	end
 
 
+AridRuins_EventScript_ItemTM28::
+	finditem ITEM_TM28
+	end
+
+
 AridRuins_Braille_EastWall1:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "THIS WAS A\n"
