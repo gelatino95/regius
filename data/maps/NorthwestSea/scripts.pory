@@ -49,7 +49,7 @@ script NorthwestSea_EventScript_Amanda {
 
 script NorthwestSea_EventScript_Akira {
 	trainerbattle(TRAINER_BATTLE_DETECT, TRAINER_AKIRA, 0, format("Witness the hidden potential of DRAGONS!"), format("You did your best…"))
-	msgbox(format("My POKéMON may not be DRAGONS yet, but mark my words:\lone day, they will grow up to be big and mighty."), MSGBOX_NPC)
+	msgbox(format("These islands used to be home to a famous DRAGON MASTER named DRACAENA.\pNo one has heard from her for decades. I wonder what happened to her?"), MSGBOX_NPC)
 }
 
 script NorthwestSea_EventScript_Swimmer {

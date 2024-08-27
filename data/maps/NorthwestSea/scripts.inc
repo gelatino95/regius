@@ -125,10 +125,10 @@ NorthwestSea_EventScript_Akira_Text_1:
 	.string "You did your best…$"
 
 NorthwestSea_EventScript_Akira_Text_2:
-	.string "My POKéMON may not be DRAGONS yet, but\n"
-	.string "mark my words:\l"
-	.string "one day, they will grow up to be big and\l"
-	.string "mighty.$"
+	.string "These islands used to be home to a\n"
+	.string "famous DRAGON MASTER named DRACAENA.\p"
+	.string "No one has heard from her for decades.\n"
+	.string "I wonder what happened to her?$"
 
 NorthwestSea_EventScript_Swimmer_Text_0:
 	.string "I want to get to that clearing right\n"

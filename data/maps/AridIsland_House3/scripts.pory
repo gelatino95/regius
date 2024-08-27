@@ -9,7 +9,11 @@ script AridIsland_House3_EventScript_Archaeologist {
             msgbox(format("Oh? Show me what you have there…\pAn ANCIENT SLAB! Marvelous!\nIt must be filled with clues about\lthe ancient REGIUS civilization…\pWill you part with it, in exchange\nfor ten more REGI BALLS?"), MSGBOX_YESNO)
             if (var(VAR_RESULT)) {
                 removeitem(ITEM_ANCIENT_SLAB)
-                giveitem(ITEM_REGI_BALL, 10)
+                additem(ITEM_REGI_BALL, 10)
+                playfanfare(MUS_OBTAIN_ITEM)
+                msgbox(format("{PLAYER} received 10 REGI BALLS!"), MSGBOX_AUTOCLOSE)
+                waitfanfare
+                msgbox(format("{PLAYER} put away the REGI BALLS\nin the POKé BALLS POCKET."), MSGBOX_AUTOCLOSE)
                 msgbox(format("You have given me a wonderful gift,\nfriend! I will get right to work\ldeciphering this writing.\pIf you come across any more artifacts,\nyou know where to find me!"), MSGBOX_NPC)
             }
             else {
@@ -22,7 +26,11 @@ script AridIsland_House3_EventScript_Archaeologist {
     }
     else {
         msgbox(format("Hm, what's this?\nYou have the look of an explorer!\pI was an intrepid adventurer like you,\na long time ago.\pI made it my mission to capture\nthe legendary titans,\lREGIROCK, REGICE, and REGISTEEL\land unravel their mysteries.\pBut even after all these years,\nthey remain sealed away.\pYou seek the titans as well,\ndon't you?\lI can see it in your eyes.\pI created these to aid in my work.\nPlease, take them!"), MSGBOX_NPC)
-        giveitem(ITEM_REGI_BALL, 10)
+        additem(ITEM_REGI_BALL, 10)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox(format("{PLAYER} received 10 REGI BALLS!"), MSGBOX_AUTOCLOSE)
+        waitfanfare
+        msgbox(format("{PLAYER} put away the REGI BALLS\nin the POKé BALLS POCKET."), MSGBOX_AUTOCLOSE)
         msgbox(format("I'm counting on you to\ncarry on my work!\lCapture the legendary titans!\pREGIROCK is sealed away on\nthis very island.\lThe ARID RUINS would be a good\lplace to start.\pIncidentally, I also collect artifacts\nfrom the ancient REGIUS\lcivilization.\pIf you find any during your search,\nplease share them with me!\lI can offer more BALLS in return."), MSGBOX_NPC)
         setflag(FLAG_TALKED_TO_ARCHAEOLOGIST)
     }

@@ -11,6 +11,7 @@ script AridIsland_PokemonCenter_Nurse {
 	if(var(VAR_RESULT)) {
 		msgbox(format("Okay, I'll take your POKéMON\nfor a few seconds."), MSGBOX_DEFAULT)
 		waitmessage
+		closemessage
 		fadescreen(1)
 		playfanfare(MUS_HEAL)
 		special(HealPlayerParty)
@@ -20,8 +21,8 @@ script AridIsland_PokemonCenter_Nurse {
 		waitmessage
 		applymovement(1, Movement_PkmnCenterNurse_Bow)
 		waitmovement(0)
-		msgbox(format("We hope to see you again!"), MSGBOX_DEFAULT)
 	}
+	msgbox(format("We hope to see you again!"), MSGBOX_DEFAULT)
 	release
 	end
 }

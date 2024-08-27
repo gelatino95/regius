@@ -4535,7 +4535,7 @@
       "id": "LAYOUT_KAPOK_JUNGLE",
       "name": "KapokJungle_Layout",
       "width": 55,
-      "height": 50,
+      "height": 51,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Kapok_Island",
       "border_filepath": "data/layouts/KapokJungle/border.bin",

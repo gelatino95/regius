@@ -14,12 +14,14 @@ AridIsland_PokemonCenter_Nurse::
 	compare VAR_RESULT, 0
 	goto_if_ne AridIsland_PokemonCenter_Nurse_2
 AridIsland_PokemonCenter_Nurse_1:
+	msgbox AridIsland_PokemonCenter_Nurse_Text_3, MSGBOX_DEFAULT
 	release
 	end
 
 AridIsland_PokemonCenter_Nurse_2:
 	msgbox AridIsland_PokemonCenter_Nurse_Text_1, MSGBOX_DEFAULT
 	waitmessage
+	closemessage
 	fadescreen 1
 	playfanfare MUS_HEAL
 	special HealPlayerParty
@@ -29,7 +31,6 @@ AridIsland_PokemonCenter_Nurse_2:
 	waitmessage
 	applymovement 1, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
-	msgbox AridIsland_PokemonCenter_Nurse_Text_3, MSGBOX_DEFAULT
 	goto AridIsland_PokemonCenter_Nurse_1
 
 

@@ -223,13 +223,11 @@ static const u8 sSacredAshDesc[] = _(
 // Collectibles
 static const u8 sShoalSaltDesc[] = _(
     "Salt obtained from\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "seaside rocks.");
 
 static const u8 sShoalShellDesc[] = _(
     "A seashell found\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "in ocean rocks.");
 
 static const u8 sRedShardDesc[] = _(
     "A shard from an\n"
