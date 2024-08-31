@@ -99,7 +99,7 @@ AridIsland_House1_EventScript_Repel_Lady_Text_1:
 AridIsland_House1_EventScript_Repel_Lady_Text_2:
 	.string "Sniff…\p"
 	.string "Hm… you smell clean, child.\n"
-	.string "Many other trainers can't say\l"
+	.string "Many other TRAINERS can't say\l"
 	.string "the same.\p"
 	.string "They have all been tainted by REPEL.\n"
 	.string "It's a foul-smelling chemical that\l"

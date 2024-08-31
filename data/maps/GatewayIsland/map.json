@@ -169,6 +169,14 @@
       "elevation": 0,
       "item": "ITEM_SUPER_POTION",
       "flag": "FLAG_HIDDEN_ITEM_GATEWAY_ISLAND_SUPER_POTION"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GatewayIsland_EventScript_PlayersHouse"
     }
   ]
 }

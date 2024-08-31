@@ -285,6 +285,11 @@ GatewayIsland_EventScript_ItemPokeBall::
 	end
 
 
+GatewayIsland_EventScript_PlayersHouse::
+	msgbox GatewayIsland_EventScript_PlayersHouse_Text_0, MSGBOX_SIGN
+	end
+
+
 GatewayIsland_Braille_StoneGate1:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "AWAKEN THE\n"
@@ -363,3 +368,6 @@ GatewayIsland_EventScript_SouthBeachBoy_Text_1:
 
 GatewayIsland_EventScript_FlyingTaxi_Text_0:
 	.string "Want a lift?$"
+
+GatewayIsland_EventScript_PlayersHouse_Text_0:
+	.string "{PLAYER}'s house.$"

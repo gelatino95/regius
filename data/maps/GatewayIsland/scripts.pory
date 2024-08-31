@@ -199,6 +199,11 @@ script GatewayIsland_EventScript_ItemPokeBall {
 	end
 }
 
+script GatewayIsland_EventScript_PlayersHouse {
+	msgbox(format("{PLAYER}'s house."), MSGBOX_SIGN)
+	end
+}
+
 raw `
 GatewayIsland_Braille_StoneGate1:
 	brailleformat 3, 0, 25, 19, 6, 3

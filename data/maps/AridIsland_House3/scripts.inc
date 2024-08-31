@@ -7,7 +7,7 @@ AridIsland_House3_EventScript_Archaeologist::
 	msgbox AridIsland_House3_EventScript_Archaeologist_Text_6, MSGBOX_NPC
 	additem ITEM_REGI_BALL, 10
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox AridIsland_House3_EventScript_Archaeologist_Text_1, MSGBOX_AUTOCLOSE
+	message AridIsland_House3_EventScript_Archaeologist_Text_1
 	waitfanfare
 	msgbox AridIsland_House3_EventScript_Archaeologist_Text_2, MSGBOX_AUTOCLOSE
 	msgbox AridIsland_House3_EventScript_Archaeologist_Text_7, MSGBOX_NPC
@@ -36,7 +36,7 @@ AridIsland_House3_EventScript_Archaeologist_8:
 	removeitem ITEM_ANCIENT_SLAB
 	additem ITEM_REGI_BALL, 10
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox AridIsland_House3_EventScript_Archaeologist_Text_1, MSGBOX_AUTOCLOSE
+	message AridIsland_House3_EventScript_Archaeologist_Text_1
 	waitfanfare
 	msgbox AridIsland_House3_EventScript_Archaeologist_Text_2, MSGBOX_AUTOCLOSE
 	msgbox AridIsland_House3_EventScript_Archaeologist_Text_3, MSGBOX_NPC

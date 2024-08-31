@@ -66,6 +66,7 @@ GatewayIsland_PlayersHouse_ItemBall_2:
 	end
 
 GatewayIsland_PlayersHouse_ItemBall_5:
+	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
 	goto GatewayIsland_PlayersHouse_ItemBall_4
 

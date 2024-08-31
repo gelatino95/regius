@@ -10,7 +10,7 @@ script AridIsland_House1_EventScript_Repel_Lady {
         }
         else {
             if (!flag(FLAG_TALKED_TO_REPEL_LADY)) {
-                msgbox(format("Sniff…\pHm… you smell clean, child.\nMany other trainers can't say\lthe same.\pThey have all been tainted by REPEL.\nIt's a foul-smelling chemical that\lpollutes our pristine waters.\pI won't even associate with those\nwho use it.\pChild, please don't be like the rest.\nI encourage you to never use REPEL,\lfor the sake of our environment.\pI know it's a great inconvenience\nto you as a TRAINER,\lbut I will reward you for your efforts.\pReturn to me later, and I may\nhave something for you.\pBut I will know if you used any\nkind of REPEL in the meantime.\lI can smell it a mile away."), MSGBOX_NPC)
+                msgbox(format("Sniff…\pHm… you smell clean, child.\nMany other TRAINERS can't say\lthe same.\pThey have all been tainted by REPEL.\nIt's a foul-smelling chemical that\lpollutes our pristine waters.\pI won't even associate with those\nwho use it.\pChild, please don't be like the rest.\nI encourage you to never use REPEL,\lfor the sake of our environment.\pI know it's a great inconvenience\nto you as a TRAINER,\lbut I will reward you for your efforts.\pReturn to me later, and I may\nhave something for you.\pBut I will know if you used any\nkind of REPEL in the meantime.\lI can smell it a mile away."), MSGBOX_NPC)
                 setflag(FLAG_TALKED_TO_REPEL_LADY)
             }
             else {

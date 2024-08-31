@@ -51,6 +51,7 @@ script GatewayIsland_PlayersHouse_ItemBall {
 	waitfanfare
     msgbox(format("Would you like to give a\nnickname to your PLAKOMASK?"), MSGBOX_YESNO)
     if (var(VAR_RESULT)){
+		call(Common_EventScript_GetGiftMonPartySlot)
     	call(Common_EventScript_NameReceivedPartyMon)
     }
 	setflag(FLAG_SYS_POKEMON_GET)
