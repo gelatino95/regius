@@ -2,6 +2,11 @@ FarReachSea_House1_MapScripts::
 	.byte 0
 
 
+FarReachSea_House1_EventScript_Roll::
+	msgbox FarReachSea_House1_EventScript_Roll_Text_0, MSGBOX_NPC
+	end
+
+
 FarReachSea_House1_EventScript_Ben::
 	lock
 	faceplayer
@@ -65,6 +70,12 @@ FarReachSea_House1_EventScript_Ben_PostBattle::
 	end
 
 
+FarReachSea_House1_EventScript_Roll_Text_0:
+	.string "Hi, I'm ROLL!\n"
+	.string "I made the human character designs.\p"
+	.string "I also made QUETINI!\n"
+	.string "Isn't it cute?$"
+
 FarReachSea_House1_EventScript_Ben_Text_0:
 	.string "Hello! I'm BEN.\n"
 	.string "I made the game you're playing!\p"
@@ -89,7 +100,7 @@ FarReachSea_House1_EventScript_Ben_Text_2:
 FarReachSea_House1_EventScript_Ben_Text_3:
 	.string "Have you tried out the BATTLE GROTTO?\p"
 	.string "It's inspired by a certain battle\n"
-	.string "facility in the ORRE region…$"
+	.string "facility in the ORRE region.$"
 
 FarReachSea_House1_EventScript_Ben_Text_4:
 	.string "I wonder when GAME FREAK will get\n"

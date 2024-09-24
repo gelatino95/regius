@@ -1,5 +1,10 @@
 mapscripts FarReachSea_House1_MapScripts {}
 
+script FarReachSea_House1_EventScript_Roll {
+    msgbox(format("Hi, I'm ROLL!\nI made the human character designs.\pI also made QUETINI!\nIsn't it cute?"), MSGBOX_NPC)
+    end
+}
+
 script FarReachSea_House1_EventScript_Ben {
     lock
     faceplayer
@@ -16,7 +21,7 @@ script FarReachSea_House1_EventScript_Ben {
         case 1:
             msgbox(format("The game may not look like much yet, but I have plans to add a bunch more stuff.\lLook forward to it!"), MSGBOX_DEFAULT)
         case 2:
-            msgbox(format("Have you tried out the BATTLE GROTTO?\pIt's inspired by a certain battle facility in the ORRE region…"), MSGBOX_DEFAULT)
+            msgbox(format("Have you tried out the BATTLE GROTTO?\pIt's inspired by a certain battle facility in the ORRE region."), MSGBOX_DEFAULT)
         case 3:
             msgbox(format("I wonder when GAME FREAK will get around to making a POKéMON and JURASSIC PARK crossover.\pI keep pitching the idea to them, but for some reason they stopped answering my calls."), MSGBOX_DEFAULT)
         case 4:
