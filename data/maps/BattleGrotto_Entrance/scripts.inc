@@ -1238,9 +1238,12 @@ BattleGrotto_Entrance_Woman_Text_0:
 	.string "for some intense training.$"
 
 BattleGrotto_Entrance_Hiker_Text_0:
-	.string "Did you know? This cave is a natural\n"
-	.string "formation.\l"
-	.string "It stretches deep below sea level.\p"
-	.string "No one has explored the full length of\n"
-	.string "this grotto.\l"
-	.string "Will you be the first?$"
+	.string "Did you know? This cave is an artificial\n"
+	.string "formation made long, long ago.\l"
+	.string "It was only discovered recently.\p"
+	.string "It's a long tunnel that stretches deep\n"
+	.string "below sea level.\l"
+	.string "Exploration of its furthest depths is\l"
+	.string "still ongoing.\p"
+	.string "Will you be the first to see what lies at\n"
+	.string "the end?$"

@@ -579,6 +579,6 @@ script BattleGrotto_Entrance_Woman {
 }
 
 script BattleGrotto_Entrance_Hiker {
-	msgbox(format("Did you know? This cave is a natural formation.\lIt stretches deep below sea level.\pNo one has explored the full length of this grotto.\lWill you be the first?"), MSGBOX_NPC)
+	msgbox(format("Did you know? This cave is an artificial formation made long, long ago.\lIt was only discovered recently.\pIt's a long tunnel that stretches deep below sea level.\lExploration of its furthest depths is still ongoing.\pWill you be the first to see what lies at the end?"), MSGBOX_NPC)
 	end
 }
