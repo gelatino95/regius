@@ -36,7 +36,7 @@ else
 EXE :=
 endif
 
-TITLE       := REGIUS
+TITLE       := POKEMON EMER
 GAME_CODE   := BPEE
 MAKER_CODE  := 01
 REVISION    := 0
